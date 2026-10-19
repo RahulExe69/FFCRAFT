@@ -63,3 +63,5 @@ This research pass establishes a structured, source-backed baseline and a workfl
 - [Craftland Studio PC user manual](https://ffcraftland.garena.com/en/tutorial/fe/1)
 - [Craftland beginner tutorial and wiki index](https://ffcraftland.garena.com/en/tutorial/cl/3)
 - [Official API/event/type reference index](https://ffcraftland.garena.com/en/docs/api-1-26)
+
+22. [First vertical slice: join serial](docs/19-first-vertical-slice-join-serial.md) — acceptance criteria and separate Mobile/PC plans, with exact unresolved blockers called out.
