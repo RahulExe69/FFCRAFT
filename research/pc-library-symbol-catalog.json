@@ -12,14 +12,14 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 25,
-    "enums": 129,
-    "enum_members": 2200,
-    "functions": 447,
-    "events": 215,
-    "components": 388,
+    "libraries": 31,
+    "enums": 132,
+    "enum_members": 2210,
+    "functions": 554,
+    "events": 223,
+    "components": 395,
     "aliases": 17,
-    "defined_types": 48
+    "defined_types": 49
   },
   "libraries": [
     {
@@ -15300,6 +15300,661 @@
         "Player",
         "SpawnBox",
         "Faction"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/LLM.fcc",
+      "source_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1",
+      "bytes_text": 7904,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 9,
+      "event_count": 6,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 1,
+      "enums": [],
+      "functions": [
+        {
+          "name": "UpdateContextToPersona",
+          "signature": "[platform_client] func UpdateContextToPersona(target PersonaID, context string, out var requestID int64) /**"
+        },
+        {
+          "name": "FeedbackToPersonaContent",
+          "signature": "[platform_client] func FeedbackToPersonaContent(responseID string, isLiked bool) /**"
+        },
+        {
+          "name": "RollbackPersonaMemory",
+          "signature": "[platform_client] func RollbackPersonaMemory(responseID string) /**"
+        },
+        {
+          "name": "UserMessageToPersona",
+          "signature": "[platform_client] func UserMessageToPersona(target PersonaID, content string, out var requestID int64) /**"
+        },
+        {
+          "name": "SystemMessageToPersona",
+          "signature": "[platform_client] func SystemMessageToPersona(target PersonaID, content string, shouldReply bool, out var requestID int64) /**"
+        },
+        {
+          "name": "ClearMemory",
+          "signature": "[platform_client] func ClearMemory(out var errorCode StatusCode) /**"
+        },
+        {
+          "name": "SetPersonaObserver",
+          "signature": "[platform_client] func SetPersonaObserver(target PersonaID, observers List<PersonaID>) /**"
+        },
+        {
+          "name": "UserMessageToPersonaStream",
+          "signature": "[platform_client] func UserMessageToPersonaStream(target PersonaID, content string, out var requestID int64) /**"
+        },
+        {
+          "name": "SystemMessageToPersonaStream",
+          "signature": "[platform_client] func SystemMessageToPersonaStream(target PersonaID, content string, shouldReply bool, out var requestID int64) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnReceiveContentFromPersonaV2",
+          "signature": "[platform_client] event OnReceiveContentFromPersonaV2(sender PersonaID, requestID string, responseID string, content string)"
+        },
+        {
+          "name": "OnReceiveContentFromPersona",
+          "signature": "[deprecated] [platform_client] event OnReceiveContentFromPersona(content string, sender PersonaID, requestID string)"
+        },
+        {
+          "name": "OnReceiveActionFromPersona",
+          "signature": "[platform_client] event OnReceiveActionFromPersona(action string, sender PersonaID, requestID string)"
+        },
+        {
+          "name": "OnReceiveStatusFromPersona",
+          "signature": "[deprecated] [platform_client] event OnReceiveStatusFromPersona(sender PersonaID, errorCode StatusCode, requestID string)"
+        },
+        {
+          "name": "OnPlayerSendMessageByUIPersonaChat",
+          "signature": "[platform_client] event OnPlayerSendMessageByUIPersonaChat(content string, sender PersonaID, requestID string)"
+        },
+        {
+          "name": "OnReceiveFinishFromPersona",
+          "signature": "[platform_client] event OnReceiveFinishFromPersona(sender PersonaID, errorCode StatusCode, requestID string)"
+        }
+      ],
+      "components": [
+        "UIPersonaChat",
+        "Persona"
+      ],
+      "aliases": [],
+      "defined_types": [
+        "PersonaID"
+      ]
+    },
+    {
+      "path": "library/release/List.fcc",
+      "source_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e",
+      "bytes_text": 5485,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 21,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "Length",
+          "signature": "func Length(target List<object>) int"
+        },
+        {
+          "name": "Append",
+          "signature": "func Append(target List<object>, value object) /**"
+        },
+        {
+          "name": "RemoveAt",
+          "signature": "func RemoveAt(target List<object>, index int) //@deprecated Use `RemoveAt` instead"
+        },
+        {
+          "name": "DeleteAt",
+          "signature": "[deprecated] func DeleteAt(target List<object>, index int) /**"
+        },
+        {
+          "name": "Clear",
+          "signature": "func Clear(target List<object>) /**"
+        },
+        {
+          "name": "Reverse",
+          "signature": "func Reverse(target List<object>) /**"
+        },
+        {
+          "name": "Clone",
+          "signature": "func Clone(target List<object>) List<object>"
+        },
+        {
+          "name": "Insert",
+          "signature": "func Insert(target List<object>, index int, value object) /**"
+        },
+        {
+          "name": "Shuffle",
+          "signature": "func Shuffle(target List<object>) /**"
+        },
+        {
+          "name": "IsEqual",
+          "signature": "func IsEqual(leftValue List<object>, rightValue List<object>) bool"
+        },
+        {
+          "name": "New",
+          "signature": "func New(length int, capacity int) List<object>"
+        },
+        {
+          "name": "Create",
+          "signature": "[deprecated] func Create(length int, capacity int) List<object>"
+        },
+        {
+          "name": "Contain",
+          "signature": "func Contain(target List<object>, value object) bool"
+        },
+        {
+          "name": "Contains",
+          "signature": "[deprecated] func Contains(target List<object>, value object) bool"
+        },
+        {
+          "name": "AppendRange",
+          "signature": "func AppendRange(target List<object>, value List<object>) /**"
+        },
+        {
+          "name": "Remove",
+          "signature": "func Remove(target List<object>, value object) //@deprecated Use `Remove` instead"
+        },
+        {
+          "name": "Delete",
+          "signature": "[deprecated] func Delete(target List<object>, value object) /**"
+        },
+        {
+          "name": "IndexOf",
+          "signature": "func IndexOf(target List<object>, value object) int"
+        },
+        {
+          "name": "LastIndexOf",
+          "signature": "func LastIndexOf(target List<object>, value object) int"
+        },
+        {
+          "name": "Max",
+          "signature": "func Max(target List<object>, out var isSuccess bool, out var result Number) /**"
+        },
+        {
+          "name": "Min",
+          "signature": "func Min(target List<object>, out var isSuccess bool, out var result Number)"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Map.fcc",
+      "source_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0",
+      "bytes_text": 1365,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 7,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "New",
+          "signature": "func New() Map<object, object>"
+        },
+        {
+          "name": "Create",
+          "signature": "[deprecated] func Create() Map<object, object>"
+        },
+        {
+          "name": "Remove",
+          "signature": "func Remove(target Map<object, object>, key object) /**"
+        },
+        {
+          "name": "Clear",
+          "signature": "func Clear(target Map<object, object>) /**"
+        },
+        {
+          "name": "Length",
+          "signature": "func Length(target Map<object, object>) int"
+        },
+        {
+          "name": "ContainKey",
+          "signature": "func ContainKey(target Map<object, object>, key object) bool"
+        },
+        {
+          "name": "GetAllKeys",
+          "signature": "func GetAllKeys(target Map<object, object>) List<object>"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Math.fcc",
+      "source_sha": "522efa770d25ee41c259130627d8e2a755b768b9",
+      "bytes_text": 17418,
+      "enum_count": 2,
+      "enum_member_count": 4,
+      "function_count": 59,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "NaturalConstantType",
+          "members": [
+            {
+              "name": "Pi",
+              "value": "3.14159265",
+              "notes": "Π: Value is about 3.1416"
+            },
+            {
+              "name": "E",
+              "value": "2.71828183",
+              "notes": "Natural Constant: Value about 2.7183"
+            }
+          ]
+        },
+        {
+          "name": "NaturalConst",
+          "members": [
+            {
+              "name": "Pi",
+              "value": "3.14159265",
+              "notes": "Π: Value is about 3.1416"
+            },
+            {
+              "name": "E",
+              "value": "2.71828183",
+              "notes": "Natural Constant: Value about 2.7183"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "QuaternionToEulerAngle",
+          "signature": "func QuaternionToEulerAngle(value Quaternion) Vector3"
+        },
+        {
+          "name": "EulerAngleToQuaternion",
+          "signature": "func EulerAngleToQuaternion(value Vector3) Quaternion"
+        },
+        {
+          "name": "AxisAngleToQuaternion",
+          "signature": "func AxisAngleToQuaternion(axis Vector3, angle float) Quaternion"
+        },
+        {
+          "name": "QuaternionToAxisAngle",
+          "signature": "func QuaternionToAxisAngle(value Quaternion, out var axis Vector3, out var angle float) /**"
+        },
+        {
+          "name": "MultiplyQuaternion",
+          "signature": "func MultiplyQuaternion(valueA Quaternion, valueB Quaternion) Quaternion"
+        },
+        {
+          "name": "LookRotation",
+          "signature": "func LookRotation(forward Vector3, upward Vector3) Quaternion"
+        },
+        {
+          "name": "SlerpQuaternion",
+          "signature": "func SlerpQuaternion(valueA Quaternion, valueB Quaternion, valueT float) Quaternion"
+        },
+        {
+          "name": "SetXClient",
+          "signature": "[platform_client] func SetXClient(vector Vector3, x float) Vector3"
+        },
+        {
+          "name": "SetYClient",
+          "signature": "[platform_client] func SetYClient(vector Vector3, y float) Vector3"
+        },
+        {
+          "name": "SetZClient",
+          "signature": "[platform_client] func SetZClient(vector Vector3, z float) Vector3"
+        },
+        {
+          "name": "Vector2SetXClient",
+          "signature": "[platform_client] func Vector2SetXClient(vector Vector2, x float) Vector2"
+        },
+        {
+          "name": "Vector2SetYClient",
+          "signature": "[platform_client] func Vector2SetYClient(vector Vector2, y float) Vector2"
+        },
+        {
+          "name": "Projection",
+          "signature": "func Projection(valueA Vector3, valueB Vector3) Vector3"
+        },
+        {
+          "name": "LerpVector3",
+          "signature": "func LerpVector3(valueA Vector3, valueB Vector3, valueT float) Vector3"
+        },
+        {
+          "name": "SlerpVector3",
+          "signature": "func SlerpVector3(valueA Vector3, valueB Vector3, valueT float) Vector3"
+        },
+        {
+          "name": "ATan2",
+          "signature": "func ATan2(y float, x float) float"
+        },
+        {
+          "name": "RandomInt",
+          "signature": "func RandomInt(min int, max int) int"
+        },
+        {
+          "name": "RandomFloat",
+          "signature": "func RandomFloat(min float, max float) float"
+        },
+        {
+          "name": "Abs",
+          "signature": "func Abs(value Number) Number"
+        },
+        {
+          "name": "Sqrt",
+          "signature": "func Sqrt(value float) float"
+        },
+        {
+          "name": "Negate",
+          "signature": "func Negate(value Number) Number"
+        },
+        {
+          "name": "Floor",
+          "signature": "func Floor(value float) int"
+        },
+        {
+          "name": "Ceil",
+          "signature": "func Ceil(value float) int"
+        },
+        {
+          "name": "Round",
+          "signature": "func Round(value float) int"
+        },
+        {
+          "name": "CreateRandomSeed",
+          "signature": "func CreateRandomSeed(seed int) Random"
+        },
+        {
+          "name": "Next",
+          "signature": "func Next(value Random, min int, max int) int"
+        },
+        {
+          "name": "Dot",
+          "signature": "func Dot(valueA Vector3, valueB Vector3) float"
+        },
+        {
+          "name": "Cross",
+          "signature": "func Cross(valueA Vector3, valueB Vector3) Vector3"
+        },
+        {
+          "name": "Normalize",
+          "signature": "func Normalize(value Vector3) Vector3"
+        },
+        {
+          "name": "Magnitude",
+          "signature": "func Magnitude(value Vector3) float"
+        },
+        {
+          "name": "Distance",
+          "signature": "func Distance(valueA Vector3, valueB Vector3) float"
+        },
+        {
+          "name": "Angle",
+          "signature": "func Angle(valueA Vector3, valueB Vector3) float"
+        },
+        {
+          "name": "Angel",
+          "signature": "[deprecated] func Angel(valueA Vector3, valueB Vector3) float"
+        },
+        {
+          "name": "NewDirectPoint_Deprecated",
+          "signature": "[deprecated] [platform_server] func NewDirectPoint_Deprecated(position Vector3, forward Vector3) DirectedPoint_Deprecated"
+        },
+        {
+          "name": "DirectPointGetPos_Deprecated",
+          "signature": "[deprecated] [platform_server] func DirectPointGetPos_Deprecated(directPoint DirectedPoint_Deprecated) Vector3"
+        },
+        {
+          "name": "DirectPointGetForward_Deprecated",
+          "signature": "[deprecated] [platform_server] func DirectPointGetForward_Deprecated(directPoint DirectedPoint_Deprecated) Vector3"
+        },
+        {
+          "name": "Sin",
+          "signature": "func Sin(degree float) float"
+        },
+        {
+          "name": "Cos",
+          "signature": "func Cos(degree float) float"
+        },
+        {
+          "name": "Tan",
+          "signature": "func Tan(degree float) float"
+        },
+        {
+          "name": "ASin",
+          "signature": "func ASin(value float) float"
+        },
+        {
+          "name": "ACos",
+          "signature": "func ACos(value float) float"
+        },
+        {
+          "name": "Value",
+          "signature": "func Value(degree float) float"
+        },
+        {
+          "name": "Max",
+          "signature": "func Max(valueA Number, valueB Number) Number"
+        },
+        {
+          "name": "Min",
+          "signature": "func Min(valueA Number, valueB Number) Number"
+        },
+        {
+          "name": "Lerp",
+          "signature": "func Lerp(valueA float, valueB float, valueT float) float"
+        },
+        {
+          "name": "Clamp",
+          "signature": "func Clamp(value Number, min Number, max Number) Number"
+        },
+        {
+          "name": "Exponentiation",
+          "signature": "func Exponentiation(base Number, exponent Number) Number"
+        },
+        {
+          "name": "Logarithm",
+          "signature": "func Logarithm(baseValue Number, realNumber Number) Number"
+        },
+        {
+          "name": "Log",
+          "signature": "[deprecated] func Log(baseValue Number, realNumber Number) Number"
+        },
+        {
+          "name": "DirectionToEulerAngle",
+          "signature": "[platform_server] func DirectionToEulerAngle(direction Vector3) Vector3"
+        },
+        {
+          "name": "Vector3ToEulerAngles",
+          "signature": "[deprecated] func Vector3ToEulerAngles(direction Vector3) Vector3"
+        },
+        {
+          "name": "RotateVector",
+          "signature": "func RotateVector(value Vector3, delta Quaternion) Vector3"
+        },
+        {
+          "name": "Vector2Dot",
+          "signature": "func Vector2Dot(valueA Vector2, valueB Vector2) float"
+        },
+        {
+          "name": "Vector2Distance",
+          "signature": "func Vector2Distance(valueA Vector2, valueB Vector2) float"
+        },
+        {
+          "name": "Vector2Angle",
+          "signature": "func Vector2Angle(valueA Vector2, valueB Vector2) float"
+        },
+        {
+          "name": "Vector2Normalize",
+          "signature": "func Vector2Normalize(value Vector2) Vector2"
+        },
+        {
+          "name": "Vector2Magnitude",
+          "signature": "func Vector2Magnitude(value Vector2) float"
+        },
+        {
+          "name": "Vector2Reflect",
+          "signature": "func Vector2Reflect(direction Vector2, normal Vector2) Vector2"
+        },
+        {
+          "name": "Vector3Reflect",
+          "signature": "func Vector3Reflect(direction Vector3, normal Vector3) Vector3"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/MiniMap.fcc",
+      "source_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7",
+      "bytes_text": 2717,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 4,
+      "event_count": 0,
+      "component_count": 4,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "CreateMiniMapIcon",
+          "signature": "func CreateMiniMapIcon(out var createdEntity entity<MiniMapIcon>, target entity<Player>, resource IconType) /**"
+        },
+        {
+          "name": "CreateMiniMapPixel",
+          "signature": "func CreateMiniMapPixel(out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>) //@deprecated Use `CreateMiniMapPixel` instead"
+        },
+        {
+          "name": "CreateMiniMapBit",
+          "signature": "[deprecated] func CreateMiniMapBit(out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>) /**"
+        },
+        {
+          "name": "GetMiniMap",
+          "signature": "func GetMiniMap(target entity<Player>) entity<MiniMap>"
+        }
+      ],
+      "events": [],
+      "components": [
+        "MiniMap",
+        "MiniMapIcon",
+        "MinimapPixelRenderer",
+        "MiniMapBit"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Morph.fcc",
+      "source_sha": "f551e93c210d8f8f8349034cc897e2c54f261712",
+      "bytes_text": 3474,
+      "enum_count": 1,
+      "enum_member_count": 6,
+      "function_count": 7,
+      "event_count": 2,
+      "component_count": 1,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "MorphableObject",
+          "members": [
+            {
+              "name": "Bushes",
+              "value": "210",
+              "notes": "Bushes: Bushes"
+            },
+            {
+              "name": "BushCoverForPeekaboo",
+              "value": "210",
+              "notes": "@deprecated Use `Bushes` instead"
+            },
+            {
+              "name": "Pumpkin",
+              "value": "158",
+              "notes": "Pumpkin: Pumpkin"
+            },
+            {
+              "name": "Scarecrow",
+              "value": "159",
+              "notes": "Scarecrow: Scarecrow"
+            },
+            {
+              "name": "JackStraw",
+              "value": "159",
+              "notes": "@deprecated Use `Scarecrow` instead"
+            },
+            {
+              "name": "Cabinet",
+              "value": "160",
+              "notes": "Cabinet: Cabinet"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "MorphTo",
+          "signature": "[platform_server] func MorphTo(player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>) /**"
+        },
+        {
+          "name": "EndMorph",
+          "signature": "[platform_server] func EndMorph(player entity<Player>) /**"
+        },
+        {
+          "name": "CopyToMorph",
+          "signature": "[platform_server] func CopyToMorph(player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>) /**"
+        },
+        {
+          "name": "GetMorph",
+          "signature": "[platform_server] func GetMorph(player entity<Player>) entity<MorphObject>"
+        },
+        {
+          "name": "GetMorphObject",
+          "signature": "[deprecated] func GetMorphObject(player entity<Player>) entity<MorphObject>"
+        },
+        {
+          "name": "MorphToByItemID",
+          "signature": "[platform_server] func MorphToByItemID(player entity<Player>, target MorphableObject, out var createdEntity entity<MorphObject>) /**"
+        },
+        {
+          "name": "CreateMorph",
+          "signature": "[platform_server] func CreateMorph(player entity<Player>, out var createdEntity entity<MorphObject>) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnLevelObjectBeMorphed",
+          "signature": "[platform_server] event OnLevelObjectBeMorphed(morphObject entity<MorphObject>)"
+        },
+        {
+          "name": "OnLevelObjectToBeMorphed",
+          "signature": "[deprecated] event OnLevelObjectToBeMorphed(morphObject entity<MorphObject>)"
+        }
+      ],
+      "components": [
+        "MorphObject"
       ],
       "aliases": [],
       "defined_types": []
