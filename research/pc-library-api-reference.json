@@ -8,13 +8,13 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 20,
-    "functions": 368,
-    "events": 195,
-    "component_declarations": 412,
-    "component_properties": 2823,
-    "deprecated_functions": 145,
-    "server_functions": 232,
+    "libraries": 25,
+    "functions": 447,
+    "events": 215,
+    "component_declarations": 434,
+    "component_properties": 2940,
+    "deprecated_functions": 188,
+    "server_functions": 311,
     "client_functions": 31
   },
   "libraries": [
@@ -43405,6 +43405,4896 @@
           "source": {
             "file": "library/release/Dyeing.fcc",
             "blob_sha": "2e5d840ed60da96ac60e17a64ab101bcaa671579"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Economy.fcc",
+      "source_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80",
+      "text_length": 13792,
+      "functions": [
+        {
+          "name": "GetWallet",
+          "signature": "[platform_server] func GetWallet(target entity, out var isExist bool, out var wallet entity<Wallet>)",
+          "parameters_text": "target entity, out var isExist bool, out var wallet entity<Wallet>",
+          "return_type": null,
+          "description": "Get the wallet of the target entity",
+          "doc_title": "Get Wallet",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isExist",
+              "type": "bool",
+              "description": "Whether a wallet exists"
+            },
+            {
+              "name": "wallet",
+              "type": "entity<Wallet>",
+              "description": "The wallet entity obtained"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CreateWallet",
+          "signature": "[platform_server] func CreateWallet(owner entity<Player>, target entity<Entity>, out var createdEntity entity<Wallet>)",
+          "parameters_text": "owner entity<Player>, target entity<Entity>, out var createdEntity entity<Wallet>",
+          "return_type": null,
+          "description": "Create a wallet for the target player. Ineffective if the player already has a wallet.",
+          "doc_title": "Create Wallet",
+          "parameters": [
+            {
+              "name": "owner",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "The entity to which the wallet is bound, the owner of the wallet"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Wallet>",
+              "description": "Wallet Entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "AddMoney",
+          "signature": "[platform_server] func AddMoney(target entity<Wallet>, moneyType MoneyType, count float)",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType, count float",
+          "return_type": null,
+          "description": "Add currency to the specified wallet",
+          "doc_title": "Add Money",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Added currency type"
+            },
+            {
+              "name": "count",
+              "type": "float",
+              "description": "Added currency amount"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "AddMoneyToWallet",
+          "signature": "[deprecated] func AddMoneyToWallet(target entity<Wallet>, moneyType MoneyType, count float)",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType, count float",
+          "return_type": null,
+          "description": "Add currency to the specified wallet",
+          "doc_title": "Add Money",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Added currency type"
+            },
+            {
+              "name": "count",
+              "type": "float",
+              "description": "Added currency amount"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `AddMoney` instead",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CostMoney",
+          "signature": "[platform_server] func CostMoney(target entity<Wallet>, moneyType MoneyType, count float)",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType, count float",
+          "return_type": null,
+          "description": "Reduce currency from specified wallet",
+          "doc_title": "Cost Money",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Reduced currency type"
+            },
+            {
+              "name": "count",
+              "type": "float",
+              "description": "Reduced currency amount"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CostMoneyFromWallet",
+          "signature": "[deprecated] func CostMoneyFromWallet(target entity<Wallet>, moneyType MoneyType, count float)",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType, count float",
+          "return_type": null,
+          "description": "Reduce currency from specified wallet",
+          "doc_title": "Cost Money",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Reduced currency type"
+            },
+            {
+              "name": "count",
+              "type": "float",
+              "description": "Reduced currency amount"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `CostMoney` instead",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "TransferMoney",
+          "signature": "[platform_server] func TransferMoney(outWallet entity<Wallet>, moneyType MoneyType, count float, inWallet entity<Wallet>)",
+          "parameters_text": "outWallet entity<Wallet>, moneyType MoneyType, count float, inWallet entity<Wallet>",
+          "return_type": null,
+          "description": "Transfer currency from one wallet to another",
+          "doc_title": "Transfer Money",
+          "parameters": [
+            {
+              "name": "outWallet",
+              "type": "entity<Wallet>",
+              "description": "The wallet from which the currency is transferred"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Transferred currency type"
+            },
+            {
+              "name": "count",
+              "type": "float",
+              "description": "Transferred currency amount"
+            },
+            {
+              "name": "inWallet",
+              "type": "entity<Wallet>",
+              "description": "The wallet to which the currency is transferred"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "GetMoneyCount",
+          "signature": "[platform_server] func GetMoneyCount(target entity<Wallet>, moneyType MoneyType) float",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType",
+          "return_type": "float",
+          "description": "Get the amount of the specified type of currency in the specified wallet",
+          "doc_title": "Get Money Count",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "Currency type of the query"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Amount of currency"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "GetMoney",
+          "signature": "[platform_server] func GetMoney(target entity<Wallet>, moneyType MoneyType) entity<Money>",
+          "parameters_text": "target entity<Wallet>, moneyType MoneyType",
+          "return_type": "entity<Money>",
+          "description": "Get the entity of the specified type of currency in the specified wallet",
+          "doc_title": "Get Money",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Wallet>",
+              "description": "Target wallet"
+            },
+            {
+              "name": "moneyType",
+              "type": "MoneyType",
+              "description": "The currency type of the query"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<Money>",
+              "description": "Currency Entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "GetAllShops",
+          "signature": "[platform_server] func GetAllShops() List<entity<Shop>>",
+          "parameters_text": "",
+          "return_type": "List<entity<Shop>>",
+          "description": "Get all the stores in the game and return them as a list",
+          "doc_title": "Get All Shops",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "List<entity<Shop>>",
+              "description": "Store Entity List"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CreateShop",
+          "signature": "[platform_server] func CreateShop(out var createdEntity entity<Shop>)",
+          "parameters_text": "out var createdEntity entity<Shop>",
+          "return_type": null,
+          "description": "Create a custom store, the next level of the store is the shelves",
+          "doc_title": "Create Shop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Shop>",
+              "description": "Created store entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CreateShopShelf",
+          "signature": "[platform_server] func CreateShopShelf(out var createdEntity entity<ShopShelf>)",
+          "parameters_text": "out var createdEntity entity<ShopShelf>",
+          "return_type": null,
+          "description": "Create a custom shelf, the upper level of the shelf is the store, and the lower level is the product",
+          "doc_title": "Create Shop Shelf",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<ShopShelf>",
+              "description": "Created shelf entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "CreateShopItem",
+          "signature": "[platform_server] func CreateShopItem(out var createdEntity entity<ShopItem>)",
+          "parameters_text": "out var createdEntity entity<ShopItem>",
+          "return_type": null,
+          "description": "Create a custom product, you can add items to the product",
+          "doc_title": "Create Shop Item",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<ShopItem>",
+              "description": "Created product entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "AddItemToShopItem",
+          "signature": "[platform_server] func AddItemToShopItem(shopItem entity<ShopItem>, item ItemIDType, count int)",
+          "parameters_text": "shopItem entity<ShopItem>, item ItemIDType, count int",
+          "return_type": null,
+          "description": "Add item to a product. You can add multiple items to a product by using this block multiple times.",
+          "doc_title": "Add Item To Shop Item",
+          "parameters": [
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Product Entity"
+            },
+            {
+              "name": "item",
+              "type": "ItemIDType",
+              "description": "Items to add"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Item quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPurchase",
+          "signature": "[platform_server] event OnPurchase(player entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "player entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered when a product is successfully purchased in the store.",
+          "doc_title": "On Purchase",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players who purchased the item"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "OnPrePurchase",
+          "signature": "[platform_server] event OnPrePurchase(player entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "player entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered before purchasing goods in the store.",
+          "doc_title": "On Pre Purchase",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players who purchased goods"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "BeforePurchase",
+          "signature": "[deprecated] event BeforePurchase(player entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "player entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered before purchasing goods in the store.",
+          "doc_title": "On Pre Purchase",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players who purchased goods"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnPrePurchase` instead",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "OnPlayerPurchaseRequest",
+          "signature": "[platform_server] event OnPlayerPurchaseRequest(player entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "player entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered in the store when a player asks others to buy goods.",
+          "doc_title": "On Player Request Purchase",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players who requested to purchase the goods"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "OnPurchaseRequest",
+          "signature": "[deprecated] event OnPurchaseRequest(player entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "player entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered in the store when a player asks others to buy goods.",
+          "doc_title": "On Player Request Purchase",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players who requested to purchase the goods"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnPlayerPurchaseRequest` instead",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "OnPlayerRequestForPurchaseFulfilled",
+          "signature": "[platform_server] event OnPlayerRequestForPurchaseFulfilled(helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered when a player in the store requests others to buy goods and the request is accepted.",
+          "doc_title": "On Player Request For Purchase Fulfilled",
+          "parameters": [
+            {
+              "name": "helpPlayer",
+              "type": "entity<Player>",
+              "description": "Help players who purchased"
+            },
+            {
+              "name": "helpedPlayer",
+              "type": "entity<Player>",
+              "description": "Request help for players who purchased"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "OnShopRequestFilled",
+          "signature": "[deprecated] event OnShopRequestFilled(helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>)",
+          "parameters_text": "helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>",
+          "return_type": null,
+          "description": "Triggered when a player in the store requests others to buy goods and the request is accepted.",
+          "doc_title": "On Player Request For Purchase Fulfilled",
+          "parameters": [
+            {
+              "name": "helpPlayer",
+              "type": "entity<Player>",
+              "description": "Help players who purchased"
+            },
+            {
+              "name": "helpedPlayer",
+              "type": "entity<Player>",
+              "description": "Request help for players who purchased"
+            },
+            {
+              "name": "shopItem",
+              "type": "entity<ShopItem>",
+              "description": "Goods"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Shop",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnPlayerRequestForPurchaseFulfilled` instead",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "EcoCoinRoundBegin",
+              "type": "int",
+              "description": "Number of coins gained at the start of the round",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "EcoCoinKill",
+              "type": "int",
+              "description": "Number of coins at kill",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "EcoCoinWin",
+              "type": "int",
+              "description": "Number of coins when you win",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "IsShowCoin",
+              "type": "bool",
+              "description": "Whether to show wallet UI",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "IsShowCoinHud",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "AskBuyTarget",
+              "type": "UIRequestPurchaseType",
+              "description": "The target to which the Request Purchase message was sent",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "ShopItem",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "ID",
+              "type": "int",
+              "description": "Shop item number",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "Price",
+              "type": "int",
+              "description": "Price",
+              "attributes": []
+            },
+            {
+              "name": "MoneyType",
+              "type": "MoneyType",
+              "description": "Money Type",
+              "attributes": []
+            },
+            {
+              "name": "PurchaseLimit",
+              "type": "int",
+              "description": "Overall limit",
+              "attributes": []
+            },
+            {
+              "name": "TotalPurchaseLimit",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "RemainQuantity",
+              "type": "int",
+              "description": "Current overall limit",
+              "attributes": []
+            },
+            {
+              "name": "CurrentTotalPurchaseLimit",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "description": "Shop item name",
+              "attributes": []
+            },
+            {
+              "name": "Desc",
+              "type": "string",
+              "description": "Shop Item Description",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ItemIDs",
+              "type": "List<ItemIDType>",
+              "description": "Shop Item List",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ItemGoodsIDList",
+              "type": "List<ItemIDType>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            },
+            {
+              "name": "ItemCounts",
+              "type": "List<int>",
+              "description": "ItemCounts",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ItemGoodsCountList",
+              "type": "List<int>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            },
+            {
+              "name": "Icon",
+              "type": "SpriteID",
+              "description": "Resource path, empty by default",
+              "attributes": []
+            },
+            {
+              "name": "IconResID",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "IsPurchasable",
+              "type": "bool",
+              "description": "Is Purchasable",
+              "attributes": []
+            },
+            {
+              "name": "CanPurchas",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "ShopShelf",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Name_Deprecated",
+              "type": "string",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "Shop",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Name_Deprecated",
+              "type": "string",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "UIStore",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IsVisible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Visibility",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DisableManualClosing",
+              "type": "bool",
+              "description": "When true, manual disable is disabled.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CloseForbiden",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            },
+            {
+              "name": "Store",
+              "type": "entity<Shop>",
+              "description": "Bound shop entities",
+              "attributes": []
+            },
+            {
+              "name": "BindShop",
+              "type": "entity<Shop>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Money",
+              "type": "entity<Money>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "BindMoney",
+              "type": "entity<Money>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "deprecated"
+              ]
+            },
+            {
+              "name": "WalletID",
+              "type": "string",
+              "description": "Bound Wallet ID",
+              "attributes": [
+                "preview",
+                "deprecated",
+                "preview",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "BindWalletEntityID",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "RequestType",
+              "type": "UIRequestPurchaseType",
+              "description": "The type of the current UI player request target",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "RequestedItemList",
+              "type": "List<object>",
+              "description": "Requested Item List",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "AskedList",
+              "type": "List<object>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "ShopHud",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "IsVisible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Visibility",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DisableManualClosing",
+              "type": "bool",
+              "description": "When true, manual disable is disabled.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CloseForbiden",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            },
+            {
+              "name": "Store",
+              "type": "entity<Shop>",
+              "description": "Bound shop entities",
+              "attributes": []
+            },
+            {
+              "name": "BindShop",
+              "type": "entity<Shop>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Money",
+              "type": "entity<Money>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "BindMoney",
+              "type": "entity<Money>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "deprecated"
+              ]
+            },
+            {
+              "name": "WalletID",
+              "type": "string",
+              "description": "Bound Wallet ID",
+              "attributes": [
+                "preview",
+                "deprecated",
+                "preview",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "BindWalletEntityID",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "RequestType",
+              "type": "UIRequestPurchaseType",
+              "description": "The type of the current UI player request target",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "RequestedItemList",
+              "type": "List<object>",
+              "description": "Requested Item List",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "AskedList",
+              "type": "List<object>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "Money",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Type",
+              "type": "MoneyType",
+              "description": "Only base currency is available in the current version",
+              "attributes": []
+            },
+            {
+              "name": "Count",
+              "type": "BigFloat",
+              "description": "Amount of currency",
+              "attributes": []
+            },
+            {
+              "name": "Icon",
+              "type": "SpriteID",
+              "description": "Currency icon",
+              "attributes": []
+            },
+            {
+              "name": "MoneyIcon",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "IconColor",
+              "type": "Color",
+              "description": "Currency icon color",
+              "attributes": []
+            },
+            {
+              "name": "MoneyIconColor",
+              "type": "Color",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "Wallet",
+          "kind": "component",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "WalletHud",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "BoundWallet",
+              "type": "entity<Money>",
+              "description": "Get Wallet",
+              "attributes": []
+            },
+            {
+              "name": "BindMoney",
+              "type": "entity<Money>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Display position (anchor is top right corner)",
+              "attributes": []
+            },
+            {
+              "name": "Scale",
+              "type": "Vector3",
+              "description": "Scale",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "blob_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/FF_Platform.fcc",
+      "source_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212",
+      "text_length": 4922,
+      "functions": [
+        {
+          "name": "GetTokenCountToday",
+          "signature": "[platform_server] func GetTokenCountToday(target entity<Player>, tokenID int, out var count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, out var count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Get today's token data of the player",
+          "doc_title": "Get Token Count Today",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "tokenID"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token amount"
+            },
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is called successfully"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "GetPlayerTokenCountToday",
+          "signature": "[deprecated] func GetPlayerTokenCountToday(target entity<Player>, tokenID int, out var count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, out var count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Get today's token data of the player",
+          "doc_title": "Get Token Count Today",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "tokenID"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token amount"
+            },
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is called successfully"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTokenCountToday` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CompleteCustomMission",
+          "signature": "[platform_server] func CompleteCustomMission(target entity<Player>, missionID int, missionProgress int)",
+          "parameters_text": "target entity<Player>, missionID int, missionProgress int",
+          "return_type": null,
+          "description": "Set custom task completion progress",
+          "doc_title": "Complete Custom Mission",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "missionID",
+              "type": "int",
+              "description": "Task ID"
+            },
+            {
+              "name": "missionProgress",
+              "type": "int",
+              "description": "Completion progress, negative numbers are not allowed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CustomMissionComplete",
+          "signature": "[deprecated] func CustomMissionComplete(target entity<Player>, missionID int, missionProgress int)",
+          "parameters_text": "target entity<Player>, missionID int, missionProgress int",
+          "return_type": null,
+          "description": "Set custom task completion progress",
+          "doc_title": "Complete Custom Mission",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "missionID",
+              "type": "int",
+              "description": "Task ID"
+            },
+            {
+              "name": "missionProgress",
+              "type": "int",
+              "description": "Completion progress, negative numbers are not allowed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `CompleteCustomMission` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "GetCustomMissionProgress",
+          "signature": "[platform_server] func GetCustomMissionProgress(target entity<Player>, missionID int) int",
+          "parameters_text": "target entity<Player>, missionID int",
+          "return_type": "int",
+          "description": "Query the progress of custom tasks",
+          "doc_title": "Get Custom Mission Progress",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "missionID",
+              "type": "int",
+              "description": "Custom task ID"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Task Progress"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "GetTokenCount",
+          "signature": "[platform_server] func GetTokenCount(target entity<Player>, tokenID int, out var count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, out var count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Get player's token data",
+          "doc_title": "Get Token Count",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            },
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Success or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "GetPlayerTokenCount",
+          "signature": "[deprecated] func GetPlayerTokenCount(target entity<Player>, tokenID int, out var count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, out var count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Get player's token data",
+          "doc_title": "Get Token Count",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            },
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Success or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTokenCount` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "AddToken",
+          "signature": "[platform_server] func AddToken(target entity<Player>, tokenID int, count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Add token data to the player",
+          "doc_title": "Add Token",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the primitive is successfully called"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "AddTokenToPlayer",
+          "signature": "[deprecated] func AddTokenToPlayer(target entity<Player>, tokenID int, count int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Add token data to the player",
+          "doc_title": "Add Token",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the primitive is successfully called"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `AddToken` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CostToken",
+          "signature": "[platform_server] func CostToken(target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Consume target player token",
+          "doc_title": "Cost Token",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "tokenCount",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is successfully invoked"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CostTokenFromPlayer",
+          "signature": "[deprecated] func CostTokenFromPlayer(target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool)",
+          "parameters_text": "target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Consume target player token",
+          "doc_title": "Cost Token",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "tokenCount",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is successfully invoked"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `CostToken` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CreateTokenInScene",
+          "signature": "[platform_server] func CreateTokenInScene(position Vector3, tokenID int, count int, out var isSuccess bool)",
+          "parameters_text": "position Vector3, tokenID int, count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Add a token at the specified location",
+          "doc_title": "Create Token In Scene",
+          "parameters": [
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Location"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is successfully invoked"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "CreateToken",
+          "signature": "[deprecated] func CreateToken(position Vector3, tokenID int, count int, out var isSuccess bool)",
+          "parameters_text": "position Vector3, tokenID int, count int, out var isSuccess bool",
+          "return_type": null,
+          "description": "Add a token at the specified location",
+          "doc_title": "Create Token In Scene",
+          "parameters": [
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Location"
+            },
+            {
+              "name": "tokenID",
+              "type": "int",
+              "description": "TokenID"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Token quantity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the block is successfully invoked"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `CreateTokenInScene` instead",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "UISocialButtonWidget",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Player>",
+              "description": "Targets to friend",
+              "attributes": []
+            },
+            {
+              "name": "Player",
+              "type": "entity<Player>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "FunctionType",
+              "type": "UISocialButtonType",
+              "description": "Function Type",
+              "attributes": []
+            },
+            {
+              "name": "ButtonStyle",
+              "type": "UISocialButtonStyleType",
+              "description": "Style",
+              "attributes": []
+            },
+            {
+              "name": "Alpha",
+              "type": "float",
+              "description": "Alpha",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "HUDSocialButtonWidget",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Player>",
+              "description": "Targets to friend",
+              "attributes": []
+            },
+            {
+              "name": "Player",
+              "type": "entity<Player>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "FunctionType",
+              "type": "UISocialButtonType",
+              "description": "Function Type",
+              "attributes": []
+            },
+            {
+              "name": "ButtonStyle",
+              "type": "UISocialButtonStyleType",
+              "description": "Style",
+              "attributes": []
+            },
+            {
+              "name": "Alpha",
+              "type": "float",
+              "description": "Alpha",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "blob_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Football.fcc",
+      "source_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9",
+      "text_length": 5618,
+      "functions": [
+        {
+          "name": "SetJersey",
+          "signature": "[platform_server] func SetJersey(target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color)",
+          "parameters_text": "target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color",
+          "return_type": null,
+          "description": "Change jersey",
+          "doc_title": "Set Jersey",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "jerseyType",
+              "type": "JerseyStyle",
+              "description": "Clothing Style"
+            },
+            {
+              "name": "mainColor1",
+              "type": "Color",
+              "description": "Main color 1"
+            },
+            {
+              "name": "mainColor2",
+              "type": "Color",
+              "description": "Main color 2"
+            },
+            {
+              "name": "otherColor",
+              "type": "Color",
+              "description": "Configuration"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "SetCustomClothes",
+          "signature": "[deprecated] func SetCustomClothes(target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color)",
+          "parameters_text": "target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color",
+          "return_type": null,
+          "description": "Change jersey",
+          "doc_title": "Set Jersey",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "jerseyType",
+              "type": "JerseyStyle",
+              "description": "Clothing Style"
+            },
+            {
+              "name": "mainColor1",
+              "type": "Color",
+              "description": "Main color 1"
+            },
+            {
+              "name": "mainColor2",
+              "type": "Color",
+              "description": "Main color 2"
+            },
+            {
+              "name": "otherColor",
+              "type": "Color",
+              "description": "Configuration"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetJersey` instead",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "ResetJersey",
+          "signature": "[platform_server] func ResetJersey(player entity<Player>)",
+          "parameters_text": "player entity<Player>",
+          "return_type": null,
+          "description": "Restore the player's jersey to its original state",
+          "doc_title": "Reset Jersey",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "ResetCustomClothes",
+          "signature": "[deprecated] func ResetCustomClothes(player entity<Player>)",
+          "parameters_text": "player entity<Player>",
+          "return_type": null,
+          "description": "Restore the player's jersey to its original state",
+          "doc_title": "Reset Jersey",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `ResetJersey` instead",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "AddFootballVelocity",
+          "signature": "[platform_server] func AddFootballVelocity(football entity<Football>, velocity Vector3)",
+          "parameters_text": "football entity<Football>, velocity Vector3",
+          "return_type": null,
+          "description": "Add a velocity to a soccer ball. The velocity changes from the effect of acceleration in the same direction",
+          "doc_title": "Add Football Velocity",
+          "parameters": [
+            {
+              "name": "football",
+              "type": "entity<Football>",
+              "description": "Target Soccer"
+            },
+            {
+              "name": "velocity",
+              "type": "Vector3",
+              "description": "Added 3D space speed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "AddFootBallVelocity",
+          "signature": "[deprecated] func AddFootBallVelocity(football entity<Football>, velocity Vector3)",
+          "parameters_text": "football entity<Football>, velocity Vector3",
+          "return_type": null,
+          "description": "Add a velocity to a soccer ball. The velocity changes from the effect of acceleration in the same direction",
+          "doc_title": "Add Football Velocity",
+          "parameters": [
+            {
+              "name": "football",
+              "type": "entity<Football>",
+              "description": "Target Soccer"
+            },
+            {
+              "name": "velocity",
+              "type": "Vector3",
+              "description": "Added 3D space speed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `AddFootballVelocity` instead",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "SetFootballPosition",
+          "signature": "[platform_server] func SetFootballPosition(football entity<Football>, position Vector3, keepVelocity bool)",
+          "parameters_text": "football entity<Football>, position Vector3, keepVelocity bool",
+          "return_type": null,
+          "description": "Setting the soccer ball position",
+          "doc_title": "Set Football Position",
+          "parameters": [
+            {
+              "name": "football",
+              "type": "entity<Football>",
+              "description": "soccer entity"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Placement"
+            },
+            {
+              "name": "keepVelocity",
+              "type": "bool",
+              "description": "Maintaining speed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnShotByFootballShooter",
+          "signature": "[platform_server] event OnShotByFootballShooter(player entity<Player>, velocity Vector3)",
+          "parameters_text": "player entity<Player>, velocity Vector3",
+          "return_type": null,
+          "description": "Triggered when hit by a football gun.",
+          "doc_title": "On Shot By Football Shooter",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "velocity",
+              "type": "Vector3",
+              "description": "Speed after being hit"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Football",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "OnShootByFootBallShooter",
+          "signature": "[deprecated] event OnShootByFootBallShooter(player entity<Player>, velocity Vector3)",
+          "parameters_text": "player entity<Player>, velocity Vector3",
+          "return_type": null,
+          "description": "Triggered when hit by a football gun.",
+          "doc_title": "On Shot By Football Shooter",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "velocity",
+              "type": "Vector3",
+              "description": "Speed after being hit"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Football",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnShotByFootballShooter` instead",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "OnFootBallCollided",
+          "signature": "event OnFootBallCollided(target entity<LevelObject>, velocity Vector3)",
+          "parameters_text": "target entity<LevelObject>, velocity Vector3",
+          "return_type": null,
+          "description": "Fired when the ball collides with an entity.",
+          "doc_title": "On Football Collided",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<LevelObject>",
+              "description": "Collision Objects"
+            },
+            {
+              "name": "velocity",
+              "type": "Vector3",
+              "description": "Speed after collision"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Football",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "OnGoal",
+          "signature": "[platform_server] event OnGoal(footballGoal entity<FootballGoal>, scorer entity<Player>, assistPlayer entity<Player>)",
+          "parameters_text": "footballGoal entity<FootballGoal>, scorer entity<Player>, assistPlayer entity<Player>",
+          "return_type": null,
+          "description": "Triggered when the ball enters the goal.",
+          "doc_title": "On Goal",
+          "parameters": [
+            {
+              "name": "footballGoal",
+              "type": "entity<FootballGoal>",
+              "description": "Goal"
+            },
+            {
+              "name": "scorer",
+              "type": "entity<Player>",
+              "description": "Scorer, the last player to touch the ball before scoring"
+            },
+            {
+              "name": "assistPlayer",
+              "type": "entity<Player>",
+              "description": "Assist: The second-to-last player to touch the ball before the goal"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Football",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Football",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Radius",
+              "type": "float",
+              "description": "Radius of the soccer ball",
+              "attributes": []
+            },
+            {
+              "name": "RollingFrictionCoeff",
+              "type": "float",
+              "description": "Friction coefficient at normal condition",
+              "attributes": []
+            },
+            {
+              "name": "RollingFrictionCoeffRushing",
+              "type": "float",
+              "description": "Impact Friction",
+              "attributes": []
+            },
+            {
+              "name": "RollingFrictionCoeff_Rushing",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ShootAngleMin",
+              "type": "int",
+              "description": "Min. Shooting Angle",
+              "attributes": []
+            },
+            {
+              "name": "HighShootAngleMin",
+              "type": "int",
+              "description": "Min. Elevation Angle",
+              "attributes": []
+            },
+            {
+              "name": "ResetTime",
+              "type": "int",
+              "description": "Reset Time",
+              "attributes": []
+            },
+            {
+              "name": "HideTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ShootAngleMax",
+              "type": "int",
+              "description": "Max. Shooting Angle",
+              "attributes": []
+            },
+            {
+              "name": "ResetPosition",
+              "type": "Vector3",
+              "description": "Reset Position",
+              "attributes": []
+            },
+            {
+              "name": "InitPosition",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "JerseyMachine",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TriggerRadius",
+              "type": "float",
+              "description": "Setting the trigger range",
+              "attributes": []
+            },
+            {
+              "name": "ModelVisible",
+              "type": "bool",
+              "description": "Model Visibility",
+              "attributes": []
+            },
+            {
+              "name": "ModelShow",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "FootballGoal",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Team_Deprecated",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "TeamSeq",
+              "type": "int",
+              "description": "Team number",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "LootItemBoxSoccer",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "LootSoccer",
+              "type": "LootSoccerType",
+              "description": "Loot Soccer",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Football.fcc",
+            "blob_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/GameResult.fcc",
+      "source_sha": "72d446f18b76441cccf61289c62545b767463570",
+      "text_length": 10053,
+      "functions": [
+        {
+          "name": "GetPlayerScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerScore_Deprecated(target entity<Player>, scoreType ScoreType) int",
+          "parameters_text": "target entity<Player>, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the total score of the player's specified score type",
+          "doc_title": "Get player score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerScore",
+          "signature": "[deprecated] func GetPlayerScore(target entity<Player>, scoreType ScoreType) int",
+          "parameters_text": "target entity<Player>, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the total score of the player's specified score type",
+          "doc_title": "Get player score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetPlayerScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetPlayerScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetPlayerScore_Deprecated(target entity<Player>, scoreType ScoreType, value int)",
+          "parameters_text": "target entity<Player>, scoreType ScoreType, value int",
+          "return_type": null,
+          "description": "Set the round score of the player's specified scoring type",
+          "doc_title": "Set player's round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            },
+            {
+              "name": "value",
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetPlayerScore",
+          "signature": "[deprecated] func SetPlayerScore(target entity<Player>, scoreType ScoreType, value int)",
+          "parameters_text": "target entity<Player>, scoreType ScoreType, value int",
+          "return_type": null,
+          "description": "Set the round score of the player's specified scoring type",
+          "doc_title": "Set player's round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            },
+            {
+              "name": "value",
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetPlayerScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamScore_Deprecated(target entity<Team>, scoreType ScoreType) int",
+          "parameters_text": "target entity<Team>, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the total score of the team's specified points type",
+          "doc_title": "Get team total score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamScore",
+          "signature": "[deprecated] func GetTeamScore(target entity<Team>, scoreType ScoreType) int",
+          "parameters_text": "target entity<Team>, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the total score of the team's specified points type",
+          "doc_title": "Get team total score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTeamScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetTeamScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetTeamScore_Deprecated(target entity<Team>, scoreType ScoreType, value int)",
+          "parameters_text": "target entity<Team>, scoreType ScoreType, value int",
+          "return_type": null,
+          "description": "Set the round score of the team's specified scoring type",
+          "doc_title": "Set team current round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            },
+            {
+              "name": "value",
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetTeamScore",
+          "signature": "[deprecated] func SetTeamScore(target entity<Team>, scoreType ScoreType, value int)",
+          "parameters_text": "target entity<Team>, scoreType ScoreType, value int",
+          "return_type": null,
+          "description": "Set the round score of the team's specified scoring type",
+          "doc_title": "Set team current round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            },
+            {
+              "name": "value",
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetTeamScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRoundScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRoundScore_Deprecated(target entity<Player>, roundIndex int, scoreType ScoreType) int",
+          "parameters_text": "target entity<Player>, roundIndex int, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the player's score for a specified round and point type",
+          "doc_title": "Obtain player round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRoundScore",
+          "signature": "[deprecated] func GetPlayerRoundScore(target entity<Player>, roundIndex int, scoreType ScoreType) int",
+          "parameters_text": "target entity<Player>, roundIndex int, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the player's score for a specified round and point type",
+          "doc_title": "Obtain player round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetPlayerRoundScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRoundScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRoundScore_Deprecated(target entity<Team>, roundIndex int, scoreType ScoreType) int",
+          "parameters_text": "target entity<Team>, roundIndex int, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the score of the team's specified round and points type",
+          "doc_title": "Get team round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRoundScore",
+          "signature": "[deprecated] func GetTeamRoundScore(target entity<Team>, roundIndex int, scoreType ScoreType) int",
+          "parameters_text": "target entity<Team>, roundIndex int, scoreType ScoreType",
+          "return_type": "int",
+          "description": "Get the score of the team's specified round and points type",
+          "doc_title": "Get team round score",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Team Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Points Type"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Points"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTeamRoundScore_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRank_Deprecated(target entity<Player>) int",
+          "parameters_text": "target entity<Player>",
+          "return_type": "int",
+          "description": "Get the player's overall game ranking",
+          "doc_title": "Get Player Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRank",
+          "signature": "[deprecated] func GetPlayerRank(target entity<Player>) int",
+          "parameters_text": "target entity<Player>",
+          "return_type": "int",
+          "description": "Get the player's overall game ranking",
+          "doc_title": "Get Player Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetPlayerRank_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRank_Deprecated(target entity<Team>) int",
+          "parameters_text": "target entity<Team>",
+          "return_type": "int",
+          "description": "Get the overall ranking of the team game",
+          "doc_title": "Get Team Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Deprecated"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRank",
+          "signature": "[deprecated] func GetTeamRank(target entity<Team>) int",
+          "parameters_text": "target entity<Team>",
+          "return_type": "int",
+          "description": "Get the overall ranking of the team game",
+          "doc_title": "Get Team Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Deprecated"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTeamRank_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRoundRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRoundRank_Deprecated(target entity<Player>, roundIndex int) int",
+          "parameters_text": "target entity<Player>, roundIndex int",
+          "return_type": "int",
+          "description": "Get the player's ranking in a specified round",
+          "doc_title": "Get Player Round Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetPlayerRoundRank",
+          "signature": "[deprecated] func GetPlayerRoundRank(target entity<Player>, roundIndex int) int",
+          "parameters_text": "target entity<Player>, roundIndex int",
+          "return_type": "int",
+          "description": "Get the player's ranking in a specified round",
+          "doc_title": "Get Player Round Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetPlayerRoundRank_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRoundRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRoundRank_Deprecated(target entity<Team>, roundIndex int) int",
+          "parameters_text": "target entity<Team>, roundIndex int",
+          "return_type": "int",
+          "description": "Get the team's ranking in a specified round",
+          "doc_title": "Get Team Round Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Deprecated"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "GetTeamRoundRank",
+          "signature": "[deprecated] func GetTeamRoundRank(target entity<Team>, roundIndex int) int",
+          "parameters_text": "target entity<Team>, roundIndex int",
+          "return_type": "int",
+          "description": "Get the team's ranking in a specified round",
+          "doc_title": "Get Team Round Rank",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Deprecated"
+            },
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round Index"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Ranking"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetTeamRoundRank_Deprecated` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetMatchResult_Deprecate",
+          "signature": "[deprecated] [platform_server] func SetMatchResult_Deprecate(player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>)",
+          "parameters_text": "player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>",
+          "return_type": null,
+          "description": "abandoned",
+          "doc_title": "Upload battle result",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "player entity"
+            },
+            {
+              "name": "result",
+              "type": "GameResultType",
+              "description": "results of a competition"
+            },
+            {
+              "name": "rank",
+              "type": "int",
+              "description": "abandoned"
+            },
+            {
+              "name": "scoreName",
+              "type": "List<string>",
+              "description": "abandoned"
+            },
+            {
+              "name": "value",
+              "type": "List<string>",
+              "description": "abandoned"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "SetMatchResult",
+          "signature": "[deprecated] func SetMatchResult(player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>)",
+          "parameters_text": "player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>",
+          "return_type": null,
+          "description": "abandoned",
+          "doc_title": "Upload battle result",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "player entity"
+            },
+            {
+              "name": "result",
+              "type": "GameResultType",
+              "description": "results of a competition"
+            },
+            {
+              "name": "rank",
+              "type": "int",
+              "description": "abandoned"
+            },
+            {
+              "name": "scoreName",
+              "type": "List<string>",
+              "description": "abandoned"
+            },
+            {
+              "name": "value",
+              "type": "List<string>",
+              "description": "abandoned"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetMatchResult_Deprecate` instead",
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPlayerScoreChange",
+          "signature": "[deprecated] [platform_server] event OnPlayerScoreChange(player entity<Player>, scoreType ScoreType, score int)",
+          "parameters_text": "player entity<Player>, scoreType ScoreType, score int",
+          "return_type": null,
+          "description": "Triggered when the player's score changes.",
+          "doc_title": "On Player Score Change",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players with changing points"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Types of change integrals"
+            },
+            {
+              "name": "score",
+              "type": "int",
+              "description": "The integral value after the integral changes"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "OnTeamScoreChange",
+          "signature": "[deprecated] [platform_server] event OnTeamScoreChange(team entity<Team>, scoreType ScoreType, score int)",
+          "parameters_text": "team entity<Team>, scoreType ScoreType, score int",
+          "return_type": null,
+          "description": "Triggered when the team score changes.",
+          "doc_title": "On Team Score Change",
+          "parameters": [
+            {
+              "name": "team",
+              "type": "entity<Team>",
+              "description": "Teams with changing points"
+            },
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Types of change integrals"
+            },
+            {
+              "name": "score",
+              "type": "int",
+              "description": "The integral value after the integral changes"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "OnPlayerRankChange",
+          "signature": "[deprecated] [platform_server] event OnPlayerRankChange(player entity<Player>, rank int)",
+          "parameters_text": "player entity<Player>, rank int",
+          "return_type": null,
+          "description": "Fired when a player's rank changes.",
+          "doc_title": "On Player Rank Change",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players with changing rankings"
+            },
+            {
+              "name": "rank",
+              "type": "int",
+              "description": "Ranking after change"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "OnTeamRoundRankChange",
+          "signature": "[deprecated] [platform_server] event OnTeamRoundRankChange(team entity<Team>, rank int)",
+          "parameters_text": "team entity<Team>, rank int",
+          "return_type": null,
+          "description": "Deprecated.",
+          "doc_title": "On Team Round Rank Change",
+          "parameters": [
+            {
+              "name": "team",
+              "type": "entity<Team>",
+              "description": "Deprecated"
+            },
+            {
+              "name": "rank",
+              "type": "int",
+              "description": "Ranking after change"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "OnScoreChange",
+          "signature": "[deprecated] [platform_server] event OnScoreChange(scoreType ScoreType, score int)",
+          "parameters_text": "scoreType ScoreType, score int",
+          "return_type": null,
+          "description": "Triggered when the entity's points change.",
+          "doc_title": "On Entity Score Change",
+          "parameters": [
+            {
+              "name": "scoreType",
+              "type": "ScoreType",
+              "description": "Types of change integrals"
+            },
+            {
+              "name": "score",
+              "type": "int",
+              "description": "The integral value after the integral changes"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Scoreable",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        },
+        {
+          "name": "OnRankChanged",
+          "signature": "[deprecated] [platform_server] event OnRankChanged(rank int)",
+          "parameters_text": "rank int",
+          "return_type": null,
+          "description": "Triggered when the entity's rank changes.",
+          "doc_title": "On Entity Rank Change",
+          "parameters": [
+            {
+              "name": "rank",
+              "type": "int",
+              "description": "Ranking after change"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Rankable",
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TargetScore",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "KillingScore",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PlayerRoundScoreType",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "PlayerRoundSortType",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TeamRoundScoreType",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TeamRoundSortType",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "MVPScoreType",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "MVPScoreWeight",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "RoundScore",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ShowScoreTypeResult",
+              "type": "List<int>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TeamScoreType",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TeamScoreOrder",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "PlayerScoreType",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "PlayerScoreOrder",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/GameResult.fcc",
+            "blob_sha": "72d446f18b76441cccf61289c62545b767463570"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Hostility.fcc",
+      "source_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320",
+      "text_length": 9866,
+      "functions": [
+        {
+          "name": "JoinTeam",
+          "signature": "[platform_server] func JoinTeam(target entity<Entity>, targetTeam entity<Team>, out var statusCode StatusCode)",
+          "parameters_text": "target entity<Entity>, targetTeam entity<Team>, out var statusCode StatusCode",
+          "return_type": null,
+          "description": "Making the target join the specified team, this will cause the target to leave the original team",
+          "doc_title": "Join Team",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target to join the team"
+            },
+            {
+              "name": "targetTeam",
+              "type": "entity<Team>",
+              "description": "The team Joined"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "statusCode",
+              "type": "StatusCode",
+              "description": "Success or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "JoinNewTeam",
+          "signature": "[platform_server] func JoinNewTeam(target entity<Entity>, out var newTeam entity<Team>, out var statusCode StatusCode)",
+          "parameters_text": "target entity<Entity>, out var newTeam entity<Team>, out var statusCode StatusCode",
+          "return_type": null,
+          "description": "Making the target join a new team,this will cause the target to leave the original team",
+          "doc_title": "Join New Team",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target to join the team"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "newTeam",
+              "type": "entity<Team>",
+              "description": "New team‘s name"
+            },
+            {
+              "name": "statusCode",
+              "type": "StatusCode",
+              "description": "Success or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "CreateFaction",
+          "signature": "[platform_server] func CreateFaction(out var createdEntity entity<Faction>)",
+          "parameters_text": "out var createdEntity entity<Faction>",
+          "return_type": null,
+          "description": "Create a faction entity",
+          "doc_title": "Create Faction",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Faction>",
+              "description": "Faction Entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "JoinFaction",
+          "signature": "[platform_server] func JoinFaction(target entity<Entity>, faction entity<Faction>)",
+          "parameters_text": "target entity<Entity>, faction entity<Faction>",
+          "return_type": null,
+          "description": "The target entity joins the specified faction",
+          "doc_title": "Join Faction",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "faction",
+              "type": "entity<Faction>",
+              "description": "Faction Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetAttackableFactions",
+          "signature": "[platform_server] func GetAttackableFactions(attacker entity<Faction>) List<entity<Faction>>",
+          "parameters_text": "attacker entity<Faction>",
+          "return_type": "List<entity<Faction>>",
+          "description": "Get the attackable faction of the faction",
+          "doc_title": "Get Attackable Factions",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Faction>",
+              "description": "Attack faction"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Faction>>",
+              "description": "List of faction entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackableFaction",
+          "signature": "[platform_server] func SetAttackableFaction(attacker entity<Faction>, target entity<Faction>, attackable bool)",
+          "parameters_text": "attacker entity<Faction>, target entity<Faction>, attackable bool",
+          "return_type": null,
+          "description": "Set the attackable faction of the faction",
+          "doc_title": "Set Attackable Faction",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Faction>",
+              "description": "Attack faction"
+            },
+            {
+              "name": "target",
+              "type": "entity<Faction>",
+              "description": "Target faction"
+            },
+            {
+              "name": "attackable",
+              "type": "bool",
+              "description": "Attackable or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackablePlayer_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetAttackablePlayer_Deprecated(attacker entity<Player>, target entity<Player>, attackable AttackableType)",
+          "parameters_text": "attacker entity<Player>, target entity<Player>, attackable AttackableType",
+          "return_type": null,
+          "description": "Set attackable players",
+          "doc_title": "Player attack setting",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Can attack players"
+            },
+            {
+              "name": "attackable",
+              "type": "AttackableType",
+              "description": "Is it attackable?"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackablePlayer",
+          "signature": "[deprecated] func SetAttackablePlayer(attacker entity<Player>, target entity<Player>, attackable AttackableType)",
+          "parameters_text": "attacker entity<Player>, target entity<Player>, attackable AttackableType",
+          "return_type": null,
+          "description": "Set attackable players",
+          "doc_title": "Player attack setting",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Can attack players"
+            },
+            {
+              "name": "attackable",
+              "type": "AttackableType",
+              "description": "Is it attackable?"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetAttackablePlayer_Deprecated` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackableTeam",
+          "signature": "[platform_server] func SetAttackableTeam(attacker entity<Team>, target entity<Team>, attackable bool)",
+          "parameters_text": "attacker entity<Team>, target entity<Team>, attackable bool",
+          "return_type": null,
+          "description": "Set the team's attackable team",
+          "doc_title": "Set Attackable Team",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Team>",
+              "description": "Attacking Team"
+            },
+            {
+              "name": "target",
+              "type": "entity<Team>",
+              "description": "Target Team"
+            },
+            {
+              "name": "attackable",
+              "type": "bool",
+              "description": "Attackable or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetAttackablePlayer_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetAttackablePlayer_Deprecated(attacker entity<Player>) List<entity<Player>>",
+          "parameters_text": "attacker entity<Player>",
+          "return_type": "List<entity<Player>>",
+          "description": "Deprecated",
+          "doc_title": "Get attackable player",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Player>",
+              "description": "Deprecated"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Player>>",
+              "description": "List of player entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetAttackablePlayer",
+          "signature": "[deprecated] func GetAttackablePlayer(attacker entity<Player>) List<entity<Player>>",
+          "parameters_text": "attacker entity<Player>",
+          "return_type": "List<entity<Player>>",
+          "description": "Deprecated",
+          "doc_title": "Get attackable player",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Player>",
+              "description": "Deprecated"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Player>>",
+              "description": "List of player entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetAttackablePlayer_Deprecated` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "QuitFaction",
+          "signature": "[platform_server] func QuitFaction(target entity<Entity>)",
+          "parameters_text": "target entity<Entity>",
+          "return_type": null,
+          "description": "The specified entity exits the current faction",
+          "doc_title": "Quit Faction",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetFaction",
+          "signature": "[platform_server] func GetFaction(target entity<Entity>) entity<Faction>",
+          "parameters_text": "target entity<Entity>",
+          "return_type": "entity<Faction>",
+          "description": "Get the target's faction",
+          "doc_title": "Get Faction",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<Faction>",
+              "description": "Faction Entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "IsAttackAble",
+          "signature": "[platform_server] func IsAttackAble(attacker entity<Entity>, target entity<Entity>) bool",
+          "parameters_text": "attacker entity<Entity>, target entity<Entity>",
+          "return_type": "bool",
+          "description": "Determine whether the target can be attacked",
+          "doc_title": "Is AttackAble",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Attackable or not"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "IsActualAttackAble",
+          "signature": "[deprecated] func IsActualAttackAble(attacker entity<Entity>, target entity<Entity>) bool",
+          "parameters_text": "attacker entity<Entity>, target entity<Entity>",
+          "return_type": "bool",
+          "description": "Determine whether the target can be attacked",
+          "doc_title": "Is AttackAble",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Attackable or not"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `IsAttackAble` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackableEntity",
+          "signature": "[platform_server] func SetAttackableEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType)",
+          "parameters_text": "attacker entity<Entity>, target entity<Entity>, attackable AttackableType",
+          "return_type": null,
+          "description": "Sets the entity's attack target",
+          "doc_title": "Set Attackable Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "attackable",
+              "type": "AttackableType",
+              "description": "Attackable or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetActualAttackAbleEntity",
+          "signature": "[deprecated] func SetActualAttackAbleEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType)",
+          "parameters_text": "attacker entity<Entity>, target entity<Entity>, attackable AttackableType",
+          "return_type": null,
+          "description": "Sets the entity's attack target",
+          "doc_title": "Set Attackable Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "attackable",
+              "type": "AttackableType",
+              "description": "Attackable or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetAttackableEntity` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SetAttackAbleEntity",
+          "signature": "[deprecated] func SetAttackAbleEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType)",
+          "parameters_text": "attacker entity<Entity>, target entity<Entity>, attackable AttackableType",
+          "return_type": null,
+          "description": "Sets the entity's attack target",
+          "doc_title": "Set Attackable Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "attackable",
+              "type": "AttackableType",
+              "description": "Attackable or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetAttackableEntity` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetAttackableEntity",
+          "signature": "[platform_server] func GetAttackableEntity(attacker entity<Entity>) List<entity<Entity>>",
+          "parameters_text": "attacker entity<Entity>",
+          "return_type": "List<entity<Entity>>",
+          "description": "Gets the entity's attackable targets",
+          "doc_title": "Get Attack Able Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Entity>>",
+              "description": "List of attackable entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetActualAttackAbleEntity",
+          "signature": "[deprecated] func GetActualAttackAbleEntity(attacker entity<Entity>) List<entity<Entity>>",
+          "parameters_text": "attacker entity<Entity>",
+          "return_type": "List<entity<Entity>>",
+          "description": "Gets the entity's attackable targets",
+          "doc_title": "Get Attack Able Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Entity>>",
+              "description": "List of attackable entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetAttackableEntity` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetAttackAbleEntity",
+          "signature": "[deprecated] func GetAttackAbleEntity(attacker entity<Entity>) List<entity<Entity>>",
+          "parameters_text": "attacker entity<Entity>",
+          "return_type": "List<entity<Entity>>",
+          "description": "Gets the entity's attackable targets",
+          "doc_title": "Get Attack Able Entity",
+          "parameters": [
+            {
+              "name": "attacker",
+              "type": "entity<Entity>",
+              "description": "Attacker"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<entity<Entity>>",
+              "description": "List of attackable entities"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetAttackableEntity` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetPositionNearTeammate",
+          "signature": "[platform_server] func GetPositionNearTeammate(target entity<Player>) Vector3",
+          "parameters_text": "target entity<Player>",
+          "return_type": "Vector3",
+          "description": "Get the position of a random teammate. If there are no teammates, return the coordinates near yourself. Avoid the position of players who are unable to stand.",
+          "doc_title": "Get Position Near Teammate",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Coordinate near the target player's teammate"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "GetTeammateNearPosition",
+          "signature": "[deprecated] func GetTeammateNearPosition(target entity<Player>) Vector3",
+          "parameters_text": "target entity<Player>",
+          "return_type": "Vector3",
+          "description": "Get the position of a random teammate. If there are no teammates, return the coordinates near yourself. Avoid the position of players who are unable to stand.",
+          "doc_title": "Get Position Near Teammate",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Coordinate near the target player's teammate"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetPositionNearTeammate` instead",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnTeamRemove",
+          "signature": "[platform_server] event OnTeamRemove(team entity<Team>)",
+          "parameters_text": "team entity<Team>",
+          "return_type": null,
+          "description": "Triggered when a team is removed.",
+          "doc_title": "On Team Remove",
+          "parameters": [
+            {
+              "name": "team",
+              "type": "entity<Team>",
+              "description": "Removed Team"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "OnTeamAdd",
+          "signature": "[platform_server] event OnTeamAdd(team entity<Team>)",
+          "parameters_text": "team entity<Team>",
+          "return_type": null,
+          "description": "Triggered when a team is added.",
+          "doc_title": "On Team Add",
+          "parameters": [
+            {
+              "name": "team",
+              "type": "entity<Team>",
+              "description": "Added Team"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "OnChangeTeam",
+          "signature": "[platform_server] event OnChangeTeam(formerTeam entity<Team>, currentTeam entity<Team>)",
+          "parameters_text": "formerTeam entity<Team>, currentTeam entity<Team>",
+          "return_type": null,
+          "description": "Triggers when the team of the current entity changes.",
+          "doc_title": "On Change Team",
+          "parameters": [
+            {
+              "name": "formerTeam",
+              "type": "entity<Team>",
+              "description": "The team one belonged to before the change"
+            },
+            {
+              "name": "currentTeam",
+              "type": "entity<Team>",
+              "description": "The team one belongs to after the change"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Entity",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TeamNum",
+              "type": "int",
+              "description": "Total number of teams in the game",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "TeamMemberNum",
+              "type": "int",
+              "description": "Number of members in each team",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "Team",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "HostTeam",
+              "type": "entity<Team>",
+              "description": "The entity of the team the player belongs to",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Faction",
+              "type": "entity<Faction>",
+              "description": "Faction",
+              "attributes": [
+                "readonly",
+                "deprecated",
+                "readonly",
+                "deprecated",
+                "readonly",
+                "readonly",
+                "deprecated",
+                "readonly",
+                "readonly"
+              ]
+            },
+            {
+              "name": "NumberInFaction",
+              "type": "int",
+              "description": "Number in Faction",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PlayerIndexOfFaction",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "SpawnBox",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TeamIndex_Deprecated",
+              "type": "int",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "TeamSeq",
+              "type": "int",
+              "description": "Team number",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "Faction",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IsAced",
+              "type": "bool",
+              "description": "Whether all members of the camp are in death",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsACE",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsShowHudName",
+              "type": "bool",
+              "description": "Whether to show UI name",
+              "attributes": [
+                "readonly",
+                "readonly",
+                "deprecated",
+                "readonly",
+                "readonly",
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsShowMapInfo",
+              "type": "bool",
+              "description": "Whether to show map information",
+              "attributes": []
+            },
+            {
+              "name": "IsShowTag",
+              "type": "bool",
+              "description": "Whether to \"show\" or not",
+              "attributes": []
+            },
+            {
+              "name": "IsShowScan",
+              "type": "bool",
+              "description": "Whether to \"show\" or not",
+              "attributes": []
+            },
+            {
+              "name": "IsShowQuickMessage",
+              "type": "bool",
+              "description": "Is Show Quick Message",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
           }
         }
       ]
