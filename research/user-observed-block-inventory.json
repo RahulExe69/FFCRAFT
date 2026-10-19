@@ -3172,6 +3172,10 @@
     {
       "finding": "Official docs separate API, Event, Type, and Enum references and expose more modules than the rough seven-category list.",
       "action": "Maintain both the user-facing visual-block taxonomy and an official-reference crosswalk rather than forcing a one-to-one mapping."
+    },
+    {
+      "finding": "The exact 'Teleport' entry in Rough.txt appears in the official STD Library index with an [Obsolete] label.",
+      "action": "Mark it obsolete in the verified layer and identify a current supported replacement before using it in a new implementation."
     }
   ],
   "counts": {
@@ -3255,6 +3259,18 @@
         "These names or close label variants appear in the official standard-library/API reference index."
       ],
       "implication": "Use exact API declarations for parameters, outputs, async behavior, server/client support, Mobile/PC support, and deprecation status before generating code."
+    },
+    {
+      "id": "obsolete-teleport-api",
+      "status": "officially marked obsolete",
+      "source_url": "https://ffcraftland.garena.com/en/docs/api-1-26",
+      "rough_inventory_matches": [
+        "Teleport"
+      ],
+      "findings": [
+        "The official STD Library navigation labels Teleport as obsolete."
+      ],
+      "implication": "Keep the raw Teleport block signature for compatibility research, but don't recommend it for new scripts before checking the current supported alternative in the target editor."
     }
   ]
 }
