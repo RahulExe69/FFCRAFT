@@ -12,14 +12,14 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 31,
-    "enums": 132,
-    "enum_members": 2210,
-    "functions": 554,
-    "events": 223,
-    "components": 395,
-    "aliases": 17,
-    "defined_types": 49
+    "libraries": 37,
+    "enums": 142,
+    "enum_members": 2263,
+    "functions": 640,
+    "events": 246,
+    "components": 413,
+    "aliases": 20,
+    "defined_types": 50
   },
   "libraries": [
     {
@@ -15955,6 +15955,908 @@
       ],
       "components": [
         "MorphObject"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Other.fcc",
+      "source_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead",
+      "bytes_text": 4481,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 9,
+      "event_count": 4,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "GiveJailBreakReward",
+          "signature": "[platform_server] func GiveJailBreakReward(target entity<Player>, count int, realCoin bool) /**"
+        },
+        {
+          "name": "UpdateJailBreakMission",
+          "signature": "[platform_server] func UpdateJailBreakMission(target entity<Player>, missionID int, value int) /**"
+        },
+        {
+          "name": "QuitJailBreakMiniGame",
+          "signature": "[platform_server] func QuitJailBreakMiniGame(target entity<Player>, gameID int) /**"
+        },
+        {
+          "name": "GiveJailBreakItem",
+          "signature": "[platform_server] func GiveJailBreakItem(target entity<Player>, itemType int, itemID int) /**"
+        },
+        {
+          "name": "InfectionZombieGrowUp",
+          "signature": "[platform_server] func InfectionZombieGrowUp(target entity<Player>) /**"
+        },
+        {
+          "name": "ReadCSVFromServer",
+          "signature": "[platform_server] func ReadCSVFromServer(sheetName string) List<List<object>>"
+        },
+        {
+          "name": "ReadCSVRowFromServer",
+          "signature": "[platform_server] func ReadCSVRowFromServer(sheetName string, row int) List<object>"
+        },
+        {
+          "name": "ReadCSVColumnFromServer",
+          "signature": "[platform_server] func ReadCSVColumnFromServer(sheetName string, column int) List<object>"
+        },
+        {
+          "name": "ReadCSVCellFromServer",
+          "signature": "[platform_server] func ReadCSVCellFromServer(sheetName string, row int, column int) object"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnJailBreakAreaBegin",
+          "signature": "[platform_server] event OnJailBreakAreaBegin()"
+        },
+        {
+          "name": "OnJailBreakAreaEnd",
+          "signature": "[platform_server] event OnJailBreakAreaEnd()"
+        },
+        {
+          "name": "OnJailBreakPlayerJoin",
+          "signature": "[platform_server] event OnJailBreakPlayerJoin(player entity<Player>)"
+        },
+        {
+          "name": "OnJailBreakPlayerQuit",
+          "signature": "[platform_server] event OnJailBreakPlayerQuit(player entity<Player>)"
+        }
+      ],
+      "components": [
+        "Player",
+        "JailBreakArea"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Physics.fcc",
+      "source_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6",
+      "bytes_text": 29833,
+      "enum_count": 5,
+      "enum_member_count": 22,
+      "function_count": 33,
+      "event_count": 11,
+      "component_count": 0,
+      "alias_count": 1,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "RigidbodyType",
+          "members": [
+            {
+              "name": "Static",
+              "value": "1",
+              "notes": "Static: Completely stationary. Minimum Performance"
+            },
+            {
+              "name": "Dynamic",
+              "value": "2",
+              "notes": "Dynamic: Normal force application. Least performance"
+            },
+            {
+              "name": "Kinematic",
+              "value": "3",
+              "notes": "Kinematic: Motion can be controlled by scripting and can be considered as mass infinite"
+            }
+          ]
+        },
+        {
+          "name": "RigidbodyConstrainType",
+          "members": [
+            {
+              "name": "None",
+              "value": "0",
+              "notes": "None: None"
+            },
+            {
+              "name": "FreezeNone",
+              "value": "0",
+              "notes": "@deprecated Use `None` instead"
+            },
+            {
+              "name": "FreezePositionX",
+              "value": "2",
+              "notes": "Freeze Position X: Freeze Position X"
+            },
+            {
+              "name": "FreezePositionY",
+              "value": "4",
+              "notes": "Freeze Position Y: Freeze Position Y"
+            },
+            {
+              "name": "FreezePositionZ",
+              "value": "8",
+              "notes": "Freeze Position Z: Freeze Position Z"
+            },
+            {
+              "name": "FreezeRotationX",
+              "value": "16",
+              "notes": "Freeze Rotation X: Restricted rotation around X-axis"
+            },
+            {
+              "name": "FreezeRotationY",
+              "value": "32",
+              "notes": "Freeze Rotation Y: Restriction of rotation around the Y-axis"
+            },
+            {
+              "name": "FreezeRotationZ",
+              "value": "64",
+              "notes": "Freeze Rotation Z: Limit rotation around the Z-axis"
+            },
+            {
+              "name": "FreezePosition",
+              "value": "14",
+              "notes": "Freeze Position: Freeze Position"
+            },
+            {
+              "name": "FreezeRotation",
+              "value": "112",
+              "notes": "Freeze Rotation: Freeze Rotation"
+            },
+            {
+              "name": "FreezeAll",
+              "value": "126",
+              "notes": "Freeze All: Freeze All"
+            }
+          ]
+        },
+        {
+          "name": "ForceType",
+          "members": [
+            {
+              "name": "Force",
+              "value": "1",
+              "notes": "Force: Generate a specified amount of force"
+            },
+            {
+              "name": "Acceleration",
+              "value": "2",
+              "notes": "Acceleration: Generate an acceleration of a specified magnitude"
+            },
+            {
+              "name": "Impulse",
+              "value": "3",
+              "notes": "Impulse: Generate an impulse of a specified magnitude"
+            },
+            {
+              "name": "Velocity",
+              "value": "4",
+              "notes": "Velocity: Generate a specified amount of velocity"
+            }
+          ]
+        },
+        {
+          "name": "RaycastLayerType",
+          "members": [
+            {
+              "name": "Static",
+              "value": "0",
+              "notes": "Static: (Deprecated, please do not use)"
+            },
+            {
+              "name": "Charactor",
+              "value": "1",
+              "notes": "Character: (Deprecated, please do not use)"
+            }
+          ]
+        },
+        {
+          "name": "RayCastLayerType",
+          "members": [
+            {
+              "name": "Static",
+              "value": "0",
+              "notes": "Static: (Deprecated, please do not use)"
+            },
+            {
+              "name": "Charactor",
+              "value": "1",
+              "notes": "Character: (Deprecated, please do not use)"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "BoxCast",
+          "signature": "func BoxCast(halfExtents Vector3, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "SphereCast",
+          "signature": "func SphereCast(radius float, center Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "CapsuleCast",
+          "signature": "func CapsuleCast(radius float, height float, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "BoxOverlap",
+          "signature": "func BoxOverlap(halfExtents Vector3, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "SphereOverlap",
+          "signature": "func SphereOverlap(radius float, center Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "CapsuleOverlap",
+          "signature": "func CapsuleOverlap(radius float, height float, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>) /**"
+        },
+        {
+          "name": "AddForce",
+          "signature": "func AddForce(target PhysicalObject, force Vector3, forceMode ForceType) /**"
+        },
+        {
+          "name": "AddForceAtPosition",
+          "signature": "func AddForceAtPosition(target entity<Rigidbody>, force Vector3, position Vector3, forceMode ForceType) /**"
+        },
+        {
+          "name": "AddTorque",
+          "signature": "func AddTorque(target entity<Rigidbody>, torque Vector3, forceMode ForceType) /**"
+        },
+        {
+          "name": "MovePosition",
+          "signature": "func MovePosition(target entity<Rigidbody>, position Vector3) //@deprecated Use `MovePosition` instead"
+        },
+        {
+          "name": "MovingPosition",
+          "signature": "[deprecated] func MovingPosition(target entity<Rigidbody>, position Vector3) /**"
+        },
+        {
+          "name": "MoveRotation",
+          "signature": "func MoveRotation(target entity<Rigidbody>, position Quaternion) //@deprecated Use `MoveRotation` instead"
+        },
+        {
+          "name": "MovingRotation",
+          "signature": "[deprecated] func MovingRotation(target entity<Rigidbody>, position Quaternion) /**"
+        },
+        {
+          "name": "Sleep",
+          "signature": "func Sleep(target entity<Rigidbody>) /**"
+        },
+        {
+          "name": "Wakeup",
+          "signature": "func Wakeup(target entity<Rigidbody>) /**"
+        },
+        {
+          "name": "IsSleeping",
+          "signature": "func IsSleeping(target entity<Rigidbody>) bool"
+        },
+        {
+          "name": "SetSleepThreshold",
+          "signature": "func SetSleepThreshold(target entity<Rigidbody>, threshold float) /**"
+        },
+        {
+          "name": "GetSleepThreshold",
+          "signature": "func GetSleepThreshold(target entity<Rigidbody>) float"
+        },
+        {
+          "name": "SetGlobalSleepThreshold",
+          "signature": "func SetGlobalSleepThreshold(threshold float) /**"
+        },
+        {
+          "name": "GetGlobalSleepThreshold",
+          "signature": "func GetGlobalSleepThreshold() float"
+        },
+        {
+          "name": "MoveCCT_Deprecated",
+          "signature": "[deprecated] [platform_server] func MoveCCT_Deprecated(target entity<CharacterController>, displacement Vector3, out var isTopColliding bool, out var isSideColliding bool, out var isBottomColliding bool) /**"
+        },
+        {
+          "name": "TeleportCCT",
+          "signature": "[platform_server] func TeleportCCT(target entity<CharacterController>, position Vector3) /**"
+        },
+        {
+          "name": "MoveCCT",
+          "signature": "[platform_server] func MoveCCT(target entity<CharacterController>, movement Vector3) /**"
+        },
+        {
+          "name": "IsInsideSphere",
+          "signature": "func IsInsideSphere(target entity, center Vector3, radius float) bool"
+        },
+        {
+          "name": "IsEntityInsideSphere",
+          "signature": "[deprecated] func IsEntityInsideSphere(target entity, center Vector3, radius float) bool"
+        },
+        {
+          "name": "IsInsideCylinder",
+          "signature": "func IsInsideCylinder(target entity, center Vector3, radius float, height float, rotation Vector3) bool"
+        },
+        {
+          "name": "IsEntityInsideCylinder",
+          "signature": "[deprecated] func IsEntityInsideCylinder(target entity, center Vector3, radius float, height float, rotation Vector3) bool"
+        },
+        {
+          "name": "IsInsideBox",
+          "signature": "func IsInsideBox(target entity, center Vector3, length float, width float, height float, rotation Vector3) bool"
+        },
+        {
+          "name": "IsEntityInsideBox",
+          "signature": "[deprecated] func IsEntityInsideBox(target entity, center Vector3, length float, width float, height float, rotation Vector3) bool"
+        },
+        {
+          "name": "IsInsideSector",
+          "signature": "func IsInsideSector(target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3) bool"
+        },
+        {
+          "name": "IsEntityInsideSector",
+          "signature": "[deprecated] func IsEntityInsideSector(target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3) bool"
+        },
+        {
+          "name": "SingleRaycast",
+          "signature": "func SingleRaycast(startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities entity<Entity>, out var hitPoints Vector3, out var hitDistances float, out var hitNormals Vector3) /**"
+        },
+        {
+          "name": "MultiRaycast",
+          "signature": "func MultiRaycast(startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnCollisionEnter",
+          "signature": "[platform_server] event OnCollisionEnter(collidedEntity entity<Entity>)"
+        },
+        {
+          "name": "OnCollisionExit",
+          "signature": "[platform_server] event OnCollisionExit(collidedEntity entity<Entity>)"
+        },
+        {
+          "name": "OnCharacterControllerHit",
+          "signature": "[platform_server] event OnCharacterControllerHit(collidedEntity entity<Entity>)"
+        },
+        {
+          "name": "OnControllerColliderHit",
+          "signature": "[deprecated] event OnControllerColliderHit(collidedEntity entity<Entity>)"
+        },
+        {
+          "name": "OnEntityEnter",
+          "signature": "event OnEntityEnter(target entity<Entity>)"
+        },
+        {
+          "name": "OnEntityEnterTrigger",
+          "signature": "[deprecated] event OnEntityEnterTrigger(target entity<Entity>)"
+        },
+        {
+          "name": "OnEntityExit",
+          "signature": "event OnEntityExit(target entity<Entity>)"
+        },
+        {
+          "name": "OnEntityLeaveTrigger",
+          "signature": "[deprecated] event OnEntityLeaveTrigger(target entity<Entity>)"
+        },
+        {
+          "name": "OnWakeUp",
+          "signature": "[platform_server] event OnWakeUp()"
+        },
+        {
+          "name": "OnWakeup",
+          "signature": "[deprecated] event OnWakeup()"
+        },
+        {
+          "name": "OnSleep",
+          "signature": "[platform_server] event OnSleep()"
+        }
+      ],
+      "components": [],
+      "aliases": [
+        "PhysicalObject"
+      ],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Playable.fcc",
+      "source_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f",
+      "bytes_text": 24182,
+      "enum_count": 1,
+      "enum_member_count": 3,
+      "function_count": 25,
+      "event_count": 5,
+      "component_count": 13,
+      "alias_count": 2,
+      "defined_type_count": 1,
+      "enums": [
+        {
+          "name": "TweenStyle",
+          "members": [
+            {
+              "name": "Once",
+              "value": "1",
+              "notes": "Once: Once"
+            },
+            {
+              "name": "Loop",
+              "value": "2",
+              "notes": "Loop: Loop"
+            },
+            {
+              "name": "PingPong",
+              "value": "3",
+              "notes": "Ping Pong: Reciprocation"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "CreateTween",
+          "signature": "func CreateTween(target entity<Entity>, property Property, srcVal object, destVal object, style TweenStyle, curve BezierCurve, duration float, out var createdEntity entity<Tween>, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateSelfRelative",
+          "signature": "func CreateSelfRelative(target entity<Entity>, property Property, delta object, curve BezierCurve, style TweenStyle, duration float, out var createdEntity entity<SelfRelative>, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateCurve",
+          "signature": "func CreateCurve(curve List<float>) BezierCurve"
+        },
+        {
+          "name": "CreateTweenCurve",
+          "signature": "[deprecated] func CreateTweenCurve(curve List<float>) BezierCurve"
+        },
+        {
+          "name": "CreateFrameSelfRelative",
+          "signature": "func CreateFrameSelfRelative(target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool) //@deprecated Use `CreateFrameSelfRelative` instead"
+        },
+        {
+          "name": "CreateSelfRelativeFrame",
+          "signature": "[deprecated] func CreateSelfRelativeFrame(target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool) /**"
+        },
+        {
+          "name": "Reset",
+          "signature": "func Reset(target PlayableOrPlayables) /**"
+        },
+        {
+          "name": "SampleOnCurve",
+          "signature": "func SampleOnCurve(curve BezierCurve, samplePoint float) float"
+        },
+        {
+          "name": "GetResultFromCurve",
+          "signature": "func GetResultFromCurve(valueType Type, srcValue object, destVal object, curve BezierCurve, samplePoint float) float"
+        },
+        {
+          "name": "CreateSound",
+          "signature": "[platform_server] func CreateSound(out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool) //@deprecated Use `CreateSound` instead"
+        },
+        {
+          "name": "CreateSoundEntity",
+          "signature": "[deprecated] func CreateSoundEntity(out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateEffect",
+          "signature": "[platform_server] func CreateEffect(out var createdEntity entity<Effect>, target entity<Player>, resource VFXType, loopType LoopType, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateSoundClient",
+          "signature": "[platform_client] func CreateSoundClient(out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool) //@deprecated Use `CreateSoundClient` instead"
+        },
+        {
+          "name": "CreateSoundEntityClient",
+          "signature": "[deprecated] func CreateSoundEntityClient(out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateEffectClient",
+          "signature": "[platform_client] func CreateEffectClient(out var createdEntity entity<Effect>, resource VFXType, loopType LoopType, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateAlongPathMotion",
+          "signature": "func CreateAlongPathMotion(targetEntity entity<Entity>, path entity<CustomCurvePath>, style TweenStyle, speed float, tangentFacing bool, out var createdEntity entity<AlongPathMotion>, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateTimeLine",
+          "signature": "[preview] [platform_client] func CreateTimeLine(resID TimeLineID, out var entityVarName entity<Performance>) /**"
+        },
+        {
+          "name": "SetTimeLineTrackActor",
+          "signature": "[preview] [platform_client] func SetTimeLineTrackActor(timeLineEntity entity<Performance>, trackName string, actorEntity entity<Entity>) /**"
+        },
+        {
+          "name": "CreateTween_Deprecated",
+          "signature": "[deprecated] [platform_server] func CreateTween_Deprecated(target entity<Entity>, propertyID Property, startValue object, targetValue object, method TweenStyle, curve entity<TweenCurve_Deprecated>, duration float, out var createdEntity entity<Tween>) /**"
+        },
+        {
+          "name": "NewTweenCurve_Deprecated",
+          "signature": "[deprecated] [platform_server] func NewTweenCurve_Deprecated(controlPoints List<float>) entity<TweenCurve_Deprecated>"
+        },
+        {
+          "name": "Play",
+          "signature": "func Play(target PlayableOrPlayables, reset bool) /**"
+        },
+        {
+          "name": "Pause",
+          "signature": "func Pause(target PlayableOrPlayables) /**"
+        },
+        {
+          "name": "CreateTrajectory",
+          "signature": "func CreateTrajectory(target entity<Entity>, initialVelocity Vector3, acceleration Vector3, maxDisplacement float, out var createdEntity entity<Trajectory>, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateFollow",
+          "signature": "func CreateFollow(target entity<Entity>, followTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<Follow>, autoPlay bool) /**"
+        },
+        {
+          "name": "CreateLookAt",
+          "signature": "func CreateLookAt(target entity<Entity>, lookAtTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<LookAt>, autoPlay bool) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnEachLoop",
+          "signature": "event OnEachLoop()"
+        },
+        {
+          "name": "OnStart",
+          "signature": "event OnStart(playable entity<Playable>)"
+        },
+        {
+          "name": "OnEnd",
+          "signature": "event OnEnd(playable entity<Playable>)"
+        },
+        {
+          "name": "OnResume",
+          "signature": "event OnResume(playable entity<Playable>)"
+        },
+        {
+          "name": "OnPause",
+          "signature": "event OnPause(playable entity<Playable>)"
+        }
+      ],
+      "components": [
+        "Playable",
+        "Loopable",
+        "TweenCurve_Deprecated",
+        "Tween",
+        "Trajectory",
+        "SelfRelative",
+        "FrameSelfRelative",
+        "RelativeFrame",
+        "Follow",
+        "PositionFollow",
+        "LookAt",
+        "PlayableLookAt",
+        "AlongPathMotion"
+      ],
+      "aliases": [
+        "PlayableOrPlayables",
+        "PlayableOrPlayableList"
+      ],
+      "defined_types": [
+        "BezierCurve"
+      ]
+    },
+    {
+      "path": "library/release/Premium.fcc",
+      "source_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7",
+      "bytes_text": 2321,
+      "enum_count": 1,
+      "enum_member_count": 3,
+      "function_count": 6,
+      "event_count": 3,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "PremiumState",
+          "members": [
+            {
+              "name": "Expire",
+              "value": "0",
+              "notes": "Expire: Membership expiration"
+            },
+            {
+              "name": "Become",
+              "value": "1",
+              "notes": "Activate: Become a member"
+            },
+            {
+              "name": "Renewal",
+              "value": "2",
+              "notes": "Renew: Renew membership"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "OpenPremiumCenter_Client",
+          "signature": "[platform_client] func OpenPremiumCenter_Client(out var status StatusCode) /**"
+        },
+        {
+          "name": "GetPremiumExpireDate",
+          "signature": "[platform_server] func GetPremiumExpireDate(player entity<Player>, out var result int64, out var status StatusCode) /**"
+        },
+        {
+          "name": "IsPremium_Client",
+          "signature": "[platform_client] func IsPremium_Client(out var status StatusCode, out var result bool) /**"
+        },
+        {
+          "name": "GetPremiumExpireDate_Client",
+          "signature": "[platform_client] func GetPremiumExpireDate_Client(out var result int64, out var status StatusCode) /**"
+        },
+        {
+          "name": "IsPremium",
+          "signature": "[platform_server] func IsPremium(player entity<Player>, out var status StatusCode, out var result bool) /**"
+        },
+        {
+          "name": "OpenPremiumCenter",
+          "signature": "[platform_server] func OpenPremiumCenter(player entity<Player>, out var status StatusCode) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPremiumChange",
+          "signature": "event OnPremiumChange(state PremiumState)"
+        },
+        {
+          "name": "OnPlayerEnterPremiumCenter",
+          "signature": "event OnPlayerEnterPremiumCenter()"
+        },
+        {
+          "name": "OnPlayerLeavePremiumCenter",
+          "signature": "event OnPlayerLeavePremiumCenter()"
+        }
+      ],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/PropertyFormula.fcc",
+      "source_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3",
+      "bytes_text": 6412,
+      "enum_count": 3,
+      "enum_member_count": 25,
+      "function_count": 10,
+      "event_count": 0,
+      "component_count": 1,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "PropertyFormulaFactorType",
+          "members": [
+            {
+              "name": "MinValue",
+              "value": "1",
+              "notes": "Min Value: Min"
+            },
+            {
+              "name": "MaxValue",
+              "value": "2",
+              "notes": "Max Value: Max"
+            },
+            {
+              "name": "BaseCoefficient",
+              "value": "3",
+              "notes": "Base Coefficient: Base coefficient, multiplied by the original value before all calculations are performed."
+            },
+            {
+              "name": "BaseMultiplier",
+              "value": "3",
+              "notes": "@deprecated Use `BaseCoefficient` instead"
+            },
+            {
+              "name": "PreAccumulator",
+              "value": "4",
+              "notes": "Pre-Accumulator: Pre-accumulator, accumulates before multiplication, participates in multiplication calculations"
+            },
+            {
+              "name": "BeforeAccumulator",
+              "value": "4",
+              "notes": "@deprecated Use `PreAccumulator` instead"
+            },
+            {
+              "name": "Multiplier",
+              "value": "5",
+              "notes": "Multiplier: Consecutive multipliers, for example (reduced to 90%, strengthened to 110%) have the effect of Value*90%*110%."
+            },
+            {
+              "name": "MultiplyAccumulate",
+              "value": "6",
+              "notes": "Multiply Accumulate: The effect of a multiplication accumulator, e.g. (add 10%, add 5%) is Value*(1+10%+5%)"
+            },
+            {
+              "name": "SumMultiplier",
+              "value": "6",
+              "notes": "@deprecated Use `MultiplyAccumulate` instead"
+            },
+            {
+              "name": "PostAccumulator",
+              "value": "7",
+              "notes": "Post-Accumulator: Post accumulator, not involved in multiplication calculations, stacked at the end"
+            },
+            {
+              "name": "AfterAccumulator",
+              "value": "7",
+              "notes": "@deprecated Use `PostAccumulator` instead"
+            }
+          ]
+        },
+        {
+          "name": "FormulaFactorType",
+          "members": [
+            {
+              "name": "MinValue",
+              "value": "1",
+              "notes": "Min Value: Min"
+            },
+            {
+              "name": "MaxValue",
+              "value": "2",
+              "notes": "Max Value: Max"
+            },
+            {
+              "name": "BaseCoefficient",
+              "value": "3",
+              "notes": "Base Coefficient: Base coefficient, multiplied by the original value before all calculations are performed."
+            },
+            {
+              "name": "BaseMultiplier",
+              "value": "3",
+              "notes": "@deprecated Use `BaseCoefficient` instead"
+            },
+            {
+              "name": "PreAccumulator",
+              "value": "4",
+              "notes": "Pre-Accumulator: Pre-accumulator, accumulates before multiplication, participates in multiplication calculations"
+            },
+            {
+              "name": "BeforeAccumulator",
+              "value": "4",
+              "notes": "@deprecated Use `PreAccumulator` instead"
+            },
+            {
+              "name": "Multiplier",
+              "value": "5",
+              "notes": "Multiplier: Consecutive multipliers, for example (reduced to 90%, strengthened to 110%) have the effect of Value*90%*110%."
+            },
+            {
+              "name": "MultiplyAccumulate",
+              "value": "6",
+              "notes": "Multiply Accumulate: The effect of a multiplication accumulator, e.g. (add 10%, add 5%) is Value*(1+10%+5%)"
+            },
+            {
+              "name": "SumMultiplier",
+              "value": "6",
+              "notes": "@deprecated Use `MultiplyAccumulate` instead"
+            },
+            {
+              "name": "PostAccumulator",
+              "value": "7",
+              "notes": "Post-Accumulator: Post accumulator, not involved in multiplication calculations, stacked at the end"
+            },
+            {
+              "name": "AfterAccumulator",
+              "value": "7",
+              "notes": "@deprecated Use `PostAccumulator` instead"
+            }
+          ]
+        },
+        {
+          "name": "PropertyModifyType",
+          "members": [
+            {
+              "name": "Add",
+              "value": "1",
+              "notes": "Add: Add"
+            },
+            {
+              "name": "Multiply",
+              "value": "2",
+              "notes": "Multiply: Multiply"
+            },
+            {
+              "name": "Mul",
+              "value": "2",
+              "notes": "@deprecated Use `Multiply` instead"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "AddFormulaPropertyFactor",
+          "signature": "[platform_server] func AddFormulaPropertyFactor(target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float) //@deprecated Use `AddFormulaPropertyFactor` instead"
+        },
+        {
+          "name": "AddPropertyFactor",
+          "signature": "[deprecated] func AddPropertyFactor(target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float) /**"
+        },
+        {
+          "name": "ClearFormulaPropertyFactor",
+          "signature": "[platform_server] func ClearFormulaPropertyFactor(target entity<Formulable>) //@deprecated Use `ClearFormulaPropertyFactor` instead"
+        },
+        {
+          "name": "ClearAllPropertyFactor",
+          "signature": "[deprecated] func ClearAllPropertyFactor(target entity<Formulable>) /**"
+        },
+        {
+          "name": "SetFormulaPropertyRelative",
+          "signature": "[platform_server] func SetFormulaPropertyRelative(target entity<Formulable>, property Property, modifyType PropertyModifyType, value float) //@deprecated Use `SetFormulaPropertyRelative` instead"
+        },
+        {
+          "name": "SetPropertyRelative",
+          "signature": "[deprecated] func SetPropertyRelative(target entity<Formulable>, property Property, modifyType PropertyModifyType, value float) /**"
+        },
+        {
+          "name": "SetFormulaPropertyAbsolute",
+          "signature": "[platform_server] func SetFormulaPropertyAbsolute(target entity<Formulable>, property Property, value float) //@deprecated Use `SetFormulaPropertyAbsolute` instead"
+        },
+        {
+          "name": "SetPropertyAbsolute",
+          "signature": "[deprecated] func SetPropertyAbsolute(target entity<Formulable>, property Property, value float) /**"
+        },
+        {
+          "name": "RemoveFormulaPropertyFactor",
+          "signature": "[platform_server] func RemoveFormulaPropertyFactor(target entity<Formulable>, property Property) //@deprecated Use `RemoveFormulaPropertyFactor` instead"
+        },
+        {
+          "name": "ClearPropertyFactor",
+          "signature": "[deprecated] func ClearPropertyFactor(target entity<Formulable>, property Property)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "PropertyFormula"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/SafeZone.fcc",
+      "source_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776",
+      "bytes_text": 3987,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 3,
+      "event_count": 0,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "EnableSafeZone",
+          "signature": "[platform_server] func EnableSafeZone(center Vector3, radius float, waitTime float, duration float, damage float) /**"
+        },
+        {
+          "name": "DisableSafeZone",
+          "signature": "[platform_server] func DisableSafeZone() /**"
+        },
+        {
+          "name": "EnableMovingSafeZone",
+          "signature": "[platform_server] func EnableMovingSafeZone(startPosition Vector3, targetPosition Vector3, initRadius float, finalRadius float, duration float, damage float)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "Global",
+        "SafeZone"
       ],
       "aliases": [],
       "defined_types": []
