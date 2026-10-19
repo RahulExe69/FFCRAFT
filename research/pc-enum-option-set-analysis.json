@@ -1,0 +1,4697 @@
+{
+  "schema_version": "1.0",
+  "title": "Craftland PC enum option-set duplication analysis",
+  "generated_at": "2026-10-20",
+  "source": {
+    "catalog": "research/pc-library-symbol-catalog.json",
+    "mirror_repository": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
+    "snapshot_version": "1.5.0",
+    "source_class": "third-party mirrored extension library"
+  },
+  "stats": {
+    "enum_definitions": 144,
+    "distinct_enum_names": 144,
+    "groups_with_identical_member_sequence_across_different_enum_names": 42,
+    "duplicate_member_entries_avoided_if_options_displayed_once": 759
+  },
+  "meaning": "Some different enum names have an identical ordered member list in the mirror. The types may have different semantic/API roles; this analysis reduces repeated browsing only and does not declare them interchangeable. Keep all names and platform/API contexts distinct.",
+  "groups": [
+    {
+      "same_member_count": 155,
+      "types": [
+        {
+          "name": "DynamicCreateLevelObjectType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "DynamicCreateItemID",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "SquareBox",
+          "value": null,
+          "notes": "Square Wooden Crate: Square Wooden Crate"
+        },
+        {
+          "name": "LongBox",
+          "value": null,
+          "notes": "Long Wooden Crate: Long Wooden Crate"
+        },
+        {
+          "name": "Shrub",
+          "value": null,
+          "notes": "Bush-Covered Long Wooden Crate: Bush-Covered Long Wooden Crate"
+        },
+        {
+          "name": "Haystack",
+          "value": null,
+          "notes": "Haystack: Haystack"
+        },
+        {
+          "name": "WreckedCar",
+          "value": null,
+          "notes": "Wrecked Car: Wrecked Car"
+        },
+        {
+          "name": "Car",
+          "value": null,
+          "notes": "@deprecated Use `WreckedCar` instead"
+        },
+        {
+          "name": "WreckedBus",
+          "value": null,
+          "notes": "Wrecked Bus: Wrecked Bus"
+        },
+        {
+          "name": "Bus",
+          "value": null,
+          "notes": "@deprecated Use `WreckedBus` instead"
+        },
+        {
+          "name": "ContainerA",
+          "value": null,
+          "notes": "Container A: Container A"
+        },
+        {
+          "name": "ContainerB",
+          "value": null,
+          "notes": "Shipping Container B: Shipping Container B"
+        },
+        {
+          "name": "ContainerC",
+          "value": null,
+          "notes": "Shipping Container C: Shipping Container C"
+        },
+        {
+          "name": "Hut",
+          "value": null,
+          "notes": "Cabin: Cabin"
+        },
+        {
+          "name": "GuardTower",
+          "value": null,
+          "notes": "Turret: Turret"
+        },
+        {
+          "name": "Outpost",
+          "value": null,
+          "notes": "Guardhouse: Guardhouse"
+        },
+        {
+          "name": "HouseB",
+          "value": null,
+          "notes": "Two-Story House: Two-Story House"
+        },
+        {
+          "name": "SandStructure",
+          "value": null,
+          "notes": "Sand Sculpture: Sand Sculpture"
+        },
+        {
+          "name": "Fountain",
+          "value": null,
+          "notes": "Fountain: Fountain"
+        },
+        {
+          "name": "CherryBlossom",
+          "value": null,
+          "notes": "Cherry Blossom: Cherry Blossom"
+        },
+        {
+          "name": "HouseA",
+          "value": null,
+          "notes": "One-Story House: One-Story House"
+        },
+        {
+          "name": "HouseC",
+          "value": null,
+          "notes": "Three-Story House: Three-Story House"
+        },
+        {
+          "name": "BananaTree",
+          "value": null,
+          "notes": "Banana Tree: Banana Tree"
+        },
+        {
+          "name": "ToiletBowl",
+          "value": null,
+          "notes": "Toilet: Toilet"
+        },
+        {
+          "name": "Fence",
+          "value": null,
+          "notes": "Fence: Fence"
+        },
+        {
+          "name": "BreakableContainer",
+          "value": null,
+          "notes": "Destructible Container: Destructible Container"
+        },
+        {
+          "name": "BreakableFence",
+          "value": null,
+          "notes": "Destructible Fence: Destructible Fence"
+        },
+        {
+          "name": "BounceTire",
+          "value": null,
+          "notes": "Tire: Tire"
+        },
+        {
+          "name": "Bumpercar",
+          "value": null,
+          "notes": "Bumper Car: Bumper Car"
+        },
+        {
+          "name": "AmphibianCar",
+          "value": null,
+          "notes": "Amphibious Vehicle: Amphibious Vehicle"
+        },
+        {
+          "name": "Jeep",
+          "value": null,
+          "notes": "Jeep: Jeep"
+        },
+        {
+          "name": "Trashcan",
+          "value": null,
+          "notes": "Trash Can: Trash Can"
+        },
+        {
+          "name": "MedicalTent",
+          "value": null,
+          "notes": "Medical Tent: Medical Tent"
+        },
+        {
+          "name": "Garage",
+          "value": null,
+          "notes": "Garage: Garage"
+        },
+        {
+          "name": "PaintedWalls",
+          "value": null,
+          "notes": "Painted Wall: Painted Wall"
+        },
+        {
+          "name": "Torii",
+          "value": null,
+          "notes": "Torii: Torii"
+        },
+        {
+          "name": "IronPlatform",
+          "value": null,
+          "notes": "Iron Platform: Iron Platform"
+        },
+        {
+          "name": "SiteHut",
+          "value": null,
+          "notes": "Container House: Container House"
+        },
+        {
+          "name": "Trailer",
+          "value": null,
+          "notes": "Trailer: Trailer"
+        },
+        {
+          "name": "WallA",
+          "value": null,
+          "notes": "Wall A: Wall A"
+        },
+        {
+          "name": "PianoKey1",
+          "value": null,
+          "notes": "Musical Notes - Piano: Musical Notes - Piano"
+        },
+        {
+          "name": "PianoKey2",
+          "value": null,
+          "notes": "Musical Notes - Piano: Musical Notes - Piano"
+        },
+        {
+          "name": "DrumKey1",
+          "value": null,
+          "notes": "Musical Notes - Drum: Musical Notes - Drum"
+        },
+        {
+          "name": "DrumKey2",
+          "value": null,
+          "notes": "Musical Notes - Drum: Musical Notes - Drum"
+        },
+        {
+          "name": "ComboKeyA1",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer A: Musical Notes - Synthesizer A"
+        },
+        {
+          "name": "ComboKeyA2",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer A: Musical Notes - Synthesizer A"
+        },
+        {
+          "name": "ComboKeyB1",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer B: Musical Notes - Synthesizer B"
+        },
+        {
+          "name": "ComboKeyB2",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer B: Musical Notes - Synthesizer B"
+        },
+        {
+          "name": "ComboKeyC1",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer C: Musical Notes - Synthesizer C"
+        },
+        {
+          "name": "ComboKeyC2",
+          "value": null,
+          "notes": "Musical Notes - Synthesizer C: Musical Notes - Synthesizer C"
+        },
+        {
+          "name": "BuffGenerator",
+          "value": null,
+          "notes": "Buff Generator: Buff Generator"
+        },
+        {
+          "name": "Fan",
+          "value": null,
+          "notes": "Propeller Mechanism: Propeller Mechanisms"
+        },
+        {
+          "name": "FlyPan",
+          "value": null,
+          "notes": "Frying Pan Mechanism: Pan Loot"
+        },
+        {
+          "name": "Cube",
+          "value": null,
+          "notes": "Block Mechanism: Cube Loot"
+        },
+        {
+          "name": "Ring",
+          "value": null,
+          "notes": "Ring Mechanism: Circle Loot"
+        },
+        {
+          "name": "Hammer",
+          "value": null,
+          "notes": "Giant Hammer Mechanism: Mallet Machine"
+        },
+        {
+          "name": "Board",
+          "value": null,
+          "notes": "Moving Platform: Moving Board"
+        },
+        {
+          "name": "ShootingTarget",
+          "value": null,
+          "notes": "Moving Target: Moving Target"
+        },
+        {
+          "name": "FlexWall",
+          "value": null,
+          "notes": "Retractable Wall: Retractable Wall"
+        },
+        {
+          "name": "LootItemBox",
+          "value": null,
+          "notes": "Loot Weapon: Loot Point Weapon Component"
+        },
+        {
+          "name": "LootItemBoxAmmo",
+          "value": null,
+          "notes": "Loot Ammo: Loot Point Bullet Component"
+        },
+        {
+          "name": "LootItemBoxConsumableItem",
+          "value": null,
+          "notes": "Loot Consumable: Loot Point Expendable Item Component"
+        },
+        {
+          "name": "LootItemBoxProjectile",
+          "value": null,
+          "notes": "Loot Throwable: Loot Point Thrown Item Component"
+        },
+        {
+          "name": "LootItemBoxSight",
+          "value": null,
+          "notes": "Loot Scope: Loot Point Multiplier Component"
+        },
+        {
+          "name": "LootItemBoxArmor",
+          "value": null,
+          "notes": "Loot Armor: Loot Point Armor Component"
+        },
+        {
+          "name": "IPipe",
+          "value": null,
+          "notes": "I Pipe: I Pipe"
+        },
+        {
+          "name": "TPipe",
+          "value": null,
+          "notes": "T Pipe: T Pipe"
+        },
+        {
+          "name": "PipeIntersection",
+          "value": null,
+          "notes": "Cross Pipe: Cross Pipe"
+        },
+        {
+          "name": "PipeCorner",
+          "value": null,
+          "notes": "Elbow Pipe: Elbow Pipe"
+        },
+        {
+          "name": "MushShade",
+          "value": null,
+          "notes": "Giant Mushroom Cluster: Giant Mushroom Cluster"
+        },
+        {
+          "name": "Hanger",
+          "value": null,
+          "notes": "Drying Rack: Drying Rack"
+        },
+        {
+          "name": "WoodenPlank",
+          "value": null,
+          "notes": "Plank Bridge: Plank Bridge"
+        },
+        {
+          "name": "LatticeScreen",
+          "value": null,
+          "notes": "Lattice Screen: Lattice Screen"
+        },
+        {
+          "name": "Pillar",
+          "value": null,
+          "notes": "Concrete Column: Concrete Column"
+        },
+        {
+          "name": "Cactus",
+          "value": null,
+          "notes": "Cactus: Cactus"
+        },
+        {
+          "name": "LeaflessTree",
+          "value": null,
+          "notes": "Dead Wood: Dead Wood"
+        },
+        {
+          "name": "StoneLantern",
+          "value": null,
+          "notes": "Stone Lantern: Stone Lantern"
+        },
+        {
+          "name": "Streetlamp",
+          "value": null,
+          "notes": "Streetlight: Streetlight"
+        },
+        {
+          "name": "SolarPanel",
+          "value": null,
+          "notes": "Solar Panel: Solar Panel"
+        },
+        {
+          "name": "AirConditionerA",
+          "value": null,
+          "notes": "Air Conditioner: Air Conditioner"
+        },
+        {
+          "name": "Block",
+          "value": null,
+          "notes": "Square: Square"
+        },
+        {
+          "name": "Slope",
+          "value": null,
+          "notes": "Slope: Slope"
+        },
+        {
+          "name": "FoodTruck",
+          "value": null,
+          "notes": "Food Truck: Food Truck"
+        },
+        {
+          "name": "StatusTrigger",
+          "value": null,
+          "notes": "Death or Invincibility Trigger: Death or Invincibility Trigger"
+        },
+        {
+          "name": "CheckPoint",
+          "value": null,
+          "notes": "Checkpoint: Checkpoint"
+        },
+        {
+          "name": "FinishingPoint",
+          "value": null,
+          "notes": "Endpoint: End Position"
+        },
+        {
+          "name": "GiantDice",
+          "value": null,
+          "notes": "Dice: Dice"
+        },
+        {
+          "name": "Bench",
+          "value": null,
+          "notes": "Bench: Bench"
+        },
+        {
+          "name": "BusStop",
+          "value": null,
+          "notes": "Bus Stop: Bus Stop"
+        },
+        {
+          "name": "DogHouse",
+          "value": null,
+          "notes": "Dog House: Dog House"
+        },
+        {
+          "name": "AdBoard",
+          "value": null,
+          "notes": "Ad Board: Ad Board"
+        },
+        {
+          "name": "RefineryTank",
+          "value": null,
+          "notes": "Refinery Tank: Refinery Tank"
+        },
+        {
+          "name": "GraffitiWall",
+          "value": null,
+          "notes": "Graffiti Wall: Graffiti Wall"
+        },
+        {
+          "name": "Stable",
+          "value": null,
+          "notes": "Stable: Stable"
+        },
+        {
+          "name": "StoneBridge",
+          "value": null,
+          "notes": "Stone Arch Bridge: Stone Arch Bridge"
+        },
+        {
+          "name": "SunShade",
+          "value": null,
+          "notes": "Patio Set With Umbrella: Patio Set With Umbrella"
+        },
+        {
+          "name": "FinishLineArch",
+          "value": null,
+          "notes": "Finish Banner: Finish Banner"
+        },
+        {
+          "name": "Tower",
+          "value": null,
+          "notes": "Fortress: Fortress"
+        },
+        {
+          "name": "MonsterSpawn",
+          "value": null,
+          "notes": "Monster Spawn Point: Monster Spawn Point"
+        },
+        {
+          "name": "ZombieSpawn",
+          "value": null,
+          "notes": "@deprecated Use `MonsterSpawn` instead"
+        },
+        {
+          "name": "Marker",
+          "value": null,
+          "notes": "Mark: Mark"
+        },
+        {
+          "name": "MiniSentry",
+          "value": null,
+          "notes": "Mini Sentry: Turret"
+        },
+        {
+          "name": "Fortress",
+          "value": null,
+          "notes": "@deprecated Use `MiniSentry` instead"
+        },
+        {
+          "name": "CustomTrigger",
+          "value": null,
+          "notes": "Custom Trigger: Custom Trigger"
+        },
+        {
+          "name": "DoubleDoor",
+          "value": null,
+          "notes": "Double Door: Double Door"
+        },
+        {
+          "name": "Gate",
+          "value": null,
+          "notes": "@deprecated Use `DoubleDoor` instead"
+        },
+        {
+          "name": "Roadblock",
+          "value": null,
+          "notes": "Barricade: Barricade"
+        },
+        {
+          "name": "Stairs",
+          "value": null,
+          "notes": "Stairs: Stairs"
+        },
+        {
+          "name": "LandingB",
+          "value": null,
+          "notes": "Stair Landing B: Stair Landing B"
+        },
+        {
+          "name": "LandingA",
+          "value": null,
+          "notes": "Stair Landing A: Stair Landing A"
+        },
+        {
+          "name": "PhoneBooth",
+          "value": null,
+          "notes": "Phone Booth: Phone Booth"
+        },
+        {
+          "name": "BISGraffitiWall",
+          "value": null,
+          "notes": "BIS Themed Wall: BIS Themed Wall"
+        },
+        {
+          "name": "GraffitiFlowerbed",
+          "value": null,
+          "notes": "BIS Themed Flower Bed: BIS Themed Flower Bed"
+        },
+        {
+          "name": "VendingMachine",
+          "value": null,
+          "notes": "Vending Machine: Vending Machine"
+        },
+        {
+          "name": "Monster",
+          "value": null,
+          "notes": "Zombie: Monster Entities"
+        },
+        {
+          "name": "Zombie",
+          "value": null,
+          "notes": "@deprecated Use `Monster` instead"
+        },
+        {
+          "name": "UnitGenerator",
+          "value": null,
+          "notes": "Unit Generator: Unit Generator"
+        },
+        {
+          "name": "SuperCar",
+          "value": null,
+          "notes": "Sports Car: Sports Car"
+        },
+        {
+          "name": "TuTuCar",
+          "value": null,
+          "notes": "Tuk Tuk: Tuk Tuk"
+        },
+        {
+          "name": "BreakableBox",
+          "value": null,
+          "notes": "Destructible Wooden Crate: Destructible Wooden Crate"
+        },
+        {
+          "name": "PickUpTruck",
+          "value": null,
+          "notes": "SUV: SUV"
+        },
+        {
+          "name": "Motobike",
+          "value": null,
+          "notes": "Motobike: Motorbike"
+        },
+        {
+          "name": "MonsterTruck",
+          "value": null,
+          "notes": "Monster_Truck: Monster Truck"
+        },
+        {
+          "name": "CoinGenerator",
+          "value": null,
+          "notes": "Coin Generator: Coin Generator"
+        },
+        {
+          "name": "LandingC",
+          "value": null,
+          "notes": "Stair Landing C: Stair Landing C"
+        },
+        {
+          "name": "DirectionSign",
+          "value": null,
+          "notes": "Sign: Sign"
+        },
+        {
+          "name": "IronFence",
+          "value": null,
+          "notes": "Fence: Fence"
+        },
+        {
+          "name": "JerseyMachine",
+          "value": null,
+          "notes": "Jersey Machine: Jersey Machine"
+        },
+        {
+          "name": "Football",
+          "value": null,
+          "notes": "Soccer: Football"
+        },
+        {
+          "name": "ConcretePillar",
+          "value": null,
+          "notes": "Concrete Pillar: Concrete Pillar"
+        },
+        {
+          "name": "LootItemBoxSoccer",
+          "value": null,
+          "notes": "Loot Soccer: Loot Soccer Item Box"
+        },
+        {
+          "name": "JerryCan",
+          "value": null,
+          "notes": "Oil Drum: Oil Drum"
+        },
+        {
+          "name": "AbnormalGravZone",
+          "value": null,
+          "notes": "Low-Gravity Area: Low-Gravity Area"
+        },
+        {
+          "name": "WeaponGenerator",
+          "value": null,
+          "notes": "Weapon: Weapon"
+        },
+        {
+          "name": "IronFenceB",
+          "value": null,
+          "notes": "Fence B: Fence B"
+        },
+        {
+          "name": "BrickHouseA",
+          "value": null,
+          "notes": "Small House A: Small House A"
+        },
+        {
+          "name": "DamagedTruck",
+          "value": null,
+          "notes": "Damaged Truck: Damaged Truck"
+        },
+        {
+          "name": "BasicSphere",
+          "value": null,
+          "notes": "Basic Sphere: Basic Sphere"
+        },
+        {
+          "name": "BasicCone",
+          "value": null,
+          "notes": "Basic Cone: Basic Cone"
+        },
+        {
+          "name": "BasicCylinder",
+          "value": null,
+          "notes": "Basic Cylinder: Basic Cylinder"
+        },
+        {
+          "name": "Itementity",
+          "value": null,
+          "notes": "Consumable Generator: Consumable Generator"
+        },
+        {
+          "name": "CustomWaterZone",
+          "value": null,
+          "notes": "Custom Water Body: Custom Water Body"
+        },
+        {
+          "name": "Arrow",
+          "value": null,
+          "notes": "Arrow: Arrow"
+        },
+        {
+          "name": "ColorBlock",
+          "value": null,
+          "notes": "Dyed Block: Dyed Block"
+        },
+        {
+          "name": "ColorOilBarrel",
+          "value": null,
+          "notes": "Dyed Oil Drum: Dyed Oil Drum"
+        },
+        {
+          "name": "TextObject",
+          "value": null,
+          "notes": "Text: Text"
+        },
+        {
+          "name": "IconObject",
+          "value": null,
+          "notes": "Icon: Icon"
+        },
+        {
+          "name": "BlueDoll",
+          "value": null,
+          "notes": "Ice Doll: Ice Doll"
+        },
+        {
+          "name": "CapsuleTrigger",
+          "value": null,
+          "notes": "Capsule Trigger: Capsule Trigger"
+        },
+        {
+          "name": "SphereTrigger",
+          "value": null,
+          "notes": "Sphere Collision Trigger: Sphere Collision Trigger"
+        },
+        {
+          "name": "ReflectiveCube",
+          "value": null,
+          "notes": "Reflective Solid Color Basic Block 1: Reflective Solid Color Basic Block 1"
+        },
+        {
+          "name": "BumperCarFactory",
+          "value": null,
+          "notes": "Bumper Car Manufacturer: Bumper Car Manufacturer"
+        },
+        {
+          "name": "PlaidAmusementParkCube",
+          "value": null,
+          "notes": "Checkered Amusement Park Block: Checkered Amusement Park Block"
+        },
+        {
+          "name": "Billboard",
+          "value": null,
+          "notes": "Large Screen: Large Screen"
+        },
+        {
+          "name": "Podium",
+          "value": null,
+          "notes": "Podium: Podium"
+        },
+        {
+          "name": "GiantLollipop",
+          "value": null,
+          "notes": "Giant Lollipop: Giant Lollipop"
+        },
+        {
+          "name": "FoodTruckB",
+          "value": null,
+          "notes": "Food Truck B: Food Truck B"
+        }
+      ]
+    },
+    {
+      "same_member_count": 102,
+      "types": [
+        {
+          "name": "SoundEffectType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "SoundEffects",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Explosion",
+          "value": null,
+          "notes": "Explosion VFX: Grenade Explosion"
+        },
+        {
+          "name": "Gunfire",
+          "value": null,
+          "notes": "Gunfire: Gun Sound"
+        },
+        {
+          "name": "CountDownDiDi",
+          "value": null,
+          "notes": "Countdown Beep: Countdown Beep"
+        },
+        {
+          "name": "UITap",
+          "value": null,
+          "notes": "UI Tap: UI Tap"
+        },
+        {
+          "name": "Clicking",
+          "value": null,
+          "notes": "@deprecated Use `UITap` instead"
+        },
+        {
+          "name": "InjuredFemale",
+          "value": null,
+          "notes": "Female Screaming on Hit: Female Screaming on Hit"
+        },
+        {
+          "name": "InjuredMale",
+          "value": null,
+          "notes": "Male Screaming on Hit: Male Screaming on Hit"
+        },
+        {
+          "name": "CoinGenerator",
+          "value": null,
+          "notes": "Coin Generator: Gold Pickup Sound"
+        },
+        {
+          "name": "FinishingPoint",
+          "value": null,
+          "notes": "Endpoint: Race past the finish line trigger sound effect"
+        },
+        {
+          "name": "Triggers",
+          "value": null,
+          "notes": "Trigger: Trigger Trigger Sound"
+        },
+        {
+          "name": "RankDown",
+          "value": null,
+          "notes": "Rank Down: Degradation Sound"
+        },
+        {
+          "name": "SuccessfulHit",
+          "value": null,
+          "notes": "Hit: Hit Damage Sound"
+        },
+        {
+          "name": "LevelUpDiscarded",
+          "value": null,
+          "notes": "Rank Up: Upgrade Sound"
+        },
+        {
+          "name": "GentleTap",
+          "value": null,
+          "notes": "Gentle Tap: Weakness hit sound effect"
+        },
+        {
+          "name": "GentleClick",
+          "value": null,
+          "notes": "@deprecated Use `GentleTap` instead"
+        },
+        {
+          "name": "StepTrigger",
+          "value": null,
+          "notes": "Activate Mechanism: Player stepping sound effect"
+        },
+        {
+          "name": "RepairEquip",
+          "value": null,
+          "notes": "Repair Equipment: Equipment Repair Sound Effect"
+        },
+        {
+          "name": "HeartBeat",
+          "value": null,
+          "notes": "Heartbeat: Equipment repair sound effect"
+        },
+        {
+          "name": "Mistake",
+          "value": null,
+          "notes": "Mistake: Missing or lost sound effect"
+        },
+        {
+          "name": "Reminder",
+          "value": null,
+          "notes": "Reminder: Reminder Sound"
+        },
+        {
+          "name": "Football",
+          "value": null,
+          "notes": "Soccer: Soccer Ball Landing Sound Effect"
+        },
+        {
+          "name": "Cheer",
+          "value": null,
+          "notes": "Cheer: Cheers Sound Effect"
+        },
+        {
+          "name": "BombIndication",
+          "value": null,
+          "notes": "Bomb Warning: Bomb Alert Sound Effect"
+        },
+        {
+          "name": "PriorExplosion",
+          "value": null,
+          "notes": "Before Bomb Explosion: Bomb Before Explosion Sound Effect"
+        },
+        {
+          "name": "CharacterAppears",
+          "value": null,
+          "notes": "Prior to explosion: Hunter Appearance Sound Effect"
+        },
+        {
+          "name": "EndBGM",
+          "value": null,
+          "notes": "Prior to explosion: Final BGM Sound Effect"
+        },
+        {
+          "name": "SupplyBox",
+          "value": null,
+          "notes": "Prior to explosion: Resupply Box Refresh Sound Effect"
+        },
+        {
+          "name": "Acceleration",
+          "value": null,
+          "notes": "Acceleration: Accelerator sound effect"
+        },
+        {
+          "name": "DisappearNotification",
+          "value": null,
+          "notes": "Disappearance Prompt: Disappearing Sound"
+        },
+        {
+          "name": "VisualEffects",
+          "value": null,
+          "notes": "Visual Effects: Visual Effects"
+        },
+        {
+          "name": "InsectChirping",
+          "value": null,
+          "notes": "Insect Chirping: Night Bugs"
+        },
+        {
+          "name": "NightChirps",
+          "value": null,
+          "notes": "@deprecated Use `InsectChirping` instead"
+        },
+        {
+          "name": "HitBlunt",
+          "value": null,
+          "notes": "Dull Hit: Dull percussion sound effect"
+        },
+        {
+          "name": "Reaction",
+          "value": null,
+          "notes": "Respond: Response Sound Effect"
+        },
+        {
+          "name": "SurpriseFind",
+          "value": null,
+          "notes": "Discover Surprise: Discovery Surprise sound effect"
+        },
+        {
+          "name": "Apparition",
+          "value": null,
+          "notes": "Apparition: Ghosts playing sound effect"
+        },
+        {
+          "name": "PhaseStart",
+          "value": null,
+          "notes": "Phase Start: Phase Start Sound Effect"
+        },
+        {
+          "name": "Monsters",
+          "value": null,
+          "notes": "Zombie: Zombie sound effect"
+        },
+        {
+          "name": "Zombies",
+          "value": null,
+          "notes": "@deprecated Use `Monsters` instead"
+        },
+        {
+          "name": "Horror",
+          "value": null,
+          "notes": "Horror: Scary sound effect"
+        },
+        {
+          "name": "Transformation",
+          "value": null,
+          "notes": "Look Changer: Transformation sound effect"
+        },
+        {
+          "name": "PoundingHeart",
+          "value": null,
+          "notes": "Fast Heartbeat: Fast Heartbeat Sound Effect"
+        },
+        {
+          "name": "MediumHeartbeat",
+          "value": null,
+          "notes": "Medium Heartbeat: Medium Heartbeat"
+        },
+        {
+          "name": "SlowHeartbeat",
+          "value": null,
+          "notes": "Slow Heartbeat: Slow heartbeat sound effect"
+        },
+        {
+          "name": "RushTime",
+          "value": null,
+          "notes": "Rampage: Stampede sound effect"
+        },
+        {
+          "name": "Tap",
+          "value": null,
+          "notes": "Tap: Clicking Sound"
+        },
+        {
+          "name": "Click",
+          "value": null,
+          "notes": "@deprecated Use `Tap` instead"
+        },
+        {
+          "name": "SkillRecover",
+          "value": null,
+          "notes": "Skill Recovery: Skill Recovery Sound"
+        },
+        {
+          "name": "JoinGame",
+          "value": null,
+          "notes": "Join Game: Join Game Sound Effects"
+        },
+        {
+          "name": "MechanicalDeviceEcho",
+          "value": null,
+          "notes": "Mechanical Device Echo: Mechanism Echo Sound"
+        },
+        {
+          "name": "Mosquito",
+          "value": null,
+          "notes": "Mosquito: Mosquito sound effect"
+        },
+        {
+          "name": "SharpMechanical",
+          "value": null,
+          "notes": "Rapid Clinking 1: Clank 1 sound effect"
+        },
+        {
+          "name": "Mechanical",
+          "value": null,
+          "notes": "Rapid Clinking 2: Clank 2 sound effect"
+        },
+        {
+          "name": "GearSwitchedOn",
+          "value": null,
+          "notes": "Mechanism Activated: Mechanism opening sound effect"
+        },
+        {
+          "name": "Charge",
+          "value": null,
+          "notes": "Charge 1: Energy Charge 1 sound effect"
+        },
+        {
+          "name": "Step",
+          "value": null,
+          "notes": "Footstep: Footsteps sound effect"
+        },
+        {
+          "name": "MissionComplete",
+          "value": null,
+          "notes": "Mission Success 1: Mission Success 1 sound effect"
+        },
+        {
+          "name": "DangerVibrating",
+          "value": null,
+          "notes": "Danger 1: Danger Tone 1 sound effect"
+        },
+        {
+          "name": "DangerAlarm",
+          "value": null,
+          "notes": "Danger 2: Danger tone 2 sound effect"
+        },
+        {
+          "name": "CountdownWithinGame",
+          "value": null,
+          "notes": "Countdown 3: Countdown 3 sound effect"
+        },
+        {
+          "name": "TipsSound",
+          "value": null,
+          "notes": "Show Tips: Show Tips sound effect"
+        },
+        {
+          "name": "CrowCaw",
+          "value": null,
+          "notes": "Crow Caw: Crow cawing ambient sound effect"
+        },
+        {
+          "name": "TeleportWrong",
+          "value": null,
+          "notes": "Wrong Destination Beaconing: Sound effect of teleporting to the wrong area with a teleport point"
+        },
+        {
+          "name": "TeleportCorrect",
+          "value": null,
+          "notes": "Correct Destination Beaconing: Sound effect of teleporting to the right area with a teleport point"
+        },
+        {
+          "name": "Teleport",
+          "value": null,
+          "notes": "TelePort: Teleport sound effect"
+        },
+        {
+          "name": "ElectricShock",
+          "value": null,
+          "notes": "Electric Shock: Electric shock sound effect"
+        },
+        {
+          "name": "FallingStar",
+          "value": null,
+          "notes": "Get Consumable: Consumable sound effect"
+        },
+        {
+          "name": "ElectronicBGM",
+          "value": null,
+          "notes": "Cute Electronic Fantasy BGM: Electronic Fantasy Cute Background Music Sound Effects"
+        },
+        {
+          "name": "CasualGameBGM",
+          "value": null,
+          "notes": "Leisure Game BGM: Casual Game Background Music Sound Effects"
+        },
+        {
+          "name": "OpeningBox",
+          "value": null,
+          "notes": "Open Box: Open Box"
+        },
+        {
+          "name": "LevelUp",
+          "value": null,
+          "notes": "Level Up: Level Up"
+        },
+        {
+          "name": "LevelMaxed",
+          "value": null,
+          "notes": "Max. Level: Max. Level"
+        },
+        {
+          "name": "TappingButton",
+          "value": null,
+          "notes": "Tap Button: Tap Button"
+        },
+        {
+          "name": "CountdownDengDeng",
+          "value": null,
+          "notes": "Countdown: Countdown"
+        },
+        {
+          "name": "Whistle",
+          "value": null,
+          "notes": "Defeat Enemy: Defeat Enemy"
+        },
+        {
+          "name": "UIFinish",
+          "value": null,
+          "notes": "End: End"
+        },
+        {
+          "name": "Forward",
+          "value": null,
+          "notes": "Forward: Forward"
+        },
+        {
+          "name": "Booyah",
+          "value": null,
+          "notes": "Victory: Victory"
+        },
+        {
+          "name": "Checkpoint",
+          "value": null,
+          "notes": "Checkpoint: Training Base Checkpoints"
+        },
+        {
+          "name": "CountdownMechanical",
+          "value": null,
+          "notes": "Countdown: Countdown"
+        },
+        {
+          "name": "GameStart",
+          "value": null,
+          "notes": "Game Start: Game Start"
+        },
+        {
+          "name": "ObtainedManyCoins",
+          "value": null,
+          "notes": "Get Big Gold: Get Big Gold"
+        },
+        {
+          "name": "ObtainedCoins",
+          "value": null,
+          "notes": "Get Medium Gold: Get Medium Gold"
+        },
+        {
+          "name": "ObtainedSomeCoins",
+          "value": null,
+          "notes": "Get Small Gold: Get Small Gold"
+        },
+        {
+          "name": "JoinedGameDull",
+          "value": null,
+          "notes": "Join the Fray: Join the Fray"
+        },
+        {
+          "name": "OpeningGuildSupply",
+          "value": null,
+          "notes": "Guild Supply: Guild Supply"
+        },
+        {
+          "name": "Horn",
+          "value": null,
+          "notes": "Speaker: Speaker"
+        },
+        {
+          "name": "EliminatedBoss",
+          "value": null,
+          "notes": "Impeach Guild Leader: Impeach Guild Leader"
+        },
+        {
+          "name": "OpeningWarChest",
+          "value": null,
+          "notes": "Save Warehouse: Save Warehouse"
+        },
+        {
+          "name": "SpecialFiringSound",
+          "value": null,
+          "notes": "Special Gun Sound: Special Gun Sound"
+        },
+        {
+          "name": "BulletHitting",
+          "value": null,
+          "notes": "Bullet Hit: Bullet Hit"
+        },
+        {
+          "name": "Movement",
+          "value": null,
+          "notes": "Move: Move"
+        },
+        {
+          "name": "TappingDisabledButton",
+          "value": null,
+          "notes": "Tap Disable Button: Tap Disable Button"
+        },
+        {
+          "name": "SkillChargingComplete",
+          "value": null,
+          "notes": "Skill Charge Complete: Skill Charge Complete"
+        },
+        {
+          "name": "LaserSkill",
+          "value": null,
+          "notes": "Laser Skill: Laser Skill"
+        },
+        {
+          "name": "GetItem",
+          "value": null,
+          "notes": "Get Consumable 2: Get Consumable 2"
+        },
+        {
+          "name": "Countdown",
+          "value": null,
+          "notes": "Countdown: Countdown 3"
+        },
+        {
+          "name": "GameOver",
+          "value": null,
+          "notes": "Game Over 2: Game Over 2"
+        },
+        {
+          "name": "EliminationNotification",
+          "value": null,
+          "notes": "Elimination Prompt: Elimination Prompt"
+        },
+        {
+          "name": "Boom",
+          "value": null,
+          "notes": "Boom: Explosion"
+        },
+        {
+          "name": "ExplosivePaintSkill",
+          "value": null,
+          "notes": "Energy Orb Skill: Energy Orb Skill"
+        },
+        {
+          "name": "PaintShieldSkill",
+          "value": null,
+          "notes": "Crimson Pool Skill: Crimson Pool Skill"
+        }
+      ]
+    },
+    {
+      "same_member_count": 71,
+      "types": [
+        {
+          "name": "VFXType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "EffectType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Sphere",
+          "value": null,
+          "notes": "Sphere: Sphere"
+        },
+        {
+          "name": "LightBeamPreDiscarded",
+          "value": null,
+          "notes": "Light Beam: Light Beam"
+        },
+        {
+          "name": "RingPreDiscarded",
+          "value": null,
+          "notes": "RingPreDiscarded: Boom"
+        },
+        {
+          "name": "Boom",
+          "value": null,
+          "notes": "Boom: Boom"
+        },
+        {
+          "name": "TelePort",
+          "value": null,
+          "notes": "TelePort: Boom"
+        },
+        {
+          "name": "Recover",
+          "value": null,
+          "notes": "Recover: Boom"
+        },
+        {
+          "name": "CircleofHeat",
+          "value": null,
+          "notes": "Foot Beam: Foot Halo"
+        },
+        {
+          "name": "Symbolic",
+          "value": null,
+          "notes": "Ground Marker: Ground Marker"
+        },
+        {
+          "name": "Smokey",
+          "value": null,
+          "notes": "Smoke: Smoke"
+        },
+        {
+          "name": "CurseExplosion",
+          "value": null,
+          "notes": "Talisman Explosion: Talisman Explosion"
+        },
+        {
+          "name": "FrozenGrenade",
+          "value": null,
+          "notes": "Freezing Grenade: A pillar of light under the feet, now used for feedback when entering the finish line"
+        },
+        {
+          "name": "Frozen",
+          "value": null,
+          "notes": "Freeze: Freeze"
+        },
+        {
+          "name": "Spotlight",
+          "value": null,
+          "notes": "Light: Light"
+        },
+        {
+          "name": "UpwardTurbulence",
+          "value": null,
+          "notes": "Updraft: Updraft"
+        },
+        {
+          "name": "AtmosphereExplosion",
+          "value": null,
+          "notes": "Gas Explosion: Gas Explosion"
+        },
+        {
+          "name": "HiderKill",
+          "value": null,
+          "notes": "Hider Eliminated: Hider Eliminated"
+        },
+        {
+          "name": "Rampage",
+          "value": null,
+          "notes": "Rampage: Rampage"
+        },
+        {
+          "name": "CloneKill",
+          "value": null,
+          "notes": "Clone Death: Clone Death"
+        },
+        {
+          "name": "HitFeedback",
+          "value": null,
+          "notes": "Shooting Feedback: Shooting Feedback"
+        },
+        {
+          "name": "Clone",
+          "value": null,
+          "notes": "Look Changer: Clone Death"
+        },
+        {
+          "name": "Disguise",
+          "value": null,
+          "notes": "Clone: Clone"
+        },
+        {
+          "name": "Portal",
+          "value": null,
+          "notes": "Portal: Portal"
+        },
+        {
+          "name": "FlashbangSparks",
+          "value": null,
+          "notes": "Flashbang Smoke: Flashbang Smoke"
+        },
+        {
+          "name": "FireCharge",
+          "value": null,
+          "notes": "Fireball: Fireball"
+        },
+        {
+          "name": "CyclicCombustion",
+          "value": null,
+          "notes": "Burning in a Loop: Burning in a Loop"
+        },
+        {
+          "name": "PoisonGasPreDiscarded",
+          "value": null,
+          "notes": "Poison Gas: Poison Gas"
+        },
+        {
+          "name": "Heart",
+          "value": null,
+          "notes": "Heart: Heart"
+        },
+        {
+          "name": "Soccer",
+          "value": null,
+          "notes": "Soccer: Football"
+        },
+        {
+          "name": "FootBall",
+          "value": null,
+          "notes": "@deprecated Use `Soccer` instead"
+        },
+        {
+          "name": "MotionTrail",
+          "value": null,
+          "notes": "Motion Trail: Football"
+        },
+        {
+          "name": "Door",
+          "value": null,
+          "notes": "Door: Door"
+        },
+        {
+          "name": "FireWork",
+          "value": null,
+          "notes": "Fireworks: Fireworks"
+        },
+        {
+          "name": "Sneakers",
+          "value": null,
+          "notes": "Running Shoes VFX: Running Shoes VFX"
+        },
+        {
+          "name": "Explosion",
+          "value": null,
+          "notes": "Explosion VFX: Explosion VFX"
+        },
+        {
+          "name": "Spawnpoint",
+          "value": null,
+          "notes": "Spawn Point VFX: Spawn Point VFX"
+        },
+        {
+          "name": "Laser",
+          "value": null,
+          "notes": "Laser VFX: Laser VFX"
+        },
+        {
+          "name": "ReleasingSkill",
+          "value": null,
+          "notes": "Skill Cast VFX: Skill Cast VFX"
+        },
+        {
+          "name": "Ammo",
+          "value": null,
+          "notes": "Bullet VFX: Bullet VFX"
+        },
+        {
+          "name": "HitEffect",
+          "value": null,
+          "notes": "Bullet Hit VFX: Bullet Hit VFX"
+        },
+        {
+          "name": "FiringEffect",
+          "value": null,
+          "notes": "Shooting VFX: Shooting VFX"
+        },
+        {
+          "name": "SpiderWeb",
+          "value": null,
+          "notes": "Skill VFX: Skill VFX"
+        },
+        {
+          "name": "Halo",
+          "value": null,
+          "notes": "Halo: Halo"
+        },
+        {
+          "name": "Bubble",
+          "value": null,
+          "notes": "Bubble: Bubbles"
+        },
+        {
+          "name": "Dust",
+          "value": null,
+          "notes": "Smoke and Dust: Smoke and Dust"
+        },
+        {
+          "name": "StoneSplash",
+          "value": null,
+          "notes": "Flying Debris: Flying Debris"
+        },
+        {
+          "name": "Line",
+          "value": null,
+          "notes": "Line: Lines"
+        },
+        {
+          "name": "Flicker",
+          "value": null,
+          "notes": "Flicker: Flicker"
+        },
+        {
+          "name": "Ring",
+          "value": null,
+          "notes": "Ring Mechanism: Boom"
+        },
+        {
+          "name": "RisingParticle",
+          "value": null,
+          "notes": "Rising Particles: Rising Particles"
+        },
+        {
+          "name": "Smoke",
+          "value": null,
+          "notes": "Smoke: Smoke"
+        },
+        {
+          "name": "Curse",
+          "value": null,
+          "notes": "Talisman: Talisman"
+        },
+        {
+          "name": "FreezeZone",
+          "value": null,
+          "notes": "Frozen Area: Frozen Area"
+        },
+        {
+          "name": "ColdAir",
+          "value": null,
+          "notes": "Fog: Fog"
+        },
+        {
+          "name": "Snowflake",
+          "value": null,
+          "notes": "Snowflake: Snowflake"
+        },
+        {
+          "name": "Flame",
+          "value": null,
+          "notes": "Fire: Fire"
+        },
+        {
+          "name": "LightBeam",
+          "value": null,
+          "notes": "Light Beam: Light Beam"
+        },
+        {
+          "name": "SpreadofPoisonGas",
+          "value": null,
+          "notes": "Diffusing Poison Gas: Diffusing Poison Gas"
+        },
+        {
+          "name": "PoisonGas",
+          "value": null,
+          "notes": "Poison Gas: Poison Gas"
+        },
+        {
+          "name": "ExplosiveBlaze",
+          "value": null,
+          "notes": "Explosion Flames: Explosion Flames"
+        },
+        {
+          "name": "LightEffect",
+          "value": null,
+          "notes": "Light Effect: Light Effect"
+        },
+        {
+          "name": "Star",
+          "value": null,
+          "notes": "Star: Star"
+        },
+        {
+          "name": "Bonfire",
+          "value": null,
+          "notes": "Blazing Bonfire: Blazing Bonfire"
+        },
+        {
+          "name": "WaterRing",
+          "value": null,
+          "notes": "Water Splash: Water Splash"
+        },
+        {
+          "name": "Thunder",
+          "value": null,
+          "notes": "Electric Shock: Electric Shock"
+        },
+        {
+          "name": "Ink",
+          "value": null,
+          "notes": "Ink VFX: Ink VFX"
+        },
+        {
+          "name": "BloodBall",
+          "value": null,
+          "notes": "Blackhole VFX: Blackhole VFX"
+        },
+        {
+          "name": "BlackHole",
+          "value": null,
+          "notes": "Blackhole Explosion VFX: Blackhole Explosion VFX"
+        },
+        {
+          "name": "BlackHoleBoom",
+          "value": null,
+          "notes": "Crystal Ball VFX: Crystal Ball VFX"
+        },
+        {
+          "name": "Tracerlight",
+          "value": null,
+          "notes": "Lighting VFX: Laser bullet effect"
+        },
+        {
+          "name": "Trailing",
+          "value": null,
+          "notes": "Trailing VFX: Drag effects"
+        },
+        {
+          "name": "Fog",
+          "value": null,
+          "notes": "Fog VFX: Clouds"
+        }
+      ]
+    },
+    {
+      "same_member_count": 63,
+      "types": [
+        {
+          "name": "PlayerUISwitchType",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        },
+        {
+          "name": "PlayerHudSwitchType",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "MovingJoystick",
+          "value": "1",
+          "notes": "Moving Joystick: Move"
+        },
+        {
+          "name": "MovementHUD",
+          "value": "1",
+          "notes": "@deprecated Use `MovingJoystick` instead"
+        },
+        {
+          "name": "Sprint",
+          "value": "2",
+          "notes": "Dashing: Sprint"
+        },
+        {
+          "name": "SprintHUD",
+          "value": "2",
+          "notes": "@deprecated Use `Sprint` instead"
+        },
+        {
+          "name": "Attack",
+          "value": "3",
+          "notes": "Attack: Attack"
+        },
+        {
+          "name": "AttackHUD",
+          "value": "3",
+          "notes": "@deprecated Use `Attack` instead"
+        },
+        {
+          "name": "Fire",
+          "value": "3",
+          "notes": "@deprecated Use `Attack` instead"
+        },
+        {
+          "name": "Jump",
+          "value": "4",
+          "notes": "Jump: Jump"
+        },
+        {
+          "name": "JumpHUD",
+          "value": "4",
+          "notes": "@deprecated Use `Jump` instead"
+        },
+        {
+          "name": "KillingTips",
+          "value": "5",
+          "notes": "Killing Tips: Killing Tips"
+        },
+        {
+          "name": "KillingTipsHUD",
+          "value": "5",
+          "notes": "@deprecated Use `KillingTips` instead"
+        },
+        {
+          "name": "WeaponSlot",
+          "value": "6",
+          "notes": "Weapon Slot: Weapon Slot"
+        },
+        {
+          "name": "WeaponHUD",
+          "value": "6",
+          "notes": "@deprecated Use `WeaponSlot` instead"
+        },
+        {
+          "name": "MiniMap",
+          "value": "7",
+          "notes": "Mini Map: Mini Map"
+        },
+        {
+          "name": "MinMapHUD",
+          "value": "7",
+          "notes": "@deprecated Use `MiniMap` instead"
+        },
+        {
+          "name": "Bag",
+          "value": "8",
+          "notes": "Backpack: Backpack UI"
+        },
+        {
+          "name": "BagHUD",
+          "value": "8",
+          "notes": "@deprecated Use `Bag` instead"
+        },
+        {
+          "name": "MedicalProps",
+          "value": "9",
+          "notes": "Medical Items: Medical Items"
+        },
+        {
+          "name": "MedicalPropsHUD",
+          "value": "9",
+          "notes": "@deprecated Use `MedicalProps` instead"
+        },
+        {
+          "name": "Crouch",
+          "value": "10",
+          "notes": "Crouch: Displayed when True, otherwise turned off"
+        },
+        {
+          "name": "CrouchHUD",
+          "value": "10",
+          "notes": "@deprecated Use `Crouch` instead"
+        },
+        {
+          "name": "Prone",
+          "value": "11",
+          "notes": "Prone: Displayed when True, otherwise turned off"
+        },
+        {
+          "name": "ProneHUD",
+          "value": "11",
+          "notes": "@deprecated Use `Prone` instead"
+        },
+        {
+          "name": "TeammatesInfo",
+          "value": "12",
+          "notes": "Teammates Info: Displayed when True, otherwise turned off"
+        },
+        {
+          "name": "TeammatesInfoHUD",
+          "value": "12",
+          "notes": "@deprecated Use `TeammatesInfo` instead"
+        },
+        {
+          "name": "AttackGrenade",
+          "value": "13",
+          "notes": "Attack Grenade: Displayed when True, otherwise turned off"
+        },
+        {
+          "name": "AttackGrenadeHUD",
+          "value": "13",
+          "notes": "@deprecated Use `AttackGrenade` instead"
+        },
+        {
+          "name": "DefenceGrenade",
+          "value": "14",
+          "notes": "Defence Grenade: Displayed when True, otherwise turned off"
+        },
+        {
+          "name": "DefenceGrenadeHUD",
+          "value": "14",
+          "notes": "@deprecated Use `DefenceGrenade` instead"
+        },
+        {
+          "name": "Emote",
+          "value": "15",
+          "notes": "Emote: Emote"
+        },
+        {
+          "name": "EmotionHUD",
+          "value": "15",
+          "notes": "@deprecated Use `Emote` instead"
+        },
+        {
+          "name": "QuickChat",
+          "value": "16",
+          "notes": "Quick Chat: Quick Chat"
+        },
+        {
+          "name": "QuickChatBtnHUD",
+          "value": "16",
+          "notes": "@deprecated Use `QuickChat` instead"
+        },
+        {
+          "name": "Pickups",
+          "value": "17",
+          "notes": "Pickups: Pickups"
+        },
+        {
+          "name": "PickupListHUD",
+          "value": "17",
+          "notes": "@deprecated Use `Pickups` instead"
+        },
+        {
+          "name": "QuickChatShow",
+          "value": "18",
+          "notes": "Quick Chat Show: Quick Chat Show"
+        },
+        {
+          "name": "QuickChatShowHUD",
+          "value": "18",
+          "notes": "@deprecated Use `QuickChatShow` instead"
+        },
+        {
+          "name": "HP",
+          "value": "19",
+          "notes": "HP: HP"
+        },
+        {
+          "name": "HPItemHUD",
+          "value": "19",
+          "notes": "@deprecated Use `HP` instead"
+        },
+        {
+          "name": "EP",
+          "value": "20",
+          "notes": "EP: EP"
+        },
+        {
+          "name": "EPItemHUD",
+          "value": "20",
+          "notes": "@deprecated Use `EP` instead"
+        },
+        {
+          "name": "Armor",
+          "value": "21",
+          "notes": "Armor: Armor"
+        },
+        {
+          "name": "ArmorHUD",
+          "value": "21",
+          "notes": "@deprecated Use `Armor` instead"
+        },
+        {
+          "name": "Reload",
+          "value": "22",
+          "notes": "Reload: Reload"
+        },
+        {
+          "name": "ReloadBtnHUD",
+          "value": "22",
+          "notes": "@deprecated Use `Reload` instead"
+        },
+        {
+          "name": "SweapWeaponQuick",
+          "value": "23",
+          "notes": "Sweap Weapon Quick: Quick Change Button"
+        },
+        {
+          "name": "SweapWeaponQuickBtnHUD",
+          "value": "23",
+          "notes": "@deprecated Use `SweapWeaponQuick` instead"
+        },
+        {
+          "name": "Speaker",
+          "value": "24",
+          "notes": "Speaker: Carrier Speaker Button"
+        },
+        {
+          "name": "SpeakerBtnHUD",
+          "value": "24",
+          "notes": "@deprecated Use `Speaker` instead"
+        },
+        {
+          "name": "MicroPhone",
+          "value": "25",
+          "notes": "Microphone: Enable/disable voice (microphone) button"
+        },
+        {
+          "name": "MicroPhoneBtnHUD",
+          "value": "25",
+          "notes": "@deprecated Use `MicroPhone` instead"
+        },
+        {
+          "name": "Mark",
+          "value": "26",
+          "notes": "Mark: Enable/disable marker button"
+        },
+        {
+          "name": "MarkBtnHUD",
+          "value": "26",
+          "notes": "@deprecated Use `Mark` instead"
+        },
+        {
+          "name": "Settings",
+          "value": "27",
+          "notes": "Settings: (Deprecated, please do not use)"
+        },
+        {
+          "name": "SettingsBtnHUD",
+          "value": "27",
+          "notes": "@deprecated Use `Settings` instead"
+        },
+        {
+          "name": "Signal",
+          "value": "28",
+          "notes": "Signal: Enable/disable network signal button"
+        },
+        {
+          "name": "SignalIcoHUD",
+          "value": "28",
+          "notes": "@deprecated Use `Signal` instead"
+        },
+        {
+          "name": "ActiveSkill",
+          "value": "29",
+          "notes": "Active Skill: Active Skill"
+        },
+        {
+          "name": "ActiveSkillButtonHUD",
+          "value": "29",
+          "notes": "@deprecated Use `ActiveSkill` instead"
+        },
+        {
+          "name": "Crosshairs",
+          "value": "30",
+          "notes": "Crosshair: Crosshair"
+        },
+        {
+          "name": "CrosshairsHUD",
+          "value": "30",
+          "notes": "@deprecated Use `Crosshairs` instead"
+        },
+        {
+          "name": "PassiveSkill",
+          "value": "31",
+          "notes": "Passive Skill: Passive Skill"
+        },
+        {
+          "name": "PassiveSkillHUD",
+          "value": "31",
+          "notes": "@deprecated Use `PassiveSkill` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 61,
+      "types": [
+        {
+          "name": "BuiltInUIType",
+          "source": {
+            "file": "library/release/Hud.fcc",
+            "sha": "323d1817023efacf1de0b8aaa4cb28ee39554db0"
+          }
+        },
+        {
+          "name": "InternalHudType",
+          "source": {
+            "file": "library/release/Hud.fcc",
+            "sha": "323d1817023efacf1de0b8aaa4cb28ee39554db0"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "CountdownHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "OpeningBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "LLMChatHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamRoundStartBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "NormalRoundStartBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TeamRoundScoreBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "CheckPointMgrHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "RoundResultShowTimeHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamFactionHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamRoundScoreBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ResultBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "RoundNumHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "PhaseCountDownHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "MatchInfoSubTitleHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamMatchInfoHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TeamMatchInfoHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamLeaderboardHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamLeaderboardHudV2",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "MoreTeamLeaderboardHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "MoreTeamLeaderboardHudV2",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "FactionInfoHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "IconNotificationHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamMatchInfoSimpleHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamMatchInfoSimpleHudV2",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "CountdownReminderHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TweenTipsHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "RoundTransitionHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "SingleLeaderboardHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "LeaderboardButtonHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ZombieLevelHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "AddScoreVFXHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ZombieVFXHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TimeTweenTipsHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ChooseCardHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "IdentityNotifyHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "FiveSecondCountDownHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TitleBannerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "CommonHudSwitchHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "SkillButtonHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "HeartbeatHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ProgressbarHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "HPbarHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "HeartbeatEffectHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "UGCShopHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ActionHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "WalletHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TextTipsHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TwoTeamMatchResultHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "MultiTeamMatchResultHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ProgressCircleHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ScoreBarHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "SprayResultHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "HintButtonHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "TipHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "ProgressSkillButtonHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "CameraRayCastHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "UGCAniTriggerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "DirectionRulerHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "RoundInfoHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "CSRoundResultHud",
+          "value": null,
+          "notes": null
+        },
+        {
+          "name": "PlayerHeadHud",
+          "value": null,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "same_member_count": 32,
+      "types": [
+        {
+          "name": "WidgetType",
+          "source": {
+            "file": "library/release/Hud.fcc",
+            "sha": "323d1817023efacf1de0b8aaa4cb28ee39554db0"
+          }
+        },
+        {
+          "name": "HudWidgetType",
+          "source": {
+            "file": "library/release/Hud.fcc",
+            "sha": "323d1817023efacf1de0b8aaa4cb28ee39554db0"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "SimpleWidget",
+          "value": "0",
+          "notes": "Simple Widget: Simple Widget"
+        },
+        {
+          "name": "HudEmpty",
+          "value": "0",
+          "notes": "@deprecated Use `SimpleWidget` instead"
+        },
+        {
+          "name": "ImageWidget",
+          "value": "1",
+          "notes": "Image Widget: Image Widget"
+        },
+        {
+          "name": "HudImage",
+          "value": "1",
+          "notes": "@deprecated Use `ImageWidget` instead"
+        },
+        {
+          "name": "LabelWidget",
+          "value": "2",
+          "notes": "Label Widget: Label Widget"
+        },
+        {
+          "name": "HudText",
+          "value": "2",
+          "notes": "@deprecated Use `LabelWidget` instead"
+        },
+        {
+          "name": "ButtonWidget",
+          "value": "3",
+          "notes": "Button Widget: Button Widget"
+        },
+        {
+          "name": "HudButton",
+          "value": "3",
+          "notes": "@deprecated Use `ButtonWidget` instead"
+        },
+        {
+          "name": "InputLabelWidget",
+          "value": "4",
+          "notes": "Input Label Widget: Input Label Widget"
+        },
+        {
+          "name": "HudTextBox",
+          "value": "4",
+          "notes": "@deprecated Use `InputLabelWidget` instead"
+        },
+        {
+          "name": "Panel",
+          "value": "5",
+          "notes": "Panel: Panel"
+        },
+        {
+          "name": "HudPanel",
+          "value": "5",
+          "notes": "@deprecated Use `Panel` instead"
+        },
+        {
+          "name": "ScrollPanel",
+          "value": "6",
+          "notes": "Scroll Panel: Scroll Panel"
+        },
+        {
+          "name": "HudScrollView",
+          "value": "6",
+          "notes": "@deprecated Use `ScrollPanel` instead"
+        },
+        {
+          "name": "Grid",
+          "value": "7",
+          "notes": "Grid: Grid"
+        },
+        {
+          "name": "HudGrid",
+          "value": "7",
+          "notes": "@deprecated Use `Grid` instead"
+        },
+        {
+          "name": "LayoutWidget",
+          "value": "8",
+          "notes": "Layout Widget: Layout Widget"
+        },
+        {
+          "name": "HudLayout",
+          "value": "8",
+          "notes": "@deprecated Use `LayoutWidget` instead"
+        },
+        {
+          "name": "ContainerWidget",
+          "value": "9",
+          "notes": "Container Widget: Container Widget"
+        },
+        {
+          "name": "Hud3DContainer",
+          "value": "9",
+          "notes": "@deprecated Use `ContainerWidget` instead"
+        },
+        {
+          "name": "TextureWidget",
+          "value": "10",
+          "notes": "Texture Widget: Texture Widget"
+        },
+        {
+          "name": "HudTexture",
+          "value": "10",
+          "notes": "@deprecated Use `TextureWidget` instead"
+        },
+        {
+          "name": "ProfileWidget",
+          "value": "11",
+          "notes": "Profile Widget: Profile Widget"
+        },
+        {
+          "name": "HudProfileInfo",
+          "value": "11",
+          "notes": "@deprecated Use `ProfileWidget` instead"
+        },
+        {
+          "name": "ToggleWidget",
+          "value": "12",
+          "notes": "Toggle Widget: Toggle Widget"
+        },
+        {
+          "name": "HudToggle",
+          "value": "12",
+          "notes": "@deprecated Use `ToggleWidget` instead"
+        },
+        {
+          "name": "TouchPadWidget",
+          "value": "13",
+          "notes": "Touch Pad Widget: Touch Pad Widget"
+        },
+        {
+          "name": "HudTouchPad",
+          "value": "13",
+          "notes": "@deprecated Use `TouchPadWidget` instead"
+        },
+        {
+          "name": "JoystickWidget",
+          "value": "14",
+          "notes": "Joystick Widget: Joystick Widget"
+        },
+        {
+          "name": "HudJoystick",
+          "value": "14",
+          "notes": "@deprecated Use `JoystickWidget` instead"
+        },
+        {
+          "name": "SocialButtonWidget",
+          "value": "15",
+          "notes": "Social Button Widget: Social Button Widget"
+        },
+        {
+          "name": "HUDSocialButtonWidget",
+          "value": "15",
+          "notes": "@deprecated Use `SocialButtonWidget` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 24,
+      "types": [
+        {
+          "name": "StatusCode",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "ErrorCode",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "NoError",
+          "value": "0",
+          "notes": "No Error: No errors"
+        },
+        {
+          "name": "None",
+          "value": "0",
+          "notes": "@deprecated Use `NoError` instead"
+        },
+        {
+          "name": "DataStorageTimeout",
+          "value": "1",
+          "notes": "Data Storage Timeout: Data storage timeout, mainly for read operations"
+        },
+        {
+          "name": "DB_Timeout",
+          "value": "1",
+          "notes": "@deprecated Use `DataStorageTimeout` instead"
+        },
+        {
+          "name": "DataStorageLimitExceeded",
+          "value": "2",
+          "notes": "Data Storage Limit Exceeded: Data storage read/write frequency exceeds the limit"
+        },
+        {
+          "name": "DB_Overlimit",
+          "value": "2",
+          "notes": "@deprecated Use `DataStorageLimitExceeded` instead"
+        },
+        {
+          "name": "DataStorageParameterError",
+          "value": "3",
+          "notes": "Data Storage Parameter Error: Parameter exceptions"
+        },
+        {
+          "name": "DB_ParamError",
+          "value": "3",
+          "notes": "@deprecated Use `DataStorageParameterError` instead"
+        },
+        {
+          "name": "Failed_InvalidAllIDsOnCreate",
+          "value": "4",
+          "notes": "Failed to create room: no valid Persona IDs: Room creation failed: no valid PersonaIDs available"
+        },
+        {
+          "name": "CommonError",
+          "value": "5",
+          "notes": "Common Error: Undefined error status"
+        },
+        {
+          "name": "PremiumClosed",
+          "value": "6",
+          "notes": "Membership Closed: Commercialization service shut down, users can no longer use the developer's service"
+        },
+        {
+          "name": "ChangeTeamFailed_NotSupported",
+          "value": "7",
+          "notes": "Change Team Failed_Not Supported: Failed to change team - mode not supported"
+        },
+        {
+          "name": "ChangeTeamFailed_AlreadyInTeam",
+          "value": "8",
+          "notes": "Change Team Failed_Already In Team: Failed to change team-Currently already in target team"
+        },
+        {
+          "name": "ChangeTeamFailed_InvalidTarget",
+          "value": "9",
+          "notes": "Change Team Failed_Invalid Target: Queue change failed-invalid target"
+        },
+        {
+          "name": "ChangeTeamFailed_InvalidTeam",
+          "value": "10",
+          "notes": "Change Team Failed_Invalid Team: Failed team change - invalid target team"
+        },
+        {
+          "name": "ChangeTeamFailed_Dead",
+          "value": "11",
+          "notes": "Change Team Failed_Eliminated: Failed team change - Dead player not allowed to change teams"
+        },
+        {
+          "name": "ChangeTeamFailed_InVehicle",
+          "value": "12",
+          "notes": "Change Team Failed_In Vehicle: Failed team change - not allowed to change team in vehicle"
+        },
+        {
+          "name": "LLM_OK",
+          "value": "101",
+          "notes": "LLM_OK: LLM_OK"
+        },
+        {
+          "name": "LLM_FAILED",
+          "value": "102",
+          "notes": "LLM_Failed: LLM_Failed"
+        },
+        {
+          "name": "LLM_TIMEOUT",
+          "value": "103",
+          "notes": "LLM_Timeout: LLM_Timeout"
+        },
+        {
+          "name": "LLM_INVALID_PERSONA",
+          "value": "104",
+          "notes": "LLM_Invalid_Persona: LLM_Invalid_PersonaOrRoom"
+        },
+        {
+          "name": "LLM_TOKEN_LIMIT",
+          "value": "105",
+          "notes": "LLM_Token_Limit: LLM_Token_Limit"
+        },
+        {
+          "name": "LLM_VIOLATION",
+          "value": "106",
+          "notes": "LLM_Violation: LLM_Frequent_Request"
+        },
+        {
+          "name": "LLM_FREQUENT_REQUEST",
+          "value": "107",
+          "notes": "LLM_Frequent_Request: LLM_Frequent_Request"
+        }
+      ]
+    },
+    {
+      "same_member_count": 24,
+      "types": [
+        {
+          "name": "EquipmentType",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        },
+        {
+          "name": "EquipSlotType",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "PrimaryWeaponA",
+          "value": "0",
+          "notes": "Primary Weapon A: Primary Weapon A"
+        },
+        {
+          "name": "PrimaryWeapon1",
+          "value": "0",
+          "notes": "@deprecated Use `PrimaryWeaponA` instead"
+        },
+        {
+          "name": "PrimaryWeaponB",
+          "value": "1",
+          "notes": "Primary WeaponB: Primary WeaponB"
+        },
+        {
+          "name": "PrimaryWeapon2",
+          "value": "1",
+          "notes": "@deprecated Use `PrimaryWeaponB` instead"
+        },
+        {
+          "name": "SecondaryWeapon",
+          "value": "2",
+          "notes": "Secondary Weapon: Secondary Weapon"
+        },
+        {
+          "name": "Grenade",
+          "value": "3",
+          "notes": "Grenade: Blast Weapon"
+        },
+        {
+          "name": "ExplosiveWeapon",
+          "value": "3",
+          "notes": "@deprecated Use `Grenade` instead"
+        },
+        {
+          "name": "Melee",
+          "value": "4",
+          "notes": "Melee: Melee"
+        },
+        {
+          "name": "MeleeWeapon",
+          "value": "4",
+          "notes": "@deprecated Use `Melee` instead"
+        },
+        {
+          "name": "HeavyWeapon",
+          "value": "5",
+          "notes": "HeavyWeapon: HeavyWeapon"
+        },
+        {
+          "name": "Helmet",
+          "value": "6",
+          "notes": "Helmet: Helmet"
+        },
+        {
+          "name": "Vest",
+          "value": "8",
+          "notes": "Vest: Vest"
+        },
+        {
+          "name": "Flash",
+          "value": "16",
+          "notes": "Flashbang: Flashbang"
+        },
+        {
+          "name": "FlashBomb",
+          "value": "16",
+          "notes": "@deprecated Use `Flash` instead"
+        },
+        {
+          "name": "SmokeGrenade",
+          "value": "23",
+          "notes": "Smoke Grenade: Smoke Grenade"
+        },
+        {
+          "name": "FlashFreeze",
+          "value": "30",
+          "notes": "Flash Freeze: Freeze Bomb"
+        },
+        {
+          "name": "FrozenGrenade",
+          "value": "30",
+          "notes": "@deprecated Use `FlashFreeze` instead"
+        },
+        {
+          "name": "GlooWall",
+          "value": "13",
+          "notes": "Gloo Wall: Ice Wall"
+        },
+        {
+          "name": "BuildingIceWall",
+          "value": "13",
+          "notes": "@deprecated Use `GlooWall` instead"
+        },
+        {
+          "name": "Landmine",
+          "value": "14",
+          "notes": "Landmine: Landmine"
+        },
+        {
+          "name": "MiniSentry",
+          "value": "17",
+          "notes": "Mini Sentry: Auto Turret"
+        },
+        {
+          "name": "Dummy",
+          "value": "21",
+          "notes": "Dummy: DummyGrenade"
+        },
+        {
+          "name": "PersonalUAV",
+          "value": "28",
+          "notes": "Personal UAV: Personal UAV"
+        },
+        {
+          "name": "FunctionalItems",
+          "value": "12",
+          "notes": "Functional Items: Skateboard, Camo ...."
+        }
+      ]
+    },
+    {
+      "same_member_count": 24,
+      "types": [
+        {
+          "name": "SoundPianoType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "PianoMusicElementType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "PianoC3",
+          "value": "43",
+          "notes": "PianoC3: PianoC3"
+        },
+        {
+          "name": "PianoC3Sharp",
+          "value": "44",
+          "notes": "PianoC3#: PianoC3#"
+        },
+        {
+          "name": "PianoD3",
+          "value": "45",
+          "notes": "PianoD3: PianoD3"
+        },
+        {
+          "name": "PianoD3Sharp",
+          "value": "46",
+          "notes": "PianoD3#: PianoD3#"
+        },
+        {
+          "name": "PianoE3",
+          "value": "47",
+          "notes": "PianoE3: PianoE3"
+        },
+        {
+          "name": "PianoF3",
+          "value": "48",
+          "notes": "PianoF3: PianoF3"
+        },
+        {
+          "name": "PianoF3Sharp",
+          "value": "49",
+          "notes": "PianoF3#: PianoF3#"
+        },
+        {
+          "name": "PianoG3",
+          "value": "50",
+          "notes": "PianoG3: PianoG3"
+        },
+        {
+          "name": "PianoG3Sharp",
+          "value": "51",
+          "notes": "PianoG3#: PianoG3#"
+        },
+        {
+          "name": "PianoA3",
+          "value": "52",
+          "notes": "PianoA3: PianoA3"
+        },
+        {
+          "name": "PianoA3Sharp",
+          "value": "53",
+          "notes": "PianoA3#: PianoA3#"
+        },
+        {
+          "name": "PianoB3",
+          "value": "54",
+          "notes": "PianoB3: PianoB3"
+        },
+        {
+          "name": "PianoC4",
+          "value": "55",
+          "notes": "PianoC4: PianoC4"
+        },
+        {
+          "name": "PianoC4Sharp",
+          "value": "56",
+          "notes": "PianoC4#: PianoC4#"
+        },
+        {
+          "name": "PianoD4",
+          "value": "57",
+          "notes": "PianoD4: PianoD4"
+        },
+        {
+          "name": "PianoD4Sharp",
+          "value": "58",
+          "notes": "PianoD4#: PianoD4#"
+        },
+        {
+          "name": "PianoE4",
+          "value": "59",
+          "notes": "PianoE4: PianoE4"
+        },
+        {
+          "name": "PianoF4",
+          "value": "60",
+          "notes": "PianoF4: PianoF4"
+        },
+        {
+          "name": "PianoF4Sharp",
+          "value": "61",
+          "notes": "PianoF4#: PianoF4#"
+        },
+        {
+          "name": "PianoG4",
+          "value": "62",
+          "notes": "PianoG4: PianoG4"
+        },
+        {
+          "name": "PianoG4Sharp",
+          "value": "63",
+          "notes": "PianoG4#: PianoG4#"
+        },
+        {
+          "name": "PianoA4",
+          "value": "64",
+          "notes": "PianoA4: PianoA4"
+        },
+        {
+          "name": "PianoA4Sharp",
+          "value": "65",
+          "notes": "PianoA4#: PianoA4#"
+        },
+        {
+          "name": "PianoB4",
+          "value": "66",
+          "notes": "PianoB4: PianoB4"
+        }
+      ]
+    },
+    {
+      "same_member_count": 14,
+      "types": [
+        {
+          "name": "OutfitSlotType",
+          "source": {
+            "file": "library/release/Collection.fcc",
+            "sha": "460857ab4cb717c3495322ec80999ce3d303d9bb"
+          }
+        },
+        {
+          "name": "WardrobeType",
+          "source": {
+            "file": "library/release/Collection.fcc",
+            "sha": "460857ab4cb717c3495322ec80999ce3d303d9bb"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Top",
+          "value": "3",
+          "notes": "Top Wear: Top Wear"
+        },
+        {
+          "name": "Chest",
+          "value": "3",
+          "notes": "@deprecated Use `Top` instead"
+        },
+        {
+          "name": "Bottom",
+          "value": "4",
+          "notes": "Bottom Wear: Bottom Wear"
+        },
+        {
+          "name": "Legs",
+          "value": "4",
+          "notes": "@deprecated Use `Bottom` instead"
+        },
+        {
+          "name": "Buttom",
+          "value": "4",
+          "notes": "@deprecated Use `Bottom` instead"
+        },
+        {
+          "name": "Shoes",
+          "value": "5",
+          "notes": "Shoes: Shoes"
+        },
+        {
+          "name": "Feet",
+          "value": "5",
+          "notes": "@deprecated Use `Shoes` instead"
+        },
+        {
+          "name": "Facepaint",
+          "value": "8",
+          "notes": "Facepaint: Facepaint"
+        },
+        {
+          "name": "Face",
+          "value": "8",
+          "notes": "@deprecated Use `Facepaint` instead"
+        },
+        {
+          "name": "Head",
+          "value": "11",
+          "notes": "Headwear: Headwear"
+        },
+        {
+          "name": "Hair",
+          "value": "11",
+          "notes": "@deprecated Use `Head` instead"
+        },
+        {
+          "name": "Set",
+          "value": "12",
+          "notes": "Bodysuit: Bodysuit"
+        },
+        {
+          "name": "Mask",
+          "value": "14",
+          "notes": "Facepaint: Facepaint"
+        },
+        {
+          "name": "HeadAdditive",
+          "value": "14",
+          "notes": "@deprecated Use `Mask` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 13,
+      "types": [
+        {
+          "name": "MonsterType",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "AIType",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Regular",
+          "value": "18",
+          "notes": "Normal: Normal Zombie"
+        },
+        {
+          "name": "UGCAI",
+          "value": "18",
+          "notes": "@deprecated Use `Regular` instead"
+        },
+        {
+          "name": "WoodCutZombie",
+          "value": "4",
+          "notes": "Axe Zombie: Axe Zombie"
+        },
+        {
+          "name": "ThrowZombie",
+          "value": "5",
+          "notes": "Tossing Zombie: Tossing Zombie"
+        },
+        {
+          "name": "ExplosiveZombie",
+          "value": "6",
+          "notes": "Self-Explode Zombie: Self-Explode Zombie"
+        },
+        {
+          "name": "TyrantZombie",
+          "value": "8",
+          "notes": "Tyrant Zombie: Tyrant Zombie"
+        },
+        {
+          "name": "ThrowRedZombie",
+          "value": "9",
+          "notes": "Throw Red Zombie: Throw Red Zombie"
+        },
+        {
+          "name": "MrV",
+          "value": "10",
+          "notes": "MrV: MrV"
+        },
+        {
+          "name": "TankZombie",
+          "value": "11",
+          "notes": "Tank Zombie: Tank Zombie"
+        },
+        {
+          "name": "DrillZombie",
+          "value": "12",
+          "notes": "Drill Zombie: Drill Zombie"
+        },
+        {
+          "name": "Samurai",
+          "value": "13",
+          "notes": "Samurai: Samurai"
+        },
+        {
+          "name": "FlyBombBee",
+          "value": "21",
+          "notes": "Fly Bomb Bee: Fly Bomb Bee"
+        },
+        {
+          "name": "ZombieDragon",
+          "value": "23",
+          "notes": "Mechadrake: Zombie Dragon"
+        }
+      ]
+    },
+    {
+      "same_member_count": 12,
+      "types": [
+        {
+          "name": "SoundLead1Type",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "Lead1MusicElementType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Lead1C2",
+          "value": "7",
+          "notes": "Lead1C2: Lead1C2"
+        },
+        {
+          "name": "Lead1C2Sharp",
+          "value": "8",
+          "notes": "Lead1C2#: Lead1C2#"
+        },
+        {
+          "name": "Lead1D2",
+          "value": "9",
+          "notes": "Lead1D2: Lead1D2"
+        },
+        {
+          "name": "Lead1D2Sharp",
+          "value": "10",
+          "notes": "Lead1D2#: Lead1D2#"
+        },
+        {
+          "name": "Lead1E2",
+          "value": "11",
+          "notes": "Lead1E2: Lead1E2"
+        },
+        {
+          "name": "Lead1F2",
+          "value": "12",
+          "notes": "Lead1F2: Lead1F2"
+        },
+        {
+          "name": "Lead1F2Sharp",
+          "value": "13",
+          "notes": "Lead1F2#: Lead1F2#"
+        },
+        {
+          "name": "Lead1G2",
+          "value": "14",
+          "notes": "Lead1G2: Lead1G2"
+        },
+        {
+          "name": "Lead1G2Sharp",
+          "value": "15",
+          "notes": "Lead1G2#: Lead1G2#"
+        },
+        {
+          "name": "Lead1A2",
+          "value": "16",
+          "notes": "Lead1A2: Lead1A2"
+        },
+        {
+          "name": "Lead1A2Sharp",
+          "value": "17",
+          "notes": "Lead1A2#: Lead1A2#"
+        },
+        {
+          "name": "Lead1B2",
+          "value": "18",
+          "notes": "Lead1B2: Lead1B2"
+        }
+      ]
+    },
+    {
+      "same_member_count": 12,
+      "types": [
+        {
+          "name": "SoundLead2Type",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "Lead2MusicElementType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Lead2C2",
+          "value": "19",
+          "notes": "Lead2C2: Lead2C2"
+        },
+        {
+          "name": "Lead2C2Sharp",
+          "value": "20",
+          "notes": "Lead2C2#: Lead2C2#"
+        },
+        {
+          "name": "Lead2D2",
+          "value": "21",
+          "notes": "Lead2D2: Lead2D2"
+        },
+        {
+          "name": "Lead2D2Sharp",
+          "value": "22",
+          "notes": "Lead2D2#: Lead2D2#"
+        },
+        {
+          "name": "Lead2E2",
+          "value": "23",
+          "notes": "Lead2E2: Lead2E2"
+        },
+        {
+          "name": "Lead2F2",
+          "value": "24",
+          "notes": "Lead2F2: Lead2F2"
+        },
+        {
+          "name": "Lead2F2Sharp",
+          "value": "25",
+          "notes": "Lead2F2#: Lead2F2#"
+        },
+        {
+          "name": "Lead2G2",
+          "value": "26",
+          "notes": "Lead2G2: Lead2G2"
+        },
+        {
+          "name": "Lead2G2Sharp",
+          "value": "27",
+          "notes": "Lead2G2#: Lead2G2#"
+        },
+        {
+          "name": "Lead2A2",
+          "value": "28",
+          "notes": "Lead2A2: Lead2A2"
+        },
+        {
+          "name": "Lead2A2Sharp",
+          "value": "29",
+          "notes": "Lead2A2#: Lead2A2#"
+        },
+        {
+          "name": "Lead2B2",
+          "value": "30",
+          "notes": "Lead2B2: Lead2B2"
+        }
+      ]
+    },
+    {
+      "same_member_count": 12,
+      "types": [
+        {
+          "name": "SoundLead3Type",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "Lead3MusicElementType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Lead3C2",
+          "value": "31",
+          "notes": "Lead3C2: Lead3C2"
+        },
+        {
+          "name": "Lead3C2Sharp",
+          "value": "32",
+          "notes": "Lead3C2#: Lead3C2#"
+        },
+        {
+          "name": "Lead3D2",
+          "value": "33",
+          "notes": "Lead3D2: Lead3D2"
+        },
+        {
+          "name": "Lead3D2Sharp",
+          "value": "34",
+          "notes": "Lead3D2#: Lead3D2#"
+        },
+        {
+          "name": "Lead3E2",
+          "value": "35",
+          "notes": "Lead3E2: Lead3E2"
+        },
+        {
+          "name": "Lead3F2",
+          "value": "36",
+          "notes": "Lead3F2: Lead3F2"
+        },
+        {
+          "name": "Lead3F2Sharp",
+          "value": "37",
+          "notes": "Lead3F2#: Lead3F2#"
+        },
+        {
+          "name": "Lead3G2",
+          "value": "38",
+          "notes": "Lead3G2: Lead3G2"
+        },
+        {
+          "name": "Lead3G2Sharp",
+          "value": "39",
+          "notes": "Lead3G2#: Lead3G2#"
+        },
+        {
+          "name": "Lead3A2",
+          "value": "40",
+          "notes": "Lead3A2: Lead3A2"
+        },
+        {
+          "name": "Lead3A2Sharp",
+          "value": "41",
+          "notes": "Lead3A2#: Lead3A2#"
+        },
+        {
+          "name": "Lead3B2",
+          "value": "42",
+          "notes": "Lead3B2: Lead3B2"
+        }
+      ]
+    },
+    {
+      "same_member_count": 12,
+      "types": [
+        {
+          "name": "ChatChannelType",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "FreeChatChannel",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "ChannelA",
+          "value": "0",
+          "notes": "ChannelA: ChannelA"
+        },
+        {
+          "name": "Channel_1",
+          "value": "0",
+          "notes": "@deprecated Use `ChannelA` instead"
+        },
+        {
+          "name": "ChannelB",
+          "value": "1",
+          "notes": "ChannelB: ChannelB"
+        },
+        {
+          "name": "Channel_2",
+          "value": "1",
+          "notes": "@deprecated Use `ChannelB` instead"
+        },
+        {
+          "name": "ChannelC",
+          "value": "2",
+          "notes": "ChannelC: ChannelC"
+        },
+        {
+          "name": "Channel_3",
+          "value": "2",
+          "notes": "@deprecated Use `ChannelC` instead"
+        },
+        {
+          "name": "ChannelD",
+          "value": "3",
+          "notes": "ChannelD: ChannelD"
+        },
+        {
+          "name": "Channel_4",
+          "value": "3",
+          "notes": "@deprecated Use `ChannelD` instead"
+        },
+        {
+          "name": "ChannelE",
+          "value": "4",
+          "notes": "ChannelE: ChannelE"
+        },
+        {
+          "name": "Channel_5",
+          "value": "4",
+          "notes": "@deprecated Use `ChannelE` instead"
+        },
+        {
+          "name": "ChannelF",
+          "value": "5",
+          "notes": "ChannelF: ChannelF"
+        },
+        {
+          "name": "Channel_6",
+          "value": "5",
+          "notes": "@deprecated Use `ChannelF` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 11,
+      "types": [
+        {
+          "name": "EquipmentSlotType",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        },
+        {
+          "name": "EquipmentSlot",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "PrimaryWeaponA",
+          "value": "0",
+          "notes": "Primary Weapon A: Primary Weapon A"
+        },
+        {
+          "name": "PrimaryWeapon1",
+          "value": "0",
+          "notes": "@deprecated Use `PrimaryWeaponA` instead"
+        },
+        {
+          "name": "PrimaryWeaponB",
+          "value": "1",
+          "notes": "Primary WeaponB: Primary WeaponB"
+        },
+        {
+          "name": "PrimaryWeapon2",
+          "value": "1",
+          "notes": "@deprecated Use `PrimaryWeaponB` instead"
+        },
+        {
+          "name": "SecondaryWeapon",
+          "value": "2",
+          "notes": "Secondary Weapon: Secondary Weapon"
+        },
+        {
+          "name": "Melee",
+          "value": "4",
+          "notes": "Melee: Melee"
+        },
+        {
+          "name": "MeleeWeapon",
+          "value": "4",
+          "notes": "@deprecated Use `Melee` instead"
+        },
+        {
+          "name": "Helmet",
+          "value": "6",
+          "notes": "Helmet: Helmet"
+        },
+        {
+          "name": "Bag",
+          "value": "7",
+          "notes": "Backpack: Backpack"
+        },
+        {
+          "name": "Vest",
+          "value": "8",
+          "notes": "Vest: Vest"
+        },
+        {
+          "name": "FunctionalItems",
+          "value": "12",
+          "notes": "Functional Items: Skateboard, Camo ...."
+        }
+      ]
+    },
+    {
+      "same_member_count": 11,
+      "types": [
+        {
+          "name": "PropertyFormulaFactorType",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "FormulaFactorType",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "MinValue",
+          "value": "1",
+          "notes": "Min Value: Min"
+        },
+        {
+          "name": "MaxValue",
+          "value": "2",
+          "notes": "Max Value: Max"
+        },
+        {
+          "name": "BaseCoefficient",
+          "value": "3",
+          "notes": "Base Coefficient: Base coefficient, multiplied by the original value before all calculations are performed."
+        },
+        {
+          "name": "BaseMultiplier",
+          "value": "3",
+          "notes": "@deprecated Use `BaseCoefficient` instead"
+        },
+        {
+          "name": "PreAccumulator",
+          "value": "4",
+          "notes": "Pre-Accumulator: Pre-accumulator, accumulates before multiplication, participates in multiplication calculations"
+        },
+        {
+          "name": "BeforeAccumulator",
+          "value": "4",
+          "notes": "@deprecated Use `PreAccumulator` instead"
+        },
+        {
+          "name": "Multiplier",
+          "value": "5",
+          "notes": "Multiplier: Consecutive multipliers, for example (reduced to 90%, strengthened to 110%) have the effect of Value*90%*110%."
+        },
+        {
+          "name": "MultiplyAccumulate",
+          "value": "6",
+          "notes": "Multiply Accumulate: The effect of a multiplication accumulator, e.g. (add 10%, add 5%) is Value*(1+10%+5%)"
+        },
+        {
+          "name": "SumMultiplier",
+          "value": "6",
+          "notes": "@deprecated Use `MultiplyAccumulate` instead"
+        },
+        {
+          "name": "PostAccumulator",
+          "value": "7",
+          "notes": "Post-Accumulator: Post accumulator, not involved in multiplication calculations, stacked at the end"
+        },
+        {
+          "name": "AfterAccumulator",
+          "value": "7",
+          "notes": "@deprecated Use `PostAccumulator` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 9,
+      "types": [
+        {
+          "name": "LootConsumableType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "LootConsumableItemType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Random",
+          "value": "1024",
+          "notes": "Random: Random Consumable Loot"
+        },
+        {
+          "name": "LootConsumableItemRandom",
+          "value": "1024",
+          "notes": "@deprecated Use `Random` instead"
+        },
+        {
+          "name": "MedKit",
+          "value": "1019",
+          "notes": "MedKit: MedKit"
+        },
+        {
+          "name": "RepairKit",
+          "value": "1020",
+          "notes": "Repair Kit: Repair Kit"
+        },
+        {
+          "name": "Horizaline",
+          "value": "1021",
+          "notes": "Horizaline: Horizaline"
+        },
+        {
+          "name": "Cardiotonic",
+          "value": "1021",
+          "notes": "@deprecated Use `Horizaline` instead"
+        },
+        {
+          "name": "Inhaler",
+          "value": "1022",
+          "notes": "Inhaler: Inhaler"
+        },
+        {
+          "name": "GlooWall",
+          "value": "1023",
+          "notes": "Gloo Wall: Gloo Wall"
+        },
+        {
+          "name": "Glooshield",
+          "value": "1023",
+          "notes": "@deprecated Use `GlooWall` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 8,
+      "types": [
+        {
+          "name": "LootScopeType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "LootSightType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Random",
+          "value": "1036",
+          "notes": "Random: Random Multiplier Loot"
+        },
+        {
+          "name": "LootSightRandom",
+          "value": "1036",
+          "notes": "@deprecated Use `Random` instead"
+        },
+        {
+          "name": "Scope2x",
+          "value": "1032",
+          "notes": "2x Scope: 2x Scope"
+        },
+        {
+          "name": "Sight2",
+          "value": "1032",
+          "notes": "@deprecated Use `Scope2x` instead"
+        },
+        {
+          "name": "Scope4x",
+          "value": "1033",
+          "notes": "4x Scope: 4x Scope"
+        },
+        {
+          "name": "Sight4",
+          "value": "1033",
+          "notes": "@deprecated Use `Scope4x` instead"
+        },
+        {
+          "name": "ThermalScope",
+          "value": "1035",
+          "notes": "Thermal Scope: Thermal Scope"
+        },
+        {
+          "name": "HeatSight",
+          "value": "1035",
+          "notes": "@deprecated Use `ThermalScope` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 8,
+      "types": [
+        {
+          "name": "MonsterSkillType",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "AISkillType",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "ThrowAttack",
+          "value": "1",
+          "notes": "Throw Attack: Throw Attack"
+        },
+        {
+          "name": "Explode",
+          "value": "2",
+          "notes": "Self-Destruct: Self-Destruct"
+        },
+        {
+          "name": "DashAttack",
+          "value": "3",
+          "notes": "Dash Attack: Dash Attack"
+        },
+        {
+          "name": "ShockWave",
+          "value": "4",
+          "notes": "Shock Wave: Shock Wave"
+        },
+        {
+          "name": "WindAttack",
+          "value": "6",
+          "notes": "Tornado Attack: Tornado Attack"
+        },
+        {
+          "name": "JumpAttack",
+          "value": "13",
+          "notes": "Jump Attack: Jump Attack"
+        },
+        {
+          "name": "ShieldUp",
+          "value": "22",
+          "notes": "Shield Up: Shield Up"
+        },
+        {
+          "name": "ShieldBroken",
+          "value": "23",
+          "notes": "Shield Broken: Shield Broken"
+        }
+      ]
+    },
+    {
+      "same_member_count": 7,
+      "types": [
+        {
+          "name": "VehicleIDType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "VehicleID",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "SportsCar",
+          "value": "118",
+          "notes": "Sports Car: Sports Car"
+        },
+        {
+          "name": "Motorbike",
+          "value": "117",
+          "notes": "Motorbike: Motorbike"
+        },
+        {
+          "name": "Jeep",
+          "value": "113",
+          "notes": "Jeep: Jeep"
+        },
+        {
+          "name": "SUV",
+          "value": "112",
+          "notes": "SUV: SUV"
+        },
+        {
+          "name": "Suv",
+          "value": "112",
+          "notes": "@deprecated Use `SUV` instead"
+        },
+        {
+          "name": "MonsterTruck",
+          "value": "116",
+          "notes": "Monster_Truck: Monster Truck"
+        },
+        {
+          "name": "TukTuk",
+          "value": "114",
+          "notes": "Tuk Tuk: Mutant Truck"
+        }
+      ]
+    },
+    {
+      "same_member_count": 6,
+      "types": [
+        {
+          "name": "BotDifficultyType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "BotDifficulty",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Easy",
+          "value": "0",
+          "notes": "Easy: Easy"
+        },
+        {
+          "name": "Simple",
+          "value": "1",
+          "notes": "Simple: Simple"
+        },
+        {
+          "name": "Normal",
+          "value": "2",
+          "notes": "Normal: Normal"
+        },
+        {
+          "name": "Moderate",
+          "value": "3",
+          "notes": "Moderate: Moderate"
+        },
+        {
+          "name": "Hard",
+          "value": "4",
+          "notes": "Hard: Hard"
+        },
+        {
+          "name": "Hell",
+          "value": "5",
+          "notes": "Very Hard: Inferno"
+        }
+      ]
+    },
+    {
+      "same_member_count": 6,
+      "types": [
+        {
+          "name": "SoundDrumType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "DrumMusicElementType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Claps",
+          "value": "1",
+          "notes": "Claps: Claps"
+        },
+        {
+          "name": "Hihats",
+          "value": "2",
+          "notes": "Hihats: Hihats"
+        },
+        {
+          "name": "Kick",
+          "value": "3",
+          "notes": "Kick: Kick"
+        },
+        {
+          "name": "OpenHihats",
+          "value": "4",
+          "notes": "OpenHihats: OpenHihats"
+        },
+        {
+          "name": "Rides",
+          "value": "5",
+          "notes": "Rides: Rides"
+        },
+        {
+          "name": "Snares",
+          "value": "6",
+          "notes": "Snares: Snares"
+        }
+      ]
+    },
+    {
+      "same_member_count": 6,
+      "types": [
+        {
+          "name": "JerseyStyle",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        },
+        {
+          "name": "CustomizeClothesType",
+          "source": {
+            "file": "library/release/Football.fcc",
+            "sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "StyleA",
+          "value": "1",
+          "notes": "Style A: Style A"
+        },
+        {
+          "name": "WaistcoatStyle",
+          "value": "1",
+          "notes": "@deprecated Use `StyleA` instead"
+        },
+        {
+          "name": "StyleB",
+          "value": "2",
+          "notes": "Style B: Style B"
+        },
+        {
+          "name": "RoundNeckStyle",
+          "value": "2",
+          "notes": "@deprecated Use `StyleB` instead"
+        },
+        {
+          "name": "StyleC",
+          "value": "3",
+          "notes": "Style C: Style C"
+        },
+        {
+          "name": "StripedStyle",
+          "value": "3",
+          "notes": "@deprecated Use `StyleC` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "GameResultType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "MatchResultType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Win",
+          "value": "1",
+          "notes": "Victory: Victory"
+        },
+        {
+          "name": "Lose",
+          "value": "2",
+          "notes": "Defeat: Defeat"
+        },
+        {
+          "name": "Booyah",
+          "value": "3",
+          "notes": "Victory: Booyah"
+        },
+        {
+          "name": "Draw",
+          "value": "4",
+          "notes": "Draw: Draw"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "TimestampFormatStyleType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "TimestampFormatStyle",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "DateTime",
+          "value": "1",
+          "notes": "Date Time: 2017-10-10 13:38:10"
+        },
+        {
+          "name": "ShortTime",
+          "value": "2",
+          "notes": "Short Time: 13:45"
+        },
+        {
+          "name": "ShortDateTime",
+          "value": "3",
+          "notes": "Short Date Time: 10/10/2017 1:45 PM"
+        },
+        {
+          "name": "ShortDate",
+          "value": "4",
+          "notes": "Short Date: 10/10/2017"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "DualWieldWeaponType",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        },
+        {
+          "name": "WeaponCombineType",
+          "source": {
+            "file": "library/release/Items.fcc",
+            "sha": "4176dff378e83fc93f756f749ef531bbc34800a9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "NoDualWielding",
+          "value": "0",
+          "notes": "No Akimbo: Cannot be dual-wielded"
+        },
+        {
+          "name": "NoCombine",
+          "value": "0",
+          "notes": "@deprecated Use `NoDualWielding` instead"
+        },
+        {
+          "name": "CombineSelf",
+          "value": "1",
+          "notes": "CombineSelf: Can only be dual-wielded in combination with the same gun"
+        },
+        {
+          "name": "CombineAll",
+          "value": "2",
+          "notes": "CombineAll: Can be combo dual-wielded with another weapon as well as yourself"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "PlayerPoseType",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        },
+        {
+          "name": "PlayerPhysXPoseType",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Standing",
+          "value": "0",
+          "notes": "Standing: Standing"
+        },
+        {
+          "name": "Crouching",
+          "value": "1",
+          "notes": "Crouching: Show Crouch"
+        },
+        {
+          "name": "Sprint",
+          "value": "2",
+          "notes": "Dashing: Running"
+        },
+        {
+          "name": "Prone",
+          "value": "3",
+          "notes": "Prone: Down and Crawl"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "MovePlatformType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "MoveObjectMotionType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Move",
+          "value": "0",
+          "notes": "Move: Panning along an axis can be combined with three axes."
+        },
+        {
+          "name": "Translate",
+          "value": "0",
+          "notes": "@deprecated Use `Move` instead"
+        },
+        {
+          "name": "Rotate",
+          "value": "1",
+          "notes": "Rotation: Rotate along an axis, three combinations possible"
+        },
+        {
+          "name": "Scale",
+          "value": "2",
+          "notes": "Scale: Zoom along an axis, three combinations possible"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "BevTreeNodeType",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BTreeCustomNodeType",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "ConditionNode",
+          "value": "1",
+          "notes": "Condition Node: Condition Node"
+        },
+        {
+          "name": "Condition",
+          "value": "1",
+          "notes": "@deprecated Use `ConditionNode` instead"
+        },
+        {
+          "name": "ActionNode",
+          "value": "2",
+          "notes": "Action Node: Action Node"
+        },
+        {
+          "name": "Action",
+          "value": "2",
+          "notes": "@deprecated Use `ActionNode` instead"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "DamagedBodyPartType",
+          "source": {
+            "file": "library/release/Combat.fcc",
+            "sha": "38b88f2be9db2d94ab731056ae63674325524937"
+          }
+        },
+        {
+          "name": "HitBodyPart",
+          "source": {
+            "file": "library/release/Combat.fcc",
+            "sha": "38b88f2be9db2d94ab731056ae63674325524937"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "None",
+          "value": "0",
+          "notes": "None: No"
+        },
+        {
+          "name": "Head",
+          "value": "1",
+          "notes": "Headwear: Head"
+        },
+        {
+          "name": "Body",
+          "value": "2",
+          "notes": "Body: Body"
+        },
+        {
+          "name": "Limb",
+          "value": "3",
+          "notes": "Limb: Limb"
+        }
+      ]
+    },
+    {
+      "same_member_count": 4,
+      "types": [
+        {
+          "name": "UIRequestPurchaseType",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        },
+        {
+          "name": "RequestPurchaseType",
+          "source": {
+            "file": "library/release/Economy.fcc",
+            "sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Disabled",
+          "value": "1",
+          "notes": "Disabled: Disable Hud Request Purchase"
+        },
+        {
+          "name": "Forbidden",
+          "value": "1",
+          "notes": "@deprecated Use `Disabled` instead"
+        },
+        {
+          "name": "Team",
+          "value": "2",
+          "notes": "Team: Request help from team to buy"
+        },
+        {
+          "name": "Faction",
+          "value": "3",
+          "notes": "Faction: Purchase by requesting help from a camp"
+        }
+      ]
+    },
+    {
+      "same_member_count": 3,
+      "types": [
+        {
+          "name": "CommonUISwitchValue",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "CommonHudSwitchValue",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "OriginalLogic",
+          "value": "-1",
+          "notes": "Keep original logic: Default"
+        },
+        {
+          "name": "Close",
+          "value": "0",
+          "notes": "Close: Close"
+        },
+        {
+          "name": "Show",
+          "value": "1",
+          "notes": "Show: Show"
+        }
+      ]
+    },
+    {
+      "same_member_count": 3,
+      "types": [
+        {
+          "name": "PlayerBehaviorStatusType",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        },
+        {
+          "name": "PlayerBehaviorStatus",
+          "source": {
+            "file": "library/release/Player.fcc",
+            "sha": "018ed79074e7c3a8a59f12952c306b4638ae03d3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Enable",
+          "value": "0",
+          "notes": "Enable: Enable"
+        },
+        {
+          "name": "Disable",
+          "value": "1",
+          "notes": "Disable: Disable"
+        },
+        {
+          "name": "Invisible",
+          "value": "2",
+          "notes": "Invisible: Invisible"
+        }
+      ]
+    },
+    {
+      "same_member_count": 3,
+      "types": [
+        {
+          "name": "MiniSentryAttackRangeType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        },
+        {
+          "name": "MinisentryAttackRangeType",
+          "source": {
+            "file": "library/release/LevelObject.fcc",
+            "sha": "d5413ddb3e02b45941773921c1efce8cf3f2be6a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Near",
+          "value": "0",
+          "notes": "Near: Close Range"
+        },
+        {
+          "name": "Middle",
+          "value": "1",
+          "notes": "Middle: Medium Range"
+        },
+        {
+          "name": "Far",
+          "value": "2",
+          "notes": "Far: Long range"
+        }
+      ]
+    },
+    {
+      "same_member_count": 3,
+      "types": [
+        {
+          "name": "AttackableType",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        },
+        {
+          "name": "Attackable",
+          "source": {
+            "file": "library/release/Hostility.fcc",
+            "sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "TRUE",
+          "value": "1",
+          "notes": "Yes: Yes"
+        },
+        {
+          "name": "FALSE",
+          "value": "2",
+          "notes": "No: No"
+        },
+        {
+          "name": "Default",
+          "value": "3",
+          "notes": "Default: Default"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "CoordinateSystemType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        },
+        {
+          "name": "CoordinateType",
+          "source": {
+            "file": "library/release/StdLibrary.fcc",
+            "sha": "e7daf691c60f09d1d1e11feb2604f45a485965f3"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "LocalPosition",
+          "value": "1",
+          "notes": "Local Position: Local Position"
+        },
+        {
+          "name": "WorldPosition",
+          "value": "2",
+          "notes": "World Coordinates: World Position"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "BevTreeNodeStatus",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BTreeNodeState",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Finish",
+          "value": "1",
+          "notes": "Finish: Finish"
+        },
+        {
+          "name": "Running",
+          "value": "2",
+          "notes": "Running: Running"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "UISocialButtonType",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "SocialButtonType",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "AddFriend",
+          "value": "0",
+          "notes": "Add Friend: Add Friend"
+        },
+        {
+          "name": "Report",
+          "value": "1",
+          "notes": "Report: Report"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "UISocialButtonStyleType",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        },
+        {
+          "name": "SocialButtonStyleType",
+          "source": {
+            "file": "library/release/FF_Platform.fcc",
+            "sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Bright",
+          "value": "0",
+          "notes": "Light: Light"
+        },
+        {
+          "name": "Dark",
+          "value": "1",
+          "notes": "Dark: Dark"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "NaturalConstantType",
+          "source": {
+            "file": "library/release/Math.fcc",
+            "sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "NaturalConst",
+          "source": {
+            "file": "library/release/Math.fcc",
+            "sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Pi",
+          "value": "3.14159265",
+          "notes": "Π: Value is about 3.1416"
+        },
+        {
+          "name": "E",
+          "value": "2.71828183",
+          "notes": "Natural Constant: Value about 2.7183"
+        }
+      ]
+    },
+    {
+      "same_member_count": 2,
+      "types": [
+        {
+          "name": "RaycastLayerType",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "RayCastLayerType",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        }
+      ],
+      "members": [
+        {
+          "name": "Static",
+          "value": "0",
+          "notes": "Static: (Deprecated, please do not use)"
+        },
+        {
+          "name": "Charactor",
+          "value": "1",
+          "notes": "Character: (Deprecated, please do not use)"
+        }
+      ]
+    }
+  ]
+}
