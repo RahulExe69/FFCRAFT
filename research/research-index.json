@@ -7,7 +7,8 @@
     "never_invent_api_names": true,
     "exact_signatures_must_be_verified_in_installed_fcc": true,
     "distinguish_documented_from_tested": true,
-    "recipes_are_live_tested": false
+    "recipes_are_live_tested": false,
+    "user_inventory_entries_require_independent_verification": true
   },
   "latest_official_release_found": {
     "product": "Craftland Studio",
@@ -121,7 +122,8 @@
     "docs/09-recipes.md": "Design-level reusable game logic and playtest matrix",
     "docs/10-api-reference-map.md": "API taxonomy, side/platform constraints, obsolete handling and current API discovery",
     "docs/11-community-resources.md": "GitHub/community leads and verification procedure",
-    "docs/SOURCES.md": "Source catalogue"
+    "docs/SOURCES.md": "Source catalogue",
+    "docs/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified."
   },
   "sources": [
     {
@@ -237,14 +239,39 @@
       "topic": "community-resources",
       "title": "nexosstudio CRAFTLAND_STUDIO_RESOURCES",
       "url": "https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES"
+    },
+    {
+      "tier": "USER",
+      "topic": "user-observed-block-inventory",
+      "title": "Rahul's original Craftland block inventory (Rough.txt)",
+      "url": "https://github.com/RahulExe69/FFCRAFT/blob/main/Rough.txt",
+      "evidence_type": "user-authored editor observations",
+      "note": "Useful firsthand inventory; not official documentation and not yet independently verified."
     }
   ],
   "open_questions": [
+    "Review the user-observed block inventory against current official docs and the installed editor, especially exact signatures, enum values, scope, platform availability, and obsolescence.",
     "Build a complete API/event/type inventory from the user's installed Studio release.",
     "Compile and test the join-serial recipe in a live test map, including near-simultaneous joins and reconnects.",
     "Verify the exact current Data Storage quota and whether it applies to each new PC Data Store API.",
     "Build a mobile-vs-PC support matrix for the APIs the user wants to use.",
     "Check current editor availability and exact import behavior for sound/audio workflows.",
     "Record reproducible examples with Craftland version, exact block/API names, logs and outcome."
-  ]
+  ],
+  "user_contributed_inventory": {
+    "original_file": "Rough.txt",
+    "original_url": "https://github.com/RahulExe69/FFCRAFT/blob/main/Rough.txt",
+    "original_blob_sha": "66da776d0b775073f1dc21916ab6b7786dd6f353",
+    "preserved_unchanged": true,
+    "normalized_markdown": "docs/12-user-observed-block-inventory.md",
+    "normalized_json": "research/user-observed-block-inventory.json",
+    "status": "draft, user-observed, not independently verified",
+    "counts": {
+      "sections": 34,
+      "extracted_lines": 438,
+      "observed_enum_type_names": 65,
+      "original_lines": 677
+    },
+    "note": "Extracted lines are candidates for research; do not treat names, signatures, enums, scope rules, or return values as current official truth until checked against current official documentation and/or installed editor."
+  }
 }
