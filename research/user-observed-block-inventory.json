@@ -798,7 +798,7 @@
       "subcategory": "SCENE",
       "heading": "ACTION - SCENE:",
       "start_line": 150,
-      "end_line": 155,
+      "end_line": 157,
       "entries": [
         {
           "name": "Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)",
@@ -807,14 +807,6 @@
           "confidence": "user-observed; not independently verified"
         }
       ]
-    },
-    {
-      "category": "ACTION",
-      "subcategory": "LEVEL OBJECT",
-      "heading": "Next Level Object (inferred heading from transition text)",
-      "start_line": 156,
-      "end_line": 157,
-      "entries": []
     },
     {
       "category": "ACTION",
@@ -1190,7 +1182,7 @@
       "subcategory": "OTHER",
       "heading": "ACTION - OTHER",
       "start_line": 244,
-      "end_line": 284,
+      "end_line": 274,
       "entries": [
         {
           "name": "Restore All Properties",
@@ -1263,13 +1255,16 @@
           "observed_signature": "So moving to the next Category 3.GAME so it has 12 Sub Categories and those are :",
           "source_line": 260,
           "confidence": "user-observed; not independently verified"
-        },
-        {
-          "name": "Now get's started GAME - GLOBAL",
-          "observed_signature": "Now get's started GAME - GLOBAL:",
-          "source_line": 275,
-          "confidence": "user-observed; not independently verified"
-        },
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "GLOBAL",
+      "heading": "Now get's started GAME - GLOBAL:",
+      "start_line": 275,
+      "end_line": 284,
+      "entries": [
         {
           "name": "Pause Fixed Update",
           "observed_signature": "Pause Fixed Update",
@@ -1307,7 +1302,7 @@
       "subcategory": "PLAYER",
       "heading": "GAME - PLAYER:",
       "start_line": 285,
-      "end_line": 314,
+      "end_line": 302,
       "entries": [
         {
           "name": "Add HP",
@@ -1392,13 +1387,16 @@
           "observed_signature": "Quit Game at Next Frame: Target ___",
           "source_line": 301,
           "confidence": "user-observed; not independently verified"
-        },
-        {
-          "name": "Now to the next one GAME - TEAM",
-          "observed_signature": "Now to the next one GAME - TEAM:",
-          "source_line": 303,
-          "confidence": "user-observed; not independently verified"
-        },
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "TEAM",
+      "heading": "Now to the next one GAME - TEAM:",
+      "start_line": 303,
+      "end_line": 312,
+      "entries": [
         {
           "name": "Set Attackable Team",
           "observed_signature": "Set Attackable Team: Attacker ___ Target ___ Attackable .---tf",
@@ -1442,6 +1440,14 @@
           "confidence": "user-observed; not independently verified"
         }
       ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "TEAM NOW MOVE TO THE PHYSICS AND BEFORE MOVING I WANT YOU TO KNOW THAT IF YOU ARE UNABLE TO UNDERSTAND OR WANT TO UNDERSTAND A CODE BLOCK THEN ASK ME, I'LL TRY MY BEST",
+      "heading": "End of the GAME -TEAM now move to the Physics and before moving i want you to know that if you are unable to understand or want to understand a code block then ask me, I'll try my best",
+      "start_line": 313,
+      "end_line": 314,
+      "entries": []
     },
     {
       "category": "GAME",
@@ -3119,8 +3125,8 @@
     }
   ],
   "counts": {
-    "sections": 34,
-    "extracted_lines": 438,
+    "sections": 36,
+    "extracted_lines": 436,
     "observed_enum_type_names": 65,
     "original_lines": 677
   }
