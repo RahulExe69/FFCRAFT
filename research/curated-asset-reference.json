@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-20",
+  "source_of_truth": "https://ffcraftland.garena.com/en/docs/enum/",
+  "community_package_source": "https://github.com/nexosstudio/FE_RESOURCES_BETA",
+  "records": [
+    {
+      "category": "skybox-base-type",
+      "display_name": "Daytime",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_DAY",
+      "script_name": "Day",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_Day.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    },
+    {
+      "category": "skybox-base-type",
+      "display_name": "Night",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_NIGHT",
+      "script_name": "Night",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_Night.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    },
+    {
+      "category": "skybox-base-type",
+      "display_name": "Dusk",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_EVE",
+      "script_name": "Dusk",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_Eve.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    },
+    {
+      "category": "skybox-base-type",
+      "display_name": "City View",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_CITY",
+      "script_name": "City",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_City.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    },
+    {
+      "category": "skybox-base-type",
+      "display_name": "Colorful Sky",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_COLORFULSKY",
+      "script_name": "Colorful",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_ColorfulSky.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    },
+    {
+      "category": "skybox-base-type",
+      "display_name": "Frost Galaxy",
+      "official_description": "Frost Moon",
+      "enum_type": "SkyboxType",
+      "enum_value": "UGC_SKYENV_SNOW",
+      "script_name": "FrostGalaxy",
+      "official_status": "documented",
+      "package_path": "Official_SkyBox/Sky_Snow.package",
+      "package_status": "community-unverified",
+      "platform_status": "must verify per target editor"
+    }
+  ],
+  "non_mapped_community_assets": {
+    "source": "https://github.com/nexosstudio/FE_RESOURCES_BETA/tree/main/All_Skybox",
+    "entries": "sky_01.package through sky_44.package",
+    "status": "community-unverified",
+    "note": "Do not infer names, IDs, official provenance, or compatibility from filenames."
+  }
+}
