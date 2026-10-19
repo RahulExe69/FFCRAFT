@@ -1,7 +1,7 @@
 # First official cross-check pass
 
 **Checked:** 20 October 2026  
-**Scope:** small, source-backed comparison against official Garena docs; not a complete validation of the 441 candidate lines.
+**Scope:** small, source-backed comparison against official Garena docs; not a complete validation of the 443 candidate lines.
 
 ## What is confirmed by the official documentation
 
@@ -58,3 +58,7 @@ These are **name-level cross-checks only**. For code generation, each block stil
 5. Mark each record `documented`, `editor-observed`, `compiled`, or `playtested` as those separate levels of evidence are achieved.
 
 Machine-readable cross-checks are stored in [`research/user-observed-block-inventory.json`](../research/user-observed-block-inventory.json).
+
+### 6. Teleport is marked obsolete in the official STD Library index
+
+The [official STD Library/API index](https://ffcraftland.garena.com/en/docs/api-1-26) labels **Teleport** as obsolete. The matching `Teleport` block appears in `Rough.txt`. Preserve it for understanding older scripts, but do not recommend it for new work until the current supported replacement is confirmed.
