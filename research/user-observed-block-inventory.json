@@ -150,6 +150,12 @@
       "end_line": 42,
       "entries": [
         {
+          "name": "EVENT - GLOBAL EVENT",
+          "observed_signature": "EVENT - GLOBAL EVENT:",
+          "source_line": 22,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "On Game Start",
           "observed_signature": "On Game Start",
           "source_line": 24,
@@ -266,6 +272,12 @@
       "start_line": 43,
       "end_line": 109,
       "entries": [
+        {
+          "name": "EVENT - PRIVATE EVENT",
+          "observed_signature": "EVENT - PRIVATE EVENT:",
+          "source_line": 43,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "On Awake",
           "observed_signature": "On Awake",
@@ -582,6 +594,12 @@
       "end_line": 149,
       "entries": [
         {
+          "name": "ACTION - STD LIBRARY",
+          "observed_signature": "ACTION - STD LIBRARY:",
+          "source_line": 110,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Set Property",
           "observed_signature": "Set Property: Entity ___ Entity --- Set Property --- Operation = ___ (so suppose at first drop menu i add player then in the 1st drop down i have to select player entity then in the second drop down i can select what to edit like hp position orientation knockout state etc. like that we can also set property of othe entity and assets and everything)",
           "source_line": 112,
@@ -801,6 +819,12 @@
       "end_line": 157,
       "entries": [
         {
+          "name": "ACTION - SCENE",
+          "observed_signature": "ACTION - SCENE:",
+          "source_line": 150,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)",
           "observed_signature": "Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)",
           "source_line": 152,
@@ -866,6 +890,12 @@
       "start_line": 170,
       "end_line": 189,
       "entries": [
+        {
+          "name": "ACTION - ITEMS",
+          "observed_signature": "ACTION - ITEMS:",
+          "source_line": 170,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Add Item",
           "observed_signature": "Add Item : Target ___ Item --- Count  0  (Created Entity) { here in the drop down menu, all the available in game items are available from attachment to consumable and to guns and everything of the game we can select that from there}",
@@ -966,6 +996,12 @@
       "end_line": 201,
       "entries": [
         {
+          "name": "ACTION  - UI",
+          "observed_signature": "ACTION  - UI:",
+          "source_line": 190,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Create Built in UI",
           "observed_signature": "Create Built in UI: Target ___ Type ___ (Created Entity)",
           "source_line": 192,
@@ -1017,6 +1053,12 @@
       "end_line": 208,
       "entries": [
         {
+          "name": "ACTION - COMBAT",
+          "observed_signature": "ACTION - COMBAT:",
+          "source_line": 202,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Deal Damage",
           "observed_signature": "Deal Damage: Target ___ Type --- Damage _0_",
           "source_line": 204,
@@ -1037,6 +1079,12 @@
       "start_line": 209,
       "end_line": 225,
       "entries": [
+        {
+          "name": "ACTION - PLAYABLE",
+          "observed_signature": "ACTION - PLAYABLE:",
+          "source_line": 209,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Reset",
           "observed_signature": "Reset: Target ___",
@@ -1119,6 +1167,12 @@
       "end_line": 235,
       "entries": [
         {
+          "name": "ACTION - AI",
+          "observed_signature": "ACTION - AI:",
+          "source_line": 226,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Enable Default Behaviour Tree",
           "observed_signature": "Enable Default Behaviour Tree : Target ___ Enable ---tf",
           "source_line": 228,
@@ -1157,6 +1211,12 @@
       "start_line": 236,
       "end_line": 243,
       "entries": [
+        {
+          "name": "ACTION - BEHAVIOUR TREE",
+          "observed_signature": "ACTION - BEHAVIOUR TREE:",
+          "source_line": 236,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Set Blackboard Value",
           "observed_signature": "Set Blackboard Value: Behaviour Tree ___  Key .please enter the content  Value ___",
@@ -1266,6 +1326,12 @@
       "end_line": 284,
       "entries": [
         {
+          "name": "Now get's started GAME - GLOBAL",
+          "observed_signature": "Now get's started GAME - GLOBAL:",
+          "source_line": 275,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Pause Fixed Update",
           "observed_signature": "Pause Fixed Update",
           "source_line": 277,
@@ -1278,9 +1344,21 @@
           "confidence": "user-observed; not independently verified"
         },
         {
+          "name": "Enable Safe Zone",
+          "observed_signature": "Enable Safe Zone: Center .XYZ Radius . 0  Wait Time (s) . 0  Duration (s) . 0  Damage . 0",
+          "source_line": 279,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Disable Safe Zone",
           "observed_signature": "Disable Safe Zone",
           "source_line": 280,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Enable Moving Zone",
+          "observed_signature": "Enable Moving Zone: Start Position .XYZ Target Position .XYZ Initial Radius .0 Final Radius .0 Duration (s) . 0  Damage . 0",
+          "source_line": 281,
           "confidence": "user-observed; not independently verified"
         },
         {
@@ -1304,6 +1382,12 @@
       "start_line": 285,
       "end_line": 302,
       "entries": [
+        {
+          "name": "GAME - PLAYER",
+          "observed_signature": "GAME - PLAYER:",
+          "source_line": 285,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Add HP",
           "observed_signature": "Add HP: Target ___ Value .0",
@@ -1398,6 +1482,12 @@
       "end_line": 314,
       "entries": [
         {
+          "name": "Now to the next one GAME - TEAM",
+          "observed_signature": "Now to the next one GAME - TEAM:",
+          "source_line": 303,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Set Attackable Team",
           "observed_signature": "Set Attackable Team: Attacker ___ Target ___ Attackable .---tf",
           "source_line": 305,
@@ -1448,6 +1538,12 @@
       "start_line": 315,
       "end_line": 331,
       "entries": [
+        {
+          "name": "GAME - PHYSICS",
+          "observed_signature": "GAME - PHYSICS:",
+          "source_line": 315,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Is Inside Sphere",
           "observed_signature": ".Is Inside Sphere: Target ___ Center .XYZ Radius . 0",
@@ -1530,6 +1626,12 @@
       "end_line": 337,
       "entries": [
         {
+          "name": "GAME - CAMERA",
+          "observed_signature": "GAME - CAMERA:",
+          "source_line": 332,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Get Current Custom Camera",
           "observed_signature": ".Get Current Custom Camera: Target ___",
           "source_line": 334,
@@ -1557,6 +1659,12 @@
       "end_line": 342,
       "entries": [
         {
+          "name": "GAME - WORK FLOW",
+          "observed_signature": "GAME - WORK FLOW:",
+          "source_line": 338,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Switch Phase",
           "observed_signature": "Switch Phase: Phase Index .0",
           "source_line": 340,
@@ -1577,6 +1685,12 @@
       "start_line": 343,
       "end_line": 359,
       "entries": [
+        {
+          "name": "GAME - ECONOMY",
+          "observed_signature": "GAME - ECONOMY:",
+          "source_line": 343,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Get Wallet",
           "observed_signature": "Get Wallet: Target ___ (IsExist, Wallet)",
@@ -1659,6 +1773,12 @@
       "end_line": 365,
       "entries": [
         {
+          "name": "GAME - MINIMAP",
+          "observed_signature": "GAME - MINIMAP:",
+          "source_line": 360,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Create Mini Map Icon",
           "observed_signature": "Create Mini Map Icon: Target ___ Resource --- (Created Entity)",
           "source_line": 362,
@@ -1679,6 +1799,12 @@
       "start_line": 366,
       "end_line": 373,
       "entries": [
+        {
+          "name": "GAME - ANIMATION",
+          "observed_signature": "GAME - ANIMATION:",
+          "source_line": 366,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Play Animation",
           "observed_signature": "Play Animation: Target ___ State .'please enter the content' Play Speed .0 Loop Type ---",
@@ -1706,6 +1832,12 @@
       "start_line": 374,
       "end_line": 396,
       "entries": [
+        {
+          "name": "GAME - COLLECTION",
+          "observed_signature": "GAME - COLLECTION:",
+          "source_line": 374,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Play Emote",
           "observed_signature": "Play Emote: Target ___ Emote .---",
@@ -1824,6 +1956,12 @@
       "end_line": 403,
       "entries": [
         {
+          "name": "GAME - STORY",
+          "observed_signature": "GAME - STORY:",
+          "source_line": 397,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Notify Start Plot",
           "observed_signature": "Notify Start Plot: Target ___ Plot ID ___",
           "source_line": 399,
@@ -1838,6 +1976,12 @@
       "start_line": 404,
       "end_line": 430,
       "entries": [
+        {
+          "name": "GAME - OTHER",
+          "observed_signature": "GAME - OTHER:",
+          "source_line": 404,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "End Morph",
           "observed_signature": "End Morph: Player ___",
@@ -1902,6 +2046,12 @@
       "end_line": 448,
       "entries": [
         {
+          "name": "DATA - BASIC",
+          "observed_signature": "DATA - BASIC:",
+          "source_line": 431,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Number = .0",
           "observed_signature": "Number = .0",
           "source_line": 435,
@@ -1964,6 +2114,12 @@
       "start_line": 449,
       "end_line": 505,
       "entries": [
+        {
+          "name": "DATA - MATH",
+          "observed_signature": "DATA - MATH:",
+          "source_line": 449,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "___ ---___➕",
           "observed_signature": ".___ ---___➕ (in this component that drop down has +-*/% and clicking that ➕ icon will add another slot and a drop down yk, it's like we can add multiple slots like this ___---___---___---___)",
@@ -2274,6 +2430,12 @@
       "end_line": 530,
       "entries": [
         {
+          "name": "DATA - LIST",
+          "observed_signature": "DATA - LIST:",
+          "source_line": 506,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Append",
           "observed_signature": "Append: Target ___ Value ___",
           "source_line": 508,
@@ -2391,6 +2553,12 @@
       "end_line": 537,
       "entries": [
         {
+          "name": "DATA - DICTIONARY",
+          "observed_signature": "DATA - DICTIONARY:",
+          "source_line": 531,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Create Random Seed",
           "observed_signature": ".Create Random Seed: Seed .0",
           "source_line": 533,
@@ -2411,6 +2579,12 @@
       "start_line": 538,
       "end_line": 554,
       "entries": [
+        {
+          "name": "DATA - VECTOR",
+          "observed_signature": "DATA - VECTOR:",
+          "source_line": 538,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "Get vector",
           "observed_signature": ".Get vector: X .0  Y .0  Z .0",
@@ -2493,6 +2667,12 @@
       "end_line": 571,
       "entries": [
         {
+          "name": "DATA - STRINGS",
+          "observed_signature": "DATA - STRINGS:",
+          "source_line": 555,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Connect",
           "observed_signature": ".Connect: Value1 ___ Value2 ___ ➕(i already explained what this sign ➕ means)",
           "source_line": 557,
@@ -2573,6 +2753,12 @@
       "start_line": 572,
       "end_line": 587,
       "entries": [
+        {
+          "name": "DATA - CONVERT",
+          "observed_signature": "DATA - CONVERT:",
+          "source_line": 572,
+          "confidence": "user-observed; not independently verified"
+        },
         {
           "name": "To String",
           "observed_signature": ".To String: Target ___",
@@ -3048,6 +3234,12 @@
       "end_line": 670,
       "entries": [
         {
+          "name": "LOGIC",
+          "observed_signature": "LOGIC:",
+          "source_line": 658,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "'if else statement'",
           "observed_signature": "'if else statement'",
           "source_line": 660,
@@ -3164,7 +3356,7 @@
   ],
   "counts": {
     "sections": 35,
-    "extracted_lines": 441,
+    "extracted_lines": 473,
     "observed_enum_type_names": 65,
     "original_lines": 677
   },
