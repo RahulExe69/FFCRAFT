@@ -31,12 +31,14 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 54,
-    "official_doc_match_not_in_mirror": 1,
-    "type_id_not_enum_in_mirror": 4,
-    "manual_or_official_cross_check": 3,
+    "candidate_mapped_from_mirror": 53,
+    "official_doc_match_not_in_mirror": 2,
+    "official_docs_and_mirror_confirm": 1,
+    "official_dynamic_id_type_confirmed": 4,
+    "type_id_not_enum_in_mirror": 0,
+    "manual_or_official_cross_check": 2,
     "legacy_observed_check_obsolete": 3,
-    "needs_review_total": 11
+    "needs_review_total": 5
   },
   "entries": [
     {
@@ -493,7 +495,7 @@
           "label": "GameResult.fcc:ScoreType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Official enum reference marks this concept obsolete/deprecated; retain as historical inventory only and avoid recommending it for new work unless current docs say otherwise."
     },
     {
       "observed_label": "Built-in UI Type",
@@ -7793,10 +7795,21 @@
       "observed_label": "Type Enum",
       "rough_line": 599,
       "observed_signature": "11. Type Enum",
-      "mapping_status": "manual-or-official-cross-check",
-      "candidates": [],
+      "mapping_status": "official-docs-match-not-in-mirror",
+      "candidates": [
+        {
+          "label": "TypeEnum",
+          "definitions": [],
+          "official_note": "Official enum index describes this as the list of all available types; the actual list is editor/type-system dependent, not enumerated as fixed members."
+        }
+      ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "TypeEnum",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official enum index describes this as the list of all available types; the actual list is editor/type-system dependent, not enumerated as fixed members."
+      }
     },
     {
       "observed_label": "Patrol Style Type",
@@ -8804,7 +8817,7 @@
       "observed_label": "Object Texture",
       "rough_line": 610,
       "observed_signature": "22. Object Texture",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:TextureType",
@@ -8990,9 +9003,11 @@
                   "value": null,
                   "notes": "Clear: Clear"
                 }
-              ]
+              ],
+              "label": "LevelObject.fcc:TextureType"
             }
-          ]
+          ],
+          "official_note": "Official enum docs identify Texture ID as the value type and list texture options; mirror contains a 35-member TextureType enum."
         }
       ],
       "catalog_enums": [
@@ -9181,7 +9196,12 @@
           "label": "LevelObject.fcc:TextureType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "TextureType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official enum docs identify Texture ID as the value type and list texture options; mirror contains a 35-member TextureType enum."
+      }
     },
     {
       "observed_label": "Monster Type",
@@ -9497,7 +9517,7 @@
           "label": "LevelObject.fcc:PresentEffectTextureType_Deprecated"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Official enum reference marks this concept obsolete/deprecated; retain as historical inventory only and avoid recommending it for new work unless current docs say otherwise."
     },
     {
       "observed_label": "Loot Armor Type",
@@ -10666,7 +10686,7 @@
           "label": "Player.fcc:PlayerSkillType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Official enum reference marks this concept obsolete/deprecated; retain as historical inventory only and avoid recommending it for new work unless current docs say otherwise."
     },
     {
       "observed_label": "Outfit Slot Type",
@@ -13995,29 +14015,41 @@
       "observed_label": "Weapon Skin Type",
       "rough_line": 643,
       "observed_signature": "55. Weapon Skin Type",
-      "mapping_status": "type-id-not-enum-in-mirror",
+      "mapping_status": "official-dynamic-id-type-confirmed",
       "candidates": [
         {
-          "label": "Collection.fcc:WeaponSkinID (declared type, not enum)",
-          "definitions": []
+          "label": "WeaponSkinType",
+          "definitions": [],
+          "note": "Official enum/type docs identify Weapon Skin ID as the value type; full dynamic skin-ID list was not returned in the page excerpt."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "WeaponSkinType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official enum/type docs identify Weapon Skin ID as the value type; full dynamic skin-ID list was not returned in the page excerpt."
+      }
     },
     {
       "observed_label": "Backpack Skin Type",
       "rough_line": 644,
       "observed_signature": "56. Backpack Skin Type",
-      "mapping_status": "type-id-not-enum-in-mirror",
+      "mapping_status": "official-dynamic-id-type-confirmed",
       "candidates": [
         {
-          "label": "Collection.fcc:BackpackSkinID (declared type, not enum)",
-          "definitions": []
+          "label": "BagSkinType",
+          "definitions": [],
+          "note": "Official docs identify Backpack Skin ID as the value type; full dynamic skin-ID list not established."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "BagSkinType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official docs identify Backpack Skin ID as the value type; full dynamic skin-ID list not established."
+      }
     },
     {
       "observed_label": "Fog Mode Type",
@@ -14392,12 +14424,18 @@
       "mapping_status": "official-docs-match-not-in-mirror",
       "candidates": [
         {
-          "label": "Official enum docs: RenderQualityType (Low, Medium, High, Ultra); absent in mirrored 1.5.0 catalog",
-          "definitions": []
+          "label": "RenderQualityType",
+          "definitions": [],
+          "official_note": "Official enum docs list Low=0, Medium=1, High=2, Ultra=3."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "RenderQualityType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official enum docs list Low=0, Medium=1, High=2, Ultra=3."
+      }
     },
     {
       "observed_label": "Player State Type",
@@ -14476,29 +14514,41 @@
       "observed_label": "Vehicle Skin Type",
       "rough_line": 652,
       "observed_signature": "64. Vehicle Skin Type",
-      "mapping_status": "type-id-not-enum-in-mirror",
+      "mapping_status": "official-dynamic-id-type-confirmed",
       "candidates": [
         {
-          "label": "Collection.fcc:VehicleSkinID (declared type, not enum)",
-          "definitions": []
+          "label": "VehicleSkinType",
+          "definitions": [],
+          "note": "Official docs identify Vehicle Skin ID as the value type; available skin IDs may depend on supported game content."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "VehicleSkinType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official docs identify Vehicle Skin ID as the value type; available skin IDs may depend on supported game content."
+      }
     },
     {
       "observed_label": "Outfit Skin Type",
       "rough_line": 653,
       "observed_signature": "65. Outfit Skin Type",
-      "mapping_status": "type-id-not-enum-in-mirror",
+      "mapping_status": "official-dynamic-id-type-confirmed",
       "candidates": [
         {
-          "label": "Collection.fcc:OutfitID (declared type, not enum)",
-          "definitions": []
+          "label": "ClothType",
+          "definitions": [],
+          "note": "Official docs identify Outfit ID as the value type; full dynamic outfit-ID list not established."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "official_documentation": {
+        "identifier": "ClothType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official docs identify Outfit ID as the value type; full dynamic outfit-ID list not established."
+      }
     }
   ]
 }
