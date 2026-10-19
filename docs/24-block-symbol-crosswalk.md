@@ -2,57 +2,69 @@
 
 ## Purpose
 
-The original `Rough.txt` remains untouched. This crosswalk compares each extracted line in `research/user-observed-block-inventory.json` against the detailed PC function, event, component and property declarations parsed from the public extension-library mirror.
+The original `Rough.txt` remains untouched. This crosswalk compares each extracted line in `research/user-observed-block-inventory.json` against both the recovered PC function/event/component/property declarations and targeted current official API/event pages.
 
 Machine-readable result: [`research/block-symbol-crosswalk.json`](../research/block-symbol-crosswalk.json).
 
 ## Comparison result
 
-For 443 lines extracted from `Rough.txt`:
+The old-library comparison across 443 extracted lines found:
+- **306** exact normalized matches to a mirrored symbol name or API documentation title.
+- **113** approximate candidates, retained only as search leads.
+- **21** lines with no exact match in the older mirrored libraries.
+- **3** entries likely to be explanatory prose or section notes rather than blocks.
 
-- **306** lines have an exact normalized match to a mirrored symbol name or API documentation title.
-- **113** lines have one or more approximate candidates, retained only as search leads.
-- **21** lines have no match in the older mirrored libraries.
-- **3** entries look like explanatory prose or section notes rather than standalone blocks.
+These numbers describe the comparison with the **older 1.5.0 mirror**, not the live official docs. They do not tell us the number of current working visual blocks.
 
-The 113 approximate entries are **not confirmed mappings**. There are repeated labels and overloaded functions, and the mirror can include stale/deprecated declarations. Use source line numbers and the candidates in the JSON to review each case.
+## Current official review already filled some gaps
 
-## Examples of confirmed label-level matches
+Targeted checks on the current official documentation now confirm useful labels that the old mirror didn't match exactly:
 
-| Rough label | Candidate recovered from mirror | Why it is useful |
+| Rough label | Current official reference | Finding |
 |---|---|---|
-| `On Game Start` | `StdLibrary.fcc: OnGameStart()` | Event signature is available |
-| `On Round Start (Round Index)` | `Workflow.fcc: OnRoundStart(roundIndex int)` | Confirms the callback argument name/type in this snapshot |
-| `Create Level Object` | `LevelObject.fcc: CreateLevelObject(...)` | Output entity and parameters are captured |
-| `Add Item` | `Items.fcc: AddItem(...)` | Captures target, item ID, count and output list; snapshot marks it server-side |
-| `Create Built in UI` | `Hud.fcc: CreateBuiltInUIClient(...)` or `CreateBuiltInUI(...)` | Shows that related names can have different client/server signatures |
-| `Set SkyBox Type` | `Scene.fcc: SetSkyboxType(...)` | Snapshot marks this declaration deprecated, so a current official equivalent must be checked |
+| `Set Property` | [Set property API](https://ffcraftland.garena.com/en/docs/api-1-871/) and [Mobile block tutorial](https://ffcraftland.garena.com/en/tutorial/cl/3-48/) | Mobile tutorial explicitly demonstrates a visual block. The PC API page labels the API **Only PC**. Keep the Mobile visual block and PC code API as separate records with separate scopes. |
+| `Get Property` | [Get property API](https://ffcraftland.garena.com/en/docs/api-1-872/) and [Mobile block tutorial](https://ffcraftland.garena.com/en/tutorial/cl/3-48/) | Mobile tutorial demonstrates a visual property lookup; the PC API page is marked **Only PC**. |
+| `Wait for Milliseconds` | [STD Library API index](https://ffcraftland.garena.com/en/docs/api-1-26) | Official label is singular: **Wait for Millisecond**. |
+| `This Entity` / `Get Global` | [STD Library API index](https://ffcraftland.garena.com/en/docs/api-1-26) | Both names are present in current PC code-script documentation. |
+| `Get Children By Index` | [Get Child By Index](https://ffcraftland.garena.com/en/docs/api-1-540/) | Current label is singular; the page lists Both Server and Client, Both Mobile and PC. |
+| `Get Parnt` | [Get Parent](https://ffcraftland.garena.com/en/docs/api-1-542/) | Correct label is Get Parent; current page lists Both Server and Client, Both Mobile and PC. |
+| `Get Type Name` | [Get Type Name](https://ffcraftland.garena.com/en/docs/api-1-978/) | Current official API confirms the label and says Both Server/Client, Both Mobile/PC. |
+| `Filter Level Object` | [Level Object API](https://ffcraftland.garena.com/en/docs/api-26-124) | Current label is Filter Level Objects. |
+| `On Player Quit Midway` | [Event reference](https://ffcraftland.garena.com/en/docs/type-11) | Listed as a current Global entity event. |
+| `On User Quit or User Match End` | [Event reference](https://ffcraftland.garena.com/en/docs/type-11) | Listed as a current Global entity event. |
+| `On User Portal` | [Level Object module](https://ffcraftland.garena.com/en/docs/module-26) | A related official event is **On Use Portal**; verify the exact visual label on the target editor before treating the wording as identical. |
+| `Type As` | [Official patch notes](https://ffcraftland.garena.com/en/patch-notes/) | Studio 1.17.0 notes describe the TYPE-to-ID API migration and say extra `as` casting is no longer required in that context; treat an old casting block as version/context-sensitive. |
 
-These are candidate source mappings, not proof that the same node exists in the current visual-block editor or on both platforms.
+The current Mobile tutorial gives an unusually concrete example: On Player Join → Get Property (Player) → Get Property (Rig) → Get Property (Head) → Set Property (Skeleton Scale) with a Vector3 value of (3,3,3). See the [wide screenshot of the connected blocks](https://dl.dir.freefiremobile.com/common/OB46/CSH/OfficialWeb/CLtutorial/009_BlockScript_New/image-20250402192733907.png). This proves that the visual sequence exists in that tutorial, but it **does not enumerate every value in each dropdown**.
 
-## Why some blocks do not match
+The crosswalk JSON retains official URL/evidence/platform notes beside each reviewed entry. Some current-source hits were approximate wording/likely translation matches; those remain explicitly distinguished from exact-name matches.
 
-A visual editor can have native data-flow/control blocks, property getter/setter blocks, generic type-cast nodes, and special nodes that do not appear as ordinary named `func` declarations in `.fcc`. The crosswalk intentionally does not force those names into unrelated APIs.
+## Still unresolved after targeted current-doc checks
 
-Current Garena documentation is also ahead of the mirror:
-- [Studio 1.17.0 patch notes](https://ffcraftland.garena.com/en/patch-notes/) say TYPE-related APIs changed to ID-based APIs.
-- [Studio 1.17.1 patch notes](https://ffcraftland.garena.com/en/patch-notes/) describe block recommendations when an empty block slot is selected.
-- [Studio 1.19.0 patch notes](https://ffcraftland.garena.com/en/patch-notes/) describe an integrated MCP server that supports Blocks, Scripts, Scenes, UI, Animation Controllers, and more; the MCP URL is available inside the editor.
+These labels do not yet have an unambiguous current API/event mapping in this pass:
+- `On User Consumable`
+- `On Throwable Explodes` — do not assume this equals the separately documented `On Explode` event for other object types.
+- `Enable Default Behaviour Tree`
+- `Destroy Target`, `Add Attachment`, and `Get Equipment`
+- `Restore All Properties`, `Modify properties`, `Set basic properties`, and `Revert to original properties`
 
-That makes the current editor itself the most promising authority for unresolved/current block IDs and available choices. This research pass has not connected to the user's local editor MCP endpoint, and has not inspected a current local `EditorGenLib.fcc` export.
+Some could be editor-native blocks or module-specific controls rather than ordinary function declarations. Their wording/category needs comparison with the current editor. We should not invent replacements based on similar names.
 
-## What the data file contains
+## Stronger next sources
 
-Each entry preserves the category, subcategory, original line number, observed label/signature, exact candidates, approximate candidates and source blob SHAs. It marks fuzzy matches as leads only and flags likely narrative notes. The index draws from the 42-file version-1.5.0 public mirror; it is not a full current-version inventory.
+The [public multilingual tutorial corpus audit](25-public-tutorial-corpus-audit.md) adds PC Block/Element Script, Code Script, Script Additional Notes, formula property and many Mobile template examples. Its [Mobile recipe index](../research/mobile-block-recipe-index.json) records 13 example mechanisms. It is a translated snapshot and is not authoritative for current dropdowns.
 
-## Next verification pass
+For a complete *current* visual-block and dropdown inventory, the highest-value remaining source is a current Studio editor export/editor MCP response or screenshots from its block search/property dropdowns. Studio-generated `EditorGenLib.fcc` may also hold project-specific graph scripts and asset ID enums. We have not yet connected to a running user's editor, so exact current socket/dropdown inventory is still incomplete.
 
-Review every no-match and approximate entry against the live official docs/current editor. Then record separately:
-1. current PC script/API symbol,
-2. current PC visual-block label and socket types,
-3. current Mobile visual-block label and dropdown values,
-4. platform/side restrictions,
-5. current/deprecated status,
-6. source and test status.
+## Required separation in future work
 
-Until then, the crosswalk is a gap map, not a compatibility guarantee.
+Every item should be classified separately as:
+1. current PC code API,
+2. current PC visual block and its exact input/output socket types,
+3. current Mobile visual block and dropdown values,
+4. server/client side restriction,
+5. platform restriction,
+6. current, deprecated, legacy or unknown,
+7. source link and verification status.
+
+A PC function match alone is never enough to infer Mobile block availability or exact visual-block wiring.
