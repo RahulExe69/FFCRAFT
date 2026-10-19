@@ -24,6 +24,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 16. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
 
 ## Author-contributed inventory
+- [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
 
 - [Original `Rough.txt`](Rough.txt) — Rahul's raw, hand-typed editor observations. Preserved as authored; not official or independently verified.
 - [Normalized block inventory](docs/12-user-observed-block-inventory.md) — searchable draft grouped by category and subcategory.
