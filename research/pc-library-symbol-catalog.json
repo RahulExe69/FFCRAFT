@@ -12,12 +12,12 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 20,
-    "enums": 116,
-    "enum_members": 2145,
-    "functions": 368,
-    "events": 195,
-    "components": 366,
+    "libraries": 25,
+    "enums": 129,
+    "enum_members": 2200,
+    "functions": 447,
+    "events": 215,
+    "components": 388,
     "aliases": 17,
     "defined_types": 48
   },
@@ -14433,6 +14433,873 @@
         "SprayResultUI",
         "SprayResultHud",
         "ColorDrum"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Economy.fcc",
+      "source_sha": "baeee5e90f12bfe53a22ea58db5ca4f0ff380e80",
+      "bytes_text": 13792,
+      "enum_count": 3,
+      "enum_member_count": 9,
+      "function_count": 14,
+      "event_count": 7,
+      "component_count": 10,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "UIRequestPurchaseType",
+          "members": [
+            {
+              "name": "Disabled",
+              "value": "1",
+              "notes": "Disabled: Disable Hud Request Purchase"
+            },
+            {
+              "name": "Forbidden",
+              "value": "1",
+              "notes": "@deprecated Use `Disabled` instead"
+            },
+            {
+              "name": "Team",
+              "value": "2",
+              "notes": "Team: Request help from team to buy"
+            },
+            {
+              "name": "Faction",
+              "value": "3",
+              "notes": "Faction: Purchase by requesting help from a camp"
+            }
+          ]
+        },
+        {
+          "name": "RequestPurchaseType",
+          "members": [
+            {
+              "name": "Disabled",
+              "value": "1",
+              "notes": "Disabled: Disable Hud Request Purchase"
+            },
+            {
+              "name": "Forbidden",
+              "value": "1",
+              "notes": "@deprecated Use `Disabled` instead"
+            },
+            {
+              "name": "Team",
+              "value": "2",
+              "notes": "Team: Request help from team to buy"
+            },
+            {
+              "name": "Faction",
+              "value": "3",
+              "notes": "Faction: Purchase by requesting help from a camp"
+            }
+          ]
+        },
+        {
+          "name": "MoneyType",
+          "members": [
+            {
+              "name": "Basic",
+              "value": "1",
+              "notes": "Basic: Base type, the most basic in-game currency, the type of pricing for general shop items in the current version"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetWallet",
+          "signature": "[platform_server] func GetWallet(target entity, out var isExist bool, out var wallet entity<Wallet>) /**"
+        },
+        {
+          "name": "CreateWallet",
+          "signature": "[platform_server] func CreateWallet(owner entity<Player>, target entity<Entity>, out var createdEntity entity<Wallet>) /**"
+        },
+        {
+          "name": "AddMoney",
+          "signature": "[platform_server] func AddMoney(target entity<Wallet>, moneyType MoneyType, count float) //@deprecated Use `AddMoney` instead"
+        },
+        {
+          "name": "AddMoneyToWallet",
+          "signature": "[deprecated] func AddMoneyToWallet(target entity<Wallet>, moneyType MoneyType, count float) /**"
+        },
+        {
+          "name": "CostMoney",
+          "signature": "[platform_server] func CostMoney(target entity<Wallet>, moneyType MoneyType, count float) //@deprecated Use `CostMoney` instead"
+        },
+        {
+          "name": "CostMoneyFromWallet",
+          "signature": "[deprecated] func CostMoneyFromWallet(target entity<Wallet>, moneyType MoneyType, count float) /**"
+        },
+        {
+          "name": "TransferMoney",
+          "signature": "[platform_server] func TransferMoney(outWallet entity<Wallet>, moneyType MoneyType, count float, inWallet entity<Wallet>) /**"
+        },
+        {
+          "name": "GetMoneyCount",
+          "signature": "[platform_server] func GetMoneyCount(target entity<Wallet>, moneyType MoneyType) float"
+        },
+        {
+          "name": "GetMoney",
+          "signature": "[platform_server] func GetMoney(target entity<Wallet>, moneyType MoneyType) entity<Money>"
+        },
+        {
+          "name": "GetAllShops",
+          "signature": "[platform_server] func GetAllShops() List<entity<Shop>>"
+        },
+        {
+          "name": "CreateShop",
+          "signature": "[platform_server] func CreateShop(out var createdEntity entity<Shop>) /**"
+        },
+        {
+          "name": "CreateShopShelf",
+          "signature": "[platform_server] func CreateShopShelf(out var createdEntity entity<ShopShelf>) /**"
+        },
+        {
+          "name": "CreateShopItem",
+          "signature": "[platform_server] func CreateShopItem(out var createdEntity entity<ShopItem>) /**"
+        },
+        {
+          "name": "AddItemToShopItem",
+          "signature": "[platform_server] func AddItemToShopItem(shopItem entity<ShopItem>, item ItemIDType, count int) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPurchase",
+          "signature": "[platform_server] event OnPurchase(player entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "OnPrePurchase",
+          "signature": "[platform_server] event OnPrePurchase(player entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "BeforePurchase",
+          "signature": "[deprecated] event BeforePurchase(player entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "OnPlayerPurchaseRequest",
+          "signature": "[platform_server] event OnPlayerPurchaseRequest(player entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "OnPurchaseRequest",
+          "signature": "[deprecated] event OnPurchaseRequest(player entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "OnPlayerRequestForPurchaseFulfilled",
+          "signature": "[platform_server] event OnPlayerRequestForPurchaseFulfilled(helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>)"
+        },
+        {
+          "name": "OnShopRequestFilled",
+          "signature": "[deprecated] event OnShopRequestFilled(helpPlayer entity<Player>, helpedPlayer entity<Player>, shopItem entity<ShopItem>)"
+        }
+      ],
+      "components": [
+        "Global",
+        "Player",
+        "ShopItem",
+        "ShopShelf",
+        "Shop",
+        "UIStore",
+        "ShopHud",
+        "Money",
+        "Wallet",
+        "WalletHud"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/FF_Platform.fcc",
+      "source_sha": "de3bd15bee30a0acf9659db2f1def618f8eaa212",
+      "bytes_text": 4922,
+      "enum_count": 4,
+      "enum_member_count": 8,
+      "function_count": 13,
+      "event_count": 0,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "UISocialButtonType",
+          "members": [
+            {
+              "name": "AddFriend",
+              "value": "0",
+              "notes": "Add Friend: Add Friend"
+            },
+            {
+              "name": "Report",
+              "value": "1",
+              "notes": "Report: Report"
+            }
+          ]
+        },
+        {
+          "name": "SocialButtonType",
+          "members": [
+            {
+              "name": "AddFriend",
+              "value": "0",
+              "notes": "Add Friend: Add Friend"
+            },
+            {
+              "name": "Report",
+              "value": "1",
+              "notes": "Report: Report"
+            }
+          ]
+        },
+        {
+          "name": "UISocialButtonStyleType",
+          "members": [
+            {
+              "name": "Bright",
+              "value": "0",
+              "notes": "Light: Light"
+            },
+            {
+              "name": "Dark",
+              "value": "1",
+              "notes": "Dark: Dark"
+            }
+          ]
+        },
+        {
+          "name": "SocialButtonStyleType",
+          "members": [
+            {
+              "name": "Bright",
+              "value": "0",
+              "notes": "Light: Light"
+            },
+            {
+              "name": "Dark",
+              "value": "1",
+              "notes": "Dark: Dark"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetTokenCountToday",
+          "signature": "[platform_server] func GetTokenCountToday(target entity<Player>, tokenID int, out var count int, out var isSuccess bool) //@deprecated Use `GetTokenCountToday` instead"
+        },
+        {
+          "name": "GetPlayerTokenCountToday",
+          "signature": "[deprecated] func GetPlayerTokenCountToday(target entity<Player>, tokenID int, out var count int, out var isSuccess bool) /**"
+        },
+        {
+          "name": "CompleteCustomMission",
+          "signature": "[platform_server] func CompleteCustomMission(target entity<Player>, missionID int, missionProgress int) //@deprecated Use `CompleteCustomMission` instead"
+        },
+        {
+          "name": "CustomMissionComplete",
+          "signature": "[deprecated] func CustomMissionComplete(target entity<Player>, missionID int, missionProgress int) /**"
+        },
+        {
+          "name": "GetCustomMissionProgress",
+          "signature": "[platform_server] func GetCustomMissionProgress(target entity<Player>, missionID int) int"
+        },
+        {
+          "name": "GetTokenCount",
+          "signature": "[platform_server] func GetTokenCount(target entity<Player>, tokenID int, out var count int, out var isSuccess bool) //@deprecated Use `GetTokenCount` instead"
+        },
+        {
+          "name": "GetPlayerTokenCount",
+          "signature": "[deprecated] func GetPlayerTokenCount(target entity<Player>, tokenID int, out var count int, out var isSuccess bool) /**"
+        },
+        {
+          "name": "AddToken",
+          "signature": "[platform_server] func AddToken(target entity<Player>, tokenID int, count int, out var isSuccess bool) //@deprecated Use `AddToken` instead"
+        },
+        {
+          "name": "AddTokenToPlayer",
+          "signature": "[deprecated] func AddTokenToPlayer(target entity<Player>, tokenID int, count int, out var isSuccess bool) /**"
+        },
+        {
+          "name": "CostToken",
+          "signature": "[platform_server] func CostToken(target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool) //@deprecated Use `CostToken` instead"
+        },
+        {
+          "name": "CostTokenFromPlayer",
+          "signature": "[deprecated] func CostTokenFromPlayer(target entity<Player>, tokenID int, tokenCount int, out var isSuccess bool) /**"
+        },
+        {
+          "name": "CreateTokenInScene",
+          "signature": "[platform_server] func CreateTokenInScene(position Vector3, tokenID int, count int, out var isSuccess bool) //@deprecated Use `CreateTokenInScene` instead"
+        },
+        {
+          "name": "CreateToken",
+          "signature": "[deprecated] func CreateToken(position Vector3, tokenID int, count int, out var isSuccess bool)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "UISocialButtonWidget",
+        "HUDSocialButtonWidget"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Football.fcc",
+      "source_sha": "0bcc638de3f3c228efb37db62c3843fc2c67e3f9",
+      "bytes_text": 5618,
+      "enum_count": 3,
+      "enum_member_count": 15,
+      "function_count": 7,
+      "event_count": 4,
+      "component_count": 4,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "JerseyStyle",
+          "members": [
+            {
+              "name": "StyleA",
+              "value": "1",
+              "notes": "Style A: Style A"
+            },
+            {
+              "name": "WaistcoatStyle",
+              "value": "1",
+              "notes": "@deprecated Use `StyleA` instead"
+            },
+            {
+              "name": "StyleB",
+              "value": "2",
+              "notes": "Style B: Style B"
+            },
+            {
+              "name": "RoundNeckStyle",
+              "value": "2",
+              "notes": "@deprecated Use `StyleB` instead"
+            },
+            {
+              "name": "StyleC",
+              "value": "3",
+              "notes": "Style C: Style C"
+            },
+            {
+              "name": "StripedStyle",
+              "value": "3",
+              "notes": "@deprecated Use `StyleC` instead"
+            }
+          ]
+        },
+        {
+          "name": "CustomizeClothesType",
+          "members": [
+            {
+              "name": "StyleA",
+              "value": "1",
+              "notes": "Style A: Style A"
+            },
+            {
+              "name": "WaistcoatStyle",
+              "value": "1",
+              "notes": "@deprecated Use `StyleA` instead"
+            },
+            {
+              "name": "StyleB",
+              "value": "2",
+              "notes": "Style B: Style B"
+            },
+            {
+              "name": "RoundNeckStyle",
+              "value": "2",
+              "notes": "@deprecated Use `StyleB` instead"
+            },
+            {
+              "name": "StyleC",
+              "value": "3",
+              "notes": "Style C: Style C"
+            },
+            {
+              "name": "StripedStyle",
+              "value": "3",
+              "notes": "@deprecated Use `StyleC` instead"
+            }
+          ]
+        },
+        {
+          "name": "LootSoccerType",
+          "members": [
+            {
+              "name": "LootSoccerRandom",
+              "value": "1040",
+              "notes": "Loot Soccer Random: Loot Soccer Random"
+            },
+            {
+              "name": "LootSoccerShield",
+              "value": "1038",
+              "notes": "Loot Soccer Shield: Loot Soccer Shield"
+            },
+            {
+              "name": "LootSoccerIce",
+              "value": "1039",
+              "notes": "Loot Soccer Ice: Freezing Grenade"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "SetJersey",
+          "signature": "[platform_server] func SetJersey(target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color) //@deprecated Use `SetJersey` instead"
+        },
+        {
+          "name": "SetCustomClothes",
+          "signature": "[deprecated] func SetCustomClothes(target entity<Player>, jerseyType JerseyStyle, mainColor1 Color, mainColor2 Color, otherColor Color) /**"
+        },
+        {
+          "name": "ResetJersey",
+          "signature": "[platform_server] func ResetJersey(player entity<Player>) //@deprecated Use `ResetJersey` instead"
+        },
+        {
+          "name": "ResetCustomClothes",
+          "signature": "[deprecated] func ResetCustomClothes(player entity<Player>) /**"
+        },
+        {
+          "name": "AddFootballVelocity",
+          "signature": "[platform_server] func AddFootballVelocity(football entity<Football>, velocity Vector3) //@deprecated Use `AddFootballVelocity` instead"
+        },
+        {
+          "name": "AddFootBallVelocity",
+          "signature": "[deprecated] func AddFootBallVelocity(football entity<Football>, velocity Vector3) /**"
+        },
+        {
+          "name": "SetFootballPosition",
+          "signature": "[platform_server] func SetFootballPosition(football entity<Football>, position Vector3, keepVelocity bool) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnShotByFootballShooter",
+          "signature": "[platform_server] event OnShotByFootballShooter(player entity<Player>, velocity Vector3)"
+        },
+        {
+          "name": "OnShootByFootBallShooter",
+          "signature": "[deprecated] event OnShootByFootBallShooter(player entity<Player>, velocity Vector3)"
+        },
+        {
+          "name": "OnFootBallCollided",
+          "signature": "event OnFootBallCollided(target entity<LevelObject>, velocity Vector3)"
+        },
+        {
+          "name": "OnGoal",
+          "signature": "[platform_server] event OnGoal(footballGoal entity<FootballGoal>, scorer entity<Player>, assistPlayer entity<Player>)"
+        }
+      ],
+      "components": [
+        "Football",
+        "JerseyMachine",
+        "FootballGoal",
+        "LootItemBoxSoccer"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/GameResult.fcc",
+      "source_sha": "72d446f18b76441cccf61289c62545b767463570",
+      "bytes_text": 10053,
+      "enum_count": 1,
+      "enum_member_count": 17,
+      "function_count": 22,
+      "event_count": 6,
+      "component_count": 1,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "ScoreType",
+          "members": [
+            {
+              "name": "KillCount",
+              "value": "1",
+              "notes": "Eliminations: (Deprecated, please do not use)"
+            },
+            {
+              "name": "DamageSum",
+              "value": "2",
+              "notes": "Damage: (Deprecated, please do not use)"
+            },
+            {
+              "name": "AssistCount",
+              "value": "3",
+              "notes": "Assists: (Deprecated, please do not use)"
+            },
+            {
+              "name": "FinishOrder",
+              "value": "4",
+              "notes": "Order of goals achieved: (Deprecated, please do not use)"
+            },
+            {
+              "name": "FinishTimestamp",
+              "value": "5",
+              "notes": "Time of goals achieved: (Deprecated, please do not use)"
+            },
+            {
+              "name": "FinishCount",
+              "value": "6",
+              "notes": "Amount of goals achieved: (Deprecated, please do not use)"
+            },
+            {
+              "name": "CheckPointProgress",
+              "value": "7",
+              "notes": "Checkpoint progress: (Deprecated, please do not use)"
+            },
+            {
+              "name": "RankScore",
+              "value": "8",
+              "notes": "Rank score: (Deprecated, please do not use)"
+            },
+            {
+              "name": "SurvivalDuration",
+              "value": "9",
+              "notes": "Survival time: (Deprecated, please do not use)"
+            },
+            {
+              "name": "MainScore",
+              "value": "10",
+              "notes": "Target score: (Deprecated, please do not use)"
+            },
+            {
+              "name": "MonsterKillCount",
+              "value": "11",
+              "notes": "No. of zombies eliminated: (Deprecated, please do not use)"
+            },
+            {
+              "name": "ZombieKillCount",
+              "value": "11",
+              "notes": "@deprecated Use `MonsterKillCount` instead"
+            },
+            {
+              "name": "MonsterAssistCount",
+              "value": "12",
+              "notes": "Zombie elimination assist.: (Deprecated, please do not use)"
+            },
+            {
+              "name": "ZombieAssistCount",
+              "value": "12",
+              "notes": "@deprecated Use `MonsterAssistCount` instead"
+            },
+            {
+              "name": "MonsterDamageSum",
+              "value": "13",
+              "notes": "DMG to zombies: (Deprecated, please do not use)"
+            },
+            {
+              "name": "ZombieDamageSum",
+              "value": "13",
+              "notes": "@deprecated Use `MonsterDamageSum` instead"
+            },
+            {
+              "name": "Unknown",
+              "value": "0",
+              "notes": "Unknown: (Deprecated, please do not use)"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetPlayerScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerScore_Deprecated(target entity<Player>, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetPlayerScore",
+          "signature": "[deprecated] func GetPlayerScore(target entity<Player>, scoreType ScoreType) int"
+        },
+        {
+          "name": "SetPlayerScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetPlayerScore_Deprecated(target entity<Player>, scoreType ScoreType, value int) //@deprecated Use `SetPlayerScore_Deprecated` instead"
+        },
+        {
+          "name": "SetPlayerScore",
+          "signature": "[deprecated] func SetPlayerScore(target entity<Player>, scoreType ScoreType, value int) /**"
+        },
+        {
+          "name": "GetTeamScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamScore_Deprecated(target entity<Team>, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetTeamScore",
+          "signature": "[deprecated] func GetTeamScore(target entity<Team>, scoreType ScoreType) int"
+        },
+        {
+          "name": "SetTeamScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetTeamScore_Deprecated(target entity<Team>, scoreType ScoreType, value int) //@deprecated Use `SetTeamScore_Deprecated` instead"
+        },
+        {
+          "name": "SetTeamScore",
+          "signature": "[deprecated] func SetTeamScore(target entity<Team>, scoreType ScoreType, value int) /**"
+        },
+        {
+          "name": "GetPlayerRoundScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRoundScore_Deprecated(target entity<Player>, roundIndex int, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetPlayerRoundScore",
+          "signature": "[deprecated] func GetPlayerRoundScore(target entity<Player>, roundIndex int, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetTeamRoundScore_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRoundScore_Deprecated(target entity<Team>, roundIndex int, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetTeamRoundScore",
+          "signature": "[deprecated] func GetTeamRoundScore(target entity<Team>, roundIndex int, scoreType ScoreType) int"
+        },
+        {
+          "name": "GetPlayerRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRank_Deprecated(target entity<Player>) int"
+        },
+        {
+          "name": "GetPlayerRank",
+          "signature": "[deprecated] func GetPlayerRank(target entity<Player>) int"
+        },
+        {
+          "name": "GetTeamRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRank_Deprecated(target entity<Team>) int"
+        },
+        {
+          "name": "GetTeamRank",
+          "signature": "[deprecated] func GetTeamRank(target entity<Team>) int"
+        },
+        {
+          "name": "GetPlayerRoundRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetPlayerRoundRank_Deprecated(target entity<Player>, roundIndex int) int"
+        },
+        {
+          "name": "GetPlayerRoundRank",
+          "signature": "[deprecated] func GetPlayerRoundRank(target entity<Player>, roundIndex int) int"
+        },
+        {
+          "name": "GetTeamRoundRank_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetTeamRoundRank_Deprecated(target entity<Team>, roundIndex int) int"
+        },
+        {
+          "name": "GetTeamRoundRank",
+          "signature": "[deprecated] func GetTeamRoundRank(target entity<Team>, roundIndex int) int"
+        },
+        {
+          "name": "SetMatchResult_Deprecate",
+          "signature": "[deprecated] [platform_server] func SetMatchResult_Deprecate(player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>) //@deprecated Use `SetMatchResult_Deprecate` instead"
+        },
+        {
+          "name": "SetMatchResult",
+          "signature": "[deprecated] func SetMatchResult(player entity<Player>, result GameResultType, rank int, scoreName List<string>, value List<string>) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPlayerScoreChange",
+          "signature": "[deprecated] [platform_server] event OnPlayerScoreChange(player entity<Player>, scoreType ScoreType, score int)"
+        },
+        {
+          "name": "OnTeamScoreChange",
+          "signature": "[deprecated] [platform_server] event OnTeamScoreChange(team entity<Team>, scoreType ScoreType, score int)"
+        },
+        {
+          "name": "OnPlayerRankChange",
+          "signature": "[deprecated] [platform_server] event OnPlayerRankChange(player entity<Player>, rank int)"
+        },
+        {
+          "name": "OnTeamRoundRankChange",
+          "signature": "[deprecated] [platform_server] event OnTeamRoundRankChange(team entity<Team>, rank int)"
+        },
+        {
+          "name": "OnScoreChange",
+          "signature": "[deprecated] [platform_server] event OnScoreChange(scoreType ScoreType, score int)"
+        },
+        {
+          "name": "OnRankChanged",
+          "signature": "[deprecated] [platform_server] event OnRankChanged(rank int)"
+        }
+      ],
+      "components": [
+        "Global"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Hostility.fcc",
+      "source_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320",
+      "bytes_text": 9866,
+      "enum_count": 2,
+      "enum_member_count": 6,
+      "function_count": 23,
+      "event_count": 3,
+      "component_count": 5,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "AttackableType",
+          "members": [
+            {
+              "name": "TRUE",
+              "value": "1",
+              "notes": "Yes: Yes"
+            },
+            {
+              "name": "FALSE",
+              "value": "2",
+              "notes": "No: No"
+            },
+            {
+              "name": "Default",
+              "value": "3",
+              "notes": "Default: Default"
+            }
+          ]
+        },
+        {
+          "name": "Attackable",
+          "members": [
+            {
+              "name": "TRUE",
+              "value": "1",
+              "notes": "Yes: Yes"
+            },
+            {
+              "name": "FALSE",
+              "value": "2",
+              "notes": "No: No"
+            },
+            {
+              "name": "Default",
+              "value": "3",
+              "notes": "Default: Default"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "JoinTeam",
+          "signature": "[platform_server] func JoinTeam(target entity<Entity>, targetTeam entity<Team>, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "JoinNewTeam",
+          "signature": "[platform_server] func JoinNewTeam(target entity<Entity>, out var newTeam entity<Team>, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "CreateFaction",
+          "signature": "[platform_server] func CreateFaction(out var createdEntity entity<Faction>) /**"
+        },
+        {
+          "name": "JoinFaction",
+          "signature": "[platform_server] func JoinFaction(target entity<Entity>, faction entity<Faction>) /**"
+        },
+        {
+          "name": "GetAttackableFactions",
+          "signature": "[platform_server] func GetAttackableFactions(attacker entity<Faction>) List<entity<Faction>>"
+        },
+        {
+          "name": "SetAttackableFaction",
+          "signature": "[platform_server] func SetAttackableFaction(attacker entity<Faction>, target entity<Faction>, attackable bool) /**"
+        },
+        {
+          "name": "SetAttackablePlayer_Deprecated",
+          "signature": "[deprecated] [platform_server] func SetAttackablePlayer_Deprecated(attacker entity<Player>, target entity<Player>, attackable AttackableType) //@deprecated Use `SetAttackablePlayer_Deprecated` instead"
+        },
+        {
+          "name": "SetAttackablePlayer",
+          "signature": "[deprecated] func SetAttackablePlayer(attacker entity<Player>, target entity<Player>, attackable AttackableType) /**"
+        },
+        {
+          "name": "SetAttackableTeam",
+          "signature": "[platform_server] func SetAttackableTeam(attacker entity<Team>, target entity<Team>, attackable bool) /**"
+        },
+        {
+          "name": "GetAttackablePlayer_Deprecated",
+          "signature": "[deprecated] [platform_server] func GetAttackablePlayer_Deprecated(attacker entity<Player>) List<entity<Player>>"
+        },
+        {
+          "name": "GetAttackablePlayer",
+          "signature": "[deprecated] func GetAttackablePlayer(attacker entity<Player>) List<entity<Player>>"
+        },
+        {
+          "name": "QuitFaction",
+          "signature": "[platform_server] func QuitFaction(target entity<Entity>) /**"
+        },
+        {
+          "name": "GetFaction",
+          "signature": "[platform_server] func GetFaction(target entity<Entity>) entity<Faction>"
+        },
+        {
+          "name": "IsAttackAble",
+          "signature": "[platform_server] func IsAttackAble(attacker entity<Entity>, target entity<Entity>) bool"
+        },
+        {
+          "name": "IsActualAttackAble",
+          "signature": "[deprecated] func IsActualAttackAble(attacker entity<Entity>, target entity<Entity>) bool"
+        },
+        {
+          "name": "SetAttackableEntity",
+          "signature": "[platform_server] func SetAttackableEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType) //@deprecated Use `SetAttackableEntity` instead"
+        },
+        {
+          "name": "SetActualAttackAbleEntity",
+          "signature": "[deprecated] func SetActualAttackAbleEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType) //@deprecated Use `SetAttackableEntity` instead"
+        },
+        {
+          "name": "SetAttackAbleEntity",
+          "signature": "[deprecated] func SetAttackAbleEntity(attacker entity<Entity>, target entity<Entity>, attackable AttackableType) /**"
+        },
+        {
+          "name": "GetAttackableEntity",
+          "signature": "[platform_server] func GetAttackableEntity(attacker entity<Entity>) List<entity<Entity>>"
+        },
+        {
+          "name": "GetActualAttackAbleEntity",
+          "signature": "[deprecated] func GetActualAttackAbleEntity(attacker entity<Entity>) List<entity<Entity>>"
+        },
+        {
+          "name": "GetAttackAbleEntity",
+          "signature": "[deprecated] func GetAttackAbleEntity(attacker entity<Entity>) List<entity<Entity>>"
+        },
+        {
+          "name": "GetPositionNearTeammate",
+          "signature": "[platform_server] func GetPositionNearTeammate(target entity<Player>) Vector3"
+        },
+        {
+          "name": "GetTeammateNearPosition",
+          "signature": "[deprecated] func GetTeammateNearPosition(target entity<Player>) Vector3"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnTeamRemove",
+          "signature": "[platform_server] event OnTeamRemove(team entity<Team>)"
+        },
+        {
+          "name": "OnTeamAdd",
+          "signature": "[platform_server] event OnTeamAdd(team entity<Team>)"
+        },
+        {
+          "name": "OnChangeTeam",
+          "signature": "[platform_server] event OnChangeTeam(formerTeam entity<Team>, currentTeam entity<Team>)"
+        }
+      ],
+      "components": [
+        "Global",
+        "Team",
+        "Player",
+        "SpawnBox",
+        "Faction"
       ],
       "aliases": [],
       "defined_types": []
