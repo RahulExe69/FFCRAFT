@@ -130,7 +130,8 @@
     "docs/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats",
     "docs/17-curated-asset-reference.md": "Six official SkyboxType identifiers cross-checked against Garena docs; community package links remain untested",
     "docs/18-fe-resources-beta-audit.md": "Audit of FE_RESOURCES_BETA package collection: skyboxes, dynamic weather, voting system, provenance and testing caveats",
-    "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states"
+    "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
+    "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates"
   },
   "sources": [
     {
@@ -449,5 +450,17 @@
     "community_packages_tested": false,
     "data_file": "research/curated-asset-reference.json",
     "caution": "Official enum verification does not verify binary package compatibility or establish a runtime setter API."
-  }
+  },
+  "vertical_slices": [
+    {
+      "id": "sequential-player-join-serial",
+      "status": "design-and-source-checks-completed-not-compiled-or-playtested",
+      "mobile_status": "exact player property setter still needs current editor evidence",
+      "pc_status": "exact property setter and defined player property require installed library confirmation",
+      "event_source": "https://ffcraftland.garena.com/en/docs/event-11-14",
+      "pc_property_source": "https://ffcraftland.garena.com/en/docs/api-1-871/",
+      "mobile_block_source": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+      "doc": "docs/19-first-vertical-slice-join-serial.md"
+    }
+  ]
 }
