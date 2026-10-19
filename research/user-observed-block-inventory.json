@@ -3148,6 +3148,18 @@
     {
       "finding": "The section headed 'DATA - DICTIONARY' lists Create Random Seed and Next, which look like random-seed utilities rather than dictionary operations.",
       "action": "Verify the actual editor subcategory label and move/alias these entries only after the installed editor confirms their placement."
+    },
+    {
+      "finding": "Official enum reference marks Score Type, Character skill, and Effect Texture Type obsolete; all three appear in Rough.txt's enum-type list.",
+      "action": "Add obsolete status and official enum URLs to the verified layer. Do not recommend these entries for new work by default."
+    },
+    {
+      "finding": "Official block-script guide uses 'party scripts' for one default script scope, whereas Rough.txt says TEAM.",
+      "action": "Verify the target editor's exact label and runtime semantics; retain the user wording as an alias until confirmed."
+    },
+    {
+      "finding": "Official docs separate API, Event, Type, and Enum references and expose more modules than the rough seven-category list.",
+      "action": "Maintain both the user-facing visual-block taxonomy and an official-reference crosswalk rather than forcing a one-to-one mapping."
     }
   ],
   "counts": {
@@ -3155,5 +3167,82 @@
     "extracted_lines": 441,
     "observed_enum_type_names": 65,
     "original_lines": 677
-  }
+  },
+  "official_cross_checks": [
+    {
+      "id": "block-script-contexts-and-typed-slots",
+      "status": "officially documented",
+      "source_url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+      "findings": [
+        "The guide says the editor automatically creates global, party, and player scripts by default.",
+        "It also describes scripts attached to specific objects and UI elements.",
+        "The guide distinguishes block scripts and client-side scripts; some blocks are not active in every script type and the editor can show a prompt.",
+        "The guide says block parameter slots indicate the type of value that can be supplied."
+      ],
+      "implications": [
+        "Rough.txt's GLOBAL/TEAM/PLAYER labels need a nomenclature check: the official guide uses 'party' in this context. Do not silently assume TEAM and party are identical.",
+        "The handwritten seven top-level block categories are a useful observed editor taxonomy, not a guaranteed complete/current official API module map."
+      ]
+    },
+    {
+      "id": "official-reference-taxonomy",
+      "status": "officially documented",
+      "source_url": "https://ffcraftland.garena.com/en/docs/api",
+      "findings": [
+        "The official reference separates API, Event, Type, and Enum.",
+        "The API module index contains modules such as STD Library, List, Map, Math, Strings, Convert, Scene, Items, Combat, HUD, Level Object, Playable, Animation, Behavior Tree, Player, Team, Workflow, Physics, Camera, Minimap, Collection, Economy, Data Storage, Football, and Morph."
+      ],
+      "implications": [
+        "Keep the author's ACTION/GAME/DATA groupings for familiar lookup but add explicit mappings to official API module and enum/type names where matches are confirmed."
+      ]
+    },
+    {
+      "id": "obsolete-enum-warning",
+      "status": "officially marked obsolete",
+      "source_url": "https://ffcraftland.garena.com/en/docs/enum/",
+      "findings": [
+        "The official enum reference marks Character skill (PlayerSkillType) obsolete.",
+        "The official enum reference marks Score type (ScoreType) obsolete.",
+        "The official enum reference marks Effect Texture Type (PresentEffectTextureType_Deprecated) obsolete."
+      ],
+      "rough_inventory_matches": [
+        "Character skill",
+        "Score Type",
+        "Effect Texture Type"
+      ],
+      "implication": "These should be tagged obsolete in the verified layer and never recommended for new implementations without a current editor-specific reason."
+    },
+    {
+      "id": "official-type-vocabulary",
+      "status": "officially documented",
+      "source_url": "https://ffcraftland.garena.com/en/docs/type",
+      "findings": [
+        "The reference exposes types including Object, Type, Entity, Property, Event ID, Bool, Int, Float, Int64, Number, String, Color, UUID, asset IDs, List, List Template, Map, Map Template, List or Map, Type List, Type or Type List, Vector2, Vector3, Quaternion, Bezier Curve, and others.",
+        "The type catalogue itself has obsolete labels, so names in an older transcription need their deprecation status checked."
+      ],
+      "implications": [
+        "Model type names as first-class entities separate from enums and from visual block labels.",
+        "Do not assume that the rough variable list is an exhaustive set of underlying API types."
+      ]
+    },
+    {
+      "id": "initial-standard-library-overlap",
+      "status": "official index name matches; exact visual block mapping still needs verification",
+      "source_url": "https://ffcraftland.garena.com/en/docs/module-1",
+      "rough_inventory_matches": [
+        "Get All Players",
+        "Get All Teams",
+        "Set All Players Move Status",
+        "Wait For Next Frame",
+        "Break Loop",
+        "Continue to next",
+        "Get Property",
+        "Set Property"
+      ],
+      "findings": [
+        "These names or close label variants appear in the official standard-library/API reference index."
+      ],
+      "implication": "Use exact API declarations for parameters, outputs, async behavior, server/client support, Mobile/PC support, and deprecation status before generating code."
+    }
+  ]
 }
