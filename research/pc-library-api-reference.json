@@ -8,14 +8,14 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 25,
-    "functions": 447,
-    "events": 215,
-    "component_declarations": 434,
-    "component_properties": 2940,
-    "deprecated_functions": 188,
-    "server_functions": 311,
-    "client_functions": 31
+    "libraries": 30,
+    "functions": 547,
+    "events": 221,
+    "component_declarations": 440,
+    "component_properties": 2965,
+    "deprecated_functions": 200,
+    "server_functions": 316,
+    "client_functions": 45
   },
   "libraries": [
     {
@@ -48295,6 +48295,3875 @@
           "source": {
             "file": "library/release/Hostility.fcc",
             "blob_sha": "39ce0b1553c78bb457cf79c885a87546b5b96320"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/LLM.fcc",
+      "source_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1",
+      "text_length": 7904,
+      "functions": [
+        {
+          "name": "UpdateContextToPersona",
+          "signature": "[platform_client] func UpdateContextToPersona(target PersonaID, context string, out var requestID int64)",
+          "parameters_text": "target PersonaID, context string, out var requestID int64",
+          "return_type": null,
+          "description": "Update the model context of a specified persona in the current room and overwrite the original context after execution.The context will influence the persona's interpretation of the background, history, or certain parameters for the current dialogue.",
+          "doc_title": "Update Context to Persona",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "context",
+              "type": "string",
+              "description": "Details of the context"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "requestID",
+              "type": "int64",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "FeedbackToPersonaContent",
+          "signature": "[platform_client] func FeedbackToPersonaContent(responseID string, isLiked bool)",
+          "parameters_text": "responseID string, isLiked bool",
+          "return_type": null,
+          "description": "Submit feedback on the response content of a persona, which will be used to optimize our model.",
+          "doc_title": "Feedback on Persona Response",
+          "parameters": [
+            {
+              "name": "responseID",
+              "type": "string",
+              "description": "Each complete response will have a unique ID"
+            },
+            {
+              "name": "isLiked",
+              "type": "bool",
+              "description": "Whether the response is liked or not. True = like."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "RollbackPersonaMemory",
+          "signature": "[platform_client] func RollbackPersonaMemory(responseID string)",
+          "parameters_text": "responseID string",
+          "return_type": null,
+          "description": "Roll back the memory of a persona to before the specific response ID. All memory of the dialogues including and after the response will be cleared.",
+          "doc_title": "Roll Back Persona Memory",
+          "parameters": [
+            {
+              "name": "responseID",
+              "type": "string",
+              "description": "Each complete response will have a unique ID"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "UserMessageToPersona",
+          "signature": "[platform_client] func UserMessageToPersona(target PersonaID, content string, out var requestID int64)",
+          "parameters_text": "target PersonaID, content string, out var requestID int64",
+          "return_type": null,
+          "description": "Send user message to Persona",
+          "doc_title": "Send User Message To Persona",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Message content"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "requestID",
+              "type": "int64",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "SystemMessageToPersona",
+          "signature": "[platform_client] func SystemMessageToPersona(target PersonaID, content string, shouldReply bool, out var requestID int64)",
+          "parameters_text": "target PersonaID, content string, shouldReply bool, out var requestID int64",
+          "return_type": null,
+          "description": "Send system message to Persona",
+          "doc_title": "Send System Message To Persona",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Message content"
+            },
+            {
+              "name": "shouldReply",
+              "type": "bool",
+              "description": "Should I reply?"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "requestID",
+              "type": "int64",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "ClearMemory",
+          "signature": "[platform_client] func ClearMemory(out var errorCode StatusCode)",
+          "parameters_text": "out var errorCode StatusCode",
+          "return_type": null,
+          "description": "Clear Persona Memory",
+          "doc_title": "Clear Memory",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "errorCode",
+              "type": "StatusCode",
+              "description": "Error Code"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "SetPersonaObserver",
+          "signature": "[platform_client] func SetPersonaObserver(target PersonaID, observers List<PersonaID>)",
+          "parameters_text": "target PersonaID, observers List<PersonaID>",
+          "return_type": null,
+          "description": "Set up a Persona observer, and the subsequent conversations with the Persona will also be sent to the observer",
+          "doc_title": "Set Persona Observer",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "observers",
+              "type": "List<PersonaID>",
+              "description": "Watcher List"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "UserMessageToPersonaStream",
+          "signature": "[platform_client] func UserMessageToPersonaStream(target PersonaID, content string, out var requestID int64)",
+          "parameters_text": "target PersonaID, content string, out var requestID int64",
+          "return_type": null,
+          "description": "Send user message to Persona using streaming",
+          "doc_title": "Stream User Messages to Persona",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Message content"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "requestID",
+              "type": "int64",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "SystemMessageToPersonaStream",
+          "signature": "[platform_client] func SystemMessageToPersonaStream(target PersonaID, content string, shouldReply bool, out var requestID int64)",
+          "parameters_text": "target PersonaID, content string, shouldReply bool, out var requestID int64",
+          "return_type": null,
+          "description": "Send user message to Persona using streaming",
+          "doc_title": "Stream System Messages to Persona",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PersonaID",
+              "description": "Target PersonaID"
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Message content"
+            },
+            {
+              "name": "shouldReply",
+              "type": "bool",
+              "description": "Should I reply?"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "requestID",
+              "type": "int64",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnReceiveContentFromPersonaV2",
+          "signature": "[platform_client] event OnReceiveContentFromPersonaV2(sender PersonaID, requestID string, responseID string, content string)",
+          "parameters_text": "sender PersonaID, requestID string, responseID string, content string",
+          "return_type": null,
+          "description": "Triggered when receiving Persona information.",
+          "doc_title": "On Receive Content From Persona",
+          "parameters": [
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            },
+            {
+              "name": "responseID",
+              "type": "string",
+              "description": "Each complete response will have a unique ID"
+            },
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Information Content"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "OnReceiveContentFromPersona",
+          "signature": "[deprecated] [platform_client] event OnReceiveContentFromPersona(content string, sender PersonaID, requestID string)",
+          "parameters_text": "content string, sender PersonaID, requestID string",
+          "return_type": null,
+          "description": "Triggered when receiving Persona information.",
+          "doc_title": "On Receive Content From Persona",
+          "parameters": [
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Information Content"
+            },
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender Persona"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "OnReceiveActionFromPersona",
+          "signature": "[platform_client] event OnReceiveActionFromPersona(action string, sender PersonaID, requestID string)",
+          "parameters_text": "action string, sender PersonaID, requestID string",
+          "return_type": null,
+          "description": "Triggered when receiving a Persona action.",
+          "doc_title": "On Receive Action From Persona",
+          "parameters": [
+            {
+              "name": "action",
+              "type": "string",
+              "description": "Persona action"
+            },
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender Persona"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "OnReceiveStatusFromPersona",
+          "signature": "[deprecated] [platform_client] event OnReceiveStatusFromPersona(sender PersonaID, errorCode StatusCode, requestID string)",
+          "parameters_text": "sender PersonaID, errorCode StatusCode, requestID string",
+          "return_type": null,
+          "description": "Triggered when a Persona status is received.",
+          "doc_title": "On Receive Status From Persona",
+          "parameters": [
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender Persona"
+            },
+            {
+              "name": "errorCode",
+              "type": "StatusCode",
+              "description": "Error Code"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated",
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "OnPlayerSendMessageByUIPersonaChat",
+          "signature": "[platform_client] event OnPlayerSendMessageByUIPersonaChat(content string, sender PersonaID, requestID string)",
+          "parameters_text": "content string, sender PersonaID, requestID string",
+          "return_type": null,
+          "description": "Triggered when sending a message to Persona through the UI.",
+          "doc_title": "On Player Send Message by UI Persona Chat",
+          "parameters": [
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Information Content"
+            },
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender Persona"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "OnReceiveFinishFromPersona",
+          "signature": "[platform_client] event OnReceiveFinishFromPersona(sender PersonaID, errorCode StatusCode, requestID string)",
+          "parameters_text": "sender PersonaID, errorCode StatusCode, requestID string",
+          "return_type": null,
+          "description": "Triggered when receiving the end from Persona.",
+          "doc_title": "On Receive Finish From Persona",
+          "parameters": [
+            {
+              "name": "sender",
+              "type": "PersonaID",
+              "description": "Sender Persona"
+            },
+            {
+              "name": "errorCode",
+              "type": "StatusCode",
+              "description": "Error Code"
+            },
+            {
+              "name": "requestID",
+              "type": "string",
+              "description": "Starting from 0, each outgoing request will consume a sequential numeric ID, such as for creating a room and clearing memory."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "UIPersonaChat",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Visible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Target",
+              "type": "PersonaID",
+              "description": "The Persona to which it is bound.",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector2",
+              "description": "Offset",
+              "attributes": []
+            },
+            {
+              "name": "HeightScale",
+              "type": "float",
+              "description": "Height",
+              "attributes": []
+            },
+            {
+              "name": "ShowSystemReply",
+              "type": "bool",
+              "description": "Whether to reply to system messages",
+              "attributes": []
+            },
+            {
+              "name": "PersonaNickName",
+              "type": "string",
+              "description": "Persona nickname",
+              "attributes": []
+            },
+            {
+              "name": "PersonaAvatar",
+              "type": "SpriteID",
+              "description": "PersonaAvatar",
+              "attributes": []
+            },
+            {
+              "name": "UserNickName",
+              "type": "string",
+              "description": "Nickname of the user",
+              "attributes": []
+            },
+            {
+              "name": "UserAvatar",
+              "type": "SpriteID",
+              "description": "User Avatar",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        },
+        {
+          "name": "Persona",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "PersonaID",
+              "type": "PersonaID",
+              "description": "Persona ID",
+              "attributes": []
+            },
+            {
+              "name": "NickName",
+              "type": "string",
+              "description": "Nickname",
+              "attributes": []
+            },
+            {
+              "name": "PersonaNickName",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Avatar",
+              "type": "SpriteID",
+              "description": "Avatar",
+              "attributes": []
+            },
+            {
+              "name": "PersonaAvatar",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/LLM.fcc",
+            "blob_sha": "d9f1947dec663c1960988807de6f649f8c9c96c1"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/List.fcc",
+      "source_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e",
+      "text_length": 5485,
+      "functions": [
+        {
+          "name": "Length",
+          "signature": "func Length(target List<object>) int",
+          "parameters_text": "target List<object>",
+          "return_type": "int",
+          "description": "Get the number of elements in the list",
+          "doc_title": "Length",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Number of elements"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Append",
+          "signature": "func Append(target List<object>, value object)",
+          "parameters_text": "target List<object>, value object",
+          "return_type": null,
+          "description": "Append elements to the end of the list",
+          "doc_title": "Append",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Elements to add"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "RemoveAt",
+          "signature": "func RemoveAt(target List<object>, index int)",
+          "parameters_text": "target List<object>, index int",
+          "return_type": null,
+          "description": "Remove the element corresponding to the specified index from the list",
+          "doc_title": "Remove At",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "index",
+              "type": "int",
+              "description": "Index value, starting from 0"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "DeleteAt",
+          "signature": "[deprecated] func DeleteAt(target List<object>, index int)",
+          "parameters_text": "target List<object>, index int",
+          "return_type": null,
+          "description": "Remove the element corresponding to the specified index from the list",
+          "doc_title": "Remove At",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "index",
+              "type": "int",
+              "description": "Index value, starting from 0"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `RemoveAt` instead",
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Clear",
+          "signature": "func Clear(target List<object>)",
+          "parameters_text": "target List<object>",
+          "return_type": null,
+          "description": "Clear all elements from a list",
+          "doc_title": "Clear",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Reverse",
+          "signature": "func Reverse(target List<object>)",
+          "parameters_text": "target List<object>",
+          "return_type": null,
+          "description": "Reverse the specified list. The order of elements in the list will be reversed.",
+          "doc_title": "Reverse",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Clone",
+          "signature": "func Clone(target List<object>) List<object>",
+          "parameters_text": "target List<object>",
+          "return_type": "List<object>",
+          "description": "Copy a list",
+          "doc_title": "Clone",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "The new list copied"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Insert",
+          "signature": "func Insert(target List<object>, index int, value object)",
+          "parameters_text": "target List<object>, index int, value object",
+          "return_type": null,
+          "description": "Insert a new element at the specified index position in the list. The original elements at and after that index position will move one position backwards one by one",
+          "doc_title": "Insert",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "index",
+              "type": "int",
+              "description": "The index position to be inserted, the index starts from 0"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "The new element value to insert"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Shuffle",
+          "signature": "func Shuffle(target List<object>)",
+          "parameters_text": "target List<object>",
+          "return_type": null,
+          "description": "Re-arrange the elements in a list",
+          "doc_title": "Shuffle",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "IsEqual",
+          "signature": "func IsEqual(leftValue List<object>, rightValue List<object>) bool",
+          "parameters_text": "leftValue List<object>, rightValue List<object>",
+          "return_type": "bool",
+          "description": "Compares whether the elements of two lists are exactly the same. The list capacity does not affect the comparison result.",
+          "doc_title": "Is Equal",
+          "parameters": [
+            {
+              "name": "leftValue",
+              "type": "List<object>",
+              "description": "List lvalue to compare"
+            },
+            {
+              "name": "rightValue",
+              "type": "List<object>",
+              "description": "List rvalue to compare"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Comparison result, return True if the contents are the same, and return False if the contents are different"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "New",
+          "signature": "func New(length int, capacity int) List<object>",
+          "parameters_text": "length int, capacity int",
+          "return_type": "List<object>",
+          "description": "Create a list",
+          "doc_title": "New",
+          "parameters": [
+            {
+              "name": "length",
+              "type": "int",
+              "description": "The initial length of the list, must be less than or equal to the initial capacity"
+            },
+            {
+              "name": "capacity",
+              "type": "int",
+              "description": "The initial capacity of the list, must be greater than or equal to the initial length. The capacity can be expanded dynamically, but doing so will consume some performance. It is recommended to set an appropriate value upon construction"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "Created list"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Create",
+          "signature": "[deprecated] func Create(length int, capacity int) List<object>",
+          "parameters_text": "length int, capacity int",
+          "return_type": "List<object>",
+          "description": "Create a list",
+          "doc_title": "New",
+          "parameters": [
+            {
+              "name": "length",
+              "type": "int",
+              "description": "The initial length of the list, must be less than or equal to the initial capacity"
+            },
+            {
+              "name": "capacity",
+              "type": "int",
+              "description": "The initial capacity of the list, must be greater than or equal to the initial length. The capacity can be expanded dynamically, but doing so will consume some performance. It is recommended to set an appropriate value upon construction"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "Created list"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `New` instead",
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Contain",
+          "signature": "func Contain(target List<object>, value object) bool",
+          "parameters_text": "target List<object>, value object",
+          "return_type": "bool",
+          "description": "Check whether a list contains a specified element",
+          "doc_title": "Contain",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "The specified element to check"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Whether it contains the specified element"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Contains",
+          "signature": "[deprecated] func Contains(target List<object>, value object) bool",
+          "parameters_text": "target List<object>, value object",
+          "return_type": "bool",
+          "description": "Check whether a list contains a specified element",
+          "doc_title": "Contain",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "The specified element to check"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Whether it contains the specified element"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `Contain` instead",
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "AppendRange",
+          "signature": "func AppendRange(target List<object>, value List<object>)",
+          "parameters_text": "target List<object>, value List<object>",
+          "return_type": null,
+          "description": "Append multiple elements to the end of the target list",
+          "doc_title": "Append Range",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "List<object>",
+              "description": "Append List"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Remove",
+          "signature": "func Remove(target List<object>, value object)",
+          "parameters_text": "target List<object>, value object",
+          "return_type": null,
+          "description": "Remove the specified element from the list",
+          "doc_title": "Remove",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "The value of the element to be removed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Delete",
+          "signature": "[deprecated] func Delete(target List<object>, value object)",
+          "parameters_text": "target List<object>, value object",
+          "return_type": null,
+          "description": "Remove the specified element from the list",
+          "doc_title": "Remove",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "The value of the element to be removed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `Remove` instead",
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "IndexOf",
+          "signature": "func IndexOf(target List<object>, value object) int",
+          "parameters_text": "target List<object>, value object",
+          "return_type": "int",
+          "description": "Get the index of the first occurrence of an element in the list. If there is no target element in the list, return -1",
+          "doc_title": "Index Of",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Element Value"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Position Index"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "LastIndexOf",
+          "signature": "func LastIndexOf(target List<object>, value object) int",
+          "parameters_text": "target List<object>, value object",
+          "return_type": "int",
+          "description": "Get the index of the last occurrence of an element in the list. If there is no target element in the list, return -1",
+          "doc_title": "Last Index Of",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target List"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Element Value"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Position Index"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Max",
+          "signature": "func Max(target List<object>, out var isSuccess bool, out var result Number)",
+          "parameters_text": "target List<object>, out var isSuccess bool, out var result Number",
+          "return_type": null,
+          "description": "Return the maximum value in a list",
+          "doc_title": "Max",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target list, only accepts list elements of numeric type"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Compare the results. If there are non-digits in the list, the comparison fails and returns false."
+            },
+            {
+              "name": "result",
+              "type": "Number",
+              "description": "Returns the largest value in the list if the comparison succeeds, and 0 if the comparison fails"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        },
+        {
+          "name": "Min",
+          "signature": "func Min(target List<object>, out var isSuccess bool, out var result Number)",
+          "parameters_text": "target List<object>, out var isSuccess bool, out var result Number",
+          "return_type": null,
+          "description": "Returns the minimum value in a list.",
+          "doc_title": "Min",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<object>",
+              "description": "Target list, only accepts list elements of numeric type"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Compare the results. If there are non-digits in the list, the comparison fails and returns false."
+            },
+            {
+              "name": "result",
+              "type": "Number",
+              "description": "Returns the smallest value in the list if the comparison succeeds, and 0 if the comparison fails"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/List.fcc",
+            "blob_sha": "ff3a73fb82c182c13b9c32cb88c037dcb2171e7e"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/Map.fcc",
+      "source_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0",
+      "text_length": 1365,
+      "functions": [
+        {
+          "name": "New",
+          "signature": "func New() Map<object, object>",
+          "parameters_text": "",
+          "return_type": "Map<object, object>",
+          "description": "Create a dictionary",
+          "doc_title": "New",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "Map<object, object>",
+              "description": "The created dictionary"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "Create",
+          "signature": "[deprecated] func Create() Map<object, object>",
+          "parameters_text": "",
+          "return_type": "Map<object, object>",
+          "description": "Create a dictionary",
+          "doc_title": "New",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "Map<object, object>",
+              "description": "The created dictionary"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `New` instead",
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "Remove",
+          "signature": "func Remove(target Map<object, object>, key object)",
+          "parameters_text": "target Map<object, object>, key object",
+          "return_type": null,
+          "description": "Remove the specified key-value pair from the dictionary",
+          "doc_title": "Remove",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "Map<object, object>",
+              "description": "Target dictionary"
+            },
+            {
+              "name": "key",
+              "type": "object",
+              "description": "Key"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "Clear",
+          "signature": "func Clear(target Map<object, object>)",
+          "parameters_text": "target Map<object, object>",
+          "return_type": null,
+          "description": "Clear all key-value pairs in the dictionary",
+          "doc_title": "Clear",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "Map<object, object>",
+              "description": "Target dictionary"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "Length",
+          "signature": "func Length(target Map<object, object>) int",
+          "parameters_text": "target Map<object, object>",
+          "return_type": "int",
+          "description": "Get the number of key-value pairs in a dictionary",
+          "doc_title": "Length",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "Map<object, object>",
+              "description": "Target dictionary"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Dictionary length"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "ContainKey",
+          "signature": "func ContainKey(target Map<object, object>, key object) bool",
+          "parameters_text": "target Map<object, object>, key object",
+          "return_type": "bool",
+          "description": "Check if a key exists in the dictionary",
+          "doc_title": "Contain Key",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "Map<object, object>",
+              "description": "Target dictionary"
+            },
+            {
+              "name": "key",
+              "type": "object",
+              "description": "Key"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Exist or not"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        },
+        {
+          "name": "GetAllKeys",
+          "signature": "func GetAllKeys(target Map<object, object>) List<object>",
+          "parameters_text": "target Map<object, object>",
+          "return_type": "List<object>",
+          "description": "Get all the keys of the dictionary and return them as a list",
+          "doc_title": "Get All Keys",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "Map<object, object>",
+              "description": "Target dictionary"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "List of all key values"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Map.fcc",
+            "blob_sha": "621746f2b639bb0dfeb6910091a9aeb3f2263fa0"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/Math.fcc",
+      "source_sha": "522efa770d25ee41c259130627d8e2a755b768b9",
+      "text_length": 17418,
+      "functions": [
+        {
+          "name": "QuaternionToEulerAngle",
+          "signature": "func QuaternionToEulerAngle(value Quaternion) Vector3",
+          "parameters_text": "value Quaternion",
+          "return_type": "Vector3",
+          "description": "Convert the given quaternion to Euler angles. The rotation order of Euler angles is YXZ. If the passed quaternion is illegal, return (0,0,0)",
+          "doc_title": "Quaternion To Euler Angle",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Quaternion",
+              "description": "Input quaternion"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "The returned Euler angles"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "EulerAngleToQuaternion",
+          "signature": "func EulerAngleToQuaternion(value Vector3) Quaternion",
+          "parameters_text": "value Vector3",
+          "return_type": "Quaternion",
+          "description": "Converts the given Euler angle to a quaternion",
+          "doc_title": "Euler Angle To Quaternion",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector3",
+              "description": "Input Euler angles"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Quaternion",
+              "description": "The returned quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "AxisAngleToQuaternion",
+          "signature": "func AxisAngleToQuaternion(axis Vector3, angle float) Quaternion",
+          "parameters_text": "axis Vector3, angle float",
+          "return_type": "Quaternion",
+          "description": "Convert axis-angle rotation to quaternion",
+          "doc_title": "Axis Angle To Quaternion",
+          "parameters": [
+            {
+              "name": "axis",
+              "type": "Vector3",
+              "description": "Rotation axis"
+            },
+            {
+              "name": "angle",
+              "type": "float",
+              "description": "Angle of rotation clockwise around the axis of rotation"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Quaternion",
+              "description": "The returned quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "QuaternionToAxisAngle",
+          "signature": "func QuaternionToAxisAngle(value Quaternion, out var axis Vector3, out var angle float)",
+          "parameters_text": "value Quaternion, out var axis Vector3, out var angle float",
+          "return_type": null,
+          "description": "Convert quaternion to axis-angle representation",
+          "doc_title": "Quaternion To Axis Angle",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Quaternion",
+              "description": "Input quaternion"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "axis",
+              "type": "Vector3",
+              "description": "Rotation axis"
+            },
+            {
+              "name": "angle",
+              "type": "float",
+              "description": "Angle of rotation clockwise around the axis of rotation"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "MultiplyQuaternion",
+          "signature": "func MultiplyQuaternion(valueA Quaternion, valueB Quaternion) Quaternion",
+          "parameters_text": "valueA Quaternion, valueB Quaternion",
+          "return_type": "Quaternion",
+          "description": "Multiply two quaternions. A*B means rotating A first and then rotating B. Different rotation orders will result in different results.",
+          "doc_title": "Multiply Quaternion",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Quaternion",
+              "description": "Lvalue quaternion"
+            },
+            {
+              "name": "valueB",
+              "type": "Quaternion",
+              "description": "Rvalue quaternion"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Quaternion",
+              "description": "The resulting quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "LookRotation",
+          "signature": "func LookRotation(forward Vector3, upward Vector3) Quaternion",
+          "parameters_text": "forward Vector3, upward Vector3",
+          "return_type": "Quaternion",
+          "description": "Creates a rotation quaternion facing the specified direction",
+          "doc_title": "Look Rotation",
+          "parameters": [
+            {
+              "name": "forward",
+              "type": "Vector3",
+              "description": "Specify direction"
+            },
+            {
+              "name": "upward",
+              "type": "Vector3",
+              "description": "Upward direction"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Quaternion",
+              "description": "The amount of rotation required to align in the specified direction"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "SlerpQuaternion",
+          "signature": "func SlerpQuaternion(valueA Quaternion, valueB Quaternion, valueT float) Quaternion",
+          "parameters_text": "valueA Quaternion, valueB Quaternion, valueT float",
+          "return_type": "Quaternion",
+          "description": "Quaternion spherical interpolation from A to B",
+          "doc_title": "Slerp Quaternion",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Quaternion",
+              "description": "A Value"
+            },
+            {
+              "name": "valueB",
+              "type": "Quaternion",
+              "description": "B value"
+            },
+            {
+              "name": "valueT",
+              "type": "float",
+              "description": "Interpolation progress, the value range is [0,1]. When the value is 0, it returns the A value, and when the value is 1, it returns the B value."
+            }
+          ],
+          "returns": [
+            {
+              "type": "Quaternion",
+              "description": "The resulting quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "SetXClient",
+          "signature": "[platform_client] func SetXClient(vector Vector3, x float) Vector3",
+          "parameters_text": "vector Vector3, x float",
+          "return_type": "Vector3",
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "SetYClient",
+          "signature": "[platform_client] func SetYClient(vector Vector3, y float) Vector3",
+          "parameters_text": "vector Vector3, y float",
+          "return_type": "Vector3",
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "SetZClient",
+          "signature": "[platform_client] func SetZClient(vector Vector3, z float) Vector3",
+          "parameters_text": "vector Vector3, z float",
+          "return_type": "Vector3",
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2SetXClient",
+          "signature": "[platform_client] func Vector2SetXClient(vector Vector2, x float) Vector2",
+          "parameters_text": "vector Vector2, x float",
+          "return_type": "Vector2",
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2SetYClient",
+          "signature": "[platform_client] func Vector2SetYClient(vector Vector2, y float) Vector2",
+          "parameters_text": "vector Vector2, y float",
+          "return_type": "Vector2",
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Projection",
+          "signature": "func Projection(valueA Vector3, valueB Vector3) Vector3",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "Vector3",
+          "description": "Calculate the projection of vector A onto vector B",
+          "doc_title": "Projection",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "LerpVector3",
+          "signature": "func LerpVector3(valueA Vector3, valueB Vector3, valueT float) Vector3",
+          "parameters_text": "valueA Vector3, valueB Vector3, valueT float",
+          "return_type": "Vector3",
+          "description": "Perform linear interpolation from the 3D vector A to vector B",
+          "doc_title": "Lerp Vector3",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "A Value"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "B value"
+            },
+            {
+              "name": "valueT",
+              "type": "float",
+              "description": "Interpolation progress, the value range is [0,1]. When the value is 0, it returns the A value, and when the value is 1, it returns the B value."
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "The resulting quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "SlerpVector3",
+          "signature": "func SlerpVector3(valueA Vector3, valueB Vector3, valueT float) Vector3",
+          "parameters_text": "valueA Vector3, valueB Vector3, valueT float",
+          "return_type": "Vector3",
+          "description": "Perform spherical interpolation from the 3D vector A to vector B for smooth rotation",
+          "doc_title": "Slerp Vector3",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "A Value"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "B value"
+            },
+            {
+              "name": "valueT",
+              "type": "float",
+              "description": "Interpolation progress, the value range is [0,1]. When the value is 0, it returns the A value, and when the value is 1, it returns the B value."
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "The resulting quaternion"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "ATan2",
+          "signature": "func ATan2(y float, x float) float",
+          "parameters_text": "y float, x float",
+          "return_type": "float",
+          "description": "Perform an inverse tangent operation to obtain the angle",
+          "doc_title": "ATan2",
+          "parameters": [
+            {
+              "name": "y",
+              "type": "float",
+              "description": "Y-axis coordinate"
+            },
+            {
+              "name": "x",
+              "type": "float",
+              "description": "X-axis coordinate"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Angle, range (-180, 180]"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "RandomInt",
+          "signature": "func RandomInt(min int, max int) int",
+          "parameters_text": "min int, max int",
+          "return_type": "int",
+          "description": "Generate a random integer between the minimum integer (included) and the maximum integer (not included)",
+          "doc_title": "Random Int",
+          "parameters": [
+            {
+              "name": "min",
+              "type": "int",
+              "description": "The left interval of the random range. May randomly get the filled value"
+            },
+            {
+              "name": "max",
+              "type": "int",
+              "description": "The right interval of the random range. Will not randomly get the filled value"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Random result, integer"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "RandomFloat",
+          "signature": "func RandomFloat(min float, max float) float",
+          "parameters_text": "min float, max float",
+          "return_type": "float",
+          "description": "Generate a random integer between the minimum integer (included) and the maximum integer (not included)",
+          "doc_title": "Random Float",
+          "parameters": [
+            {
+              "name": "min",
+              "type": "float",
+              "description": "The left interval of the random range. May randomly get the filled value"
+            },
+            {
+              "name": "max",
+              "type": "float",
+              "description": "The right interval of the random range. Will not randomly get the filled value"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Random result, decimal, accurate to 7 decimal places"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Abs",
+          "signature": "func Abs(value Number) Number",
+          "parameters_text": "value Number",
+          "return_type": "Number",
+          "description": "Get the absolute value, support integers and decimals",
+          "doc_title": "Abs",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Number",
+              "description": "The value whose absolute value is required"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "The result of taking the absolute value"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Sqrt",
+          "signature": "func Sqrt(value float) float",
+          "parameters_text": "value float",
+          "return_type": "float",
+          "description": "Calculate square root",
+          "doc_title": "Sqrt",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value for which the square root is required"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "The result of square root"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Negate",
+          "signature": "func Negate(value Number) Number",
+          "parameters_text": "value Number",
+          "return_type": "Number",
+          "description": "Calculate negative values",
+          "doc_title": "Negate",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Number",
+              "description": "The value that needs to calculate negative value"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "The result of calculating negative value"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Floor",
+          "signature": "func Floor(value float) int",
+          "parameters_text": "value float",
+          "return_type": "int",
+          "description": "Round the specified value down to the nearest integer.",
+          "doc_title": "Floor",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value to be rounded down"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "The result of rounding down"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Ceil",
+          "signature": "func Ceil(value float) int",
+          "parameters_text": "value float",
+          "return_type": "int",
+          "description": "Rounds the specified value up to the nearest integer.",
+          "doc_title": "Ceil",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value to be rounded up"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "The result of rounding up"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Round",
+          "signature": "func Round(value float) int",
+          "parameters_text": "value float",
+          "return_type": "int",
+          "description": "Round the specified value to the nearest integer.",
+          "doc_title": "Round",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value to be rounded"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Rounding result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "CreateRandomSeed",
+          "signature": "func CreateRandomSeed(seed int) Random",
+          "parameters_text": "seed int",
+          "return_type": "Random",
+          "description": "Create random seed",
+          "doc_title": "Create Random Seed",
+          "parameters": [
+            {
+              "name": "seed",
+              "type": "int",
+              "description": "Seed"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Random",
+              "description": "Random Number Generator"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Next",
+          "signature": "func Next(value Random, min int, max int) int",
+          "parameters_text": "value Random, min int, max int",
+          "return_type": "int",
+          "description": "Get the next random number from the specified random number generator, with a maximum value of 32767",
+          "doc_title": "Next",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Random",
+              "description": "Random Number Generator"
+            },
+            {
+              "name": "min",
+              "type": "int",
+              "description": "Minimum range"
+            },
+            {
+              "name": "max",
+              "type": "int",
+              "description": "Maximum range"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Random Number"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Dot",
+          "signature": "func Dot(valueA Vector3, valueB Vector3) float",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "float",
+          "description": "The dot product of two three-dimensional vectors. The result is a scalar",
+          "doc_title": "Dot",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Dot product result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Cross",
+          "signature": "func Cross(valueA Vector3, valueB Vector3) Vector3",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "Vector3",
+          "description": "The result of the cross product of two three-dimensional vectors. The result is a vector perpendicular to the plane where the two vectors are located.",
+          "doc_title": "Cross",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "The result of the cross product, which is perpendicular to the plane where the two vectors involved in the operation are located."
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Normalize",
+          "signature": "func Normalize(value Vector3) Vector3",
+          "parameters_text": "value Vector3",
+          "return_type": "Vector3",
+          "description": "Normalize a 3D vector",
+          "doc_title": "Normalize",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector3",
+              "description": "3D Vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Return a new normalized vector. The modulus is 1"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Magnitude",
+          "signature": "func Magnitude(value Vector3) float",
+          "parameters_text": "value Vector3",
+          "return_type": "float",
+          "description": "Modulo a 3D vector",
+          "doc_title": "Magnitude",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector3",
+              "description": "3D Vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "The modulus result, which is the length of the vector modulus"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Distance",
+          "signature": "func Distance(valueA Vector3, valueB Vector3) float",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "float",
+          "description": "Calculate the Euclidean distance between two 3D vectors",
+          "doc_title": "Distance",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "After subtracting two vectors, the modulus of the resulting vector"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Angle",
+          "signature": "func Angle(valueA Vector3, valueB Vector3) float",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "float",
+          "description": "Calculate the angle between two 3D vectors",
+          "doc_title": "Angle",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Vector angle, angle range 0-180"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Angel",
+          "signature": "[deprecated] func Angel(valueA Vector3, valueB Vector3) float",
+          "parameters_text": "valueA Vector3, valueB Vector3",
+          "return_type": "float",
+          "description": "Calculate the angle between two 3D vectors",
+          "doc_title": "Angle",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector3",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector3",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Vector angle, angle range 0-180"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `Angle` instead",
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "NewDirectPoint_Deprecated",
+          "signature": "[deprecated] [platform_server] func NewDirectPoint_Deprecated(position Vector3, forward Vector3) DirectedPoint_Deprecated",
+          "parameters_text": "position Vector3, forward Vector3",
+          "return_type": "DirectedPoint_Deprecated",
+          "description": "Get a newly constructed direction point (deprecated, do not use)",
+          "doc_title": "Create a direction point",
+          "parameters": [
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Location"
+            },
+            {
+              "name": "forward",
+              "type": "Vector3",
+              "description": "Orientation"
+            }
+          ],
+          "returns": [
+            {
+              "type": "DirectedPoint_Deprecated",
+              "description": "DirectPoint"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "DirectPointGetPos_Deprecated",
+          "signature": "[deprecated] [platform_server] func DirectPointGetPos_Deprecated(directPoint DirectedPoint_Deprecated) Vector3",
+          "parameters_text": "directPoint DirectedPoint_Deprecated",
+          "return_type": "Vector3",
+          "description": "Get the direction point position (deprecated, do not use)",
+          "doc_title": "Get coordinates",
+          "parameters": [
+            {
+              "name": "directPoint",
+              "type": "DirectedPoint_Deprecated",
+              "description": "Direction Point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Position"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "DirectPointGetForward_Deprecated",
+          "signature": "[deprecated] [platform_server] func DirectPointGetForward_Deprecated(directPoint DirectedPoint_Deprecated) Vector3",
+          "parameters_text": "directPoint DirectedPoint_Deprecated",
+          "return_type": "Vector3",
+          "description": "Get the direction point direction (deprecated, do not use)",
+          "doc_title": "Get direction coordinates",
+          "parameters": [
+            {
+              "name": "directPoint",
+              "type": "DirectedPoint_Deprecated",
+              "description": "Direction Point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Forward"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Sin",
+          "signature": "func Sin(degree float) float",
+          "parameters_text": "degree float",
+          "return_type": "float",
+          "description": "Find the sine of an angle",
+          "doc_title": "Sin",
+          "parameters": [
+            {
+              "name": "degree",
+              "type": "float",
+              "description": "Angle, 360 represents 360 degrees"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Sine"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Cos",
+          "signature": "func Cos(degree float) float",
+          "parameters_text": "degree float",
+          "return_type": "float",
+          "description": "Find the cosine of an angle",
+          "doc_title": "Cos",
+          "parameters": [
+            {
+              "name": "degree",
+              "type": "float",
+              "description": "Angle, 360 represents 360 degrees"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Cosine"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Tan",
+          "signature": "func Tan(degree float) float",
+          "parameters_text": "degree float",
+          "return_type": "float",
+          "description": "Find the tangent of an angle",
+          "doc_title": "Tan",
+          "parameters": [
+            {
+              "name": "degree",
+              "type": "float",
+              "description": "Angle, 360 represents 360 degrees"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Tangent"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "ASin",
+          "signature": "func ASin(value float) float",
+          "parameters_text": "value float",
+          "return_type": "float",
+          "description": "Perform the inverse sine operation to obtain the angle",
+          "doc_title": "ASin",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value to be inversely sine calculated, the value range is [-1,1]"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Angle"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "ACos",
+          "signature": "func ACos(value float) float",
+          "parameters_text": "value float",
+          "return_type": "float",
+          "description": "Perform inverse cosine operation to obtain the angle",
+          "doc_title": "ACos",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "float",
+              "description": "The value to be calculated for the inverse cosine operation, the value range is [-1,1]"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Angle"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Value",
+          "signature": "func Value(degree float) float",
+          "parameters_text": "degree float",
+          "return_type": "float",
+          "description": "Perform an inverse tangent operation to obtain the angle",
+          "doc_title": "Value",
+          "parameters": [
+            {
+              "name": "degree",
+              "type": "float",
+              "description": "The value to be inverse tangented"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Angle"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Max",
+          "signature": "func Max(valueA Number, valueB Number) Number",
+          "parameters_text": "valueA Number, valueB Number",
+          "return_type": "Number",
+          "description": "Compare the values of two numbers and return the larger one",
+          "doc_title": "Max",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Number",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Number",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Larger Number"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Min",
+          "signature": "func Min(valueA Number, valueB Number) Number",
+          "parameters_text": "valueA Number, valueB Number",
+          "return_type": "Number",
+          "description": "Compares the values of two numbers and returns the smaller one",
+          "doc_title": "Min",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Number",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Number",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Smaller Numbers"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Lerp",
+          "signature": "func Lerp(valueA float, valueB float, valueT float) float",
+          "parameters_text": "valueA float, valueB float, valueT float",
+          "return_type": "float",
+          "description": "Linear interpolation, returns the value corresponding to the interpolation progress between the start value and the target value, the interpolation coefficient is [0,1]",
+          "doc_title": "Lerp",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "float",
+              "description": "The starting value of linear interpolation. This value is returned when the interpolation progress is 0"
+            },
+            {
+              "name": "valueB",
+              "type": "float",
+              "description": "The target value of linear interpolation. This value is returned when the interpolation progress is 1"
+            },
+            {
+              "name": "valueT",
+              "type": "float",
+              "description": "Interpolation progress, the value range is [0,1]. When the value is 0, it returns the start value, when the value is 1, it returns the target value, and when the value is 0.5, it returns the average of the start value and the target value."
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Linear interpolation return value"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Clamp",
+          "signature": "func Clamp(value Number, min Number, max Number) Number",
+          "parameters_text": "value Number, min Number, max Number",
+          "return_type": "Number",
+          "description": "Limit the range of the target value and obtain the value in the middle of the three input parameters; its function is to limit the target value to the specified range. If the target value is smaller than the minimum value, it returns the minimum value; if",
+          "doc_title": "Clamp",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Number",
+              "description": "Target value"
+            },
+            {
+              "name": "min",
+              "type": "Number",
+              "description": "Minimum value of the limited range"
+            },
+            {
+              "name": "max",
+              "type": "Number",
+              "description": "Maximum value of the limited range"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Return value after restriction"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Exponentiation",
+          "signature": "func Exponentiation(base Number, exponent Number) Number",
+          "parameters_text": "base Number, exponent Number",
+          "return_type": "Number",
+          "description": "Exponentiation",
+          "doc_title": "Exponentiation",
+          "parameters": [
+            {
+              "name": "base",
+              "type": "Number",
+              "description": "Base"
+            },
+            {
+              "name": "exponent",
+              "type": "Number",
+              "description": "Index"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Calculation results"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Logarithm",
+          "signature": "func Logarithm(baseValue Number, realNumber Number) Number",
+          "parameters_text": "baseValue Number, realNumber Number",
+          "return_type": "Number",
+          "description": "Logarithmic Operation",
+          "doc_title": "Logarithm",
+          "parameters": [
+            {
+              "name": "baseValue",
+              "type": "Number",
+              "description": "Base"
+            },
+            {
+              "name": "realNumber",
+              "type": "Number",
+              "description": "True Number"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Calculation result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Log",
+          "signature": "[deprecated] func Log(baseValue Number, realNumber Number) Number",
+          "parameters_text": "baseValue Number, realNumber Number",
+          "return_type": "Number",
+          "description": "Logarithmic Operation",
+          "doc_title": "Logarithm",
+          "parameters": [
+            {
+              "name": "baseValue",
+              "type": "Number",
+              "description": "Base"
+            },
+            {
+              "name": "realNumber",
+              "type": "Number",
+              "description": "True Number"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Number",
+              "description": "Calculation result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `Logarithm` instead",
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "DirectionToEulerAngle",
+          "signature": "[platform_server] func DirectionToEulerAngle(direction Vector3) Vector3",
+          "parameters_text": "direction Vector3",
+          "return_type": "Vector3",
+          "description": "Direction vector to Euler angle",
+          "doc_title": "Direction To Euler Angle",
+          "parameters": [
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Direction Vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Euler Angle"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector3ToEulerAngles",
+          "signature": "[deprecated] func Vector3ToEulerAngles(direction Vector3) Vector3",
+          "parameters_text": "direction Vector3",
+          "return_type": "Vector3",
+          "description": "Direction vector to Euler angle",
+          "doc_title": "Direction To Euler Angle",
+          "parameters": [
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Direction Vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Euler Angle"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `DirectionToEulerAngle` instead",
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "RotateVector",
+          "signature": "func RotateVector(value Vector3, delta Quaternion) Vector3",
+          "parameters_text": "value Vector3, delta Quaternion",
+          "return_type": "Vector3",
+          "description": "Rotate the target vector according to the quaternion",
+          "doc_title": "Rotate Vector",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector3",
+              "description": "Target vector"
+            },
+            {
+              "name": "delta",
+              "type": "Quaternion",
+              "description": "Rotation Quaternion"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Rotated vector"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Dot",
+          "signature": "func Vector2Dot(valueA Vector2, valueB Vector2) float",
+          "parameters_text": "valueA Vector2, valueB Vector2",
+          "return_type": "float",
+          "description": "The dot product of two two-dimensional vectors is a scalar, representing the angle between the two vectors.",
+          "doc_title": "Vector2Dot",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector2",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector2",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Dot product result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Distance",
+          "signature": "func Vector2Distance(valueA Vector2, valueB Vector2) float",
+          "parameters_text": "valueA Vector2, valueB Vector2",
+          "return_type": "float",
+          "description": "Calculate the Euclidean distance between two 2D vectors",
+          "doc_title": "Vector2Distance",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector2",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector2",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "After subtracting two vectors, the modulus of the resulting vector"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Angle",
+          "signature": "func Vector2Angle(valueA Vector2, valueB Vector2) float",
+          "parameters_text": "valueA Vector2, valueB Vector2",
+          "return_type": "float",
+          "description": "Calculate the angle between two 2D vectors",
+          "doc_title": "Vector2Angle",
+          "parameters": [
+            {
+              "name": "valueA",
+              "type": "Vector2",
+              "description": "Lvalue"
+            },
+            {
+              "name": "valueB",
+              "type": "Vector2",
+              "description": "Rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Vector angle, angle range 0-180"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Normalize",
+          "signature": "func Vector2Normalize(value Vector2) Vector2",
+          "parameters_text": "value Vector2",
+          "return_type": "Vector2",
+          "description": "Normalize a 2D vector",
+          "doc_title": "Vector2Normalize",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector2",
+              "description": "2D vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector2",
+              "description": "The normalized result is a vector with a length of 1 in the same direction."
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Magnitude",
+          "signature": "func Vector2Magnitude(value Vector2) float",
+          "parameters_text": "value Vector2",
+          "return_type": "float",
+          "description": "Modulo a 2D vector",
+          "doc_title": "Vector2Magnitude",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "Vector2",
+              "description": "2D vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "The modulo result. It is the vector length"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector2Reflect",
+          "signature": "func Vector2Reflect(direction Vector2, normal Vector2) Vector2",
+          "parameters_text": "direction Vector2, normal Vector2",
+          "return_type": "Vector2",
+          "description": "Calculate the vector after the two-dimensional vector is reflected by the normal line",
+          "doc_title": "Vector2Reflect",
+          "parameters": [
+            {
+              "name": "direction",
+              "type": "Vector2",
+              "description": "Incident 2D vector"
+            },
+            {
+              "name": "normal",
+              "type": "Vector2",
+              "description": "Normal 2D vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector2",
+              "description": "Reflecting a 2D vector"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        },
+        {
+          "name": "Vector3Reflect",
+          "signature": "func Vector3Reflect(direction Vector3, normal Vector3) Vector3",
+          "parameters_text": "direction Vector3, normal Vector3",
+          "return_type": "Vector3",
+          "description": "Calculate the vector after the three-dimensional vector is reflected by the plane perpendicular to the normal",
+          "doc_title": "Vector3Reflect",
+          "parameters": [
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Incident 3D vector"
+            },
+            {
+              "name": "normal",
+              "type": "Vector3",
+              "description": "Normal 3D vector"
+            }
+          ],
+          "returns": [
+            {
+              "type": "Vector3",
+              "description": "Reflect 3D vector"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Math.fcc",
+            "blob_sha": "522efa770d25ee41c259130627d8e2a755b768b9"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/MiniMap.fcc",
+      "source_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7",
+      "text_length": 2717,
+      "functions": [
+        {
+          "name": "CreateMiniMapIcon",
+          "signature": "func CreateMiniMapIcon(out var createdEntity entity<MiniMapIcon>, target entity<Player>, resource IconType)",
+          "parameters_text": "out var createdEntity entity<MiniMapIcon>, target entity<Player>, resource IconType",
+          "return_type": null,
+          "description": "Creating a Minimap Icon",
+          "doc_title": "Create Mini Map Icon",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "The Player, the static pixel created is only visible to this player"
+            },
+            {
+              "name": "resource",
+              "type": "IconType",
+              "description": "Small map icon resource path"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MiniMapIcon>",
+              "description": "The minimap icon entity created"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "CreateMiniMapPixel",
+          "signature": "func CreateMiniMapPixel(out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>)",
+          "parameters_text": "out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>",
+          "return_type": null,
+          "description": "Create a static pixel on the map for the target object. The static pixel will not move with the target object.",
+          "doc_title": "Create Mini Map Pixel",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "The Player, the static pixel created is only visible to this player"
+            },
+            {
+              "name": "boundTarget",
+              "type": "entity<Entity>",
+              "description": "Target object entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MinimapPixelRenderer>",
+              "description": "Static pixel entity created"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "CreateMiniMapBit",
+          "signature": "[deprecated] func CreateMiniMapBit(out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>)",
+          "parameters_text": "out var createdEntity entity<MinimapPixelRenderer>, target entity<Player>, boundTarget entity<Entity>",
+          "return_type": null,
+          "description": "Create a static pixel on the map for the target object. The static pixel will not move with the target object.",
+          "doc_title": "Create Mini Map Pixel",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "The Player, the static pixel created is only visible to this player"
+            },
+            {
+              "name": "boundTarget",
+              "type": "entity<Entity>",
+              "description": "Target object entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MinimapPixelRenderer>",
+              "description": "Static pixel entity created"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `CreateMiniMapPixel` instead",
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "GetMiniMap",
+          "signature": "func GetMiniMap(target entity<Player>) entity<MiniMap>",
+          "parameters_text": "target entity<Player>",
+          "return_type": "entity<MiniMap>",
+          "description": "Get the target player's minimap entity",
+          "doc_title": "Get Mini Map",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<MiniMap>",
+              "description": "Current player’s mini-map"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "MiniMap",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Center",
+              "type": "Vector3",
+              "description": "World coordinates of the center of the mini-map",
+              "attributes": []
+            },
+            {
+              "name": "MapSize",
+              "type": "int",
+              "description": "Size of the mini-map, same width and height",
+              "attributes": []
+            },
+            {
+              "name": "EnableDepthMap",
+              "type": "bool",
+              "description": "Enable or disable the depth map display mode of the mini-map",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "MiniMapIcon",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IconResource",
+              "type": "SpriteID",
+              "description": "Effect Resource Path",
+              "attributes": []
+            },
+            {
+              "name": "IconResID",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Scale",
+              "type": "float",
+              "description": "Zoom size",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Display position, when there is a target to follow, it is the offset relative to the target origin, when there is no target to follow, it is the screen coordinates.",
+              "attributes": []
+            },
+            {
+              "name": "FollowTarget",
+              "type": "entity<Entity>",
+              "description": "Follow Target",
+              "attributes": []
+            },
+            {
+              "name": "Depth",
+              "type": "int",
+              "description": "Icon display level",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "MinimapPixelRenderer",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Target entity for generating map pixels",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
+          }
+        },
+        {
+          "name": "MiniMapBit",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Target entity for generating map pixels",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/MiniMap.fcc",
+            "blob_sha": "7b11ad657a513c8355d69c50719810dfc8939ff7"
           }
         }
       ]
