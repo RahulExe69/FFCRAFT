@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "title": "Current Craftland editor source capture checklist",
+  "checked_on": "2026-10-20",
+  "purpose": "Enumerate authoritative editor-local inputs needed to resolve current PC APIs and Mobile visual block dropdowns that public mirrors cannot settle.",
+  "sources": [
+    {
+      "id": "installed-fcc",
+      "platform": "PC",
+      "priority": 1,
+      "source": "Craftland Studio\\resources\\LocalData\\Utilities\\UGCLanguage\\release",
+      "artifact": "Zip of current .fcc text library files, including version/build information",
+      "answers": [
+        "current API/event/function signatures",
+        "current enum definitions and option values",
+        "server/client and platform annotations",
+        "deprecations or changed names"
+      ],
+      "evidence_status": "not-yet-captured"
+    },
+    {
+      "id": "current-editor-mcp",
+      "platform": "PC",
+      "priority": 2,
+      "source": "MCP Server URL available from within the Studio 1.19.0 editor per official patch notes",
+      "artifact": "Structured JSON/text responses for Blocks, Scripts, Scenes, UI, Animation Controllers and relevant node/port/options data",
+      "answers": [
+        "current visual node IDs/names",
+        "input/output socket types",
+        "context availability",
+        "dropdown content if exposed"
+      ],
+      "evidence_status": "not-yet-captured",
+      "security": "Do not expose localhost endpoint or tokens publicly; export responses instead."
+    },
+    {
+      "id": "project-editorgenlib",
+      "platform": "PC",
+      "priority": 3,
+      "source": "Project-generated EditorGenLib.fcc",
+      "artifact": "Text copy of generated library from project, with private values removed if needed",
+      "answers": [
+        "registered asset keys/IDs",
+        "custom graph script names and import paths",
+        "scene/UI/object/widget assets"
+      ],
+      "evidence_status": "not-yet-captured",
+      "scope": "Project-specific only; do not merge project-specific assets into a general official inventory without tagging."
+    },
+    {
+      "id": "mobile-ui",
+      "platform": "Mobile",
+      "priority": 4,
+      "source": "Current Craftland Mobile editor UI",
+      "artifact": "Block screenshot and full expanded dropdown screenshots, including scrolled sections, with script context/version",
+      "answers": [
+        "visual block names",
+        "exact Mobile dropdown options",
+        "port/input/output structure",
+        "Global/Player/Team/Object/HUD differences"
+      ],
+      "evidence_status": "not-yet-captured"
+    }
+  ],
+  "rules": [
+    "Preserve Rough.txt unchanged.",
+    "Never infer Mobile visual block parity from PC .fcc declarations.",
+    "Keep current/obsolete/legacy and project-specific values separate.",
+    "Every row must record a source URL/blob/hash or screenshot filename, editor version and evidence status.",
+    "Do not mark compiled/playtested without actual test output."
+  ]
+}
