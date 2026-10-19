@@ -8,14 +8,14 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 5,
-    "functions": 203,
-    "events": 144,
-    "component_declarations": 358,
-    "component_properties": 2502,
-    "deprecated_functions": 83,
-    "server_functions": 113,
-    "client_functions": 19
+    "libraries": 10,
+    "functions": 230,
+    "events": 156,
+    "component_declarations": 377,
+    "component_properties": 2612,
+    "deprecated_functions": 91,
+    "server_functions": 129,
+    "client_functions": 21
   },
   "libraries": [
     {
@@ -32174,6 +32174,2359 @@
           "source": {
             "file": "library/release/Hud.fcc",
             "blob_sha": "323d1817023efacf1de0b8aaa4cb28ee39554db0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/AI.fcc",
+      "source_sha": "6a42baa6cb1d49596617043df5146519734517ac",
+      "text_length": 12472,
+      "functions": [
+        {
+          "name": "CreateMonster",
+          "signature": "[platform_server] func CreateMonster(out var target entity<Monster>, position Vector3, type MonsterType, teamSeq int, chaseEnemy bool, actionType ActionType, path entity<CustomPath>)",
+          "parameters_text": "out var target entity<Monster>, position Vector3, type MonsterType, teamSeq int, chaseEnemy bool, actionType ActionType, path entity<CustomPath>",
+          "return_type": null,
+          "description": "Creating an AI Monster",
+          "doc_title": "Create Monster",
+          "parameters": [
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Create a location"
+            },
+            {
+              "name": "type",
+              "type": "MonsterType",
+              "description": "AI Types"
+            },
+            {
+              "name": "teamSeq",
+              "type": "int",
+              "description": "Team"
+            },
+            {
+              "name": "chaseEnemy",
+              "type": "bool",
+              "description": "Whether to automatically search for enemies"
+            },
+            {
+              "name": "actionType",
+              "type": "ActionType",
+              "description": "Attack Mode"
+            },
+            {
+              "name": "path",
+              "type": "entity<CustomPath>",
+              "description": "Travel path"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "Target AI"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "EnableDefaultBTree",
+          "signature": "[platform_server] func EnableDefaultBTree(target entity<Monster>, enable bool)",
+          "parameters_text": "target entity<Monster>, enable bool",
+          "return_type": null,
+          "description": "AI entity stops/executes default behavior tree",
+          "doc_title": "Enable Default Behavour Tree",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "To enable a behavior tree goal"
+            },
+            {
+              "name": "enable",
+              "type": "bool",
+              "description": "Whether to execute the default behavior tree"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "EnableDefaultAI",
+          "signature": "[deprecated] func EnableDefaultAI(target entity<Monster>, enable bool)",
+          "parameters_text": "target entity<Monster>, enable bool",
+          "return_type": null,
+          "description": "AI entity stops/executes default behavior tree",
+          "doc_title": "Enable Default Behavour Tree",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "To enable a behavior tree goal"
+            },
+            {
+              "name": "enable",
+              "type": "bool",
+              "description": "Whether to execute the default behavior tree"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `EnableDefaultBTree` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "PursuitTarget",
+          "signature": "[platform_server] func PursuitTarget(target entity<Monster>, pursuitTarget entity<Combatable>)",
+          "parameters_text": "target entity<Monster>, pursuitTarget entity<Combatable>",
+          "return_type": null,
+          "description": "AI entity chases the designated target",
+          "doc_title": "Pursuit Target",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "AI entity that performs pursuit"
+            },
+            {
+              "name": "pursuitTarget",
+              "type": "entity<Combatable>",
+              "description": "The target being pursued"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "ChaseTarget",
+          "signature": "[deprecated] func ChaseTarget(target entity<Monster>, pursuitTarget entity<Combatable>)",
+          "parameters_text": "target entity<Monster>, pursuitTarget entity<Combatable>",
+          "return_type": null,
+          "description": "AI entity chases the designated target",
+          "doc_title": "Pursuit Target",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "AI entity that performs pursuit"
+            },
+            {
+              "name": "pursuitTarget",
+              "type": "entity<Combatable>",
+              "description": "The target being pursued"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `PursuitTarget` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "AttackTarget",
+          "signature": "[platform_server] func AttackTarget(target entity<Monster>, attackTarget entity<Combatable>)",
+          "parameters_text": "target entity<Monster>, attackTarget entity<Combatable>",
+          "return_type": null,
+          "description": "AI entity attacks the specified target",
+          "doc_title": "Attack Target",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "The AI entity that performs the attack"
+            },
+            {
+              "name": "attackTarget",
+              "type": "entity<Combatable>",
+              "description": "Attacked Target"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "MonsterUseSkill",
+          "signature": "[platform_server] func MonsterUseSkill(target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool)",
+          "parameters_text": "target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool",
+          "return_type": null,
+          "description": "Target AI releases certain skill",
+          "doc_title": "Use Skill",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "Target AI"
+            },
+            {
+              "name": "skill",
+              "type": "MonsterSkillType",
+              "description": "Skill"
+            },
+            {
+              "name": "skillTarget",
+              "type": "entity<Player>",
+              "description": "Skill Target"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the skill is released successfully"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "UseSkill",
+          "signature": "[deprecated] func UseSkill(target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool)",
+          "parameters_text": "target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool",
+          "return_type": null,
+          "description": "Target AI releases certain skill",
+          "doc_title": "Use Skill",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "Target AI"
+            },
+            {
+              "name": "skill",
+              "type": "MonsterSkillType",
+              "description": "Skill"
+            },
+            {
+              "name": "skillTarget",
+              "type": "entity<Player>",
+              "description": "Skill Target"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the skill is released successfully"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `MonsterUseSkill` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "PatrolTo",
+          "signature": "[platform_server] func PatrolTo(target entity<Monster>, position Vector3, comeBack bool, style PatrolStyleType)",
+          "parameters_text": "target entity<Monster>, position Vector3, comeBack bool, style PatrolStyleType",
+          "return_type": null,
+          "description": "AI entities patrolling to target points",
+          "doc_title": "Patrol To",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "Targeted AI entities"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Moving target point"
+            },
+            {
+              "name": "comeBack",
+              "type": "bool",
+              "description": "Whether to return to the point of departure"
+            },
+            {
+              "name": "style",
+              "type": "PatrolStyleType",
+              "description": "Whether hostile targets are detected and attacked during patrols"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "PatrolAlong",
+          "signature": "[platform_server] func PatrolAlong(target entity<Monster>, positions List<Vector3>, comeBack PatrolType, style PatrolStyleType)",
+          "parameters_text": "target entity<Monster>, positions List<Vector3>, comeBack PatrolType, style PatrolStyleType",
+          "return_type": null,
+          "description": "AI entities patrol in order of the list of coordinates",
+          "doc_title": "Patrol Along",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Monster>",
+              "description": "Targeted AI entities"
+            },
+            {
+              "name": "positions",
+              "type": "List<Vector3>",
+              "description": "List of Moving Coordinate Points"
+            },
+            {
+              "name": "comeBack",
+              "type": "PatrolType",
+              "description": "Patrol type, with the option of single, round-trip loop or cycle"
+            },
+            {
+              "name": "style",
+              "type": "PatrolStyleType",
+              "description": "Whether hostile targets are detected and attacked during patrols"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnChase",
+          "signature": "[platform_server] event OnChase()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the pursuit target enters the pursuit range.",
+          "doc_title": "On Chase",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnStartChase",
+          "signature": "[deprecated] event OnStartChase()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the pursuit target enters the pursuit range.",
+          "doc_title": "On Chase",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnChase` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnChaseStop",
+          "signature": "[platform_server] event OnChaseStop()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the pursuit target leaves the pursuit range.",
+          "doc_title": "On Chase Stop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnStopChase",
+          "signature": "[deprecated] event OnStopChase()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the pursuit target leaves the pursuit range.",
+          "doc_title": "On Chase Stop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnChaseStop` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnAttack",
+          "signature": "[platform_server] event OnAttack()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the target enters the attack range.",
+          "doc_title": "On Attack",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnStartAttack",
+          "signature": "[deprecated] event OnStartAttack()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the target enters the attack range.",
+          "doc_title": "On Attack",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnAttack` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnAttackStop",
+          "signature": "[platform_server] event OnAttackStop()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the target leaves the attack range.",
+          "doc_title": "On Attack Stop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "OnStopAttack",
+          "signature": "[deprecated] event OnStopAttack()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the target leaves the attack range.",
+          "doc_title": "On Attack Stop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Monster",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnAttackStop` instead",
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Monster",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "HP",
+              "type": "int",
+              "description": "AI's current blood level",
+              "attributes": []
+            },
+            {
+              "name": "HPMax",
+              "type": "int",
+              "description": "AI's current maximum blood level",
+              "attributes": []
+            },
+            {
+              "name": "HostTeam",
+              "type": "entity<Team>",
+              "description": "Get the entity of the AI's team.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "SpawnPosition_Deprecated",
+              "type": "DirectedPoint_Deprecated",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "AttackDamage",
+              "type": "int",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "AttackInterval",
+              "type": "int",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "AttackRange",
+              "type": "float",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "WanderRange",
+              "type": "float",
+              "description": "AI's free movement range, can only modify the base value, if there is extra bonus, it will be added on top of that value.",
+              "attributes": []
+            },
+            {
+              "name": "DetectRange",
+              "type": "float",
+              "description": "AI's range to detect enemies, can only modify the base value, if there is an extra bonus, it will be added on top of that value.",
+              "attributes": []
+            },
+            {
+              "name": "RunSpeed",
+              "type": "float",
+              "description": "True movement speed, if there is a skill acceleration it will be multiplied by it.",
+              "attributes": []
+            },
+            {
+              "name": "IsDeadDrop",
+              "type": "bool",
+              "description": "Whether the AI drops equipment or items when it dies.",
+              "attributes": []
+            },
+            {
+              "name": "IsInvincible",
+              "type": "bool",
+              "description": "Whether the AI is currently invincible",
+              "attributes": []
+            },
+            {
+              "name": "IsGod",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageTakenPercent",
+              "type": "float",
+              "description": "Percentage of damage dealt to the AI when it takes damage, can be reduced or increased",
+              "attributes": []
+            },
+            {
+              "name": "TakeDamageRatio",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "MonsterType",
+              "type": "MonsterType",
+              "description": "Type of AI",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AIType",
+              "type": "MonsterType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsAutoChaseEnemy",
+              "type": "bool",
+              "description": "Whether to automatically search for enemies",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsChaseEnemy",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ActionType",
+              "type": "int",
+              "description": "0 is auto attack, 1 is defense attack, 2 is no attack at all.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PathID",
+              "type": "int",
+              "description": "Path ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "ChaseTarget",
+              "type": "entity<Combatable>",
+              "description": "Chase Target",
+              "attributes": []
+            },
+            {
+              "name": "AttackTarget",
+              "type": "entity<Combatable>",
+              "description": "Attack Target",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "SpawnPosition",
+              "type": "Vector3",
+              "description": "AI's birth point coordinates",
+              "attributes": []
+            },
+            {
+              "name": "TeamIndex",
+              "type": "int",
+              "description": "The team's camp number",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        },
+        {
+          "name": "AI",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "HP",
+              "type": "int",
+              "description": "AI's current blood level",
+              "attributes": []
+            },
+            {
+              "name": "HPMax",
+              "type": "int",
+              "description": "AI's current maximum blood level",
+              "attributes": []
+            },
+            {
+              "name": "HostTeam",
+              "type": "entity<Team>",
+              "description": "Get the entity of the AI's team.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "SpawnPosition_Deprecated",
+              "type": "DirectedPoint_Deprecated",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "AttackDamage",
+              "type": "int",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "AttackInterval",
+              "type": "int",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "AttackRange",
+              "type": "float",
+              "description": "Can only modify the attack power of normal attacks, skill attacks don't count.",
+              "attributes": []
+            },
+            {
+              "name": "WanderRange",
+              "type": "float",
+              "description": "AI's free movement range, can only modify the base value, if there is extra bonus, it will be added on top of that value.",
+              "attributes": []
+            },
+            {
+              "name": "DetectRange",
+              "type": "float",
+              "description": "AI's range to detect enemies, can only modify the base value, if there is an extra bonus, it will be added on top of that value.",
+              "attributes": []
+            },
+            {
+              "name": "RunSpeed",
+              "type": "float",
+              "description": "True movement speed, if there is a skill acceleration it will be multiplied by it.",
+              "attributes": []
+            },
+            {
+              "name": "IsDeadDrop",
+              "type": "bool",
+              "description": "Whether the AI drops equipment or items when it dies.",
+              "attributes": []
+            },
+            {
+              "name": "IsInvincible",
+              "type": "bool",
+              "description": "Whether the AI is currently invincible",
+              "attributes": []
+            },
+            {
+              "name": "IsGod",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageTakenPercent",
+              "type": "float",
+              "description": "Percentage of damage dealt to the AI when it takes damage, can be reduced or increased",
+              "attributes": []
+            },
+            {
+              "name": "TakeDamageRatio",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "MonsterType",
+              "type": "MonsterType",
+              "description": "Type of AI",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AIType",
+              "type": "MonsterType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsAutoChaseEnemy",
+              "type": "bool",
+              "description": "Whether to automatically search for enemies",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsChaseEnemy",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ActionType",
+              "type": "int",
+              "description": "0 is auto attack, 1 is defense attack, 2 is no attack at all.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PathID",
+              "type": "int",
+              "description": "Path ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "ChaseTarget",
+              "type": "entity<Combatable>",
+              "description": "Chase Target",
+              "attributes": []
+            },
+            {
+              "name": "AttackTarget",
+              "type": "entity<Combatable>",
+              "description": "Attack Target",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "SpawnPosition",
+              "type": "Vector3",
+              "description": "AI's birth point coordinates",
+              "attributes": []
+            },
+            {
+              "name": "TeamIndex",
+              "type": "int",
+              "description": "The team's camp number",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/AI.fcc",
+            "blob_sha": "6a42baa6cb1d49596617043df5146519734517ac"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/AirDrop.fcc",
+      "source_sha": "46d6159a4613956ab1edabf08542e5d69883c69a",
+      "text_length": 1014,
+      "functions": [
+        {
+          "name": "CreateAirDrop",
+          "signature": "[platform_server] func CreateAirDrop(out var createdEntity entity<Airdrop>)",
+          "parameters_text": "out var createdEntity entity<Airdrop>",
+          "return_type": null,
+          "description": "Create an airdrop. There are three stages of airdrop: 1. Preparation, 2. Dropping, 3. Landing. The airdrop properties can only be modified in state 1.",
+          "doc_title": "Create Air Drop",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Airdrop>",
+              "description": "Created airdrop box entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/AirDrop.fcc",
+            "blob_sha": "46d6159a4613956ab1edabf08542e5d69883c69a"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "Airdrop",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "DropItems",
+              "type": "Map<int,int>",
+              "description": "Drop Items",
+              "attributes": []
+            },
+            {
+              "name": "StartDropTime",
+              "type": "int",
+              "description": "Drop box drop time ms",
+              "attributes": []
+            },
+            {
+              "name": "AirDropState",
+              "type": "int",
+              "description": "Airdrop State",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/AirDrop.fcc",
+            "blob_sha": "46d6159a4613956ab1edabf08542e5d69883c69a"
+          }
+        },
+        {
+          "name": "AirDrop",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "DropItems",
+              "type": "Map<int,int>",
+              "description": "Drop Items",
+              "attributes": []
+            },
+            {
+              "name": "StartDropTime",
+              "type": "int",
+              "description": "Drop box drop time ms",
+              "attributes": []
+            },
+            {
+              "name": "AirDropState",
+              "type": "int",
+              "description": "Airdrop State",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/AirDrop.fcc",
+            "blob_sha": "46d6159a4613956ab1edabf08542e5d69883c69a"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Animation.fcc",
+      "source_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b",
+      "text_length": 4321,
+      "functions": [
+        {
+          "name": "PlayAnimation",
+          "signature": "func PlayAnimation(target entity<AnimationControllerAttachable>, state string, playSpeed float, loopType LoopType)",
+          "parameters_text": "target entity<AnimationControllerAttachable>, state string, playSpeed float, loopType LoopType",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "SetBodyPartWeight",
+          "signature": "func SetBodyPartWeight(target entity<AnimationControllerAttachable>, bodyPartName string, weight float)",
+          "parameters_text": "target entity<AnimationControllerAttachable>, bodyPartName string, weight float",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "StopAnimation",
+          "signature": "func StopAnimation(target entity<AnimationControllerAttachable>, state string)",
+          "parameters_text": "target entity<AnimationControllerAttachable>, state string",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnClipEnd",
+          "signature": "[deprecated] event OnClipEnd(clipName string)",
+          "parameters_text": "clipName string",
+          "return_type": null,
+          "description": "Fired when the animation clip has finished playing.",
+          "doc_title": "On Clip End",
+          "parameters": [
+            {
+              "name": "clipName",
+              "type": "string",
+              "description": "Animation Clip Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "AnimationController",
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "OnStateEnd",
+          "signature": "[deprecated] event OnStateEnd(stateName string)",
+          "parameters_text": "stateName string",
+          "return_type": null,
+          "description": "Triggered when the animation state is finished playing.",
+          "doc_title": "On State End",
+          "parameters": [
+            {
+              "name": "stateName",
+              "type": "string",
+              "description": "Animation state name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "AnimationController",
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "AnimationControllerAttachable",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "AnimationControllerResID",
+              "type": "AnimationControllerID",
+              "description": "Animation controller resource ID.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AnimationController",
+              "type": "entity<AnimationController>",
+              "description": "Animation Controller",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "AnimationControllerAble",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "AnimationControllerResID",
+              "type": "AnimationControllerID",
+              "description": "Animation controller resource ID.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AnimationController",
+              "type": "entity<AnimationController>",
+              "description": "Animation Controller",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "AnimationState",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Name",
+              "type": "string",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsLoop",
+              "type": "bool",
+              "description": "Is Loop",
+              "attributes": []
+            },
+            {
+              "name": "PlaySpeed",
+              "type": "float",
+              "description": "Play Speed",
+              "attributes": []
+            },
+            {
+              "name": "Speed",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "AnimationClip",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Name",
+              "type": "string",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ClipLength",
+              "type": "float",
+              "description": "Clip Length",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Length",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PlaySpeed",
+              "type": "float",
+              "description": "Play Speed",
+              "attributes": []
+            },
+            {
+              "name": "Speed",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "IsLoop",
+              "type": "bool",
+              "description": "Is Loop",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        },
+        {
+          "name": "AnimationController",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "AttachTarget",
+              "type": "entity<Entity>",
+              "description": "Bound objects",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CurrentState",
+              "type": "entity<AnimationState>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "CurrentClip",
+              "type": "entity<AnimationClip>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "CurrentClipProgress",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "Resource",
+              "type": "string",
+              "description": "Resource ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "ResID",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Animation.fcc",
+            "blob_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Avatar.fcc",
+      "source_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b",
+      "text_length": 4472,
+      "functions": [
+        {
+          "name": "CreateSkeletonPartLookAtController",
+          "signature": "[platform_client] func CreateSkeletonPartLookAtController(out var createdEntity entity<SkeletonPartLookAtController>, controlledTarget entity<SkeletonPart>, lookAtTarget entity<Transform>)",
+          "parameters_text": "out var createdEntity entity<SkeletonPartLookAtController>, controlledTarget entity<SkeletonPart>, lookAtTarget entity<Transform>",
+          "return_type": null,
+          "description": "After creating a skeleton part look-at controller entity, you can use this entity to control the specified skeleton part and make it always face a specific target.",
+          "doc_title": "Create Skeleton Part Look-at Controller",
+          "parameters": [
+            {
+              "name": "controlledTarget",
+              "type": "entity<SkeletonPart>",
+              "description": "The skeleton part that is being controlled"
+            },
+            {
+              "name": "lookAtTarget",
+              "type": "entity<Transform>",
+              "description": "The target that is being looked at"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SkeletonPartLookAtController>",
+              "description": "The skeleton part look-at controller entity. If the entity is destroyed, the look-at functionality will cease."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "GetSkeletonPartByName",
+          "signature": "[platform_client] func GetSkeletonPartByName(target entity<Entity>, name string) entity<SkeletonPart>",
+          "parameters_text": "target entity<Entity>, name string",
+          "return_type": "entity<SkeletonPart>",
+          "description": "Get the bone attachment point by name",
+          "doc_title": "Get Skeleton Part By Name",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "description": "Bone attachment point name"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<SkeletonPart>",
+              "description": "Bone attachment point"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "SwitchAppearanceGroup",
+          "signature": "func SwitchAppearanceGroup(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Switch character appearance group",
+          "doc_title": "Switch Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "ChangeAvatarPart",
+          "signature": "[deprecated] func ChangeAvatarPart(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Switch character appearance group",
+          "doc_title": "Switch Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `SwitchAppearanceGroup` instead",
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "ShowAppearanceGroup",
+          "signature": "func ShowAppearanceGroup(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Show Character Appearance Group",
+          "doc_title": "Show Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "EnableAvatarPart",
+          "signature": "[deprecated] func EnableAvatarPart(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Show Character Appearance Group",
+          "doc_title": "Show Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `ShowAppearanceGroup` instead",
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "HideAppearanceGroup",
+          "signature": "func HideAppearanceGroup(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Hide character appearance group",
+          "doc_title": "Hide Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "DisableAvatarPart",
+          "signature": "[deprecated] func DisableAvatarPart(target entity<Appearance>, appearanceGroup string)",
+          "parameters_text": "target entity<Appearance>, appearanceGroup string",
+          "return_type": null,
+          "description": "Hide character appearance group",
+          "doc_title": "Hide Appearance Group",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Appearance>",
+              "description": "Target"
+            },
+            {
+              "name": "appearanceGroup",
+              "type": "string",
+              "description": "Appearance Group"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `HideAppearanceGroup` instead",
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "Appearance",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Resource",
+              "type": "string",
+              "description": "Resource ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AvatarResID",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskA",
+              "type": "int",
+              "description": "Part Mask 1",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask1",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskB",
+              "type": "int",
+              "description": "Part Mask 2",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask2",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskC",
+              "type": "int",
+              "description": "Part Mask 3",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask3",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskD",
+              "type": "int",
+              "description": "Part Mask 4",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask4",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "AvatarAble",
+          "kind": "abstract",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "Resource",
+              "type": "string",
+              "description": "Resource ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "AvatarResID",
+              "type": "string",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskA",
+              "type": "int",
+              "description": "Part Mask 1",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask1",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskB",
+              "type": "int",
+              "description": "Part Mask 2",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask2",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskC",
+              "type": "int",
+              "description": "Part Mask 3",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask3",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartMaskD",
+              "type": "int",
+              "description": "Part Mask 4",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PartVisableMask4",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "SkeletonPartController",
+          "kind": "component",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        },
+        {
+          "name": "SkeletonPartLookAtController",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "ControlledTarget",
+              "type": "entity<SkeletonPart>",
+              "description": "{Desc missing configuration}",
+              "attributes": []
+            },
+            {
+              "name": "LookAtTarget",
+              "type": "entity<Transform>",
+              "description": "{Desc missing configuration}",
+              "attributes": [
+                "platform_client"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Avatar.fcc",
+            "blob_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/BehaviourTree.fcc",
+      "source_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a",
+      "text_length": 4557,
+      "functions": [
+        {
+          "name": "SetBlackboardValue",
+          "signature": "[platform_server] func SetBlackboardValue(bTree entity<BevTree>, key string, value object)",
+          "parameters_text": "bTree entity<BevTree>, key string, value object",
+          "return_type": null,
+          "description": "Set the behavior tree blackboard variable",
+          "doc_title": "Set Blackboard Value",
+          "parameters": [
+            {
+              "name": "bTree",
+              "type": "entity<BevTree>",
+              "description": "Target Behavior Tree"
+            },
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Variable name"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Variable value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "SetGlobalVariable",
+          "signature": "[deprecated] func SetGlobalVariable(bTree entity<BevTree>, key string, value object)",
+          "parameters_text": "bTree entity<BevTree>, key string, value object",
+          "return_type": null,
+          "description": "Set the behavior tree blackboard variable",
+          "doc_title": "Set Blackboard Value",
+          "parameters": [
+            {
+              "name": "bTree",
+              "type": "entity<BevTree>",
+              "description": "Target Behavior Tree"
+            },
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Variable name"
+            },
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Variable value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetBlackboardValue` instead",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "GetBlackboardValue",
+          "signature": "[platform_server] func GetBlackboardValue(bTree entity<BevTree>, key string, out var value object)",
+          "parameters_text": "bTree entity<BevTree>, key string, out var value object",
+          "return_type": null,
+          "description": "Get the behavior tree blackboard variable",
+          "doc_title": "Get Blackboard Value",
+          "parameters": [
+            {
+              "name": "bTree",
+              "type": "entity<BevTree>",
+              "description": "Target Behavior Tree"
+            },
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Variable name"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Variable value"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "GetGlobalVariable",
+          "signature": "[deprecated] func GetGlobalVariable(bTree entity<BevTree>, key string, out var value object)",
+          "parameters_text": "bTree entity<BevTree>, key string, out var value object",
+          "return_type": null,
+          "description": "Get the behavior tree blackboard variable",
+          "doc_title": "Get Blackboard Value",
+          "parameters": [
+            {
+              "name": "bTree",
+              "type": "entity<BevTree>",
+              "description": "Target Behavior Tree"
+            },
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Variable name"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Variable value"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetBlackboardValue` instead",
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "GetNodeVariable",
+          "signature": "[platform_server] func GetNodeVariable(node entity<BevTreeCustomNode>, key string, out var value object)",
+          "parameters_text": "node entity<BevTreeCustomNode>, key string, out var value object",
+          "return_type": null,
+          "description": "Get the behavior tree node parameter",
+          "doc_title": "Get Node Variable",
+          "parameters": [
+            {
+              "name": "node",
+              "type": "entity<BevTreeCustomNode>",
+              "description": "Target Behavior Tree Node"
+            },
+            {
+              "name": "key",
+              "type": "string",
+              "description": "Parameter name"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "value",
+              "type": "object",
+              "description": "Parameter value"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnNodeEnter",
+          "signature": "[platform_server] event OnNodeEnter(nodeName string, owner entity<BevTreeAttachable>)",
+          "parameters_text": "nodeName string, owner entity<BevTreeAttachable>",
+          "return_type": null,
+          "description": "Triggered when the behavior tree logic enters this node.",
+          "doc_title": "On Node Enter",
+          "parameters": [
+            {
+              "name": "nodeName",
+              "type": "string",
+              "description": "Node Name"
+            },
+            {
+              "name": "owner",
+              "type": "entity<BevTreeAttachable>",
+              "description": "Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "BevTreeCustomNode",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "OnNodeExit",
+          "signature": "[platform_server] event OnNodeExit(nodeName string, owner entity<BevTreeAttachable>)",
+          "parameters_text": "nodeName string, owner entity<BevTreeAttachable>",
+          "return_type": null,
+          "description": "Triggered when the behavior tree logic exits this node.",
+          "doc_title": "On Node Exit",
+          "parameters": [
+            {
+              "name": "nodeName",
+              "type": "string",
+              "description": "Node Name"
+            },
+            {
+              "name": "owner",
+              "type": "entity<BevTreeAttachable>",
+              "description": "Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "BevTreeCustomNode",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "BevTreeAttachable",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "BevTreeID",
+              "type": "BevTreeID",
+              "description": "Behavior Tree ID",
+              "attributes": []
+            },
+            {
+              "name": "BTreeID",
+              "type": "BevTreeID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "AttachTarget",
+              "type": "entity<BevTree>",
+              "description": "Attach Target",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "TargetBTree",
+              "type": "entity<BevTree>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BTreeAttachable",
+          "kind": "abstract",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "BevTreeID",
+              "type": "BevTreeID",
+              "description": "Behavior Tree ID",
+              "attributes": []
+            },
+            {
+              "name": "BTreeID",
+              "type": "BevTreeID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "AttachTarget",
+              "type": "entity<BevTree>",
+              "description": "Attach Target",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "TargetBTree",
+              "type": "entity<BevTree>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BevTree",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TickInterval",
+              "type": "int",
+              "description": "Refresh interval, the larger the number, the slower the refresh, in milliseconds.",
+              "attributes": []
+            },
+            {
+              "name": "IsDebug",
+              "type": "bool",
+              "description": "Whether to enable debugging",
+              "attributes": [
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BTree",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "TickInterval",
+              "type": "int",
+              "description": "Refresh interval, the larger the number, the slower the refresh, in milliseconds.",
+              "attributes": []
+            },
+            {
+              "name": "IsDebug",
+              "type": "bool",
+              "description": "Whether to enable debugging",
+              "attributes": [
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BevTreeCustomNode",
+          "kind": "component",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        },
+        {
+          "name": "BTreeCustomNode",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [],
+          "source": {
+            "file": "library/release/BehaviourTree.fcc",
+            "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
           }
         }
       ]
