@@ -107,6 +107,38 @@
         "https://ffcraftland.garena.com/en/tutorial/cl/3-44",
         "https://ffcraftland.garena.com/en/tutorial/fe/1-24"
       ]
+    },
+    {
+      "id": "pc-library-catalog",
+      "summary": "A public older mirror of the Craftland Studio VS Code extension contains 42 .fcc libraries; a derivative parser index exposes enum/member/API/event/component candidates for discovery.",
+      "confidence": "secondary-source-discovery-only",
+      "details": "docs/20-pc-library-catalog.md",
+      "sources": [
+        "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
+        "https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage"
+      ]
+    },
+    {
+      "id": "enum-dropdown-crosswalk",
+      "summary": "The 65 dropdown/type labels in Rough.txt have a structured crosswalk to mirrored library candidates and current official type references; 5 remain unresolved or legacy-review items.",
+      "confidence": "mixed-candidate-and-official-cross-check",
+      "details": "docs/21-enum-dropdown-reconstruction.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/enum/",
+        "https://ffcraftland.garena.com/en/docs/type",
+        "https://ffcraftland.garena.com/en/docs/module-26"
+      ]
+    },
+    {
+      "id": "current-official-enum-supplement",
+      "summary": "Current official docs expose enum/type entries absent from the older library mirror, including RenderQualityType and dynamic skin/texture ID selector families.",
+      "confidence": "documented-but-context-sensitive",
+      "details": "docs/22-current-official-enum-supplement.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/enum/",
+        "https://ffcraftland.garena.com/en/docs/module-26",
+        "https://ffcraftland.garena.com/en/docs/api-40-940"
+      ]
     }
   ],
   "docs": {
@@ -131,7 +163,13 @@
     "docs/17-curated-asset-reference.md": "Six official SkyboxType identifiers cross-checked against Garena docs; community package links remain untested",
     "docs/18-fe-resources-beta-audit.md": "Audit of FE_RESOURCES_BETA package collection: skyboxes, dynamic weather, voting system, provenance and testing caveats",
     "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
-    "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates"
+    "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates",
+    "docs/20-pc-library-catalog.md": "Recovered 42-file public extension-library mirror catalog, parser counts, source/version/license caveats and links",
+    "docs/21-enum-dropdown-reconstruction.md": "Crosswalk of 65 dropdown/type labels in Rough.txt to library and official candidates, with unresolved gap map",
+    "docs/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
+    "research/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
+    "research/enum-dropdown-crosswalk.json": "Crosswalk of Rough.txt enum/dropdown labels to mirror and current official definitions",
+    "research/current-official-enum-supplement.json": "Selected current official enums and type-selector details not represented in the old mirrored catalog"
   },
   "sources": [
     {
@@ -291,6 +329,42 @@
       "topic": "std-library",
       "title": "STD Library/API index (contains obsolete markers)",
       "url": "https://ffcraftland.garena.com/en/docs/api-1-26"
+    },
+    {
+      "tier": "A",
+      "topic": "enum-reference",
+      "title": "Official enum reference",
+      "url": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "tier": "A",
+      "topic": "type-reference",
+      "title": "Official type reference",
+      "url": "https://ffcraftland.garena.com/en/docs/type"
+    },
+    {
+      "tier": "A",
+      "topic": "level-object-module",
+      "title": "Level Object module",
+      "url": "https://ffcraftland.garena.com/en/docs/module-26"
+    },
+    {
+      "tier": "A",
+      "topic": "render-quality",
+      "title": "Get Render Quality API",
+      "url": "https://ffcraftland.garena.com/en/docs/api-40-940"
+    },
+    {
+      "tier": "A",
+      "topic": "extension",
+      "title": "Official Free Fire Craftland Code extension listing",
+      "url": "https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage"
+    },
+    {
+      "tier": "B",
+      "topic": "language-library-mirror",
+      "title": "Public mirror of Craftland language extension 1.5.0 libraries",
+      "url": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
     }
   ],
   "open_questions": [
