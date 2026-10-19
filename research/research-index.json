@@ -126,7 +126,8 @@
     "docs/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified.",
     "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
     "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states.",
-    "docs/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria"
+    "docs/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria",
+    "docs/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats"
   },
   "sources": [
     {
@@ -386,5 +387,30 @@
       "official_manual": "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
       "operational_workflow": "Open the project root and a project-created FCG file; inspect FCC definitions; compile and record diagnostics; playtest separately."
     }
-  }
+  },
+  "community_resources": [
+    {
+      "name": "nexosstudio/CRAFTLAND_STUDIO_RESOURCES",
+      "url": "https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES",
+      "last_observed_commit_date": "2025-09-29",
+      "repository_license_claim": "CC0-1.0",
+      "confidence": "community-unverified",
+      "useful_areas": [
+        "UGC asset IDs and names",
+        "sound BGM/effect/voice lists",
+        "skybox labels",
+        "UGC rig FBX files",
+        "Studio project-template folders",
+        "tooling links"
+      ],
+      "caveats": [
+        "some avatar entries are explicitly sample data",
+        "sound catalog may be stale",
+        "Tools README links to Studio 1.14 while current official snapshot includes 1.19.0",
+        "Tools/test.sh contains PowerShell rather than Bash syntax",
+        "verify third-party asset provenance and license scope"
+      ],
+      "audit_doc": "docs/16-community-resource-audit.md"
+    }
+  ]
 }
