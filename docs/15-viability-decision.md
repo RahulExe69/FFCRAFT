@@ -30,6 +30,12 @@ Official references: [Mobile block scripting](https://ffcraftland.garena.com/en/
 
 Official references: [PC manual](https://ffcraftland.garena.com/en/tutorial/fe/1), [PC code scripts](https://ffcraftland.garena.com/en/tutorial/fe/1-9), [official patch notes](https://ffcraftland.garena.com/en/patch-notes/), [API reference](https://ffcraftland.garena.com/en/docs/api).
 
+### The VS Code extension is a key verification tool
+
+The official [Free Fire Craftland Code extension](https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage) provides IntelliSense, diagnostics, hover details, definitions/references, snippets, and an optional built-in compiler that may be updated more frequently than the compiler bundled with Studio. This makes it a practical bridge between public documentation and the installed `.fcc` libraries.
+
+**Updated decision:** for serious Studio PC code generation, use the real Craftland Studio project plus this extension as the first verification environment. Inspect definitions and compiler diagnostics before marking a signature as verified. Do not assume the extension replaces Studio or a live playtest, and do not assume it supports Mobile visual-block authoring.
+
 ## Where FFCRAFT adds value
 
 1. **One mechanic, two distinct implementations.** Preserve the differences between Mobile block graphs and Studio PC code; do not force them into a false one-to-one mapping.
