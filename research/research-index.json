@@ -125,7 +125,8 @@
     "docs/SOURCES.md": "Source catalogue",
     "docs/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified.",
     "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
-    "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states."
+    "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states.",
+    "docs/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria"
   },
   "sources": [
     {
@@ -343,5 +344,27 @@
         "source_url": "https://ffcraftland.garena.com/en/docs/api-1-26"
       }
     ]
+  },
+  "feasibility_assessment": {
+    "checked_on": "2026-10-20",
+    "decision": "go_with_narrow_proof_first_scope",
+    "recommendation": "Use FFCRAFT as a cross-platform evidence-backed recipe/reference layer; do not duplicate the full official API catalogue or build a custom app before a successful pilot.",
+    "native_studio_ai": {
+      "status": "officially_documented",
+      "studio_version": "1.19.0",
+      "release_month": "2026-09",
+      "features": [
+        "AI Smith conversational assistance",
+        "MCP server for Blocks, Scripts, Scenes, UI, Animation Controllers and more"
+      ],
+      "source": "https://ffcraftland.garena.com/en/patch-notes/"
+    },
+    "install_gate": {
+      "now_required": false,
+      "for_exact_fcc_signatures_compile_or_live_test": "Use the target Craftland Studio PC version and its installed release libraries, or obtain version-matched files and build/test evidence.",
+      "for_mobile_visual_blocks": "Use Mobile documentation and, where unclear, version-stamped editor screenshots or exported block snippets."
+    },
+    "next_milestone": "Complete one small end-to-end mechanic pilot in separate Mobile-block and Studio-PC-code forms where supported; then expand catalogues only to close demonstrated gaps.",
+    "source_doc": "docs/15-viability-decision.md"
   }
 }
