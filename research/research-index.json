@@ -127,7 +127,10 @@
     "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
     "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states.",
     "docs/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria",
-    "docs/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats"
+    "docs/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats",
+    "docs/17-curated-asset-reference.md": "Six official SkyboxType identifiers cross-checked against Garena docs; community package links remain untested",
+    "docs/18-fe-resources-beta-audit.md": "Audit of FE_RESOURCES_BETA package collection: skyboxes, dynamic weather, voting system, provenance and testing caveats",
+    "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states"
   },
   "sources": [
     {
@@ -411,6 +414,40 @@
         "verify third-party asset provenance and license scope"
       ],
       "audit_doc": "docs/16-community-resource-audit.md"
+    },
+    {
+      "name": "nexosstudio/FE_RESOURCES_BETA",
+      "url": "https://github.com/nexosstudio/FE_RESOURCES_BETA",
+      "last_observed_commit_date": "2026-03-07",
+      "repository_license_claim": "CC0-1.0",
+      "confidence": "community-unverified",
+      "package_inventory": {
+        "numbered_skyboxes": 44,
+        "named_skyboxes": 22,
+        "dynamic_weather": 1,
+        "voting_system": 2,
+        "total_packages": 68
+      },
+      "use_cases": [
+        "skybox resource leads",
+        "dynamic weather sample mechanic",
+        "voting system sample mechanic"
+      ],
+      "caveats": [
+        "packages not imported or runtime-tested",
+        "folder name Official_SkyBox is not independent proof of provenance",
+        "CC0 repository declaration does not clear third-party game assets"
+      ],
+      "audit_doc": "docs/18-fe-resources-beta-audit.md"
     }
-  ]
+  ],
+  "curated_assets": {
+    "source": "https://ffcraftland.garena.com/en/docs/enum/",
+    "checked_on": "2026-10-20",
+    "official_enum": "SkyboxType",
+    "verified_identifier_count": 6,
+    "community_packages_tested": false,
+    "data_file": "research/curated-asset-reference.json",
+    "caution": "Official enum verification does not verify binary package compatibility or establish a runtime setter API."
+  }
 }
