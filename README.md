@@ -18,8 +18,10 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 10. [Reusable logic recipes](docs/09-recipes.md)
 11. [API/module discovery map](docs/10-api-reference-map.md)
 12. [Community resources and how to vet them](docs/11-community-resources.md)
-13. [Source catalogue](docs/SOURCES.md)
-14. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
+13. [User-observed block inventory](docs/12-user-observed-block-inventory.md) — searchable draft extracted from Rahul's original `Rough.txt`; unverified entries are explicitly labelled.
+14. [Source catalogue](docs/SOURCES.md)
+15. [Machine-readable block inventory](research/user-observed-block-inventory.json)
+16. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
 
 ## Current verified baseline
 
