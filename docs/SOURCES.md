@@ -76,3 +76,9 @@ Some links point to the official pre-release host because that host exposes a mo
 ## Community asset/resource repositories
 
 - [nexosstudio / CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community-curated asset IDs/names, sound lists, skybox names, UGC rigs, project-template folders, and tooling links. Last observed commit: 29 September 2025. Treat catalogues as discovery leads; some entries are explicitly sample data and the linked Studio installer is older than the current release snapshot. See [FFCRAFT audit](16-community-resource-audit.md).
+
+
+## Community sample packages and curated assets
+
+- [nexosstudio / FE_RESOURCES_BETA](https://github.com/nexosstudio/FE_RESOURCES_BETA) — community package samples for named/numbered skyboxes, dynamic weather, and a voting system. Latest observed commit: 7 March 2026. Packages are untested until imported into the matching editor. See [audit](18-fe-resources-beta-audit.md).
+- [Curated skybox base types](17-curated-asset-reference.md) — six SkyboxType identifiers cross-checked against Garena's public enum reference, with untested community package links clearly separated from enum evidence.
