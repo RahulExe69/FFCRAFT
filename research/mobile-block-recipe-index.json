@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.0",
+  "title": "Craftland Mobile block recipe index from the Game Mechanics template manual",
+  "generated_at": "2026-10-20",
+  "source": {
+    "repository": "FF-OGC/Craftland-Tutorial",
+    "path": "Craftland Mobile/English/Modes and Template/Game Mechanic.md",
+    "blob_sha": "acb0952e9366b8570308e4c2ecb88df2303d203a",
+    "commit": "e4cf9dc7a8ee9cb7189478abb2f80a8b11d64b44",
+    "latest_commit_date": "2025-11-12T10:00:32Z",
+    "url": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Game%20Mechanic.md",
+    "source_quality": "Public translated tutorial corpus containing many screenshots and links to Garena CDN; no explicit license field surfaced; use as a reference and do not copy whole article."
+  },
+  "policy": {
+    "summary_only": true,
+    "not_a_complete_block_catalog": true,
+    "not_an_exact_socket_export": true,
+    "not_runtime_tested": true,
+    "mobile_and_pc_must_be_crosschecked_separately": true
+  },
+  "recipe_count": 13,
+  "recipes": [
+    {
+      "slug": "healing-area",
+      "title": "Healing area",
+      "lines": [
+        126,
+        188
+      ],
+      "trigger": "Player enters a custom trigger",
+      "goal": "Continuously restore player health and show a healing effect",
+      "mechanics": [
+        "Trigger enter event",
+        "Repeat health adjustment over time",
+        "Player/effect targeting",
+        "Custom helper function"
+      ],
+      "numbers": {
+        "hp_per_second": 15
+      },
+      "caveat": "The source is a translated template explanation; inspect its linked screenshots/source template for the exact connected block sequence."
+    },
+    {
+      "slug": "damage-zone",
+      "title": "Damage zone",
+      "lines": [
+        189,
+        231
+      ],
+      "trigger": "Player enters a custom trigger",
+      "goal": "Continuously reduce player health",
+      "mechanics": [
+        "Trigger enter event",
+        "Periodic damage",
+        "Player targeting",
+        "Custom helper function"
+      ],
+      "numbers": {
+        "damage_per_second": 15
+      },
+      "caveat": "Treat this as an example recipe; confirm current block sockets and event names in the current editor."
+    },
+    {
+      "slug": "monster-spawn-zone",
+      "title": "Monster spawn zone",
+      "lines": [
+        232,
+        246
+      ],
+      "trigger": "Player enters a custom trigger",
+      "goal": "Spawn a zombie near the zone and play a sound effect",
+      "mechanics": [
+        "Trigger enter",
+        "Create zombie",
+        "Relative Vector3 position",
+        "Set zombie type / target behaviour / path",
+        "Play sound effect"
+      ],
+      "example_settings": {
+        "zombie_type": "Normal",
+        "auto_target": true,
+        "behaviour_type": "Passive",
+        "path": "None",
+        "position_offset_from_player": {
+          "x": -2,
+          "y": 0,
+          "z": -2
+        }
+      },
+      "caveat": "Labels for Behaviour/Behavior and type dropdown contents may vary by locale/version."
+    },
+    {
+      "slug": "trap-area",
+      "title": "Trap area",
+      "lines": [
+        247,
+        324
+      ],
+      "trigger": "Player enters a custom trigger",
+      "goal": "Drop a cage to trap a player, show a countdown, then reset the trap",
+      "mechanics": [
+        "Trigger enter",
+        "Move or activate trap object",
+        "Player-specific tracking",
+        "Countdown/timed wait",
+        "Restore/reset object",
+        "Cleanup entities/variables"
+      ],
+      "numbers": {
+        "countdown_seconds": 10
+      },
+      "caveat": "The source section is long and the visual example should be read together with its screenshots before generating exact node wiring."
+    },
+    {
+      "slug": "transfer-area",
+      "title": "Transfer area",
+      "lines": [
+        325,
+        419
+      ],
+      "trigger": "Player enters a custom trigger; can cancel the transfer while the countdown/effect is active",
+      "goal": "Teleport a player to a destination after a countdown while showing/hiding text and effects",
+      "mechanics": [
+        "Trigger enter/exit",
+        "Countdown/waits",
+        "Update countdown text",
+        "Teleport/transfer player",
+        "Create/hide UI text and visual effects",
+        "Cancel flow/cleanup"
+      ],
+      "caveat": "Exact target position, timers, and event signatures depend on the specific sample; retain the source links for visual verification."
+    },
+    {
+      "slug": "text-display-area",
+      "title": "Text display area",
+      "lines": [
+        420,
+        450
+      ],
+      "trigger": "Player enters/leaves a trigger",
+      "goal": "Show HelloWorld text while inside and hide it when the player leaves",
+      "mechanics": [
+        "Trigger enter/exit",
+        "Create text entity",
+        "Set position using scene-object coordinates",
+        "Show/hide or activate/deactivate text",
+        "Player-relative or scene-relative Vector3 math"
+      ],
+      "caveat": "Text entity creation and visibility behavior must be checked against current Mobile block labels."
+    },
+    {
+      "slug": "outfit-change-area",
+      "title": "Outfit change area",
+      "lines": [
+        451,
+        472
+      ],
+      "trigger": "Player enters a custom trigger",
+      "goal": "Change player outfit according to gender",
+      "mechanics": [
+        "Trigger enter",
+        "Read player character/gender",
+        "Choose outfit ID",
+        "Apply player appearance change"
+      ],
+      "caveat": "Outfit IDs are dynamic asset selectors; do not assume every available ID is in a fixed enum."
+    },
+    {
+      "slug": "elevator",
+      "title": "Elevator",
+      "lines": [
+        473,
+        523
+      ],
+      "trigger": "Player enters/leaves elevator trigger",
+      "goal": "Move elevator up while occupied and down when empty",
+      "mechanics": [
+        "Enter/exit triggers",
+        "Track players in a list",
+        "Loop while condition holds",
+        "Wait 0.5 seconds",
+        "Update Vector3 Y coordinate",
+        "Set elevator and trigger positions",
+        "Stop at max/min height"
+      ],
+      "numbers": {
+        "step_wait_seconds": 0.5,
+        "step_height": 0.2,
+        "up_stop_marker": 20
+      },
+      "caveat": "The manual example describes a step-loop implementation, not necessarily a native elevator API."
+    },
+    {
+      "slug": "automatic-door",
+      "title": "Automatic door",
+      "lines": [
+        524,
+        620
+      ],
+      "trigger": "Player enters/leaves the door's trigger range",
+      "goal": "Open door on approach, close it when player leaves",
+      "mechanics": [
+        "Trigger enter/exit",
+        "Check current door state",
+        "Call helper function",
+        "Set/move door properties",
+        "Optional shared state variable"
+      ],
+      "caveat": "The screenshots/template define the actual open/close transform and block sequence."
+    },
+    {
+      "slug": "global-state",
+      "title": "Global script for shared state",
+      "lines": [
+        621,
+        632
+      ],
+      "trigger": "Game start",
+      "goal": "Initialize a shared variable for tracking mechanism/device states",
+      "mechanics": [
+        "Global On Game Start event",
+        "Custom/global variable",
+        "Initialize value"
+      ],
+      "variables": [
+        {
+          "name": "Mark",
+          "initial_value": 0,
+          "role": "shared device state/marker"
+        }
+      ],
+      "caveat": "The same variable is referenced by elevator and button-door examples; use Global scope only when cross-entity sharing is intended."
+    },
+    {
+      "slug": "player-respawn",
+      "title": "Player script for respawn",
+      "lines": [
+        633,
+        645
+      ],
+      "trigger": "Player joins / player is killed",
+      "goal": "Reset player-specific state and respawn after a short delay",
+      "mechanics": [
+        "On Player Join",
+        "Initialize player custom variable",
+        "On player death/killed event",
+        "Wait 3 seconds",
+        "Respawn next frame"
+      ],
+      "variables": [
+        {
+          "name": "DamageDetermina",
+          "initial_value": false,
+          "role": "player-specific state flag"
+        }
+      ],
+      "numbers": {
+        "respawn_wait_seconds": 3
+      },
+      "caveat": "Exact event labels and respawn API names must be cross-checked against current docs; this index records what the tutorial describes."
+    },
+    {
+      "slug": "hud-button-control",
+      "title": "HUD button controlling a door/state",
+      "lines": [
+        646,
+        688
+      ],
+      "trigger": "Player clicks a custom HUD button",
+      "goal": "Perform different actions based on the door's current state and shared marker",
+      "mechanics": [
+        "Custom HUD button click event",
+        "Read entity property and global variable",
+        "Branch/condition logic",
+        "Call corresponding helper function",
+        "Mutate shared state"
+      ],
+      "caveat": "The source illustrates an interactive button workflow, not a complete general-purpose UI API listing."
+    },
+    {
+      "slug": "respawn-point",
+      "title": "Respawn point active-window script",
+      "lines": [
+        689,
+        704
+      ],
+      "trigger": "Round begins",
+      "goal": "Enable respawn point briefly then deactivate it",
+      "mechanics": [
+        "On Round Start",
+        "Set this entity active",
+        "Wait 2 seconds",
+        "Set active false"
+      ],
+      "numbers": {
+        "active_duration_seconds": 2
+      },
+      "caveat": "Validate event availability and active-property behavior in the target mode/editor."
+    }
+  ]
+}
