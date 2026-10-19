@@ -1,0 +1,1774 @@
+{
+  "schema_version": "1.0",
+  "title": "Public Craftland tutorial corpus index",
+  "checked_on": "2026-10-20",
+  "source": {
+    "repository": "https://github.com/FF-OGC/Craftland-Tutorial",
+    "repository_description": null,
+    "branch": "main",
+    "latest_commit": "e4cf9dc7a8ee9cb7189478abb2f80a8b11d64b44",
+    "latest_commit_date": "2025-11-12T10:00:32Z",
+    "latest_commit_message": "Update",
+    "created_at": "2024-08-19T02:49:41Z",
+    "metadata_updated_at": "2026-09-30T11:29:03Z",
+    "pushed_at": "2025-11-12T10:00:46Z",
+    "license": null,
+    "license_status": "No repository license was returned in GitHub metadata; link and summarize rather than copy whole manuals.",
+    "source_observation": "A public multilingual translation/mirror with many images pointing to official Garena content delivery hosts. Treat as a useful secondary/manual source, not current API authority."
+  },
+  "inventory": {
+    "tree_entries": 3796,
+    "markdown_files": 160,
+    "script_relevant_markdown_files": 16,
+    "markdown_counts_by_path_prefix": {
+      "mobile_english": 35,
+      "pc_english": 53,
+      "mobile_vietnamese": 0,
+      "pc_vietnamese": 37,
+      "other": 2
+    }
+  },
+  "policy": {
+    "original_Rough_txt_preserved": true,
+    "do_not_assume_mirror_is_current": true,
+    "not_a_complete_dropdown_export": true,
+    "screenshots_are_contextual_evidence_not_enumeration_of_all_options": true,
+    "separate_mobile_blocks_from_pc_fcg_fcc_symbols": true
+  },
+  "files": [
+    {
+      "path": "Craftland Mobile/English/Features/AI Generation.md",
+      "sha": "27f9ddb3064f4e619fef6eab4bd8869b767e5767",
+      "size_bytes": 5777,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/AI%20Generation.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Basic Scene Editing.md",
+      "sha": "31b560f5e49af5aaedd3541830b2b7b6d39372ce",
+      "size_bytes": 6252,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Basic%20Scene%20Editing.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Block Script.md",
+      "sha": "709422e3eacbb47790ac2307d737f0d22305eae0",
+      "size_bytes": 10107,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Block%20Script.md",
+      "headings": [
+        "What is a block script?",
+        "Entry point",
+        "Basic introduction to blocks",
+        "Editor",
+        "Block categories",
+        "Using blocks",
+        "Manipulating blocks",
+        "Block data",
+        "Make Player's head bigger",
+        "Different scripts"
+      ],
+      "key_summary": "Official-site-hosted visual scripting tutorial mirrored in the repo. Demonstrates Events (red) and Actions (mostly green/blue), typed data ports, Get Property chaining from Player -> Rig -> Head, Set Property on Skeleton Scale, and Vector3 (3,3,3). Explains global vs player script scope."
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Camera and Editor Settings.md",
+      "sha": "eb2935a76c23461635bb21ac15ad7c0ad3fed618",
+      "size_bytes": 6272,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Camera%20and%20Editor%20Settings.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Create and Publish.md",
+      "sha": "2e9a6cc834bce880a55799aa7348cecd838dda12",
+      "size_bytes": 8264,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Create%20and%20Publish.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Customizing the UI.md",
+      "sha": "3d66bbad71230c8b653be2b87736bd01c69e37ad",
+      "size_bytes": 13482,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Customizing%20the%20UI.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Economy.md",
+      "sha": "aeed7afe543afa7e338118c06523a2656d1f0303",
+      "size_bytes": 6432,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Economy.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Edit Mode Settings.md",
+      "sha": "d0b7032c2ce3685c0f48af64798ef8fbb5cfa187",
+      "size_bytes": 7786,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Edit%20Mode%20Settings.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Editor Basic Interface.md",
+      "sha": "5beff8a69e14e4884c07969226297070ab466508",
+      "size_bytes": 16239,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Editor%20Basic%20Interface.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Frequently Used Objects.md",
+      "sha": "a7bbe394fab8e2a703829658576dee2020222c47",
+      "size_bytes": 9448,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Frequently%20Used%20Objects.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Game Flow.md",
+      "sha": "63d8532779901d8c20113d01c9fb704019d9807d",
+      "size_bytes": 13892,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Game%20Flow.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Global.md",
+      "sha": "7340a08f496d50ad860fed0a76af6c5e6556a5c6",
+      "size_bytes": 4454,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Global.md",
+      "headings": [
+        "Related configuration",
+        "Global script"
+      ],
+      "key_summary": "Mobile global entity settings and global script scope; variables/events and global settings."
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Important Concepts.md",
+      "sha": "9da3bef9891075fa555682009fca0900e7f99fc1",
+      "size_bytes": 8251,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Important%20Concepts.md",
+      "headings": [
+        "Entities and instances"
+      ],
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Level Objects.md",
+      "sha": "070878d38bbe1b32cfa10bd81bdc4f9eafc9983b",
+      "size_bytes": 25099,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Level%20Objects.md",
+      "headings": [
+        "Infrastructure Components",
+        "Item Manager",
+        "Birth Point",
+        "Weapon Loot Point",
+        "Weapon Entity & Props Entity",
+        "Safety Area Items",
+        "Trigger",
+        "Zombie Monster",
+        "Shop and Gold Coins"
+      ],
+      "key_summary": "Mobile reference for Level Objects, triggers, weapon/prop loot, zombies, shops, object classes and their configuration/dropdowns."
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Monster.md",
+      "sha": "e9af614a4de164a1721be5a61045794f81abe714",
+      "size_bytes": 3420,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Monster.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Performance.md",
+      "sha": "dd48c79ddc30d66e4a1357be1f25cc780b6462d6",
+      "size_bytes": 32562,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Performance.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Player.md",
+      "sha": "81be0cb3e999821b19540b4835b3a496831b6516",
+      "size_bytes": 7057,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Player.md",
+      "headings": [
+        "Player Entity Settings",
+        "Player script"
+      ],
+      "key_summary": "Player entity settings and script scope, with important differences between operations on one player and all players."
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Primitives.md",
+      "sha": "5bf39ef6ceb7b5d54e5597ccd32862a42feed68d",
+      "size_bytes": 21822,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Primitives.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Resource Manager.md",
+      "sha": "263c4b04c2a99ad93e4f486e751db0714e723d80",
+      "size_bytes": 4025,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Resource%20Manager.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Resource Shop.md",
+      "sha": "72b9e920fd4133879506d16d4d39ecdca4dd81bd",
+      "size_bytes": 3116,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Resource%20Shop.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Features/Setting Game Parameters.md",
+      "sha": "7a44c7b6b77df3a8ccfc9581da3e8401f2fe06eb",
+      "size_bytes": 4997,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Setting%20Game%20Parameters.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Annihilation Mode.md",
+      "sha": "95a0408046f96b5a2e7e55bcc52521d91402d082",
+      "size_bytes": 1956,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Annihilation%20Mode.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Big Head Mode.md",
+      "sha": "a5b8dc3dfc2c876d5bea94466d31f998ee3e5efd",
+      "size_bytes": 12760,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Big%20Head%20Mode.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Clash Squad.md",
+      "sha": "7c0a759c0055969e70a41b305b83f25cacf5cded",
+      "size_bytes": 2381,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Clash%20Squad.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Defense Master.md",
+      "sha": "c2c3c0588ccaf7dc19a839be73b9159dc006822c",
+      "size_bytes": 2309,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Defense%20Master.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/First Person.md",
+      "sha": "fd4881dc78ff309c99cfb57e40da69e3e7d2212c",
+      "size_bytes": 2366,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/First%20Person.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Game Mechanic.md",
+      "sha": "acb0952e9366b8570308e4c2ecb88df2303d203a",
+      "size_bytes": 39102,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Game%20Mechanic.md",
+      "headings": [
+        "Map Overview",
+        "Feature-Related",
+        "Rules",
+        "Mode",
+        "Economy",
+        "User UI",
+        "Blocks",
+        "Custom Trigger Scripts",
+        "Healing Area",
+        "Damage Zones",
+        "Monster Spawn Zone",
+        "Trap Area",
+        "Transfer Area",
+        "Text Display Area",
+        "Outfit Change Area",
+        "Elevator",
+        "Automatic Door",
+        "Global Script",
+        "Player Script",
+        "HUD Script",
+        "Respawn Point Script"
+      ],
+      "key_summary": "Re-editable Game Mechanics template breakdown with recipe-oriented examples: healing/damage zones, zombie spawning, traps, transfer/teleport, text display, outfit changes, elevator, automatic door, global/player/HUD/respawn scripts. Many images point to official Garena CDN."
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Gun Master.md",
+      "sha": "9c2ef48d0621eb3d908487729ad1fcd2fe8fca4e",
+      "size_bytes": 1885,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Gun%20Master.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Headshot Only template.md",
+      "sha": "b6a8f002f6ba18c6d49b867be1741480b05c5f82",
+      "size_bytes": 9766,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Headshot%20Only%20template.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Hide and Seek.md",
+      "sha": "982e45ea5a14ebc6809fc95e69750ad1dcea12e0",
+      "size_bytes": 1785,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Hide%20and%20Seek.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/My Console.md",
+      "sha": "674eaa81e6bdbd356a05e15d537f50980fbc7c93",
+      "size_bytes": 25678,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/My%20Console.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Parkour Mode.md",
+      "sha": "0978a5da5cd6a15af8d922a32fd567a8e11dd9f1",
+      "size_bytes": 2260,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Parkour%20Mode.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Modes and Template/Point Mode.md",
+      "sha": "b7cb549fa0e378816371b0d5ade5ee35bee54c89",
+      "size_bytes": 2291,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Point%20Mode.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Table of Content.md",
+      "sha": "78f995ebd00d465c6d19675a46c9feebea596669",
+      "size_bytes": 5046,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Table%20of%20Content.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland Mobile/English/Welcome To Craftland Studio.md",
+      "sha": "881fee5ad480d88161041466d30ef888a3ca80e8",
+      "size_bytes": 6173,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Welcome%20To%20Craftland%20Studio.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/1. Overview/Overview - User Manual.md",
+      "sha": "47d38ce16b6e230b8a8dd2812f1243957a3adc90",
+      "size_bytes": 1038,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/1.%20Overview/Overview%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/10. Mechanism Parameters/Game Rules.md",
+      "sha": "a777dea5face3d25ed3486f358b9c03d1c36605c",
+      "size_bytes": 1125,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/10.%20Mechanism%20Parameters/Game%20Rules.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/10. Mechanism Parameters/Mechanism Parameters - User Manual.md",
+      "sha": "6650b5568a1c6a1c57279260a9684a41ce8dc53d",
+      "size_bytes": 2150,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/10.%20Mechanism%20Parameters/Mechanism%20Parameters%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/10. Mechanism Parameters/TRS Tween.md",
+      "sha": "82a6c2e3a873c33ffed9642c524344d923dbf034",
+      "size_bytes": 1940,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/10.%20Mechanism%20Parameters/TRS%20Tween.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/11. Scene/Map Rotate.md",
+      "sha": "83d1577278e69180deb2b9ef0ad1f7be320e655a",
+      "size_bytes": 1601,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/11.%20Scene/Map%20Rotate.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/11. Scene/Scene Editor - User Manual.md",
+      "sha": "9b7995550c19c9146f9c7e24abf6aafaca6a5ccb",
+      "size_bytes": 11089,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/11.%20Scene/Scene%20Editor%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/11. Scene/Skybox.md",
+      "sha": "43e90c3f79ae40980fe27fd7a48f0902aa5008f5",
+      "size_bytes": 5591,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/11.%20Scene/Skybox.md",
+      "headings": [
+        "Introduction",
+        "Skybox",
+        "Skybox Template",
+        "Configuration Details"
+      ],
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/11. Scene/Terrain Editor - User Manual.md",
+      "sha": "119c9f03c2575a33f573253c2850aed437e701f4",
+      "size_bytes": 8921,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/11.%20Scene/Terrain%20Editor%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/12. Level Objects/Level Objects - User Manual.md",
+      "sha": "4cb3530dbaba939b1306c00f843052c27c0d9f40",
+      "size_bytes": 18957,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/12.%20Level%20Objects/Level%20Objects%20-%20User%20Manual.md",
+      "headings": [
+        "General - Object Building Methods",
+        "Base Structures",
+        "Birth Points",
+        "Combat Props",
+        "Generator",
+        "Units",
+        "Safe Zone objects",
+        "Triggers",
+        "Gravity change zone",
+        "Death/Invincibility Zone",
+        "Rollover Trigger",
+        "Zombies",
+        "Unit Generator"
+      ],
+      "key_summary": "PC Level Object construction, object categories, triggers, combat props, zombies and their settings."
+    },
+    {
+      "path": "Craftland PC/English/12. Level Objects/Playable.md",
+      "sha": "dada8d73655b9bb7f13934fc2e4ffedabe4c0fd9",
+      "size_bytes": 18393,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/12.%20Level%20Objects/Playable.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/13. Interface/Default Interface.md",
+      "sha": "2c70406da92689ee87dfafbf3285d4c67171e111",
+      "size_bytes": 4766,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/13.%20Interface/Default%20Interface.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/13. Interface/Interface - User Manual.md",
+      "sha": "363758814178517e5955cecd27a7190e9096799d",
+      "size_bytes": 15310,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/13.%20Interface/Interface%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/13. Interface/Rich Text.md",
+      "sha": "ffbc6ab22e25471475f1778adf706c0975949631",
+      "size_bytes": 2850,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/13.%20Interface/Rich%20Text.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/14. Combat/Combat - User Manual.md",
+      "sha": "217ea8b39c7c38c4097e943f5b5f2aeb6abc7f5d",
+      "size_bytes": 21584,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/14.%20Combat/Combat%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/15. Items/Items - User Manual.md",
+      "sha": "90b62bb4404a8fe6ae9ebe66a231ce8fef4b7e4f",
+      "size_bytes": 11512,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/15.%20Items/Items%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/16. Economy/Economy - User Manual.md",
+      "sha": "baff94b0c1649176fe5ef11fe8075d6a18bbc304",
+      "size_bytes": 14652,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/16.%20Economy/Economy%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/16. Economy/Shop Config.md",
+      "sha": "dbf17e053857e007bfe471cf9a5053874e5a8ca3",
+      "size_bytes": 1052,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/16.%20Economy/Shop%20Config.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/17. AI Zombies/AI Zombie - User Manual.md",
+      "sha": "5a676dc51ab684ea7e8f0af3c1df5944f345b615",
+      "size_bytes": 6442,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/17.%20AI%20Zombies/AI%20Zombie%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/18. Playback System/Playback System - User Manual.md",
+      "sha": "45c00bd8d09a6576b030b0b5b1724b55f9e98990",
+      "size_bytes": 13409,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/18.%20Playback%20System/Playback%20System%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/19. Voice Channel/Voice Channel - User Manual.md",
+      "sha": "cc311c65509e7f8cfad43601f851b06616a795a6",
+      "size_bytes": 1409,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/19.%20Voice%20Channel/Voice%20Channel%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/2. Understanding the Editor's Window/Getting to Know the Editor Window - User Manual.md",
+      "sha": "786774a4a812c51a49888ca2f6676bcd1195369c",
+      "size_bytes": 25711,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/2.%20Understanding%20the%20Editor's%20Window/Getting%20to%20Know%20the%20Editor%20Window%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/20. Mini Map/Mini Map - User Manual.md",
+      "sha": "aefee0292e0820168e7683d62a1b6711cd814858",
+      "size_bytes": 8217,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/20.%20Mini%20Map/Mini%20Map%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/21. Input System/Input System - User Manual.md",
+      "sha": "e7d69c0684326f60842008ee867c114ee5e4f1c4",
+      "size_bytes": 2775,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/21.%20Input%20System/Input%20System%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/22. Physics/Physics - User Manual.md",
+      "sha": "bb86e10046ebca6c1e079f1e7034cb2c89f58f5f",
+      "size_bytes": 20193,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/22.%20Physics/Physics%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/23. Camera/Camera - User Manual.md",
+      "sha": "9787d91d8621fc74cdcd6db600539b0ba1cb4fd8",
+      "size_bytes": 9436,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/23.%20Camera/Camera%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/24. Animation System/Animation System - User Manual.md",
+      "sha": "ce7c6b04e033f27146529f45e54d017160c2fb25",
+      "size_bytes": 17205,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/24.%20Animation%20System/Animation%20System%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/25. Behavior Tree/Behaviour Tree.md",
+      "sha": "0570aa36d38205307ed3f08b5c44bfdf25483bff",
+      "size_bytes": 22540,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/25.%20Behavior%20Tree/Behaviour%20Tree.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/26. AVATAR/AVATAR Costume Change.md",
+      "sha": "c03006d49c523fe034fb15ff5322b4c1843cdc06",
+      "size_bytes": 3826,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/26.%20AVATAR/AVATAR%20Costume%20Change.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/27. Calculable Attributes/Calculable Properties - User Manual.md",
+      "sha": "abf86defedb9dd1ca76eeb8482874f599cfc6a2d",
+      "size_bytes": 4558,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/27.%20Calculable%20Attributes/Calculable%20Properties%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/29. Data Storage/Data Storage - User Manual.md",
+      "sha": "4cb357f03ab00621f6de79ba5934c15e49ba363b",
+      "size_bytes": 14363,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/29.%20Data%20Storage/Data%20Storage%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/29. Data Storage/New Rankings V1.14.1.md",
+      "sha": "b1ec926a0c5da3bc8415fa03728a33b513a9ec16",
+      "size_bytes": 9020,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/29.%20Data%20Storage/New%20Rankings%20V1.14.1.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/3. Important Concepts/Key Concepts - User Manual.md",
+      "sha": "ec1cd700e7619575852236c1735b8f44bf6ffc38",
+      "size_bytes": 13018,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/3.%20Important%20Concepts/Key%20Concepts%20-%20User%20Manual.md",
+      "headings": [
+        "Module",
+        "Loading and unloading modules"
+      ],
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/31. Collection/Collection.md",
+      "sha": "07b0746063149e1d2c86dbdd8f92ddad12a93a6d",
+      "size_bytes": 5490,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/31.%20Collection/Collection.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/32. CSV Table/CSV Table.md",
+      "sha": "96631149dee626c330e50a45c31cfb45b182172b",
+      "size_bytes": 7386,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/32.%20CSV%20Table/CSV%20Table.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/35. Performance/Performance.md",
+      "sha": "1eea077bd9e6151e276a8632e9185a766903b38d",
+      "size_bytes": 27363,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/35.%20Performance/Performance.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/36. Publish/Publish Website.md",
+      "sha": "8f82dcd4bfbc61b84ad34e804e7532710a556c82",
+      "size_bytes": 2412,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/36.%20Publish/Publish%20Website.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/36. Publish/Publish.md",
+      "sha": "39c2683556cef259f3cc12eff50a2eb2d10f2c68",
+      "size_bytes": 922,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/36.%20Publish/Publish.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/38. Process Management - .gitignore - User Manual/Process Management - gitignore - User Manual.md",
+      "sha": "b011793606d336c13bbf58d9b4f36892dab14c89",
+      "size_bytes": 4590,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/38.%20Process%20Management%20-%20.gitignore%20-%20User%20Manual/Process%20Management%20-%20gitignore%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/4. Scripting and Logic/Code Script - User Manual.md",
+      "sha": "18a3fcfb17de1e08878eac2dcf9975e2fe741db7",
+      "size_bytes": 30199,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Code%20Script%20-%20User%20Manual.md",
+      "headings": [
+        "Introduction to the concepts",
+        "Server Scripting and Client Scripting",
+        "Libraries",
+        "Environment Preparation",
+        "VS Code Plugins",
+        "Script Structure",
+        "Basic Syntax",
+        "Data Types",
+        "Operators",
+        "Flow control",
+        "Variables",
+        "Local Variables",
+        "Script variables",
+        "Component Properties",
+        "Value and Reference Types",
+        "Functions",
+        "Define a function",
+        "Calling a function",
+        "Synchronous and asynchronous functions",
+        "Output parameters",
+        "Custom libraries",
+        "Custom events",
+        "Custom components",
+        "Extending official component properties",
+        "Custom enumeration",
+        "Game Data in EditorGenlib.fcc",
+        "Import scripts",
+        "Importing Block Scripts",
+        "Accessing Assets",
+        "Asset Registration",
+        "Static Calls",
+        "Dynamically called",
+        "Compile",
+        "Example"
+      ],
+      "key_summary": "Deep code script manual: .fcg scripts, .fcc libraries, server/client scripts, built-in functions/events, functions/async and out parameters, custom events/components/enums, import of EditorGenLib.fcc and block scripts, asset registration, compile workflow."
+    },
+    {
+      "path": "Craftland PC/English/4. Scripting and Logic/Element Script - User Manual.md",
+      "sha": "65688f0b3fc9783c945cd9f26fc7c5b5efece524",
+      "size_bytes": 17500,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Element%20Script%20-%20User%20Manual.md",
+      "headings": [
+        "Interface Description",
+        "Element classification description",
+        "Use of graphics",
+        "Block Description",
+        "Use of primitives",
+        "Element Properties Panel",
+        "Flow Control",
+        "Variables",
+        "Global entity properties",
+        "Script variables",
+        "Local variables",
+        "Custom functions",
+        "Custom Events",
+        "Search and common use of graphics elements",
+        "Example"
+      ],
+      "key_summary": "Visual block editor anatomy, block connection shapes and types, required input slots, error reporting, flow control, global/entity and script variables, custom functions and custom event signals."
+    },
+    {
+      "path": "Craftland PC/English/4. Scripting and Logic/Formula Property.md",
+      "sha": "11d0a798cf30ec209dee80d1ea4057ed53f016ad",
+      "size_bytes": 5209,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Formula%20Property.md",
+      "headings": [
+        "Formula Property",
+        "Setting calculable parameters",
+        "Weapon damage calculation",
+        "Weapon base damage",
+        "Hit Part Damage Multiplier Adjustment",
+        "Calculating modified damage",
+        "Calculate armor reduction",
+        "Other properties"
+      ],
+      "key_summary": "Formula property configuration and examples for how weapon damage is composed/modified, including body-part multipliers and armour reduction."
+    },
+    {
+      "path": "Craftland PC/English/4. Scripting and Logic/Script - User Manual.md",
+      "sha": "7b23780025cd23d93a907e96cba1c00712e46563",
+      "size_bytes": 8681,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Script%20-%20User%20Manual.md",
+      "headings": [
+        "Distinction between script types",
+        "Block and code scripts",
+        "Server and Client Scripts",
+        "Static Scripts",
+        "Create a script",
+        "Editing Scripts",
+        "Mounting Scripts",
+        "Uninstalling Scripts",
+        "Managing Script Files",
+        "Delete",
+        "Copy",
+        "Rename"
+      ],
+      "key_summary": "Distinguishes block and code scripts, server/client and static scripts; script mounting, file creation, editing, deletion/copy/rename."
+    },
+    {
+      "path": "Craftland PC/English/4. Scripting and Logic/Script Additional Notes - User Manual.md",
+      "sha": "ee5149929d769396d1b65a11aee4496cdd4b428f",
+      "size_bytes": 21473,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Script%20Additional%20Notes%20-%20User%20Manual.md",
+      "headings": [
+        "Block scripts",
+        "Process control",
+        "Conditional statements",
+        "Loop statement",
+        "Code Script",
+        "Basic Syntax",
+        "Comments",
+        "Identifiers",
+        "keyword",
+        "Member accessor",
+        "Accessing imported content",
+        "Accessing component data",
+        "Accessing script members",
+        "Data types",
+        "Basic types",
+        "Dynamic types",
+        "List<T>",
+        "Map<T1,T2>",
+        "entity<T>",
+        "Operators",
+        "Process Control",
+        "Conditional Statements",
+        "Loop Statements",
+        "for index",
+        "for range",
+        "while"
+      ],
+      "key_summary": "Code language reference and block process control: identifiers, keywords, object/entity/component access, data types including enums/List/Map/entity<T>, operator precedence, loops and conditionals."
+    },
+    {
+      "path": "Craftland PC/English/5. Debugging/Debugging - User Manual.md",
+      "sha": "a63493b2e38538ecd5caeb46fa820fd7cb24f06b",
+      "size_bytes": 14572,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/5.%20Debugging/Debugging%20-%20User%20Manual.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/6. Global/Global - User Manual.md",
+      "sha": "e7c76f2794e9cfa3cb4518f05e87388f8725b46e",
+      "size_bytes": 11420,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/6.%20Global/Global%20-%20User%20Manual.md",
+      "headings": [
+        "Modules",
+        "Static ECA and script",
+        "Custom room parameters",
+        "Frame rate",
+        "Dynamic Navmesh",
+        "Match",
+        "AFK & cheating",
+        "Script global module",
+        "Manipulate the poison circle",
+        "Pause and resume the game"
+      ],
+      "key_summary": "PC Global module, global script, custom room parameters, frame rate, match options and timed pause/resume mechanics."
+    },
+    {
+      "path": "Craftland PC/English/6. Global/Time.md",
+      "sha": "14dfc649f43ebd0216691691aa0abbb1f1fb4350",
+      "size_bytes": 6325,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/6.%20Global/Time.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/7. Player/Player - 3D Model Creation and Rigging.md",
+      "sha": "a72fa9d04edfa7a71335b60cbf61249f4ed532c2",
+      "size_bytes": 2565,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/7.%20Player/Player%20-%203D%20Model%20Creation%20and%20Rigging.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/7. Player/Player - User Manual.md",
+      "sha": "f58a0e8c6f209bc7cbeb7d78230922a283cfa467",
+      "size_bytes": 15272,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/7.%20Player/Player%20-%20User%20Manual.md",
+      "headings": [
+        "Player module",
+        "Default player type",
+        "How to create a player profile",
+        "How to edit player data",
+        "Script",
+        "Basic settings",
+        "Combat",
+        "Player controller with physics",
+        "Player script"
+      ],
+      "key_summary": "PC player module, profiles, script scope, character control, combat and per-player logic."
+    },
+    {
+      "path": "Craftland PC/English/7. Player/Player Respawn.md",
+      "sha": "92d24afd13168a6e7d1c3a04b04ad1c9e5788b80",
+      "size_bytes": 1230,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/7.%20Player/Player%20Respawn.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/8. Asset Store/Asset Store.md",
+      "sha": "9929aae12db1af15f4bf620df4138cc85eb55436",
+      "size_bytes": 2908,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/8.%20Asset%20Store/Asset%20Store.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/9. Workflow - Game Flow/Workflow.md",
+      "sha": "a141f1f803ceea6522e869655e869ca97ce23b9b",
+      "size_bytes": 11174,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/9.%20Workflow%20-%20Game%20Flow/Workflow.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/About Plugin Usage.md",
+      "sha": "befd1279840812421d0e551dc39a1f192fb3a109",
+      "size_bytes": 831,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/About%20Plugin%20Usage.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/English/Table of Content.md",
+      "sha": "9f802794e18c706ace8ce11fcf841b4612327aa7",
+      "size_bytes": 7824,
+      "language": "English",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/Table%20of%20Content.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/0. Kết nối tài khoản/Đăng nhập - Kết nối tài khoản.md",
+      "sha": "217128699d884c4767094e9bbdd5a8e3296ce519",
+      "size_bytes": 628,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/0.%20K%E1%BA%BFt%20n%E1%BB%91i%20t%C3%A0i%20kho%E1%BA%A3n/%C4%90%C4%83ng%20nh%E1%BA%ADp%20-%20K%E1%BA%BFt%20n%E1%BB%91i%20t%C3%A0i%20kho%E1%BA%A3n.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/1. Tổng quan/Tổng quan - Hướng dẫn người dùng.md",
+      "sha": "9d109b3b46ea97ef7fbe4906f3ad3f45e026eace",
+      "size_bytes": 2763,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/1.%20T%E1%BB%95ng%20quan/T%E1%BB%95ng%20quan%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/10. Tham số cơ chế/Tham số cơ chế - Hướng dẫn người dùng.md",
+      "sha": "3e4085d948615113dbbc56b5c2a7e7626f565b8e",
+      "size_bytes": 2800,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/10.%20Tham%20s%E1%BB%91%20c%C6%A1%20ch%E1%BA%BF/Tham%20s%E1%BB%91%20c%C6%A1%20ch%E1%BA%BF%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/11. Cảnh/Trình chỉnh sửa cảnh - Hướng dẫn người dùng.md",
+      "sha": "5b182998f46e1203fe6acab9935217d7b13985fb",
+      "size_bytes": 9598,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/11.%20C%E1%BA%A3nh/Tr%C3%ACnh%20ch%E1%BB%89nh%20s%E1%BB%ADa%20c%E1%BA%A3nh%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/11. Cảnh/Trình chỉnh sửa địa hình - Hướng dẫn người dùng.md",
+      "sha": "8ff5ab74c592e78c9fb8abd8217bb81ba102b150",
+      "size_bytes": 8211,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/11.%20C%E1%BA%A3nh/Tr%C3%ACnh%20ch%E1%BB%89nh%20s%E1%BB%ADa%20%C4%91%E1%BB%8Ba%20h%C3%ACnh%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/12. Vật phẩm màn chơi/Vật phẩm màn chơi - Sổ tay người dùng.md",
+      "sha": "d3d23a6327bd8f9bfc6a712b894c440253f233b7",
+      "size_bytes": 19493,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/12.%20V%E1%BA%ADt%20ph%E1%BA%A9m%20m%C3%A0n%20ch%C6%A1i/V%E1%BA%ADt%20ph%E1%BA%A9m%20m%C3%A0n%20ch%C6%A1i%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/13. Giao diện/Giao diện - Sổ tay người dùng.md",
+      "sha": "a349f5076ca26e27ef212b6699f930f6c4c9beb7",
+      "size_bytes": 20764,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/13.%20Giao%20di%E1%BB%87n/Giao%20di%E1%BB%87n%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/14. Chiến đấu/Chiến Đấu - Sổ Tay Người Dùng.md",
+      "sha": "e814bcb9158ba035d9ae4e483a9d7ffbba1d487e",
+      "size_bytes": 19068,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/14.%20Chi%E1%BA%BFn%20%C4%91%E1%BA%A5u/Chi%E1%BA%BFn%20%C4%90%E1%BA%A5u%20-%20S%E1%BB%95%20Tay%20Ng%C6%B0%E1%BB%9Di%20D%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/15. Vật phẩm/Vật phẩm - Hướng dẫn người dùng.md",
+      "sha": "9cbfeeeb8a7ca5902a657532aa9acb2bf9d2ec51",
+      "size_bytes": 13569,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/15.%20V%E1%BA%ADt%20ph%E1%BA%A9m/V%E1%BA%ADt%20ph%E1%BA%A9m%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/16. Kinh tế/Kinh tế - Hướng dẫn người dùng.md",
+      "sha": "13c1ad8d09606822e0ac603a36ee1135ae75126b",
+      "size_bytes": 12881,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/16.%20Kinh%20t%E1%BA%BF/Kinh%20t%E1%BA%BF%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/17. AI - Zombie/AI Zombie - Sổ Tay Người Dùng.md",
+      "sha": "542a0487daadc0b811e589ed173ae5819ad65529",
+      "size_bytes": 7062,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/17.%20AI%20-%20Zombie/AI%20Zombie%20-%20S%E1%BB%95%20Tay%20Ng%C6%B0%E1%BB%9Di%20D%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/18. Hệ thống phát nhạc/Hệ thống phát - Sổ tay người dùng.md",
+      "sha": "906fe055b51d2f218d49ba4db0515373d6c31b6d",
+      "size_bytes": 20221,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/18.%20H%E1%BB%87%20th%E1%BB%91ng%20ph%C3%A1t%20nh%E1%BA%A1c/H%E1%BB%87%20th%E1%BB%91ng%20ph%C3%A1t%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/19. Kênh âm thanh/Kênh âm thanh - Hướng dẫn người dùng.md",
+      "sha": "d137fa476f59cf0ae47d9b3a1e5af7ff75148d3d",
+      "size_bytes": 1527,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/19.%20K%C3%AAnh%20%C3%A2m%20thanh/K%C3%AAnh%20%C3%A2m%20thanh%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/2. Làm quen với cửa sổ của trình chỉnh sửa/Làm quen với cửa sổ trình soạn thảo - Hướng dẫn sử dụng.md",
+      "sha": "f818b1dddde890f3e4215df81cb3006308fb5a7e",
+      "size_bytes": 22588,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/2.%20L%C3%A0m%20quen%20v%E1%BB%9Bi%20c%E1%BB%ADa%20s%E1%BB%95%20c%E1%BB%A7a%20tr%C3%ACnh%20ch%E1%BB%89nh%20s%E1%BB%ADa/L%C3%A0m%20quen%20v%E1%BB%9Bi%20c%E1%BB%ADa%20s%E1%BB%95%20tr%C3%ACnh%20so%E1%BA%A1n%20th%E1%BA%A3o%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/20. Bản đồ nhỏ/Bản đồ nhỏ - Hướng dẫn người dùng.md",
+      "sha": "fdd9398356f7645a1b566d102045a9136042755b",
+      "size_bytes": 8039,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/20.%20B%E1%BA%A3n%20%C4%91%E1%BB%93%20nh%E1%BB%8F/B%E1%BA%A3n%20%C4%91%E1%BB%93%20nh%E1%BB%8F%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/21. Hệ thống nhập liệu/Hệ thống nhập liệu - Hướng dẫn người dùng.md",
+      "sha": "784773b7eec0a6edbd4b01eee02bcd5df6d0c904",
+      "size_bytes": 4572,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/21.%20H%E1%BB%87%20th%E1%BB%91ng%20nh%E1%BA%ADp%20li%E1%BB%87u/H%E1%BB%87%20th%E1%BB%91ng%20nh%E1%BA%ADp%20li%E1%BB%87u%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/22. Vật lý/Vật lý - Hướng dẫn người dùng.md",
+      "sha": "ed8051b69864ad3b45f52d52ceb5b8b434150a27",
+      "size_bytes": 20869,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/22.%20V%E1%BA%ADt%20l%C3%BD/V%E1%BA%ADt%20l%C3%BD%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/23. Máy ảnh/Máy quay - Hướng dẫn sử dụng người dùng.md",
+      "sha": "29a744b48f10505a5c71e3f135d709bbd0adee94",
+      "size_bytes": 8270,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/23.%20M%C3%A1y%20%E1%BA%A3nh/M%C3%A1y%20quay%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/24. Hệ thống hoạt hình/Hệ thống hoạt hình - Hướng dẫn người dùng.md",
+      "sha": "3cb7453c1b4fab9e03766032a1c6f7a9cce94fa7",
+      "size_bytes": 7467,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/24.%20H%E1%BB%87%20th%E1%BB%91ng%20ho%E1%BA%A1t%20h%C3%ACnh/H%E1%BB%87%20th%E1%BB%91ng%20ho%E1%BA%A1t%20h%C3%ACnh%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/25. Cây hành vi/Cây hành vi - Behaviour Tree.md",
+      "sha": "4ddede0bb616c65e49b57f1b174c8dfc66ca2912",
+      "size_bytes": 24889,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/25.%20C%C3%A2y%20h%C3%A0nh%20vi/C%C3%A2y%20h%C3%A0nh%20vi%20-%20Behaviour%20Tree.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/26. AVATAR/AVATAR có thể thay đổi trang phục.md",
+      "sha": "29171c58eaa761c7ad5798b389a511d4cad063ec",
+      "size_bytes": 3152,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/26.%20AVATAR/AVATAR%20c%C3%B3%20th%E1%BB%83%20thay%20%C4%91%E1%BB%95i%20trang%20ph%E1%BB%A5c.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/27. Thuộc tính có thể tính toán/Thuộc tính có thể tính toán - Hướng dẫn người dùng.md",
+      "sha": "16e39b23d1dfb97b6a400ebe8268d13a9e8937ee",
+      "size_bytes": 4194,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/27.%20Thu%E1%BB%99c%20t%C3%ADnh%20c%C3%B3%20th%E1%BB%83%20t%C3%ADnh%20to%C3%A1n/Thu%E1%BB%99c%20t%C3%ADnh%20c%C3%B3%20th%E1%BB%83%20t%C3%ADnh%20to%C3%A1n%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/29. Lưu trữ dữ liệu/Bảng xếp hạng mới V1.14.1.md",
+      "sha": "834f617bce46d8f64cb42234cb1f017d8275b0b7",
+      "size_bytes": 12442,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/29.%20L%C6%B0u%20tr%E1%BB%AF%20d%E1%BB%AF%20li%E1%BB%87u/B%E1%BA%A3ng%20x%E1%BA%BFp%20h%E1%BA%A1ng%20m%E1%BB%9Bi%20V1.14.1.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/29. Lưu trữ dữ liệu/Lưu trữ dữ liệu - Hướng dẫn người dùng.md",
+      "sha": "5e77c89c168c74b41c676e0dd43553bf98790a65",
+      "size_bytes": 13455,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/29.%20L%C6%B0u%20tr%E1%BB%AF%20d%E1%BB%AF%20li%E1%BB%87u/L%C6%B0u%20tr%E1%BB%AF%20d%E1%BB%AF%20li%E1%BB%87u%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/3. Khái niệm quan trọng/Khái niệm Quan Trọng - Hướng dẫn Sử dụng.md",
+      "sha": "7b5df7d6fad526926da878d631e5ec88d7d4f5d9",
+      "size_bytes": 16233,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/3.%20Kh%C3%A1i%20ni%E1%BB%87m%20quan%20tr%E1%BB%8Dng/Kh%C3%A1i%20ni%E1%BB%87m%20Quan%20Tr%E1%BB%8Dng%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20S%E1%BB%AD%20d%E1%BB%A5ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/38. Quản lý quy trình - gitignore - Hướng dẫn sử dụng/Quản lý quy trình - `.gitignore` - Hướng dẫn người dùng.md",
+      "sha": "5e92fd19e46d166ff979910f680c5e1424cc7ca7",
+      "size_bytes": 5331,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/38.%20Qu%E1%BA%A3n%20l%C3%BD%20quy%20tr%C3%ACnh%20-%20gitignore%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng/Qu%E1%BA%A3n%20l%C3%BD%20quy%20tr%C3%ACnh%20-%20%60.gitignore%60%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/39. Hệ thống quản lý dữ liệu/Hệ thống quản lý dữ liệu.md",
+      "sha": "fbfa3d7bdb87f07e1b9d779fb6a3b032d2936061",
+      "size_bytes": 95,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/39.%20H%E1%BB%87%20th%E1%BB%91ng%20qu%E1%BA%A3n%20l%C3%BD%20d%E1%BB%AF%20li%E1%BB%87u/H%E1%BB%87%20th%E1%BB%91ng%20qu%E1%BA%A3n%20l%C3%BD%20d%E1%BB%AF%20li%E1%BB%87u.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/4. Kịch bản và logic/Ghi chú bổ sung kịch bản - Hướng dẫn sử dụng.md",
+      "sha": "a7ca9e0d435df118a69cdbb937fa297dda03939e",
+      "size_bytes": 18239,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/4.%20K%E1%BB%8Bch%20b%E1%BA%A3n%20v%C3%A0%20logic/Ghi%20ch%C3%BA%20b%E1%BB%95%20sung%20k%E1%BB%8Bch%20b%E1%BA%A3n%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/4. Kịch bản và logic/Kịch bản - Sổ tay người dùng.md",
+      "sha": "96d51f1038497c6037280473049b7b9c34dc3f9d",
+      "size_bytes": 6839,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/4.%20K%E1%BB%8Bch%20b%E1%BA%A3n%20v%C3%A0%20logic/K%E1%BB%8Bch%20b%E1%BA%A3n%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/4. Kịch bản và logic/Kịch bản hình ảnh - Hướng dẫn người dùng.md",
+      "sha": "31087e2dd065847aec315282119fced3c90e645c",
+      "size_bytes": 12886,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/4.%20K%E1%BB%8Bch%20b%E1%BA%A3n%20v%C3%A0%20logic/K%E1%BB%8Bch%20b%E1%BA%A3n%20h%C3%ACnh%20%E1%BA%A3nh%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/4. Kịch bản và logic/Mã nguồn - Hướng dẫn người dùng.md",
+      "sha": "95062008540ae5f79d873b68d317f71e607dadd1",
+      "size_bytes": 13416,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/4.%20K%E1%BB%8Bch%20b%E1%BA%A3n%20v%C3%A0%20logic/M%C3%A3%20ngu%E1%BB%93n%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/40. Chia sẻ dự án/Chia sẻ Dự án.md",
+      "sha": "5370a53cb61c61fa38885bf0cf6f13637a13a2cd",
+      "size_bytes": 845,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/40.%20Chia%20s%E1%BA%BB%20d%E1%BB%B1%20%C3%A1n/Chia%20s%E1%BA%BB%20D%E1%BB%B1%20%C3%A1n.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/5. Gỡ lỗi - Điều chỉnh/Gỡ lỗi - Hướng dẫn sử dụng .md",
+      "sha": "f1b7f9cde5c095de3b7157eafe1391e02a47d697",
+      "size_bytes": 8762,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/5.%20G%E1%BB%A1%20l%E1%BB%97i%20-%20%C4%90i%E1%BB%81u%20ch%E1%BB%89nh/G%E1%BB%A1%20l%E1%BB%97i%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng%20.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/6. Global - Toàn cục/Global - Hướng dẫn sử dụng .md",
+      "sha": "87392d16d8cb2dabe1aaed0ba9b6537de3e21b27",
+      "size_bytes": 11868,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/6.%20Global%20-%20To%C3%A0n%20c%E1%BB%A5c/Global%20-%20H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng%20.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/7. Người chơi/Người chơi - Sổ tay người dùng .md",
+      "sha": "a8cfc7a51e372adb01b177929dcb5e3dc8314162",
+      "size_bytes": 18672,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/7.%20Ng%C6%B0%E1%BB%9Di%20ch%C6%A1i/Ng%C6%B0%E1%BB%9Di%20ch%C6%A1i%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/9. Workflow - Quy trình trờ chơi/Quy trình làm việc - Quy trình trò chơi - Sổ tay người dùng .md",
+      "sha": "f7324be2f2e3f864d4633200bdaf849e04d130d9",
+      "size_bytes": 12225,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/9.%20Workflow%20-%20Quy%20tr%C3%ACnh%20tr%E1%BB%9D%20ch%C6%A1i/Quy%20tr%C3%ACnh%20l%C3%A0m%20vi%E1%BB%87c%20-%20Quy%20tr%C3%ACnh%20tr%C3%B2%20ch%C6%A1i%20-%20S%E1%BB%95%20tay%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng%20.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/Tiếng Việt/Mục lục.md",
+      "sha": "70aa90ac2bb158f7bd5091461acd09303402d599",
+      "size_bytes": 8654,
+      "language": "Vietnamese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/Ti%E1%BA%BFng%20Vi%E1%BB%87t/M%E1%BB%A5c%20l%E1%BB%A5c.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/1.总览/总览-用户手册.md",
+      "sha": "b9bb641e5a7da2d3aef81219631a5276fb80eb8b",
+      "size_bytes": 1813,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/1.%E6%80%BB%E8%A7%88/%E6%80%BB%E8%A7%88-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/10.机制参数/机制参数-用户手册.md",
+      "sha": "f4c883fad73e927d09bfb1200abbff30f604770c",
+      "size_bytes": 1872,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/10.%E6%9C%BA%E5%88%B6%E5%8F%82%E6%95%B0/%E6%9C%BA%E5%88%B6%E5%8F%82%E6%95%B0-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/11.场景/地形编辑器-用户手册.md",
+      "sha": "5284d3dc09b36f881092597130769b0021f9afca",
+      "size_bytes": 5821,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/11.%E5%9C%BA%E6%99%AF/%E5%9C%B0%E5%BD%A2%E7%BC%96%E8%BE%91%E5%99%A8-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/11.场景/场景编辑器-用户手册.md",
+      "sha": "35977dab6274a1bb060ef98c221d25f94d52aa29",
+      "size_bytes": 7369,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/11.%E5%9C%BA%E6%99%AF/%E5%9C%BA%E6%99%AF%E7%BC%96%E8%BE%91%E5%99%A8-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/12.关卡物件/关卡物件-用户手册.md",
+      "sha": "6060a7eafc8c5b1b0bf6408e2f411f6fb55d8a5f",
+      "size_bytes": 12821,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/12.%E5%85%B3%E5%8D%A1%E7%89%A9%E4%BB%B6/%E5%85%B3%E5%8D%A1%E7%89%A9%E4%BB%B6-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/13.界面/界面-用户手册.md",
+      "sha": "fbbdc177e6776d744873c2f11de5b651281fe3fb",
+      "size_bytes": 14583,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/13.%E7%95%8C%E9%9D%A2/%E7%95%8C%E9%9D%A2-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/14.战斗/战斗-用户手册.md",
+      "sha": "fb0a31c5c007b86d64fd99f8c3ff3efaca99d16e",
+      "size_bytes": 15093,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/14.%E6%88%98%E6%96%97/%E6%88%98%E6%96%97-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/15.物品/物品-用户手册.md",
+      "sha": "b4480faacf655e99a6e60eb13d0bd187cc96feab",
+      "size_bytes": 9016,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/15.%E7%89%A9%E5%93%81/%E7%89%A9%E5%93%81-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/16.经济/经济-用户手册.md",
+      "sha": "e31a9c027bbd2ae1519b971247ecbd1974b587df",
+      "size_bytes": 9227,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/16.%E7%BB%8F%E6%B5%8E/%E7%BB%8F%E6%B5%8E-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/17.AI僵尸/AI僵尸-用户手册.md",
+      "sha": "34ee08355daa84af51640e469a629561c5eef2c9",
+      "size_bytes": 4900,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/17.AI%E5%83%B5%E5%B0%B8/AI%E5%83%B5%E5%B0%B8-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/18.播放系统/播放系统-用户手册.md",
+      "sha": "ad8561d17bbe659d7479edad227f37177f09c4a8",
+      "size_bytes": 13619,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/18.%E6%92%AD%E6%94%BE%E7%B3%BB%E7%BB%9F/%E6%92%AD%E6%94%BE%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/19.语音频道/语音频道-用户手册.md",
+      "sha": "660d4baac0294586cdb9d566c8cbe1c0a19695ad",
+      "size_bytes": 1055,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/19.%E8%AF%AD%E9%9F%B3%E9%A2%91%E9%81%93/%E8%AF%AD%E9%9F%B3%E9%A2%91%E9%81%93-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/2.认识编辑器的窗口/认识编辑器的窗口-用户手册.md",
+      "sha": "70954860931b64c8fa033589444301e018925a0a",
+      "size_bytes": 16066,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/2.%E8%AE%A4%E8%AF%86%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E7%AA%97%E5%8F%A3/%E8%AE%A4%E8%AF%86%E7%BC%96%E8%BE%91%E5%99%A8%E7%9A%84%E7%AA%97%E5%8F%A3-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/20.小地图/小地图-用户手册.md",
+      "sha": "c93913bfaccf542ee238ef4fc3e85c9b80e84f0f",
+      "size_bytes": 5656,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/20.%E5%B0%8F%E5%9C%B0%E5%9B%BE/%E5%B0%8F%E5%9C%B0%E5%9B%BE-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/21.输入系统/输入系统-用户手册.md",
+      "sha": "885a159f2ad7f898bb251f64fc6ee1e602168a5b",
+      "size_bytes": 3883,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/21.%E8%BE%93%E5%85%A5%E7%B3%BB%E7%BB%9F/%E8%BE%93%E5%85%A5%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/22.物理/物理-用户手册.md",
+      "sha": "68b8d36d74fcc9cbc9ff26ff62517759b28ee5e2",
+      "size_bytes": 14168,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/22.%E7%89%A9%E7%90%86/%E7%89%A9%E7%90%86-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/23.摄像机/摄像机-用户手册.md",
+      "sha": "3fbc9cad8180cba4d0a9aa0fe6730a1c2add11cd",
+      "size_bytes": 6199,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/23.%E6%91%84%E5%83%8F%E6%9C%BA/%E6%91%84%E5%83%8F%E6%9C%BA-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/24.动画系统/动画系统-用户手册.md",
+      "sha": "43df87863c030ec229442c833227b34f16383129",
+      "size_bytes": 5326,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/24.%E5%8A%A8%E7%94%BB%E7%B3%BB%E7%BB%9F/%E5%8A%A8%E7%94%BB%E7%B3%BB%E7%BB%9F-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/25.行为树/BehaviourTree-行为树.md",
+      "sha": "9b1d9a82e00dcdf5ed613fcec17f1d5866f340ac",
+      "size_bytes": 17703,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/25.%E8%A1%8C%E4%B8%BA%E6%A0%91/BehaviourTree-%E8%A1%8C%E4%B8%BA%E6%A0%91.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/26.AVATAR/AVATAR可换装.md",
+      "sha": "8823e71d5b38f444a485af2ddf5902e91432f875",
+      "size_bytes": 2414,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/26.AVATAR/AVATAR%E5%8F%AF%E6%8D%A2%E8%A3%85.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/27.可计算属性/可计算属性-用户手册.md",
+      "sha": "16e39b23d1dfb97b6a400ebe8268d13a9e8937ee",
+      "size_bytes": 4194,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/27.%E5%8F%AF%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7/%E5%8F%AF%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/29.数据存储/数据存储-用户手册.md",
+      "sha": "97f742725d8d12f94e76e2ebd0e7ecbb6e873e83",
+      "size_bytes": 9791,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/29.%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/3.重要概念/重要概念-用户手册.md",
+      "sha": "d05067263482db930c5bac7ba5d8c51f8e266b35",
+      "size_bytes": 11189,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/3.%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/38.流程管理-gitignore-用户手册/流程管理-gitignore-用户手册.md",
+      "sha": "f09129f176c35d95fc2abcfbd840bd66445e5ba8",
+      "size_bytes": 3613,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/38.%E6%B5%81%E7%A8%8B%E7%AE%A1%E7%90%86-gitignore-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/%E6%B5%81%E7%A8%8B%E7%AE%A1%E7%90%86-gitignore-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/4.脚本与逻辑/代码脚本-用户手册.md",
+      "sha": "c8ec9a10b8ab8e9c889201859491ebc729f9d8ef",
+      "size_bytes": 21561,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/4.%E8%84%9A%E6%9C%AC%E4%B8%8E%E9%80%BB%E8%BE%91/%E4%BB%A3%E7%A0%81%E8%84%9A%E6%9C%AC-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/4.脚本与逻辑/图元脚本-用户手册.md",
+      "sha": "ca56bd7c3afb3d54b74e6cddcaadbd3c8f6aadd4",
+      "size_bytes": 10144,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/4.%E8%84%9A%E6%9C%AC%E4%B8%8E%E9%80%BB%E8%BE%91/%E5%9B%BE%E5%85%83%E8%84%9A%E6%9C%AC-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/4.脚本与逻辑/脚本-用户手册.md",
+      "sha": "f6a7d69966b665928f6e5f565d21db7308f7295d",
+      "size_bytes": 5313,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/4.%E8%84%9A%E6%9C%AC%E4%B8%8E%E9%80%BB%E8%BE%91/%E8%84%9A%E6%9C%AC-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/4.脚本与逻辑/脚本附加说明-用户手册.md",
+      "sha": "2c983baeb576089ab6bfb820929f2fac2ed7cb7c",
+      "size_bytes": 16348,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/4.%E8%84%9A%E6%9C%AC%E4%B8%8E%E9%80%BB%E8%BE%91/%E8%84%9A%E6%9C%AC%E9%99%84%E5%8A%A0%E8%AF%B4%E6%98%8E-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/5.Debug-调试/Debug调试-用户手册.md",
+      "sha": "23c9341476a686827cef4f27a4b30581305cedc7",
+      "size_bytes": 10319,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/5.Debug-%E8%B0%83%E8%AF%95/Debug%E8%B0%83%E8%AF%95-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/6.Global-全局/Global全局-用户手册.md",
+      "sha": "4c2e2bd33b8b7dbeecff1925093ad2237b9154e4",
+      "size_bytes": 7831,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/6.Global-%E5%85%A8%E5%B1%80/Global%E5%85%A8%E5%B1%80-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/7.玩家/玩家-用户手册.md",
+      "sha": "14fac99bbb2cf344e192c60ce211657ccff3a0ae",
+      "size_bytes": 10962,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/7.%E7%8E%A9%E5%AE%B6/%E7%8E%A9%E5%AE%B6-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/9.Workflow-游戏流程/Workflow-游戏流程-用户手册.md",
+      "sha": "44b87bd038c3dbe34e4c15e20d13a8b802237f42",
+      "size_bytes": 8389,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/9.Workflow-%E6%B8%B8%E6%88%8F%E6%B5%81%E7%A8%8B/Workflow-%E6%B8%B8%E6%88%8F%E6%B5%81%E7%A8%8B-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Craftland PC/中文/目录.md",
+      "sha": "46cc88817920af165f1f30127e87f605f8b69c85",
+      "size_bytes": 1602,
+      "language": "Chinese",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/%E4%B8%AD%E6%96%87/%E7%9B%AE%E5%BD%95.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "Câu hỏi thường gặp/Các câu hỏi thường gặp trên FE.md",
+      "sha": "b3bffa2c163b61863e4da9fd24e6ea0a456db019",
+      "size_bytes": 9468,
+      "language": "Other",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/C%C3%A2u%20h%E1%BB%8Fi%20th%C6%B0%E1%BB%9Dng%20g%E1%BA%B7p/C%C3%A1c%20c%C3%A2u%20h%E1%BB%8Fi%20th%C6%B0%E1%BB%9Dng%20g%E1%BA%B7p%20tr%C3%AAn%20FE.md",
+      "headings": null,
+      "key_summary": null
+    },
+    {
+      "path": "README.md",
+      "sha": "835f8b1b6f31b267045a054e3b216f9f2a8089fc",
+      "size_bytes": 178,
+      "language": "Other",
+      "link": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/README.md",
+      "headings": null,
+      "key_summary": null
+    }
+  ],
+  "important_pages": [
+    {
+      "page": "Mobile Block Script",
+      "path": "Craftland Mobile/English/Features/Block Script.md",
+      "sha": "709422e3eacbb47790ac2307d737f0d22305eae0",
+      "lines": "37-42, 84-92, 108-138, 150-156",
+      "findings": [
+        "events are red; most actions are green/blue",
+        "connection/data ports have required data types",
+        "Get Property can traverse Player -> Rig -> Head",
+        "Set Property selects Skeleton Scale, Value uses Vector3 with x=y=z=3",
+        "script attachment scope changes semantics: Global vs Player script"
+      ]
+    },
+    {
+      "page": "PC Code Script Manual",
+      "path": "Craftland PC/English/4. Scripting and Logic/Code Script - User Manual.md",
+      "sha": "18a3fcfb17de1e08878eac2dcf9975e2fe741db7",
+      "lines": "13-57, 129-170, 320-405, 446-539, 542-604",
+      "findings": [
+        ".fcg are script files; .fcc are library files",
+        "EditorGenLib.fcc contains data registered in the editor and graph-based block scripts",
+        "Standard libraries are automatically imported when code scripts are created",
+        "script APIs/events have server/client scope and component/type metadata",
+        "API autocomplete and parameter hints are available in the official tooling"
+      ]
+    },
+    {
+      "page": "PC Block/Element Script Manual",
+      "path": "Craftland PC/English/4. Scripting and Logic/Element Script - User Manual.md",
+      "sha": "65688f0b3fc9783c945cd9f26fc7c5b5efece524",
+      "lines": "14-102, 112-244",
+      "findings": [
+        "visual block shapes indicate statement/input/output wiring",
+        "blocks require compatible input types; incorrect values produce an editor error",
+        "global/entity and script/local variable scopes are distinct",
+        "custom events specify receiving entity type and payload parameters"
+      ]
+    },
+    {
+      "page": "PC Additional Script Notes",
+      "path": "Craftland PC/English/4. Scripting and Logic/Script Additional Notes - User Manual.md",
+      "sha": "ee5149929d769396d1b65a11aee4496cdd4b428f",
+      "lines": "57-400, 488-550",
+      "findings": [
+        "language syntax, types, enums, collections, entity<T> references and component access",
+        "documents loops and conditional blocks",
+        "supports mapping labels to PC code data types, not a Mobile dropdown export"
+      ]
+    },
+    {
+      "page": "Re-editable Game Mechanics template",
+      "path": "Craftland Mobile/English/Modes and Template/Game Mechanic.md",
+      "sha": "acb0952e9366b8570308e4c2ecb88df2303d203a",
+      "lines": "93-699",
+      "findings": [
+        "ready-made examples for healing, damage, zombie spawning, traps, teleport/transfer, text UI, outfit change, elevator, automatic door, global/player/HUD/respawn scripts",
+        "images/screenshots can reveal block labels and selected inputs if inspected per recipe"
+      ]
+    },
+    {
+      "page": "Mobile Level Object manual",
+      "path": "Craftland Mobile/English/Features/Level Objects.md",
+      "sha": "070878d38bbe1b32cfa10bd81bdc4f9eafc9983b",
+      "lines": "19-333",
+      "findings": [
+        "object categories, item manager, weapon loot points, triggers, zombie configuration, and shop interactions",
+        "text documents some selectable dropdown concepts like weapon loot-point category and trigger type"
+      ]
+    },
+    {
+      "page": "PC Global Manual",
+      "path": "Craftland PC/English/6. Global/Global - User Manual.md",
+      "sha": "e7c76f2794e9cfa3cb4518f05e87388f8725b46e",
+      "lines": "47-168",
+      "findings": [
+        "custom room parameters expose player-configurable options before match start",
+        "logic frame update frequency and global event scope are important to correct code generation"
+      ]
+    },
+    {
+      "page": "PC Player Manual",
+      "path": "Craftland PC/English/7. Player/Player - User Manual.md",
+      "sha": "f58a0e8c6f209bc7cbeb7d78230922a283cfa467",
+      "lines": "143-257",
+      "findings": [
+        "per-player vs global event behavior explicitly explained",
+        "player module properties, controller and script scope"
+      ]
+    },
+    {
+      "page": "PC Level Objects Manual",
+      "path": "Craftland PC/English/12. Level Objects/Level Objects - User Manual.md",
+      "sha": "4cb3530dbaba939b1306c00f843052c27c0d9f40",
+      "lines": "82-294",
+      "findings": [
+        "object families and settings for generators, combat props, triggers, gravity zones, death/invincibility and zombies"
+      ]
+    }
+  ]
+}
