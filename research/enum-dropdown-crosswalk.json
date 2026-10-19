@@ -31,12 +31,12 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 57,
+    "candidate_mapped_from_mirror": 54,
     "official_doc_match_not_in_mirror": 1,
     "type_id_not_enum_in_mirror": 4,
     "manual_or_official_cross_check": 3,
-    "legacy_observed_check_obsolete": 0,
-    "needs_review_total": 8
+    "legacy_observed_check_obsolete": 3,
+    "needs_review_total": 11
   },
   "entries": [
     {
@@ -296,7 +296,7 @@
       "observed_label": "Score Type",
       "rough_line": 590,
       "observed_signature": "2. Score Type .---",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "legacy-observed-check-obsolete",
       "candidates": [
         {
           "label": "GameResult.fcc:ScoreType",
@@ -9350,7 +9350,7 @@
       "observed_label": "Effect Texture Type",
       "rough_line": 612,
       "observed_signature": "24. Effect Texture Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "legacy-observed-check-obsolete",
       "candidates": [
         {
           "label": "LevelObject.fcc:PresentEffectTextureType_Deprecated",
@@ -10579,7 +10579,7 @@
       "observed_label": "Character skill",
       "rough_line": 623,
       "observed_signature": "35. Character skill",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "legacy-observed-check-obsolete",
       "candidates": [
         {
           "label": "Player.fcc:PlayerSkillType",
