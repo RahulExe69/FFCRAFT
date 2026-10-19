@@ -203,6 +203,16 @@
       "sources": [
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
       ]
+    },
+    {
+      "id": "current-editor-capture",
+      "summary": "Official PC script manual points to the installed library path Craftland Studio/resources/LocalData/Utilities/UGCLanguage/release and explains EditorGenLib.fcc; official Studio 1.19.0 notes report an in-editor MCP server for Blocks, Scripts, Scenes, UI, Animation Controllers and more. These editor-local sources are the best remaining route to authoritative current lists.",
+      "confidence": "official documentation; local data has not yet been inspected in this chat",
+      "details": "docs/27-current-editor-capture-playbook.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
+        "https://ffcraftland.garena.com/en/patch-notes/"
+      ]
     }
   ],
   "docs": {
@@ -242,7 +252,9 @@
     "research/public-tutorial-corpus-index.json": "Manifest of 160 Markdown files in a public translated tutorial corpus with source SHAs, paths, selected headings and topic summaries",
     "research/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual",
     "docs/26-enum-option-set-analysis.md": "Documents 42 exact duplicated enum option sets in the old mirror, useful for reducing repeated dropdown research without merging types",
-    "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types"
+    "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types",
+    "docs/27-current-editor-capture-playbook.md": "Practical source capture playbook for current installed PC .fcc libraries, project EditorGenLib.fcc, Studio MCP metadata and Mobile block/dropdown screenshots",
+    "research/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots"
   },
   "sources": [
     {
@@ -462,6 +474,18 @@
       "topic": "official-crosswalk-refinements",
       "title": "Current official APIs and events for Rough crosswalk corrections",
       "url": "https://ffcraftland.garena.com/en/docs/api-1-26"
+    },
+    {
+      "tier": "A",
+      "topic": "current-editor-capture",
+      "title": "Official PC code script manual (installed library location and EditorGenLib)",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
+    },
+    {
+      "tier": "A",
+      "topic": "current-editor-capture",
+      "title": "Official Studio 1.19.0 MCP server patch notes",
+      "url": "https://ffcraftland.garena.com/en/patch-notes/"
     }
   ],
   "open_questions": [
