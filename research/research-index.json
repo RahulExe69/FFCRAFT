@@ -150,6 +150,16 @@
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
         "https://ffcraftland.garena.com/en/patch-notes/"
       ]
+    },
+    {
+      "id": "block-symbol-crosswalk",
+      "summary": "A normalized comparison of 443 extracted Rough.txt entries found 306 exact label/title matches to the old PC mirror, 113 approximate candidates, 21 unmatched lines, and 3 likely prose notes.",
+      "confidence": "derived-comparison; exact labels are not current compatibility proof",
+      "details": "docs/24-block-symbol-crosswalk.md",
+      "sources": [
+        "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
+        "https://ffcraftland.garena.com/en/patch-notes/"
+      ]
     }
   ],
   "docs": {
@@ -182,7 +192,9 @@
     "research/enum-dropdown-crosswalk.json": "Crosswalk of Rough.txt enum/dropdown labels to mirror and current official definitions",
     "research/current-official-enum-supplement.json": "Selected current official enums and type-selector details not represented in the old mirrored catalog",
     "docs/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
-    "research/pc-library-api-reference.json": "Detailed machine-readable function/event/component/property reference extracted from all 42 .fcc libraries in the public extension mirror"
+    "research/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
+    "docs/24-block-symbol-crosswalk.md": "Line-by-line crosswalk of 443 Rough.txt inventory entries against recovered PC symbols, with exact/fuzzy/unmatched statuses",
+    "research/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings"
   },
   "sources": [
     {
