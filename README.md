@@ -22,6 +22,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 14. [Source catalogue](docs/SOURCES.md)
 15. [Machine-readable block inventory](research/user-observed-block-inventory.json)
 16. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
+17. [AI Craftland coding workflow](docs/14-ai-craftland-coding-workflow.md) — the repeatable process for translating game ideas into verified block/code implementations.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
