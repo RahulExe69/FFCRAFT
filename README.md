@@ -34,6 +34,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 26. [Detailed PC API reference](docs/23-pc-api-reference-details.md) — function/event metadata, parameters, deprecations, server/client annotations, and component-property declarations extracted from all 42 mirrored libraries.
 27. [Rough block-symbol crosswalk](docs/24-block-symbol-crosswalk.md) — compares all 443 extracted lines against the recovered PC API/event/component/property catalog, separating exact matches from fuzzy leads and gaps.
 28. [Public tutorial corpus audit](docs/25-public-tutorial-corpus-audit.md) — indexes translated Mobile Block Script and PC code/element-script manuals, official-linked screenshots, and 13 reusable mechanism recipes.
+29. [Enum option-set analysis](docs/26-enum-option-set-analysis.md) — identifies 42 repeated option lists across differently named PC enums, while preserving each original type identity.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -48,6 +49,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Block-symbol crosswalk](research/block-symbol-crosswalk.json) — line-by-line comparison of Rough.txt against recovered PC symbols, with exact/fuzzy/unmatched statuses and targeted official matches.
 - [Public tutorial manifest](research/public-tutorial-corpus-index.json) — indexes 160 public manual files and key script references.
 - [Mobile block recipe index](research/mobile-block-recipe-index.json) — 13 summarized mechanism examples from a re-editable gameplay template.
+- [Enum option-set analysis](research/pc-enum-option-set-analysis.json) — groups identical dropdown-like option sequences for efficient browsing without merging API types.
 
 ## Current verified baseline
 
