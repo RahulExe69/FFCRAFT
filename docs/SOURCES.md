@@ -99,3 +99,6 @@ Some links point to the official pre-release host because that host exposes a mo
 The mirrored library is not treated as authoritative for current API support. A definition's presence there does not prove current availability or Mobile block parity; absence there does not prove that an enum/API is absent from the current official docs/editor.
 
 - [Detailed PC API/event/component reference](../research/pc-library-api-reference.json) — extracted declarations and documentation fields from the full 42-file mirrored library set; includes parser caveats and 1.17+ compatibility warning in [doc 23](23-pc-api-reference-details.md).
+
+- [Rough block-symbol crosswalk](../research/block-symbol-crosswalk.json) — line-level comparison of 443 extracted notes against functions, events, component names and candidate properties in the mirrored PC libraries.
+- [Crosswalk methodology and results](24-block-symbol-crosswalk.md) — explains exact matches, fuzzy candidate status, and why editor-native blocks need separate verification.
