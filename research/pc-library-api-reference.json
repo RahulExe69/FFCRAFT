@@ -8,14 +8,14 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 30,
-    "functions": 547,
-    "events": 221,
-    "component_declarations": 440,
-    "component_properties": 2965,
-    "deprecated_functions": 200,
-    "server_functions": 316,
-    "client_functions": 45
+    "libraries": 35,
+    "functions": 627,
+    "events": 246,
+    "component_declarations": 461,
+    "component_properties": 3131,
+    "deprecated_functions": 214,
+    "server_functions": 343,
+    "client_functions": 53
   },
   "libraries": [
     {
@@ -52167,6 +52167,5496 @@
           }
         }
       ]
+    },
+    {
+      "path": "library/release/Morph.fcc",
+      "source_sha": "f551e93c210d8f8f8349034cc897e2c54f261712",
+      "text_length": 3474,
+      "functions": [
+        {
+          "name": "MorphTo",
+          "signature": "[platform_server] func MorphTo(player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>)",
+          "parameters_text": "player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "EndMorph",
+          "signature": "[platform_server] func EndMorph(player entity<Player>)",
+          "parameters_text": "player entity<Player>",
+          "return_type": null,
+          "description": "Cancel the player's disguise status",
+          "doc_title": "End Morph",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "CopyToMorph",
+          "signature": "[platform_server] func CopyToMorph(player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>)",
+          "parameters_text": "player entity<Player>, target entity<LevelObject>, out var createdEntity entity<MorphObject>",
+          "return_type": null,
+          "description": "Create a clone with the appearance of scene entity at the position of the target player",
+          "doc_title": "Copy To Morph",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "target",
+              "type": "entity<LevelObject>",
+              "description": "Scene entity used for the clone appearance"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MorphObject>",
+              "description": "Created clone entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "GetMorph",
+          "signature": "[platform_server] func GetMorph(player entity<Player>) entity<MorphObject>",
+          "parameters_text": "player entity<Player>",
+          "return_type": "entity<MorphObject>",
+          "description": "Get the player's disguise entity",
+          "doc_title": "Get Morph",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<MorphObject>",
+              "description": "Player disguise entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "GetMorphObject",
+          "signature": "[deprecated] func GetMorphObject(player entity<Player>) entity<MorphObject>",
+          "parameters_text": "player entity<Player>",
+          "return_type": "entity<MorphObject>",
+          "description": "Get the player's disguise entity",
+          "doc_title": "Get Morph",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<MorphObject>",
+              "description": "Player disguise entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `GetMorph` instead",
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "MorphToByItemID",
+          "signature": "[platform_server] func MorphToByItemID(player entity<Player>, target MorphableObject, out var createdEntity entity<MorphObject>)",
+          "parameters_text": "player entity<Player>, target MorphableObject, out var createdEntity entity<MorphObject>",
+          "return_type": null,
+          "description": "The player transforms into a designated scene object",
+          "doc_title": "Morph To By Item ID",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "target",
+              "type": "MorphableObject",
+              "description": "The object to be transformed into"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MorphObject>",
+              "description": "Entity created after transformation"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "CreateMorph",
+          "signature": "[platform_server] func CreateMorph(player entity<Player>, out var createdEntity entity<MorphObject>)",
+          "parameters_text": "player entity<Player>, out var createdEntity entity<MorphObject>",
+          "return_type": null,
+          "description": "The player creates a clone that looks like themselves",
+          "doc_title": "Create Morph",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<MorphObject>",
+              "description": "Created clone entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnLevelObjectBeMorphed",
+          "signature": "[platform_server] event OnLevelObjectBeMorphed(morphObject entity<MorphObject>)",
+          "parameters_text": "morphObject entity<MorphObject>",
+          "return_type": null,
+          "description": "Triggered when the player chooses to transform into this level object.",
+          "doc_title": "On Level Object Be Morphed",
+          "parameters": [
+            {
+              "name": "morphObject",
+              "type": "entity<MorphObject>",
+              "description": "The player transform entity(not the scene object itself)"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "LevelObject",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        },
+        {
+          "name": "OnLevelObjectToBeMorphed",
+          "signature": "[deprecated] event OnLevelObjectToBeMorphed(morphObject entity<MorphObject>)",
+          "parameters_text": "morphObject entity<MorphObject>",
+          "return_type": null,
+          "description": "Triggered when the player chooses to transform into this level object.",
+          "doc_title": "On Level Object Be Morphed",
+          "parameters": [
+            {
+              "name": "morphObject",
+              "type": "entity<MorphObject>",
+              "description": "The player transform entity(not the scene object itself)"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "LevelObject",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnLevelObjectBeMorphed` instead",
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "MorphObject",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Player",
+              "type": "entity<Player>",
+              "description": "Player",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "TargetItemID",
+              "type": "LevelObjectID",
+              "description": "TargetItemID",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "TargetRotation",
+              "type": "Vector3",
+              "description": "TargetRotation",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "TargetScale",
+              "type": "Vector3",
+              "description": "TargetScale",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Morph.fcc",
+            "blob_sha": "f551e93c210d8f8f8349034cc897e2c54f261712"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Other.fcc",
+      "source_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead",
+      "text_length": 4481,
+      "functions": [
+        {
+          "name": "GiveJailBreakReward",
+          "signature": "[platform_server] func GiveJailBreakReward(target entity<Player>, count int, realCoin bool)",
+          "parameters_text": "target entity<Player>, count int, realCoin bool",
+          "return_type": null,
+          "description": "Grant jailbreak reward",
+          "doc_title": "Give Jail Break Reward",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "count",
+              "type": "int",
+              "description": "Quantity"
+            },
+            {
+              "name": "realCoin",
+              "type": "bool",
+              "description": "Real Money"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "UpdateJailBreakMission",
+          "signature": "[platform_server] func UpdateJailBreakMission(target entity<Player>, missionID int, value int)",
+          "parameters_text": "target entity<Player>, missionID int, value int",
+          "return_type": null,
+          "description": "Update jailbreak task",
+          "doc_title": "Update Jail Break Mission",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "missionID",
+              "type": "int",
+              "description": "Task ID"
+            },
+            {
+              "name": "value",
+              "type": "int",
+              "description": "Value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "QuitJailBreakMiniGame",
+          "signature": "[platform_server] func QuitJailBreakMiniGame(target entity<Player>, gameID int)",
+          "parameters_text": "target entity<Player>, gameID int",
+          "return_type": null,
+          "description": "Exit the jailbreak game",
+          "doc_title": "Quit Jail Break Mini Game",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "gameID",
+              "type": "int",
+              "description": "Task ID"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "GiveJailBreakItem",
+          "signature": "[platform_server] func GiveJailBreakItem(target entity<Player>, itemType int, itemID int)",
+          "parameters_text": "target entity<Player>, itemType int, itemID int",
+          "return_type": null,
+          "description": "Based on jailbreak items",
+          "doc_title": "Give Jail Break Item",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player Entity"
+            },
+            {
+              "name": "itemType",
+              "type": "int",
+              "description": "Item Type"
+            },
+            {
+              "name": "itemID",
+              "type": "int",
+              "description": "Item ID"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "InfectionZombieGrowUp",
+          "signature": "[platform_server] func InfectionZombieGrowUp(target entity<Player>)",
+          "parameters_text": "target entity<Player>",
+          "return_type": null,
+          "description": "Infection Mode Zombie Evolution",
+          "doc_title": "Infection Zombie Grow Up",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "ReadCSVFromServer",
+          "signature": "[platform_server] func ReadCSVFromServer(sheetName string) List<List<object>>",
+          "parameters_text": "sheetName string",
+          "return_type": "List<List<object>>",
+          "description": "Read the contents of the entire table and return a two-dimensional array",
+          "doc_title": "Read CSV From Server",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "string",
+              "description": "Table name"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<List<object>>",
+              "description": "The contents of the table, a two-dimensional array"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "ReadCSVRowFromServer",
+          "signature": "[platform_server] func ReadCSVRowFromServer(sheetName string, row int) List<object>",
+          "parameters_text": "sheetName string, row int",
+          "return_type": "List<object>",
+          "description": "Read a row of the entire table and return an array",
+          "doc_title": "Read CSV Row From Server",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "string",
+              "description": "Table name"
+            },
+            {
+              "name": "row",
+              "type": "int",
+              "description": "The number of the line to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "A table specifies the content of a row, in an array"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "ReadCSVColumnFromServer",
+          "signature": "[platform_server] func ReadCSVColumnFromServer(sheetName string, column int) List<object>",
+          "parameters_text": "sheetName string, column int",
+          "return_type": "List<object>",
+          "description": "Read the contents of a column in the entire table and return an array",
+          "doc_title": "Read CSV Column From Server",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "string",
+              "description": "Table name"
+            },
+            {
+              "name": "column",
+              "type": "int",
+              "description": "The number of the column to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "table specifies the content of a column, in an array"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "ReadCSVCellFromServer",
+          "signature": "[platform_server] func ReadCSVCellFromServer(sheetName string, row int, column int) object",
+          "parameters_text": "sheetName string, row int, column int",
+          "return_type": "object",
+          "description": "Read the contents of a table cell",
+          "doc_title": "Read CSV Cell From Server",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "string",
+              "description": "Table name"
+            },
+            {
+              "name": "row",
+              "type": "int",
+              "description": "The number of the line to read, starting from 1"
+            },
+            {
+              "name": "column",
+              "type": "int",
+              "description": "The number of the column to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "object",
+              "description": "The contents of the specified cell of the table"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnJailBreakAreaBegin",
+          "signature": "[platform_server] event OnJailBreakAreaBegin()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Jailbreak area starts.",
+          "doc_title": "Jail Break Area Begin",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "JailBreakArea",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "OnJailBreakAreaEnd",
+          "signature": "[platform_server] event OnJailBreakAreaEnd()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Jailbreak Zone Ended.",
+          "doc_title": "Jail Break Area End",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "JailBreakArea",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "OnJailBreakPlayerJoin",
+          "signature": "[platform_server] event OnJailBreakPlayerJoin(player entity<Player>)",
+          "parameters_text": "player entity<Player>",
+          "return_type": null,
+          "description": "Jailbreak player joins.",
+          "doc_title": "Jail Break Player Join",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Trigger Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "JailBreakArea",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "OnJailBreakPlayerQuit",
+          "signature": "[platform_server] event OnJailBreakPlayerQuit(player entity<Player>)",
+          "parameters_text": "player entity<Player>",
+          "return_type": null,
+          "description": "Jailbreak player exits.",
+          "doc_title": "Jail Break Player Quit",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Trigger Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "JailBreakArea",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Faction_ForInfection",
+              "type": "int",
+              "description": "The player's camp",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "Identity_ForInfection",
+              "type": "int",
+              "description": "Identity,0 Normal Player,1 Hunter,2 Matrix Zombie,3 Normal Zombie,4 Evolved Zombie Type 1, 5 Evolved Zombie Type 2,6 Evolved Zombie Type 3",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "MonsterLevel",
+              "type": "int",
+              "description": "Zombie level, 1~3",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ZombieLevel",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        },
+        {
+          "name": "JailBreakArea",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Area",
+              "type": "int",
+              "description": "Area ID",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "JailBreakAreaID",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "Game",
+              "type": "int",
+              "description": "Game ID",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "JailBreakGameID",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Other.fcc",
+            "blob_sha": "5d4d28c87ffc3c062521f73eb89c3bc6e2441ead"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Physics.fcc",
+      "source_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6",
+      "text_length": 29833,
+      "functions": [
+        {
+          "name": "BoxCast",
+          "signature": "func BoxCast(halfExtents Vector3, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "halfExtents Vector3, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a box-shaped area with linear motion for detection, and return all entities encountered on the route of the box-shaped area from near to far. If they are initially within the box range, they will not be detected; if the level parameter is filled in, the terrain can be detected",
+          "doc_title": "Box Cast",
+          "parameters": [
+            {
+              "name": "halfExtents",
+              "type": "Vector3",
+              "description": "Half the length of the three sides of the box area, only positive values are accepted"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Box area center point"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Box area rotation"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Box area moving direction"
+            },
+            {
+              "name": "maxDistance",
+              "type": "float",
+              "description": "Box area traverse distance, only positive values are accepted"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "SphereCast",
+          "signature": "func SphereCast(radius float, center Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "radius float, center Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a spherical area with linear motion for detection, and return all entities encountered on the route of the spherical area from near to far. If they are initially in the spherical area, they will not be detected; if the level parameter is filled in, the terrain can be detected",
+          "doc_title": "Sphere Cast",
+          "parameters": [
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Spherical region radius, only positive values are accepted"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Center point of spherical area"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Spherical area travel direction"
+            },
+            {
+              "name": "maxDistance",
+              "type": "float",
+              "description": "Spherical area travel distance, only positive values are accepted"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "CapsuleCast",
+          "signature": "func CapsuleCast(radius float, height float, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "radius float, height float, center Vector3, rotation Vector3, direction Vector3, maxDistance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a linear capsule area for detection, returning all entities encountered on the route of the capsule area from near to far. If they are initially in the capsule area, they will not be detected; if the level parameter is filled in, the terrain can be detected",
+          "doc_title": "Capsule Cast",
+          "parameters": [
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "The radius of the hemispheres at both ends of the capsule area. Only positive values are accepted"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "The distance between the centers of the two hemispheres at both ends of the capsule area. This value must be greater than twice the radius of the two hemispheres."
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "The center point of the capsule area"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Rotation of the capsule area"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "The direction of travel of the capsule area"
+            },
+            {
+              "name": "maxDistance",
+              "type": "float",
+              "description": "The distance traveled in the capsule area, only positive values are accepted"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "BoxOverlap",
+          "signature": "func BoxOverlap(halfExtents Vector3, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "halfExtents Vector3, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a static box-shaped area for detection and return all entities within the box-shaped area. If the level parameter is filled in, the terrain can be detected.",
+          "doc_title": "Box Overlap",
+          "parameters": [
+            {
+              "name": "halfExtents",
+              "type": "Vector3",
+              "description": "Half the length of the three sides of the box area, only positive values are accepted"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Box area center point"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Box area rotation"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "SphereOverlap",
+          "signature": "func SphereOverlap(radius float, center Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "radius float, center Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a static spherical area for detection and return all entities in the spherical area. If the level parameter is filled in, the terrain can be detected.",
+          "doc_title": "Sphere Overlap",
+          "parameters": [
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Spherical region radius, only positive values are accepted"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Center point of spherical area"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "CapsuleOverlap",
+          "signature": "func CapsuleOverlap(radius float, height float, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>)",
+          "parameters_text": "radius float, height float, center Vector3, rotation Vector3, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>",
+          "return_type": null,
+          "description": "Use a static capsule area for detection and return all entities in the capsule area. If the level parameter is filled in, the terrain can be detected.",
+          "doc_title": "Capsule Overlap",
+          "parameters": [
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "The radius of the hemispheres at both ends of the capsule area. Only positive values are accepted."
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "The distance between the centers of the two hemispheres at both ends of the capsule area. This value must be greater than twice the radius of the two hemispheres."
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "The center point of the capsule area"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Rotation of the capsule region"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "AddForce",
+          "signature": "func AddForce(target PhysicalObject, force Vector3, forceMode ForceType)",
+          "parameters_text": "target PhysicalObject, force Vector3, forceMode ForceType",
+          "return_type": null,
+          "description": "Apply a force to the target. The target must be a physical object.",
+          "doc_title": "Add Force",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PhysicalObject",
+              "description": "Target physical object"
+            },
+            {
+              "name": "force",
+              "type": "Vector3",
+              "description": "Force Vector"
+            },
+            {
+              "name": "forceMode",
+              "type": "ForceType",
+              "description": "Type of force"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "AddForceAtPosition",
+          "signature": "func AddForceAtPosition(target entity<Rigidbody>, force Vector3, position Vector3, forceMode ForceType)",
+          "parameters_text": "target entity<Rigidbody>, force Vector3, position Vector3, forceMode ForceType",
+          "return_type": null,
+          "description": "Apply a force at a point. The target must be a rigidbody.",
+          "doc_title": "Add Force At Position",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "force",
+              "type": "Vector3",
+              "description": "Force Vector"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Force application position"
+            },
+            {
+              "name": "forceMode",
+              "type": "ForceType",
+              "description": "Type of force"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "AddTorque",
+          "signature": "func AddTorque(target entity<Rigidbody>, torque Vector3, forceMode ForceType)",
+          "parameters_text": "target entity<Rigidbody>, torque Vector3, forceMode ForceType",
+          "return_type": null,
+          "description": "Apply a torque to the target. The target must be a rigidbody.",
+          "doc_title": "Add Torque",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "torque",
+              "type": "Vector3",
+              "description": "Torque"
+            },
+            {
+              "name": "forceMode",
+              "type": "ForceType",
+              "description": "Force type"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MovePosition",
+          "signature": "func MovePosition(target entity<Rigidbody>, position Vector3)",
+          "parameters_text": "target entity<Rigidbody>, position Vector3",
+          "return_type": null,
+          "description": "Move the target rigidbody to the specified position",
+          "doc_title": "Move Position",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Specify location"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MovingPosition",
+          "signature": "[deprecated] func MovingPosition(target entity<Rigidbody>, position Vector3)",
+          "parameters_text": "target entity<Rigidbody>, position Vector3",
+          "return_type": null,
+          "description": "Move the target rigidbody to the specified position",
+          "doc_title": "Move Position",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Specify location"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `MovePosition` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MoveRotation",
+          "signature": "func MoveRotation(target entity<Rigidbody>, position Quaternion)",
+          "parameters_text": "target entity<Rigidbody>, position Quaternion",
+          "return_type": null,
+          "description": "Rotate the target rigidbody",
+          "doc_title": "Move Rotation",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "position",
+              "type": "Quaternion",
+              "description": "Rotation Quaternion"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MovingRotation",
+          "signature": "[deprecated] func MovingRotation(target entity<Rigidbody>, position Quaternion)",
+          "parameters_text": "target entity<Rigidbody>, position Quaternion",
+          "return_type": null,
+          "description": "Rotate the target rigidbody",
+          "doc_title": "Move Rotation",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "position",
+              "type": "Quaternion",
+              "description": "Rotation Quaternion"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `MoveRotation` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "Sleep",
+          "signature": "func Sleep(target entity<Rigidbody>)",
+          "parameters_text": "target entity<Rigidbody>",
+          "return_type": null,
+          "description": "Sleep target, only available for Dynamic type rigid body",
+          "doc_title": "Sleep",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "Wakeup",
+          "signature": "func Wakeup(target entity<Rigidbody>)",
+          "parameters_text": "target entity<Rigidbody>",
+          "return_type": null,
+          "description": "Wake up the target, only available for Dynamic type rigid bodies",
+          "doc_title": "Wake Up",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsSleeping",
+          "signature": "func IsSleeping(target entity<Rigidbody>) bool",
+          "parameters_text": "target entity<Rigidbody>",
+          "return_type": "bool",
+          "description": "Check if the target rigidbody is in sleep state",
+          "doc_title": "Is Sleeping",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Is in sleep state or not"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "SetSleepThreshold",
+          "signature": "func SetSleepThreshold(target entity<Rigidbody>, threshold float)",
+          "parameters_text": "target entity<Rigidbody>, threshold float",
+          "return_type": null,
+          "description": "Setting the sleep threshold",
+          "doc_title": "Set Sleep Threshold",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            },
+            {
+              "name": "threshold",
+              "type": "float",
+              "description": "Sleep threshold. When the movement and rotation of a rigid body are less than this value for a period of time, it will enter a sleep state. The rigid body in sleep state will no longer perform physical calculations."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "GetSleepThreshold",
+          "signature": "func GetSleepThreshold(target entity<Rigidbody>) float",
+          "parameters_text": "target entity<Rigidbody>",
+          "return_type": "float",
+          "description": "Get the sleep threshold",
+          "doc_title": "Get Sleep Threshold",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Rigidbody>",
+              "description": "Target Rigidbody"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Sleep threshold. When the movement and rotation of a rigid body are less than this value for a period of time, it will enter a sleep state. The rigid body in sleep state will no longer perform physical calculations."
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "SetGlobalSleepThreshold",
+          "signature": "func SetGlobalSleepThreshold(threshold float)",
+          "parameters_text": "threshold float",
+          "return_type": null,
+          "description": "Set the global sleep threshold, which is only valid for newly generated Dynamic rigid bodies.",
+          "doc_title": "Set Global Sleep Threshold",
+          "parameters": [
+            {
+              "name": "threshold",
+              "type": "float",
+              "description": "Sleep threshold. When the movement and rotation of a rigid body are less than this value for a period of time, it will enter a sleep state. The rigid body in sleep state will no longer perform physical calculations."
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "GetGlobalSleepThreshold",
+          "signature": "func GetGlobalSleepThreshold() float",
+          "parameters_text": "",
+          "return_type": "float",
+          "description": "Get the global sleep threshold",
+          "doc_title": "Get Global Sleep Threshold",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "float",
+              "description": "The sleep threshold is 0.005 by default. When the rigid body's movement and rotation are less than this value for a period of time, it will enter the sleep state. The rigid body in the sleep state will no longer perform physical calculations."
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MoveCCT_Deprecated",
+          "signature": "[deprecated] [platform_server] func MoveCCT_Deprecated(target entity<CharacterController>, displacement Vector3, out var isTopColliding bool, out var isSideColliding bool, out var isBottomColliding bool)",
+          "parameters_text": "target entity<CharacterController>, displacement Vector3, out var isTopColliding bool, out var isSideColliding bool, out var isBottomColliding bool",
+          "return_type": null,
+          "description": "Deprecated",
+          "doc_title": "Move CCT",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CharacterController>",
+              "description": "Deprecated"
+            },
+            {
+              "name": "displacement",
+              "type": "Vector3",
+              "description": "Deprecated"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isTopColliding",
+              "type": "bool",
+              "description": "Deprecated"
+            },
+            {
+              "name": "isSideColliding",
+              "type": "bool",
+              "description": "Deprecated"
+            },
+            {
+              "name": "isBottomColliding",
+              "type": "bool",
+              "description": "Deprecated"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "TeleportCCT",
+          "signature": "[platform_server] func TeleportCCT(target entity<CharacterController>, position Vector3)",
+          "parameters_text": "target entity<CharacterController>, position Vector3",
+          "return_type": null,
+          "description": "Move the character controller to the specified position. If it acts on the player,the player must turn on the physical CCT for it to take effect.",
+          "doc_title": "Teleport CCT",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CharacterController>",
+              "description": "Target Character Controller"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "Specify location"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MoveCCT",
+          "signature": "[platform_server] func MoveCCT(target entity<CharacterController>, movement Vector3)",
+          "parameters_text": "target entity<CharacterController>, movement Vector3",
+          "return_type": null,
+          "description": "Displace the character controller once. If it acts on the player,the player must turn on the physical CCT for it to take effect.",
+          "doc_title": "Move CCT",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CharacterController>",
+              "description": "The target object, if it is a player, the player must turn on the physical CCT for this to take effect"
+            },
+            {
+              "name": "movement",
+              "type": "Vector3",
+              "description": "Displacement Vector"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsInsideSphere",
+          "signature": "func IsInsideSphere(target entity, center Vector3, radius float) bool",
+          "parameters_text": "target entity, center Vector3, radius float",
+          "return_type": "bool",
+          "description": "Determines whether the target entity is within the specified sphere. If the entity has no position attribute, it will return false.",
+          "doc_title": "Is Inside Sphere",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center of a sphere"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the radius of a sphere"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsEntityInsideSphere",
+          "signature": "[deprecated] func IsEntityInsideSphere(target entity, center Vector3, radius float) bool",
+          "parameters_text": "target entity, center Vector3, radius float",
+          "return_type": "bool",
+          "description": "Determines whether the target entity is within the specified sphere. If the entity has no position attribute, it will return false.",
+          "doc_title": "Is Inside Sphere",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center of a sphere"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the radius of a sphere"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `IsInsideSphere` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsInsideCylinder",
+          "signature": "func IsInsideCylinder(target entity, center Vector3, radius float, height float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, radius float, height float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified cylindrical range. If the entity has no position attribute, it will return false.",
+          "doc_title": "Is Inside Cylinder",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center point of the cylinder"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the cross-sectional radius of the cylinder"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specify the height of the cylinder"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specify the three-dimensional rotation Euler angle of the cylinder around the center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsEntityInsideCylinder",
+          "signature": "[deprecated] func IsEntityInsideCylinder(target entity, center Vector3, radius float, height float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, radius float, height float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified cylindrical range. If the entity has no position attribute, it will return false.",
+          "doc_title": "Is Inside Cylinder",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center point of the cylinder"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the cross-sectional radius of the cylinder"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specify the height of the cylinder"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specify the three-dimensional rotation Euler angle of the cylinder around the center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `IsInsideCylinder` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsInsideBox",
+          "signature": "func IsInsideBox(target entity, center Vector3, length float, width float, height float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, length float, width float, height float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified cube range",
+          "doc_title": "Is Inside Box",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center point of the cube"
+            },
+            {
+              "name": "length",
+              "type": "float",
+              "description": "Specify the length of the cube"
+            },
+            {
+              "name": "width",
+              "type": "float",
+              "description": "Specify the width of the cube"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specify the height of the cube"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specify the Euler angles for the three-dimensional rotation of a cube around its center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsEntityInsideBox",
+          "signature": "[deprecated] func IsEntityInsideBox(target entity, center Vector3, length float, width float, height float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, length float, width float, height float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified cube range",
+          "doc_title": "Is Inside Box",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center point of the cube"
+            },
+            {
+              "name": "length",
+              "type": "float",
+              "description": "Specify the length of the cube"
+            },
+            {
+              "name": "width",
+              "type": "float",
+              "description": "Specify the width of the cube"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specify the height of the cube"
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specify the Euler angles for the three-dimensional rotation of a cube around its center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `IsInsideBox` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsInsideSector",
+          "signature": "func IsInsideSector(target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified fan-shaped cylinder range",
+          "doc_title": "Is Inside Sector",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center of the mid-section of the sector"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the radius of the mid-section of the sector"
+            },
+            {
+              "name": "cutRadius",
+              "type": "float",
+              "description": "The radius of the section of the sector column that is not to be determined. Using center point as the center, the small sector column area will not be determined, and only the difference between the specified sector column and the small sector column wil"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specifies the height of the fan-shaped column"
+            },
+            {
+              "name": "angle",
+              "type": "float",
+              "description": "The central angle of the section of the sector cylinder to be tested. When it is greater than 360, it is tested as a cylinder. When it is less than 0, the detection area size is 0."
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specifies the three-dimensional rotation Euler angle of the fan-shaped cylinder around the center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "IsEntityInsideSector",
+          "signature": "[deprecated] func IsEntityInsideSector(target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3) bool",
+          "parameters_text": "target entity, center Vector3, radius float, cutRadius float, height float, angle float, rotation Vector3",
+          "return_type": "bool",
+          "description": "Determine whether the target entity is within the specified fan-shaped cylinder range",
+          "doc_title": "Is Inside Sector",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity",
+              "description": "Target Entity"
+            },
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "Specify the center of the mid-section of the sector"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Specify the radius of the mid-section of the sector"
+            },
+            {
+              "name": "cutRadius",
+              "type": "float",
+              "description": "The radius of the section of the sector column that is not to be determined. Using center point as the center, the small sector column area will not be determined, and only the difference between the specified sector column and the small sector column wil"
+            },
+            {
+              "name": "height",
+              "type": "float",
+              "description": "Specifies the height of the fan-shaped column"
+            },
+            {
+              "name": "angle",
+              "type": "float",
+              "description": "The central angle of the section of the sector cylinder to be tested. When it is greater than 360, it is tested as a cylinder. When it is less than 0, the detection area size is 0."
+            },
+            {
+              "name": "rotation",
+              "type": "Vector3",
+              "description": "Specifies the three-dimensional rotation Euler angle of the fan-shaped cylinder around the center point"
+            }
+          ],
+          "returns": [
+            {
+              "type": "bool",
+              "description": "Determination result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `IsInsideSector` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "SingleRaycast",
+          "signature": "func SingleRaycast(startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities entity<Entity>, out var hitPoints Vector3, out var hitDistances float, out var hitNormals Vector3)",
+          "parameters_text": "startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities entity<Entity>, out var hitPoints Vector3, out var hitDistances float, out var hitNormals Vector3",
+          "return_type": null,
+          "description": "Perform a ray detection and return the first entity hit in the ray direction. The hit entity needs to have a collision component. If the level parameter is filled in, the terrain can be detected.",
+          "doc_title": "Single Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Start position coordinate"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Direction of ray detection"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Ray detection distance, only positive values are accepted"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Ray detection layer mask, only filled layers will participate in the scan, leaving it blank means all layers participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether triggers can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "entity<Entity>",
+              "description": "hit entity"
+            },
+            {
+              "name": "hitPoints",
+              "type": "Vector3",
+              "description": "hit point coordinates"
+            },
+            {
+              "name": "hitDistances",
+              "type": "float",
+              "description": "Distance of hit point from start point"
+            },
+            {
+              "name": "hitNormals",
+              "type": "Vector3",
+              "description": "Hit surface normal vector"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "MultiRaycast",
+          "signature": "func MultiRaycast(startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>)",
+          "parameters_text": "startPosition Vector3, direction Vector3, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>",
+          "return_type": null,
+          "description": "Perform a ray detection and return all entities hit in the ray direction from near to far. If the level parameter is filled in, the terrain can be detected.",
+          "doc_title": "Multi-Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Starting position coordinates"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Ray detection direction"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Ray detection distance, only positive values are accepted"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            },
+            {
+              "name": "hitPoints",
+              "type": "List<Vector3>",
+              "description": "List of hit points"
+            },
+            {
+              "name": "hitDistances",
+              "type": "List<float>",
+              "description": "List of distances from the hit point to the start point"
+            },
+            {
+              "name": "hitNormals",
+              "type": "List<Vector3>",
+              "description": "Hit surface normal vector"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnCollisionEnter",
+          "signature": "[platform_server] event OnCollisionEnter(collidedEntity entity<Entity>)",
+          "parameters_text": "collidedEntity entity<Entity>",
+          "return_type": null,
+          "description": "Triggered when an entity collides. Only entities with rigidbody components attached support this event..",
+          "doc_title": "On Collision Enter",
+          "parameters": [
+            {
+              "name": "collidedEntity",
+              "type": "entity<Entity>",
+              "description": "Entities Encountered"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Collider",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnCollisionExit",
+          "signature": "[platform_server] event OnCollisionExit(collidedEntity entity<Entity>)",
+          "parameters_text": "collidedEntity entity<Entity>",
+          "return_type": null,
+          "description": "Triggered when the entity collision ends. Only entities with rigidbody components attached support this event..",
+          "doc_title": "On Collision Exit",
+          "parameters": [
+            {
+              "name": "collidedEntity",
+              "type": "entity<Entity>",
+              "description": "Entities Encountered"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Collider",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnCharacterControllerHit",
+          "signature": "[platform_server] event OnCharacterControllerHit(collidedEntity entity<Entity>)",
+          "parameters_text": "collidedEntity entity<Entity>",
+          "return_type": null,
+          "description": "Triggered when the player controller touches an entity. This is only triggered when the controller actively moves..",
+          "doc_title": "On Character Controller Hit",
+          "parameters": [
+            {
+              "name": "collidedEntity",
+              "type": "entity<Entity>",
+              "description": "Entities encountered"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "CharacterController",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnControllerColliderHit",
+          "signature": "[deprecated] event OnControllerColliderHit(collidedEntity entity<Entity>)",
+          "parameters_text": "collidedEntity entity<Entity>",
+          "return_type": null,
+          "description": "Triggered when the player controller touches an entity. This is only triggered when the controller actively moves..",
+          "doc_title": "On Character Controller Hit",
+          "parameters": [
+            {
+              "name": "collidedEntity",
+              "type": "entity<Entity>",
+              "description": "Entities encountered"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "CharacterController",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnCharacterControllerHit` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnEntityEnter",
+          "signature": "event OnEntityEnter(target entity<Entity>)",
+          "parameters_text": "target entity<Entity>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnEntityEnterTrigger",
+          "signature": "[deprecated] event OnEntityEnterTrigger(target entity<Entity>)",
+          "parameters_text": "target entity<Entity>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `OnEntityEnter` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnEntityExit",
+          "signature": "event OnEntityExit(target entity<Entity>)",
+          "parameters_text": "target entity<Entity>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnEntityLeaveTrigger",
+          "signature": "[deprecated] event OnEntityLeaveTrigger(target entity<Entity>)",
+          "parameters_text": "target entity<Entity>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `OnEntityExit` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnWakeUp",
+          "signature": "[platform_server] event OnWakeUp()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the rigidbody is awakened.",
+          "doc_title": "On Wake Up",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Rigidbody",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnWakeup",
+          "signature": "[deprecated] event OnWakeup()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the rigidbody is awakened.",
+          "doc_title": "On Wake Up",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Rigidbody",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnWakeUp` instead",
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "OnSleep",
+          "signature": "[platform_server] event OnSleep()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when the rigidbody goes to sleep.",
+          "doc_title": "On Sleep",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Rigidbody",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Rigidbody",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Type",
+              "type": "RigidbodyType",
+              "description": "Functions of different types of rigid bodies",
+              "attributes": []
+            },
+            {
+              "name": "UseGravity",
+              "type": "bool",
+              "description": "Use Gravity",
+              "attributes": []
+            },
+            {
+              "name": "IsEnableGravity",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Mass",
+              "type": "float",
+              "description": "Mass (kg), the minimum effective mass is 0.001kg, if it is 0, then it is infinite mass and will not move under force.",
+              "attributes": []
+            },
+            {
+              "name": "CenterOfMass",
+              "type": "Vector3",
+              "description": "Position of the center of gravity, local coordinate system",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Velocity",
+              "type": "Vector3",
+              "description": "Linear velocity of rigid body motion",
+              "attributes": []
+            },
+            {
+              "name": "AngularVelocity",
+              "type": "Vector3",
+              "description": "Angular velocity of rigid body motion",
+              "attributes": []
+            },
+            {
+              "name": "Drag",
+              "type": "float",
+              "description": "Coefficient of natural decay of linear velocity, the larger the coefficient, the faster the decay of velocity.",
+              "attributes": []
+            },
+            {
+              "name": "AngularDrag",
+              "type": "float",
+              "description": "Angular velocity natural decay coefficient, the larger the coefficient, the faster the velocity decays.",
+              "attributes": []
+            },
+            {
+              "name": "Constrain",
+              "type": "int",
+              "description": "The constraints imposed on the rigid body, a collection of RigidbodyConstrainType.",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "CharacterController",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "UsePhysicalCCT",
+              "type": "bool",
+              "description": "Whether to use a player controller with physics effects",
+              "attributes": []
+            },
+            {
+              "name": "SlopeLimit",
+              "type": "float",
+              "description": "Placed on a slope above this angle, it will slide downward",
+              "attributes": []
+            },
+            {
+              "name": "StepOffset",
+              "type": "float",
+              "description": "Only obstacles above this height will have a blocking effect, in the range [0,Height]",
+              "attributes": []
+            },
+            {
+              "name": "SkinWidth",
+              "type": "float",
+              "description": "Allows embedding to change the depth of the capsule body. It can prevent the character from getting stuck or shaking, and is not recommended to be changed without special needs. Value range (0,Radius]",
+              "attributes": []
+            },
+            {
+              "name": "MinMoveDistance",
+              "type": "float",
+              "description": "Minimum movement distance, any movement less than this value will not be executed. If there is no special need, it is recommended to keep it at 0.",
+              "attributes": []
+            },
+            {
+              "name": "CenterOffset",
+              "type": "Vector3",
+              "description": "The offset of the center of the collision box from the local coordinate origin.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Radius",
+              "type": "float",
+              "description": "Radius of the capsule, minimum value 0.01.",
+              "attributes": []
+            },
+            {
+              "name": "Height",
+              "type": "float",
+              "description": "Total height of the capsule, including the upper and lower hemispheres, min. 2*Radius",
+              "attributes": []
+            },
+            {
+              "name": "Velocity",
+              "type": "Vector3",
+              "description": "Current linear velocity, in m/s",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "MaxSpeed",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Gravity",
+              "type": "Vector3",
+              "description": "This gravity acceleration is only applied to this player's controller.",
+              "attributes": []
+            },
+            {
+              "name": "Mass",
+              "type": "float",
+              "description": "Mass in kg",
+              "attributes": []
+            },
+            {
+              "name": "IsSliding",
+              "type": "bool",
+              "description": "If the slope exceeds the maximum uphill angle, the capsule will slide downward.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsTopColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsSideColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsBottomColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsServerDriven",
+              "type": "bool",
+              "description": "When enabled, movement is controlled by server-side blocks or scripts.",
+              "attributes": []
+            },
+            {
+              "name": "UseCustomPushForce",
+              "type": "bool",
+              "description": "When enabled, the force applied when the character pushes on a rigid body can be customized.",
+              "attributes": []
+            },
+            {
+              "name": "CustomPushForce",
+              "type": "float",
+              "description": "The amount of force applied when the character pushes the rigid body",
+              "attributes": []
+            },
+            {
+              "name": "IsGrounded",
+              "type": "bool",
+              "description": "True when the lower part of the body touches the collision body, usually used to determine if the player is on the ground.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhysicalLayer",
+              "type": "int",
+              "description": "Customizable physics level, value [0,15].",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "EnableRotateWithGravity",
+              "type": "bool",
+              "description": "Enable Rotate With Gravity",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "PhysicalCCT",
+          "kind": "abstract",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "UsePhysicalCCT",
+              "type": "bool",
+              "description": "Whether to use a player controller with physics effects",
+              "attributes": []
+            },
+            {
+              "name": "SlopeLimit",
+              "type": "float",
+              "description": "Placed on a slope above this angle, it will slide downward",
+              "attributes": []
+            },
+            {
+              "name": "StepOffset",
+              "type": "float",
+              "description": "Only obstacles above this height will have a blocking effect, in the range [0,Height]",
+              "attributes": []
+            },
+            {
+              "name": "SkinWidth",
+              "type": "float",
+              "description": "Allows embedding to change the depth of the capsule body. It can prevent the character from getting stuck or shaking, and is not recommended to be changed without special needs. Value range (0,Radius]",
+              "attributes": []
+            },
+            {
+              "name": "MinMoveDistance",
+              "type": "float",
+              "description": "Minimum movement distance, any movement less than this value will not be executed. If there is no special need, it is recommended to keep it at 0.",
+              "attributes": []
+            },
+            {
+              "name": "CenterOffset",
+              "type": "Vector3",
+              "description": "The offset of the center of the collision box from the local coordinate origin.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Radius",
+              "type": "float",
+              "description": "Radius of the capsule, minimum value 0.01.",
+              "attributes": []
+            },
+            {
+              "name": "Height",
+              "type": "float",
+              "description": "Total height of the capsule, including the upper and lower hemispheres, min. 2*Radius",
+              "attributes": []
+            },
+            {
+              "name": "Velocity",
+              "type": "Vector3",
+              "description": "Current linear velocity, in m/s",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "MaxSpeed",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Gravity",
+              "type": "Vector3",
+              "description": "This gravity acceleration is only applied to this player's controller.",
+              "attributes": []
+            },
+            {
+              "name": "Mass",
+              "type": "float",
+              "description": "Mass in kg",
+              "attributes": []
+            },
+            {
+              "name": "IsSliding",
+              "type": "bool",
+              "description": "If the slope exceeds the maximum uphill angle, the capsule will slide downward.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsTopColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsSideColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsBottomColliding",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsServerDriven",
+              "type": "bool",
+              "description": "When enabled, movement is controlled by server-side blocks or scripts.",
+              "attributes": []
+            },
+            {
+              "name": "UseCustomPushForce",
+              "type": "bool",
+              "description": "When enabled, the force applied when the character pushes on a rigid body can be customized.",
+              "attributes": []
+            },
+            {
+              "name": "CustomPushForce",
+              "type": "float",
+              "description": "The amount of force applied when the character pushes the rigid body",
+              "attributes": []
+            },
+            {
+              "name": "IsGrounded",
+              "type": "bool",
+              "description": "True when the lower part of the body touches the collision body, usually used to determine if the player is on the ground.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhysicalLayer",
+              "type": "int",
+              "description": "Customizable physics level, value [0,15].",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "EnableRotateWithGravity",
+              "type": "bool",
+              "description": "Enable Rotate With Gravity",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "PlayerCCT",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "JumpHeight",
+              "type": "float",
+              "description": "Jump Height",
+              "attributes": []
+            },
+            {
+              "name": "MaxJumpCount",
+              "type": "int",
+              "description": "The number of consecutive jumps that can be performed before landing",
+              "attributes": []
+            },
+            {
+              "name": "RemainJumpCount",
+              "type": "int",
+              "description": "How many jumps can be performed before landing",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "EnableMoveInMidair",
+              "type": "bool",
+              "description": "Enable Move In Midair",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        },
+        {
+          "name": "PhysicalMover",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/Physics.fcc",
+            "blob_sha": "052a64db673a0fd859bf4cd64e44d4affbf054e6"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Playable.fcc",
+      "source_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f",
+      "text_length": 24182,
+      "functions": [
+        {
+          "name": "CreateTween",
+          "signature": "func CreateTween(target entity<Entity>, property Property, srcVal object, destVal object, style TweenStyle, curve BezierCurve, duration float, out var createdEntity entity<Tween>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, property Property, srcVal object, destVal object, style TweenStyle, curve BezierCurve, duration float, out var createdEntity entity<Tween>, autoPlay bool",
+          "return_type": null,
+          "description": "Create interpolated motion, the specified attributes of the target entity will move smoothly according to the settings",
+          "doc_title": "Create Tween",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "The attribute ID that needs movement change"
+            },
+            {
+              "name": "srcVal",
+              "type": "object",
+              "description": "Attribute starting value"
+            },
+            {
+              "name": "destVal",
+              "type": "object",
+              "description": "Attribute end value"
+            },
+            {
+              "name": "style",
+              "type": "TweenStyle",
+              "description": "You can choose single, loop and reciprocating. Loop means that after each movement is completed, the entity will move again from the starting value. Reciprocating means that after the movement from the starting value to the target value is completed, the entity will move from the target value to the starting value again, and then repeat the process"
+            },
+            {
+              "name": "curve",
+              "type": "BezierCurve",
+              "description": "Bezier curve control points"
+            },
+            {
+              "name": "duration",
+              "type": "float",
+              "description": "The duration of a change, in milliseconds"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether to automatically start playing after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Tween>",
+              "description": "Created interpolated motion entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSelfRelative",
+          "signature": "func CreateSelfRelative(target entity<Entity>, property Property, delta object, curve BezierCurve, style TweenStyle, duration float, out var createdEntity entity<SelfRelative>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, property Property, delta object, curve BezierCurve, style TweenStyle, duration float, out var createdEntity entity<SelfRelative>, autoPlay bool",
+          "return_type": null,
+          "description": "Create relative self-motion, the target entity changes each time relative to its current attribute value",
+          "doc_title": "Create Self Relative",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "Attribute that needs movement change"
+            },
+            {
+              "name": "delta",
+              "type": "object",
+              "description": "The amount of change per movement"
+            },
+            {
+              "name": "curve",
+              "type": "BezierCurve",
+              "description": "Bezier curve control points"
+            },
+            {
+              "name": "style",
+              "type": "TweenStyle",
+              "description": "Single: Stop when the property changes by Delta Loop: Repeat the movement, each time the property changes by Delta"
+            },
+            {
+              "name": "duration",
+              "type": "float",
+              "description": "The duration of a change, in milliseconds"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether to automatically start playing after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SelfRelative>",
+              "description": "Created entities with relative self-motion"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateCurve",
+          "signature": "func CreateCurve(curve List<float>) BezierCurve",
+          "parameters_text": "curve List<float>",
+          "return_type": "BezierCurve",
+          "description": "Creates a Bezier curve that can be used to interpolate motion",
+          "doc_title": "CreateCurve",
+          "parameters": [
+            {
+              "name": "curve",
+              "type": "List<float>",
+              "description": "Curve Control Points"
+            }
+          ],
+          "returns": [
+            {
+              "type": "BezierCurve",
+              "description": "Bezier curve"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateTweenCurve",
+          "signature": "[deprecated] func CreateTweenCurve(curve List<float>) BezierCurve",
+          "parameters_text": "curve List<float>",
+          "return_type": "BezierCurve",
+          "description": "Creates a Bezier curve that can be used to interpolate motion",
+          "doc_title": "CreateCurve",
+          "parameters": [
+            {
+              "name": "curve",
+              "type": "List<float>",
+              "description": "Curve Control Points"
+            }
+          ],
+          "returns": [
+            {
+              "type": "BezierCurve",
+              "description": "Bezier curve"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `CreateCurve` instead",
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateFrameSelfRelative",
+          "signature": "func CreateFrameSelfRelative(target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool",
+          "return_type": null,
+          "description": "Creates relative motion per frame. The target entity changes its own attributes once per frame, each time relative to its current attribute value.",
+          "doc_title": "Create Frame Self Relative",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "Attributes that need to be moved"
+            },
+            {
+              "name": "delta",
+              "type": "object",
+              "description": "The amount of change per movement"
+            },
+            {
+              "name": "type",
+              "type": "bool",
+              "description": "Configuration when used in combination with other motion modes True: Can be used in combination with relative motion False: Can be used in combination with absolute motion"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether to automatically start playing after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<FrameSelfRelative>",
+              "description": "Created entitiy with motion relative to their own per frame."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSelfRelativeFrame",
+          "signature": "[deprecated] func CreateSelfRelativeFrame(target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, property Property, delta object, type bool, out var createdEntity entity<FrameSelfRelative>, autoPlay bool",
+          "return_type": null,
+          "description": "Creates relative motion per frame. The target entity changes its own attributes once per frame, each time relative to its current attribute value.",
+          "doc_title": "Create Frame Self Relative",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target Entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "Attributes that need to be moved"
+            },
+            {
+              "name": "delta",
+              "type": "object",
+              "description": "The amount of change per movement"
+            },
+            {
+              "name": "type",
+              "type": "bool",
+              "description": "Configuration when used in combination with other motion modes True: Can be used in combination with relative motion False: Can be used in combination with absolute motion"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether to automatically start playing after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<FrameSelfRelative>",
+              "description": "Created entitiy with motion relative to their own per frame."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `CreateFrameSelfRelative` instead",
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Reset",
+          "signature": "func Reset(target PlayableOrPlayables)",
+          "parameters_text": "target PlayableOrPlayables",
+          "return_type": null,
+          "description": "Reset the playable entity to restore the playable entity to its initial state.This will not change the playback state",
+          "doc_title": "Reset",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PlayableOrPlayables",
+              "description": "Target Playable Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "SampleOnCurve",
+          "signature": "func SampleOnCurve(curve BezierCurve, samplePoint float) float",
+          "parameters_text": "curve BezierCurve, samplePoint float",
+          "return_type": "float",
+          "description": "Get the value on the curve",
+          "doc_title": "Sample On Curve",
+          "parameters": [
+            {
+              "name": "curve",
+              "type": "BezierCurve",
+              "description": "curve"
+            },
+            {
+              "name": "samplePoint",
+              "type": "float",
+              "description": "Sampling point, value range [0,1]"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "GetResultFromCurve",
+          "signature": "func GetResultFromCurve(valueType Type, srcValue object, destVal object, curve BezierCurve, samplePoint float) float",
+          "parameters_text": "valueType Type, srcValue object, destVal object, curve BezierCurve, samplePoint float",
+          "return_type": "float",
+          "description": "Interpolate according to the curve",
+          "doc_title": "Get Result From Curve",
+          "parameters": [
+            {
+              "name": "valueType",
+              "type": "Type",
+              "description": "Value Type"
+            },
+            {
+              "name": "srcValue",
+              "type": "object",
+              "description": "Starting value"
+            },
+            {
+              "name": "destVal",
+              "type": "object",
+              "description": "Target value"
+            },
+            {
+              "name": "curve",
+              "type": "BezierCurve",
+              "description": "curve"
+            },
+            {
+              "name": "samplePoint",
+              "type": "float",
+              "description": "Sampling point, value range [0,1]"
+            }
+          ],
+          "returns": [
+            {
+              "type": "float",
+              "description": "Result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSound",
+          "signature": "[platform_server] func CreateSound(out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Play the specified sound effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "Create Sound",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target player, only the target player can hear the sound effect"
+            },
+            {
+              "name": "resource",
+              "type": "SoundEffectType",
+              "description": "Sound Effect Type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SoundEffect>",
+              "description": "Created sound entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSoundEntity",
+          "signature": "[deprecated] func CreateSoundEntity(out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<SoundEffect>, target entity<Player>, resource SoundEffectType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Play the specified sound effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "Create Sound",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target player, only the target player can hear the sound effect"
+            },
+            {
+              "name": "resource",
+              "type": "SoundEffectType",
+              "description": "Sound Effect Type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately or not"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SoundEffect>",
+              "description": "Created sound entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `CreateSound` instead",
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateEffect",
+          "signature": "[platform_server] func CreateEffect(out var createdEntity entity<Effect>, target entity<Player>, resource VFXType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<Effect>, target entity<Player>, resource VFXType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Create a specified visual effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "Create Effect",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target player, only visible to the target player"
+            },
+            {
+              "name": "resource",
+              "type": "VFXType",
+              "description": "Effect type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Effect>",
+              "description": "Created special effects entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSoundClient",
+          "signature": "[platform_client] func CreateSoundClient(out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Create a specified sound effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "Create Sound",
+          "parameters": [
+            {
+              "name": "resource",
+              "type": "SoundEffectType",
+              "description": "Sound Effect Type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SoundEffect>",
+              "description": "Created sound entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateSoundEntityClient",
+          "signature": "[deprecated] func CreateSoundEntityClient(out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<SoundEffect>, resource SoundEffectType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Create a specified sound effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "Create Sound",
+          "parameters": [
+            {
+              "name": "resource",
+              "type": "SoundEffectType",
+              "description": "Sound Effect Type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<SoundEffect>",
+              "description": "Created sound entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client",
+            "deprecated"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": "Use `CreateSoundClient` instead",
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateEffectClient",
+          "signature": "[platform_client] func CreateEffectClient(out var createdEntity entity<Effect>, resource VFXType, loopType LoopType, autoPlay bool)",
+          "parameters_text": "out var createdEntity entity<Effect>, resource VFXType, loopType LoopType, autoPlay bool",
+          "return_type": null,
+          "description": "Create a specified visual effect. If there are more properties that need to be set, you can set its entity properties.",
+          "doc_title": "CreateEffect",
+          "parameters": [
+            {
+              "name": "resource",
+              "type": "VFXType",
+              "description": "Effect Type"
+            },
+            {
+              "name": "loopType",
+              "type": "LoopType",
+              "description": "Loop type"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Play immediately"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Effect>",
+              "description": "Created special effect entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateAlongPathMotion",
+          "signature": "func CreateAlongPathMotion(targetEntity entity<Entity>, path entity<CustomCurvePath>, style TweenStyle, speed float, tangentFacing bool, out var createdEntity entity<AlongPathMotion>, autoPlay bool)",
+          "parameters_text": "targetEntity entity<Entity>, path entity<CustomCurvePath>, style TweenStyle, speed float, tangentFacing bool, out var createdEntity entity<AlongPathMotion>, autoPlay bool",
+          "return_type": null,
+          "description": "Create an interpolated movement along a path to make the object move along the specified path",
+          "doc_title": "Create Along Path Motion",
+          "parameters": [
+            {
+              "name": "targetEntity",
+              "type": "entity<Entity>",
+              "description": "The target entity"
+            },
+            {
+              "name": "path",
+              "type": "entity<CustomCurvePath>",
+              "description": "The path of motion"
+            },
+            {
+              "name": "style",
+              "type": "TweenStyle",
+              "description": "The play method of the interpolation. Options include play once, loop, and play again."
+            },
+            {
+              "name": "speed",
+              "type": "float",
+              "description": "The magnitude of velocity"
+            },
+            {
+              "name": "tangentFacing",
+              "type": "bool",
+              "description": "Whether the object is facing the direction of movement. This property remains unchanged even if the object's orientation is forcibly modified by other means."
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Automatically play upon creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<AlongPathMotion>",
+              "description": "A name that is used for creating a HUD entity. The local variable it corresponds to is the entity of the HUD being created."
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateTimeLine",
+          "signature": "[preview] [platform_client] func CreateTimeLine(resID TimeLineID, out var entityVarName entity<Performance>)",
+          "parameters_text": "resID TimeLineID, out var entityVarName entity<Performance>",
+          "return_type": null,
+          "description": "{Desc missing configuration}",
+          "doc_title": "{NameDesc missing configuration}",
+          "parameters": [
+            {
+              "name": "resID",
+              "type": "TimeLineID",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "entityVarName",
+              "type": "entity<Performance>",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "preview",
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "SetTimeLineTrackActor",
+          "signature": "[preview] [platform_client] func SetTimeLineTrackActor(timeLineEntity entity<Performance>, trackName string, actorEntity entity<Entity>)",
+          "parameters_text": "timeLineEntity entity<Performance>, trackName string, actorEntity entity<Entity>",
+          "return_type": null,
+          "description": "{Desc missing configuration}",
+          "doc_title": "{NameDesc missing configuration}",
+          "parameters": [
+            {
+              "name": "timeLineEntity",
+              "type": "entity<Performance>",
+              "description": "{Desc missing configuration}"
+            },
+            {
+              "name": "trackName",
+              "type": "string",
+              "description": "{Desc missing configuration}"
+            },
+            {
+              "name": "actorEntity",
+              "type": "entity<Entity>",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "preview",
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateTween_Deprecated",
+          "signature": "[deprecated] [platform_server] func CreateTween_Deprecated(target entity<Entity>, propertyID Property, startValue object, targetValue object, method TweenStyle, curve entity<TweenCurve_Deprecated>, duration float, out var createdEntity entity<Tween>)",
+          "parameters_text": "target entity<Entity>, propertyID Property, startValue object, targetValue object, method TweenStyle, curve entity<TweenCurve_Deprecated>, duration float, out var createdEntity entity<Tween>",
+          "return_type": null,
+          "description": "Create Tween",
+          "doc_title": "Create Interpolation Motion",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "propertyID",
+              "type": "Property",
+              "description": "Property ID"
+            },
+            {
+              "name": "startValue",
+              "type": "object",
+              "description": "SrcVal"
+            },
+            {
+              "name": "targetValue",
+              "type": "object",
+              "description": "DestVal"
+            },
+            {
+              "name": "method",
+              "type": "TweenStyle",
+              "description": "Style"
+            },
+            {
+              "name": "curve",
+              "type": "entity<TweenCurve_Deprecated>",
+              "description": "Curve"
+            },
+            {
+              "name": "duration",
+              "type": "float",
+              "description": "Duration"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Tween>",
+              "description": "tween entities"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "NewTweenCurve_Deprecated",
+          "signature": "[deprecated] [platform_server] func NewTweenCurve_Deprecated(controlPoints List<float>) entity<TweenCurve_Deprecated>",
+          "parameters_text": "controlPoints List<float>",
+          "return_type": "entity<TweenCurve_Deprecated>",
+          "description": "NewCurve (deprecated, use CreateTweenCurve)",
+          "doc_title": "Custom Curve",
+          "parameters": [
+            {
+              "name": "controlPoints",
+              "type": "List<float>",
+              "description": "ControlPoints"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<TweenCurve_Deprecated>",
+              "description": "TwennCurveEntity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Play",
+          "signature": "func Play(target PlayableOrPlayables, reset bool)",
+          "parameters_text": "target PlayableOrPlayables, reset bool",
+          "return_type": null,
+          "description": "Attempts to play the target entity, which must have a playable component",
+          "doc_title": "Play",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PlayableOrPlayables",
+              "description": "target playable entity"
+            },
+            {
+              "name": "reset",
+              "type": "bool",
+              "description": "Whether to replay true: replay false: continue playing"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Pause",
+          "signature": "func Pause(target PlayableOrPlayables)",
+          "parameters_text": "target PlayableOrPlayables",
+          "return_type": null,
+          "description": "Pause playable entities",
+          "doc_title": "Pause",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "PlayableOrPlayables",
+              "description": "target playable entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateTrajectory",
+          "signature": "func CreateTrajectory(target entity<Entity>, initialVelocity Vector3, acceleration Vector3, maxDisplacement float, out var createdEntity entity<Trajectory>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, initialVelocity Vector3, acceleration Vector3, maxDisplacement float, out var createdEntity entity<Trajectory>, autoPlay bool",
+          "return_type": null,
+          "description": "Creating a Trajectory motion will give the target entity an initial velocity and acceleration with direction",
+          "doc_title": "Create Trajectory",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "initialVelocity",
+              "type": "Vector3",
+              "description": "initial velocity"
+            },
+            {
+              "name": "acceleration",
+              "type": "Vector3",
+              "description": "acceleration of motion"
+            },
+            {
+              "name": "maxDisplacement",
+              "type": "float",
+              "description": "Maximum displacement distance"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether the playback starts automatically after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Trajectory>",
+              "description": "Trajectory motion entities created"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateFollow",
+          "signature": "func CreateFollow(target entity<Entity>, followTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<Follow>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, followTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<Follow>, autoPlay bool",
+          "return_type": null,
+          "description": "Creates a following motion where the target entity follows the specified object.",
+          "doc_title": "Create Follow",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "followTarget",
+              "type": "entity<Entity>",
+              "description": "Object entities that follow the movement"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset from the following target coordinates"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system used"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether the playback starts automatically after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Follow>",
+              "description": "Created following motion entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "CreateLookAt",
+          "signature": "func CreateLookAt(target entity<Entity>, lookAtTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<LookAt>, autoPlay bool)",
+          "parameters_text": "target entity<Entity>, lookAtTarget entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType, out var createdEntity entity<LookAt>, autoPlay bool",
+          "return_type": null,
+          "description": "Creates a gaze following motion, where the target entity stays oriented towards the specified object",
+          "doc_title": "Create Look At",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "lookAtTarget",
+              "type": "entity<Entity>",
+              "description": "Gazing target entity"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset of the gaze point from the object entity"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system used"
+            },
+            {
+              "name": "autoPlay",
+              "type": "bool",
+              "description": "Whether the playback starts automatically after creation"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<LookAt>",
+              "description": "Created gaze following motion entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnEachLoop",
+          "signature": "event OnEachLoop()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "OnStart",
+          "signature": "event OnStart(playable entity<Playable>)",
+          "parameters_text": "playable entity<Playable>",
+          "return_type": null,
+          "description": "Fired when a playable entity starts playing.",
+          "doc_title": "On Start",
+          "parameters": [
+            {
+              "name": "playable",
+              "type": "entity<Playable>",
+              "description": "Playable Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Playable",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "OnEnd",
+          "signature": "event OnEnd(playable entity<Playable>)",
+          "parameters_text": "playable entity<Playable>",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "OnResume",
+          "signature": "event OnResume(playable entity<Playable>)",
+          "parameters_text": "playable entity<Playable>",
+          "return_type": null,
+          "description": "Triggered when a playable entity resumes playing.",
+          "doc_title": "On Resume",
+          "parameters": [
+            {
+              "name": "playable",
+              "type": "entity<Playable>",
+              "description": "Playable Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Playable",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "OnPause",
+          "signature": "event OnPause(playable entity<Playable>)",
+          "parameters_text": "playable entity<Playable>",
+          "return_type": null,
+          "description": "Triggered when a playable entity is paused.",
+          "doc_title": "On Pause",
+          "parameters": [
+            {
+              "name": "playable",
+              "type": "entity<Playable>",
+              "description": "Playable Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Playable",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Playable",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IsPlaying",
+              "type": "bool",
+              "description": "Whether the wave is playing or not",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PlayingStatus",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "Flag",
+              "type": "int",
+              "description": "Flag bit",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "IsAutoPlaying",
+              "type": "bool",
+              "description": "If checked, it will be played automatically upon creation.",
+              "attributes": []
+            },
+            {
+              "name": "AutoPlay",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Loopable",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IsLoop",
+              "type": "LoopType",
+              "description": "Is Loop",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "TweenCurve_Deprecated",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "ControlPoints",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Tween",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": []
+            },
+            {
+              "name": "PropID",
+              "type": "Property",
+              "description": "Prop ID",
+              "attributes": []
+            },
+            {
+              "name": "SrcVal",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DestVal",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TweenStyle",
+              "type": "TweenStyle",
+              "description": "Tween Style",
+              "attributes": []
+            },
+            {
+              "name": "Style",
+              "type": "TweenStyle",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Curve_Deprecated",
+              "type": "entity<TweenCurve_Deprecated>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Duration",
+              "type": "float",
+              "description": "Duration (s)",
+              "attributes": []
+            },
+            {
+              "name": "IsReverse",
+              "type": "bool",
+              "description": "Is Reverse",
+              "attributes": []
+            },
+            {
+              "name": "ElapsedTime",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ControlPoints",
+              "type": "BezierCurve",
+              "description": "Control Points",
+              "attributes": []
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "List<float>",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "List<float>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTickCount",
+              "type": "int",
+              "description": "The moment when the game server starts ticking",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartValue",
+              "type": "object",
+              "description": "Start Value",
+              "attributes": []
+            },
+            {
+              "name": "EndValue",
+              "type": "object",
+              "description": "End Value",
+              "attributes": []
+            },
+            {
+              "name": "ElapsedPercentage",
+              "type": "float",
+              "description": "Percentage passed",
+              "attributes": [
+                "readonly",
+                "platform_client"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Trajectory",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": []
+            },
+            {
+              "name": "InitialSpeed",
+              "type": "Vector3",
+              "description": "Initial Velocity",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Acceleration",
+              "type": "Vector3",
+              "description": "Acceleration",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "MaxDisplacement",
+              "type": "float",
+              "description": "Max. Displacement",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "InitialWorldPosition",
+              "type": "Vector3",
+              "description": "InitialWorldPosition",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "Vector3",
+              "description": "Forced synchronization of position information by game server",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTickCount",
+              "type": "int",
+              "description": "The moment when the game server starts ticking",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "SelfRelative",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": []
+            },
+            {
+              "name": "PropID",
+              "type": "Property",
+              "description": "Prop ID",
+              "attributes": []
+            },
+            {
+              "name": "Delta",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "TweenStyle",
+              "type": "TweenStyle",
+              "description": "Tween Style",
+              "attributes": []
+            },
+            {
+              "name": "Style",
+              "type": "TweenStyle",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Duration",
+              "type": "float",
+              "description": "Duration of invincibility effect (in s)",
+              "attributes": []
+            },
+            {
+              "name": "ElapsedTime",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ControlPoints",
+              "type": "BezierCurve",
+              "description": "Control Points",
+              "attributes": []
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "List<float>",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "List<float>",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTickCount",
+              "type": "int",
+              "description": "The moment when the game server starts ticking",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "DeltaValue",
+              "type": "object",
+              "description": "Delta Value",
+              "attributes": []
+            },
+            {
+              "name": "ElapsedPercentage",
+              "type": "float",
+              "description": "Percentage passed",
+              "attributes": [
+                "readonly",
+                "platform_client"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "FrameSelfRelative",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TargetEntity",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": []
+            },
+            {
+              "name": "PropID",
+              "type": "Property",
+              "description": "Prop ID",
+              "attributes": []
+            },
+            {
+              "name": "Delta",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Type",
+              "type": "bool",
+              "description": "Can be combined with Relative Motion if true, must be combined with Absolute Motion if false, otherwise the property will not take effect correctly.",
+              "attributes": []
+            },
+            {
+              "name": "Switch",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ForceSyncValue",
+              "type": "List<float>",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTickCount",
+              "type": "int",
+              "description": "The moment when the game server starts ticking",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "DeltaValue",
+              "type": "object",
+              "description": "Delta Value",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "RelativeFrame",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "TargetEntity",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": []
+            },
+            {
+              "name": "PropID",
+              "type": "Property",
+              "description": "Prop ID",
+              "attributes": []
+            },
+            {
+              "name": "Delta",
+              "type": "List<float>",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Type",
+              "type": "bool",
+              "description": "Can be combined with Relative Motion if true, must be combined with Absolute Motion if false, otherwise the property will not take effect correctly.",
+              "attributes": []
+            },
+            {
+              "name": "Switch",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ForceSyncValue",
+              "type": "List<float>",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTickCount",
+              "type": "int",
+              "description": "The moment when the game server starts ticking",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "DeltaValue",
+              "type": "object",
+              "description": "Delta Value",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "Follow",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Self",
+              "type": "entity<Entity>",
+              "description": "Self",
+              "attributes": []
+            },
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Attack Target",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Offset coordinate",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate System",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateType",
+              "type": "CoordinateSystemType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "Vector3",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "PositionFollow",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "Self",
+              "type": "entity<Entity>",
+              "description": "Self",
+              "attributes": []
+            },
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Attack Target",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Offset coordinate",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate System",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateType",
+              "type": "CoordinateSystemType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "Vector3",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "LookAt",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Self",
+              "type": "entity<Entity>",
+              "description": "Self",
+              "attributes": []
+            },
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Attack Target",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Offset coordinate",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate System",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateType",
+              "type": "CoordinateSystemType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "Vector3",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "PlayableLookAt",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "Self",
+              "type": "entity<Entity>",
+              "description": "Self",
+              "attributes": []
+            },
+            {
+              "name": "Target",
+              "type": "entity<Entity>",
+              "description": "Attack Target",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Offset coordinate",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate System",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CoordinateType",
+              "type": "CoordinateSystemType",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncToClient",
+              "type": "Vector3",
+              "description": "Forced synchronization of the game server state",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ForceSyncGSStateValue",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        },
+        {
+          "name": "AlongPathMotion",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TargetEntity",
+              "type": "entity<Entity>",
+              "description": "target entity",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Path",
+              "type": "entity<CustomCurvePath>",
+              "description": "The trajectory of the target entity",
+              "attributes": []
+            },
+            {
+              "name": "TweenStyle",
+              "type": "TweenStyle",
+              "description": "Tween Style",
+              "attributes": []
+            },
+            {
+              "name": "Style",
+              "type": "TweenStyle",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Speed",
+              "type": "float",
+              "description": "Movement speed, unit m/s",
+              "attributes": []
+            },
+            {
+              "name": "TangentFacing",
+              "type": "bool",
+              "description": "Whether the movement is toward the tangent line of the path or not \\nDefault is False, the movement of the object will not change the direction \\n If True, the movement of the object will face the path forward direction",
+              "attributes": []
+            },
+            {
+              "name": "ElapsedPercentage",
+              "type": "float",
+              "description": "Played Percentage",
+              "attributes": [
+                "readonly",
+                "platform_client"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Playable.fcc",
+            "blob_sha": "b9de2beb19d2c93b21296425d97ee9067e4a876f"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Premium.fcc",
+      "source_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7",
+      "text_length": 2321,
+      "functions": [
+        {
+          "name": "OpenPremiumCenter_Client",
+          "signature": "[platform_client] func OpenPremiumCenter_Client(out var status StatusCode)",
+          "parameters_text": "out var status StatusCode",
+          "return_type": null,
+          "description": "Invoke Member Center",
+          "doc_title": "Open Craftland Membership",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "GetPremiumExpireDate",
+          "signature": "[platform_server] func GetPremiumExpireDate(player entity<Player>, out var result int64, out var status StatusCode)",
+          "parameters_text": "player entity<Player>, out var result int64, out var status StatusCode",
+          "return_type": null,
+          "description": "Get the membership expiration timestamp",
+          "doc_title": "Get Membership Expire Date",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "result",
+              "type": "int64",
+              "description": "Timestamp"
+            },
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "IsPremium_Client",
+          "signature": "[platform_client] func IsPremium_Client(out var status StatusCode, out var result bool)",
+          "parameters_text": "out var status StatusCode, out var result bool",
+          "return_type": null,
+          "description": "Determine whether the player is a member",
+          "doc_title": "Is Membership",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            },
+            {
+              "name": "result",
+              "type": "bool",
+              "description": "Is a member or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "GetPremiumExpireDate_Client",
+          "signature": "[platform_client] func GetPremiumExpireDate_Client(out var result int64, out var status StatusCode)",
+          "parameters_text": "out var result int64, out var status StatusCode",
+          "return_type": null,
+          "description": "Get the membership expiration timestamp",
+          "doc_title": "Get Membership Expire Date",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "result",
+              "type": "int64",
+              "description": "Timestamp"
+            },
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "IsPremium",
+          "signature": "[platform_server] func IsPremium(player entity<Player>, out var status StatusCode, out var result bool)",
+          "parameters_text": "player entity<Player>, out var status StatusCode, out var result bool",
+          "return_type": null,
+          "description": "Determine whether the player is a member",
+          "doc_title": "Is Membership",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            },
+            {
+              "name": "result",
+              "type": "bool",
+              "description": "Is a member or not"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "OpenPremiumCenter",
+          "signature": "[platform_server] func OpenPremiumCenter(player entity<Player>, out var status StatusCode)",
+          "parameters_text": "player entity<Player>, out var status StatusCode",
+          "return_type": null,
+          "description": "Invoke Member Center",
+          "doc_title": "Open Craftland Membership",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "status",
+              "type": "StatusCode",
+              "description": "Error Code"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPremiumChange",
+          "signature": "event OnPremiumChange(state PremiumState)",
+          "parameters_text": "state PremiumState",
+          "return_type": null,
+          "description": "Triggered when member information changes.",
+          "doc_title": "On Membership Status Changed",
+          "parameters": [
+            {
+              "name": "state",
+              "type": "PremiumState",
+              "description": "Member status after change"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "OnPlayerEnterPremiumCenter",
+          "signature": "event OnPlayerEnterPremiumCenter()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when entering the member center.",
+          "doc_title": "On Enter Craftland Membership",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        },
+        {
+          "name": "OnPlayerLeavePremiumCenter",
+          "signature": "event OnPlayerLeavePremiumCenter()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when leaving the member center.",
+          "doc_title": "On Quit Craftland Membership",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Premium.fcc",
+            "blob_sha": "c9a6a447d5d550b3c30abba37c1b82b39daa51d7"
+          }
+        }
+      ],
+      "components": []
     }
   ]
 }
