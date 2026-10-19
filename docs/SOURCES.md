@@ -97,3 +97,5 @@ Some links point to the official pre-release host because that host exposes a mo
 - [Current official enum/type supplement](../research/current-official-enum-supplement.json) — captures current official types/options spotted outside the old mirror.
 
 The mirrored library is not treated as authoritative for current API support. A definition's presence there does not prove current availability or Mobile block parity; absence there does not prove that an enum/API is absent from the current official docs/editor.
+
+- [Detailed PC API/event/component reference](../research/pc-library-api-reference.json) — extracted declarations and documentation fields from the full 42-file mirrored library set; includes parser caveats and 1.17+ compatibility warning in [doc 23](23-pc-api-reference-details.md).
