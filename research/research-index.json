@@ -293,11 +293,11 @@
     "status": "draft, user-observed, not independently verified",
     "counts": {
       "sections": 35,
-      "extracted_lines": 441,
+      "extracted_lines": 473,
       "observed_enum_type_names": 65,
       "original_lines": 677
     },
-    "note": "Draft extraction regenerated to handle headings embedded in transition sentences and includes logic-control candidates. Candidate entries still require official-document or installed-editor verification.",
+    "note": "Heuristically extracted user-observed block/component lines from Rough.txt. The original is preserved. All entries are draft until exact name, signature, script context, Mobile/PC support, and deprecation are checked against official docs or the installed editor.",
     "official_cross_checks": [
       {
         "id": "block-script-contexts-and-typed-slots",
