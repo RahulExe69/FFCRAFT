@@ -105,3 +105,7 @@ The mirrored library is not treated as authoritative for current API support. A 
 
 - [Enum option-set analysis](../research/pc-enum-option-set-analysis.json) — identifies 42 identical ordered option sets shared by differently named enum types in the old mirror; preserves original type names and source context.
 - [Enum option-set analysis notes](26-enum-option-set-analysis.md) — explains how to reduce duplicate browsing without declaring semantically different types interchangeable.
+
+
+- [Current editor capture playbook](27-current-editor-capture-playbook.md) — current installed .fcc library path, project-generated EditorGenLib.fcc, Studio MCP server and Mobile screenshot evidence collection.
+- [Editor metadata capture checklist](../research/editor-metadata-capture-checklist.json) — structured list of authoritative PC and Mobile sources that have not yet been captured.
