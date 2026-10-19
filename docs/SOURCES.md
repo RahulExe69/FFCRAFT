@@ -71,3 +71,8 @@ When adding a new technique, record:
 ## Link and version notes
 
 Some links point to the official pre-release host because that host exposes a more detailed PC-manual page for a specific topic. It is still a Garena-hosted source, but any pre-release/live discrepancy must be resolved against the installed release. Official API pages may retain old entries and explicitly label obsolete elements. Do not conclude an API is current merely because its page still exists.
+
+
+## Community asset/resource repositories
+
+- [nexosstudio / CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community-curated asset IDs/names, sound lists, skybox names, UGC rigs, project-template folders, and tooling links. Last observed commit: 29 September 2025. Treat catalogues as discovery leads; some entries are explicitly sample data and the linked Studio installer is older than the current release snapshot. See [FFCRAFT audit](16-community-resource-audit.md).
