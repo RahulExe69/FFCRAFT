@@ -124,7 +124,8 @@
     "docs/11-community-resources.md": "GitHub/community leads and verification procedure",
     "docs/SOURCES.md": "Source catalogue",
     "docs/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified.",
-    "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies."
+    "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
+    "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states."
   },
   "sources": [
     {
@@ -272,6 +273,12 @@
       "topic": "std-library",
       "title": "STD Library module index",
       "url": "https://ffcraftland.garena.com/en/docs/module-1"
+    },
+    {
+      "tier": "A",
+      "topic": "block-classification",
+      "title": "Block Classification and Flow Control",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-104"
     }
   ],
   "open_questions": [
