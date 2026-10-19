@@ -12,12 +12,12 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 10,
-    "enums": 100,
-    "enum_members": 2025,
-    "functions": 230,
-    "events": 156,
-    "components": 334,
+    "libraries": 15,
+    "enums": 108,
+    "enum_members": 2074,
+    "functions": 276,
+    "events": 161,
+    "components": 345,
     "aliases": 17,
     "defined_types": 43
   },
@@ -12806,6 +12806,607 @@
         "BevTreeID",
         "BTreeID"
       ]
+    },
+    {
+      "path": "library/release/Buff.fcc",
+      "source_sha": "e53605d389042fc94fb2f29b37825d9a479a473c",
+      "bytes_text": 1317,
+      "enum_count": 1,
+      "enum_member_count": 2,
+      "function_count": 4,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "InternalBuffType",
+          "members": [
+            {
+              "name": "Test_AddPlayerMaxHP",
+              "value": "262",
+              "notes": "Add max. HP: Add Max. Player HP"
+            },
+            {
+              "name": "Test_RecoverPlayerHPContinusly",
+              "value": "285",
+              "notes": "Continuously recover HP: Restore Player HP Continuously"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "AddBuff",
+          "signature": "[platform_server] func AddBuff(target entity<Buffable>, buff InternalBuffType) /**"
+        },
+        {
+          "name": "RemoveBuff",
+          "signature": "[platform_server] func RemoveBuff(target entity<Buffable>, buff InternalBuffType) //@deprecated Use `RemoveBuff` instead"
+        },
+        {
+          "name": "DeleteBuff",
+          "signature": "[deprecated] func DeleteBuff(target entity<Buffable>, buff InternalBuffType) /**"
+        },
+        {
+          "name": "GetBuffs",
+          "signature": "[platform_server] func GetBuffs(target entity<Buffable>) List<InternalBuffType>"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/CSVData.fcc",
+      "source_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b",
+      "bytes_text": 2464,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 7,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "ReadCSV",
+          "signature": "func ReadCSV(sheetName CsvID) List<List<object>>"
+        },
+        {
+          "name": "ReadCSVRow",
+          "signature": "func ReadCSVRow(sheetName CsvID, row int) List<object>"
+        },
+        {
+          "name": "ReadCSVColumn",
+          "signature": "func ReadCSVColumn(sheetName CsvID, column int) List<object>"
+        },
+        {
+          "name": "ReadCSVCell",
+          "signature": "func ReadCSVCell(sheetName CsvID, row int, column int) object"
+        },
+        {
+          "name": "ReadCSVCellByName",
+          "signature": "func ReadCSVCellByName(sheetName CsvID, row int, columnName string) object"
+        },
+        {
+          "name": "ReadCSVRowByKey",
+          "signature": "func ReadCSVRowByKey(sheetName CsvID, keyColumn int, key object) List<object>"
+        },
+        {
+          "name": "CSVColumnNameToInt",
+          "signature": "func CSVColumnNameToInt(sheetName CsvID, columnName string) int"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Camera.fcc",
+      "source_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7",
+      "bytes_text": 21034,
+      "enum_count": 5,
+      "enum_member_count": 23,
+      "function_count": 26,
+      "event_count": 0,
+      "component_count": 6,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "CameraType",
+          "members": [
+            {
+              "name": "ThirdPersonClassic",
+              "value": "1",
+              "notes": "Third-Person Classic: FF Classic (Shooting)"
+            },
+            {
+              "name": "Classic",
+              "value": "1",
+              "notes": "@deprecated Use `ThirdPersonClassic` instead"
+            },
+            {
+              "name": "ThirdPerson",
+              "value": "2",
+              "notes": "Third-Person: Third Person"
+            },
+            {
+              "name": "FirstPersonClassic",
+              "value": "3",
+              "notes": "First-Person Classic: First Person (Shooting)"
+            },
+            {
+              "name": "FirstPerson",
+              "value": "3",
+              "notes": "@deprecated Use `FirstPersonClassic` instead"
+            },
+            {
+              "name": "TopDown",
+              "value": "4",
+              "notes": "Top-Down: Top-down perspective"
+            },
+            {
+              "name": "TopView",
+              "value": "4",
+              "notes": "@deprecated Use `TopDown` instead"
+            },
+            {
+              "name": "SideScrolling",
+              "value": "5",
+              "notes": "Side-Scrolling: Horizontal Scroll"
+            },
+            {
+              "name": "Custom",
+              "value": "6",
+              "notes": "Custom: Custom"
+            },
+            {
+              "name": "Customized",
+              "value": "6",
+              "notes": "@deprecated Use `Custom` instead"
+            },
+            {
+              "name": "ThirdPersonLock",
+              "value": "7",
+              "notes": "Third-Person Lock: Backchase"
+            },
+            {
+              "name": "Free",
+              "value": "8",
+              "notes": "Free: Player-controlled, free-moving camera"
+            },
+            {
+              "name": "FirstPerson",
+              "value": "9",
+              "notes": "First-Person: New version of the first person view camera"
+            },
+            {
+              "name": "FirstPersonModel",
+              "value": "9",
+              "notes": "@deprecated Use `FirstPerson` instead"
+            }
+          ]
+        },
+        {
+          "name": "CameraBlockMode",
+          "members": [
+            {
+              "name": "Stable",
+              "value": "0",
+              "notes": "Stable: When there is an obstacle between the camera and the object to be followed, the camera will not change."
+            },
+            {
+              "name": "Zoom",
+              "value": "1",
+              "notes": "Zoom: When there is an obstacle between the camera and the object to follow, the camera will be pushed closer to the object to follow."
+            },
+            {
+              "name": "Transparent",
+              "value": "2",
+              "notes": "Transparent: When there is an occlusion between the camera and the object, the occlusion will become translucent."
+            }
+          ]
+        },
+        {
+          "name": "CameraProjectionMode",
+          "members": [
+            {
+              "name": "Perspective",
+              "value": "0",
+              "notes": "Perspective: When the camera looks at the object, the near object is big and the far object is small"
+            },
+            {
+              "name": "Orthogonal",
+              "value": "1",
+              "notes": "Orthogonal: Near and far objects are the same size when the camera is looking at them."
+            }
+          ]
+        },
+        {
+          "name": "CameraTransitionType",
+          "members": [
+            {
+              "name": "Default",
+              "value": "0",
+              "notes": "Default: No Animation"
+            },
+            {
+              "name": "Smooth",
+              "value": "1",
+              "notes": "Smooth: Smooth"
+            }
+          ]
+        },
+        {
+          "name": "CameraViewingAngleRestrictionType",
+          "members": [
+            {
+              "name": "Default",
+              "value": "0",
+              "notes": "Default: Default"
+            },
+            {
+              "name": "WideRange",
+              "value": "1",
+              "notes": "Wide Range: Wide Range"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "ScreenTouchRay",
+          "signature": "[platform_client] func ScreenTouchRay(touchPoint Vector2, out var startPosition Vector3, out var direction Vector3) //@deprecated Use `ScreenTouchRay` instead"
+        },
+        {
+          "name": "CameraTouchRay",
+          "signature": "[deprecated] func CameraTouchRay(touchPoint Vector2, out var startPosition Vector3, out var direction Vector3) /**"
+        },
+        {
+          "name": "WorldToScreenPoint",
+          "signature": "[platform_client] func WorldToScreenPoint(worldPosition Vector3, out var isMappedInScreen bool, out var mappedPosition Vector2) /**"
+        },
+        {
+          "name": "ScreenToWorldPoint",
+          "signature": "[platform_client] func ScreenToWorldPoint(screenPosition Vector2, depth float, out var worldPosition Vector3) /**"
+        },
+        {
+          "name": "ScreenSingleRaycast",
+          "signature": "[platform_client] func ScreenSingleRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3) //@deprecated Use `ScreenSingleRaycast` instead"
+        },
+        {
+          "name": "CameraSingleRaycast",
+          "signature": "[deprecated] func CameraSingleRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3) /**"
+        },
+        {
+          "name": "ScreenMultiRaycast",
+          "signature": "[platform_client] func ScreenMultiRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>) //@deprecated Use `ScreenMultiRaycast` instead"
+        },
+        {
+          "name": "CameraMultiRaycast",
+          "signature": "[deprecated] func CameraMultiRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>) /**"
+        },
+        {
+          "name": "SetCullingMask",
+          "signature": "[platform_server] func SetCullingMask(camera entity<Camera>, cullingMask List<int>) /**"
+        },
+        {
+          "name": "GetCullingMask",
+          "signature": "[platform_server] func GetCullingMask(camera entity<Camera>) List<int>"
+        },
+        {
+          "name": "SetCullingMaskLayer",
+          "signature": "[platform_server] func SetCullingMaskLayer(camera entity<Camera>, layer int, visible bool) /**"
+        },
+        {
+          "name": "GetCurrentCamera",
+          "signature": "func GetCurrentCamera(target entity<Player>) entity<Camera>"
+        },
+        {
+          "name": "SwitchCamera",
+          "signature": "[platform_server] func SwitchCamera(player entity<Player>, camera entity<Camera>, transitionType CameraTransitionType, transitionTime float) /**"
+        },
+        {
+          "name": "CreateCamera",
+          "signature": "[platform_server] func CreateCamera(type CameraType, out var createdEntity entity<Camera>) /**"
+        },
+        {
+          "name": "SetCameraFollow",
+          "signature": "func SetCameraFollow(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType) //@deprecated Use `SetCameraFollow` instead"
+        },
+        {
+          "name": "Follow",
+          "signature": "[deprecated] func Follow(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType) /**"
+        },
+        {
+          "name": "SetCameraFocus",
+          "signature": "func SetCameraFocus(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType) //@deprecated Use `SetCameraFocus` instead"
+        },
+        {
+          "name": "Focus",
+          "signature": "[deprecated] func Focus(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType) /**"
+        },
+        {
+          "name": "SwitchCustomCamera",
+          "signature": "[platform_server] func SwitchCustomCamera(player entity<Player>, camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float) /**"
+        },
+        {
+          "name": "SwitchCustomCameraClient",
+          "signature": "[platform_client] func SwitchCustomCameraClient(camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float) /**"
+        },
+        {
+          "name": "GetCurrentNewCamera",
+          "signature": "[platform_server] func GetCurrentNewCamera(target entity<Player>) entity<CustomCamera>"
+        },
+        {
+          "name": "GetCurrentCustomCameraClient",
+          "signature": "[platform_client] func GetCurrentCustomCameraClient() entity<CustomCamera>"
+        },
+        {
+          "name": "CreateBasicCamera",
+          "signature": "func CreateBasicCamera(out var createdEntity entity<CustomCamera>) /**"
+        },
+        {
+          "name": "SetCustomCameraCullingMask",
+          "signature": "func SetCustomCameraCullingMask(target entity<CustomCamera>, cullingMask List<int>) /**"
+        },
+        {
+          "name": "GetCustomCameraCullingMask",
+          "signature": "func GetCustomCameraCullingMask(target entity<CustomCamera>) List<int>"
+        },
+        {
+          "name": "SetCustomCameraCullingMaskLayer",
+          "signature": "func SetCustomCameraCullingMaskLayer(target entity<CustomCamera>, layer int, visible bool)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "Player",
+        "Camera",
+        "CameraConfig",
+        "CameraRaycastUI",
+        "CameraRayCastHud",
+        "CameraRayCastUI"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/ChatChannel.fcc",
+      "source_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9",
+      "bytes_text": 5639,
+      "enum_count": 2,
+      "enum_member_count": 24,
+      "function_count": 9,
+      "event_count": 5,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "ChatChannelType",
+          "members": [
+            {
+              "name": "ChannelA",
+              "value": "0",
+              "notes": "ChannelA: ChannelA"
+            },
+            {
+              "name": "Channel_1",
+              "value": "0",
+              "notes": "@deprecated Use `ChannelA` instead"
+            },
+            {
+              "name": "ChannelB",
+              "value": "1",
+              "notes": "ChannelB: ChannelB"
+            },
+            {
+              "name": "Channel_2",
+              "value": "1",
+              "notes": "@deprecated Use `ChannelB` instead"
+            },
+            {
+              "name": "ChannelC",
+              "value": "2",
+              "notes": "ChannelC: ChannelC"
+            },
+            {
+              "name": "Channel_3",
+              "value": "2",
+              "notes": "@deprecated Use `ChannelC` instead"
+            },
+            {
+              "name": "ChannelD",
+              "value": "3",
+              "notes": "ChannelD: ChannelD"
+            },
+            {
+              "name": "Channel_4",
+              "value": "3",
+              "notes": "@deprecated Use `ChannelD` instead"
+            },
+            {
+              "name": "ChannelE",
+              "value": "4",
+              "notes": "ChannelE: ChannelE"
+            },
+            {
+              "name": "Channel_5",
+              "value": "4",
+              "notes": "@deprecated Use `ChannelE` instead"
+            },
+            {
+              "name": "ChannelF",
+              "value": "5",
+              "notes": "ChannelF: ChannelF"
+            },
+            {
+              "name": "Channel_6",
+              "value": "5",
+              "notes": "@deprecated Use `ChannelF` instead"
+            }
+          ]
+        },
+        {
+          "name": "FreeChatChannel",
+          "members": [
+            {
+              "name": "ChannelA",
+              "value": "0",
+              "notes": "ChannelA: ChannelA"
+            },
+            {
+              "name": "Channel_1",
+              "value": "0",
+              "notes": "@deprecated Use `ChannelA` instead"
+            },
+            {
+              "name": "ChannelB",
+              "value": "1",
+              "notes": "ChannelB: ChannelB"
+            },
+            {
+              "name": "Channel_2",
+              "value": "1",
+              "notes": "@deprecated Use `ChannelB` instead"
+            },
+            {
+              "name": "ChannelC",
+              "value": "2",
+              "notes": "ChannelC: ChannelC"
+            },
+            {
+              "name": "Channel_3",
+              "value": "2",
+              "notes": "@deprecated Use `ChannelC` instead"
+            },
+            {
+              "name": "ChannelD",
+              "value": "3",
+              "notes": "ChannelD: ChannelD"
+            },
+            {
+              "name": "Channel_4",
+              "value": "3",
+              "notes": "@deprecated Use `ChannelD` instead"
+            },
+            {
+              "name": "ChannelE",
+              "value": "4",
+              "notes": "ChannelE: ChannelE"
+            },
+            {
+              "name": "Channel_5",
+              "value": "4",
+              "notes": "@deprecated Use `ChannelE` instead"
+            },
+            {
+              "name": "ChannelF",
+              "value": "5",
+              "notes": "ChannelF: ChannelF"
+            },
+            {
+              "name": "Channel_6",
+              "value": "5",
+              "notes": "@deprecated Use `ChannelF` instead"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetChatChannel",
+          "signature": "[platform_server] func GetChatChannel(index ChatChannelType) entity<ChatChannel>"
+        },
+        {
+          "name": "GetCurrentChatChannel",
+          "signature": "[platform_server] func GetCurrentChatChannel(target entity<Player>) entity<ChatChannel>"
+        },
+        {
+          "name": "JoinChatChannel",
+          "signature": "[platform_server] func JoinChatChannel(target entity<Player>, channel entity<ChatChannel>) /**"
+        },
+        {
+          "name": "QuitChatChannel",
+          "signature": "[platform_server] func QuitChatChannel(target entity<Player>) /**"
+        },
+        {
+          "name": "IsChatChannelEmpty",
+          "signature": "[platform_server] func IsChatChannelEmpty(channel entity<ChatChannel>) /**"
+        },
+        {
+          "name": "SetPlayerVoiceStatus",
+          "signature": "[platform_server] func SetPlayerVoiceStatus(target entity<Player>, disable bool) //@deprecated Use `SetPlayerVoiceStatus` instead"
+        },
+        {
+          "name": "MutePlayerVoice",
+          "signature": "[deprecated] func MutePlayerVoice(target entity<Player>, disable bool) /**"
+        },
+        {
+          "name": "SetPlayerQuickMessageStatus",
+          "signature": "[platform_server] func SetPlayerQuickMessageStatus(target entity<Player>, disable bool) //@deprecated Use `SetPlayerQuickMessageStatus` instead"
+        },
+        {
+          "name": "MutePlayerQuickChat",
+          "signature": "[deprecated] func MutePlayerQuickChat(target entity<Player>, disable bool) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnJoinChatChannelSuccessfully",
+          "signature": "[platform_server] event OnJoinChatChannelSuccessfully(chatChannel entity<ChatChannel>)"
+        },
+        {
+          "name": "OnPlayerJoinChatChannelSuccessed",
+          "signature": "[deprecated] event OnPlayerJoinChatChannelSuccessed(chatChannel entity<ChatChannel>)"
+        },
+        {
+          "name": "OnPlayerJoinChatChannelFailure",
+          "signature": "[platform_server] event OnPlayerJoinChatChannelFailure(chatChannel entity<ChatChannel>)"
+        },
+        {
+          "name": "OnLeaveChatChannel",
+          "signature": "[platform_server] event OnLeaveChatChannel(chatChannel entity<ChatChannel>)"
+        },
+        {
+          "name": "OnPlayerLeaveChatChannel",
+          "signature": "[deprecated] event OnPlayerLeaveChatChannel(chatChannel entity<ChatChannel>)"
+        }
+      ],
+      "components": [
+        "Player",
+        "ChatChannel"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/CheckPoint.fcc",
+      "source_sha": "53f05b3ad09ed61cb844e1a31cae14bfdd6469e6",
+      "bytes_text": 1260,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 0,
+      "event_count": 0,
+      "component_count": 3,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [],
+      "events": [],
+      "components": [
+        "Player",
+        "CheckPointTrigger",
+        "EndPointTrigger"
+      ],
+      "aliases": [],
+      "defined_types": []
     }
   ]
 }
