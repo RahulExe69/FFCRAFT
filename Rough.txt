@@ -1,0 +1,676 @@
+23:48 Free Fire Craft Land Block Code Structure and code blocks and all the details about free fire craftland
+
+So hey there are 3 place where we can drag and drop and write block codes and those are GLOBAL, TEAM, and PLAYER, i usually write almost all the codes in Player one, so leave that aside now let's see what are thode code blocks in the craftland
+
+So there are 7 Categories of codes :
+1. EVENT
+2. ACTION
+3. GAME
+4. DATA
+5. LOGIC
+6. VAR (Which is for variable ofcourse)
+7. FUNC (which is for function)
+
+So by using all these codes we can code a full craftland map, and aside from codes there are assets and those, about which I'll tell you later so first I'll talk about event then action like this till the func.
+
+Generally in craft land each Block returns something like On Round Starts returns Round index so for your understanding and my less hardwork I'll write them like this On Round Starts (Round Index) and if something return two or more things thein I'll do like (example, example) okay?
+
+1. EVENT : there are three category in the EVENT category first one is Custom Event second one is GLOBAL event and the third one is PRIVATE EVENT 
+
+there's nothing in the custom event as we have to create event there so let's talk about GLOBAL EVENT and all the codes inside that
+
+EVENT - GLOBAL EVENT:
+
+On Game Start
+On Round Start (Round Index)
+On Round End (Round Index)
+On Phase Start (Phase)
+On Phase End (Phase)
+On Player Quit Midway (Player)
+On Player Be Eliminated (Player)
+On Player Assist (Assist Player, Eliminated Player)
+On Player Deal Damage (Attacker, Target, Damage Type, Damage, Damaged Body Part)
+On Player Eliminate (Player, Eliminated Player)
+On Player Join (Player)
+On Player Revived (Player, Revival Source)
+On Team Ace (Team)
+On Camera Raycast (Player, Is Hit, Hit Position, Camera Direction, Camera Position, Hit Entity)
+On Fixed Update
+On Game Pause
+On Game Resume
+On User Quit or User Match End (Player)
+
+EVENT - PRIVATE EVENT:
+
+On Awake
+On Update
+On Destroy
+On Enable
+On Disable
+On Eliminate (Target, Damaged Body Part)
+On Eliminated (Attacker, Damage Type, Damage Body Part)
+On Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)
+On Deal Damage (Target, Damage Type, Damage, Damaged Body Part)
+On Equip Weapon (Weapon)
+On Equip Armor (Equipment ID)
+On User Consumable (ConsumableID, Item, Spawned Item)
+On Access Item (Item ID, Item)
+On Access Weapon (Weapon)
+On Revived (Revival Source)
+On Drop Weapon (Weapon)
+On Drop Consumable (ConsumableID, Item)
+On Aiming (Target)
+On Aimed (Player)
+On Hit By Bullet (Weapon, Hit Position)
+On Disconnect (Player)
+On Reconnect (Player)
+On Attack
+On Crouch
+On Prone
+On Jump
+On Sprint
+On Enter Vehicle (Vehicle)
+On Leave Vehicle (Vehicle)
+On Drive Vehicle (Vehicle)
+On User Portal (Portal)
+On Bounced by Tire (Tire)
+On Hit Fly (Mechanism)
+On Throwable Explodes (Hit Position)
+On Pre Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)
+On Pre Deal Damage (Target, Damage Type, Damage, Damaged Body Part)
+On Switch Handheld (Item)
+On Access Equipment (Item)
+On Move (Pose)
+On Idle (Pose)
+On Standup (Pre Pose)
+On Surfing
+On Surfing Stop
+On Sprint Stop
+On Jump Stop
+On Be Knocked Down (Attacker)
+On Change Team (Former Team, Current Team)
+On Plot Start (Plot ID)
+On Plot End (Plot ID)
+On Trigger Plot Option (Plot ID, Option ID)
+
+EVENT category is completed now, let's move to the Action category which is too big and maybe I'll skip some parts, not the exact block ofcourse I can't leave them, so it in ACTION category we have 10 Category
+1. STD LIBRARY
+2. SCENE
+3. LEVEL OBJECT
+4. ITEMS
+5. UI
+6. COMBAT
+7. PLAYABLE
+8. AI
+9. BEHAVIOR TREE
+10. OTHER
+
+here we have script blocks component blocks which we adds to other and another blocks can be added under them, I can't explain it so hard so here's an examples= Set Property: 'Entity' ___ 'Entity' --- 'Set Property' --- 'Operation' = ___      so here this cotation 'Entity' and others in cotation is in low colour texture means it's telling us what to put or set in __ and --- and ____ means a box where we can add components like get Property block and those and ---- means drop down menu from where we can choose the appropriate option of the component we want to manage so here we go this is gonna be hard to understand but ig you can do it
+
+ACTION - STD LIBRARY:
+
+Set Property: Entity ___ Entity --- Set Property --- Operation = ___ (so suppose at first drop menu i add player then in the 1st drop down i have to select player entity then in the second drop down i can select what to edit like hp position orientation knockout state etc. like that we can also set property of othe entity and assets and everything)
+.Get Property: Entity ___ Entity --- Set Property ---
+.Get Global
+Log Info: Content ___
+.Get All Players
+.Get All Teams
+Wait for Milliseconds: Duration (ms)  0 
+.Wait For Next Frame
+.This Entity
+.Type As --- (this one is to change type suppose I created a variable and made like at spawn that when player joins the match convert triggering Modify: Player 1 as Triggering Player so in other block where there is ___ so if I add Player 1 variable there it'll not add so there we have to add this block and select Player Entity from --- to make the engine think Player 1 is a player entity)
+.Get Type: Target ___
+.Type Is: Target ___ Type ___
+.Is Sub Type Of: Target ___ Type ___
+.Filter Entity: Must___ Not___ Any___
+Destroy: Target ___
+Add Tag: Target ___ Custom Tag _please enter the content 
+Remove Tag: Target ___ Custom Tag   please enter the content 
+Has Tag: Target ___ Custom Tag   please enter the content 
+Set Active: Target ___ Active ---- (this one actually has true/false in the drop down menu so if any one has that thein I'll write them like this .----tf )
+Set Parent: Parent ___ Child ___ World Position Stays --- (generally it comes with tf but we can change the component and use get property to fetch other's position maybe idk)
+Progressive Movement Property: Entity ___ Entity --- Set Property --- Value ___
+.Get Server Region
+Clear All Children: Parent ___
+.Get Children By Index: Parent ___ Index . 0  (I used . Before 0 means it's also a component, comp inside comp)
+.Get Children :Parent ___
+.Get Parnt: Child ___
+.Profanity Filter: Content   please enter the content  
+Create Bot: Difficulty ___ Team Sequency . 0  Return (Created Entity)
+Destroy Bot: Target ___
+Log Warning: Content ___
+Log Error: Content ___
+.Has Component: Target ___ Component ___
+.Get Child By Name: Parent ___ Name  please enter the content 
+Add Comment: Content  please enter the content 
+.Get Type Name: Target ___
+
+End of the STD LIBRARY so let's move to the scene
+
+ACTION - SCENE:
+
+Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)
+Find Path: Start Position .X0   Y0   Z0 End Position .XYZ (Is Success, Path Points) here for the positions we can use get property block to find other object's position too instead of normal XYZ this is my assumption and it can possible if and hey from next blocks I'll write only XYZ instead of writing x0 y0 z0)
+
+End of SCENE
+Next Level Object
+
+ACTION - LEVEL OBJECT
+
+Create Level Object: Position .XYZ Level Object --- (Created Entity) {here level object means yk all type of objects or assets that available in the game which we can create and tbh I don't use it to create object, I prefer to place object visually because it's easier if I want to code in those objects}
+.Filter Level Object: Filter Type ---
+SpawnNextWave: Target ___
+Clone: Target .No entity  (Created Entity) {Here no Entity means by clicking on it it'll let us select level object from the map and let us copy them and also using that No entity block we can also set or get their property using property blocks too}
+Enter Vehicle: Player ___ Vehicle ___ Seat ---- (Is Success)
+Create Air Drop (Created Entity)
+Start Parachute: Target ___ Forced Parachute Height  0  Surfing Max. Speed ___ Diving Max. Speed ___ Parachuting Max. Speed ___
+
+End of Level Object, time for ITEMS
+
+ACTION - ITEMS:
+
+Add Item : Target ___ Item --- Count  0  (Created Entity) { here in the drop down menu, all the available in game items are available from attachment to consumable and to guns and everything of the game we can select that from there}
+Create Item In Scene: Position .XYZ items --- Counts  0 
+Destroy Target: Target ___ Item ___ Count  0 
+Set Pickup Status: Target ___ Is Disabled .---- tf
+Set Drop Status: Target ___ Is Disabled .---- tf
+Clear Backpack: Target ___
+.Get Item Count: Target ___ Item ___
+Destroy Equipment: Target ___ Slot --- Count _0_ (Is Success)
+Clear Residual Level Objects
+Switch Weapon: Target ___ Slot ___ (Is Success)
+Set Special Item Status: Target ___ Item --- Status ---tf (Created Entity)
+Get Consumables: Target ___(Result)
+Add Attachment: Target ___ Slot ___ Item ___ (Is Success, Attachment)
+Get Equipment: Target ___ Slot ___ (Equipments, Attachments)
+Drop Item: Target ___ Item ___
+
+End Of Item sub category now move to the UI
+
+ACTION  - UI:
+
+Create Built in UI: Target ___ Type ___ (Created Entity)
+Create Custom HUD: Player ___ HUD Index --- (Interface Entity)
+.Get Widget From Custom UI: Target ___ Custom UI --- Widget ID ---
+.Get Widget By Path: Owner ___ Target ___ Path  please enter the content 
+Create Custom UI Widget: Widget Type --- UI ___ Parent Widget ___ (Created Entity)
+Set Widget Parent: Parent ___ Child ___
+Notify Show Tips: Target ___ Content ___ Colour ___ Duration (ms)  0 
+
+End of the Sub Category UI now move on to the next one which is Combat and it has only 2 blocks 
+
+ACTION - COMBAT:
+
+Deal Damage: Target ___ Type --- Damage _0_
+Deal Damage: Target ___ Attacker ___ Type --- Damage _0_
+
+End of Sub category COMBAT now move to the Playable
+
+ACTION - PLAYABLE:
+
+Reset: Target ___
+Play: Target ___ Reset ---tf
+Pause: Target ___
+Create Trajectory: Target ___ Initial Velocity .XYZ Acceleration .XYZ Max. Displacement  0  Auto Play ---tf (Created Entity)
+Create Follow: Target ___ Follow Target ___ Offset .XYZ Cordinate System ___ Auto Play ---tf (Created Entity)
+Create Look At: Target ___ Look At Target ___ Offset .XYZ Cordinate System ___ Auto Play ---tf (Created Entity)
+.Sample On Curve: Curve ___ Sample Point  0 
+.Get Result From Curve: Value Type ___ Source Value ___ Destination Value ___  Curve ___ Sample Point  0 
+Create Sound: Target ___ Resource ___ Loop Type ___ Auto Play ---tf (Created Entity)
+Create Effect: Target ___ Resource ___ Loop Type ___ Auto Play ---tf (Created Entity)
+Create Along Path Motion: Target ___ Path ___ Style ___ Speed . 0  Tangent Facing ---tf Auto Play ---tf (Created Entity)
+Notify Play Sound: Target ___ Resource ___ Speed . 0 
+
+Now end of PLAYABLE sub category so move to the next one AI
+
+ACTION - AI:
+
+Enable Default Behaviour Tree : Target ___ Enable ---tf
+Pursuit Target: Target ___ Pursuit Target ___
+Patrol To: Target ___ Position .XYZ Come Back ---tf Style ---
+Patrol Along: Target ___ Positions ___ Come Back --- Style --- 
+Create Monster: Position .XYZ Type ___ Team Sequency . 0  Chase Enemy ---tf Action Type ___ Path ___ (Target)
+
+Sub category AI has ended now move to the next one
+
+ACTION - BEHAVIOUR TREE:
+
+Set Blackboard Value: Behaviour Tree ___  Key .please enter the content  Value ___
+Get Blackboard Value: Behaviour Tree ___  Key .please enter the content  (Value)
+Get Node Variable: Node ___ Key . Please enter the content (Value)
+
+End of the behaviour tree now the last one, now time for the Sub Category OTHER 
+
+ACTION - OTHER
+
+Restore All Properties: Weapon Entity ___
+Modify properties: Formulate-able entity ___ Type --- Properties --- Change Method .---+/× Value  . 0 
+Set basic properties: Formulate-able entity ___ Type --- Properties --- Value . 0 
+Revert to original properties: Formulate-able entity ___ Type --- Properties ---
+Set Player Voice Status: Target ___ Is Disabled ---tf
+Set Player Quick Message Status: Target ___ Is Disabled ---tf
+.Get Chat Channel: Index ---
+.Get Current Chat Channel: Target ___
+Join Chat Channel: Target ___ Channel ___
+Quit Chat Channel: Target ___
+Upload Game Result: Target ___ Result ___ Score Name ___ Score ___
+
+End of the Sub category and end of the ACTION Category, just ask me if anything is non understandable I'll clear that , just in each code if you want to understand specific things just ask me and I'll clarify that okay?
+
+So moving to the next Category 3.GAME so it has 12 Sub Categories and those are :
+1. GLOBAL
+2. PLAYER
+3. TEAM
+4. PHYSICS
+5. CAMERA
+6. WORKFLOW
+7. ECONOMY
+8. MINIMAP
+9. ANIMATION
+10. COLLECTION
+11. STORY
+12. OTHER
+
+
+Now get's started GAME - GLOBAL:
+
+Pause Fixed Update
+Resume Fixed Update
+Enable Safe Zone: Center .XYZ Radius . 0  Wait Time (s) . 0  Duration (s) . 0  Damage . 0 
+Disable Safe Zone
+Enable Moving Zone: Start Position .XYZ Target Position .XYZ Initial Radius .0 Final Radius .0 Duration (s) . 0  Damage . 0 
+.Get Server Timestamp
+.Get Server Timestamp (ms)
+
+GAME - PLAYER:
+
+Add HP: Target ___ Value .0
+Teleport: Target ___ Position .xyz Rotation .xyz 
+.Gey Owner: Target ___
+Set All Players Move Status ---tf
+Set Behaviour Status: Target ___ Type --- Status ---
+Set Forward: Target ___ Forward .XYZ
+.Get Skills: Target ___
+Set Skills: Target ___ Skills ___
+Hit Fly: Target ___ Direction .XYZ Duration (s) .0 Velocity Y . 0  Velocity XZ .  0  Change Rotation ---tf
+Set Default UI Status: Target ___ Type .--- Status .---close/show
+.Get Random Spawn Position: Target ___
+Set Falling Damage: Target ___ Height Segments ___ Damage Segments ___
+Exit Vehicle: Target ___
+Revive At Next Frame: Target ___
+Quit Game at Next Frame: Target ___
+
+Now to the next one GAME - TEAM:
+
+Set Attackable Team: Attacker ___ Target ___ Attackable .---tf
+.Get Position Near Team: Target ___
+Set Attackable Entity: Attacker ___ Target ___ Attackable .---tf
+.Get Position Near Entity: Attacker ___
+Join Team: Target ___  Target Team ___ (Status Code)
+Join New Team: Target ___ (New Team, Status Code)
+Eliminate At Next Frame: Target ___
+
+End of the GAME -TEAM now move to the Physics and before moving i want you to know that if you are unable to understand or want to understand a code block then ask me, I'll try my best
+
+GAME - PHYSICS:
+
+.Is Inside Sphere: Target ___ Center .XYZ Radius . 0 
+.Is Inside Cylinder: Target ___ Center .XYZ Radius . 0  Height . 0  Rotation.xyz
+.Is Inside Box: Target ___ Center .XYZ Length . 0 Width . 0  Height . 0  Rotation.xyz
+.Is Inside Cylinder: Target ___ Center .XYZ Radius . 0 Cut Radius . 0  Height . 0  Angle . 0  Rotation.xyz
+Single Raycast: Start Position .XYZ Direction .XYZ Distance . 0  Layer Mask ___ Include Trigger .---tf (Hit Entities, Hit Points, Hit Distance, Hit Normals)
+Multi-Raycast: Start Position .XYZ Direction .XYZ Distance . 0  Layer Mask ___ Include Trigger .---tf (Hit Entities, Hit Points, Hit Distance, Hit Normals)
+Box Cast: Half Extents .XYZ Center .XYZ Rotating .XYZ Direction .XYZ Max. Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)
+Sphere Cast: Radius .0 Center .XYZ Direction .XYZ Max Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)
+Capsule Cast: Radius .0 Height .0 Center .XYZ Rotation .XYZ Direction .XYZ Max Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)
+Box Overlap: Half Extents .XYZ Center .XYZ Rotation .XYZ Layer Mask ___ Include Trigger .---tf (Hit Entities)
+Sphere Overlap: Radius .0 Center .XYZ Layer Mask ___ Include Trigger.---tf (Hit Entities)
+Capsule Overlap: Radius .0 Height .0 Center .XYZ Rotation .XYZ Layer Mask ___ Include Trigger ___ (Hit Entities)
+
+Physics sub category has ended now and it was a little hard to write, so now move to the next one and that is Camera
+
+GAME - CAMERA:
+
+.Get Current Custom Camera: Target ___
+Switch Custom Camera: Player ___ Camera ___ Transition Type --- Transition Time (ms) .0
+Create Custom Camera (Created Entity)
+
+GAME - WORK FLOW:
+
+Switch Phase: Phase Index .0
+End Current Phase
+
+GAME - ECONOMY:
+
+Get Wallet: Target ___ (IsExist, Wallet)
+Create Wallet: Owner ___ Target ___ (Created Entity)
+Add Money: Target ___ Money Type --- Count .0
+Cost Money: Target ___ Money Type --- Count .0
+Transfer Money: Out Wallet ___ Money Type --- Count .0 In Wallet ___
+.Get Money Count: Target ___ Money Type ---
+.Get Money: Target ___ Money Type ---
+.Get All Shops
+Create Shop: (Created Entity)
+Create Shop Shelf: (Created Entity)
+Create Shop Item: (Created Entity)
+Add Item To Shop Item: Shop Item ___ Item ___ Count .0
+
+Move to the next sub category 
+
+GAME - MINIMAP:
+
+Create Mini Map Icon: Target ___ Resource --- (Created Entity)
+Create Mini Map Pixel: Target ___ Bound Target ___ (Created Entity)
+
+Next sub Category 
+GAME - ANIMATION:
+
+Play Animation: Target ___ State .'please enter the content' Play Speed .0 Loop Type ---
+Stop Animation: Target ___ State .'please enter the content'
+Set Body Part Weight: Target ___ Body Part Name .' please enter the content' Weight .0
+
+Now move to the next Sub Category COLLECTION
+
+GAME - COLLECTION:
+
+Play Emote: Target ___ Emote .---
+Pause Emote: Target ___ Is Pause .---tf
+.Get Outfit: Target ___ Type ___
+Set Outfit: Target ___ Outfit ___
+Reset Outfit  Target ___
+Remove Outfit: Target ___ Type ___
+.Get Weapon Skin: Target ___ Weapon .---
+Set Weapon Skin: Target ___ Weapon Skin ___
+Reset Weapon Skin: Target ___ Weapon .---
+Remove Weapon Skin: Target ___ Weapon .---
+.Get Vehicle Skin: Target ___ Vehicle ___
+Set Vehicle Skin: Target ___ Vehicle Skin .---
+Reset Vehicle Skin: Target ___ Vehicle ___
+Remove Vehicle Skin: Target ___ Vehicle ___
+.Get Backpack Skin: Target ___
+Set Backpack Skin: Target ___ Backpack Skin .---
+Reset Backpack Skin: Target ___
+Remove Backpack Skin: Target ___
+
+End of the Sub Category COLLECTION now move to the next one
+
+GAME - STORY:
+
+Notify Start Plot: Target ___ Plot ID ___
+And now we have this Empty Component called Empty and all the plot will show in this when we create a plot in the screen I mean when creating there's a option called plot in the ui to create animated video yk yeah that's it
+
+Now move to the last category OTHER
+
+GAME - OTHER:
+
+End Morph: Player ___
+Morph To: Player ___ Target ___ ( Created Entity)
+Copy To Morph: Player ___ Target ___ ( Created Entity)
+.Get Morph
+Add Football Velocity: Foot Ball ___ Velocity .XYZ 
+Set Football Position: Football ___ Velocity .XYZ 
+Set Jersey: Target ___ Jersey Type .--- Main Color1 ___ Main Color2 ___ Other Color ___
+Reset Jersey: Player ___
+Set Distance Volumes: Distance List ___ Volume List ___ (Created Entity)
+
+End Of the GAME CATEGORY, wow it took a lots of time from me 
+
+
+Now let's move to the DATA Category which contains 8 Sub Categories 
+1. BASIC
+2. MATH
+3. LIAT
+4. DICTIONARY
+5. VECTOR
+6. STRINGS
+7. CONVERT
+8. ENUM
+
+First the basic one
+
+DATA - BASIC:
+
+in basic we have lots of components that we have already used in our previous blocks I mean those blocks contains these components 
+
+Number = .0
+String = . 'Please enter the content'
+Vector3 = .X0 Y0 Z0
+List = .Empty list
+Bool = .---tf
+Color = .Color⬜ (we can choose any colour from pallet or grid there)
+entity = .No entity (you're aware of this block ig, i mentioned it before)
+.NULL
+.Curve Custom (here in the custom if we click we can create curve yk)
+
+
+End Of The Basic now move to the next one
+
+               
+DATA - MATH:
+
+.___ ---___➕ (in this component that drop down has +-*/% and clicking that ➕ icon will add another slot and a drop down yk, it's like we can add multiple slots like this ___---___---___---___)
+.Random Int: Min .0 Max .0
+.Random Float: Min .0 Max .0
+.Abs: Value .0
+.Sqrt: Value .0
+.Negate: Value .0
+.Vector addition: ValueA .XYZ ValueB .XYZ
+.Vector substraction: ValueA .XYZ ValueB .XYZ
+.Vector multiplication: Value .XYZ Scale .0
+.Dot: ValueA .XYZ ValueB .XYZ
+.Cross: ValueA .XYZ ValueB .XYZ
+.Distance: ValueA .XYZ ValueB .XYZ
+.Angle: ValueA .XYZ ValueB .XYZ
+.Projection: ValueA .XYZ ValueB .XYZ
+.Lerp Vector3: ValueA .XYZ ValueB .XYZ ValueT .0
+.Slerp Vector3: ValueA .XYZ ValueB .XYZ ValueT .0
+.Magnitude: Value .XYZ
+.Normalize: Value .XYZ
+.Vector2: Scale 2D Vector ___ Scale .0
+.Vector2: Add ValueA ___ ValueB ___
+.Vector2 Sub: ValueA ___ ValueB ___
+.Vector2Dot: ValueA ___ ValueB ___
+.Vector2Distance: ValueA ___ ValueB ___
+.Vector2Angle: ValueA ___ ValueB ___
+.Vector2Normalize: Value ___
+.Vector2Magnitude: Value ___
+.Vector2Reflect: Direction .XYZ Normal .XYZ
+.Vector2Reflect: Direction ___ Normal ___
+.Rotate Vector: Value .XYZ Delta ___
+.Max: ValueA .0 ValueB .0
+.Min: ValueA .0 ValueB .0
+.Lerp: ValueA .0 ValueB .0 ValueT .0
+.Clamp: Value .0 Min .0 Max .0
+.Exponentiation: Base .0 Exponent .0
+.Logarithm: Base .0 Real Number .0
+.Ceil: Value  .0
+.Floor: Value  .0
+.Round: Value  .0
+.ASin: Value  .0
+.ACos: Value  .0
+.Sin: Degree .0
+.Cos: Degree .0
+.Tan: Degree .0
+.Value: Degree .0
+.ATan2: Y .0 X .0
+.Quaternion Angle: Left Value ___ Right Value ___
+.Quaternion Dot: Left Value ___ Right Value ___
+.Quaternion Inverse: Value ___
+.Quaternion From To Rotation: From .XYZ To .XYZ
+.Quaternion Rotate Toward: From ___ To ___ Max Degree Delta .0
+
+End of the Math sub category now move to the next
+
+Now start of the List sub category
+
+DATA - LIST:
+
+Append: Target ___ Value ___
+Remove: Target ___ Value ___
+.Contain: Target ___ Value ___
+Modify: List ___ Index .0 Value ___
+.Obtain: List ___ Index .0
+.Length: Target ___
+Remove At: Target ___ Index .0
+Append Range: Target ___ Value ___
+.Index Of: Target ___ Value ___
+.Last Index Of: Target ___ Value ___
+Clear: Target ___
+Reverse: Target ___
+.Clone: Target ___
+Insert: Target ___ Index .0 Value ___
+Shuffle: Target ___
+.Is Equal: Left Value ___ Right Value ___
+Max: Target ___ (Is Success, Result)
+Min: Target ___ (Is Success, Result)
+
+List Done ✅ 
+
+Now move to the next 
+
+DATA - DICTIONARY:
+
+.Create Random Seed: Seed .0
+.Next: Value .0 Min .0 Max .0
+
+End of the Sub category, it was short so now move to the next one 
+
+DATA - VECTOR:
+
+.Get vector: X .0  Y .0  Z .0
+.Get x vector vomponent: Vector .XYZ
+.Get y vector component: Vector .XYZ
+.Obtain z vector component: Vector .XYZ
+Set x vector component: Vector .XYZ X .0
+Set y vector component: Vector .XYZ Y .0
+Set z vector component: Vector .XYZ Z .0
+New Vector2: X .0 Y .0
+.Vector2 Get X: 2D Vector ___
+.Vector2 Get Y: 2D Vector ___
+Vector2 Set X: 2D Vector ___ X .0
+Vector2 Set Y: 2D Vector ___ Y .0
+
+Vector sub category has ended now move to the next and it's STRINGS and before I start I wanna say something and it's that you can see I often wrote .'please enter the content' which is a string component so from now on I'll write it as .text like this okay?
+
+DATA - STRINGS:
+
+.Connect: Value1 ___ Value2 ___ ➕(i already explained what this sign ➕ means)
+.Length: Value .text
+.Replace: Target .text Old Value .text New Value .text
+.Find: Target .text Find Value .text Start Index .0
+.Sub: Target .text Start Index .0 Length .0
+.Find At: Target .text Indexs ___
+.Split: Target .text Separator .text
+.Join: Target ___ Sep .text
+.To Upper: Target .text
+.To Lower: Target .text
+.Strip: Target .text
+.Format String: Content .text Parameters Array ___
+
+Move to next one
+
+DATA - CONVERT:
+
+.To String: Target ___
+String To Int: Target .text (Result, Is Success)
+String To Float: Target .text (Result, Is Success)
+.Int To Float: Value .0
+.Vector3 To Vector2: Target .XYZ
+.Vector2 To Vector3: Target___
+.Euler Angle to Vector3: Value .XYZ
+.Direction to Euler Angle: Direction .XYZ
+.Timestamp to Localized String (ms): Timestamp (ms) ___ Style .---
+.Bitwise List to Int: Bit Array ___
+.Bitwise Int to List: Value .0
+
+End of the CONVERT sub category and now the ENUM sub category and I'm not gonna explain all the things in the drop down of each, instead I'll tell you their type all those components
+
+There are several type of enum components such as
+1. Damage Type .---
+2. Score Type .---
+3. Built-in UI Type (I'm not writting.--- because it's time consuming so don't get confused, yk what maybe I don't need to type them as I already told u up there hehe)
+4. Icon Type
+5. VFX Type
+6. Sound Effect Type
+7. Item ID Type
+8. Dynamic Create Level Object Type
+9. Property Modify Type
+10. Inventory Type
+11. Type Enum
+12. Patrol Style Type
+13. Patrol Type
+14. Money Type
+15. SkyboxType
+16. Player Revival Source Type
+17. Equipment Type
+18. Aim Assist Type
+19. Player Behaviour Status Type
+20. Buff Type
+21. Loot Weapon Type
+22. Object Texture
+23. Monster Type
+24. Effect Texture Type
+25. Loot Armor Type
+26. Loot Ammo Type
+27. Loot Consumable Type
+28. Loot Throwable Type
+29. Loot Scope Type
+30. Movable Platform Type
+31. Tween Style Type
+32. Coordinate System Type
+33. Mini Sentry Attack Range Type
+34. Loot Scorer Type
+35. Character skill
+36. Outfit Slot Type
+37. Player UI Type
+38. Switch Equip Slot
+39. 3-Status Switch
+40. Gender Type
+41. Special ID Type
+42. Equipment Slot Type
+43. Damage Body Part Type
+44. Fill Direction Type
+45. Fill Type
+46. Seat Type
+47. Font Type
+48. Player Pose Type
+49. Knok-down Type
+50. Action Type
+51. Fire Type
+52. Layout Sort Type
+53. Status Code
+54. Camera Viewing Angle Restriction Type
+55. Weapon Skin Type
+56. Backpack Skin Type
+57. Fog Mode Type
+58. Rigidbody Constrain Type
+59. Phase And Round Enum
+60. Force Type
+61. LoopType
+62. Render Quality Type
+63. Player State Type
+64. Vehicle Skin Type
+65. Outfit Skin Type
+
+
+Ufff it has finally ended now, I don't wanna say any more word about this, now move to the logic Category
+
+LOGIC:
+
+'if else statement'
+and 
+'if statement'
+ and 
+Then we have 'conditional loop'
+then we have 'loop of integer range' which returns ( index name ) and then together we have 'Start Value .0 End Value .10 Step .1'
+Then we have 'Loop every element' (Index Name, Element) Data Container ___
+Two more block in logic are Continue to next and Break Loop
+
+Logic Category ends here 
+
+And for VARIABLE category, it can be created as Bool, Int, Float, String, Vector2, Vector3, Any Type
+
+And yk what Function is
+
+
+And one main thing about VARIABLES and Functions is that if you create a variable or function inside Global scripting tab then you can drag and drop them in any script like player or team script or any perticular in game asset's or hud's or teiggers's script editor but if you create in player then it can be usable in the player only, if in 1 of the trigger then it can be used in that perticular trigger only
