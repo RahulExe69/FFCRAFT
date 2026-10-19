@@ -23,6 +23,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 15. [Machine-readable block inventory](research/user-observed-block-inventory.json)
 16. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
 17. [AI Craftland coding workflow](docs/14-ai-craftland-coding-workflow.md) — the repeatable process for translating game ideas into verified block/code implementations.
+18. [Viability decision and effort budget](docs/15-viability-decision.md) — what is supported, where FFCRAFT adds value, when an install is needed, and the proof-first next step.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
