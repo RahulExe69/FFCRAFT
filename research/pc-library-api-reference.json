@@ -8,14 +8,14 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 40,
-    "functions": 672,
-    "events": 252,
-    "component_declarations": 467,
-    "component_properties": 3207,
-    "deprecated_functions": 228,
-    "server_functions": 372,
-    "client_functions": 53
+    "libraries": 42,
+    "functions": 681,
+    "events": 259,
+    "component_declarations": 470,
+    "component_properties": 3219,
+    "deprecated_functions": 232,
+    "server_functions": 376,
+    "client_functions": 54
   },
   "libraries": [
     {
@@ -60041,6 +60041,537 @@
       ],
       "events": [],
       "components": []
+    },
+    {
+      "path": "library/release/Time.fcc",
+      "source_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc",
+      "text_length": 1142,
+      "functions": [
+        {
+          "name": "GetLocalTimestamp",
+          "signature": "[platform_client] func GetLocalTimestamp() int",
+          "parameters_text": "",
+          "return_type": "int",
+          "description": "Get local timestamp",
+          "doc_title": "Get Local Timestamp",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Timestamp"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "PauseFixedUpdate",
+          "signature": "func PauseFixedUpdate()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "PauseGame",
+          "signature": "[deprecated] func PauseGame()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `PauseFixedUpdate` instead",
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "ResumeFixedUpdate",
+          "signature": "func ResumeFixedUpdate()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "ResumeGame",
+          "signature": "[deprecated] func ResumeGame()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": null,
+          "doc_title": null,
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `ResumeFixedUpdate` instead",
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnFixedUpdate",
+          "signature": "event OnFixedUpdate()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered when a fixed frame is updated, the frequency is fixed at 30 times per second.",
+          "doc_title": "On Fixed Update",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Entity",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "OnGamePause",
+          "signature": "event OnGamePause()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Fired after calling the pause game API.",
+          "doc_title": "On Game Pause",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        },
+        {
+          "name": "OnGameResume",
+          "signature": "event OnGameResume()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Triggered after calling the resume game API.",
+          "doc_title": "On Game Resume",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Time.fcc",
+            "blob_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc"
+          }
+        }
+      ],
+      "components": []
+    },
+    {
+      "path": "library/release/Workflow.fcc",
+      "source_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920",
+      "text_length": 2751,
+      "functions": [
+        {
+          "name": "SwitchPhase",
+          "signature": "[platform_server] func SwitchPhase(phaseIndex int)",
+          "parameters_text": "phaseIndex int",
+          "return_type": null,
+          "description": "Switches the game to the target phase. The round is also a special phase. When switching to the phase in the round, the round count is 0.",
+          "doc_title": "Switch Phase",
+          "parameters": [
+            {
+              "name": "phaseIndex",
+              "type": "int",
+              "description": "The index of the target round or phase"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "SetGameNextPhase",
+          "signature": "[deprecated] func SetGameNextPhase(phaseIndex int)",
+          "parameters_text": "phaseIndex int",
+          "return_type": null,
+          "description": "Switches the game to the target phase. The round is also a special phase. When switching to the phase in the round, the round count is 0.",
+          "doc_title": "Switch Phase",
+          "parameters": [
+            {
+              "name": "phaseIndex",
+              "type": "int",
+              "description": "The index of the target round or phase"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SwitchPhase` instead",
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "EndCurrentPhase",
+          "signature": "[platform_server] func EndCurrentPhase()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "End the current stage and enter the next stage",
+          "doc_title": "End Current Phase",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "EndGameCurrentPhase",
+          "signature": "[deprecated] func EndGameCurrentPhase()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "End the current stage and enter the next stage",
+          "doc_title": "End Current Phase",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `EndCurrentPhase` instead",
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnRoundStart",
+          "signature": "event OnRoundStart(roundIndex int)",
+          "parameters_text": "roundIndex int",
+          "return_type": null,
+          "description": "Triggered at the start of each round.",
+          "doc_title": "On Round Start",
+          "parameters": [
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round index, starting from 0"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "OnRoundEnd",
+          "signature": "event OnRoundEnd(roundIndex int)",
+          "parameters_text": "roundIndex int",
+          "return_type": null,
+          "description": "Triggered at the end of each round.",
+          "doc_title": "On Round End",
+          "parameters": [
+            {
+              "name": "roundIndex",
+              "type": "int",
+              "description": "Round index, starting from 0"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "OnPhaseStart",
+          "signature": "event OnPhaseStart(phase entity<Phase>)",
+          "parameters_text": "phase entity<Phase>",
+          "return_type": null,
+          "description": "Triggered at the beginning of each phase.",
+          "doc_title": "On Phase Start",
+          "parameters": [
+            {
+              "name": "phase",
+              "type": "entity<Phase>",
+              "description": "Stage Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "OnPhaseEnd",
+          "signature": "event OnPhaseEnd(phase entity<Phase>)",
+          "parameters_text": "phase entity<Phase>",
+          "return_type": null,
+          "description": "Triggered at the end of each phase.",
+          "doc_title": "On Phase End",
+          "parameters": [
+            {
+              "name": "phase",
+              "type": "entity<Phase>",
+              "description": "Stage Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "CurrentRoundIndex",
+              "type": "int",
+              "description": "Current round index, through this value you can get the current round entity.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "CurrentPhaseIndex",
+              "type": "int",
+              "description": "Current phase index, by this value you can get the current phase entity.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "TotalRoundCount",
+              "type": "int",
+              "description": "Total Round Count",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "SumRoundCount",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "Phase",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "Index",
+              "type": "int",
+              "description": "Index of the current phase, corresponding to the index in the flow editor",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhaseIndex",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartTime",
+              "type": "int",
+              "description": "Start time of the current phase, in ms.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhaseStartTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "EndTime",
+              "type": "int",
+              "description": "The end time of the current phase in ms.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhaseEndTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "Duration",
+              "type": "int",
+              "description": "Duration of the current phase in ms.",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "PhaseDuration",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        },
+        {
+          "name": "Round",
+          "kind": "component",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/Workflow.fcc",
+            "blob_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920"
+          }
+        }
+      ]
     }
   ]
 }
