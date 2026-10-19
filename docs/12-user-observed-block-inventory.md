@@ -21,7 +21,7 @@
 ## Summary
 
 - Extracted sections: **35**
-- Candidate block/component lines indexed: **473**
+- Candidate block/component lines indexed: **443**
 - Enum-like dropdown types recorded: **65**
 - Original source lines: **677**
 
@@ -50,7 +50,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### EVENT — GLOBAL EVENT
 
-- **EVENT - GLOBAL EVENT** — `EVENT - GLOBAL EVENT:` _(Rough.txt line 22; unverified)_
 - **On Game Start** — `On Game Start` _(Rough.txt line 24; unverified)_
 - **On Round Start (Round Index)** — `On Round Start (Round Index)` _(Rough.txt line 25; unverified)_
 - **On Round End (Round Index)** — `On Round End (Round Index)` _(Rough.txt line 26; unverified)_
@@ -72,7 +71,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### EVENT — PRIVATE EVENT
 
-- **EVENT - PRIVATE EVENT** — `EVENT - PRIVATE EVENT:` _(Rough.txt line 43; unverified)_
 - **On Awake** — `On Awake` _(Rough.txt line 45; unverified)_
 - **On Update** — `On Update` _(Rough.txt line 46; unverified)_
 - **On Destroy** — `On Destroy` _(Rough.txt line 47; unverified)_
@@ -127,7 +125,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — STD LIBRARY
 
-- **ACTION - STD LIBRARY** — `ACTION - STD LIBRARY:` _(Rough.txt line 110; unverified)_
 - **Set Property** — `Set Property: Entity ___ Entity --- Set Property --- Operation = ___ (so suppose at first drop menu i add player then in the 1st drop down i have to select player entity then in the second drop down i can select what to edit like hp position orientation knockout state etc. like that we can also set property of othe entity and assets and everything)` _(Rough.txt line 112; unverified)_
 - **Get Property** — `.Get Property: Entity ___ Entity --- Set Property ---` _(Rough.txt line 113; unverified)_
 - **Get Global** — `.Get Global` _(Rough.txt line 114; unverified)_
@@ -166,7 +163,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — SCENE
 
-- **ACTION - SCENE** — `ACTION - SCENE:` _(Rough.txt line 150; unverified)_
 - **Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)** — `Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)` _(Rough.txt line 152; unverified)_
 
 ### ACTION — LEVEL OBJECT
@@ -181,7 +177,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — ITEMS
 
-- **ACTION - ITEMS** — `ACTION - ITEMS:` _(Rough.txt line 170; unverified)_
 - **Add Item** — `Add Item : Target ___ Item --- Count  0  (Created Entity) { here in the drop down menu, all the available in game items are available from attachment to consumable and to guns and everything of the game we can select that from there}` _(Rough.txt line 172; unverified)_
 - **Create Item In Scene** — `Create Item In Scene: Position .XYZ items --- Counts  0` _(Rough.txt line 173; unverified)_
 - **Destroy Target** — `Destroy Target: Target ___ Item ___ Count  0` _(Rough.txt line 174; unverified)_
@@ -200,7 +195,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — UI
 
-- **ACTION  - UI** — `ACTION  - UI:` _(Rough.txt line 190; unverified)_
 - **Create Built in UI** — `Create Built in UI: Target ___ Type ___ (Created Entity)` _(Rough.txt line 192; unverified)_
 - **Create Custom HUD** — `Create Custom HUD: Player ___ HUD Index --- (Interface Entity)` _(Rough.txt line 193; unverified)_
 - **Get Widget From Custom UI** — `.Get Widget From Custom UI: Target ___ Custom UI --- Widget ID ---` _(Rough.txt line 194; unverified)_
@@ -211,13 +205,11 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — COMBAT
 
-- **ACTION - COMBAT** — `ACTION - COMBAT:` _(Rough.txt line 202; unverified)_
 - **Deal Damage** — `Deal Damage: Target ___ Type --- Damage _0_` _(Rough.txt line 204; unverified)_
 - **Deal Damage** — `Deal Damage: Target ___ Attacker ___ Type --- Damage _0_` _(Rough.txt line 205; unverified)_
 
 ### ACTION — PLAYABLE
 
-- **ACTION - PLAYABLE** — `ACTION - PLAYABLE:` _(Rough.txt line 209; unverified)_
 - **Reset** — `Reset: Target ___` _(Rough.txt line 211; unverified)_
 - **Play** — `Play: Target ___ Reset ---tf` _(Rough.txt line 212; unverified)_
 - **Pause** — `Pause: Target ___` _(Rough.txt line 213; unverified)_
@@ -233,7 +225,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — AI
 
-- **ACTION - AI** — `ACTION - AI:` _(Rough.txt line 226; unverified)_
 - **Enable Default Behaviour Tree** — `Enable Default Behaviour Tree : Target ___ Enable ---tf` _(Rough.txt line 228; unverified)_
 - **Pursuit Target** — `Pursuit Target: Target ___ Pursuit Target ___` _(Rough.txt line 229; unverified)_
 - **Patrol To** — `Patrol To: Target ___ Position .XYZ Come Back ---tf Style ---` _(Rough.txt line 230; unverified)_
@@ -242,7 +233,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### ACTION — BEHAVIOUR TREE
 
-- **ACTION - BEHAVIOUR TREE** — `ACTION - BEHAVIOUR TREE:` _(Rough.txt line 236; unverified)_
 - **Set Blackboard Value** — `Set Blackboard Value: Behaviour Tree ___  Key .please enter the content  Value ___` _(Rough.txt line 238; unverified)_
 - **Get Blackboard Value** — `Get Blackboard Value: Behaviour Tree ___  Key .please enter the content  (Value)` _(Rough.txt line 239; unverified)_
 - **Get Node Variable** — `Get Node Variable: Node ___ Key . Please enter the content (Value)` _(Rough.txt line 240; unverified)_
@@ -264,7 +254,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — GLOBAL
 
-- **Now get's started GAME - GLOBAL** — `Now get's started GAME - GLOBAL:` _(Rough.txt line 275; unverified)_
 - **Pause Fixed Update** — `Pause Fixed Update` _(Rough.txt line 277; unverified)_
 - **Resume Fixed Update** — `Resume Fixed Update` _(Rough.txt line 278; unverified)_
 - **Enable Safe Zone** — `Enable Safe Zone: Center .XYZ Radius . 0  Wait Time (s) . 0  Duration (s) . 0  Damage . 0` _(Rough.txt line 279; unverified)_
@@ -275,7 +264,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — PLAYER
 
-- **GAME - PLAYER** — `GAME - PLAYER:` _(Rough.txt line 285; unverified)_
 - **Add HP** — `Add HP: Target ___ Value .0` _(Rough.txt line 287; unverified)_
 - **Teleport** — `Teleport: Target ___ Position .xyz Rotation .xyz` _(Rough.txt line 288; unverified)_
 - **Gey Owner** — `.Gey Owner: Target ___` _(Rough.txt line 289; unverified)_
@@ -293,7 +281,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — TEAM
 
-- **Now to the next one GAME - TEAM** — `Now to the next one GAME - TEAM:` _(Rough.txt line 303; unverified)_
 - **Set Attackable Team** — `Set Attackable Team: Attacker ___ Target ___ Attackable .---tf` _(Rough.txt line 305; unverified)_
 - **Get Position Near Team** — `.Get Position Near Team: Target ___` _(Rough.txt line 306; unverified)_
 - **Set Attackable Entity** — `Set Attackable Entity: Attacker ___ Target ___ Attackable .---tf` _(Rough.txt line 307; unverified)_
@@ -304,7 +291,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — PHYSICS
 
-- **GAME - PHYSICS** — `GAME - PHYSICS:` _(Rough.txt line 315; unverified)_
 - **Is Inside Sphere** — `.Is Inside Sphere: Target ___ Center .XYZ Radius . 0` _(Rough.txt line 317; unverified)_
 - **Is Inside Cylinder** — `.Is Inside Cylinder: Target ___ Center .XYZ Radius . 0  Height . 0  Rotation.xyz` _(Rough.txt line 318; unverified)_
 - **Is Inside Box** — `.Is Inside Box: Target ___ Center .XYZ Length . 0 Width . 0  Height . 0  Rotation.xyz` _(Rough.txt line 319; unverified)_
@@ -320,20 +306,17 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — CAMERA
 
-- **GAME - CAMERA** — `GAME - CAMERA:` _(Rough.txt line 332; unverified)_
 - **Get Current Custom Camera** — `.Get Current Custom Camera: Target ___` _(Rough.txt line 334; unverified)_
 - **Switch Custom Camera** — `Switch Custom Camera: Player ___ Camera ___ Transition Type --- Transition Time (ms) .0` _(Rough.txt line 335; unverified)_
 - **Create Custom Camera (Created Entity)** — `Create Custom Camera (Created Entity)` _(Rough.txt line 336; unverified)_
 
 ### GAME — WORK FLOW
 
-- **GAME - WORK FLOW** — `GAME - WORK FLOW:` _(Rough.txt line 338; unverified)_
 - **Switch Phase** — `Switch Phase: Phase Index .0` _(Rough.txt line 340; unverified)_
 - **End Current Phase** — `End Current Phase` _(Rough.txt line 341; unverified)_
 
 ### GAME — ECONOMY
 
-- **GAME - ECONOMY** — `GAME - ECONOMY:` _(Rough.txt line 343; unverified)_
 - **Get Wallet** — `Get Wallet: Target ___ (IsExist, Wallet)` _(Rough.txt line 345; unverified)_
 - **Create Wallet** — `Create Wallet: Owner ___ Target ___ (Created Entity)` _(Rough.txt line 346; unverified)_
 - **Add Money** — `Add Money: Target ___ Money Type --- Count .0` _(Rough.txt line 347; unverified)_
@@ -349,20 +332,17 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — MINIMAP
 
-- **GAME - MINIMAP** — `GAME - MINIMAP:` _(Rough.txt line 360; unverified)_
 - **Create Mini Map Icon** — `Create Mini Map Icon: Target ___ Resource --- (Created Entity)` _(Rough.txt line 362; unverified)_
 - **Create Mini Map Pixel** — `Create Mini Map Pixel: Target ___ Bound Target ___ (Created Entity)` _(Rough.txt line 363; unverified)_
 
 ### GAME — ANIMATION
 
-- **GAME - ANIMATION** — `GAME - ANIMATION:` _(Rough.txt line 366; unverified)_
 - **Play Animation** — `Play Animation: Target ___ State .'please enter the content' Play Speed .0 Loop Type ---` _(Rough.txt line 368; unverified)_
 - **Stop Animation** — `Stop Animation: Target ___ State .'please enter the content'` _(Rough.txt line 369; unverified)_
 - **Set Body Part Weight** — `Set Body Part Weight: Target ___ Body Part Name .' please enter the content' Weight .0` _(Rough.txt line 370; unverified)_
 
 ### GAME — COLLECTION
 
-- **GAME - COLLECTION** — `GAME - COLLECTION:` _(Rough.txt line 374; unverified)_
 - **Play Emote** — `Play Emote: Target ___ Emote .---` _(Rough.txt line 376; unverified)_
 - **Pause Emote** — `Pause Emote: Target ___ Is Pause .---tf` _(Rough.txt line 377; unverified)_
 - **Get Outfit** — `.Get Outfit: Target ___ Type ___` _(Rough.txt line 378; unverified)_
@@ -384,12 +364,10 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### GAME — STORY
 
-- **GAME - STORY** — `GAME - STORY:` _(Rough.txt line 397; unverified)_
 - **Notify Start Plot** — `Notify Start Plot: Target ___ Plot ID ___` _(Rough.txt line 399; unverified)_
 
 ### GAME — OTHER
 
-- **GAME - OTHER** — `GAME - OTHER:` _(Rough.txt line 404; unverified)_
 - **End Morph** — `End Morph: Player ___` _(Rough.txt line 406; unverified)_
 - **Morph To** — `Morph To: Player ___ Target ___ ( Created Entity)` _(Rough.txt line 407; unverified)_
 - **Copy To Morph** — `Copy To Morph: Player ___ Target ___ ( Created Entity)` _(Rough.txt line 408; unverified)_
@@ -402,7 +380,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — BASIC
 
-- **DATA - BASIC** — `DATA - BASIC:` _(Rough.txt line 431; unverified)_
 - **Number = .0** — `Number = .0` _(Rough.txt line 435; unverified)_
 - **String = . 'Please enter the content'** — `String = . 'Please enter the content'` _(Rough.txt line 436; unverified)_
 - **Vector3 = .X0 Y0 Z0** — `Vector3 = .X0 Y0 Z0` _(Rough.txt line 437; unverified)_
@@ -415,7 +392,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — MATH
 
-- **DATA - MATH** — `DATA - MATH:` _(Rough.txt line 449; unverified)_
 - **___ ---___➕** — `.___ ---___➕ (in this component that drop down has +-*/% and clicking that ➕ icon will add another slot and a drop down yk, it's like we can add multiple slots like this ___---___---___---___)` _(Rough.txt line 451; unverified)_
 - **Random Int** — `.Random Int: Min .0 Max .0` _(Rough.txt line 452; unverified)_
 - **Random Float** — `.Random Float: Min .0 Max .0` _(Rough.txt line 453; unverified)_
@@ -469,7 +445,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — LIST
 
-- **DATA - LIST** — `DATA - LIST:` _(Rough.txt line 506; unverified)_
 - **Append** — `Append: Target ___ Value ___` _(Rough.txt line 508; unverified)_
 - **Remove** — `Remove: Target ___ Value ___` _(Rough.txt line 509; unverified)_
 - **Contain** — `.Contain: Target ___ Value ___` _(Rough.txt line 510; unverified)_
@@ -491,13 +466,11 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — DICTIONARY
 
-- **DATA - DICTIONARY** — `DATA - DICTIONARY:` _(Rough.txt line 531; unverified)_
 - **Create Random Seed** — `.Create Random Seed: Seed .0` _(Rough.txt line 533; unverified)_
 - **Next** — `.Next: Value .0 Min .0 Max .0` _(Rough.txt line 534; unverified)_
 
 ### DATA — VECTOR
 
-- **DATA - VECTOR** — `DATA - VECTOR:` _(Rough.txt line 538; unverified)_
 - **Get vector** — `.Get vector: X .0  Y .0  Z .0` _(Rough.txt line 540; unverified)_
 - **Get x vector vomponent** — `.Get x vector vomponent: Vector .XYZ` _(Rough.txt line 541; unverified)_
 - **Get y vector component** — `.Get y vector component: Vector .XYZ` _(Rough.txt line 542; unverified)_
@@ -513,7 +486,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — STRINGS
 
-- **DATA - STRINGS** — `DATA - STRINGS:` _(Rough.txt line 555; unverified)_
 - **Connect** — `.Connect: Value1 ___ Value2 ___ ➕(i already explained what this sign ➕ means)` _(Rough.txt line 557; unverified)_
 - **Length** — `.Length: Value .text` _(Rough.txt line 558; unverified)_
 - **Replace** — `.Replace: Target .text Old Value .text New Value .text` _(Rough.txt line 559; unverified)_
@@ -529,7 +501,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### DATA — CONVERT
 
-- **DATA - CONVERT** — `DATA - CONVERT:` _(Rough.txt line 572; unverified)_
 - **To String** — `.To String: Target ___` _(Rough.txt line 574; unverified)_
 - **String To Int** — `String To Int: Target .text (Result, Is Success)` _(Rough.txt line 575; unverified)_
 - **String To Float** — `String To Float: Target .text (Result, Is Success)` _(Rough.txt line 576; unverified)_
@@ -612,7 +583,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 
 ### LOGIC — CONTROL FLOW
 
-- **LOGIC** — `LOGIC:` _(Rough.txt line 658; unverified)_
 - **'if else statement'** — `'if else statement'` _(Rough.txt line 660; unverified)_
 - **'if statement'** — `'if statement'` _(Rough.txt line 662; unverified)_
 - **Then we have 'conditional loop'** — `Then we have 'conditional loop'` _(Rough.txt line 664; unverified)_
