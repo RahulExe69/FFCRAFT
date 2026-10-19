@@ -1395,7 +1395,7 @@
       "subcategory": "TEAM",
       "heading": "Now to the next one GAME - TEAM:",
       "start_line": 303,
-      "end_line": 312,
+      "end_line": 314,
       "entries": [
         {
           "name": "Set Attackable Team",
@@ -1440,14 +1440,6 @@
           "confidence": "user-observed; not independently verified"
         }
       ]
-    },
-    {
-      "category": "GAME",
-      "subcategory": "TEAM NOW MOVE TO THE PHYSICS AND BEFORE MOVING I WANT YOU TO KNOW THAT IF YOU ARE UNABLE TO UNDERSTAND OR WANT TO UNDERSTAND A CODE BLOCK THEN ASK ME, I'LL TRY MY BEST",
-      "heading": "End of the GAME -TEAM now move to the Physics and before moving i want you to know that if you are unable to understand or want to understand a code block then ask me, I'll try my best",
-      "start_line": 313,
-      "end_line": 314,
-      "entries": []
     },
     {
       "category": "GAME",
@@ -3056,9 +3048,39 @@
       "end_line": 670,
       "entries": [
         {
+          "name": "'if else statement'",
+          "observed_signature": "'if else statement'",
+          "source_line": 660,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "'if statement'",
+          "observed_signature": "'if statement'",
+          "source_line": 662,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Then we have 'conditional loop'",
+          "observed_signature": "Then we have 'conditional loop'",
+          "source_line": 664,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "then we have 'loop of integer range' which returns",
+          "observed_signature": "then we have 'loop of integer range' which returns ( index name ) and then together we have 'Start Value .0 End Value .10 Step .1'",
+          "source_line": 665,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
           "name": "Then we have 'Loop every element'",
           "observed_signature": "Then we have 'Loop every element' (Index Name, Element) Data Container ___",
           "source_line": 666,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Two more block in logic are Continue to next and Break Loop",
+          "observed_signature": "Two more block in logic are Continue to next and Break Loop",
+          "source_line": 667,
           "confidence": "user-observed; not independently verified"
         }
       ]
@@ -3122,11 +3144,15 @@
     {
       "finding": "The rough notes describe the block editor, while the official docs also cover code scripts, .fcg/.fcc, client/server constraints, and PC/mobile differences.",
       "action": "Keep visual block inventory separate from the PC code/API reference and explicitly link the shared concepts."
+    },
+    {
+      "finding": "The section headed 'DATA - DICTIONARY' lists Create Random Seed and Next, which look like random-seed utilities rather than dictionary operations.",
+      "action": "Verify the actual editor subcategory label and move/alias these entries only after the installed editor confirms their placement."
     }
   ],
   "counts": {
-    "sections": 36,
-    "extracted_lines": 436,
+    "sections": 35,
+    "extracted_lines": 441,
     "observed_enum_type_names": 65,
     "original_lines": 677
   }
