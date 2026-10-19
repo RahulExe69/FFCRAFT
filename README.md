@@ -23,6 +23,12 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 15. [Machine-readable block inventory](research/user-observed-block-inventory.json)
 16. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
 
+## Author-contributed inventory
+
+- [Original `Rough.txt`](Rough.txt) — Rahul's raw, hand-typed editor observations. Preserved as authored; not official or independently verified.
+- [Normalized block inventory](docs/12-user-observed-block-inventory.md) — searchable draft grouped by category and subcategory.
+- [Machine-readable block inventory](research/user-observed-block-inventory.json) — extracted candidates with source-line references and verification labels.
+
 ## Current verified baseline
 
 - Garena's official portal separates **Craftland Mobile** learning content from the more expansive **Craftland Studio PC** manual. They should not be treated as identical authoring environments.
