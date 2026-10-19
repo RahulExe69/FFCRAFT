@@ -12,12 +12,12 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 37,
-    "enums": 142,
-    "enum_members": 2263,
-    "functions": 640,
-    "events": 246,
-    "components": 413,
+    "libraries": 42,
+    "enums": 144,
+    "enum_members": 2274,
+    "functions": 681,
+    "events": 259,
+    "components": 419,
     "aliases": 20,
     "defined_types": 50
   },
@@ -16857,6 +16857,394 @@
       "components": [
         "Global",
         "SafeZone"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Scene.fcc",
+      "source_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c",
+      "bytes_text": 7810,
+      "enum_count": 2,
+      "enum_member_count": 11,
+      "function_count": 14,
+      "event_count": 6,
+      "component_count": 3,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "SkyboxType",
+          "members": [
+            {
+              "name": "Day",
+              "value": "\"UGC_SKYENV_DAY\"",
+              "notes": "Daytime: Day"
+            },
+            {
+              "name": "Night",
+              "value": "\"UGC_SKYENV_NIGHT\"",
+              "notes": "Night: Night"
+            },
+            {
+              "name": "Dusk",
+              "value": "\"UGC_SKYENV_EVE\"",
+              "notes": "Dusk: Dusk"
+            },
+            {
+              "name": "City",
+              "value": "\"UGC_SKYENV_CITY\"",
+              "notes": "City: City View"
+            },
+            {
+              "name": "CityBuilding",
+              "value": "\"UGC_SKYENV_CITY\"",
+              "notes": "@deprecated Use `City` instead"
+            },
+            {
+              "name": "Colorful",
+              "value": "\"UGC_SKYENV_COLORFULSKY\"",
+              "notes": "Colorful Sky: Colorful Sky"
+            },
+            {
+              "name": "FrostGalaxy",
+              "value": "\"UGC_SKYENV_SNOW\"",
+              "notes": "Frost Galaxy: Frost Moon"
+            },
+            {
+              "name": "Snow",
+              "value": "\"UGC_SKYENV_SNOW\"",
+              "notes": "@deprecated Use `FrostGalaxy` instead"
+            }
+          ]
+        },
+        {
+          "name": "FogModeType",
+          "members": [
+            {
+              "name": "Linear",
+              "value": "1",
+              "notes": "Linear: Linear Fog"
+            },
+            {
+              "name": "Exponential",
+              "value": "2",
+              "notes": "Exponential: Exponential Fog"
+            },
+            {
+              "name": "ExponentialSquared",
+              "value": "3",
+              "notes": "Exponential Squared: Exponential Square Fog"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetMapID",
+          "signature": "[platform_server] func GetMapID(sceneID string) int"
+        },
+        {
+          "name": "LoadScene",
+          "signature": "[platform_server] func LoadScene(sceneID string) //@deprecated Use `LoadScene` instead"
+        },
+        {
+          "name": "Load",
+          "signature": "[deprecated] func Load(sceneID string) /**"
+        },
+        {
+          "name": "UnloadScene",
+          "signature": "[platform_server] func UnloadScene(sceneID string) //@deprecated Use `UnloadScene` instead"
+        },
+        {
+          "name": "Unload",
+          "signature": "[deprecated] func Unload(sceneID string) /**"
+        },
+        {
+          "name": "SwitchScene",
+          "signature": "[platform_server] func SwitchScene(sceneID string) //@deprecated Use `SwitchScene` instead"
+        },
+        {
+          "name": "Switch",
+          "signature": "[deprecated] func Switch(sceneID string) /**"
+        },
+        {
+          "name": "SetSkybox",
+          "signature": "[platform_server] func SetSkybox(type SkyboxType) //@deprecated Use `SetSkybox` instead"
+        },
+        {
+          "name": "SetSkyboxType",
+          "signature": "[deprecated] func SetSkyboxType(type SkyboxType) /**"
+        },
+        {
+          "name": "SwitchArea",
+          "signature": "[platform_server] func SwitchArea(target entity<Player>, sceneID string, position Vector3, forward Vector3) /**"
+        },
+        {
+          "name": "GetSceneSkybox",
+          "signature": "[platform_server] func GetSceneSkybox(sceneID string) entity<SkyBox>"
+        },
+        {
+          "name": "GetLoadedScenes",
+          "signature": "func GetLoadedScenes() List<string>"
+        },
+        {
+          "name": "FindPath",
+          "signature": "[platform_server] async func FindPath(startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>) //@deprecated Use `FindPath` instead"
+        },
+        {
+          "name": "FindShortestPath",
+          "signature": "[deprecated] async func FindShortestPath(startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnSceneLoad",
+          "signature": "event OnSceneLoad(sceneName string)"
+        },
+        {
+          "name": "OnSceneLoadSuccessed",
+          "signature": "[deprecated] event OnSceneLoadSuccessed(sceneName string)"
+        },
+        {
+          "name": "OnSceneSwitch",
+          "signature": "event OnSceneSwitch(sceneName string)"
+        },
+        {
+          "name": "OnSceneSwitchSuccessed",
+          "signature": "[deprecated] event OnSceneSwitchSuccessed(sceneName string)"
+        },
+        {
+          "name": "OnPlayerSwitchScene",
+          "signature": "[platform_server] event OnPlayerSwitchScene(sceneName string)"
+        },
+        {
+          "name": "OnSwitchArea",
+          "signature": "[deprecated] event OnSwitchArea(sceneName string)"
+        }
+      ],
+      "components": [
+        "SkyBox",
+        "SkyBoxEnv",
+        "Global"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/StatisticalReport.fcc",
+      "source_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5",
+      "bytes_text": 1267,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 4,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "AddGameEventLog_Deprecated",
+          "signature": "[deprecated] [platform_server] func AddGameEventLog_Deprecated(keys List<object>, values List<object>) /**"
+        },
+        {
+          "name": "AddUserEventLog_Deprecated",
+          "signature": "[deprecated] func AddUserEventLog_Deprecated(player entity<Player>, keys List<object>, values List<object>) /**"
+        },
+        {
+          "name": "AddGameEventLog",
+          "signature": "[platform_server] func AddGameEventLog(log Map<object, object>) /**"
+        },
+        {
+          "name": "AddUserEventLog",
+          "signature": "[platform_server] func AddUserEventLog(target entity<Player>, log Map<object, object>)"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Strings.fcc",
+      "source_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7",
+      "bytes_text": 4189,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 14,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "Format",
+          "signature": "func Format(content string, params List<object>) string"
+        },
+        {
+          "name": "Connect",
+          "signature": "func Connect(left object, right object) string"
+        },
+        {
+          "name": "Length",
+          "signature": "func Length(value string) int"
+        },
+        {
+          "name": "Replace",
+          "signature": "func Replace(target string, oldValue string, newValue string) string"
+        },
+        {
+          "name": "Find",
+          "signature": "func Find(target string, findValue string, startIndex int) int"
+        },
+        {
+          "name": "Sub",
+          "signature": "func Sub(target string, startIndex int, length int) string"
+        },
+        {
+          "name": "Split",
+          "signature": "func Split(target string, sepStr string) List<string>"
+        },
+        {
+          "name": "FindAt",
+          "signature": "func FindAt(target string, indexs List<int>) string"
+        },
+        {
+          "name": "ToUpper",
+          "signature": "func ToUpper(target string) string"
+        },
+        {
+          "name": "Upper",
+          "signature": "[deprecated] func Upper(target string) string"
+        },
+        {
+          "name": "ToLower",
+          "signature": "func ToLower(target string) string"
+        },
+        {
+          "name": "Lower",
+          "signature": "[deprecated] func Lower(target string) string"
+        },
+        {
+          "name": "Strip",
+          "signature": "func Strip(target string) string"
+        },
+        {
+          "name": "Join",
+          "signature": "func Join(target List<string>, sep string) string"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Time.fcc",
+      "source_sha": "12e3b0f1ce237a4eb571d99ee6235787e324f5dc",
+      "bytes_text": 1142,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 5,
+      "event_count": 3,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "GetLocalTimestamp",
+          "signature": "[platform_client] func GetLocalTimestamp() int"
+        },
+        {
+          "name": "PauseFixedUpdate",
+          "signature": "func PauseFixedUpdate() //@deprecated Use `PauseFixedUpdate` instead"
+        },
+        {
+          "name": "PauseGame",
+          "signature": "[deprecated] func PauseGame() /**"
+        },
+        {
+          "name": "ResumeFixedUpdate",
+          "signature": "func ResumeFixedUpdate() //@deprecated Use `ResumeFixedUpdate` instead"
+        },
+        {
+          "name": "ResumeGame",
+          "signature": "[deprecated] func ResumeGame() /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnFixedUpdate",
+          "signature": "event OnFixedUpdate()"
+        },
+        {
+          "name": "OnGamePause",
+          "signature": "event OnGamePause()"
+        },
+        {
+          "name": "OnGameResume",
+          "signature": "event OnGameResume()"
+        }
+      ],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Workflow.fcc",
+      "source_sha": "04d9d041c716c3a761a7d34157c0c36597cb9920",
+      "bytes_text": 2751,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 4,
+      "event_count": 4,
+      "component_count": 3,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "SwitchPhase",
+          "signature": "[platform_server] func SwitchPhase(phaseIndex int) //@deprecated Use `SwitchPhase` instead"
+        },
+        {
+          "name": "SetGameNextPhase",
+          "signature": "[deprecated] func SetGameNextPhase(phaseIndex int) /**"
+        },
+        {
+          "name": "EndCurrentPhase",
+          "signature": "[platform_server] func EndCurrentPhase() //@deprecated Use `EndCurrentPhase` instead"
+        },
+        {
+          "name": "EndGameCurrentPhase",
+          "signature": "[deprecated] func EndGameCurrentPhase() /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnRoundStart",
+          "signature": "event OnRoundStart(roundIndex int)"
+        },
+        {
+          "name": "OnRoundEnd",
+          "signature": "event OnRoundEnd(roundIndex int)"
+        },
+        {
+          "name": "OnPhaseStart",
+          "signature": "event OnPhaseStart(phase entity<Phase>)"
+        },
+        {
+          "name": "OnPhaseEnd",
+          "signature": "event OnPhaseEnd(phase entity<Phase>)"
+        }
+      ],
+      "components": [
+        "Global",
+        "Phase",
+        "Round"
       ],
       "aliases": [],
       "defined_types": []
