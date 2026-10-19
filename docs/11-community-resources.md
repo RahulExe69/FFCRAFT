@@ -52,3 +52,12 @@ Before trusting a downloaded block, `.fcg`, `.fcc`, asset, or video:
 For each new community finding, add an entry with the original URL, creator/author, date observed, claimed editor/client version, exact steps, relevant block/API names, expected and actual output, screenshots/logs if available, and an evidence label from `00-research-method.md`.
 
 Never store passwords, account tokens, private Discord content, or other credentials in this repo. Do not commit a map/project dump that contains private player data or personally identifiable information.
+
+
+### Audit: CRAFTLAND_STUDIO_RESOURCES
+
+Link: https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES
+
+This repository is useful for discovery of candidate UGC asset IDs/names, sound labels, skyboxes, rig files and Studio project-template folders. Its latest observed commit during review was 29 September 2025. Some catalogues are explicitly sample data, the script folder has no documented recipe beyond “Updating Soon!”, and the Tools README links to an older Studio 1.14 installer. The repository declares CC0-1.0, but provenance of third-party assets still needs checking.
+
+**Use:** search it for leads, then verify IDs in official docs or the matching installed editor. Do not treat its lists as complete/current or its project folders as validated templates until opened and tested. See [the full audit](16-community-resource-audit.md).
