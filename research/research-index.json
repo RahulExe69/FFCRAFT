@@ -293,7 +293,7 @@
     "status": "draft, user-observed, not independently verified",
     "counts": {
       "sections": 35,
-      "extracted_lines": 473,
+      "extracted_lines": 443,
       "observed_enum_type_names": 65,
       "original_lines": 677
     },
