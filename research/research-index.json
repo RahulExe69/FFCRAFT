@@ -113,7 +113,7 @@
     "docs/00-research-method.md": "Source hierarchy, confidence levels, scope, research caveats and follow-up plan",
     "docs/01-platform-and-fundamentals.md": "Mobile vs PC, concepts, scopes and workflow",
     "docs/02-block-scripting.md": "Block editor, event wiring, templates and common failures",
-    "docs/03-code-scripting.md": "FCG/FCC, libraries, script structure, server/client, VS Code tooling",
+    "docs/03-code-scripting.md": "FCG/FCC structure, server/client rules, official FFUGCLanguage VS Code extension, symbol inspection, compilation and verification workflow",
     "docs/04-events-and-runtime.md": "Event families, runtime authority, lifecycle and event bridge patterns",
     "docs/05-player-roster-join-serials.md": "Monotonic join serial design, identity distinctions and test matrix",
     "docs/06-data-storage.md": "Configured storage, documented quotas and newer PC-only Data Store API caveats",
@@ -366,5 +366,25 @@
     },
     "next_milestone": "Complete one small end-to-end mechanic pilot in separate Mobile-block and Studio-PC-code forms where supported; then expand catalogues only to close demonstrated gaps.",
     "source_doc": "docs/15-viability-decision.md"
+  },
+  "tooling": {
+    "official_vscode_extension": {
+      "name": "Free Fire Craftland Code",
+      "marketplace": "https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage",
+      "capabilities": [
+        "context-aware IntelliSense and code completion",
+        "diagnostics",
+        "hover information",
+        "go to definition and find references",
+        "snippets",
+        "semantic highlighting and color decorators",
+        "optional built-in external compiler"
+      ],
+      "evidence": "official_marketplace_listing",
+      "key_setting": "ffugclanguage.editor.UseExternalCompiler",
+      "caveat": "Compiler success is not proof of correct runtime behavior; confirm API side/platform constraints and playtest in matching Craftland Studio version.",
+      "official_manual": "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
+      "operational_workflow": "Open the project root and a project-created FCG file; inspect FCC definitions; compile and record diagnostics; playtest separately."
+    }
   }
 }
