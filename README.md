@@ -32,6 +32,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 24. [Dropdown/enum crosswalk](docs/21-enum-dropdown-reconstruction.md) — maps the 65 labels in Rough.txt to likely library or official definitions and flags the unresolved set.
 25. [Current official enum/type supplement](docs/22-current-official-enum-supplement.md) — newer official dropdown types missing from the older mirror, plus dynamic skin/texture ID notes.
 26. [Detailed PC API reference](docs/23-pc-api-reference-details.md) — function/event metadata, parameters, deprecations, server/client annotations, and component-property declarations extracted from all 42 mirrored libraries.
+27. [Rough block-symbol crosswalk](docs/24-block-symbol-crosswalk.md) — compares all 443 extracted lines against the recovered PC API/event/component/property catalog, separating exact matches from fuzzy leads and gaps.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -43,6 +44,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Dropdown/enum crosswalk](research/enum-dropdown-crosswalk.json) — maps Rough.txt labels to recovered library definitions and records verification status.
 - [Current official enum/type supplement](research/current-official-enum-supplement.json) — official additions and dynamic ID-type findings missing from the older mirror.
 - [Detailed PC API reference](research/pc-library-api-reference.json) — parsed function/event documentation and component properties from all 42 mirrored library files.
+- [Block-symbol crosswalk](research/block-symbol-crosswalk.json) — line-by-line comparison of Rough.txt against recovered PC symbols, with exact/fuzzy/unmatched statuses.
 
 ## Current verified baseline
 
