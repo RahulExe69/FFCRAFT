@@ -25,6 +25,8 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 17. [AI Craftland coding workflow](docs/14-ai-craftland-coding-workflow.md) — the repeatable process for translating game ideas into verified block/code implementations.
 18. [Viability decision and effort budget](docs/15-viability-decision.md) — what is supported, where FFCRAFT adds value, when an install is needed, and the proof-first next step.
 19. [Community resource repository audit](docs/16-community-resource-audit.md) — what is useful in Nexos Studio Resources, what appears stale/sample-based, and how to verify it safely.
+20. [Curated asset reference](docs/17-curated-asset-reference.md) — six officially documented skybox base types linked to community package leads, with evidence kept separate.
+21. [FE_RESOURCES_BETA audit](docs/18-fe-resources-beta-audit.md) — review of its 68 sample packages for skyboxes, weather, and voting.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
