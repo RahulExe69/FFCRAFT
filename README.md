@@ -33,6 +33,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 25. [Current official enum/type supplement](docs/22-current-official-enum-supplement.md) — newer official dropdown types missing from the older mirror, plus dynamic skin/texture ID notes.
 26. [Detailed PC API reference](docs/23-pc-api-reference-details.md) — function/event metadata, parameters, deprecations, server/client annotations, and component-property declarations extracted from all 42 mirrored libraries.
 27. [Rough block-symbol crosswalk](docs/24-block-symbol-crosswalk.md) — compares all 443 extracted lines against the recovered PC API/event/component/property catalog, separating exact matches from fuzzy leads and gaps.
+28. [Public tutorial corpus audit](docs/25-public-tutorial-corpus-audit.md) — indexes translated Mobile Block Script and PC code/element-script manuals, official-linked screenshots, and 13 reusable mechanism recipes.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -44,7 +45,9 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Dropdown/enum crosswalk](research/enum-dropdown-crosswalk.json) — maps Rough.txt labels to recovered library definitions and records verification status.
 - [Current official enum/type supplement](research/current-official-enum-supplement.json) — official additions and dynamic ID-type findings missing from the older mirror.
 - [Detailed PC API reference](research/pc-library-api-reference.json) — parsed function/event documentation and component properties from all 42 mirrored library files.
-- [Block-symbol crosswalk](research/block-symbol-crosswalk.json) — line-by-line comparison of Rough.txt against recovered PC symbols, with exact/fuzzy/unmatched statuses.
+- [Block-symbol crosswalk](research/block-symbol-crosswalk.json) — line-by-line comparison of Rough.txt against recovered PC symbols, with exact/fuzzy/unmatched statuses and targeted official matches.
+- [Public tutorial manifest](research/public-tutorial-corpus-index.json) — indexes 160 public manual files and key script references.
+- [Mobile block recipe index](research/mobile-block-recipe-index.json) — 13 summarized mechanism examples from a re-editable gameplay template.
 
 ## Current verified baseline
 
