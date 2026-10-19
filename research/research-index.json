@@ -194,6 +194,15 @@
         "https://ffcraftland.garena.com/en/docs/api-26-124",
         "https://ffcraftland.garena.com/en/docs/type-11"
       ]
+    },
+    {
+      "id": "enum-option-set-analysis",
+      "summary": "The 144 enum definitions in the public mirror include 42 groups of different type names sharing the exact same ordered member list; browsing can reuse one list while preserving each type's distinct identity.",
+      "confidence": "exact-set-compare-on-third-party-mirror; not an API equivalence guarantee",
+      "details": "docs/26-enum-option-set-analysis.md",
+      "sources": [
+        "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
+      ]
     }
   ],
   "docs": {
@@ -231,7 +240,9 @@
     "research/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings",
     "docs/25-public-tutorial-corpus-audit.md": "Audit of public multilingual Craftland manuals, mobile visual block examples, PC code/element-script manuals, EditorGenLib and 13 gameplay recipe areas",
     "research/public-tutorial-corpus-index.json": "Manifest of 160 Markdown files in a public translated tutorial corpus with source SHAs, paths, selected headings and topic summaries",
-    "research/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual"
+    "research/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual",
+    "docs/26-enum-option-set-analysis.md": "Documents 42 exact duplicated enum option sets in the old mirror, useful for reducing repeated dropdown research without merging types",
+    "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types"
   },
   "sources": [
     {
