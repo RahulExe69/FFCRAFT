@@ -35,6 +35,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 27. [Rough block-symbol crosswalk](docs/24-block-symbol-crosswalk.md) — compares all 443 extracted lines against the recovered PC API/event/component/property catalog, separating exact matches from fuzzy leads and gaps.
 28. [Public tutorial corpus audit](docs/25-public-tutorial-corpus-audit.md) — indexes translated Mobile Block Script and PC code/element-script manuals, official-linked screenshots, and 13 reusable mechanism recipes.
 29. [Enum option-set analysis](docs/26-enum-option-set-analysis.md) — identifies 42 repeated option lists across differently named PC enums, while preserving each original type identity.
+30. [Current editor capture playbook](docs/27-current-editor-capture-playbook.md) — exact local .fcc path, EditorGenLib and MCP data sources, plus what Mobile screenshots are needed to close the remaining gaps.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
