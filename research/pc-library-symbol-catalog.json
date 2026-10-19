@@ -12,12 +12,14 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 5,
-    "enums": 88,
-    "enum_members": 1958,
-    "functions": 203,
-    "events": 144,
-    "components": 319
+    "libraries": 10,
+    "enums": 100,
+    "enum_members": 2025,
+    "functions": 230,
+    "events": 156,
+    "components": 334,
+    "aliases": 17,
+    "defined_types": 43
   },
   "libraries": [
     {
@@ -12129,6 +12131,681 @@
         "CustomHudOrHudWidget"
       ],
       "defined_types": []
+    },
+    {
+      "path": "library/release/AI.fcc",
+      "source_sha": "6a42baa6cb1d49596617043df5146519734517ac",
+      "bytes_text": 12472,
+      "enum_count": 7,
+      "enum_member_count": 51,
+      "function_count": 10,
+      "event_count": 8,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "MonsterType",
+          "members": [
+            {
+              "name": "Regular",
+              "value": "18",
+              "notes": "Normal: Normal Zombie"
+            },
+            {
+              "name": "UGCAI",
+              "value": "18",
+              "notes": "@deprecated Use `Regular` instead"
+            },
+            {
+              "name": "WoodCutZombie",
+              "value": "4",
+              "notes": "Axe Zombie: Axe Zombie"
+            },
+            {
+              "name": "ThrowZombie",
+              "value": "5",
+              "notes": "Tossing Zombie: Tossing Zombie"
+            },
+            {
+              "name": "ExplosiveZombie",
+              "value": "6",
+              "notes": "Self-Explode Zombie: Self-Explode Zombie"
+            },
+            {
+              "name": "TyrantZombie",
+              "value": "8",
+              "notes": "Tyrant Zombie: Tyrant Zombie"
+            },
+            {
+              "name": "ThrowRedZombie",
+              "value": "9",
+              "notes": "Throw Red Zombie: Throw Red Zombie"
+            },
+            {
+              "name": "MrV",
+              "value": "10",
+              "notes": "MrV: MrV"
+            },
+            {
+              "name": "TankZombie",
+              "value": "11",
+              "notes": "Tank Zombie: Tank Zombie"
+            },
+            {
+              "name": "DrillZombie",
+              "value": "12",
+              "notes": "Drill Zombie: Drill Zombie"
+            },
+            {
+              "name": "Samurai",
+              "value": "13",
+              "notes": "Samurai: Samurai"
+            },
+            {
+              "name": "FlyBombBee",
+              "value": "21",
+              "notes": "Fly Bomb Bee: Fly Bomb Bee"
+            },
+            {
+              "name": "ZombieDragon",
+              "value": "23",
+              "notes": "Mechadrake: Zombie Dragon"
+            }
+          ]
+        },
+        {
+          "name": "AIType",
+          "members": [
+            {
+              "name": "Regular",
+              "value": "18",
+              "notes": "Normal: Normal Zombie"
+            },
+            {
+              "name": "UGCAI",
+              "value": "18",
+              "notes": "@deprecated Use `Regular` instead"
+            },
+            {
+              "name": "WoodCutZombie",
+              "value": "4",
+              "notes": "Axe Zombie: Axe Zombie"
+            },
+            {
+              "name": "ThrowZombie",
+              "value": "5",
+              "notes": "Tossing Zombie: Tossing Zombie"
+            },
+            {
+              "name": "ExplosiveZombie",
+              "value": "6",
+              "notes": "Self-Explode Zombie: Self-Explode Zombie"
+            },
+            {
+              "name": "TyrantZombie",
+              "value": "8",
+              "notes": "Tyrant Zombie: Tyrant Zombie"
+            },
+            {
+              "name": "ThrowRedZombie",
+              "value": "9",
+              "notes": "Throw Red Zombie: Throw Red Zombie"
+            },
+            {
+              "name": "MrV",
+              "value": "10",
+              "notes": "MrV: MrV"
+            },
+            {
+              "name": "TankZombie",
+              "value": "11",
+              "notes": "Tank Zombie: Tank Zombie"
+            },
+            {
+              "name": "DrillZombie",
+              "value": "12",
+              "notes": "Drill Zombie: Drill Zombie"
+            },
+            {
+              "name": "Samurai",
+              "value": "13",
+              "notes": "Samurai: Samurai"
+            },
+            {
+              "name": "FlyBombBee",
+              "value": "21",
+              "notes": "Fly Bomb Bee: Fly Bomb Bee"
+            },
+            {
+              "name": "ZombieDragon",
+              "value": "23",
+              "notes": "Mechadrake: Zombie Dragon"
+            }
+          ]
+        },
+        {
+          "name": "PatrolType",
+          "members": [
+            {
+              "name": "OneWay",
+              "value": "1",
+              "notes": "One Way: One Way"
+            },
+            {
+              "name": "BackAndForth",
+              "value": "2",
+              "notes": "Back And Forth: Back And Forth"
+            },
+            {
+              "name": "Cyclic",
+              "value": "3",
+              "notes": "Cylic: Loop"
+            },
+            {
+              "name": "Cylic",
+              "value": "3",
+              "notes": "@deprecated Use `Cyclic` instead"
+            }
+          ]
+        },
+        {
+          "name": "PatrolStyleType",
+          "members": [
+            {
+              "name": "JustPatrol",
+              "value": "1",
+              "notes": "JustPatrol: Patrols only, no attacks on targets along the way"
+            },
+            {
+              "name": "PatrolWhileAttack",
+              "value": "2",
+              "notes": "Patrol While Attack: Patrol While Attack"
+            }
+          ]
+        },
+        {
+          "name": "ActionType",
+          "members": [
+            {
+              "name": "Active",
+              "value": "0",
+              "notes": "Active: Active"
+            },
+            {
+              "name": "Passive",
+              "value": "1",
+              "notes": "Passive: Passive"
+            },
+            {
+              "name": "NoAttack",
+              "value": "2",
+              "notes": "No Attack: No Attack"
+            }
+          ]
+        },
+        {
+          "name": "MonsterSkillType",
+          "members": [
+            {
+              "name": "ThrowAttack",
+              "value": "1",
+              "notes": "Throw Attack: Throw Attack"
+            },
+            {
+              "name": "Explode",
+              "value": "2",
+              "notes": "Self-Destruct: Self-Destruct"
+            },
+            {
+              "name": "DashAttack",
+              "value": "3",
+              "notes": "Dash Attack: Dash Attack"
+            },
+            {
+              "name": "ShockWave",
+              "value": "4",
+              "notes": "Shock Wave: Shock Wave"
+            },
+            {
+              "name": "WindAttack",
+              "value": "6",
+              "notes": "Tornado Attack: Tornado Attack"
+            },
+            {
+              "name": "JumpAttack",
+              "value": "13",
+              "notes": "Jump Attack: Jump Attack"
+            },
+            {
+              "name": "ShieldUp",
+              "value": "22",
+              "notes": "Shield Up: Shield Up"
+            },
+            {
+              "name": "ShieldBroken",
+              "value": "23",
+              "notes": "Shield Broken: Shield Broken"
+            }
+          ]
+        },
+        {
+          "name": "AISkillType",
+          "members": [
+            {
+              "name": "ThrowAttack",
+              "value": "1",
+              "notes": "Throw Attack: Throw Attack"
+            },
+            {
+              "name": "Explode",
+              "value": "2",
+              "notes": "Self-Destruct: Self-Destruct"
+            },
+            {
+              "name": "DashAttack",
+              "value": "3",
+              "notes": "Dash Attack: Dash Attack"
+            },
+            {
+              "name": "ShockWave",
+              "value": "4",
+              "notes": "Shock Wave: Shock Wave"
+            },
+            {
+              "name": "WindAttack",
+              "value": "6",
+              "notes": "Tornado Attack: Tornado Attack"
+            },
+            {
+              "name": "JumpAttack",
+              "value": "13",
+              "notes": "Jump Attack: Jump Attack"
+            },
+            {
+              "name": "ShieldUp",
+              "value": "22",
+              "notes": "Shield Up: Shield Up"
+            },
+            {
+              "name": "ShieldBroken",
+              "value": "23",
+              "notes": "Shield Broken: Shield Broken"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "CreateMonster",
+          "signature": "[platform_server] func CreateMonster(out var target entity<Monster>, position Vector3, type MonsterType, teamSeq int, chaseEnemy bool, actionType ActionType, path entity<CustomPath>) /**"
+        },
+        {
+          "name": "EnableDefaultBTree",
+          "signature": "[platform_server] func EnableDefaultBTree(target entity<Monster>, enable bool) //@deprecated Use `EnableDefaultBTree` instead"
+        },
+        {
+          "name": "EnableDefaultAI",
+          "signature": "[deprecated] func EnableDefaultAI(target entity<Monster>, enable bool) /**"
+        },
+        {
+          "name": "PursuitTarget",
+          "signature": "[platform_server] func PursuitTarget(target entity<Monster>, pursuitTarget entity<Combatable>) //@deprecated Use `PursuitTarget` instead"
+        },
+        {
+          "name": "ChaseTarget",
+          "signature": "[deprecated] func ChaseTarget(target entity<Monster>, pursuitTarget entity<Combatable>) /**"
+        },
+        {
+          "name": "AttackTarget",
+          "signature": "[platform_server] func AttackTarget(target entity<Monster>, attackTarget entity<Combatable>) /**"
+        },
+        {
+          "name": "MonsterUseSkill",
+          "signature": "[platform_server] func MonsterUseSkill(target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool) //@deprecated Use `MonsterUseSkill` instead"
+        },
+        {
+          "name": "UseSkill",
+          "signature": "[deprecated] func UseSkill(target entity<Monster>, skill MonsterSkillType, skillTarget entity<Player>, out var isSuccess bool) /**"
+        },
+        {
+          "name": "PatrolTo",
+          "signature": "[platform_server] func PatrolTo(target entity<Monster>, position Vector3, comeBack bool, style PatrolStyleType) /**"
+        },
+        {
+          "name": "PatrolAlong",
+          "signature": "[platform_server] func PatrolAlong(target entity<Monster>, positions List<Vector3>, comeBack PatrolType, style PatrolStyleType) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnChase",
+          "signature": "[platform_server] event OnChase()"
+        },
+        {
+          "name": "OnStartChase",
+          "signature": "[deprecated] event OnStartChase()"
+        },
+        {
+          "name": "OnChaseStop",
+          "signature": "[platform_server] event OnChaseStop()"
+        },
+        {
+          "name": "OnStopChase",
+          "signature": "[deprecated] event OnStopChase()"
+        },
+        {
+          "name": "OnAttack",
+          "signature": "[platform_server] event OnAttack()"
+        },
+        {
+          "name": "OnStartAttack",
+          "signature": "[deprecated] event OnStartAttack()"
+        },
+        {
+          "name": "OnAttackStop",
+          "signature": "[platform_server] event OnAttackStop()"
+        },
+        {
+          "name": "OnStopAttack",
+          "signature": "[deprecated] event OnStopAttack()"
+        }
+      ],
+      "components": [
+        "Monster",
+        "AI"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/AirDrop.fcc",
+      "source_sha": "46d6159a4613956ab1edabf08542e5d69883c69a",
+      "bytes_text": 1014,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 1,
+      "event_count": 0,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "CreateAirDrop",
+          "signature": "[platform_server] func CreateAirDrop(out var createdEntity entity<Airdrop>)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "Airdrop",
+        "AirDrop"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Animation.fcc",
+      "source_sha": "6bb78f485d1d1d9ea21152550b5de28f0f82078b",
+      "bytes_text": 4321,
+      "enum_count": 1,
+      "enum_member_count": 4,
+      "function_count": 3,
+      "event_count": 2,
+      "component_count": 5,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "LoopType",
+          "members": [
+            {
+              "name": "Default",
+              "value": "0",
+              "notes": "Default: Default"
+            },
+            {
+              "name": "NotChange",
+              "value": "0",
+              "notes": "@deprecated Use `Default` instead"
+            },
+            {
+              "name": "Loop",
+              "value": "1",
+              "notes": "Loop: Loop"
+            },
+            {
+              "name": "Once",
+              "value": "2",
+              "notes": "Once: Once"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "PlayAnimation",
+          "signature": "func PlayAnimation(target entity<AnimationControllerAttachable>, state string, playSpeed float, loopType LoopType) /**"
+        },
+        {
+          "name": "SetBodyPartWeight",
+          "signature": "func SetBodyPartWeight(target entity<AnimationControllerAttachable>, bodyPartName string, weight float) /**"
+        },
+        {
+          "name": "StopAnimation",
+          "signature": "func StopAnimation(target entity<AnimationControllerAttachable>, state string) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnClipEnd",
+          "signature": "[deprecated] event OnClipEnd(clipName string)"
+        },
+        {
+          "name": "OnStateEnd",
+          "signature": "[deprecated] event OnStateEnd(stateName string)"
+        }
+      ],
+      "components": [
+        "AnimationControllerAttachable",
+        "AnimationControllerAble",
+        "AnimationState",
+        "AnimationClip",
+        "AnimationController"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Avatar.fcc",
+      "source_sha": "4355a55455f5a8328da40d78ead001bbb1362f0b",
+      "bytes_text": 4472,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 8,
+      "event_count": 0,
+      "component_count": 2,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "CreateSkeletonPartLookAtController",
+          "signature": "[platform_client] func CreateSkeletonPartLookAtController(out var createdEntity entity<SkeletonPartLookAtController>, controlledTarget entity<SkeletonPart>, lookAtTarget entity<Transform>) /**"
+        },
+        {
+          "name": "GetSkeletonPartByName",
+          "signature": "[platform_client] func GetSkeletonPartByName(target entity<Entity>, name string) entity<SkeletonPart>"
+        },
+        {
+          "name": "SwitchAppearanceGroup",
+          "signature": "func SwitchAppearanceGroup(target entity<Appearance>, appearanceGroup string) //@deprecated Use `SwitchAppearanceGroup` instead"
+        },
+        {
+          "name": "ChangeAvatarPart",
+          "signature": "[deprecated] func ChangeAvatarPart(target entity<Appearance>, appearanceGroup string) /**"
+        },
+        {
+          "name": "ShowAppearanceGroup",
+          "signature": "func ShowAppearanceGroup(target entity<Appearance>, appearanceGroup string) //@deprecated Use `ShowAppearanceGroup` instead"
+        },
+        {
+          "name": "EnableAvatarPart",
+          "signature": "[deprecated] func EnableAvatarPart(target entity<Appearance>, appearanceGroup string) /**"
+        },
+        {
+          "name": "HideAppearanceGroup",
+          "signature": "func HideAppearanceGroup(target entity<Appearance>, appearanceGroup string) //@deprecated Use `HideAppearanceGroup` instead"
+        },
+        {
+          "name": "DisableAvatarPart",
+          "signature": "[deprecated] func DisableAvatarPart(target entity<Appearance>, appearanceGroup string)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "SkeletonPartController",
+        "SkeletonPartLookAtController"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/BehaviourTree.fcc",
+      "source_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a",
+      "bytes_text": 4557,
+      "enum_count": 4,
+      "enum_member_count": 12,
+      "function_count": 5,
+      "event_count": 2,
+      "component_count": 4,
+      "alias_count": 0,
+      "defined_type_count": 2,
+      "enums": [
+        {
+          "name": "BevTreeNodeType",
+          "members": [
+            {
+              "name": "ConditionNode",
+              "value": "1",
+              "notes": "Condition Node: Condition Node"
+            },
+            {
+              "name": "Condition",
+              "value": "1",
+              "notes": "@deprecated Use `ConditionNode` instead"
+            },
+            {
+              "name": "ActionNode",
+              "value": "2",
+              "notes": "Action Node: Action Node"
+            },
+            {
+              "name": "Action",
+              "value": "2",
+              "notes": "@deprecated Use `ActionNode` instead"
+            }
+          ]
+        },
+        {
+          "name": "BTreeCustomNodeType",
+          "members": [
+            {
+              "name": "ConditionNode",
+              "value": "1",
+              "notes": "Condition Node: Condition Node"
+            },
+            {
+              "name": "Condition",
+              "value": "1",
+              "notes": "@deprecated Use `ConditionNode` instead"
+            },
+            {
+              "name": "ActionNode",
+              "value": "2",
+              "notes": "Action Node: Action Node"
+            },
+            {
+              "name": "Action",
+              "value": "2",
+              "notes": "@deprecated Use `ActionNode` instead"
+            }
+          ]
+        },
+        {
+          "name": "BevTreeNodeStatus",
+          "members": [
+            {
+              "name": "Finish",
+              "value": "1",
+              "notes": "Finish: Finish"
+            },
+            {
+              "name": "Running",
+              "value": "2",
+              "notes": "Running: Running"
+            }
+          ]
+        },
+        {
+          "name": "BTreeNodeState",
+          "members": [
+            {
+              "name": "Finish",
+              "value": "1",
+              "notes": "Finish: Finish"
+            },
+            {
+              "name": "Running",
+              "value": "2",
+              "notes": "Running: Running"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "SetBlackboardValue",
+          "signature": "[platform_server] func SetBlackboardValue(bTree entity<BevTree>, key string, value object) //@deprecated Use `SetBlackboardValue` instead"
+        },
+        {
+          "name": "SetGlobalVariable",
+          "signature": "[deprecated] func SetGlobalVariable(bTree entity<BevTree>, key string, value object) /**"
+        },
+        {
+          "name": "GetBlackboardValue",
+          "signature": "[platform_server] func GetBlackboardValue(bTree entity<BevTree>, key string, out var value object) //@deprecated Use `GetBlackboardValue` instead"
+        },
+        {
+          "name": "GetGlobalVariable",
+          "signature": "[deprecated] func GetGlobalVariable(bTree entity<BevTree>, key string, out var value object) /**"
+        },
+        {
+          "name": "GetNodeVariable",
+          "signature": "[platform_server] func GetNodeVariable(node entity<BevTreeCustomNode>, key string, out var value object) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnNodeEnter",
+          "signature": "[platform_server] event OnNodeEnter(nodeName string, owner entity<BevTreeAttachable>)"
+        },
+        {
+          "name": "OnNodeExit",
+          "signature": "[platform_server] event OnNodeExit(nodeName string, owner entity<BevTreeAttachable>)"
+        }
+      ],
+      "components": [
+        "BevTree",
+        "BTree",
+        "BevTreeCustomNode",
+        "BTreeCustomNode"
+      ],
+      "aliases": [],
+      "defined_types": [
+        "BevTreeID",
+        "BTreeID"
+      ]
     }
   ]
 }
