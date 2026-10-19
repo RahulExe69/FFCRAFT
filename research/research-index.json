@@ -160,6 +160,40 @@
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
         "https://ffcraftland.garena.com/en/patch-notes/"
       ]
+    },
+    {
+      "id": "public-tutorial-corpus",
+      "summary": "A public multilingual translated tutorial repo contains 160 Markdown manuals; its Mobile Block Script tutorial explicitly demonstrates Get Property (Player→Rig→Head), Set Property (Skeleton Scale), and Vector3 scale values, while its PC manuals explain .fcg/.fcc, EditorGenLib.fcc, server/client scripts, type/socket concepts and compile workflow.",
+      "confidence": "secondary-manual; source is older and repo has no license metadata; useful for examples, not current API authority",
+      "details": "docs/25-public-tutorial-corpus-audit.md",
+      "sources": [
+        "https://github.com/FF-OGC/Craftland-Tutorial",
+        "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Block%20Script.md",
+        "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Code%20Script%20-%20User%20Manual.md"
+      ]
+    },
+    {
+      "id": "mobile-block-recipes",
+      "summary": "The public re-editable Game Mechanics template tutorial includes 13 reusable mechanism recipes, covering healing/damage zones, zombie spawning, traps, transfer, text, outfit changes, elevators, doors, global/player state, HUD and respawn behavior.",
+      "confidence": "secondary-manual recipe summaries; not runtime tested",
+      "details": "research/mobile-block-recipe-index.json",
+      "sources": [
+        "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Game%20Mechanic.md"
+      ]
+    },
+    {
+      "id": "official-crosswalk-refinements",
+      "summary": "Targeted current official pages resolve or normalize several Rough.txt names: Get Child By Index, Get Parent, Get Type Name, Filter Level Objects, Get global, This Entity, Wait for Millisecond and Global/portal events; other labels remain explicitly unresolved.",
+      "confidence": "official reference candidates; UI/API scope differences retained in per-entry notes",
+      "details": "docs/24-block-symbol-crosswalk.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/api-1-26",
+        "https://ffcraftland.garena.com/en/docs/api-1-540/",
+        "https://ffcraftland.garena.com/en/docs/api-1-542/",
+        "https://ffcraftland.garena.com/en/docs/api-1-978/",
+        "https://ffcraftland.garena.com/en/docs/api-26-124",
+        "https://ffcraftland.garena.com/en/docs/type-11"
+      ]
     }
   ],
   "docs": {
@@ -194,7 +228,10 @@
     "docs/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
     "research/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
     "docs/24-block-symbol-crosswalk.md": "Line-by-line crosswalk of 443 Rough.txt inventory entries against recovered PC symbols, with exact/fuzzy/unmatched statuses",
-    "research/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings"
+    "research/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings",
+    "docs/25-public-tutorial-corpus-audit.md": "Audit of public multilingual Craftland manuals, mobile visual block examples, PC code/element-script manuals, EditorGenLib and 13 gameplay recipe areas",
+    "research/public-tutorial-corpus-index.json": "Manifest of 160 Markdown files in a public translated tutorial corpus with source SHAs, paths, selected headings and topic summaries",
+    "research/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual"
   },
   "sources": [
     {
@@ -396,6 +433,24 @@
       "topic": "pc-detailed-reference",
       "title": "Detailed derived PC API/event/component reference from public mirror",
       "url": "research/pc-library-api-reference.json"
+    },
+    {
+      "tier": "B",
+      "topic": "public-tutorial-corpus",
+      "title": "Public multilingual Craftland tutorial corpus",
+      "url": "https://github.com/FF-OGC/Craftland-Tutorial"
+    },
+    {
+      "tier": "B",
+      "topic": "mobile-block-recipes",
+      "title": "Game Mechanics re-editable template tutorial",
+      "url": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Game%20Mechanic.md"
+    },
+    {
+      "tier": "A",
+      "topic": "official-crosswalk-refinements",
+      "title": "Current official APIs and events for Rough crosswalk corrections",
+      "url": "https://ffcraftland.garena.com/en/docs/api-1-26"
     }
   ],
   "open_questions": [
@@ -567,5 +622,10 @@
       "mobile_block_source": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
       "doc": "docs/19-first-vertical-slice-join-serial.md"
     }
-  ]
+  ],
+  "stats": {
+    "public_tutorial_markdown_files": 160,
+    "public_tutorial_tree_entries": 3796,
+    "mobile_recipe_examples": 13
+  }
 }
