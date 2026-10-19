@@ -8,14 +8,14 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 10,
-    "functions": 230,
-    "events": 156,
-    "component_declarations": 377,
-    "component_properties": 2612,
-    "deprecated_functions": 91,
-    "server_functions": 129,
-    "client_functions": 21
+    "libraries": 15,
+    "functions": 276,
+    "events": 161,
+    "component_declarations": 389,
+    "component_properties": 2696,
+    "deprecated_functions": 99,
+    "server_functions": 149,
+    "client_functions": 31
   },
   "libraries": [
     {
@@ -34527,6 +34527,2668 @@
           "source": {
             "file": "library/release/BehaviourTree.fcc",
             "blob_sha": "4fa0a2c21d35a91ee1ec7ebf344d06bcb402456a"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Buff.fcc",
+      "source_sha": "e53605d389042fc94fb2f29b37825d9a479a473c",
+      "text_length": 1317,
+      "functions": [
+        {
+          "name": "AddBuff",
+          "signature": "[platform_server] func AddBuff(target entity<Buffable>, buff InternalBuffType)",
+          "parameters_text": "target entity<Buffable>, buff InternalBuffType",
+          "return_type": null,
+          "description": "Add a buff to the target",
+          "doc_title": "Add Buff",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Buffable>",
+              "description": "The target entity. It must be an entity that can add buffs"
+            },
+            {
+              "name": "buff",
+              "type": "InternalBuffType",
+              "description": "Buff id"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Buff.fcc",
+            "blob_sha": "e53605d389042fc94fb2f29b37825d9a479a473c"
+          }
+        },
+        {
+          "name": "RemoveBuff",
+          "signature": "[platform_server] func RemoveBuff(target entity<Buffable>, buff InternalBuffType)",
+          "parameters_text": "target entity<Buffable>, buff InternalBuffType",
+          "return_type": null,
+          "description": "Removes the Buff from the target",
+          "doc_title": "Remove Buff",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Buffable>",
+              "description": "The target entity. It must be an entity that can add buffs"
+            },
+            {
+              "name": "buff",
+              "type": "InternalBuffType",
+              "description": "Buff id"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Buff.fcc",
+            "blob_sha": "e53605d389042fc94fb2f29b37825d9a479a473c"
+          }
+        },
+        {
+          "name": "DeleteBuff",
+          "signature": "[deprecated] func DeleteBuff(target entity<Buffable>, buff InternalBuffType)",
+          "parameters_text": "target entity<Buffable>, buff InternalBuffType",
+          "return_type": null,
+          "description": "Removes the Buff from the target",
+          "doc_title": "Remove Buff",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Buffable>",
+              "description": "The target entity. It must be an entity that can add buffs"
+            },
+            {
+              "name": "buff",
+              "type": "InternalBuffType",
+              "description": "Buff id"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `RemoveBuff` instead",
+          "source": {
+            "file": "library/release/Buff.fcc",
+            "blob_sha": "e53605d389042fc94fb2f29b37825d9a479a473c"
+          }
+        },
+        {
+          "name": "GetBuffs",
+          "signature": "[platform_server] func GetBuffs(target entity<Buffable>) List<InternalBuffType>",
+          "parameters_text": "target entity<Buffable>",
+          "return_type": "List<InternalBuffType>",
+          "description": "Get the target's current Buffs",
+          "doc_title": "Get Buffs",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Buffable>",
+              "description": "The target entity. It must be an entity that can add buffs"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<InternalBuffType>",
+              "description": "Buff List"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Buff.fcc",
+            "blob_sha": "e53605d389042fc94fb2f29b37825d9a479a473c"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/CSVData.fcc",
+      "source_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b",
+      "text_length": 2464,
+      "functions": [
+        {
+          "name": "ReadCSV",
+          "signature": "func ReadCSV(sheetName CsvID) List<List<object>>",
+          "parameters_text": "sheetName CsvID",
+          "return_type": "List<List<object>>",
+          "description": "Read the contents of the entire table and return a two-dimensional array in row order",
+          "doc_title": "Read CSV",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<List<object>>",
+              "description": "Table of Contents"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "ReadCSVRow",
+          "signature": "func ReadCSVRow(sheetName CsvID, row int) List<object>",
+          "parameters_text": "sheetName CsvID, row int",
+          "return_type": "List<object>",
+          "description": "Read a row of the table and return an array",
+          "doc_title": "Read CSV Row",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "row",
+              "type": "int",
+              "description": "The number of the line to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "Specifies the contents of a row in the table"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "ReadCSVColumn",
+          "signature": "func ReadCSVColumn(sheetName CsvID, column int) List<object>",
+          "parameters_text": "sheetName CsvID, column int",
+          "return_type": "List<object>",
+          "description": "Read the contents of a column in a table and return an array",
+          "doc_title": "Read CSV Column",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "column",
+              "type": "int",
+              "description": "The number of the column to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "Specifies the contents of a column in the table"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "ReadCSVCell",
+          "signature": "func ReadCSVCell(sheetName CsvID, row int, column int) object",
+          "parameters_text": "sheetName CsvID, row int, column int",
+          "return_type": "object",
+          "description": "Read the content of a table cell",
+          "doc_title": "Read CSV Cell",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "row",
+              "type": "int",
+              "description": "The number of the line to read, starting from 1"
+            },
+            {
+              "name": "column",
+              "type": "int",
+              "description": "The number of the column to read, starting from 1"
+            }
+          ],
+          "returns": [
+            {
+              "type": "object",
+              "description": "The content of the specified cell of the table"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "ReadCSVCellByName",
+          "signature": "func ReadCSVCellByName(sheetName CsvID, row int, columnName string) object",
+          "parameters_text": "sheetName CsvID, row int, columnName string",
+          "return_type": "object",
+          "description": "Read the content of a cell in a table by row number and column name",
+          "doc_title": "Read CSV Cell By Name",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "row",
+              "type": "int",
+              "description": "The number of lines to read, starting from 1"
+            },
+            {
+              "name": "columnName",
+              "type": "string",
+              "description": "The name of the column to read"
+            }
+          ],
+          "returns": [
+            {
+              "type": "object",
+              "description": "The contents of the specified cell of the table"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "ReadCSVRowByKey",
+          "signature": "func ReadCSVRowByKey(sheetName CsvID, keyColumn int, key object) List<object>",
+          "parameters_text": "sheetName CsvID, keyColumn int, key object",
+          "return_type": "List<object>",
+          "description": "Find the specified row by column number and cell value",
+          "doc_title": "Read CSV Row By Key",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "keyColumn",
+              "type": "int",
+              "description": "The number of columns to read"
+            },
+            {
+              "name": "key",
+              "type": "object",
+              "description": "The cell value to be searched"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<object>",
+              "description": "The contents of the found row, in array"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        },
+        {
+          "name": "CSVColumnNameToInt",
+          "signature": "func CSVColumnNameToInt(sheetName CsvID, columnName string) int",
+          "parameters_text": "sheetName CsvID, columnName string",
+          "return_type": "int",
+          "description": "Get column number by column name",
+          "doc_title": "CSV Column Name To Int",
+          "parameters": [
+            {
+              "name": "sheetName",
+              "type": "CsvID",
+              "description": "Table name"
+            },
+            {
+              "name": "columnName",
+              "type": "string",
+              "description": "The name of the column to be queried"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "The number of columns, starting from 1"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/CSVData.fcc",
+            "blob_sha": "c2b0c68bf668262f3f5ba9679731d318c7c4929b"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/Camera.fcc",
+      "source_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7",
+      "text_length": 21034,
+      "functions": [
+        {
+          "name": "ScreenTouchRay",
+          "signature": "[platform_client] func ScreenTouchRay(touchPoint Vector2, out var startPosition Vector3, out var direction Vector3)",
+          "parameters_text": "touchPoint Vector2, out var startPosition Vector3, out var direction Vector3",
+          "return_type": null,
+          "description": "Creates a ray from the current camera to the touch point on the screen",
+          "doc_title": "Screen Touch Ray",
+          "parameters": [
+            {
+              "name": "touchPoint",
+              "type": "Vector2",
+              "description": "Screen contacts"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Starting point"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Ray direction"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraTouchRay",
+          "signature": "[deprecated] func CameraTouchRay(touchPoint Vector2, out var startPosition Vector3, out var direction Vector3)",
+          "parameters_text": "touchPoint Vector2, out var startPosition Vector3, out var direction Vector3",
+          "return_type": null,
+          "description": "Creates a ray from the current camera to the touch point on the screen",
+          "doc_title": "Screen Touch Ray",
+          "parameters": [
+            {
+              "name": "touchPoint",
+              "type": "Vector2",
+              "description": "Screen contacts"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Starting point"
+            },
+            {
+              "name": "direction",
+              "type": "Vector3",
+              "description": "Ray direction"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client",
+            "deprecated"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": "Use `ScreenTouchRay` instead",
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "WorldToScreenPoint",
+          "signature": "[platform_client] func WorldToScreenPoint(worldPosition Vector3, out var isMappedInScreen bool, out var mappedPosition Vector2)",
+          "parameters_text": "worldPosition Vector3, out var isMappedInScreen bool, out var mappedPosition Vector2",
+          "return_type": null,
+          "description": "Convert world coordinate to screen coordinate",
+          "doc_title": "World To Screen",
+          "parameters": [
+            {
+              "name": "worldPosition",
+              "type": "Vector3",
+              "description": "World Coordinates"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isMappedInScreen",
+              "type": "bool",
+              "description": "mapping on the screen or not"
+            },
+            {
+              "name": "mappedPosition",
+              "type": "Vector2",
+              "description": "Mapping location"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "ScreenToWorldPoint",
+          "signature": "[platform_client] func ScreenToWorldPoint(screenPosition Vector2, depth float, out var worldPosition Vector3)",
+          "parameters_text": "screenPosition Vector2, depth float, out var worldPosition Vector3",
+          "return_type": null,
+          "description": "Convert screen coordinate to world coordinate",
+          "doc_title": "Screen To World",
+          "parameters": [
+            {
+              "name": "screenPosition",
+              "type": "Vector2",
+              "description": "Screen coordinate"
+            },
+            {
+              "name": "depth",
+              "type": "float",
+              "description": "Distance from screen"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "worldPosition",
+              "type": "Vector3",
+              "description": "World Coordinate"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "ScreenSingleRaycast",
+          "signature": "[platform_client] func ScreenSingleRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3)",
+          "parameters_text": "startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3",
+          "return_type": null,
+          "description": "Perform ray detection through screen touch and return the first entity hit",
+          "doc_title": "Screen Single Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector2",
+              "description": "Start screen touch point"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Detection distance"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntity",
+              "type": "entity<Entity>",
+              "description": "Entity hit"
+            },
+            {
+              "name": "hitPosition",
+              "type": "Vector3",
+              "description": "Hit point coordinate"
+            },
+            {
+              "name": "hitDistance",
+              "type": "float",
+              "description": "Distance from hit point to start point"
+            },
+            {
+              "name": "hitNormal",
+              "type": "Vector3",
+              "description": "Hit Surface Normal"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraSingleRaycast",
+          "signature": "[deprecated] func CameraSingleRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3)",
+          "parameters_text": "startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntity entity<Entity>, out var hitPosition Vector3, out var hitDistance float, out var hitNormal Vector3",
+          "return_type": null,
+          "description": "Perform ray detection through screen touch and return the first entity hit",
+          "doc_title": "Screen Single Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector2",
+              "description": "Start screen touch point"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Detection distance"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntity",
+              "type": "entity<Entity>",
+              "description": "Entity hit"
+            },
+            {
+              "name": "hitPosition",
+              "type": "Vector3",
+              "description": "Hit point coordinate"
+            },
+            {
+              "name": "hitDistance",
+              "type": "float",
+              "description": "Distance from hit point to start point"
+            },
+            {
+              "name": "hitNormal",
+              "type": "Vector3",
+              "description": "Hit Surface Normal"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client",
+            "deprecated"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": "Use `ScreenSingleRaycast` instead",
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "ScreenMultiRaycast",
+          "signature": "[platform_client] func ScreenMultiRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>)",
+          "parameters_text": "startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>",
+          "return_type": null,
+          "description": "Perform ray detection through screen touch and return all hit entities",
+          "doc_title": "Screen Multi-Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector2",
+              "description": "Start screen touch point"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Detection distance"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            },
+            {
+              "name": "hitPoints",
+              "type": "List<Vector3>",
+              "description": "Hit point coordinate list"
+            },
+            {
+              "name": "hitDistances",
+              "type": "List<float>",
+              "description": "List of distances between the hit point and the start point"
+            },
+            {
+              "name": "hitNormals",
+              "type": "List<Vector3>",
+              "description": "List of hit surface normals"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraMultiRaycast",
+          "signature": "[deprecated] func CameraMultiRaycast(startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>)",
+          "parameters_text": "startPosition Vector2, distance float, layerMask List<int>, includeTrigger bool, out var hitEntities List<entity<Entity>>, out var hitPoints List<Vector3>, out var hitDistances List<float>, out var hitNormals List<Vector3>",
+          "return_type": null,
+          "description": "Perform ray detection through screen touch and return all hit entities",
+          "doc_title": "Screen Multi-Raycast",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector2",
+              "description": "Start screen touch point"
+            },
+            {
+              "name": "distance",
+              "type": "float",
+              "description": "Detection distance"
+            },
+            {
+              "name": "layerMask",
+              "type": "List<int>",
+              "description": "Layer mask, only the filled layers will participate in the scan, leaving it blank means all layers will participate in the scan"
+            },
+            {
+              "name": "includeTrigger",
+              "type": "bool",
+              "description": "Whether the trigger can be detected"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "hitEntities",
+              "type": "List<entity<Entity>>",
+              "description": "List of entities hit"
+            },
+            {
+              "name": "hitPoints",
+              "type": "List<Vector3>",
+              "description": "Hit point coordinate list"
+            },
+            {
+              "name": "hitDistances",
+              "type": "List<float>",
+              "description": "List of distances between the hit point and the start point"
+            },
+            {
+              "name": "hitNormals",
+              "type": "List<Vector3>",
+              "description": "List of hit surface normals"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_client",
+            "deprecated"
+          ],
+          "platform": "client",
+          "deprecated": true,
+          "deprecation_note": "Use `ScreenMultiRaycast` instead",
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCullingMask",
+          "signature": "[platform_server] func SetCullingMask(camera entity<Camera>, cullingMask List<int>)",
+          "parameters_text": "camera entity<Camera>, cullingMask List<int>",
+          "return_type": null,
+          "description": "Set the target camera layer mask",
+          "doc_title": "Set Culling Mask",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Camera>",
+              "description": "Target Camera Entity"
+            },
+            {
+              "name": "cullingMask",
+              "type": "List<int>",
+              "description": "Layer mask, only filled layers will be displayed in the target camera, leaving it blank means all layers will be displayed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "GetCullingMask",
+          "signature": "[platform_server] func GetCullingMask(camera entity<Camera>) List<int>",
+          "parameters_text": "camera entity<Camera>",
+          "return_type": "List<int>",
+          "description": "Get the target camera layer mask",
+          "doc_title": "Get Culling Mask",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Camera>",
+              "description": "Target Camera Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<int>",
+              "description": "Layer mask, only the layers within the layer mask will be displayed in the target camera"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCullingMaskLayer",
+          "signature": "[platform_server] func SetCullingMaskLayer(camera entity<Camera>, layer int, visible bool)",
+          "parameters_text": "camera entity<Camera>, layer int, visible bool",
+          "return_type": null,
+          "description": "Set whether the specified layer is visible to the target camera.",
+          "doc_title": "Set Culling Mask Layer",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Camera>",
+              "description": "Target Camera Entity"
+            },
+            {
+              "name": "layer",
+              "type": "int",
+              "description": "Visibility Level"
+            },
+            {
+              "name": "visible",
+              "type": "bool",
+              "description": "Is Visible"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "GetCurrentCamera",
+          "signature": "func GetCurrentCamera(target entity<Player>) entity<Camera>",
+          "parameters_text": "target entity<Player>",
+          "return_type": "entity<Camera>",
+          "description": "Get the camera entity currently used by the target player",
+          "doc_title": "Get Current Camera",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<Camera>",
+              "description": "The currently used camera entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SwitchCamera",
+          "signature": "[platform_server] func SwitchCamera(player entity<Player>, camera entity<Camera>, transitionType CameraTransitionType, transitionTime float)",
+          "parameters_text": "player entity<Player>, camera entity<Camera>, transitionType CameraTransitionType, transitionTime float",
+          "return_type": null,
+          "description": "Switching the target player's camera to the target camera",
+          "doc_title": "Switch Camera",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "target player"
+            },
+            {
+              "name": "camera",
+              "type": "entity<Camera>",
+              "description": "target camera"
+            },
+            {
+              "name": "transitionType",
+              "type": "CameraTransitionType",
+              "description": "Switching method, you can choose to keep the original logic or progressive"
+            },
+            {
+              "name": "transitionTime",
+              "type": "float",
+              "description": "Switching time is the time to switch cameras in progressive mode"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CreateCamera",
+          "signature": "[platform_server] func CreateCamera(type CameraType, out var createdEntity entity<Camera>)",
+          "parameters_text": "type CameraType, out var createdEntity entity<Camera>",
+          "return_type": null,
+          "description": "Create a camera",
+          "doc_title": "Create Camera",
+          "parameters": [
+            {
+              "name": "type",
+              "type": "CameraType",
+              "description": "Type of camera created"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<Camera>",
+              "description": "Created Camera Entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCameraFollow",
+          "signature": "func SetCameraFollow(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType)",
+          "parameters_text": "camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType",
+          "return_type": null,
+          "description": "Set the position of the camera entity to always follow the target entity",
+          "doc_title": "Set Camera Follow",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Entity>",
+              "description": "target camera entity"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target entity to follow"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset from target entity coordinates"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system for offsets"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "Follow",
+          "signature": "[deprecated] func Follow(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType)",
+          "parameters_text": "camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType",
+          "return_type": null,
+          "description": "Set the position of the camera entity to always follow the target entity",
+          "doc_title": "Set Camera Follow",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Entity>",
+              "description": "target camera entity"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "Target entity to follow"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset from target entity coordinates"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system for offsets"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `SetCameraFollow` instead",
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCameraFocus",
+          "signature": "func SetCameraFocus(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType)",
+          "parameters_text": "camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType",
+          "return_type": null,
+          "description": "Set the camera entity to always face the target entity",
+          "doc_title": "Set Camera Focus",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Entity>",
+              "description": "target camera entity"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset of the gaze point from the target coordinates"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system for offsets"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "Focus",
+          "signature": "[deprecated] func Focus(camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType)",
+          "parameters_text": "camera entity<Entity>, target entity<Entity>, offset Vector3, coordinateSystem CoordinateSystemType",
+          "return_type": null,
+          "description": "Set the camera entity to always face the target entity",
+          "doc_title": "Set Camera Focus",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<Entity>",
+              "description": "target camera entity"
+            },
+            {
+              "name": "target",
+              "type": "entity<Entity>",
+              "description": "target entity"
+            },
+            {
+              "name": "offset",
+              "type": "Vector3",
+              "description": "Offset of the gaze point from the target coordinates"
+            },
+            {
+              "name": "coordinateSystem",
+              "type": "CoordinateSystemType",
+              "description": "Coordinate system for offsets"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `SetCameraFocus` instead",
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SwitchCustomCamera",
+          "signature": "[platform_server] func SwitchCustomCamera(player entity<Player>, camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float)",
+          "parameters_text": "player entity<Player>, camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float",
+          "return_type": null,
+          "description": "Switching the target player's camera to the target camera",
+          "doc_title": "Switch Custom Camera",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "target player"
+            },
+            {
+              "name": "camera",
+              "type": "entity<CustomCamera>",
+              "description": "target camera"
+            },
+            {
+              "name": "transitionType",
+              "type": "CameraTransitionType",
+              "description": "Switching method, you can choose to keep the original logic or progressive"
+            },
+            {
+              "name": "transitionTime",
+              "type": "float",
+              "description": "Switching time is the time to switch cameras in progressive mode"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SwitchCustomCameraClient",
+          "signature": "[platform_client] func SwitchCustomCameraClient(camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float)",
+          "parameters_text": "camera entity<CustomCamera>, transitionType CameraTransitionType, transitionTime float",
+          "return_type": null,
+          "description": "Switching the target player's camera to the target camera",
+          "doc_title": "Switch Custom Camera",
+          "parameters": [
+            {
+              "name": "camera",
+              "type": "entity<CustomCamera>",
+              "description": "target camera"
+            },
+            {
+              "name": "transitionType",
+              "type": "CameraTransitionType",
+              "description": "Switching method, you can choose to keep the original logic or progressive"
+            },
+            {
+              "name": "transitionTime",
+              "type": "float",
+              "description": "Switching time is the time to switch cameras in progressive mode"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "GetCurrentNewCamera",
+          "signature": "[platform_server] func GetCurrentNewCamera(target entity<Player>) entity<CustomCamera>",
+          "parameters_text": "target entity<Player>",
+          "return_type": "entity<CustomCamera>",
+          "description": "Get the camera entity currently used by the target player",
+          "doc_title": "Get Current Custom Camera",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<CustomCamera>",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "GetCurrentCustomCameraClient",
+          "signature": "[platform_client] func GetCurrentCustomCameraClient() entity<CustomCamera>",
+          "parameters_text": "",
+          "return_type": "entity<CustomCamera>",
+          "description": "Get the camera entity currently used by the target player",
+          "doc_title": "Get Current Custom Camera",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "entity<CustomCamera>",
+              "description": "{Desc missing configuration}"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_client"
+          ],
+          "platform": "client",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CreateBasicCamera",
+          "signature": "func CreateBasicCamera(out var createdEntity entity<CustomCamera>)",
+          "parameters_text": "out var createdEntity entity<CustomCamera>",
+          "return_type": null,
+          "description": "Create a camera",
+          "doc_title": "Create Custom Camera",
+          "parameters": [],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "createdEntity",
+              "type": "entity<CustomCamera>",
+              "description": "Created Camera Entity"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCustomCameraCullingMask",
+          "signature": "func SetCustomCameraCullingMask(target entity<CustomCamera>, cullingMask List<int>)",
+          "parameters_text": "target entity<CustomCamera>, cullingMask List<int>",
+          "return_type": null,
+          "description": "Set the culling mask of the target camera to control visibility across all layers",
+          "doc_title": "Set Custom Camera Culling Mask",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CustomCamera>",
+              "description": "Target Camera Entity"
+            },
+            {
+              "name": "cullingMask",
+              "type": "List<int>",
+              "description": "Layer mask, only filled layers will be displayed in the target camera, leaving it blank means all layers will be displayed"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "GetCustomCameraCullingMask",
+          "signature": "func GetCustomCameraCullingMask(target entity<CustomCamera>) List<int>",
+          "parameters_text": "target entity<CustomCamera>",
+          "return_type": "List<int>",
+          "description": "Get the culling mask of the target camera",
+          "doc_title": "Get Custom Camera Culling Mask",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CustomCamera>",
+              "description": "Target Camera Entity"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<int>",
+              "description": "Layer mask, only the layers within the layer mask will be displayed in the target camera"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "SetCustomCameraCullingMaskLayer",
+          "signature": "func SetCustomCameraCullingMaskLayer(target entity<CustomCamera>, layer int, visible bool)",
+          "parameters_text": "target entity<CustomCamera>, layer int, visible bool",
+          "return_type": null,
+          "description": "Set the visibility of the target camera for a specific layer",
+          "doc_title": "Set Custom Camera Culling Mask Layer",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<CustomCamera>",
+              "description": "Target Camera Entity"
+            },
+            {
+              "name": "layer",
+              "type": "int",
+              "description": "Visibility Level"
+            },
+            {
+              "name": "visible",
+              "type": "bool",
+              "description": "Is Visible"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "MainCamera",
+              "type": "entity<Camera>",
+              "description": "Camera the player is using",
+              "attributes": []
+            },
+            {
+              "name": "CurrentCamera",
+              "type": "entity<Camera>",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "CustomCamera",
+              "type": "entity<CustomCamera>",
+              "description": "Get or set the camera entity that is currently rendering the scene on the player's client. Note: The camera entity essentially represents the configuration data for controlling the client-side camera.",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "Camera",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "CameraType",
+              "type": "CameraType",
+              "description": "Provide many preset camera types and customized camera types.",
+              "attributes": []
+            },
+            {
+              "name": "FOV",
+              "type": "float",
+              "description": "Field of view is the camera's viewing angle",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Generally refers to the offset of the camera's position from the player's home position, with different meanings for different camera types.",
+              "attributes": []
+            },
+            {
+              "name": "FocusPoint",
+              "type": "Vector3",
+              "description": "FOV is the offset of the camera's focus point from the player's home position, which varies by camera type.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "Pitch",
+              "type": "float",
+              "description": "Angle of rotation of the camera in the vertical direction",
+              "attributes": []
+            },
+            {
+              "name": "Yaw",
+              "type": "float",
+              "description": "The angle of rotation of the camera in the horizontal direction.",
+              "attributes": []
+            },
+            {
+              "name": "Distance_Deprecated",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "FollowTarget",
+              "type": "entity<Entity>",
+              "description": "The target that the camera is following",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "FocusTarget",
+              "type": "entity<Entity>",
+              "description": "The target that the camera is looking at",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CameraTransitionType",
+              "type": "CameraTransitionType",
+              "description": "Camera Switch Animation Type",
+              "attributes": [
+                "readonly",
+                "deprecated",
+                "readonly",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "CameraTransitionTime",
+              "type": "float",
+              "description": "Transition time to this camera in milliseconds, only if the switch type is smooth.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CameraBlockMode",
+              "type": "CameraBlockMode",
+              "description": "Motion mode of the camera when there is an occlusion between the camera and the target.",
+              "attributes": []
+            },
+            {
+              "name": "CameraProjectionMode",
+              "type": "CameraProjectionMode",
+              "description": "How the camera renders the screen",
+              "attributes": []
+            },
+            {
+              "name": "FollowCoordinateType",
+              "type": "CoordinateSystemType",
+              "description": "Follow object offset reference coordinate system",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "FocusCoordinateType",
+              "type": "CoordinateSystemType",
+              "description": "Observing object offset reference coordinate system",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CullingMask",
+              "type": "int",
+              "description": "The camera's rendering layer mask, which allows filtering the camera's rendered objects by visibility level",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ViewingAngleRestriction",
+              "type": "CameraViewingAngleRestrictionType",
+              "description": "Viewing Angle Restriction",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraConfig",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "CameraType",
+              "type": "CameraType",
+              "description": "Provide many preset camera types and customized camera types.",
+              "attributes": []
+            },
+            {
+              "name": "FOV",
+              "type": "float",
+              "description": "Field of view is the camera's viewing angle",
+              "attributes": []
+            },
+            {
+              "name": "Offset",
+              "type": "Vector3",
+              "description": "Generally refers to the offset of the camera's position from the player's home position, with different meanings for different camera types.",
+              "attributes": []
+            },
+            {
+              "name": "FocusPoint",
+              "type": "Vector3",
+              "description": "FOV is the offset of the camera's focus point from the player's home position, which varies by camera type.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "Pitch",
+              "type": "float",
+              "description": "Angle of rotation of the camera in the vertical direction",
+              "attributes": []
+            },
+            {
+              "name": "Yaw",
+              "type": "float",
+              "description": "The angle of rotation of the camera in the horizontal direction.",
+              "attributes": []
+            },
+            {
+              "name": "Distance_Deprecated",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "FollowTarget",
+              "type": "entity<Entity>",
+              "description": "The target that the camera is following",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "FocusTarget",
+              "type": "entity<Entity>",
+              "description": "The target that the camera is looking at",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CameraTransitionType",
+              "type": "CameraTransitionType",
+              "description": "Camera Switch Animation Type",
+              "attributes": [
+                "readonly",
+                "deprecated",
+                "readonly",
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "CameraTransitionTime",
+              "type": "float",
+              "description": "Transition time to this camera in milliseconds, only if the switch type is smooth.",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CameraBlockMode",
+              "type": "CameraBlockMode",
+              "description": "Motion mode of the camera when there is an occlusion between the camera and the target.",
+              "attributes": []
+            },
+            {
+              "name": "CameraProjectionMode",
+              "type": "CameraProjectionMode",
+              "description": "How the camera renders the screen",
+              "attributes": []
+            },
+            {
+              "name": "FollowCoordinateType",
+              "type": "CoordinateSystemType",
+              "description": "Follow object offset reference coordinate system",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "FocusCoordinateType",
+              "type": "CoordinateSystemType",
+              "description": "Observing object offset reference coordinate system",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "CullingMask",
+              "type": "int",
+              "description": "The camera's rendering layer mask, which allows filtering the camera's rendered objects by visibility level",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "ViewingAngleRestriction",
+              "type": "CameraViewingAngleRestrictionType",
+              "description": "Viewing Angle Restriction",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraRaycastUI",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "IsVisible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Visibility",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Distance",
+              "type": "float",
+              "description": "Distance for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "LayerType",
+              "type": "int",
+              "description": "Collision layer mask for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "CenterOffset",
+              "type": "Vector2",
+              "description": "Button position offset",
+              "attributes": []
+            },
+            {
+              "name": "SpriteResource",
+              "type": "SpriteID",
+              "description": "Icon resource ID",
+              "attributes": []
+            },
+            {
+              "name": "IconSpriteName",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ClickSize",
+              "type": "Vector2",
+              "description": "Click area size",
+              "attributes": []
+            },
+            {
+              "name": "ShowHitPointEffect",
+              "type": "bool",
+              "description": "Whether objects are displayed at the target point",
+              "attributes": []
+            },
+            {
+              "name": "HitPointEffect",
+              "type": "entity<Entity>",
+              "description": "Objects displayed at the target point",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraRayCastHud",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "IsVisible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Visibility",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Distance",
+              "type": "float",
+              "description": "Distance for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "LayerType",
+              "type": "int",
+              "description": "Collision layer mask for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "CenterOffset",
+              "type": "Vector2",
+              "description": "Button position offset",
+              "attributes": []
+            },
+            {
+              "name": "SpriteResource",
+              "type": "SpriteID",
+              "description": "Icon resource ID",
+              "attributes": []
+            },
+            {
+              "name": "IconSpriteName",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ClickSize",
+              "type": "Vector2",
+              "description": "Click area size",
+              "attributes": []
+            },
+            {
+              "name": "ShowHitPointEffect",
+              "type": "bool",
+              "description": "Whether objects are displayed at the target point",
+              "attributes": []
+            },
+            {
+              "name": "HitPointEffect",
+              "type": "entity<Entity>",
+              "description": "Objects displayed at the target point",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CameraRayCastUI",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "IsVisible",
+              "type": "bool",
+              "description": "Displayed if on is true, off otherwise",
+              "attributes": []
+            },
+            {
+              "name": "Visibility",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "Distance",
+              "type": "float",
+              "description": "Distance for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "LayerType",
+              "type": "int",
+              "description": "Collision layer mask for camera ray detection",
+              "attributes": []
+            },
+            {
+              "name": "CenterOffset",
+              "type": "Vector2",
+              "description": "Button position offset",
+              "attributes": []
+            },
+            {
+              "name": "SpriteResource",
+              "type": "SpriteID",
+              "description": "Icon resource ID",
+              "attributes": []
+            },
+            {
+              "name": "IconSpriteName",
+              "type": "SpriteID",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "ClickSize",
+              "type": "Vector2",
+              "description": "Click area size",
+              "attributes": []
+            },
+            {
+              "name": "ShowHitPointEffect",
+              "type": "bool",
+              "description": "Whether objects are displayed at the target point",
+              "attributes": []
+            },
+            {
+              "name": "HitPointEffect",
+              "type": "entity<Entity>",
+              "description": "Objects displayed at the target point",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        },
+        {
+          "name": "CustomCamera",
+          "kind": "abstract",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "CameraProjectionMode",
+              "type": "CameraProjectionMode",
+              "description": "How the camera renders the screen",
+              "attributes": []
+            },
+            {
+              "name": "FOV",
+              "type": "float",
+              "description": "Field of view is the camera's viewing angle",
+              "attributes": []
+            },
+            {
+              "name": "OrthographicSize",
+              "type": "float",
+              "description": "Control the size of the area visible to the camera",
+              "attributes": []
+            },
+            {
+              "name": "CullingMask",
+              "type": "int",
+              "description": "The camera's rendering layer mask, which allows filtering the camera's rendered objects by visibility level",
+              "attributes": [
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/Camera.fcc",
+            "blob_sha": "013fc5b5140ca00ae7ba8682d008aa07e2fa4ea7"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/ChatChannel.fcc",
+      "source_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9",
+      "text_length": 5639,
+      "functions": [
+        {
+          "name": "GetChatChannel",
+          "signature": "[platform_server] func GetChatChannel(index ChatChannelType) entity<ChatChannel>",
+          "parameters_text": "index ChatChannelType",
+          "return_type": "entity<ChatChannel>",
+          "description": "Get the chat channel entity by index",
+          "doc_title": "Get Chat Channel",
+          "parameters": [
+            {
+              "name": "index",
+              "type": "ChatChannelType",
+              "description": "Chat channel index, range [1,8]"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<ChatChannel>",
+              "description": "Chat Channel Entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "GetCurrentChatChannel",
+          "signature": "[platform_server] func GetCurrentChatChannel(target entity<Player>) entity<ChatChannel>",
+          "parameters_text": "target entity<Player>",
+          "return_type": "entity<ChatChannel>",
+          "description": "Get the chat channel entity that the specified player is currently in",
+          "doc_title": "Get Current Chat Channel",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<ChatChannel>",
+              "description": "Chat Channel Entity"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "JoinChatChannel",
+          "signature": "[platform_server] func JoinChatChannel(target entity<Player>, channel entity<ChatChannel>)",
+          "parameters_text": "target entity<Player>, channel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Makes the player join the specified chat channel. If the player is already in another chat channel, it will switch to the target channel.",
+          "doc_title": "Join Chat Channel",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "channel",
+              "type": "entity<ChatChannel>",
+              "description": "Chat Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "QuitChatChannel",
+          "signature": "[platform_server] func QuitChatChannel(target entity<Player>)",
+          "parameters_text": "target entity<Player>",
+          "return_type": null,
+          "description": "Make the player exit the current channel and then be in a state of not being in any chat channel",
+          "doc_title": "Quit Chat Channel",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "IsChatChannelEmpty",
+          "signature": "[platform_server] func IsChatChannelEmpty(channel entity<ChatChannel>)",
+          "parameters_text": "channel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Obsoleted",
+          "doc_title": "Is Chat Channel Empty",
+          "parameters": [
+            {
+              "name": "channel",
+              "type": "entity<ChatChannel>",
+              "description": "Chat channel entity, empty if there are no players in the channel"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "SetPlayerVoiceStatus",
+          "signature": "[platform_server] func SetPlayerVoiceStatus(target entity<Player>, disable bool)",
+          "parameters_text": "target entity<Player>, disable bool",
+          "return_type": null,
+          "description": "Toggle player voice chat",
+          "doc_title": "Set Player Voice Status",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "disable",
+              "type": "bool",
+              "description": "Whether to turn off voice chat, True: turn off False: turn on"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "MutePlayerVoice",
+          "signature": "[deprecated] func MutePlayerVoice(target entity<Player>, disable bool)",
+          "parameters_text": "target entity<Player>, disable bool",
+          "return_type": null,
+          "description": "Toggle player voice chat",
+          "doc_title": "Set Player Voice Status",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "disable",
+              "type": "bool",
+              "description": "Whether to turn off voice chat, True: turn off False: turn on"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetPlayerVoiceStatus` instead",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "SetPlayerQuickMessageStatus",
+          "signature": "[platform_server] func SetPlayerQuickMessageStatus(target entity<Player>, disable bool)",
+          "parameters_text": "target entity<Player>, disable bool",
+          "return_type": null,
+          "description": "Toggle player quick chat",
+          "doc_title": "Set Player Quick Message Status",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "disable",
+              "type": "bool",
+              "description": "Whether to close quick chat, True: Close False: Open"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "MutePlayerQuickChat",
+          "signature": "[deprecated] func MutePlayerQuickChat(target entity<Player>, disable bool)",
+          "parameters_text": "target entity<Player>, disable bool",
+          "return_type": null,
+          "description": "Toggle player quick chat",
+          "doc_title": "Set Player Quick Message Status",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Target Player"
+            },
+            {
+              "name": "disable",
+              "type": "bool",
+              "description": "Whether to close quick chat, True: Close False: Open"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetPlayerQuickMessageStatus` instead",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnJoinChatChannelSuccessfully",
+          "signature": "[platform_server] event OnJoinChatChannelSuccessfully(chatChannel entity<ChatChannel>)",
+          "parameters_text": "chatChannel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Triggered when a player successfully joins a voice channel.",
+          "doc_title": "On Join Chat Channel Successfully",
+          "parameters": [
+            {
+              "name": "chatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Voice Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "OnPlayerJoinChatChannelSuccessed",
+          "signature": "[deprecated] event OnPlayerJoinChatChannelSuccessed(chatChannel entity<ChatChannel>)",
+          "parameters_text": "chatChannel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Triggered when a player successfully joins a voice channel.",
+          "doc_title": "On Join Chat Channel Successfully",
+          "parameters": [
+            {
+              "name": "chatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Voice Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnJoinChatChannelSuccessfully` instead",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "OnPlayerJoinChatChannelFailure",
+          "signature": "[platform_server] event OnPlayerJoinChatChannelFailure(chatChannel entity<ChatChannel>)",
+          "parameters_text": "chatChannel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Triggered when a player fails to join a voice channel.",
+          "doc_title": "On Join Chat Channel Failure",
+          "parameters": [
+            {
+              "name": "chatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Voice Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "OnLeaveChatChannel",
+          "signature": "[platform_server] event OnLeaveChatChannel(chatChannel entity<ChatChannel>)",
+          "parameters_text": "chatChannel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Triggered when a player leaves a voice channel.",
+          "doc_title": "On Leave Chat Channel",
+          "parameters": [
+            {
+              "name": "chatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Voice Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "OnPlayerLeaveChatChannel",
+          "signature": "[deprecated] event OnPlayerLeaveChatChannel(chatChannel entity<ChatChannel>)",
+          "parameters_text": "chatChannel entity<ChatChannel>",
+          "return_type": null,
+          "description": "Triggered when a player leaves a voice channel.",
+          "doc_title": "On Leave Chat Channel",
+          "parameters": [
+            {
+              "name": "chatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Voice Channel Entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnLeaveChatChannel` instead",
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "MuteVoiceChat",
+              "type": "bool",
+              "description": "Switch voice chat on/off: true to turn off voice, false to turn on voice",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "MuteVoice",
+              "type": "bool",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "MuteQuickChat",
+              "type": "bool",
+              "description": "Switch quick chat: trueClose voice, falseOpen voice",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "ChatChannel",
+              "type": "entity<ChatChannel>",
+              "description": "Channel",
+              "attributes": [
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        },
+        {
+          "name": "ChatChannel",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "ChannelID",
+              "type": "string",
+              "description": "Chat Channel ID",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/ChatChannel.fcc",
+            "blob_sha": "68302ff550027c0a2d36c7cb3ae8d64f1dfd99c9"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/CheckPoint.fcc",
+      "source_sha": "53f05b3ad09ed61cb844e1a31cae14bfdd6469e6",
+      "text_length": 1260,
+      "functions": [],
+      "events": [],
+      "components": [
+        {
+          "name": "Player",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "LastCheckPointID",
+              "type": "int",
+              "description": "Current checkpoint ID",
+              "attributes": []
+            },
+            {
+              "name": "TargetCheckpointID",
+              "type": "int",
+              "description": "ID of the checkpoint the target is traveling to",
+              "attributes": []
+            },
+            {
+              "name": "NextCheckPointID",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/CheckPoint.fcc",
+            "blob_sha": "53f05b3ad09ed61cb844e1a31cae14bfdd6469e6"
+          }
+        },
+        {
+          "name": "CheckPointTrigger",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "CheckpointID",
+              "type": "int",
+              "description": "Checkpoint ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "ID",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "DirectPosition_Deprecated",
+              "type": "DirectedPoint_Deprecated",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "PointPosition",
+              "type": "Vector3",
+              "description": "Location of checkpoints",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "DirectPosition",
+              "type": "Vector3",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/CheckPoint.fcc",
+            "blob_sha": "53f05b3ad09ed61cb844e1a31cae14bfdd6469e6"
+          }
+        },
+        {
+          "name": "EndPointTrigger",
+          "kind": "component",
+          "attributes": [],
+          "properties": [],
+          "source": {
+            "file": "library/release/CheckPoint.fcc",
+            "blob_sha": "53f05b3ad09ed61cb844e1a31cae14bfdd6469e6"
           }
         }
       ]
