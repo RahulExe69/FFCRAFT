@@ -20,7 +20,11 @@
     "exactOtherSymbolKind": 0,
     "approxCandidates": 113,
     "noMatch": 21,
-    "likelyNotes": 3
+    "likelyNotes": 3,
+    "officialCurrentReferencesAdded": 24,
+    "updatedStatusOfficialCurrent": 13,
+    "unresolvedAfterOfficialCheck": 10,
+    "likelyEditorNative": 1
   },
   "policy": {
     "exact_name_or_doc_title_match_is_a_candidate_not_a_current_support_claim": true,
@@ -177,7 +181,7 @@
       "observed_label": "On Player Quit Midway (Player)",
       "observed_signature": "On Player Quit Midway (Player)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -239,7 +243,14 @@
           "similarity": 0.32
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "On Player Quit Midway",
+        "url": "https://ffcraftland.garena.com/en/docs/type-11",
+        "evidence": "Current official Global entity event table lists On Player Quit Midway and says it fires when a player quits midway.",
+        "platform_status": "Event owner and argument details should be verified in the event reference before generating code.",
+        "confidence": "official-current-event-name-confirmed"
+      }
     },
     {
       "source_line": 30,
@@ -608,7 +619,7 @@
       "observed_label": "On User Quit or User Match End (Player)",
       "observed_signature": "On User Quit or User Match End (Player)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -628,7 +639,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "On User Quit or User Match End",
+        "url": "https://ffcraftland.garena.com/en/docs/type-11",
+        "evidence": "The current official Global entity event table lists On User Quit or User Match End, triggered when the user quits the match or when the match ends.",
+        "platform_status": "Current official event listing; check exact event payload in event detail.",
+        "confidence": "official-current-event-name-confirmed"
+      }
     },
     {
       "source_line": 45,
@@ -984,7 +1002,7 @@
       "observed_label": "On User Consumable (ConsumableID, Item, Spawned Item)",
       "observed_signature": "On User Consumable (ConsumableID, Item, Spawned Item)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -1032,7 +1050,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved user-consumable event label",
+        "url": "https://ffcraftland.garena.com/en/docs/event",
+        "evidence": "Not found as an exact current official event label in this research pass or the older extension-library snapshot. Do not infer a similarly named event. Possible editor-native/custom event, module-scoped event, or transcription needs to be checked.",
+        "platform_status": "Unresolved; needs event browser/current editor search.",
+        "confidence": "unresolved"
+      }
     },
     {
       "source_line": 57,
@@ -1701,7 +1726,7 @@
       "observed_label": "On User Portal (Portal)",
       "observed_signature": "On User Portal (Portal)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -1749,7 +1774,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "On Use Portal",
+        "url": "https://ffcraftland.garena.com/en/docs/module-26",
+        "evidence": "The current official Level Object module lists On Use Portal as the event fired after an entity uses a portal to teleport. Rough.txt says On User Portal, likely a transcription/label-reading discrepancy; confirm from the current Mobile editor if exact text matters.",
+        "platform_status": "Official Level Object event; exact Mobile block label and payload need visual verification.",
+        "confidence": "official-related-event-found-label-variance"
+      }
     },
     {
       "source_line": 76,
@@ -1840,7 +1872,7 @@
       "observed_label": "On Throwable Explodes (Hit Position)",
       "observed_signature": "On Throwable Explodes (Hit Position)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -1860,7 +1892,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved throwable-exploded event label",
+        "url": "https://ffcraftland.garena.com/en/docs/event",
+        "evidence": "Not found as an exact current official event label in this research pass or the older extension-library snapshot. The official Level Object docs do list On Explode for vehicles/dye barrels, which is related but not an equivalent for a throwable.",
+        "platform_status": "Unresolved; do not map to On Explode without evidence.",
+        "confidence": "unresolved"
+      }
     },
     {
       "source_line": 79,
@@ -2409,7 +2448,7 @@
       "observed_label": "Set Property",
       "observed_signature": "Set Property: Entity ___ Entity --- Set Property --- Operation = ___ (so suppose at first drop menu i add player then in the 1st drop down i have to select player entity then in the second drop down i can select what to edit like hp position orientation knockout state etc. like that we can also set property of othe entity and assets and everything)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2471,7 +2510,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Set property / Set Property",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-871/",
+        "evidence": "Official STD Library API page confirms a Set property API, says it sets an already-defined entity attribute, and labels this code API Both Server and Client but Only PC. Separately, the official Mobile tutorial demonstrates a visual Set property block; treat that as a separate UI-block confirmation, not proof the PC API's exact scope differs.",
+        "platform_status": "PC API page says Only PC; Mobile tutorial confirms a visual block with its own editor context.",
+        "confidence": "official-current-docs-confirm-name; platform-layer-needs-separation"
+      }
     },
     {
       "source_line": 113,
@@ -2480,7 +2526,7 @@
       "observed_label": "Get Property",
       "observed_signature": ".Get Property: Entity ___ Entity --- Set Property ---",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2542,7 +2588,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Get property / Get Property",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-872/",
+        "evidence": "Official STD Library API page confirms Get property, describes reading an entity attribute, and labels this code API Both Server and Client but Only PC. Official Mobile tutorial demonstrates a visual Get property block. Keep the Mobile visual block and PC API records separate.",
+        "platform_status": "PC API page says Only PC; Mobile tutorial confirms a visual block with its own editor context.",
+        "confidence": "official-current-docs-confirm-name; platform-layer-needs-separation"
+      }
     },
     {
       "source_line": 114,
@@ -2551,7 +2604,7 @@
       "observed_label": "Get Global",
       "observed_signature": ".Get Global",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2613,7 +2666,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Get global",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-26",
+        "evidence": "The current official STD Library API index includes Get global, describing access to the Global entity.",
+        "platform_status": "Verify the specific block sockets in the target editor.",
+        "confidence": "official-current-docs-confirm-name"
+      }
     },
     {
       "source_line": 115,
@@ -2706,7 +2766,7 @@
       "observed_label": "Wait for Milliseconds",
       "observed_signature": "Wait for Milliseconds: Duration (ms)  0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2768,7 +2828,14 @@
           "similarity": 0.32
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Wait for Millisecond",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-26",
+        "evidence": "The current official STD Library API index lists Wait for Millisecond. The Rough.txt wording pluralizes the label; not a missing API.",
+        "platform_status": "Official index indicates this API is in STD Library; verify exact context/platform in detail page.",
+        "confidence": "official-current-docs-confirm-near-exact-label"
+      }
     },
     {
       "source_line": 119,
@@ -2805,7 +2872,7 @@
       "observed_label": "This Entity",
       "observed_signature": ".This Entity",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2867,7 +2934,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "This Entity",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-26",
+        "evidence": "The current official STD Library API index lists This Entity: it returns the entity bound to the current script.",
+        "platform_status": "Use the exact script/visual context; both editor contexts are not automatically interchangeable.",
+        "confidence": "official-current-docs-confirm-name"
+      }
     },
     {
       "source_line": 121,
@@ -2876,7 +2950,7 @@
       "observed_label": "Type As ---",
       "observed_signature": ".Type As --- (this one is to change type suppose I created a variable and made like at spawn that when player joins the match convert triggering Modify: Player 1 as Triggering Player so in other block where there is ___ so if I add Player 1 variable there it'll not add so there we have to add this block and select Player Entity from --- to make the engine think Player 1 is a player entity)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -2938,7 +3012,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "TYPE-to-ID API migration",
+        "url": "https://ffcraftland.garena.com/en/patch-notes/",
+        "evidence": "Official Studio 1.17.0 patch notes say TYPE-related APIs migrated to ID-based APIs, removing the need for additional 'as' casting. Treat a Type As note as legacy/context-dependent until current editor evidence confirms it.",
+        "platform_status": "Not a normal function match; version-dependent editor node.",
+        "confidence": "official-current-version-note"
+      }
     },
     {
       "source_line": 122,
@@ -3362,7 +3443,7 @@
       "observed_label": "Get Children By Index",
       "observed_signature": ".Get Children By Index: Parent ___ Index . 0  (I used . Before 0 means it's also a component, comp inside comp)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -3424,7 +3505,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Get Child By Index",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-540/",
+        "evidence": "Current official page name is singular Get Child By Index; it returns the specified child entity at the requested index, and its page lists Both Server and Client plus Both Mobile and PC.",
+        "platform_status": "Both server/client and both Mobile/PC according to the official API page.",
+        "confidence": "official-current-docs-confirm-name-normalization"
+      }
     },
     {
       "source_line": 136,
@@ -3461,7 +3549,7 @@
       "observed_label": "Get Parnt",
       "observed_signature": ".Get Parnt: Child ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -3523,7 +3611,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Get Parent",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-542/",
+        "evidence": "Current official page calls the operation Get Parent, returning the parent node of the target child entity, with Both Server and Client and Both Mobile and PC.",
+        "platform_status": "Both server/client and both Mobile/PC according to the official API page.",
+        "confidence": "official-current-docs-confirm-name-typo-corrected"
+      }
     },
     {
       "source_line": 138,
@@ -3793,7 +3888,7 @@
       "observed_label": "Add Comment",
       "observed_signature": "Add Comment: Content  please enter the content",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "likely-editor-native-not-runtime-api",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -3855,7 +3950,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Editor comment / note block",
+        "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
+        "evidence": "No standalone current STD Library function match identified. This likely refers to an editor annotation/comment node rather than runtime gameplay API; keep categorized as an editor feature until validated in the current Studio UI.",
+        "platform_status": "PC editor-native candidate; not established as Mobile logic block.",
+        "confidence": "editor-native-candidate"
+      }
     },
     {
       "source_line": 146,
@@ -3864,7 +3966,7 @@
       "observed_label": "Get Type Name",
       "observed_signature": ".Get Type Name: Target ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -3926,7 +4028,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Get Type Name",
+        "url": "https://ffcraftland.garena.com/en/docs/api-1-978/",
+        "evidence": "Current official API page confirms Get Type Name: return the name of the target object's type, with Both Server and Client and Both Mobile and PC.",
+        "platform_status": "Both server/client and both Mobile/PC according to the official API page.",
+        "confidence": "official-current-docs-confirm-name"
+      }
     },
     {
       "source_line": 152,
@@ -3991,7 +4100,7 @@
       "observed_label": "Filter Level Object",
       "observed_signature": ".Filter Level Object: Filter Type ---",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4053,7 +4162,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official documentation candidate found. Preserve exact platform/scope note and verify UI sockets/dropdowns separately.",
+      "official_current_match": {
+        "title": "Filter Level Objects",
+        "url": "https://ffcraftland.garena.com/en/docs/api-26-124",
+        "evidence": "Current official Level Object API names this operation Filter Level Objects and returns scene objects. Signature shown as FilterLevelObjects(filterType LevelObjectType) List<entity<LevelObject>>.",
+        "platform_status": "Both server/client and both Mobile/PC according to official page.",
+        "confidence": "official-current-docs-confirm-name-pluralized"
+      }
     },
     {
       "source_line": 162,
@@ -4323,7 +4439,7 @@
       "observed_label": "Destroy Target",
       "observed_signature": "Destroy Target: Target ___ Item ___ Count  0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4385,7 +4501,14 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Potential item removal / target-destroy operation",
+        "url": "https://ffcraftland.garena.com/en/docs/module-17",
+        "evidence": "The old mirror and current docs contain generic Destroy/DeleteEntity operations, but the exact Rough label is in the Items group. No exact current Items API match established; don't substitute generic entity Destroy unless target type and behavior are verified.",
+        "platform_status": "Unresolved exact operation; context is Items.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 175,
@@ -4737,7 +4860,7 @@
       "observed_label": "Add Attachment",
       "observed_signature": "Add Attachment: Target ___ Slot ___ Item ___ (Is Success, Attachment)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4799,7 +4922,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved attachment operation",
+        "url": "https://ffcraftland.garena.com/en/docs/module-17",
+        "evidence": "Exact current official Items API match not established in this pass. Keep as a lookup task rather than substituting a similarly named equipment or item API.",
+        "platform_status": "Unresolved.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 185,
@@ -4808,7 +4938,7 @@
       "observed_label": "Get Equipment",
       "observed_signature": "Get Equipment: Target ___ Slot ___ (Equipments, Attachments)",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4870,7 +5000,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved equipment operation",
+        "url": "https://ffcraftland.garena.com/en/docs/module-17",
+        "evidence": "Exact current official Items API match not established in this pass. It may be editor-specific or a different module's helper; do not assume equivalence from words alone.",
+        "platform_status": "Unresolved.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 186,
@@ -5703,7 +5840,7 @@
       "observed_label": "Enable Default Behaviour Tree",
       "observed_signature": "Enable Default Behaviour Tree : Target ___ Enable ---tf",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -5737,7 +5874,14 @@
           "similarity": 0.48
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Enable Default Behaviour Tree",
+        "url": "https://ffcraftland.garena.com/en/docs/module-24",
+        "evidence": "This label needs exact current reference verification. The older library snapshot may contain similarly named behavior-tree helpers, but exact Mobile/PC parity has not been established yet.",
+        "platform_status": "Unresolved platform/context status.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 229,
@@ -5981,12 +6125,19 @@
       "observed_label": "Restore All Properties",
       "observed_signature": "Restore All Properties: Weapon Entity ___",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved property-operation labels",
+        "url": "https://ffcraftland.garena.com/en/docs/module-32",
+        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
+        "platform_status": "Unresolved; needs category and editor screenshot check.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 247,
@@ -5995,12 +6146,19 @@
       "observed_label": "Modify properties",
       "observed_signature": "Modify properties: Formulate-able entity ___ Type --- Properties --- Change Method .---+/× Value  . 0",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved property-operation labels",
+        "url": "https://ffcraftland.garena.com/en/docs/module-32",
+        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
+        "platform_status": "Unresolved; needs category and editor screenshot check.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 248,
@@ -6009,7 +6167,7 @@
       "observed_label": "Set basic properties",
       "observed_signature": "Set basic properties: Formulate-able entity ___ Type --- Properties --- Value . 0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -6057,7 +6215,14 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved property-operation labels",
+        "url": "https://ffcraftland.garena.com/en/docs/module-32",
+        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
+        "platform_status": "Unresolved; needs category and editor screenshot check.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 249,
@@ -6066,12 +6231,19 @@
       "observed_label": "Revert to original properties",
       "observed_signature": "Revert to original properties: Formulate-able entity ___ Type --- Properties ---",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "unresolved-after-official-check",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "official_current_match": {
+        "title": "Unresolved property-operation labels",
+        "url": "https://ffcraftland.garena.com/en/docs/module-32",
+        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
+        "platform_status": "Unresolved; needs category and editor screenshot check.",
+        "confidence": "needs-current-editor-or-api-detail"
+      }
     },
     {
       "source_line": 250,
@@ -18383,5 +18555,21 @@
       "nearest_candidates": [],
       "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
     }
-  ]
+  ],
+  "official_research_pass": {
+    "checked_on": "2026-10-20",
+    "sources": [
+      "https://ffcraftland.garena.com/en/docs/api-1-26",
+      "https://ffcraftland.garena.com/en/docs/api-1-871/",
+      "https://ffcraftland.garena.com/en/docs/api-1-872/",
+      "https://ffcraftland.garena.com/en/docs/api-1-540/",
+      "https://ffcraftland.garena.com/en/docs/api-1-542/",
+      "https://ffcraftland.garena.com/en/docs/api-1-978/",
+      "https://ffcraftland.garena.com/en/docs/api-26-124",
+      "https://ffcraftland.garena.com/en/docs/module-26",
+      "https://ffcraftland.garena.com/en/docs/type-11",
+      "https://ffcraftland.garena.com/en/tutorial/cl/3-48/"
+    ],
+    "notes": "Adds official current references to selected entries. This improves on mirror-only comparison but does not constitute a full live-site scrape of all events/APIs or current visual-block dropdowns."
+  }
 }
