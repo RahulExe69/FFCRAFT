@@ -16,28 +16,30 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 8. [Gameplay patterns, UI, assets, and audio](docs/07-gameplay-ui-audio.md)
 9. [Debugging, performance, and version watch](docs/08-debugging-performance-versions.md)
 10. [Reusable logic recipes](docs/09-recipes.md)
-11. [Source catalogue](docs/SOURCES.md)
+11. [API/module discovery map](docs/10-api-reference-map.md)
+12. [Community resources and how to vet them](docs/11-community-resources.md)
+13. [Source catalogue](docs/SOURCES.md)
 
 ## Current verified baseline
 
 - Garena's official portal separates **Craftland Mobile** learning content from the more expansive **Craftland Studio PC** manual. They should not be treated as identical authoring environments.
-- Craftland supports both visual block scripts and code scripts. The official PC code-scripting guide identifies `.fcg` script files and `.fcc` library files; server and client runtimes have different supported events/APIs and communicate through events rather than calling each other directly.
-- Block scripts are event-driven visual logic. Common script scopes include global, party/team, player, object, and UI-related scripts. The available blocks depend on the script type/context.
-- The latest official patch-note entry found during this review is **Craftland Studio 1.19.0, September 2026**. It includes editor AI/MCP workflow integration and scripting/debugger improvements.
+- Craftland supports visual block scripts and code scripts. The official PC guide identifies `.fcg` script files and `.fcc` library files; server and client runtimes have different supported events/APIs and communicate through events rather than calling each other directly.
+- Block scripts are event-driven visual logic. Common script scopes include global, party/team, player, object, and UI-related scripts. Available blocks depend on script type/context.
+- The latest official patch-note entry found during this review is **Craftland Studio 1.19.0, September 2026**. It includes AI/MCP integration, scripting/debugger improvements, chat and UI capabilities, and additional APIs.
 - Official reference pages visibly mark some APIs/events/types obsolete. Do not copy legacy blocks blindly; inspect the installed editor's current library and deprecation labels.
-- The official Data Storage guide documents limits and caveats. Those limits are recorded in the storage guide with a warning to re-check them against the live editor before publishing.
+- Storage documentation and individual Data Store API pages describe distinct functionality and may have different platform constraints. Confirm the path actually available in the current editor before relying on storage behavior or quotas.
 
 ## Research rules
 
 - Every factual claim should have a source link or be explicitly labelled as a design pattern, hypothesis, or test-needed note.
 - Never invent API names. For exact names, parameter types, platform availability, and deprecation status, confirm in the version of Craftland Studio being used.
-- Distinguish **documented behavior** from **recommended implementation** and **locally verified behavior**. This repo has not claimed that the example recipes have been tested in a live Free Fire match.
+- Distinguish **documented behavior** from **recommended implementation** and **locally verified behavior**. This repo does not claim the example recipes have been tested in a live Free Fire match.
 - Treat player IDs/slots, display names, account UUIDs, custom properties, and persistent records as different concepts; do not use them interchangeably.
 - Prefer server-side authority for match state, scoring, roster order, and win-condition decisions; keep client-side code for local UI/input/presentation unless the relevant API documentation says otherwise.
 
 ## Scope
 
-This first research pass establishes a documented baseline and reliable routes into the official references. The Craftland API is large and version-sensitive; the API index is a discovery map, not a promise that every listed entry is current, supported on mobile, or available in every script context.
+This research pass establishes a structured, source-backed baseline and a workflow for deeper API testing. Craftland's API surface is large and version-sensitive; the API index is a discovery map, not a promise that every entry is current, supported on mobile, or available in every script context.
 
 ## Main official links
 
