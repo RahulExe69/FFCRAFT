@@ -27,6 +27,10 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 19. [Community resource repository audit](docs/16-community-resource-audit.md) — what is useful in Nexos Studio Resources, what appears stale/sample-based, and how to verify it safely.
 20. [Curated asset reference](docs/17-curated-asset-reference.md) — six officially documented skybox base types linked to community package leads, with evidence kept separate.
 21. [FE_RESOURCES_BETA audit](docs/18-fe-resources-beta-audit.md) — review of its 68 sample packages for skyboxes, weather, and voting.
+22. [First vertical slice: join serial](docs/19-first-vertical-slice-join-serial.md) — separate Mobile/PC implementation plans and explicit unresolved blockers.
+23. [PC language-library catalog recovery](docs/20-pc-library-catalog.md) — parsed symbol inventory from 42 public-mirror .fcc libraries, with version/licensing caveats.
+24. [Dropdown/enum crosswalk](docs/21-enum-dropdown-reconstruction.md) — maps the 65 labels in Rough.txt to likely library or official definitions and flags the unresolved set.
+25. [Current official enum/type supplement](docs/22-current-official-enum-supplement.md) — newer official dropdown types missing from the older mirror, plus dynamic skin/texture ID notes.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -34,6 +38,9 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Original `Rough.txt`](Rough.txt) — Rahul's raw, hand-typed editor observations. Preserved as authored; not official or independently verified.
 - [Normalized block inventory](docs/12-user-observed-block-inventory.md) — searchable draft grouped by category and subcategory.
 - [Machine-readable block inventory](research/user-observed-block-inventory.json) — extracted candidates with source-line references and verification labels.
+- [PC library symbol catalog](research/pc-library-symbol-catalog.json) — machine-readable enum/member/function/event/component candidates from the extension mirror.
+- [Dropdown/enum crosswalk](research/enum-dropdown-crosswalk.json) — maps Rough.txt labels to recovered library definitions and records verification status.
+- [Current official enum/type supplement](research/current-official-enum-supplement.json) — official additions and dynamic ID-type findings missing from the older mirror.
 
 ## Current verified baseline
 
@@ -64,4 +71,4 @@ This research pass establishes a structured, source-backed baseline and a workfl
 - [Craftland beginner tutorial and wiki index](https://ffcraftland.garena.com/en/tutorial/cl/3)
 - [Official API/event/type reference index](https://ffcraftland.garena.com/en/docs/api-1-26)
 
-22. [First vertical slice: join serial](docs/19-first-vertical-slice-join-serial.md) — acceptance criteria and separate Mobile/PC plans, with exact unresolved blockers called out.
+
