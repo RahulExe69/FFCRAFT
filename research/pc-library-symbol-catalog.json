@@ -12,14 +12,14 @@
     "authority_note": "Third-party mirror and older snapshot; use for discovery only. Verify every PC entry against the current official editor libraries and current official docs. Does not prove exact Craftland Mobile block parity."
   },
   "stats": {
-    "libraries": 15,
-    "enums": 108,
-    "enum_members": 2074,
-    "functions": 276,
-    "events": 161,
-    "components": 345,
+    "libraries": 20,
+    "enums": 116,
+    "enum_members": 2145,
+    "functions": 368,
+    "events": 195,
+    "components": 366,
     "aliases": 17,
-    "defined_types": 43
+    "defined_types": 48
   },
   "libraries": [
     {
@@ -13404,6 +13404,1035 @@
         "Player",
         "CheckPointTrigger",
         "EndPointTrigger"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Collection.fcc",
+      "source_sha": "460857ab4cb717c3495322ec80999ce3d303d9bb",
+      "bytes_text": 16720,
+      "enum_count": 3,
+      "enum_member_count": 33,
+      "function_count": 28,
+      "event_count": 0,
+      "component_count": 13,
+      "alias_count": 0,
+      "defined_type_count": 5,
+      "enums": [
+        {
+          "name": "EmoteType",
+          "members": [
+            {
+              "name": "Ridicule",
+              "value": null,
+              "notes": "Ridicule: Emote1"
+            },
+            {
+              "name": "RidiculeFunny",
+              "value": null,
+              "notes": "RidiculeFunny: Emote2"
+            },
+            {
+              "name": "GreatConductor",
+              "value": null,
+              "notes": "GreatConductor: Emote3"
+            },
+            {
+              "name": "Energetic",
+              "value": null,
+              "notes": "Energetic: Emote4"
+            },
+            {
+              "name": "BattleInStyle",
+              "value": null,
+              "notes": "Battle In Style: Emote5"
+            }
+          ]
+        },
+        {
+          "name": "OutfitSlotType",
+          "members": [
+            {
+              "name": "Top",
+              "value": "3",
+              "notes": "Top Wear: Top Wear"
+            },
+            {
+              "name": "Chest",
+              "value": "3",
+              "notes": "@deprecated Use `Top` instead"
+            },
+            {
+              "name": "Bottom",
+              "value": "4",
+              "notes": "Bottom Wear: Bottom Wear"
+            },
+            {
+              "name": "Legs",
+              "value": "4",
+              "notes": "@deprecated Use `Bottom` instead"
+            },
+            {
+              "name": "Buttom",
+              "value": "4",
+              "notes": "@deprecated Use `Bottom` instead"
+            },
+            {
+              "name": "Shoes",
+              "value": "5",
+              "notes": "Shoes: Shoes"
+            },
+            {
+              "name": "Feet",
+              "value": "5",
+              "notes": "@deprecated Use `Shoes` instead"
+            },
+            {
+              "name": "Facepaint",
+              "value": "8",
+              "notes": "Facepaint: Facepaint"
+            },
+            {
+              "name": "Face",
+              "value": "8",
+              "notes": "@deprecated Use `Facepaint` instead"
+            },
+            {
+              "name": "Head",
+              "value": "11",
+              "notes": "Headwear: Headwear"
+            },
+            {
+              "name": "Hair",
+              "value": "11",
+              "notes": "@deprecated Use `Head` instead"
+            },
+            {
+              "name": "Set",
+              "value": "12",
+              "notes": "Bodysuit: Bodysuit"
+            },
+            {
+              "name": "Mask",
+              "value": "14",
+              "notes": "Facepaint: Facepaint"
+            },
+            {
+              "name": "HeadAdditive",
+              "value": "14",
+              "notes": "@deprecated Use `Mask` instead"
+            }
+          ]
+        },
+        {
+          "name": "WardrobeType",
+          "members": [
+            {
+              "name": "Top",
+              "value": "3",
+              "notes": "Top Wear: Top Wear"
+            },
+            {
+              "name": "Chest",
+              "value": "3",
+              "notes": "@deprecated Use `Top` instead"
+            },
+            {
+              "name": "Bottom",
+              "value": "4",
+              "notes": "Bottom Wear: Bottom Wear"
+            },
+            {
+              "name": "Legs",
+              "value": "4",
+              "notes": "@deprecated Use `Bottom` instead"
+            },
+            {
+              "name": "Buttom",
+              "value": "4",
+              "notes": "@deprecated Use `Bottom` instead"
+            },
+            {
+              "name": "Shoes",
+              "value": "5",
+              "notes": "Shoes: Shoes"
+            },
+            {
+              "name": "Feet",
+              "value": "5",
+              "notes": "@deprecated Use `Shoes` instead"
+            },
+            {
+              "name": "Facepaint",
+              "value": "8",
+              "notes": "Facepaint: Facepaint"
+            },
+            {
+              "name": "Face",
+              "value": "8",
+              "notes": "@deprecated Use `Facepaint` instead"
+            },
+            {
+              "name": "Head",
+              "value": "11",
+              "notes": "Headwear: Headwear"
+            },
+            {
+              "name": "Hair",
+              "value": "11",
+              "notes": "@deprecated Use `Head` instead"
+            },
+            {
+              "name": "Set",
+              "value": "12",
+              "notes": "Bodysuit: Bodysuit"
+            },
+            {
+              "name": "Mask",
+              "value": "14",
+              "notes": "Facepaint: Facepaint"
+            },
+            {
+              "name": "HeadAdditive",
+              "value": "14",
+              "notes": "@deprecated Use `Mask` instead"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "GetBackpackSkin",
+          "signature": "[platform_server] func GetBackpackSkin(target PlayerOrNPC) BackpackSkinID"
+        },
+        {
+          "name": "GetBagSkin",
+          "signature": "[deprecated] func GetBagSkin(target PlayerOrNPC) BackpackSkinID"
+        },
+        {
+          "name": "SetBackpackSkin",
+          "signature": "[platform_server] func SetBackpackSkin(target PlayerOrNPC, skin BackpackSkinID) //@deprecated Use `SetBackpackSkin` instead"
+        },
+        {
+          "name": "SetBagSkin",
+          "signature": "[deprecated] func SetBagSkin(target PlayerOrNPC, skin BackpackSkinID) /**"
+        },
+        {
+          "name": "ResetBackpackSkin",
+          "signature": "[platform_server] func ResetBackpackSkin(target entity<Player>) //@deprecated Use `ResetBackpackSkin` instead"
+        },
+        {
+          "name": "ResetBagSkin",
+          "signature": "[deprecated] func ResetBagSkin(target entity<Player>) /**"
+        },
+        {
+          "name": "RemoveBackpackSkin",
+          "signature": "[platform_server] func RemoveBackpackSkin(target PlayerOrNPC) //@deprecated Use `RemoveBackpackSkin` instead"
+        },
+        {
+          "name": "RemoveBagSkin",
+          "signature": "[deprecated] func RemoveBagSkin(target PlayerOrNPC) /**"
+        },
+        {
+          "name": "GetOutfit",
+          "signature": "[platform_server] func GetOutfit(target PlayerOrNPC, type OutfitSlotType) OutfitID"
+        },
+        {
+          "name": "GetCloth",
+          "signature": "[deprecated] func GetCloth(target PlayerOrNPC, type OutfitSlotType) OutfitID"
+        },
+        {
+          "name": "SetOutfit",
+          "signature": "[platform_server] func SetOutfit(target PlayerOrNPC, outfit OutfitID) //@deprecated Use `SetOutfit` instead"
+        },
+        {
+          "name": "SetCloth",
+          "signature": "[deprecated] func SetCloth(target PlayerOrNPC, outfit OutfitID) /**"
+        },
+        {
+          "name": "ResetOutfit",
+          "signature": "[platform_server] func ResetOutfit(target entity<Player>) //@deprecated Use `ResetOutfit` instead"
+        },
+        {
+          "name": "ResetCloth",
+          "signature": "[deprecated] func ResetCloth(target entity<Player>) /**"
+        },
+        {
+          "name": "GetWeaponSkin",
+          "signature": "[platform_server] func GetWeaponSkin(target PlayerOrNPC, weapon ItemIDType) WeaponSkinID"
+        },
+        {
+          "name": "SetWeaponSkin",
+          "signature": "[platform_server] func SetWeaponSkin(target PlayerOrNPC, weaponSkin WeaponSkinID) /**"
+        },
+        {
+          "name": "ResetWeaponSkin",
+          "signature": "[platform_server] func ResetWeaponSkin(target entity<Player>, weapon ItemIDType) /**"
+        },
+        {
+          "name": "SetBundle",
+          "signature": "[platform_server] func SetBundle(target entity<Player>, outfits List<OutfitID>) //@deprecated Use `SetBundle` instead"
+        },
+        {
+          "name": "SetClothSuit",
+          "signature": "[deprecated] func SetClothSuit(target entity<Player>, outfits List<OutfitID>) /**"
+        },
+        {
+          "name": "RemoveOutfit",
+          "signature": "[platform_server] func RemoveOutfit(target PlayerOrNPC, type OutfitSlotType) //@deprecated Use `RemoveOutfit` instead"
+        },
+        {
+          "name": "RemoveCloth",
+          "signature": "[deprecated] func RemoveCloth(target PlayerOrNPC, type OutfitSlotType) /**"
+        },
+        {
+          "name": "RemoveWeaponSkin",
+          "signature": "[platform_server] func RemoveWeaponSkin(target PlayerOrNPC, weapon ItemIDType) /**"
+        },
+        {
+          "name": "GetVehicleSkin",
+          "signature": "[platform_server] func GetVehicleSkin(target entity<Player>, vehicle VehicleIDType) VehicleSkinID"
+        },
+        {
+          "name": "SetVehicleSkin",
+          "signature": "[platform_server] func SetVehicleSkin(target entity<Player>, vehicleSkin VehicleSkinID) /**"
+        },
+        {
+          "name": "RemoveVehicleSkin",
+          "signature": "[platform_server] func RemoveVehicleSkin(target entity<Player>, vehicle VehicleIDType) /**"
+        },
+        {
+          "name": "ResetVehicleSkin",
+          "signature": "[platform_server] func ResetVehicleSkin(target entity<Player>, vehicle VehicleIDType) /**"
+        },
+        {
+          "name": "PlayEmote",
+          "signature": "[platform_server] func PlayEmote(target PlayerOrNPC, emote AnimationClipID) /**"
+        },
+        {
+          "name": "PauseEmote",
+          "signature": "[platform_server] func PauseEmote(target PlayerOrNPC, isPause bool)"
+        }
+      ],
+      "events": [],
+      "components": [
+        "PlayerOutfit",
+        "PlayerAvatarInfo",
+        "TransformClothInfo",
+        "Player",
+        "Weapon",
+        "Backpack",
+        "Bag",
+        "Grenade",
+        "GrenadeFlashbang",
+        "GrenadeFlash",
+        "GrenadeSmoke",
+        "NPC",
+        "IceWall"
+      ],
+      "aliases": [],
+      "defined_types": [
+        "WeaponSkinID",
+        "OutfitID",
+        "ClothID",
+        "BackpackSkinID",
+        "VehicleSkinID"
+      ]
+    },
+    {
+      "path": "library/release/Combat.fcc",
+      "source_sha": "38b88f2be9db2d94ab731056ae63674325524937",
+      "bytes_text": 13015,
+      "enum_count": 4,
+      "enum_member_count": 33,
+      "function_count": 4,
+      "event_count": 31,
+      "component_count": 3,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "DamageType",
+          "members": [
+            {
+              "name": "Melee",
+              "value": "1",
+              "notes": "Melee: Melee"
+            },
+            {
+              "name": "Gun",
+              "value": "2",
+              "notes": "Gun: Gun"
+            },
+            {
+              "name": "Grenade",
+              "value": "3",
+              "notes": "Grenade: Throw Attack"
+            },
+            {
+              "name": "ElectricZone",
+              "value": "-1",
+              "notes": "ElectricZone: Safe Zone"
+            },
+            {
+              "name": "Vehicle",
+              "value": "-2",
+              "notes": "Vehicle: Vehicle"
+            },
+            {
+              "name": "Falling",
+              "value": "-4",
+              "notes": "Falling: Falling"
+            },
+            {
+              "name": "KillZone",
+              "value": "-14",
+              "notes": "KillZone: KillZone"
+            },
+            {
+              "name": "Exit",
+              "value": "-50",
+              "notes": "Exit: Exit"
+            },
+            {
+              "name": "PositiveLeave",
+              "value": "-50",
+              "notes": "@deprecated Use `Exit` instead"
+            },
+            {
+              "name": "Disconnect",
+              "value": "-51",
+              "notes": "Disconnect: Disconnect"
+            },
+            {
+              "name": "VehicleExplode",
+              "value": "-6",
+              "notes": "Vehicle Explosion: Vehicle Explosion"
+            },
+            {
+              "name": "Airdrop",
+              "value": "-8",
+              "notes": "Airdrop, Zombie Suicide: Airdrop hit damage, monster suicide damage"
+            },
+            {
+              "name": "Burning",
+              "value": "-10",
+              "notes": "Burning Damage on Vehicle Explosion: Burning Damage on Vehicle Explosion"
+            },
+            {
+              "name": "OilDrumExplode",
+              "value": "-16",
+              "notes": "Oil Drum Explosion: Oil Drum Explosion"
+            },
+            {
+              "name": "OildrumExplode",
+              "value": "-16",
+              "notes": "@deprecated Use `OilDrumExplode` instead"
+            },
+            {
+              "name": "MissileExplode",
+              "value": "-17",
+              "notes": "Missile-Type Weapon: Missile-Type Weapon"
+            },
+            {
+              "name": "Monster",
+              "value": "-19",
+              "notes": "Zombie: Monster"
+            },
+            {
+              "name": "Zombie",
+              "value": "-19",
+              "notes": "@deprecated Use `Monster` instead"
+            },
+            {
+              "name": "DamageZone",
+              "value": "-20",
+              "notes": "Damage Zone: Damage Zone"
+            },
+            {
+              "name": "MiniSentry",
+              "value": "-23",
+              "notes": "Mini Sentry: Turret"
+            },
+            {
+              "name": "CharacterSkill",
+              "value": "-31",
+              "notes": "Character Skill: Character Skill"
+            },
+            {
+              "name": "ActivitySkill",
+              "value": "-31",
+              "notes": "@deprecated Use `CharacterSkill` instead"
+            }
+          ]
+        },
+        {
+          "name": "AimAssistType",
+          "members": [
+            {
+              "name": "Default",
+              "value": "0",
+              "notes": "Default: Default"
+            },
+            {
+              "name": "Enable",
+              "value": "1",
+              "notes": "Enable: Enable"
+            },
+            {
+              "name": "Disable",
+              "value": "2",
+              "notes": "Disable: Disable"
+            }
+          ]
+        },
+        {
+          "name": "DamagedBodyPartType",
+          "members": [
+            {
+              "name": "None",
+              "value": "0",
+              "notes": "None: No"
+            },
+            {
+              "name": "Head",
+              "value": "1",
+              "notes": "Headwear: Head"
+            },
+            {
+              "name": "Body",
+              "value": "2",
+              "notes": "Body: Body"
+            },
+            {
+              "name": "Limb",
+              "value": "3",
+              "notes": "Limb: Limb"
+            }
+          ]
+        },
+        {
+          "name": "HitBodyPart",
+          "members": [
+            {
+              "name": "None",
+              "value": "0",
+              "notes": "None: No"
+            },
+            {
+              "name": "Head",
+              "value": "1",
+              "notes": "Headwear: Head"
+            },
+            {
+              "name": "Body",
+              "value": "2",
+              "notes": "Body: Body"
+            },
+            {
+              "name": "Limb",
+              "value": "3",
+              "notes": "Limb: Limb"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "DealDamage",
+          "signature": "[platform_server] func DealDamage(target entity<Combatable>, attacker entity<Combatable>, type DamageType, damage int) //@deprecated Use `DealDamage` instead"
+        },
+        {
+          "name": "MakeDamage",
+          "signature": "[deprecated] func MakeDamage(target entity<Combatable>, attacker entity<Combatable>, type DamageType, damage int) /**"
+        },
+        {
+          "name": "Eliminate",
+          "signature": "[platform_server] func Eliminate(target entity<Combatable>) //@deprecated Use `Eliminate` instead"
+        },
+        {
+          "name": "Kill",
+          "signature": "[deprecated] func Kill(target entity<Combatable>) /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnPreTakeDamage",
+          "signature": "[platform_server] event OnPreTakeDamage(attacker entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "BeforeTakingDamage",
+          "signature": "[deprecated] event BeforeTakingDamage(attacker entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnPreDealDamage",
+          "signature": "[platform_server] event OnPreDealDamage(target entity<Combatable>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "BeforeDealDamage",
+          "signature": "[deprecated] event BeforeDealDamage(target entity<Combatable>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnPlayerBeEliminated",
+          "signature": "event OnPlayerBeEliminated(player entity<Player>)"
+        },
+        {
+          "name": "OnPlayerDead",
+          "signature": "[deprecated] event OnPlayerDead(player entity<Player>)"
+        },
+        {
+          "name": "OnPlayerAssist",
+          "signature": "[platform_server] event OnPlayerAssist(assistPlayer entity<Player>, eliminatedPlayer entity<Player>)"
+        },
+        {
+          "name": "OnPlayerDealDamage",
+          "signature": "event OnPlayerDealDamage(attacker entity<Player>, target entity<Player>, damageType DamageType, value int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnPlayerDamage",
+          "signature": "[deprecated] event OnPlayerDamage(attacker entity<Player>, target entity<Player>, damageType DamageType, value int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnPlayerEliminate",
+          "signature": "[platform_server] event OnPlayerEliminate(player entity<Player>, eliminatedPlayer entity<Player>, damageType DamageType)"
+        },
+        {
+          "name": "OnPlayerKill",
+          "signature": "[deprecated] event OnPlayerKill(player entity<Player>, eliminatedPlayer entity<Player>, damageType DamageType)"
+        },
+        {
+          "name": "OnPlayerBeKnockedDown",
+          "signature": "[platform_server] event OnPlayerBeKnockedDown(player entity<Player>, attacker entity<Player>)"
+        },
+        {
+          "name": "OnTeamAce",
+          "signature": "[platform_server] event OnTeamAce(team entity<Team>)"
+        },
+        {
+          "name": "OnEliminated",
+          "signature": "[platform_server] event OnEliminated(attacker entity<Entity>, damageType DamageType, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnBeKilled",
+          "signature": "[deprecated] event OnBeKilled(attacker entity<Entity>, damageType DamageType, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnTakeDamage",
+          "signature": "[platform_server] event OnTakeDamage(attacker entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnDealDamage",
+          "signature": "[platform_server] event OnDealDamage(target entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnMakeDamage",
+          "signature": "[deprecated] event OnMakeDamage(target entity<Entity>, damageType DamageType, damage int, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnEliminate",
+          "signature": "event OnEliminate(target entity<Entity>, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnKill",
+          "signature": "[deprecated] event OnKill(target entity<Entity>, damagedBodyPart DamagedBodyPartType)"
+        },
+        {
+          "name": "OnBeKnockedDown_Deprecated",
+          "signature": "[deprecated] [platform_server] event OnBeKnockedDown_Deprecated()"
+        },
+        {
+          "name": "OnACE",
+          "signature": "[platform_server] event OnACE()"
+        },
+        {
+          "name": "OnAssist",
+          "signature": "[platform_server] event OnAssist(eliminatedEntity entity<Combatable>)"
+        },
+        {
+          "name": "OnPlayerRevivedInSpawnPos",
+          "signature": "[platform_server] event OnPlayerRevivedInSpawnPos(player entity<Player>)"
+        },
+        {
+          "name": "OnPlayerReviveInSpawnPos",
+          "signature": "[deprecated] event OnPlayerReviveInSpawnPos(player entity<Player>)"
+        },
+        {
+          "name": "OnWeaponEliminate",
+          "signature": "[platform_server] event OnWeaponEliminate(target entity<Combatable>)"
+        },
+        {
+          "name": "OnKillEntity",
+          "signature": "[deprecated] event OnKillEntity(target entity<Combatable>)"
+        },
+        {
+          "name": "OnWeaponDealDamage",
+          "signature": "[platform_server] event OnWeaponDealDamage(target entity<Combatable>, damage int)"
+        },
+        {
+          "name": "OnWeaponTakeDamage",
+          "signature": "[deprecated] event OnWeaponTakeDamage(target entity<Combatable>, damage int)"
+        },
+        {
+          "name": "OnKnockedDown",
+          "signature": "[platform_server] event OnKnockedDown(attacker entity<Combatable>)"
+        },
+        {
+          "name": "OnBeKnockedDown",
+          "signature": "[deprecated] event OnBeKnockedDown(attacker entity<Combatable>)"
+        }
+      ],
+      "components": [
+        "Player",
+        "WeaponGenerator",
+        "WeaponContainer"
+      ],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Convert.fcc",
+      "source_sha": "d81a054f63dde00fca2e9ceeadce22ba3243166e",
+      "bytes_text": 2149,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 9,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "ToString",
+          "signature": "func ToString(target object) string"
+        },
+        {
+          "name": "EulerAngleToVector3",
+          "signature": "func EulerAngleToVector3(value Vector3) Vector3"
+        },
+        {
+          "name": "EularAngleToVector3",
+          "signature": "[deprecated] func EularAngleToVector3(value Vector3) Vector3"
+        },
+        {
+          "name": "IntToFloat",
+          "signature": "func IntToFloat(value int) float"
+        },
+        {
+          "name": "NumToString",
+          "signature": "func NumToString(value Number, style string) string"
+        },
+        {
+          "name": "StringToInt",
+          "signature": "func StringToInt(target string, out var result int, out var isSuccess bool) /**"
+        },
+        {
+          "name": "StringToFloat",
+          "signature": "func StringToFloat(target string, out var result float, out var isSuccess bool) /**"
+        },
+        {
+          "name": "Vector3ToVector2",
+          "signature": "func Vector3ToVector2(target Vector3) Vector2"
+        },
+        {
+          "name": "Vector2ToVector3",
+          "signature": "func Vector2ToVector3(target Vector2) Vector3"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Database.fcc",
+      "source_sha": "c5fad909fe6e1cb845756d6312b28a5b0cf8b993",
+      "bytes_text": 16914,
+      "enum_count": 0,
+      "enum_member_count": 0,
+      "function_count": 43,
+      "event_count": 0,
+      "component_count": 0,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [],
+      "functions": [
+        {
+          "name": "ReadFromDataStore",
+          "signature": "[platform_server] async func ReadFromDataStore(sheetName string, accountId UUID, key string, out var result object, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromDataStore` instead"
+        },
+        {
+          "name": "ReadDBSheetValue_V2",
+          "signature": "[deprecated] async func ReadDBSheetValue_V2(sheetName string, accountId UUID, key string, out var result object, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "ReadFromLeaderboardDataStore",
+          "signature": "[platform_server] async func ReadFromLeaderboardDataStore(sheetName string, key string, out var result List<object>, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromLeaderboardDataStore` instead"
+        },
+        {
+          "name": "ReadDBLeaderboardValue_V2",
+          "signature": "[deprecated] async func ReadDBLeaderboardValue_V2(sheetName string, key string, out var result List<object>, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromLeaderboardDataStore` instead"
+        },
+        {
+          "name": "ReadFromLeadboardDataStore",
+          "signature": "[deprecated] async func ReadFromLeadboardDataStore(sheetName string, key string, out var result List<object>, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "ReadFromLeaderboardDataStoreByRank",
+          "signature": "[platform_server] async func ReadFromLeaderboardDataStoreByRank(sheetName string, startRank int, endRank int, out var result List<object>, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromLeaderboardDataStoreByRank` instead"
+        },
+        {
+          "name": "ReadDBLeaderboardValuesByRange_V2",
+          "signature": "[deprecated] async func ReadDBLeaderboardValuesByRange_V2(sheetName string, startRank int, endRank int, out var result List<object>, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromLeaderboardDataStoreByRank` instead"
+        },
+        {
+          "name": "ReadFromLeadboardDataStoreByRank",
+          "signature": "[deprecated] async func ReadFromLeadboardDataStoreByRank(sheetName string, startRank int, endRank int, out var result List<object>, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "ReadFromAccumulatedDataStore",
+          "signature": "[platform_server] async func ReadFromAccumulatedDataStore(sheetName string, key string, out var result int, mapCode string, out var statusCode StatusCode) //@deprecated Use `ReadFromAccumulatedDataStore` instead"
+        },
+        {
+          "name": "ReadDBAccumulatedData_V2",
+          "signature": "[deprecated] async func ReadDBAccumulatedData_V2(sheetName string, key string, out var result int, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "WriteToDataStore",
+          "signature": "[platform_server] func WriteToDataStore(sheetName string, accountId UUID, key string, value object, mapCode string, out var statusCode StatusCode) //@deprecated Use `WriteToDataStore` instead"
+        },
+        {
+          "name": "WriteDBSheetValue_V2",
+          "signature": "[deprecated] func WriteDBSheetValue_V2(sheetName string, accountId UUID, key string, value object, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "WriteToLeaderboardDataStore",
+          "signature": "[platform_server] func WriteToLeaderboardDataStore(sheetName string, key string, value int, mapCode string, out var statusCode StatusCode) //@deprecated Use `WriteToLeaderboardDataStore` instead"
+        },
+        {
+          "name": "WriteDBLeaderboardValue_V2",
+          "signature": "[deprecated] func WriteDBLeaderboardValue_V2(sheetName string, key string, value int, mapCode string, out var statusCode StatusCode) //@deprecated Use `WriteToLeaderboardDataStore` instead"
+        },
+        {
+          "name": "WriteToLeadboardDataStore",
+          "signature": "[deprecated] func WriteToLeadboardDataStore(sheetName string, key string, value int, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "WriteToAccumulatedDataStore",
+          "signature": "[platform_server] func WriteToAccumulatedDataStore(sheetName string, key string, operationMethod int, offset int, mapCode string, out var statusCode StatusCode) //@deprecated Use `WriteToAccumulatedDataStore` instead"
+        },
+        {
+          "name": "WriteDBAccumulatedDataOffset_V2",
+          "signature": "[deprecated] func WriteDBAccumulatedDataOffset_V2(sheetName string, key string, operationMethod int, offset int, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "RemoveFromDataStore",
+          "signature": "[platform_server] func RemoveFromDataStore(sheetName string, accountId UUID, key string, mapCode string, out var statusCode StatusCode) //@deprecated Use `RemoveFromDataStore` instead"
+        },
+        {
+          "name": "DeleteFromDataStore",
+          "signature": "[deprecated] func DeleteFromDataStore(sheetName string, accountId UUID, key string, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "RemoveFromLeaderboardDataStoreByKey",
+          "signature": "[platform_server] func RemoveFromLeaderboardDataStoreByKey(sheetName string, key string, mapCode string, out var statusCode StatusCode) //@deprecated Use `RemoveFromLeaderboardDataStoreByKey` instead"
+        },
+        {
+          "name": "DeleteFromLeadboardDataStoreByKey",
+          "signature": "[deprecated] func DeleteFromLeadboardDataStoreByKey(sheetName string, key string, mapCode string, out var statusCode StatusCode) //@deprecated Use `RemoveFromLeaderboardDataStoreByKey` instead"
+        },
+        {
+          "name": "RemoveFromLeadboardDataStoreByKey",
+          "signature": "[deprecated] func RemoveFromLeadboardDataStoreByKey(sheetName string, key string, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "RemoveFromLeaderboardDataStoreByRank",
+          "signature": "[platform_server] func RemoveFromLeaderboardDataStoreByRank(sheetName string, rank int, mapCode string, out var statusCode StatusCode) //@deprecated Use `RemoveFromLeaderboardDataStoreByRank` instead"
+        },
+        {
+          "name": "DeleteFromLeadboardDataStoreByRank",
+          "signature": "[deprecated] func DeleteFromLeadboardDataStoreByRank(sheetName string, rank int, mapCode string, out var statusCode StatusCode) //@deprecated Use `RemoveFromLeaderboardDataStoreByRank` instead"
+        },
+        {
+          "name": "RemoveFromLeadboardDataStoreByRank",
+          "signature": "[deprecated] func RemoveFromLeadboardDataStoreByRank(sheetName string, rank int, mapCode string, out var statusCode StatusCode) /**"
+        },
+        {
+          "name": "BatchReadDBSheetValue",
+          "signature": "[platform_server] async func BatchReadDBSheetValue(sheetName string, accountIds List<UUID>, keys List<string>, out var result List<object>, mapCode string, out var statusCodes List<StatusCode>) /**"
+        },
+        {
+          "name": "ReadFromDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] async func ReadFromDatabase_Deprecate(sheetName string, accountId UUID, key string, out var result object, workshopCode string) /**"
+        },
+        {
+          "name": "WriteToDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] func WriteToDatabase_Deprecate(sheetName string, accountId UUID, key string, value object, workshopCode string) /**"
+        },
+        {
+          "name": "DeleteFromDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] func DeleteFromDatabase_Deprecate(sheetName string, accountId UUID, key string, mapCode string) /**"
+        },
+        {
+          "name": "ReadLeadboardFromDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] async func ReadLeadboardFromDatabase_Deprecate(leaderboardName string, key string, out var result List<object>, workshopCode string) //@deprecated Use `ReadLeadboardFromDatabase_Deprecate` instead"
+        },
+        {
+          "name": "ReadLeadboardFromDatabase",
+          "signature": "[deprecated] async func ReadLeadboardFromDatabase(leaderboardName string, key string, out var result List<object>, workshopCode string) /**"
+        },
+        {
+          "name": "WriteLeadboardToDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] func WriteLeadboardToDatabase_Deprecate(leaderboardName string, key string, value int, workshopCode string) //@deprecated Use `WriteLeadboardToDatabase_Deprecate` instead"
+        },
+        {
+          "name": "WriteLeadboardToDatabase",
+          "signature": "[deprecated] func WriteLeadboardToDatabase(leaderboardName string, key string, value int, workshopCode string) /**"
+        },
+        {
+          "name": "DeleteFromLeadboardDatabaseByKey_Deprecate",
+          "signature": "[deprecated] [platform_server] func DeleteFromLeadboardDatabaseByKey_Deprecate(sheetName string, key string, mapCode string) //@deprecated Use `DeleteFromLeadboardDatabaseByKey_Deprecate` instead"
+        },
+        {
+          "name": "DeleteLeadboardFromDatabaseByKey",
+          "signature": "[deprecated] func DeleteLeadboardFromDatabaseByKey(sheetName string, key string, mapCode string) /**"
+        },
+        {
+          "name": "DeleteFromLeadboardDatabaseByRank_Deprecate",
+          "signature": "[deprecated] [platform_server] func DeleteFromLeadboardDatabaseByRank_Deprecate(sheetName string, rank int, mapCode string) //@deprecated Use `DeleteFromLeadboardDatabaseByRank_Deprecate` instead"
+        },
+        {
+          "name": "DeleteLeadboardFromDatabaseByRank",
+          "signature": "[deprecated] func DeleteLeadboardFromDatabaseByRank(sheetName string, rank int, mapCode string) /**"
+        },
+        {
+          "name": "ReadLeadboardFromDatabaseByRank_Deprecate",
+          "signature": "[deprecated] [platform_server] async func ReadLeadboardFromDatabaseByRank_Deprecate(leaderboardName string, startRank int, endRank int, out var result List<object>, workshopCode string) //@deprecated Use `ReadLeadboardFromDatabaseByRank_Deprecate` instead"
+        },
+        {
+          "name": "ReadLeadboardFromDatabaseByRank",
+          "signature": "[deprecated] async func ReadLeadboardFromDatabaseByRank(leaderboardName string, startRank int, endRank int, out var result List<object>, workshopCode string) /**"
+        },
+        {
+          "name": "ReadAccumulatedValueFromDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] async func ReadAccumulatedValueFromDatabase_Deprecate(sheetName string, key string, out var result int, workshopCode string) //@deprecated Use `ReadAccumulatedValueFromDatabase_Deprecate` instead"
+        },
+        {
+          "name": "ReadAccumulatedValueFromDatabase",
+          "signature": "[deprecated] async func ReadAccumulatedValueFromDatabase(sheetName string, key string, out var result int, workshopCode string) /**"
+        },
+        {
+          "name": "WriteAccumulatedValueToDatabase_Deprecate",
+          "signature": "[deprecated] [platform_server] func WriteAccumulatedValueToDatabase_Deprecate(sheetName string, key string, arithmeticType int, offset int, workshopCode string) //@deprecated Use `WriteAccumulatedValueToDatabase_Deprecate` instead"
+        },
+        {
+          "name": "WriteAccumulatedValueToDatabase",
+          "signature": "[deprecated] func WriteAccumulatedValueToDatabase(sheetName string, key string, arithmeticType int, offset int, workshopCode string)"
+        }
+      ],
+      "events": [],
+      "components": [],
+      "aliases": [],
+      "defined_types": []
+    },
+    {
+      "path": "library/release/Dyeing.fcc",
+      "source_sha": "2e5d840ed60da96ac60e17a64ab101bcaa671579",
+      "bytes_text": 4871,
+      "enum_count": 1,
+      "enum_member_count": 5,
+      "function_count": 8,
+      "event_count": 3,
+      "component_count": 5,
+      "alias_count": 0,
+      "defined_type_count": 0,
+      "enums": [
+        {
+          "name": "SprayColor",
+          "members": [
+            {
+              "name": "Orange",
+              "value": "1",
+              "notes": "Orange: Orange"
+            },
+            {
+              "name": "Purple",
+              "value": "2",
+              "notes": "Purple: Purple"
+            },
+            {
+              "name": "Red",
+              "value": "3",
+              "notes": "Red: Red"
+            },
+            {
+              "name": "Green",
+              "value": "4",
+              "notes": "Green: Green"
+            },
+            {
+              "name": "Blue",
+              "value": "5",
+              "notes": "Blue: Blue"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "name": "DyeAtPosition",
+          "signature": "[platform_server] func DyeAtPosition(normal Vector3, position Vector3, color int) /**"
+        },
+        {
+          "name": "GetDyedStatus",
+          "signature": "[platform_server] func GetDyedStatus(startPosition Vector3, direction Vector3, distance float) int"
+        },
+        {
+          "name": "GetDyeingState",
+          "signature": "[deprecated] func GetDyeingState(startPosition Vector3, direction Vector3, distance float) int"
+        },
+        {
+          "name": "GetDyedCount",
+          "signature": "[platform_server] func GetDyedCount(color int) int"
+        },
+        {
+          "name": "GetDyeingCount",
+          "signature": "[deprecated] func GetDyeingCount(color int) int"
+        },
+        {
+          "name": "DyeAtPlane",
+          "signature": "[platform_server] func DyeAtPlane(normal Vector3, position Vector3, range float, color int, out var count int) /**"
+        },
+        {
+          "name": "DyeAtArea",
+          "signature": "[platform_server] func DyeAtArea(normal Vector3, position Vector3, range float, color int, fixedRange float, randomRatio float, randomDecay float, out var count int) /**"
+        },
+        {
+          "name": "ResetDyeing",
+          "signature": "[platform_server] func ResetDyeing() /**"
+        }
+      ],
+      "events": [
+        {
+          "name": "OnSprayed",
+          "signature": "[platform_server] event OnSprayed(weapon entity<Weapon>, hitPosition Vector3, hitNormal Vector3)"
+        },
+        {
+          "name": "OnSpray",
+          "signature": "[platform_server] event OnSpray(hitObject entity<LevelObject>, hitPosition Vector3, hitNormal Vector3)"
+        },
+        {
+          "name": "OnSprayEntity",
+          "signature": "[deprecated] event OnSprayEntity(hitObject entity<LevelObject>, hitPosition Vector3, hitNormal Vector3)"
+        }
+      ],
+      "components": [
+        "SprayGun",
+        "SprayRifle",
+        "SprayResultUI",
+        "SprayResultHud",
+        "ColorDrum"
       ],
       "aliases": [],
       "defined_types": []
