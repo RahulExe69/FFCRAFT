@@ -82,3 +82,18 @@ Some links point to the official pre-release host because that host exposes a mo
 
 - [nexosstudio / FE_RESOURCES_BETA](https://github.com/nexosstudio/FE_RESOURCES_BETA) — community package samples for named/numbered skyboxes, dynamic weather, and a voting system. Latest observed commit: 7 March 2026. Packages are untested until imported into the matching editor. See [audit](18-fe-resources-beta-audit.md).
 - [Curated skybox base types](17-curated-asset-reference.md) — six SkyboxType identifiers cross-checked against Garena's public enum reference, with untested community package links clearly separated from enum evidence.
+
+
+## Recovered language-library and dropdown research
+
+- [Official enum reference](https://ffcraftland.garena.com/en/docs/enum/) — current enum definitions, values, names, and deprecation labels; some selectors represent dynamic type/asset IDs rather than short fixed enums.
+- [Official Type reference](https://ffcraftland.garena.com/en/docs/type) — current type system including skin IDs and asset/resource ID families.
+- [Official Level Object module](https://ffcraftland.garena.com/en/docs/module-26) — exposes Level Object Type, Weapon Skin Type, Vehicle Skin Type, Outfit Skin Type, Backpack Skin Type, and Object Texture.
+- [Official Get Render Quality API](https://ffcraftland.garena.com/en/docs/api-40-940) — current enum/API cross-check; page labels it Client Side and Both Mobile and PC.
+- [Official Free Fire Craftland Code VS Code extension](https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage) — official listing for the language tooling, IntelliSense/signature help and compiler workflow.
+- [Public mirror of the extension's 1.5.0 library folder](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release) — 42 text `.fcc` files used only as a discovery snapshot. It is older than Studio 1.19.0, and its `LICENSE.md` is empty; FFCRAFT stores a derivative symbol index and provenance hashes, not the raw libraries or executable binaries. See [PC catalog recovery](20-pc-library-catalog.md).
+- [Machine-readable PC symbol catalog](../research/pc-library-symbol-catalog.json) — 144 parsed enum declarations, 2,274 member entries, and API/event/component candidates from the mirror; aliases and duplicate legacy definitions are included.
+- [Dropdown/enum crosswalk](../research/enum-dropdown-crosswalk.json) — maps the 65 dropdown/type labels in `Rough.txt` to source candidates and flags gaps.
+- [Current official enum/type supplement](../research/current-official-enum-supplement.json) — captures current official types/options spotted outside the old mirror.
+
+The mirrored library is not treated as authoritative for current API support. A definition's presence there does not prove current availability or Mobile block parity; absence there does not prove that an enum/API is absent from the current official docs/editor.
