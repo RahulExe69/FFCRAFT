@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "repository": "RahulExe69/FFCRAFT",
+  "researched_at": "2026-10-20",
+  "editorial_policy": {
+    "official_docs_first": true,
+    "never_invent_api_names": true,
+    "exact_signatures_must_be_verified_in_installed_fcc": true,
+    "distinguish_documented_from_tested": true,
+    "recipes_are_live_tested": false
+  },
+  "latest_official_release_found": {
+    "product": "Craftland Studio",
+    "version": "1.19.0",
+    "release_month": "2026-09",
+    "source": "https://ffcraftland.garena.com/en/patch-notes/",
+    "checked_on": "2026-10-20",
+    "notable_updates": [
+      "AI Smith and editor MCP workflows",
+      "Script debugger inspection of 2D lists/arrays and improved conditional stepping",
+      "Built-in FCC navigation based on project configuration",
+      "UI joystick callbacks, UI Grid, Easy Scroll Layout, and reusable UI prefab list items",
+      "Distance Visibility component, UI click/location APIs, large-number formatting, keyed/column table access",
+      "Client-side emote play/pause, reusable scrolling list, player stance/movement APIs, chat APIs",
+      "Collection wardrobe APIs, camera sensitivity/shake APIs, asset dependency checks, pre-publish test workflow"
+    ]
+  },
+  "platform_model": [
+    {
+      "name": "Craftland Mobile",
+      "primary_scope": "In-game map creation and gameplay experience",
+      "caution": "Do not assume Craftland Studio PC-only APIs and authoring workflows are available."
+    },
+    {
+      "name": "Craftland Studio PC",
+      "primary_scope": "Broader visual scripting, code scripts/libraries, UI/resources, editor debugging, storage and tooling",
+      "caution": "Individual APIs can still be server-only, client-only, or otherwise platform-gated."
+    }
+  ],
+  "core_findings": [
+    {
+      "id": "blocks",
+      "summary": "Visual block scripts respond to events and call available blocks/APIs; availability depends on script type/context.",
+      "confidence": "documented",
+      "details": "docs/02-block-scripting.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-101"
+      ]
+    },
+    {
+      "id": "code-files",
+      "summary": "Official PC manual describes .fcg code scripts, .fcc libraries, graph/function/event structure, imports, and static scripts.",
+      "confidence": "documented",
+      "details": "docs/03-code-scripting.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
+      ]
+    },
+    {
+      "id": "server-client",
+      "summary": "Server and client scripts have distinct interfaces and communicate through events rather than direct calls.",
+      "confidence": "documented",
+      "details": "docs/04-events-and-runtime.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
+      ]
+    },
+    {
+      "id": "join-serial",
+      "summary": "Use one authoritative match-scoped counter in the server-side On Player Join handler and store the serial on the intended player; define reconnect semantics.",
+      "confidence": "recommended-pattern-test-needed",
+      "details": "docs/05-player-roster-join-serials.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/event-11-14",
+        "https://ffcraftland.garena.com/en/docs/type-11/"
+      ]
+    },
+    {
+      "id": "configured-storage",
+      "summary": "Official Data Storage guide describes normal player storage, ranking storage, statistics storage, operation limits, row/table caps, and archival use.",
+      "confidence": "documented-but-version-sensitive",
+      "details": "docs/06-data-storage.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-35"
+      ]
+    },
+    {
+      "id": "pc-data-store-apis",
+      "summary": "Newer Data Store API reference pages for WriteToDataStoreV2, ReadFromDataStoreSteady, and ReadFromDataStoreByColumn are labeled Server Side and Only PC; legacy WriteToDataStore is obsolete.",
+      "confidence": "documented-version-sensitive",
+      "details": "docs/06-data-storage.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/api-31-1017",
+        "https://ffcraftland.garena.com/en/docs/api-31-1006",
+        "https://ffcraftland.garena.com/en/docs/api-31-953",
+        "https://ffcraftland.garena.com/en/docs/api-31-802"
+      ]
+    },
+    {
+      "id": "audio",
+      "summary": "Timeline audio tracks, sound entities, and runtime sound APIs are different workflows; the track guide currently says custom audio import is not supported there and warns about overlapping keyframes.",
+      "confidence": "documented-but-version-sensitive",
+      "details": "docs/07-gameplay-ui-audio.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-89",
+        "https://ffcraftland.garena.com/en/tutorial/cl/3-44",
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-24"
+      ]
+    }
+  ],
+  "docs": {
+    "docs/00-research-method.md": "Source hierarchy, confidence levels, scope, research caveats and follow-up plan",
+    "docs/01-platform-and-fundamentals.md": "Mobile vs PC, concepts, scopes and workflow",
+    "docs/02-block-scripting.md": "Block editor, event wiring, templates and common failures",
+    "docs/03-code-scripting.md": "FCG/FCC, libraries, script structure, server/client, VS Code tooling",
+    "docs/04-events-and-runtime.md": "Event families, runtime authority, lifecycle and event bridge patterns",
+    "docs/05-player-roster-join-serials.md": "Monotonic join serial design, identity distinctions and test matrix",
+    "docs/06-data-storage.md": "Configured storage, documented quotas and newer PC-only Data Store API caveats",
+    "docs/07-gameplay-ui-audio.md": "Official templates, trigger patterns, HUD, assets and audio",
+    "docs/08-debugging-performance-versions.md": "1.19.0 changelog snapshot, diagnostics and optimization checklist",
+    "docs/09-recipes.md": "Design-level reusable game logic and playtest matrix",
+    "docs/10-api-reference-map.md": "API taxonomy, side/platform constraints, obsolete handling and current API discovery",
+    "docs/11-community-resources.md": "GitHub/community leads and verification procedure",
+    "docs/SOURCES.md": "Source catalogue"
+  },
+  "sources": [
+    {
+      "tier": "A",
+      "topic": "home/releases",
+      "title": "Craftland portal",
+      "url": "https://ffcraftland.garena.com/en/"
+    },
+    {
+      "tier": "A",
+      "topic": "versioning",
+      "title": "Patch notes",
+      "url": "https://ffcraftland.garena.com/en/patch-notes/"
+    },
+    {
+      "tier": "A",
+      "topic": "pc-manual",
+      "title": "Craftland Studio PC User Manual",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1"
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-manual",
+      "title": "Beginner Tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/3"
+    },
+    {
+      "tier": "A",
+      "topic": "blocks",
+      "title": "Block Scripts",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101"
+    },
+    {
+      "tier": "A",
+      "topic": "code",
+      "title": "Code Scripts",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
+    },
+    {
+      "tier": "A",
+      "topic": "events",
+      "title": "Event index",
+      "url": "https://ffcraftland.garena.com/en/docs/type-11/"
+    },
+    {
+      "tier": "A",
+      "topic": "player-events",
+      "title": "On Player Join",
+      "url": "https://ffcraftland.garena.com/en/docs/event-11-14"
+    },
+    {
+      "tier": "A",
+      "topic": "storage",
+      "title": "Data Storage manual",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-35"
+    },
+    {
+      "tier": "A",
+      "topic": "storage-pc-api",
+      "title": "Write To Data Store V2",
+      "url": "https://ffcraftland.garena.com/en/docs/api-31-1017"
+    },
+    {
+      "tier": "A",
+      "topic": "storage-pc-api",
+      "title": "Steady Read From Data Store",
+      "url": "https://ffcraftland.garena.com/en/docs/api-31-1006"
+    },
+    {
+      "tier": "A",
+      "topic": "storage-pc-api",
+      "title": "Read From Data Store By Column",
+      "url": "https://ffcraftland.garena.com/en/docs/api-31-953"
+    },
+    {
+      "tier": "A",
+      "topic": "audio",
+      "title": "Audio Tracks",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-89"
+    },
+    {
+      "tier": "B",
+      "topic": "gameplay-template",
+      "title": "Game Mechanics template",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-87"
+    },
+    {
+      "tier": "B",
+      "topic": "gameplay-template",
+      "title": "Myconsole template",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-86"
+    },
+    {
+      "tier": "B",
+      "topic": "gameplay-template",
+      "title": "Big Head Mode template",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-85"
+    },
+    {
+      "tier": "B",
+      "topic": "community",
+      "title": "Official gameplay systems tutorials",
+      "url": "https://ffcraftland.garena.com/en/community/creator-tutorials:-gameplay-systems/"
+    },
+    {
+      "tier": "D",
+      "topic": "community-mirror",
+      "title": "FF-OGC Craftland-Tutorial",
+      "url": "https://github.com/FF-OGC/Craftland-Tutorial"
+    },
+    {
+      "tier": "D",
+      "topic": "community-resources",
+      "title": "nexosstudio CRAFTLAND_STUDIO_RESOURCES",
+      "url": "https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES"
+    }
+  ],
+  "open_questions": [
+    "Build a complete API/event/type inventory from the user's installed Studio release.",
+    "Compile and test the join-serial recipe in a live test map, including near-simultaneous joins and reconnects.",
+    "Verify the exact current Data Storage quota and whether it applies to each new PC Data Store API.",
+    "Build a mobile-vs-PC support matrix for the APIs the user wants to use.",
+    "Check current editor availability and exact import behavior for sound/audio workflows.",
+    "Record reproducible examples with Craftland version, exact block/API names, logs and outcome."
+  ]
+}
