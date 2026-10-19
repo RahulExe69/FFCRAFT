@@ -279,6 +279,12 @@
       "topic": "block-classification",
       "title": "Block Classification and Flow Control",
       "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-104"
+    },
+    {
+      "tier": "A",
+      "topic": "std-library",
+      "title": "STD Library/API index (contains obsolete markers)",
+      "url": "https://ffcraftland.garena.com/en/docs/api-1-26"
     }
   ],
   "open_questions": [
@@ -330,6 +336,11 @@
         "id": "initial-standard-library-overlap",
         "status": "official index name matches; exact visual block mapping still needs verification",
         "source_url": "https://ffcraftland.garena.com/en/docs/module-1"
+      },
+      {
+        "id": "obsolete-teleport-api",
+        "status": "officially marked obsolete",
+        "source_url": "https://ffcraftland.garena.com/en/docs/api-1-26"
       }
     ]
   }
