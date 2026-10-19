@@ -19,6 +19,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 11. [API/module discovery map](docs/10-api-reference-map.md)
 12. [Community resources and how to vet them](docs/11-community-resources.md)
 13. [Source catalogue](docs/SOURCES.md)
+14. [Machine-readable research index](research/research-index.json) — structured source map, confirmed findings, platform constraints, and open verification items.
 
 ## Current verified baseline
 
