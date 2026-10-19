@@ -20,8 +20,8 @@
 
 ## Summary
 
-- Extracted sections: **36**
-- Candidate block/component lines indexed: **436**
+- Extracted sections: **35**
+- Candidate block/component lines indexed: **441**
 - Enum-like dropdown types recorded: **65**
 - Original source lines: **677**
 
@@ -34,7 +34,7 @@ These are counts of the automated draft inventory, not counts of official APIs o
 | EVENT | Global and private events; custom events are user-created |
 | ACTION | Std Library, Scene, Level Object, Items, UI, Combat, Playable, AI, Behaviour Tree, Other |
 | GAME | Global, Player, Team, Physics, Camera, Workflow, Economy, Minimap, Animation, Collection, Story, Other |
-| DATA | Basic, Math, List, Dictionary/seed-like section, Vector, Strings, Convert, Enum |
+| DATA | Basic, Math, List, Dictionary (label uncertain), Vector, Strings, Convert, Enum |
 | LOGIC | If/else, if, conditional loop, integer range loop, loop over elements, continue, break |
 | VAR | Bool, Int, Float, String, Vector2, Vector3, Any Type |
 | FUNC | Functions are mentioned; full function-creation details are not included |
@@ -286,10 +286,6 @@ These are counts of the automated draft inventory, not counts of official APIs o
 - **Join Team** — `Join Team: Target ___  Target Team ___ (Status Code)` _(Rough.txt line 309; unverified)_
 - **Join New Team** — `Join New Team: Target ___ (New Team, Status Code)` _(Rough.txt line 310; unverified)_
 - **Eliminate At Next Frame** — `Eliminate At Next Frame: Target ___` _(Rough.txt line 311; unverified)_
-
-### GAME — TEAM NOW MOVE TO THE PHYSICS AND BEFORE MOVING I WANT YOU TO KNOW THAT IF YOU ARE UNABLE TO UNDERSTAND OR WANT TO UNDERSTAND A CODE BLOCK THEN ASK ME, I'LL TRY MY BEST
-
-_No candidate lines extracted automatically. Consult the raw source._
 
 ### GAME — PHYSICS
 
@@ -585,7 +581,12 @@ _No candidate lines extracted automatically. Consult the raw source._
 
 ### LOGIC — CONTROL FLOW
 
+- **'if else statement'** — `'if else statement'` _(Rough.txt line 660; unverified)_
+- **'if statement'** — `'if statement'` _(Rough.txt line 662; unverified)_
+- **Then we have 'conditional loop'** — `Then we have 'conditional loop'` _(Rough.txt line 664; unverified)_
+- **then we have 'loop of integer range' which returns** — `then we have 'loop of integer range' which returns ( index name ) and then together we have 'Start Value .0 End Value .10 Step .1'` _(Rough.txt line 665; unverified)_
 - **Then we have 'Loop every element'** — `Then we have 'Loop every element' (Index Name, Element) Data Container ___` _(Rough.txt line 666; unverified)_
+- **Two more block in logic are Continue to next and Break Loop** — `Two more block in logic are Continue to next and Break Loop` _(Rough.txt line 667; unverified)_
 
 ### VAR — VARIABLE TYPES
 
@@ -673,6 +674,8 @@ _No candidate lines extracted automatically. Consult the raw source._
   **Next action:** Capture screenshots or query the installed editor/API reference before assigning semantic types.
 - **Observed issue:** The rough notes describe the block editor, while the official docs also cover code scripts, .fcg/.fcc, client/server constraints, and PC/mobile differences.
   **Next action:** Keep visual block inventory separate from the PC code/API reference and explicitly link the shared concepts.
+- **Observed issue:** The section headed 'DATA - DICTIONARY' lists Create Random Seed and Next, which look like random-seed utilities rather than dictionary operations.
+  **Next action:** Verify the actual editor subcategory label and move/alias these entries only after the installed editor confirms their placement.
 
 ## Next verification pass
 
