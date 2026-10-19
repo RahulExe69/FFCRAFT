@@ -1,0 +1,3127 @@
+{
+  "schema_version": "1.0",
+  "generated_from": {
+    "path": "Rough.txt",
+    "url": "https://github.com/RahulExe69/FFCRAFT/blob/main/Rough.txt",
+    "blob_sha": "66da776d0b775073f1dc21916ab6b7786dd6f353",
+    "size_bytes": 26174,
+    "source_kind": "user-authored editor observations",
+    "note": "Rough.txt remains the untouched original. This file is a searchable normalization layer, not a replacement."
+  },
+  "purpose": "Index visual Craftland block categories, observed names/signatures, enum-like dropdown types, scope notes and verification tasks for the FFCRAFT assistant knowledge base.",
+  "verification_policy": {
+    "default_status": "user-observed; not independently verified",
+    "do_not_treat_as_current_api_truth": true,
+    "preserve_original_typing_and_possible_typos": true,
+    "exact_signatures_require_current_official_docs_or_installed_editor_confirmation": true,
+    "mobile_and_pc_support_must_be_checked_separately": true,
+    "compiled_or_live_tested": false
+  },
+  "top_level_categories": [
+    {
+      "name": "EVENT",
+      "description": "Global and private events; custom events are described as user-created in the source notes."
+    },
+    {
+      "name": "ACTION",
+      "description": "Standard library, scene, level objects, items, UI, combat, playable, AI, behavior tree, and other actions."
+    },
+    {
+      "name": "GAME",
+      "description": "Global, player, team, physics, camera, workflow, economy, minimap, animation, collection, story, and other game operations."
+    },
+    {
+      "name": "DATA",
+      "description": "Basic values, math, lists, dictionary/seed-like blocks, vectors, strings, conversions, and enum dropdowns."
+    },
+    {
+      "name": "LOGIC",
+      "description": "Conditionals, loops, continue and break."
+    },
+    {
+      "name": "VAR",
+      "description": "Variable type options described in the source."
+    },
+    {
+      "name": "FUNC",
+      "description": "Functions; exact UI and signature details not recorded in this file."
+    }
+  ],
+  "scope_notes": [
+    {
+      "scope": "GLOBAL",
+      "observation": "User reports variables/functions created in Global can be referenced from Player, Team, and individual object/HUD/trigger script editors; requires current-version verification."
+    },
+    {
+      "scope": "PLAYER",
+      "observation": "User reports variables/functions created in Player are scoped to Player scripts."
+    },
+    {
+      "scope": "TEAM",
+      "observation": "The file identifies Team as a script scope but does not fully detail its access rules."
+    },
+    {
+      "scope": "OBJECT / HUD / TRIGGER",
+      "observation": "User reports items created within a particular object, HUD, or trigger script are local to that script; verify against current editor behavior."
+    }
+  ],
+  "observed_enum_type_names": [
+    "Damage Type",
+    "Score Type",
+    "Built-in UI Type",
+    "Icon Type",
+    "VFX Type",
+    "Sound Effect Type",
+    "Item ID Type",
+    "Dynamic Create Level Object Type",
+    "Property Modify Type",
+    "Inventory Type",
+    "Type Enum",
+    "Patrol Style Type",
+    "Patrol Type",
+    "Money Type",
+    "SkyboxType",
+    "Player Revival Source Type",
+    "Equipment Type",
+    "Aim Assist Type",
+    "Player Behaviour Status Type",
+    "Buff Type",
+    "Loot Weapon Type",
+    "Object Texture",
+    "Monster Type",
+    "Effect Texture Type",
+    "Loot Armor Type",
+    "Loot Ammo Type",
+    "Loot Consumable Type",
+    "Loot Throwable Type",
+    "Loot Scope Type",
+    "Movable Platform Type",
+    "Tween Style Type",
+    "Coordinate System Type",
+    "Mini Sentry Attack Range Type",
+    "Loot Scorer Type",
+    "Character skill",
+    "Outfit Slot Type",
+    "Player UI Type",
+    "Switch Equip Slot",
+    "3-Status Switch",
+    "Gender Type",
+    "Special ID Type",
+    "Equipment Slot Type",
+    "Damage Body Part Type",
+    "Fill Direction Type",
+    "Fill Type",
+    "Seat Type",
+    "Font Type",
+    "Player Pose Type",
+    "Knok-down Type",
+    "Action Type",
+    "Fire Type",
+    "Layout Sort Type",
+    "Status Code",
+    "Camera Viewing Angle Restriction Type",
+    "Weapon Skin Type",
+    "Backpack Skin Type",
+    "Fog Mode Type",
+    "Rigidbody Constrain Type",
+    "Phase And Round Enum",
+    "Force Type",
+    "LoopType",
+    "Render Quality Type",
+    "Player State Type",
+    "Vehicle Skin Type",
+    "Outfit Skin Type"
+  ],
+  "observed_variable_types": [
+    "Bool",
+    "Int",
+    "Float",
+    "String",
+    "Vector2",
+    "Vector3",
+    "Any Type"
+  ],
+  "sections": [
+    {
+      "category": "EVENT",
+      "subcategory": "GLOBAL EVENT",
+      "heading": "EVENT - GLOBAL EVENT:",
+      "start_line": 22,
+      "end_line": 42,
+      "entries": [
+        {
+          "name": "On Game Start",
+          "observed_signature": "On Game Start",
+          "source_line": 24,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Round Start (Round Index)",
+          "observed_signature": "On Round Start (Round Index)",
+          "source_line": 25,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Round End (Round Index)",
+          "observed_signature": "On Round End (Round Index)",
+          "source_line": 26,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Phase Start (Phase)",
+          "observed_signature": "On Phase Start (Phase)",
+          "source_line": 27,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Phase End (Phase)",
+          "observed_signature": "On Phase End (Phase)",
+          "source_line": 28,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Quit Midway (Player)",
+          "observed_signature": "On Player Quit Midway (Player)",
+          "source_line": 29,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Be Eliminated (Player)",
+          "observed_signature": "On Player Be Eliminated (Player)",
+          "source_line": 30,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Assist (Assist Player, Eliminated Player)",
+          "observed_signature": "On Player Assist (Assist Player, Eliminated Player)",
+          "source_line": 31,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Deal Damage (Attacker, Target, Damage Type, Damage, Damaged Body Part)",
+          "observed_signature": "On Player Deal Damage (Attacker, Target, Damage Type, Damage, Damaged Body Part)",
+          "source_line": 32,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Eliminate (Player, Eliminated Player)",
+          "observed_signature": "On Player Eliminate (Player, Eliminated Player)",
+          "source_line": 33,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Join (Player)",
+          "observed_signature": "On Player Join (Player)",
+          "source_line": 34,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Player Revived (Player, Revival Source)",
+          "observed_signature": "On Player Revived (Player, Revival Source)",
+          "source_line": 35,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Team Ace (Team)",
+          "observed_signature": "On Team Ace (Team)",
+          "source_line": 36,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Camera Raycast",
+          "observed_signature": "On Camera Raycast (Player, Is Hit, Hit Position, Camera Direction, Camera Position, Hit Entity)",
+          "source_line": 37,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Fixed Update",
+          "observed_signature": "On Fixed Update",
+          "source_line": 38,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Game Pause",
+          "observed_signature": "On Game Pause",
+          "source_line": 39,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Game Resume",
+          "observed_signature": "On Game Resume",
+          "source_line": 40,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On User Quit or User Match End (Player)",
+          "observed_signature": "On User Quit or User Match End (Player)",
+          "source_line": 41,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "EVENT",
+      "subcategory": "PRIVATE EVENT",
+      "heading": "EVENT - PRIVATE EVENT:",
+      "start_line": 43,
+      "end_line": 109,
+      "entries": [
+        {
+          "name": "On Awake",
+          "observed_signature": "On Awake",
+          "source_line": 45,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Update",
+          "observed_signature": "On Update",
+          "source_line": 46,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Destroy",
+          "observed_signature": "On Destroy",
+          "source_line": 47,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Enable",
+          "observed_signature": "On Enable",
+          "source_line": 48,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Disable",
+          "observed_signature": "On Disable",
+          "source_line": 49,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Eliminate (Target, Damaged Body Part)",
+          "observed_signature": "On Eliminate (Target, Damaged Body Part)",
+          "source_line": 50,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Eliminated (Attacker, Damage Type, Damage Body Part)",
+          "observed_signature": "On Eliminated (Attacker, Damage Type, Damage Body Part)",
+          "source_line": 51,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)",
+          "observed_signature": "On Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)",
+          "source_line": 52,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Deal Damage (Target, Damage Type, Damage, Damaged Body Part)",
+          "observed_signature": "On Deal Damage (Target, Damage Type, Damage, Damaged Body Part)",
+          "source_line": 53,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Equip Weapon (Weapon)",
+          "observed_signature": "On Equip Weapon (Weapon)",
+          "source_line": 54,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Equip Armor (Equipment ID)",
+          "observed_signature": "On Equip Armor (Equipment ID)",
+          "source_line": 55,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On User Consumable (ConsumableID, Item, Spawned Item)",
+          "observed_signature": "On User Consumable (ConsumableID, Item, Spawned Item)",
+          "source_line": 56,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Access Item (Item ID, Item)",
+          "observed_signature": "On Access Item (Item ID, Item)",
+          "source_line": 57,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Access Weapon (Weapon)",
+          "observed_signature": "On Access Weapon (Weapon)",
+          "source_line": 58,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Revived (Revival Source)",
+          "observed_signature": "On Revived (Revival Source)",
+          "source_line": 59,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Drop Weapon (Weapon)",
+          "observed_signature": "On Drop Weapon (Weapon)",
+          "source_line": 60,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Drop Consumable (ConsumableID, Item)",
+          "observed_signature": "On Drop Consumable (ConsumableID, Item)",
+          "source_line": 61,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Aiming (Target)",
+          "observed_signature": "On Aiming (Target)",
+          "source_line": 62,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Aimed (Player)",
+          "observed_signature": "On Aimed (Player)",
+          "source_line": 63,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Hit By Bullet (Weapon, Hit Position)",
+          "observed_signature": "On Hit By Bullet (Weapon, Hit Position)",
+          "source_line": 64,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Disconnect (Player)",
+          "observed_signature": "On Disconnect (Player)",
+          "source_line": 65,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Reconnect (Player)",
+          "observed_signature": "On Reconnect (Player)",
+          "source_line": 66,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Attack",
+          "observed_signature": "On Attack",
+          "source_line": 67,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Crouch",
+          "observed_signature": "On Crouch",
+          "source_line": 68,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Prone",
+          "observed_signature": "On Prone",
+          "source_line": 69,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Jump",
+          "observed_signature": "On Jump",
+          "source_line": 70,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Sprint",
+          "observed_signature": "On Sprint",
+          "source_line": 71,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Enter Vehicle (Vehicle)",
+          "observed_signature": "On Enter Vehicle (Vehicle)",
+          "source_line": 72,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Leave Vehicle (Vehicle)",
+          "observed_signature": "On Leave Vehicle (Vehicle)",
+          "source_line": 73,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Drive Vehicle (Vehicle)",
+          "observed_signature": "On Drive Vehicle (Vehicle)",
+          "source_line": 74,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On User Portal (Portal)",
+          "observed_signature": "On User Portal (Portal)",
+          "source_line": 75,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Bounced by Tire (Tire)",
+          "observed_signature": "On Bounced by Tire (Tire)",
+          "source_line": 76,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Hit Fly (Mechanism)",
+          "observed_signature": "On Hit Fly (Mechanism)",
+          "source_line": 77,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Throwable Explodes (Hit Position)",
+          "observed_signature": "On Throwable Explodes (Hit Position)",
+          "source_line": 78,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Pre Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)",
+          "observed_signature": "On Pre Take Damage (Attacker, Damage Type, Damage, Damaged Body Part)",
+          "source_line": 79,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Pre Deal Damage (Target, Damage Type, Damage, Damaged Body Part)",
+          "observed_signature": "On Pre Deal Damage (Target, Damage Type, Damage, Damaged Body Part)",
+          "source_line": 80,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Switch Handheld (Item)",
+          "observed_signature": "On Switch Handheld (Item)",
+          "source_line": 81,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Access Equipment (Item)",
+          "observed_signature": "On Access Equipment (Item)",
+          "source_line": 82,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Move (Pose)",
+          "observed_signature": "On Move (Pose)",
+          "source_line": 83,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Idle (Pose)",
+          "observed_signature": "On Idle (Pose)",
+          "source_line": 84,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Standup (Pre Pose)",
+          "observed_signature": "On Standup (Pre Pose)",
+          "source_line": 85,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Surfing",
+          "observed_signature": "On Surfing",
+          "source_line": 86,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Surfing Stop",
+          "observed_signature": "On Surfing Stop",
+          "source_line": 87,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Sprint Stop",
+          "observed_signature": "On Sprint Stop",
+          "source_line": 88,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Jump Stop",
+          "observed_signature": "On Jump Stop",
+          "source_line": 89,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Be Knocked Down (Attacker)",
+          "observed_signature": "On Be Knocked Down (Attacker)",
+          "source_line": 90,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Change Team (Former Team, Current Team)",
+          "observed_signature": "On Change Team (Former Team, Current Team)",
+          "source_line": 91,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Plot Start (Plot ID)",
+          "observed_signature": "On Plot Start (Plot ID)",
+          "source_line": 92,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Plot End (Plot ID)",
+          "observed_signature": "On Plot End (Plot ID)",
+          "source_line": 93,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "On Trigger Plot Option (Plot ID, Option ID)",
+          "observed_signature": "On Trigger Plot Option (Plot ID, Option ID)",
+          "source_line": 94,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "here we have script blocks component blocks which we adds to other and another blocks can be added under them, I can't explain it so hard so here's an examples",
+          "observed_signature": "here we have script blocks component blocks which we adds to other and another blocks can be added under them, I can't explain it so hard so here's an examples= Set Property: 'Entity' ___ 'Entity' --- 'Set Property' --- 'Operation' = ___      so here this cotation 'Entity' and others in cotation is in low colour texture means it's telling us what to put or set in __ and --- and ____ means a box where we can add components like get Property block and those and ---- means drop down menu from where we can choose the appropriate option of the component we want to manage so here we go this is gonna be hard to understand but ig you can do it",
+          "source_line": 108,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "STD LIBRARY",
+      "heading": "ACTION - STD LIBRARY:",
+      "start_line": 110,
+      "end_line": 149,
+      "entries": [
+        {
+          "name": "Set Property",
+          "observed_signature": "Set Property: Entity ___ Entity --- Set Property --- Operation = ___ (so suppose at first drop menu i add player then in the 1st drop down i have to select player entity then in the second drop down i can select what to edit like hp position orientation knockout state etc. like that we can also set property of othe entity and assets and everything)",
+          "source_line": 112,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Property",
+          "observed_signature": ".Get Property: Entity ___ Entity --- Set Property ---",
+          "source_line": 113,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Global",
+          "observed_signature": ".Get Global",
+          "source_line": 114,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Log Info",
+          "observed_signature": "Log Info: Content ___",
+          "source_line": 115,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get All Players",
+          "observed_signature": ".Get All Players",
+          "source_line": 116,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get All Teams",
+          "observed_signature": ".Get All Teams",
+          "source_line": 117,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Wait for Milliseconds",
+          "observed_signature": "Wait for Milliseconds: Duration (ms)  0",
+          "source_line": 118,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Wait For Next Frame",
+          "observed_signature": ".Wait For Next Frame",
+          "source_line": 119,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "This Entity",
+          "observed_signature": ".This Entity",
+          "source_line": 120,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Type As ---",
+          "observed_signature": ".Type As --- (this one is to change type suppose I created a variable and made like at spawn that when player joins the match convert triggering Modify: Player 1 as Triggering Player so in other block where there is ___ so if I add Player 1 variable there it'll not add so there we have to add this block and select Player Entity from --- to make the engine think Player 1 is a player entity)",
+          "source_line": 121,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Type",
+          "observed_signature": ".Get Type: Target ___",
+          "source_line": 122,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Type Is",
+          "observed_signature": ".Type Is: Target ___ Type ___",
+          "source_line": 123,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Is Sub Type Of",
+          "observed_signature": ".Is Sub Type Of: Target ___ Type ___",
+          "source_line": 124,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Filter Entity",
+          "observed_signature": ".Filter Entity: Must___ Not___ Any___",
+          "source_line": 125,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Destroy",
+          "observed_signature": "Destroy: Target ___",
+          "source_line": 126,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Tag",
+          "observed_signature": "Add Tag: Target ___ Custom Tag _please enter the content",
+          "source_line": 127,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove Tag",
+          "observed_signature": "Remove Tag: Target ___ Custom Tag   please enter the content",
+          "source_line": 128,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Has Tag",
+          "observed_signature": "Has Tag: Target ___ Custom Tag   please enter the content",
+          "source_line": 129,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Active",
+          "observed_signature": "Set Active: Target ___ Active ---- (this one actually has true/false in the drop down menu so if any one has that thein I'll write them like this .----tf )",
+          "source_line": 130,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Parent",
+          "observed_signature": "Set Parent: Parent ___ Child ___ World Position Stays --- (generally it comes with tf but we can change the component and use get property to fetch other's position maybe idk)",
+          "source_line": 131,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Progressive Movement Property",
+          "observed_signature": "Progressive Movement Property: Entity ___ Entity --- Set Property --- Value ___",
+          "source_line": 132,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Server Region",
+          "observed_signature": ".Get Server Region",
+          "source_line": 133,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clear All Children",
+          "observed_signature": "Clear All Children: Parent ___",
+          "source_line": 134,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Children By Index",
+          "observed_signature": ".Get Children By Index: Parent ___ Index . 0  (I used . Before 0 means it's also a component, comp inside comp)",
+          "source_line": 135,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Children",
+          "observed_signature": ".Get Children :Parent ___",
+          "source_line": 136,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Parnt",
+          "observed_signature": ".Get Parnt: Child ___",
+          "source_line": 137,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Profanity Filter",
+          "observed_signature": ".Profanity Filter: Content   please enter the content",
+          "source_line": 138,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Bot",
+          "observed_signature": "Create Bot: Difficulty ___ Team Sequency . 0  Return (Created Entity)",
+          "source_line": 139,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Destroy Bot",
+          "observed_signature": "Destroy Bot: Target ___",
+          "source_line": 140,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Log Warning",
+          "observed_signature": "Log Warning: Content ___",
+          "source_line": 141,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Log Error",
+          "observed_signature": "Log Error: Content ___",
+          "source_line": 142,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Has Component",
+          "observed_signature": ".Has Component: Target ___ Component ___",
+          "source_line": 143,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Child By Name",
+          "observed_signature": ".Get Child By Name: Parent ___ Name  please enter the content",
+          "source_line": 144,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Comment",
+          "observed_signature": "Add Comment: Content  please enter the content",
+          "source_line": 145,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Type Name",
+          "observed_signature": ".Get Type Name: Target ___",
+          "source_line": 146,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "SCENE",
+      "heading": "ACTION - SCENE:",
+      "start_line": 150,
+      "end_line": 155,
+      "entries": [
+        {
+          "name": "Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)",
+          "observed_signature": "Set SkyBox Type ---- (it's for changing sky box by selecting from drop down menu)",
+          "source_line": 152,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "LEVEL OBJECT",
+      "heading": "Next Level Object (inferred heading from transition text)",
+      "start_line": 156,
+      "end_line": 157,
+      "entries": []
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "LEVEL OBJECT",
+      "heading": "ACTION - LEVEL OBJECT",
+      "start_line": 158,
+      "end_line": 169,
+      "entries": [
+        {
+          "name": "Create Level Object",
+          "observed_signature": "Create Level Object: Position .XYZ Level Object --- (Created Entity) {here level object means yk all type of objects or assets that available in the game which we can create and tbh I don't use it to create object, I prefer to place object visually because it's easier if I want to code in those objects}",
+          "source_line": 160,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Filter Level Object",
+          "observed_signature": ".Filter Level Object: Filter Type ---",
+          "source_line": 161,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "SpawnNextWave",
+          "observed_signature": "SpawnNextWave: Target ___",
+          "source_line": 162,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clone",
+          "observed_signature": "Clone: Target .No entity  (Created Entity) {Here no Entity means by clicking on it it'll let us select level object from the map and let us copy them and also using that No entity block we can also set or get their property using property blocks too}",
+          "source_line": 163,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Enter Vehicle",
+          "observed_signature": "Enter Vehicle: Player ___ Vehicle ___ Seat ---- (Is Success)",
+          "source_line": 164,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Air Drop (Created Entity)",
+          "observed_signature": "Create Air Drop (Created Entity)",
+          "source_line": 165,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Start Parachute",
+          "observed_signature": "Start Parachute: Target ___ Forced Parachute Height  0  Surfing Max. Speed ___ Diving Max. Speed ___ Parachuting Max. Speed ___",
+          "source_line": 166,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "ITEMS",
+      "heading": "ACTION - ITEMS:",
+      "start_line": 170,
+      "end_line": 189,
+      "entries": [
+        {
+          "name": "Add Item",
+          "observed_signature": "Add Item : Target ___ Item --- Count  0  (Created Entity) { here in the drop down menu, all the available in game items are available from attachment to consumable and to guns and everything of the game we can select that from there}",
+          "source_line": 172,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Item In Scene",
+          "observed_signature": "Create Item In Scene: Position .XYZ items --- Counts  0",
+          "source_line": 173,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Destroy Target",
+          "observed_signature": "Destroy Target: Target ___ Item ___ Count  0",
+          "source_line": 174,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Pickup Status",
+          "observed_signature": "Set Pickup Status: Target ___ Is Disabled .---- tf",
+          "source_line": 175,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Drop Status",
+          "observed_signature": "Set Drop Status: Target ___ Is Disabled .---- tf",
+          "source_line": 176,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clear Backpack",
+          "observed_signature": "Clear Backpack: Target ___",
+          "source_line": 177,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Item Count",
+          "observed_signature": ".Get Item Count: Target ___ Item ___",
+          "source_line": 178,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Destroy Equipment",
+          "observed_signature": "Destroy Equipment: Target ___ Slot --- Count _0_ (Is Success)",
+          "source_line": 179,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clear Residual Level Objects",
+          "observed_signature": "Clear Residual Level Objects",
+          "source_line": 180,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Switch Weapon",
+          "observed_signature": "Switch Weapon: Target ___ Slot ___ (Is Success)",
+          "source_line": 181,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Special Item Status",
+          "observed_signature": "Set Special Item Status: Target ___ Item --- Status ---tf (Created Entity)",
+          "source_line": 182,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Consumables",
+          "observed_signature": "Get Consumables: Target ___(Result)",
+          "source_line": 183,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Attachment",
+          "observed_signature": "Add Attachment: Target ___ Slot ___ Item ___ (Is Success, Attachment)",
+          "source_line": 184,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Equipment",
+          "observed_signature": "Get Equipment: Target ___ Slot ___ (Equipments, Attachments)",
+          "source_line": 185,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Drop Item",
+          "observed_signature": "Drop Item: Target ___ Item ___",
+          "source_line": 186,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "UI",
+      "heading": "ACTION  - UI:",
+      "start_line": 190,
+      "end_line": 201,
+      "entries": [
+        {
+          "name": "Create Built in UI",
+          "observed_signature": "Create Built in UI: Target ___ Type ___ (Created Entity)",
+          "source_line": 192,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Custom HUD",
+          "observed_signature": "Create Custom HUD: Player ___ HUD Index --- (Interface Entity)",
+          "source_line": 193,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Widget From Custom UI",
+          "observed_signature": ".Get Widget From Custom UI: Target ___ Custom UI --- Widget ID ---",
+          "source_line": 194,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Widget By Path",
+          "observed_signature": ".Get Widget By Path: Owner ___ Target ___ Path  please enter the content",
+          "source_line": 195,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Custom UI Widget",
+          "observed_signature": "Create Custom UI Widget: Widget Type --- UI ___ Parent Widget ___ (Created Entity)",
+          "source_line": 196,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Widget Parent",
+          "observed_signature": "Set Widget Parent: Parent ___ Child ___",
+          "source_line": 197,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Notify Show Tips",
+          "observed_signature": "Notify Show Tips: Target ___ Content ___ Colour ___ Duration (ms)  0",
+          "source_line": 198,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "COMBAT",
+      "heading": "ACTION - COMBAT:",
+      "start_line": 202,
+      "end_line": 208,
+      "entries": [
+        {
+          "name": "Deal Damage",
+          "observed_signature": "Deal Damage: Target ___ Type --- Damage _0_",
+          "source_line": 204,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Deal Damage",
+          "observed_signature": "Deal Damage: Target ___ Attacker ___ Type --- Damage _0_",
+          "source_line": 205,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "PLAYABLE",
+      "heading": "ACTION - PLAYABLE:",
+      "start_line": 209,
+      "end_line": 225,
+      "entries": [
+        {
+          "name": "Reset",
+          "observed_signature": "Reset: Target ___",
+          "source_line": 211,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Play",
+          "observed_signature": "Play: Target ___ Reset ---tf",
+          "source_line": 212,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Pause",
+          "observed_signature": "Pause: Target ___",
+          "source_line": 213,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Trajectory",
+          "observed_signature": "Create Trajectory: Target ___ Initial Velocity .XYZ Acceleration .XYZ Max. Displacement  0  Auto Play ---tf (Created Entity)",
+          "source_line": 214,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Follow",
+          "observed_signature": "Create Follow: Target ___ Follow Target ___ Offset .XYZ Cordinate System ___ Auto Play ---tf (Created Entity)",
+          "source_line": 215,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Look At",
+          "observed_signature": "Create Look At: Target ___ Look At Target ___ Offset .XYZ Cordinate System ___ Auto Play ---tf (Created Entity)",
+          "source_line": 216,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sample On Curve",
+          "observed_signature": ".Sample On Curve: Curve ___ Sample Point  0",
+          "source_line": 217,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Result From Curve",
+          "observed_signature": ".Get Result From Curve: Value Type ___ Source Value ___ Destination Value ___  Curve ___ Sample Point  0",
+          "source_line": 218,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Sound",
+          "observed_signature": "Create Sound: Target ___ Resource ___ Loop Type ___ Auto Play ---tf (Created Entity)",
+          "source_line": 219,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Effect",
+          "observed_signature": "Create Effect: Target ___ Resource ___ Loop Type ___ Auto Play ---tf (Created Entity)",
+          "source_line": 220,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Along Path Motion",
+          "observed_signature": "Create Along Path Motion: Target ___ Path ___ Style ___ Speed . 0  Tangent Facing ---tf Auto Play ---tf (Created Entity)",
+          "source_line": 221,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Notify Play Sound",
+          "observed_signature": "Notify Play Sound: Target ___ Resource ___ Speed . 0",
+          "source_line": 222,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "AI",
+      "heading": "ACTION - AI:",
+      "start_line": 226,
+      "end_line": 235,
+      "entries": [
+        {
+          "name": "Enable Default Behaviour Tree",
+          "observed_signature": "Enable Default Behaviour Tree : Target ___ Enable ---tf",
+          "source_line": 228,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Pursuit Target",
+          "observed_signature": "Pursuit Target: Target ___ Pursuit Target ___",
+          "source_line": 229,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Patrol To",
+          "observed_signature": "Patrol To: Target ___ Position .XYZ Come Back ---tf Style ---",
+          "source_line": 230,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Patrol Along",
+          "observed_signature": "Patrol Along: Target ___ Positions ___ Come Back --- Style ---",
+          "source_line": 231,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Monster",
+          "observed_signature": "Create Monster: Position .XYZ Type ___ Team Sequency . 0  Chase Enemy ---tf Action Type ___ Path ___ (Target)",
+          "source_line": 232,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "BEHAVIOUR TREE",
+      "heading": "ACTION - BEHAVIOUR TREE:",
+      "start_line": 236,
+      "end_line": 243,
+      "entries": [
+        {
+          "name": "Set Blackboard Value",
+          "observed_signature": "Set Blackboard Value: Behaviour Tree ___  Key .please enter the content  Value ___",
+          "source_line": 238,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Blackboard Value",
+          "observed_signature": "Get Blackboard Value: Behaviour Tree ___  Key .please enter the content  (Value)",
+          "source_line": 239,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Node Variable",
+          "observed_signature": "Get Node Variable: Node ___ Key . Please enter the content (Value)",
+          "source_line": 240,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "ACTION",
+      "subcategory": "OTHER",
+      "heading": "ACTION - OTHER",
+      "start_line": 244,
+      "end_line": 284,
+      "entries": [
+        {
+          "name": "Restore All Properties",
+          "observed_signature": "Restore All Properties: Weapon Entity ___",
+          "source_line": 246,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Modify properties",
+          "observed_signature": "Modify properties: Formulate-able entity ___ Type --- Properties --- Change Method .---+/× Value  . 0",
+          "source_line": 247,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set basic properties",
+          "observed_signature": "Set basic properties: Formulate-able entity ___ Type --- Properties --- Value . 0",
+          "source_line": 248,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Revert to original properties",
+          "observed_signature": "Revert to original properties: Formulate-able entity ___ Type --- Properties ---",
+          "source_line": 249,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Player Voice Status",
+          "observed_signature": "Set Player Voice Status: Target ___ Is Disabled ---tf",
+          "source_line": 250,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Player Quick Message Status",
+          "observed_signature": "Set Player Quick Message Status: Target ___ Is Disabled ---tf",
+          "source_line": 251,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Chat Channel",
+          "observed_signature": ".Get Chat Channel: Index ---",
+          "source_line": 252,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Current Chat Channel",
+          "observed_signature": ".Get Current Chat Channel: Target ___",
+          "source_line": 253,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Join Chat Channel",
+          "observed_signature": "Join Chat Channel: Target ___ Channel ___",
+          "source_line": 254,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quit Chat Channel",
+          "observed_signature": "Quit Chat Channel: Target ___",
+          "source_line": 255,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Upload Game Result",
+          "observed_signature": "Upload Game Result: Target ___ Result ___ Score Name ___ Score ___",
+          "source_line": 256,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "So moving to the next Category 3.GAME so it has 12 Sub Categories and those are",
+          "observed_signature": "So moving to the next Category 3.GAME so it has 12 Sub Categories and those are :",
+          "source_line": 260,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Now get's started GAME - GLOBAL",
+          "observed_signature": "Now get's started GAME - GLOBAL:",
+          "source_line": 275,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Pause Fixed Update",
+          "observed_signature": "Pause Fixed Update",
+          "source_line": 277,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Resume Fixed Update",
+          "observed_signature": "Resume Fixed Update",
+          "source_line": 278,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Disable Safe Zone",
+          "observed_signature": "Disable Safe Zone",
+          "source_line": 280,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Server Timestamp",
+          "observed_signature": ".Get Server Timestamp",
+          "source_line": 282,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Server Timestamp (ms)",
+          "observed_signature": ".Get Server Timestamp (ms)",
+          "source_line": 283,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "PLAYER",
+      "heading": "GAME - PLAYER:",
+      "start_line": 285,
+      "end_line": 314,
+      "entries": [
+        {
+          "name": "Add HP",
+          "observed_signature": "Add HP: Target ___ Value .0",
+          "source_line": 287,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Teleport",
+          "observed_signature": "Teleport: Target ___ Position .xyz Rotation .xyz",
+          "source_line": 288,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Gey Owner",
+          "observed_signature": ".Gey Owner: Target ___",
+          "source_line": 289,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Behaviour Status",
+          "observed_signature": "Set Behaviour Status: Target ___ Type --- Status ---",
+          "source_line": 291,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Forward",
+          "observed_signature": "Set Forward: Target ___ Forward .XYZ",
+          "source_line": 292,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Skills",
+          "observed_signature": ".Get Skills: Target ___",
+          "source_line": 293,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Skills",
+          "observed_signature": "Set Skills: Target ___ Skills ___",
+          "source_line": 294,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Hit Fly",
+          "observed_signature": "Hit Fly: Target ___ Direction .XYZ Duration (s) .0 Velocity Y . 0  Velocity XZ .  0  Change Rotation ---tf",
+          "source_line": 295,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Default UI Status",
+          "observed_signature": "Set Default UI Status: Target ___ Type .--- Status .---close/show",
+          "source_line": 296,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Random Spawn Position",
+          "observed_signature": ".Get Random Spawn Position: Target ___",
+          "source_line": 297,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Falling Damage",
+          "observed_signature": "Set Falling Damage: Target ___ Height Segments ___ Damage Segments ___",
+          "source_line": 298,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Exit Vehicle",
+          "observed_signature": "Exit Vehicle: Target ___",
+          "source_line": 299,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Revive At Next Frame",
+          "observed_signature": "Revive At Next Frame: Target ___",
+          "source_line": 300,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quit Game at Next Frame",
+          "observed_signature": "Quit Game at Next Frame: Target ___",
+          "source_line": 301,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Now to the next one GAME - TEAM",
+          "observed_signature": "Now to the next one GAME - TEAM:",
+          "source_line": 303,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Attackable Team",
+          "observed_signature": "Set Attackable Team: Attacker ___ Target ___ Attackable .---tf",
+          "source_line": 305,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Position Near Team",
+          "observed_signature": ".Get Position Near Team: Target ___",
+          "source_line": 306,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Attackable Entity",
+          "observed_signature": "Set Attackable Entity: Attacker ___ Target ___ Attackable .---tf",
+          "source_line": 307,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Position Near Entity",
+          "observed_signature": ".Get Position Near Entity: Attacker ___",
+          "source_line": 308,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Join Team",
+          "observed_signature": "Join Team: Target ___  Target Team ___ (Status Code)",
+          "source_line": 309,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Join New Team",
+          "observed_signature": "Join New Team: Target ___ (New Team, Status Code)",
+          "source_line": 310,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Eliminate At Next Frame",
+          "observed_signature": "Eliminate At Next Frame: Target ___",
+          "source_line": 311,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "PHYSICS",
+      "heading": "GAME - PHYSICS:",
+      "start_line": 315,
+      "end_line": 331,
+      "entries": [
+        {
+          "name": "Is Inside Sphere",
+          "observed_signature": ".Is Inside Sphere: Target ___ Center .XYZ Radius . 0",
+          "source_line": 317,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Is Inside Cylinder",
+          "observed_signature": ".Is Inside Cylinder: Target ___ Center .XYZ Radius . 0  Height . 0  Rotation.xyz",
+          "source_line": 318,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Is Inside Box",
+          "observed_signature": ".Is Inside Box: Target ___ Center .XYZ Length . 0 Width . 0  Height . 0  Rotation.xyz",
+          "source_line": 319,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Is Inside Cylinder",
+          "observed_signature": ".Is Inside Cylinder: Target ___ Center .XYZ Radius . 0 Cut Radius . 0  Height . 0  Angle . 0  Rotation.xyz",
+          "source_line": 320,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Single Raycast",
+          "observed_signature": "Single Raycast: Start Position .XYZ Direction .XYZ Distance . 0  Layer Mask ___ Include Trigger .---tf (Hit Entities, Hit Points, Hit Distance, Hit Normals)",
+          "source_line": 321,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Multi-Raycast",
+          "observed_signature": "Multi-Raycast: Start Position .XYZ Direction .XYZ Distance . 0  Layer Mask ___ Include Trigger .---tf (Hit Entities, Hit Points, Hit Distance, Hit Normals)",
+          "source_line": 322,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Box Cast",
+          "observed_signature": "Box Cast: Half Extents .XYZ Center .XYZ Rotating .XYZ Direction .XYZ Max. Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)",
+          "source_line": 323,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sphere Cast",
+          "observed_signature": "Sphere Cast: Radius .0 Center .XYZ Direction .XYZ Max Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)",
+          "source_line": 324,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Capsule Cast",
+          "observed_signature": "Capsule Cast: Radius .0 Height .0 Center .XYZ Rotation .XYZ Direction .XYZ Max Distance .0 Layer Mask ___ Include Trigger .---tf (Hit Entities)",
+          "source_line": 325,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Box Overlap",
+          "observed_signature": "Box Overlap: Half Extents .XYZ Center .XYZ Rotation .XYZ Layer Mask ___ Include Trigger .---tf (Hit Entities)",
+          "source_line": 326,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sphere Overlap",
+          "observed_signature": "Sphere Overlap: Radius .0 Center .XYZ Layer Mask ___ Include Trigger.---tf (Hit Entities)",
+          "source_line": 327,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Capsule Overlap",
+          "observed_signature": "Capsule Overlap: Radius .0 Height .0 Center .XYZ Rotation .XYZ Layer Mask ___ Include Trigger ___ (Hit Entities)",
+          "source_line": 328,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "CAMERA",
+      "heading": "GAME - CAMERA:",
+      "start_line": 332,
+      "end_line": 337,
+      "entries": [
+        {
+          "name": "Get Current Custom Camera",
+          "observed_signature": ".Get Current Custom Camera: Target ___",
+          "source_line": 334,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Switch Custom Camera",
+          "observed_signature": "Switch Custom Camera: Player ___ Camera ___ Transition Type --- Transition Time (ms) .0",
+          "source_line": 335,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Custom Camera (Created Entity)",
+          "observed_signature": "Create Custom Camera (Created Entity)",
+          "source_line": 336,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "WORK FLOW",
+      "heading": "GAME - WORK FLOW:",
+      "start_line": 338,
+      "end_line": 342,
+      "entries": [
+        {
+          "name": "Switch Phase",
+          "observed_signature": "Switch Phase: Phase Index .0",
+          "source_line": 340,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "End Current Phase",
+          "observed_signature": "End Current Phase",
+          "source_line": 341,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "ECONOMY",
+      "heading": "GAME - ECONOMY:",
+      "start_line": 343,
+      "end_line": 359,
+      "entries": [
+        {
+          "name": "Get Wallet",
+          "observed_signature": "Get Wallet: Target ___ (IsExist, Wallet)",
+          "source_line": 345,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Wallet",
+          "observed_signature": "Create Wallet: Owner ___ Target ___ (Created Entity)",
+          "source_line": 346,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Money",
+          "observed_signature": "Add Money: Target ___ Money Type --- Count .0",
+          "source_line": 347,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Cost Money",
+          "observed_signature": "Cost Money: Target ___ Money Type --- Count .0",
+          "source_line": 348,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Transfer Money",
+          "observed_signature": "Transfer Money: Out Wallet ___ Money Type --- Count .0 In Wallet ___",
+          "source_line": 349,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Money Count",
+          "observed_signature": ".Get Money Count: Target ___ Money Type ---",
+          "source_line": 350,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Money",
+          "observed_signature": ".Get Money: Target ___ Money Type ---",
+          "source_line": 351,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get All Shops",
+          "observed_signature": ".Get All Shops",
+          "source_line": 352,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Shop",
+          "observed_signature": "Create Shop: (Created Entity)",
+          "source_line": 353,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Shop Shelf",
+          "observed_signature": "Create Shop Shelf: (Created Entity)",
+          "source_line": 354,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Shop Item",
+          "observed_signature": "Create Shop Item: (Created Entity)",
+          "source_line": 355,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Item To Shop Item",
+          "observed_signature": "Add Item To Shop Item: Shop Item ___ Item ___ Count .0",
+          "source_line": 356,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "MINIMAP",
+      "heading": "GAME - MINIMAP:",
+      "start_line": 360,
+      "end_line": 365,
+      "entries": [
+        {
+          "name": "Create Mini Map Icon",
+          "observed_signature": "Create Mini Map Icon: Target ___ Resource --- (Created Entity)",
+          "source_line": 362,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Create Mini Map Pixel",
+          "observed_signature": "Create Mini Map Pixel: Target ___ Bound Target ___ (Created Entity)",
+          "source_line": 363,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "ANIMATION",
+      "heading": "GAME - ANIMATION:",
+      "start_line": 366,
+      "end_line": 373,
+      "entries": [
+        {
+          "name": "Play Animation",
+          "observed_signature": "Play Animation: Target ___ State .'please enter the content' Play Speed .0 Loop Type ---",
+          "source_line": 368,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Stop Animation",
+          "observed_signature": "Stop Animation: Target ___ State .'please enter the content'",
+          "source_line": 369,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Body Part Weight",
+          "observed_signature": "Set Body Part Weight: Target ___ Body Part Name .' please enter the content' Weight .0",
+          "source_line": 370,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "COLLECTION",
+      "heading": "GAME - COLLECTION:",
+      "start_line": 374,
+      "end_line": 396,
+      "entries": [
+        {
+          "name": "Play Emote",
+          "observed_signature": "Play Emote: Target ___ Emote .---",
+          "source_line": 376,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Pause Emote",
+          "observed_signature": "Pause Emote: Target ___ Is Pause .---tf",
+          "source_line": 377,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Outfit",
+          "observed_signature": ".Get Outfit: Target ___ Type ___",
+          "source_line": 378,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Outfit",
+          "observed_signature": "Set Outfit: Target ___ Outfit ___",
+          "source_line": 379,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reset Outfit",
+          "observed_signature": "Reset Outfit  Target ___",
+          "source_line": 380,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove Outfit",
+          "observed_signature": "Remove Outfit: Target ___ Type ___",
+          "source_line": 381,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Weapon Skin",
+          "observed_signature": ".Get Weapon Skin: Target ___ Weapon .---",
+          "source_line": 382,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Weapon Skin",
+          "observed_signature": "Set Weapon Skin: Target ___ Weapon Skin ___",
+          "source_line": 383,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reset Weapon Skin",
+          "observed_signature": "Reset Weapon Skin: Target ___ Weapon .---",
+          "source_line": 384,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove Weapon Skin",
+          "observed_signature": "Remove Weapon Skin: Target ___ Weapon .---",
+          "source_line": 385,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Vehicle Skin",
+          "observed_signature": ".Get Vehicle Skin: Target ___ Vehicle ___",
+          "source_line": 386,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Vehicle Skin",
+          "observed_signature": "Set Vehicle Skin: Target ___ Vehicle Skin .---",
+          "source_line": 387,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reset Vehicle Skin",
+          "observed_signature": "Reset Vehicle Skin: Target ___ Vehicle ___",
+          "source_line": 388,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove Vehicle Skin",
+          "observed_signature": "Remove Vehicle Skin: Target ___ Vehicle ___",
+          "source_line": 389,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Backpack Skin",
+          "observed_signature": ".Get Backpack Skin: Target ___",
+          "source_line": 390,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Backpack Skin",
+          "observed_signature": "Set Backpack Skin: Target ___ Backpack Skin .---",
+          "source_line": 391,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reset Backpack Skin",
+          "observed_signature": "Reset Backpack Skin: Target ___",
+          "source_line": 392,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove Backpack Skin",
+          "observed_signature": "Remove Backpack Skin: Target ___",
+          "source_line": 393,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "STORY",
+      "heading": "GAME - STORY:",
+      "start_line": 397,
+      "end_line": 403,
+      "entries": [
+        {
+          "name": "Notify Start Plot",
+          "observed_signature": "Notify Start Plot: Target ___ Plot ID ___",
+          "source_line": 399,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "GAME",
+      "subcategory": "OTHER",
+      "heading": "GAME - OTHER:",
+      "start_line": 404,
+      "end_line": 430,
+      "entries": [
+        {
+          "name": "End Morph",
+          "observed_signature": "End Morph: Player ___",
+          "source_line": 406,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Morph To",
+          "observed_signature": "Morph To: Player ___ Target ___ ( Created Entity)",
+          "source_line": 407,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Copy To Morph",
+          "observed_signature": "Copy To Morph: Player ___ Target ___ ( Created Entity)",
+          "source_line": 408,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get Morph",
+          "observed_signature": ".Get Morph",
+          "source_line": 409,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Add Football Velocity",
+          "observed_signature": "Add Football Velocity: Foot Ball ___ Velocity .XYZ",
+          "source_line": 410,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Football Position",
+          "observed_signature": "Set Football Position: Football ___ Velocity .XYZ",
+          "source_line": 411,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Jersey",
+          "observed_signature": "Set Jersey: Target ___ Jersey Type .--- Main Color1 ___ Main Color2 ___ Other Color ___",
+          "source_line": 412,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reset Jersey",
+          "observed_signature": "Reset Jersey: Player ___",
+          "source_line": 413,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set Distance Volumes",
+          "observed_signature": "Set Distance Volumes: Distance List ___ Volume List ___ (Created Entity)",
+          "source_line": 414,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "BASIC",
+      "heading": "DATA - BASIC:",
+      "start_line": 431,
+      "end_line": 448,
+      "entries": [
+        {
+          "name": "Number = .0",
+          "observed_signature": "Number = .0",
+          "source_line": 435,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "String = . 'Please enter the content'",
+          "observed_signature": "String = . 'Please enter the content'",
+          "source_line": 436,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector3 = .X0 Y0 Z0",
+          "observed_signature": "Vector3 = .X0 Y0 Z0",
+          "source_line": 437,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "List = .Empty list",
+          "observed_signature": "List = .Empty list",
+          "source_line": 438,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Bool = .---tf",
+          "observed_signature": "Bool = .---tf",
+          "source_line": 439,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Color = .Color⬜ (we can choose any colour from pallet or grid there)",
+          "observed_signature": "Color = .Color⬜ (we can choose any colour from pallet or grid there)",
+          "source_line": 440,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "entity = .No entity (you're aware of this block ig, i mentioned it before)",
+          "observed_signature": "entity = .No entity (you're aware of this block ig, i mentioned it before)",
+          "source_line": 441,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "NULL",
+          "observed_signature": ".NULL",
+          "source_line": 442,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Curve Custom (here in the custom if we click we can create curve yk)",
+          "observed_signature": ".Curve Custom (here in the custom if we click we can create curve yk)",
+          "source_line": 443,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "MATH",
+      "heading": "DATA - MATH:",
+      "start_line": 449,
+      "end_line": 505,
+      "entries": [
+        {
+          "name": "___ ---___➕",
+          "observed_signature": ".___ ---___➕ (in this component that drop down has +-*/% and clicking that ➕ icon will add another slot and a drop down yk, it's like we can add multiple slots like this ___---___---___---___)",
+          "source_line": 451,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Random Int",
+          "observed_signature": ".Random Int: Min .0 Max .0",
+          "source_line": 452,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Random Float",
+          "observed_signature": ".Random Float: Min .0 Max .0",
+          "source_line": 453,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Abs",
+          "observed_signature": ".Abs: Value .0",
+          "source_line": 454,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sqrt",
+          "observed_signature": ".Sqrt: Value .0",
+          "source_line": 455,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Negate",
+          "observed_signature": ".Negate: Value .0",
+          "source_line": 456,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector addition",
+          "observed_signature": ".Vector addition: ValueA .XYZ ValueB .XYZ",
+          "source_line": 457,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector substraction",
+          "observed_signature": ".Vector substraction: ValueA .XYZ ValueB .XYZ",
+          "source_line": 458,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector multiplication",
+          "observed_signature": ".Vector multiplication: Value .XYZ Scale .0",
+          "source_line": 459,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Dot",
+          "observed_signature": ".Dot: ValueA .XYZ ValueB .XYZ",
+          "source_line": 460,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Cross",
+          "observed_signature": ".Cross: ValueA .XYZ ValueB .XYZ",
+          "source_line": 461,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Distance",
+          "observed_signature": ".Distance: ValueA .XYZ ValueB .XYZ",
+          "source_line": 462,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Angle",
+          "observed_signature": ".Angle: ValueA .XYZ ValueB .XYZ",
+          "source_line": 463,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Projection",
+          "observed_signature": ".Projection: ValueA .XYZ ValueB .XYZ",
+          "source_line": 464,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Lerp Vector3",
+          "observed_signature": ".Lerp Vector3: ValueA .XYZ ValueB .XYZ ValueT .0",
+          "source_line": 465,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Slerp Vector3",
+          "observed_signature": ".Slerp Vector3: ValueA .XYZ ValueB .XYZ ValueT .0",
+          "source_line": 466,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Magnitude",
+          "observed_signature": ".Magnitude: Value .XYZ",
+          "source_line": 467,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Normalize",
+          "observed_signature": ".Normalize: Value .XYZ",
+          "source_line": 468,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2",
+          "observed_signature": ".Vector2: Scale 2D Vector ___ Scale .0",
+          "source_line": 469,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2",
+          "observed_signature": ".Vector2: Add ValueA ___ ValueB ___",
+          "source_line": 470,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 Sub",
+          "observed_signature": ".Vector2 Sub: ValueA ___ ValueB ___",
+          "source_line": 471,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Dot",
+          "observed_signature": ".Vector2Dot: ValueA ___ ValueB ___",
+          "source_line": 472,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Distance",
+          "observed_signature": ".Vector2Distance: ValueA ___ ValueB ___",
+          "source_line": 473,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Angle",
+          "observed_signature": ".Vector2Angle: ValueA ___ ValueB ___",
+          "source_line": 474,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Normalize",
+          "observed_signature": ".Vector2Normalize: Value ___",
+          "source_line": 475,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Magnitude",
+          "observed_signature": ".Vector2Magnitude: Value ___",
+          "source_line": 476,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Reflect",
+          "observed_signature": ".Vector2Reflect: Direction .XYZ Normal .XYZ",
+          "source_line": 477,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2Reflect",
+          "observed_signature": ".Vector2Reflect: Direction ___ Normal ___",
+          "source_line": 478,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Rotate Vector",
+          "observed_signature": ".Rotate Vector: Value .XYZ Delta ___",
+          "source_line": 479,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Max",
+          "observed_signature": ".Max: ValueA .0 ValueB .0",
+          "source_line": 480,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Min",
+          "observed_signature": ".Min: ValueA .0 ValueB .0",
+          "source_line": 481,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Lerp",
+          "observed_signature": ".Lerp: ValueA .0 ValueB .0 ValueT .0",
+          "source_line": 482,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clamp",
+          "observed_signature": ".Clamp: Value .0 Min .0 Max .0",
+          "source_line": 483,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Exponentiation",
+          "observed_signature": ".Exponentiation: Base .0 Exponent .0",
+          "source_line": 484,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Logarithm",
+          "observed_signature": ".Logarithm: Base .0 Real Number .0",
+          "source_line": 485,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Ceil",
+          "observed_signature": ".Ceil: Value  .0",
+          "source_line": 486,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Floor",
+          "observed_signature": ".Floor: Value  .0",
+          "source_line": 487,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Round",
+          "observed_signature": ".Round: Value  .0",
+          "source_line": 488,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "ASin",
+          "observed_signature": ".ASin: Value  .0",
+          "source_line": 489,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "ACos",
+          "observed_signature": ".ACos: Value  .0",
+          "source_line": 490,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sin",
+          "observed_signature": ".Sin: Degree .0",
+          "source_line": 491,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Cos",
+          "observed_signature": ".Cos: Degree .0",
+          "source_line": 492,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Tan",
+          "observed_signature": ".Tan: Degree .0",
+          "source_line": 493,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Value",
+          "observed_signature": ".Value: Degree .0",
+          "source_line": 494,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "ATan2",
+          "observed_signature": ".ATan2: Y .0 X .0",
+          "source_line": 495,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quaternion Angle",
+          "observed_signature": ".Quaternion Angle: Left Value ___ Right Value ___",
+          "source_line": 496,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quaternion Dot",
+          "observed_signature": ".Quaternion Dot: Left Value ___ Right Value ___",
+          "source_line": 497,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quaternion Inverse",
+          "observed_signature": ".Quaternion Inverse: Value ___",
+          "source_line": 498,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quaternion From To Rotation",
+          "observed_signature": ".Quaternion From To Rotation: From .XYZ To .XYZ",
+          "source_line": 499,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Quaternion Rotate Toward",
+          "observed_signature": ".Quaternion Rotate Toward: From ___ To ___ Max Degree Delta .0",
+          "source_line": 500,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "LIST",
+      "heading": "DATA - LIST:",
+      "start_line": 506,
+      "end_line": 530,
+      "entries": [
+        {
+          "name": "Append",
+          "observed_signature": "Append: Target ___ Value ___",
+          "source_line": 508,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove",
+          "observed_signature": "Remove: Target ___ Value ___",
+          "source_line": 509,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Contain",
+          "observed_signature": ".Contain: Target ___ Value ___",
+          "source_line": 510,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Modify",
+          "observed_signature": "Modify: List ___ Index .0 Value ___",
+          "source_line": 511,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Obtain",
+          "observed_signature": ".Obtain: List ___ Index .0",
+          "source_line": 512,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Length",
+          "observed_signature": ".Length: Target ___",
+          "source_line": 513,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Remove At",
+          "observed_signature": "Remove At: Target ___ Index .0",
+          "source_line": 514,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Append Range",
+          "observed_signature": "Append Range: Target ___ Value ___",
+          "source_line": 515,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Index Of",
+          "observed_signature": ".Index Of: Target ___ Value ___",
+          "source_line": 516,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Last Index Of",
+          "observed_signature": ".Last Index Of: Target ___ Value ___",
+          "source_line": 517,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clear",
+          "observed_signature": "Clear: Target ___",
+          "source_line": 518,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Reverse",
+          "observed_signature": "Reverse: Target ___",
+          "source_line": 519,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Clone",
+          "observed_signature": ".Clone: Target ___",
+          "source_line": 520,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Insert",
+          "observed_signature": "Insert: Target ___ Index .0 Value ___",
+          "source_line": 521,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Shuffle",
+          "observed_signature": "Shuffle: Target ___",
+          "source_line": 522,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Is Equal",
+          "observed_signature": ".Is Equal: Left Value ___ Right Value ___",
+          "source_line": 523,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Max",
+          "observed_signature": "Max: Target ___ (Is Success, Result)",
+          "source_line": 524,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Min",
+          "observed_signature": "Min: Target ___ (Is Success, Result)",
+          "source_line": 525,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "DICTIONARY",
+      "heading": "DATA - DICTIONARY:",
+      "start_line": 531,
+      "end_line": 537,
+      "entries": [
+        {
+          "name": "Create Random Seed",
+          "observed_signature": ".Create Random Seed: Seed .0",
+          "source_line": 533,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Next",
+          "observed_signature": ".Next: Value .0 Min .0 Max .0",
+          "source_line": 534,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "VECTOR",
+      "heading": "DATA - VECTOR:",
+      "start_line": 538,
+      "end_line": 554,
+      "entries": [
+        {
+          "name": "Get vector",
+          "observed_signature": ".Get vector: X .0  Y .0  Z .0",
+          "source_line": 540,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get x vector vomponent",
+          "observed_signature": ".Get x vector vomponent: Vector .XYZ",
+          "source_line": 541,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Get y vector component",
+          "observed_signature": ".Get y vector component: Vector .XYZ",
+          "source_line": 542,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Obtain z vector component",
+          "observed_signature": ".Obtain z vector component: Vector .XYZ",
+          "source_line": 543,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set x vector component",
+          "observed_signature": "Set x vector component: Vector .XYZ X .0",
+          "source_line": 544,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set y vector component",
+          "observed_signature": "Set y vector component: Vector .XYZ Y .0",
+          "source_line": 545,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Set z vector component",
+          "observed_signature": "Set z vector component: Vector .XYZ Z .0",
+          "source_line": 546,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "New Vector2",
+          "observed_signature": "New Vector2: X .0 Y .0",
+          "source_line": 547,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 Get X",
+          "observed_signature": ".Vector2 Get X: 2D Vector ___",
+          "source_line": 548,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 Get Y",
+          "observed_signature": ".Vector2 Get Y: 2D Vector ___",
+          "source_line": 549,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 Set X",
+          "observed_signature": "Vector2 Set X: 2D Vector ___ X .0",
+          "source_line": 550,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 Set Y",
+          "observed_signature": "Vector2 Set Y: 2D Vector ___ Y .0",
+          "source_line": 551,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "STRINGS",
+      "heading": "DATA - STRINGS:",
+      "start_line": 555,
+      "end_line": 571,
+      "entries": [
+        {
+          "name": "Connect",
+          "observed_signature": ".Connect: Value1 ___ Value2 ___ ➕(i already explained what this sign ➕ means)",
+          "source_line": 557,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Length",
+          "observed_signature": ".Length: Value .text",
+          "source_line": 558,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Replace",
+          "observed_signature": ".Replace: Target .text Old Value .text New Value .text",
+          "source_line": 559,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Find",
+          "observed_signature": ".Find: Target .text Find Value .text Start Index .0",
+          "source_line": 560,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sub",
+          "observed_signature": ".Sub: Target .text Start Index .0 Length .0",
+          "source_line": 561,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Find At",
+          "observed_signature": ".Find At: Target .text Indexs ___",
+          "source_line": 562,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Split",
+          "observed_signature": ".Split: Target .text Separator .text",
+          "source_line": 563,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Join",
+          "observed_signature": ".Join: Target ___ Sep .text",
+          "source_line": 564,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "To Upper",
+          "observed_signature": ".To Upper: Target .text",
+          "source_line": 565,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "To Lower",
+          "observed_signature": ".To Lower: Target .text",
+          "source_line": 566,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Strip",
+          "observed_signature": ".Strip: Target .text",
+          "source_line": 567,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Format String",
+          "observed_signature": ".Format String: Content .text Parameters Array ___",
+          "source_line": 568,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "CONVERT",
+      "heading": "DATA - CONVERT:",
+      "start_line": 572,
+      "end_line": 587,
+      "entries": [
+        {
+          "name": "To String",
+          "observed_signature": ".To String: Target ___",
+          "source_line": 574,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "String To Int",
+          "observed_signature": "String To Int: Target .text (Result, Is Success)",
+          "source_line": 575,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "String To Float",
+          "observed_signature": "String To Float: Target .text (Result, Is Success)",
+          "source_line": 576,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Int To Float",
+          "observed_signature": ".Int To Float: Value .0",
+          "source_line": 577,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector3 To Vector2",
+          "observed_signature": ".Vector3 To Vector2: Target .XYZ",
+          "source_line": 578,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vector2 To Vector3",
+          "observed_signature": ".Vector2 To Vector3: Target___",
+          "source_line": 579,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Euler Angle to Vector3",
+          "observed_signature": ".Euler Angle to Vector3: Value .XYZ",
+          "source_line": 580,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Direction to Euler Angle",
+          "observed_signature": ".Direction to Euler Angle: Direction .XYZ",
+          "source_line": 581,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Timestamp to Localized String (ms)",
+          "observed_signature": ".Timestamp to Localized String (ms): Timestamp (ms) ___ Style .---",
+          "source_line": 582,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Bitwise List to Int",
+          "observed_signature": ".Bitwise List to Int: Bit Array ___",
+          "source_line": 583,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Bitwise Int to List",
+          "observed_signature": ".Bitwise Int to List: Value .0",
+          "source_line": 584,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "DATA",
+      "subcategory": "ENUM",
+      "heading": "DATA - ENUM (inferred from explanatory line)",
+      "start_line": 588,
+      "end_line": 657,
+      "entries": [
+        {
+          "name": "Damage Type",
+          "observed_signature": "1. Damage Type .---",
+          "source_line": 589,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Score Type",
+          "observed_signature": "2. Score Type .---",
+          "source_line": 590,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Built-in UI Type (I'm not writting.--- because it's time consuming so don't get confused, yk what maybe I don't need to type them as I already told u up there hehe)",
+          "observed_signature": "3. Built-in UI Type (I'm not writting.--- because it's time consuming so don't get confused, yk what maybe I don't need to type them as I already told u up there hehe)",
+          "source_line": 591,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Icon Type",
+          "observed_signature": "4. Icon Type",
+          "source_line": 592,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "VFX Type",
+          "observed_signature": "5. VFX Type",
+          "source_line": 593,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Sound Effect Type",
+          "observed_signature": "6. Sound Effect Type",
+          "source_line": 594,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Item ID Type",
+          "observed_signature": "7. Item ID Type",
+          "source_line": 595,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Dynamic Create Level Object Type",
+          "observed_signature": "8. Dynamic Create Level Object Type",
+          "source_line": 596,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Property Modify Type",
+          "observed_signature": "9. Property Modify Type",
+          "source_line": 597,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Inventory Type",
+          "observed_signature": "10. Inventory Type",
+          "source_line": 598,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Type Enum",
+          "observed_signature": "11. Type Enum",
+          "source_line": 599,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Patrol Style Type",
+          "observed_signature": "12. Patrol Style Type",
+          "source_line": 600,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Patrol Type",
+          "observed_signature": "13. Patrol Type",
+          "source_line": 601,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Money Type",
+          "observed_signature": "14. Money Type",
+          "source_line": 602,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "SkyboxType",
+          "observed_signature": "15. SkyboxType",
+          "source_line": 603,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Player Revival Source Type",
+          "observed_signature": "16. Player Revival Source Type",
+          "source_line": 604,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Equipment Type",
+          "observed_signature": "17. Equipment Type",
+          "source_line": 605,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Aim Assist Type",
+          "observed_signature": "18. Aim Assist Type",
+          "source_line": 606,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Player Behaviour Status Type",
+          "observed_signature": "19. Player Behaviour Status Type",
+          "source_line": 607,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Buff Type",
+          "observed_signature": "20. Buff Type",
+          "source_line": 608,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Weapon Type",
+          "observed_signature": "21. Loot Weapon Type",
+          "source_line": 609,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Object Texture",
+          "observed_signature": "22. Object Texture",
+          "source_line": 610,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Monster Type",
+          "observed_signature": "23. Monster Type",
+          "source_line": 611,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Effect Texture Type",
+          "observed_signature": "24. Effect Texture Type",
+          "source_line": 612,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Armor Type",
+          "observed_signature": "25. Loot Armor Type",
+          "source_line": 613,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Ammo Type",
+          "observed_signature": "26. Loot Ammo Type",
+          "source_line": 614,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Consumable Type",
+          "observed_signature": "27. Loot Consumable Type",
+          "source_line": 615,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Throwable Type",
+          "observed_signature": "28. Loot Throwable Type",
+          "source_line": 616,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Scope Type",
+          "observed_signature": "29. Loot Scope Type",
+          "source_line": 617,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Movable Platform Type",
+          "observed_signature": "30. Movable Platform Type",
+          "source_line": 618,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Tween Style Type",
+          "observed_signature": "31. Tween Style Type",
+          "source_line": 619,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Coordinate System Type",
+          "observed_signature": "32. Coordinate System Type",
+          "source_line": 620,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Mini Sentry Attack Range Type",
+          "observed_signature": "33. Mini Sentry Attack Range Type",
+          "source_line": 621,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Loot Scorer Type",
+          "observed_signature": "34. Loot Scorer Type",
+          "source_line": 622,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Character skill",
+          "observed_signature": "35. Character skill",
+          "source_line": 623,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Outfit Slot Type",
+          "observed_signature": "36. Outfit Slot Type",
+          "source_line": 624,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Player UI Type",
+          "observed_signature": "37. Player UI Type",
+          "source_line": 625,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Switch Equip Slot",
+          "observed_signature": "38. Switch Equip Slot",
+          "source_line": 626,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "3-Status Switch",
+          "observed_signature": "39. 3-Status Switch",
+          "source_line": 627,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Gender Type",
+          "observed_signature": "40. Gender Type",
+          "source_line": 628,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Special ID Type",
+          "observed_signature": "41. Special ID Type",
+          "source_line": 629,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Equipment Slot Type",
+          "observed_signature": "42. Equipment Slot Type",
+          "source_line": 630,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Damage Body Part Type",
+          "observed_signature": "43. Damage Body Part Type",
+          "source_line": 631,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Fill Direction Type",
+          "observed_signature": "44. Fill Direction Type",
+          "source_line": 632,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Fill Type",
+          "observed_signature": "45. Fill Type",
+          "source_line": 633,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Seat Type",
+          "observed_signature": "46. Seat Type",
+          "source_line": 634,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Font Type",
+          "observed_signature": "47. Font Type",
+          "source_line": 635,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Player Pose Type",
+          "observed_signature": "48. Player Pose Type",
+          "source_line": 636,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Knok-down Type",
+          "observed_signature": "49. Knok-down Type",
+          "source_line": 637,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Action Type",
+          "observed_signature": "50. Action Type",
+          "source_line": 638,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Fire Type",
+          "observed_signature": "51. Fire Type",
+          "source_line": 639,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Layout Sort Type",
+          "observed_signature": "52. Layout Sort Type",
+          "source_line": 640,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Status Code",
+          "observed_signature": "53. Status Code",
+          "source_line": 641,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Camera Viewing Angle Restriction Type",
+          "observed_signature": "54. Camera Viewing Angle Restriction Type",
+          "source_line": 642,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Weapon Skin Type",
+          "observed_signature": "55. Weapon Skin Type",
+          "source_line": 643,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Backpack Skin Type",
+          "observed_signature": "56. Backpack Skin Type",
+          "source_line": 644,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Fog Mode Type",
+          "observed_signature": "57. Fog Mode Type",
+          "source_line": 645,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Rigidbody Constrain Type",
+          "observed_signature": "58. Rigidbody Constrain Type",
+          "source_line": 646,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Phase And Round Enum",
+          "observed_signature": "59. Phase And Round Enum",
+          "source_line": 647,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Force Type",
+          "observed_signature": "60. Force Type",
+          "source_line": 648,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "LoopType",
+          "observed_signature": "61. LoopType",
+          "source_line": 649,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Render Quality Type",
+          "observed_signature": "62. Render Quality Type",
+          "source_line": 650,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Player State Type",
+          "observed_signature": "63. Player State Type",
+          "source_line": 651,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Vehicle Skin Type",
+          "observed_signature": "64. Vehicle Skin Type",
+          "source_line": 652,
+          "confidence": "user-observed; not independently verified"
+        },
+        {
+          "name": "Outfit Skin Type",
+          "observed_signature": "65. Outfit Skin Type",
+          "source_line": 653,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "LOGIC",
+      "subcategory": "CONTROL FLOW",
+      "heading": "LOGIC:",
+      "start_line": 658,
+      "end_line": 670,
+      "entries": [
+        {
+          "name": "Then we have 'Loop every element'",
+          "observed_signature": "Then we have 'Loop every element' (Index Name, Element) Data Container ___",
+          "source_line": 666,
+          "confidence": "user-observed; not independently verified"
+        }
+      ]
+    },
+    {
+      "category": "VAR",
+      "subcategory": "VARIABLE TYPES",
+      "heading": "VAR - VARIABLE TYPES (inferred from explanatory line)",
+      "start_line": 671,
+      "end_line": 672,
+      "entries": []
+    },
+    {
+      "category": "FUNC",
+      "subcategory": "FUNCTIONS",
+      "heading": "FUNC - FUNCTIONS (inferred from explanatory line)",
+      "start_line": 673,
+      "end_line": 677,
+      "entries": []
+    }
+  ],
+  "official_verification_entry_points": [
+    {
+      "topic": "Block editor and parameter slots",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101"
+    },
+    {
+      "topic": "API reference and exact parameter/return types",
+      "url": "https://ffcraftland.garena.com/en/docs/api"
+    },
+    {
+      "topic": "Events and event parameters",
+      "url": "https://ffcraftland.garena.com/en/docs/event/"
+    },
+    {
+      "topic": "Types and components",
+      "url": "https://ffcraftland.garena.com/en/docs/type"
+    },
+    {
+      "topic": "Enums and enum values",
+      "url": "https://ffcraftland.garena.com/en/docs/enum"
+    },
+    {
+      "topic": "Studio PC code scripts and platform/runtime differences",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
+    }
+  ],
+  "known_review_flags": [
+    {
+      "finding": "Several signatures contain likely spelling/transcription variants (for example 'Parnt', 'Gey Owner', 'LIAT', 'Knok-down').",
+      "action": "Keep literal source value; verify official name before normalizing."
+    },
+    {
+      "finding": "Two blocks are described as 'Is Inside Cylinder' with different parameter shapes.",
+      "action": "Check whether these are distinct block names or one mislabelled block."
+    },
+    {
+      "finding": "A few blocks have ambiguous labels or output descriptions, including the physics cast blocks, curve sampling, football positioning, property-formulation blocks, and enum dropdowns.",
+      "action": "Capture screenshots or query the installed editor/API reference before assigning semantic types."
+    },
+    {
+      "finding": "The rough notes describe the block editor, while the official docs also cover code scripts, .fcg/.fcc, client/server constraints, and PC/mobile differences.",
+      "action": "Keep visual block inventory separate from the PC code/API reference and explicitly link the shared concepts."
+    }
+  ],
+  "counts": {
+    "sections": 34,
+    "extracted_lines": 438,
+    "observed_enum_type_names": 65,
+    "original_lines": 677
+  }
+}
