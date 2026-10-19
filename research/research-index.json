@@ -267,11 +267,11 @@
     "normalized_json": "research/user-observed-block-inventory.json",
     "status": "draft, user-observed, not independently verified",
     "counts": {
-      "sections": 34,
-      "extracted_lines": 438,
+      "sections": 36,
+      "extracted_lines": 436,
       "observed_enum_type_names": 65,
       "original_lines": 677
     },
-    "note": "Extracted lines are candidates for research; do not treat names, signatures, enums, scope rules, or return values as current official truth until checked against current official documentation and/or installed editor."
+    "note": "Draft extraction has been regenerated to include headings embedded in transition sentences. Candidate entries still require official-document or installed-editor verification."
   }
 }
