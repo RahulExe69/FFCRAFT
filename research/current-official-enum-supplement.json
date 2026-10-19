@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0",
+  "title": "Current official enum/type supplement",
+  "checked_on": "2026-10-20",
+  "authority": "Official Garena Craftland documentation (live web pages)",
+  "sources": {
+    "enum_reference": "https://ffcraftland.garena.com/en/docs/enum/",
+    "type_reference": "https://ffcraftland.garena.com/en/docs/type",
+    "level_object_module": "https://ffcraftland.garena.com/en/docs/module-26",
+    "render_quality_api": "https://ffcraftland.garena.com/en/docs/api-40-940"
+  },
+  "purpose": "Record official enum/type entries visible in the current documentation that supplement the older third-party Craftland Studio language-library mirror. This is not a complete scrape of every official enum and does not claim Mobile/PC dropdown parity.",
+  "enum_definitions": [
+    {
+      "name": "RenderQualityType",
+      "display_label": "Render Quality Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "script_name": "Low"
+        },
+        {
+          "value": 1,
+          "script_name": "Medium"
+        },
+        {
+          "value": 2,
+          "script_name": "High"
+        },
+        {
+          "value": 3,
+          "script_name": "Ultra"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "also_used_by": "https://ffcraftland.garena.com/en/docs/api-40-940",
+      "notes": "The old v1.5.0 mirrored extension snapshot did not contain this enum. Current official API 'Get Render Quality' says client-side and Both Mobile and PC."
+    },
+    {
+      "name": "EntityFlag",
+      "display_label": "Entity Flag",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "name": "Default",
+          "script_name": "Default"
+        },
+        {
+          "value": 1,
+          "name": "Static",
+          "script_name": "Static"
+        },
+        {
+          "value": 2,
+          "name": "Local",
+          "script_name": "Locally"
+        },
+        {
+          "value": 4,
+          "name": "Render Only",
+          "script_name": "RenderOnly"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "notes": "Flags can be combined; preserve the documented values instead of assuming a simple sequential enum."
+    },
+    {
+      "name": "DebugCommandType",
+      "display_label": "Debug Command Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 1,
+          "name": "Invulnerable",
+          "script_name": "Invulnerable"
+        },
+        {
+          "value": 2,
+          "name": "Restore HP",
+          "script_name": "RestoreHP"
+        },
+        {
+          "value": 3,
+          "name": "Self-Eliminated",
+          "script_name": "Suicide"
+        },
+        {
+          "value": 4,
+          "name": "Teleport to Spawn Point",
+          "script_name": "TeleportToSpawnPoint"
+        },
+        {
+          "value": 5,
+          "name": "Add Bot",
+          "script_name": "AddBot"
+        },
+        {
+          "value": 6,
+          "name": "Change Viewport",
+          "script_name": "ChangeViewport"
+        },
+        {
+          "value": 7,
+          "name": "End Current Phase",
+          "script_name": "EndCurrentPhase"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "FilterType",
+      "display_label": "Filter Type",
+      "module": "Scene",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "name": "None",
+          "script_name": "NormalFilter"
+        },
+        {
+          "value": 1,
+          "name": "Comic Book",
+          "script_name": "Comic"
+        },
+        {
+          "value": 2,
+          "name": "Sketch",
+          "script_name": "Drawing"
+        },
+        {
+          "value": 3,
+          "name": "Pixel",
+          "script_name": "Pixel"
+        },
+        {
+          "value": 4,
+          "name": "RGB Split",
+          "script_name": "RGBSplit"
+        },
+        {
+          "value": 5,
+          "name": "Golden Era",
+          "script_name": "GoldenAge"
+        },
+        {
+          "value": 6,
+          "name": "Cyberpunk",
+          "script_name": "Cyberpunk"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "DistanceSourceType",
+      "display_label": "Distance Source Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "name": "Player Camera",
+          "script_name": "PlayerCamera"
+        },
+        {
+          "value": 1,
+          "name": "Player Character",
+          "script_name": "PlayerCharacter"
+        },
+        {
+          "value": 2,
+          "name": "Custom Entity",
+          "script_name": "CustomEntity"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "DistanceSpaceType",
+      "display_label": "Distance Space Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "name": "3D World",
+          "script_name": "World3D"
+        },
+        {
+          "value": 1,
+          "name": "Horizontal XZ",
+          "script_name": "HorizontalXZ"
+        },
+        {
+          "value": 2,
+          "name": "Screen Space",
+          "script_name": "ScreenSpace"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "DismemberType",
+      "display_label": "Torn Limb Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "members": [
+        {
+          "value": 0,
+          "name": "None",
+          "script_name": "None"
+        },
+        {
+          "value": 1,
+          "name": "Head",
+          "script_name": "Head"
+        },
+        {
+          "value": 2,
+          "name": "Left Arm",
+          "script_name": "LeftHand"
+        },
+        {
+          "value": 3,
+          "name": "Right Arm",
+          "script_name": "RightHand"
+        },
+        {
+          "value": 4,
+          "name": "Left Leg",
+          "script_name": "LeftLeg"
+        },
+        {
+          "value": 5,
+          "name": "Right Leg",
+          "script_name": "RightLeg"
+        }
+      ],
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "TypeEnum",
+      "display_label": "Type Enum",
+      "module": "STD Library",
+      "value_type": "Type",
+      "members": null,
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "notes": "Official description says 'List all available types'; not a fixed scalar enum list. Exact values depend on the current type system/editor."
+    }
+  ],
+  "dynamic_id_type_references": [
+    {
+      "display_label": "Weapon Skin Type",
+      "identifier": "WeaponSkinType",
+      "value_type": "Weapon Skin ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Full dynamic ID list not established"
+    },
+    {
+      "display_label": "Vehicle Skin Type",
+      "identifier": "VehicleSkinType",
+      "value_type": "Vehicle Skin ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Full dynamic ID list not established"
+    },
+    {
+      "display_label": "Outfit Skin Type",
+      "identifier": "ClothType",
+      "value_type": "Outfit ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Full dynamic ID list not established"
+    },
+    {
+      "display_label": "Backpack Skin Type",
+      "identifier": "BagSkinType",
+      "value_type": "Backpack Skin ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Full dynamic ID list not established"
+    },
+    {
+      "display_label": "Object Texture",
+      "identifier": "TextureType",
+      "value_type": "Texture ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Official page shows texture rows; older mirror has a 35-member enum"
+    },
+    {
+      "display_label": "Level Object Type",
+      "identifier": "LevelObjectType",
+      "value_type": "Type",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "value_list_status": "Official docs say values are generated automatically by the system based on object type"
+    }
+  ],
+  "other_official_entries_visible_on_enum_page": [
+    {
+      "name": "PlayerSkillType",
+      "display_label": "Character skill",
+      "status": "obsolete",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    },
+    {
+      "name": "LevelObjectType",
+      "display_label": "Level Object Type",
+      "status": "automatically generated from level object types",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/"
+    }
+  ],
+  "caveats": [
+    "Official enum pages are dynamic and search extracts may expose only part of a list.",
+    "Dynamic asset ID selectors (weapon skins, outfit IDs, vehicle skins, backpack skins) are not the same as fixed scalar enums.",
+    "This supplement covers only newly spotted or especially relevant current official entries; the older mirror catalog and the current official site need a complete reconciled merge.",
+    "Never assume an official PC enum necessarily corresponds to an available Craftland Mobile visual-block dropdown; platform and editor context must be verified."
+  ]
+}
