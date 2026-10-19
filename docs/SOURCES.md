@@ -102,3 +102,6 @@ The mirrored library is not treated as authoritative for current API support. A 
 
 - [Rough block-symbol crosswalk](../research/block-symbol-crosswalk.json) — line-level comparison of 443 extracted notes against functions, events, component names and candidate properties in the mirrored PC libraries.
 - [Crosswalk methodology and results](24-block-symbol-crosswalk.md) — explains exact matches, fuzzy candidate status, and why editor-native blocks need separate verification.
+
+- [Enum option-set analysis](../research/pc-enum-option-set-analysis.json) — identifies 42 identical ordered option sets shared by differently named enum types in the old mirror; preserves original type names and source context.
+- [Enum option-set analysis notes](26-enum-option-set-analysis.md) — explains how to reduce duplicate browsing without declaring semantically different types interchangeable.
