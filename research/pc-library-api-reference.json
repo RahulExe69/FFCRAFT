@@ -8,13 +8,13 @@
     "caveat": "Older third-party mirror, not current official truth. Function/event/component/property details are extracted for discovery only; no raw source or binaries are copied. Verify against current official docs and installed Studio. Not a Mobile block inventory."
   },
   "stats": {
-    "libraries": 35,
-    "functions": 627,
-    "events": 246,
-    "component_declarations": 461,
-    "component_properties": 3131,
-    "deprecated_functions": 214,
-    "server_functions": 343,
+    "libraries": 40,
+    "functions": 672,
+    "events": 252,
+    "component_declarations": 467,
+    "component_properties": 3207,
+    "deprecated_functions": 228,
+    "server_functions": 372,
     "client_functions": 53
   },
   "libraries": [
@@ -57656,6 +57656,2390 @@
           }
         }
       ],
+      "components": []
+    },
+    {
+      "path": "library/release/PropertyFormula.fcc",
+      "source_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3",
+      "text_length": 6412,
+      "functions": [
+        {
+          "name": "AddFormulaPropertyFactor",
+          "signature": "[platform_server] func AddFormulaPropertyFactor(target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float)",
+          "parameters_text": "target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float",
+          "return_type": null,
+          "description": "Increase the computable property calculation factor, the computable property will be calculated by the formula composed of the factor to calculate the final result",
+          "doc_title": "Add Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "propertyID",
+              "type": "Property",
+              "description": "Computable property type"
+            },
+            {
+              "name": "factorType",
+              "type": "PropertyFormulaFactorType",
+              "description": "Calculation factor type"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Calculating factor value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "AddPropertyFactor",
+          "signature": "[deprecated] func AddPropertyFactor(target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float)",
+          "parameters_text": "target entity<Formulable>, propertyID Property, factorType PropertyFormulaFactorType, value float",
+          "return_type": null,
+          "description": "Increase the computable property calculation factor, the computable property will be calculated by the formula composed of the factor to calculate the final result",
+          "doc_title": "Add Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "propertyID",
+              "type": "Property",
+              "description": "Computable property type"
+            },
+            {
+              "name": "factorType",
+              "type": "PropertyFormulaFactorType",
+              "description": "Calculation factor type"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Calculating factor value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `AddFormulaPropertyFactor` instead",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "ClearFormulaPropertyFactor",
+          "signature": "[platform_server] func ClearFormulaPropertyFactor(target entity<Formulable>)",
+          "parameters_text": "target entity<Formulable>",
+          "return_type": null,
+          "description": "Clear all computational factors for all computable properties of the target entity",
+          "doc_title": "Clear Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "ClearAllPropertyFactor",
+          "signature": "[deprecated] func ClearAllPropertyFactor(target entity<Formulable>)",
+          "parameters_text": "target entity<Formulable>",
+          "return_type": null,
+          "description": "Clear all computational factors for all computable properties of the target entity",
+          "doc_title": "Clear Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `ClearFormulaPropertyFactor` instead",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "SetFormulaPropertyRelative",
+          "signature": "[platform_server] func SetFormulaPropertyRelative(target entity<Formulable>, property Property, modifyType PropertyModifyType, value float)",
+          "parameters_text": "target entity<Formulable>, property Property, modifyType PropertyModifyType, value float",
+          "return_type": null,
+          "description": "Modify properties",
+          "doc_title": "Set Formula Property Relative",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            },
+            {
+              "name": "modifyType",
+              "type": "PropertyModifyType",
+              "description": "Modification method"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "SetPropertyRelative",
+          "signature": "[deprecated] func SetPropertyRelative(target entity<Formulable>, property Property, modifyType PropertyModifyType, value float)",
+          "parameters_text": "target entity<Formulable>, property Property, modifyType PropertyModifyType, value float",
+          "return_type": null,
+          "description": "Modify properties",
+          "doc_title": "Set Formula Property Relative",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            },
+            {
+              "name": "modifyType",
+              "type": "PropertyModifyType",
+              "description": "Modification method"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetFormulaPropertyRelative` instead",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "SetFormulaPropertyAbsolute",
+          "signature": "[platform_server] func SetFormulaPropertyAbsolute(target entity<Formulable>, property Property, value float)",
+          "parameters_text": "target entity<Formulable>, property Property, value float",
+          "return_type": null,
+          "description": "Setting the value of a computable property",
+          "doc_title": "Set Formula Property Absolute",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "SetPropertyAbsolute",
+          "signature": "[deprecated] func SetPropertyAbsolute(target entity<Formulable>, property Property, value float)",
+          "parameters_text": "target entity<Formulable>, property Property, value float",
+          "return_type": null,
+          "description": "Setting the value of a computable property",
+          "doc_title": "Set Formula Property Absolute",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            },
+            {
+              "name": "value",
+              "type": "float",
+              "description": "Value"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetFormulaPropertyAbsolute` instead",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "RemoveFormulaPropertyFactor",
+          "signature": "[platform_server] func RemoveFormulaPropertyFactor(target entity<Formulable>, property Property)",
+          "parameters_text": "target entity<Formulable>, property Property",
+          "return_type": null,
+          "description": "Clearing individual computable property modifications",
+          "doc_title": "Remove Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        },
+        {
+          "name": "ClearPropertyFactor",
+          "signature": "[deprecated] func ClearPropertyFactor(target entity<Formulable>, property Property)",
+          "parameters_text": "target entity<Formulable>, property Property",
+          "return_type": null,
+          "description": "Clearing individual computable property modifications",
+          "doc_title": "Remove Formula Property Factor",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Formulable>",
+              "description": "target entity"
+            },
+            {
+              "name": "property",
+              "type": "Property",
+              "description": "property type"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `RemoveFormulaPropertyFactor` instead",
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "PropertyFormula",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "TargetID",
+              "type": "string",
+              "description": "ID of the target entity that the formula works on, used by internal implementations, invisible to the player.",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "BindPropertyID",
+              "type": "Property",
+              "description": "ID of the target entity property on which the formula works, used by internal implementations, not visible to the player",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "MinValue",
+              "type": "float",
+              "description": "Minimum value allowed",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "MaxValue",
+              "type": "float",
+              "description": "Maximum value allowed",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "BaseMultiplier",
+              "type": "float",
+              "description": "Base Coefficient",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "BeforeAccumulator",
+              "type": "float",
+              "description": "Pre-Accumulator",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "Multiplier",
+              "type": "float",
+              "description": "Multiplier",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "SumMultiplier",
+              "type": "float",
+              "description": "Multiply Accumulate",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "AfterAccumulator",
+              "type": "float",
+              "description": "Post-Accumulator",
+              "attributes": [
+                "preview"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/PropertyFormula.fcc",
+            "blob_sha": "42e1dc37c8318c6c1f3753da5f89ccd1612870d3"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/SafeZone.fcc",
+      "source_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776",
+      "text_length": 3987,
+      "functions": [
+        {
+          "name": "EnableSafeZone",
+          "signature": "[platform_server] func EnableSafeZone(center Vector3, radius float, waitTime float, duration float, damage float)",
+          "parameters_text": "center Vector3, radius float, waitTime float, duration float, damage float",
+          "return_type": null,
+          "description": "When turned on, the safety zone will shrink to the center coordinate point",
+          "doc_title": "Enable Safe Zone",
+          "parameters": [
+            {
+              "name": "center",
+              "type": "Vector3",
+              "description": "The center of the safety zone"
+            },
+            {
+              "name": "radius",
+              "type": "float",
+              "description": "Radius of the safe zone"
+            },
+            {
+              "name": "waitTime",
+              "type": "float",
+              "description": "Waiting time, in seconds. After the end, the safe zone will begin to shrink towards the center point"
+            },
+            {
+              "name": "duration",
+              "type": "float",
+              "description": "The time required for the safety zone to shrink to the center point, in seconds"
+            },
+            {
+              "name": "damage",
+              "type": "float",
+              "description": "The amount of damage per second taken outside the safe zone"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/SafeZone.fcc",
+            "blob_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776"
+          }
+        },
+        {
+          "name": "DisableSafeZone",
+          "signature": "[platform_server] func DisableSafeZone()",
+          "parameters_text": "",
+          "return_type": null,
+          "description": "Turn off the safe zone mechanism. When the safe zone is minimized, players outside the safe zone will continue to take damage. After turning off the safe zone mechanism, players will be safe again.",
+          "doc_title": "Disable Safe Zone",
+          "parameters": [],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/SafeZone.fcc",
+            "blob_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776"
+          }
+        },
+        {
+          "name": "EnableMovingSafeZone",
+          "signature": "[platform_server] func EnableMovingSafeZone(startPosition Vector3, targetPosition Vector3, initRadius float, finalRadius float, duration float, damage float)",
+          "parameters_text": "startPosition Vector3, targetPosition Vector3, initRadius float, finalRadius float, duration float, damage float",
+          "return_type": null,
+          "description": "The safe zone that smoothly moves to the end point when opened",
+          "doc_title": "Enable Moving Safe Zone",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Safe zone starting position"
+            },
+            {
+              "name": "targetPosition",
+              "type": "Vector3",
+              "description": "Safe zone end position"
+            },
+            {
+              "name": "initRadius",
+              "type": "float",
+              "description": "Initial radius of safe zone"
+            },
+            {
+              "name": "finalRadius",
+              "type": "float",
+              "description": "Final radius of safe zone"
+            },
+            {
+              "name": "duration",
+              "type": "float",
+              "description": "The time required for the safe zone to reach the final state, in seconds"
+            },
+            {
+              "name": "damage",
+              "type": "float",
+              "description": "The amount of damage per second taken outside the safe zone"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/SafeZone.fcc",
+            "blob_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776"
+          }
+        }
+      ],
+      "events": [],
+      "components": [
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "SafeZoneEnabled",
+              "type": "bool",
+              "description": "Whether or not to enable out-of-zone mechanic",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "SafeZoneSize",
+              "type": "float",
+              "description": "Safe Zone Size",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "SafeZoneStartTime",
+              "type": "float",
+              "description": "Shrinking Start Time",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "SafeZoneShrinkTime",
+              "type": "float",
+              "description": "Shrinking Duration",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            },
+            {
+              "name": "SafeZoneDamage",
+              "type": "float",
+              "description": "Out-of-Zone Damage",
+              "attributes": [
+                "preview",
+                "readonly"
+              ]
+            }
+          ],
+          "source": {
+            "file": "library/release/SafeZone.fcc",
+            "blob_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776"
+          }
+        },
+        {
+          "name": "SafeZone",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "StartTime",
+              "type": "int",
+              "description": "Default is 0, unit is ms.",
+              "attributes": []
+            },
+            {
+              "name": "ShrinkDuration",
+              "type": "int",
+              "description": "The time it takes to shrink the circle, in ms",
+              "attributes": []
+            },
+            {
+              "name": "ShrinkTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageInterval",
+              "type": "float",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageTimeSpan",
+              "type": "float",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageValue",
+              "type": "int",
+              "description": "The amount of damage done to players in the out-of-zone in a single turn.",
+              "attributes": []
+            },
+            {
+              "name": "EndTime",
+              "type": "int",
+              "description": "Safe zone disappearance time, no safe zone will be generated when the safe zone disappearance time is less than the effective time.",
+              "attributes": []
+            },
+            {
+              "name": "CloseTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "GroupID",
+              "type": "int",
+              "description": "Group ID",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "StartRadius",
+              "type": "float",
+              "description": "Radius of the out-of-zone starting circle",
+              "attributes": []
+            },
+            {
+              "name": "IsEnd",
+              "type": "bool",
+              "description": "End state",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "Status",
+              "type": "int",
+              "description": "Status",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "State",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated",
+                "readonly"
+              ]
+            },
+            {
+              "name": "ShrinkEndTime",
+              "type": "int",
+              "description": "The end time of the reduced circle, in ms",
+              "attributes": [
+                "readonly"
+              ]
+            },
+            {
+              "name": "EffectColor",
+              "type": "Color",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "EndRadius",
+              "type": "float",
+              "description": "Radius of out-of-zone end circle.",
+              "attributes": []
+            },
+            {
+              "name": "ShrinkStartTime",
+              "type": "int",
+              "description": "Shrinking Start Time",
+              "attributes": []
+            },
+            {
+              "name": "StartShrinkTime",
+              "type": "int",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "DamageTimeInterval",
+              "type": "int",
+              "description": "Damage Interval (ms)",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/SafeZone.fcc",
+            "blob_sha": "0f742b35d508a24fa51e4e219ff1fcca0f0f6776"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/Scene.fcc",
+      "source_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c",
+      "text_length": 7810,
+      "functions": [
+        {
+          "name": "GetMapID",
+          "signature": "[platform_server] func GetMapID(sceneID string) int",
+          "parameters_text": "sceneID string",
+          "return_type": "int",
+          "description": "Get the scene map ID",
+          "doc_title": "Get Map ID",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "Scene ID"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "Map ID"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "LoadScene",
+          "signature": "[platform_server] func LoadScene(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Load Scenes without automatically unloading already loaded Scenes",
+          "doc_title": "Load Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "ID of the Scene to be loaded"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "Load",
+          "signature": "[deprecated] func Load(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Load Scenes without automatically unloading already loaded Scenes",
+          "doc_title": "Load Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "ID of the Scene to be loaded"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `LoadScene` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "UnloadScene",
+          "signature": "[platform_server] func UnloadScene(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Unload the specified scene",
+          "doc_title": "Unload Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "The scene ID to unload"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "Unload",
+          "signature": "[deprecated] func Unload(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Unload the specified scene",
+          "doc_title": "Unload Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "The scene ID to unload"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `UnloadScene` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "SwitchScene",
+          "signature": "[platform_server] func SwitchScene(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Switching to the specified scene will unload other loaded scenes",
+          "doc_title": "Switch Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "The scene ID to switch to"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "Switch",
+          "signature": "[deprecated] func Switch(sceneID string)",
+          "parameters_text": "sceneID string",
+          "return_type": null,
+          "description": "Switching to the specified scene will unload other loaded scenes",
+          "doc_title": "Switch Scene",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "The scene ID to switch to"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SwitchScene` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "SetSkybox",
+          "signature": "[platform_server] func SetSkybox(type SkyboxType)",
+          "parameters_text": "type SkyboxType",
+          "return_type": null,
+          "description": "Change the game's skybox environment style, you can choose day, dusk, night, etc.",
+          "doc_title": "Set Skybox",
+          "parameters": [
+            {
+              "name": "type",
+              "type": "SkyboxType",
+              "description": "Skybox Type"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "SetSkyboxType",
+          "signature": "[deprecated] func SetSkyboxType(type SkyboxType)",
+          "parameters_text": "type SkyboxType",
+          "return_type": null,
+          "description": "Change the game's skybox environment style, you can choose day, dusk, night, etc.",
+          "doc_title": "Set Skybox",
+          "parameters": [
+            {
+              "name": "type",
+              "type": "SkyboxType",
+              "description": "Skybox Type"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `SetSkybox` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "SwitchArea",
+          "signature": "[platform_server] func SwitchArea(target entity<Player>, sceneID string, position Vector3, forward Vector3)",
+          "parameters_text": "target entity<Player>, sceneID string, position Vector3, forward Vector3",
+          "return_type": null,
+          "description": "Switch the player to the specified location of the specified scene. Unloaded scenes will be automatically loaded, and loaded scenes will not be automatically unloaded.",
+          "doc_title": "Switch Area",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Player"
+            },
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "The scene ID to load"
+            },
+            {
+              "name": "position",
+              "type": "Vector3",
+              "description": "The player's position in the new scene"
+            },
+            {
+              "name": "forward",
+              "type": "Vector3",
+              "description": "The player's orientation in the new scene"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "GetSceneSkybox",
+          "signature": "[platform_server] func GetSceneSkybox(sceneID string) entity<SkyBox>",
+          "parameters_text": "sceneID string",
+          "return_type": "entity<SkyBox>",
+          "description": "Get the scene's skybox",
+          "doc_title": "Get Scene Skybox",
+          "parameters": [
+            {
+              "name": "sceneID",
+              "type": "string",
+              "description": "Scene ID"
+            }
+          ],
+          "returns": [
+            {
+              "type": "entity<SkyBox>",
+              "description": "Skybox"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "GetLoadedScenes",
+          "signature": "func GetLoadedScenes() List<string>",
+          "parameters_text": "",
+          "return_type": "List<string>",
+          "description": "Get all currently loaded scenes",
+          "doc_title": "Get Loaded Scenes",
+          "parameters": [],
+          "returns": [
+            {
+              "type": "List<string>",
+              "description": "Scene List"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "FindPath",
+          "signature": "[platform_server] async func FindPath(startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>)",
+          "parameters_text": "startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>",
+          "return_type": null,
+          "description": "Create a path from the start point to the end point, will avoid obstacles, and can be used for AI pathfinding",
+          "doc_title": "Find Path",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Starting point coordinate"
+            },
+            {
+              "name": "endPosition",
+              "type": "Vector3",
+              "description": "End point coordinate"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the pathfinding path is successfully established"
+            },
+            {
+              "name": "pathPoints",
+              "type": "List<Vector3>",
+              "description": "Path point collection"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "FindShortestPath",
+          "signature": "[deprecated] async func FindShortestPath(startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>)",
+          "parameters_text": "startPosition Vector3, endPosition Vector3, out var isSuccess bool, out var pathPoints List<Vector3>",
+          "return_type": null,
+          "description": "Create a path from the start point to the end point, will avoid obstacles, and can be used for AI pathfinding",
+          "doc_title": "Find Path",
+          "parameters": [
+            {
+              "name": "startPosition",
+              "type": "Vector3",
+              "description": "Starting point coordinate"
+            },
+            {
+              "name": "endPosition",
+              "type": "Vector3",
+              "description": "End point coordinate"
+            }
+          ],
+          "returns": [],
+          "outputs": [
+            {
+              "name": "isSuccess",
+              "type": "bool",
+              "description": "Whether the pathfinding path is successfully established"
+            },
+            {
+              "name": "pathPoints",
+              "type": "List<Vector3>",
+              "description": "Path point collection"
+            }
+          ],
+          "owner_type": null,
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `FindPath` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        }
+      ],
+      "events": [
+        {
+          "name": "OnSceneLoad",
+          "signature": "event OnSceneLoad(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when a scene is loaded successfully.",
+          "doc_title": "On Scene Load",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "OnSceneLoadSuccessed",
+          "signature": "[deprecated] event OnSceneLoadSuccessed(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when a scene is loaded successfully.",
+          "doc_title": "On Scene Load",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `OnSceneLoad` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "OnSceneSwitch",
+          "signature": "event OnSceneSwitch(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when the scene switches successfully.",
+          "doc_title": "On Scene Switch",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "OnSceneSwitchSuccessed",
+          "signature": "[deprecated] event OnSceneSwitchSuccessed(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when the scene switches successfully.",
+          "doc_title": "On Scene Switch",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Global",
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `OnSceneSwitch` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "OnPlayerSwitchScene",
+          "signature": "[platform_server] event OnPlayerSwitchScene(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when the player switches scenes.",
+          "doc_title": "On Player Switch Scene",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "OnSwitchArea",
+          "signature": "[deprecated] event OnSwitchArea(sceneName string)",
+          "parameters_text": "sceneName string",
+          "return_type": null,
+          "description": "Triggered when the player switches scenes.",
+          "doc_title": "On Player Switch Scene",
+          "parameters": [
+            {
+              "name": "sceneName",
+              "type": "string",
+              "description": "Scene Name"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": "Player",
+          "attributes": [
+            "platform_server",
+            "deprecated"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": "Use `OnPlayerSwitchScene` instead",
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        }
+      ],
+      "components": [
+        {
+          "name": "SkyBox",
+          "kind": "component",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "SkyBoxResource",
+              "type": "SkyboxType",
+              "description": "Skybox Resource",
+              "attributes": []
+            },
+            {
+              "name": "BaseSkyBoxEnvRes",
+              "type": "SkyboxType",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "LightColor",
+              "type": "Color",
+              "description": "Light Color",
+              "attributes": []
+            },
+            {
+              "name": "LightIntensity",
+              "type": "float",
+              "description": "Light Intensity",
+              "attributes": []
+            },
+            {
+              "name": "Darkness",
+              "type": "float",
+              "description": "Darkness",
+              "attributes": []
+            },
+            {
+              "name": "ShadowStrength",
+              "type": "float",
+              "description": "Shadow Strength",
+              "attributes": []
+            },
+            {
+              "name": "TerrainWetness",
+              "type": "float",
+              "description": "Terrain Wetness",
+              "attributes": []
+            },
+            {
+              "name": "LensFlare",
+              "type": "float",
+              "description": "Lens Flare",
+              "attributes": []
+            },
+            {
+              "name": "FogColor",
+              "type": "Color",
+              "description": "Fog Color",
+              "attributes": []
+            },
+            {
+              "name": "AmbientColor",
+              "type": "Color",
+              "description": "Ambient Color",
+              "attributes": []
+            },
+            {
+              "name": "NightMode_Deprecated",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "OwnerSubLevelGUID",
+              "type": "string",
+              "description": "The GUID of the sub-scene it belongs to",
+              "attributes": []
+            },
+            {
+              "name": "Fog",
+              "type": "bool",
+              "description": "Fog function switch",
+              "attributes": []
+            },
+            {
+              "name": "FogMode",
+              "type": "FogModeType",
+              "description": "Fog Effect Mode",
+              "attributes": []
+            },
+            {
+              "name": "FogDensity",
+              "type": "float",
+              "description": "Exponential fog density",
+              "attributes": []
+            },
+            {
+              "name": "FogStartDistance",
+              "type": "float",
+              "description": "Start distance of linear fog",
+              "attributes": []
+            },
+            {
+              "name": "FogEndDistance",
+              "type": "float",
+              "description": "End distance of linear fog",
+              "attributes": []
+            },
+            {
+              "name": "EnableUGCFogFeature",
+              "type": "bool",
+              "description": "Turn on the fog effect feature",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "LightRotate",
+              "type": "Quaternion",
+              "description": "Rotation angle of main light source",
+              "attributes": []
+            },
+            {
+              "name": "EnableUGCLightRotateFeature",
+              "type": "bool",
+              "description": "Enable the main light source rotation angle feature",
+              "attributes": []
+            },
+            {
+              "name": "CustomMaterial",
+              "type": "MaterialID",
+              "description": "Allow for replacing the skybox with a custom material",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "SkyBoxEnv",
+          "kind": "component",
+          "attributes": [
+            "deprecated"
+          ],
+          "properties": [
+            {
+              "name": "SkyBoxResource",
+              "type": "SkyboxType",
+              "description": "Skybox Resource",
+              "attributes": []
+            },
+            {
+              "name": "BaseSkyBoxEnvRes",
+              "type": "SkyboxType",
+              "description": null,
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "LightColor",
+              "type": "Color",
+              "description": "Light Color",
+              "attributes": []
+            },
+            {
+              "name": "LightIntensity",
+              "type": "float",
+              "description": "Light Intensity",
+              "attributes": []
+            },
+            {
+              "name": "Darkness",
+              "type": "float",
+              "description": "Darkness",
+              "attributes": []
+            },
+            {
+              "name": "ShadowStrength",
+              "type": "float",
+              "description": "Shadow Strength",
+              "attributes": []
+            },
+            {
+              "name": "TerrainWetness",
+              "type": "float",
+              "description": "Terrain Wetness",
+              "attributes": []
+            },
+            {
+              "name": "LensFlare",
+              "type": "float",
+              "description": "Lens Flare",
+              "attributes": []
+            },
+            {
+              "name": "FogColor",
+              "type": "Color",
+              "description": "Fog Color",
+              "attributes": []
+            },
+            {
+              "name": "AmbientColor",
+              "type": "Color",
+              "description": "Ambient Color",
+              "attributes": []
+            },
+            {
+              "name": "NightMode_Deprecated",
+              "type": "bool",
+              "description": "(Deprecated, please do not use)",
+              "attributes": [
+                "deprecated"
+              ]
+            },
+            {
+              "name": "OwnerSubLevelGUID",
+              "type": "string",
+              "description": "The GUID of the sub-scene it belongs to",
+              "attributes": []
+            },
+            {
+              "name": "Fog",
+              "type": "bool",
+              "description": "Fog function switch",
+              "attributes": []
+            },
+            {
+              "name": "FogMode",
+              "type": "FogModeType",
+              "description": "Fog Effect Mode",
+              "attributes": []
+            },
+            {
+              "name": "FogDensity",
+              "type": "float",
+              "description": "Exponential fog density",
+              "attributes": []
+            },
+            {
+              "name": "FogStartDistance",
+              "type": "float",
+              "description": "Start distance of linear fog",
+              "attributes": []
+            },
+            {
+              "name": "FogEndDistance",
+              "type": "float",
+              "description": "End distance of linear fog",
+              "attributes": []
+            },
+            {
+              "name": "EnableUGCFogFeature",
+              "type": "bool",
+              "description": "Turn on the fog effect feature",
+              "attributes": [
+                "preview"
+              ]
+            },
+            {
+              "name": "LightRotate",
+              "type": "Quaternion",
+              "description": "Rotation angle of main light source",
+              "attributes": []
+            },
+            {
+              "name": "EnableUGCLightRotateFeature",
+              "type": "bool",
+              "description": "Enable the main light source rotation angle feature",
+              "attributes": []
+            },
+            {
+              "name": "CustomMaterial",
+              "type": "MaterialID",
+              "description": "Allow for replacing the skybox with a custom material",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        },
+        {
+          "name": "Global",
+          "kind": "partial",
+          "attributes": [],
+          "properties": [
+            {
+              "name": "SkyboxEnv",
+              "type": "entity<SkyBox>",
+              "description": "Skybox Entity",
+              "attributes": []
+            }
+          ],
+          "source": {
+            "file": "library/release/Scene.fcc",
+            "blob_sha": "95f0c42fec5a47d78b1a18da333c0977edfd852c"
+          }
+        }
+      ]
+    },
+    {
+      "path": "library/release/StatisticalReport.fcc",
+      "source_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5",
+      "text_length": 1267,
+      "functions": [
+        {
+          "name": "AddGameEventLog_Deprecated",
+          "signature": "[deprecated] [platform_server] func AddGameEventLog_Deprecated(keys List<object>, values List<object>)",
+          "parameters_text": "keys List<object>, values List<object>",
+          "return_type": null,
+          "description": "Customize game tracking logs for user experience data analysis",
+          "doc_title": "Add Game Event Log Map",
+          "parameters": [
+            {
+              "name": "keys",
+              "type": "List<object>",
+              "description": "List of field names to report"
+            },
+            {
+              "name": "values",
+              "type": "List<object>",
+              "description": "List of field values to report"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated",
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/StatisticalReport.fcc",
+            "blob_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5"
+          }
+        },
+        {
+          "name": "AddUserEventLog_Deprecated",
+          "signature": "[deprecated] func AddUserEventLog_Deprecated(player entity<Player>, keys List<object>, values List<object>)",
+          "parameters_text": "player entity<Player>, keys List<object>, values List<object>",
+          "return_type": null,
+          "description": "Customize user embedding logs for user experience data analysis",
+          "doc_title": "Add User Event Log",
+          "parameters": [
+            {
+              "name": "player",
+              "type": "entity<Player>",
+              "description": "Players to be reported"
+            },
+            {
+              "name": "keys",
+              "type": "List<object>",
+              "description": "List of field names to report"
+            },
+            {
+              "name": "values",
+              "type": "List<object>",
+              "description": "List of field values to report"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/StatisticalReport.fcc",
+            "blob_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5"
+          }
+        },
+        {
+          "name": "AddGameEventLog",
+          "signature": "[platform_server] func AddGameEventLog(log Map<object, object>)",
+          "parameters_text": "log Map<object, object>",
+          "return_type": null,
+          "description": "Customize game tracking logs for user experience data analysis",
+          "doc_title": "Add Game Event Log",
+          "parameters": [
+            {
+              "name": "log",
+              "type": "Map<object, object>",
+              "description": "log"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/StatisticalReport.fcc",
+            "blob_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5"
+          }
+        },
+        {
+          "name": "AddUserEventLog",
+          "signature": "[platform_server] func AddUserEventLog(target entity<Player>, log Map<object, object>)",
+          "parameters_text": "target entity<Player>, log Map<object, object>",
+          "return_type": null,
+          "description": "Customize game tracking logs for user experience data analysis",
+          "doc_title": "Add User Event Log",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "entity<Player>",
+              "description": "Players to be reported"
+            },
+            {
+              "name": "log",
+              "type": "Map<object, object>",
+              "description": "log"
+            }
+          ],
+          "returns": [],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "platform_server"
+          ],
+          "platform": "server",
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/StatisticalReport.fcc",
+            "blob_sha": "29bb90588fbfbd0dca77ecf76a4f5544304e23c5"
+          }
+        }
+      ],
+      "events": [],
+      "components": []
+    },
+    {
+      "path": "library/release/Strings.fcc",
+      "source_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7",
+      "text_length": 4189,
+      "functions": [
+        {
+          "name": "Format",
+          "signature": "func Format(content string, params List<object>) string",
+          "parameters_text": "content string, params List<object>",
+          "return_type": "string",
+          "description": "Output a string with parameters",
+          "doc_title": "Format",
+          "parameters": [
+            {
+              "name": "content",
+              "type": "string",
+              "description": "Use the %v placeholder to represent a parameter. The number of %v and the number of parameters must be consistent."
+            },
+            {
+              "name": "params",
+              "type": "List<object>",
+              "description": "The parameter list involved in the output, needs to be consistent with the number of %v in the format description"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Connect",
+          "signature": "func Connect(left object, right object) string",
+          "parameters_text": "left object, right object",
+          "return_type": "string",
+          "description": "Concatenate two strings together",
+          "doc_title": "Connect",
+          "parameters": [
+            {
+              "name": "left",
+              "type": "object",
+              "description": "String lvalue"
+            },
+            {
+              "name": "right",
+              "type": "object",
+              "description": "String rvalue"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "String concatenation result"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Length",
+          "signature": "func Length(value string) int",
+          "parameters_text": "value string",
+          "return_type": "int",
+          "description": "Get the length of a string",
+          "doc_title": "Length",
+          "parameters": [
+            {
+              "name": "value",
+              "type": "string",
+              "description": "String"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "String length"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Replace",
+          "signature": "func Replace(target string, oldValue string, newValue string) string",
+          "parameters_text": "target string, oldValue string, newValue string",
+          "return_type": "string",
+          "description": "After replacing all the specified strings in the target string, output the new string",
+          "doc_title": "Replace",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            },
+            {
+              "name": "oldValue",
+              "type": "string",
+              "description": "The old string to replace"
+            },
+            {
+              "name": "newValue",
+              "type": "string",
+              "description": "The new string to replace with"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "The string done replacing"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Find",
+          "signature": "func Find(target string, findValue string, startIndex int) int",
+          "parameters_text": "target string, findValue string, startIndex int",
+          "return_type": "int",
+          "description": "Re-search for the first occurrence of a specified string in the target string.",
+          "doc_title": "Find",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            },
+            {
+              "name": "findValue",
+              "type": "string",
+              "description": "The specified string to search for"
+            },
+            {
+              "name": "startIndex",
+              "type": "int",
+              "description": "Search for a string from the start position, the string position starts at 0"
+            }
+          ],
+          "returns": [
+            {
+              "type": "int",
+              "description": "The first occurrence of the specified string in the target string. The string position starts at 0."
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Sub",
+          "signature": "func Sub(target string, startIndex int, length int) string",
+          "parameters_text": "target string, startIndex int, length int",
+          "return_type": "string",
+          "description": "After intercepting a string of a specified length from a specified position, output a new string",
+          "doc_title": "Sub",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            },
+            {
+              "name": "startIndex",
+              "type": "int",
+              "description": "The position where the interception starts. The string position is calculated from 0"
+            },
+            {
+              "name": "length",
+              "type": "int",
+              "description": "The interception length, by default, is intercepted to the end of the string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "The intercepted string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Split",
+          "signature": "func Split(target string, sepStr string) List<string>",
+          "parameters_text": "target string, sepStr string",
+          "return_type": "List<string>",
+          "description": "Use the specified string as the delimiter to cut the target string into several slices and output the new string. N consecutive delimiters will be cut into N-1 half-width spaces as string list elements.",
+          "doc_title": "Split",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            },
+            {
+              "name": "sepStr",
+              "type": "string",
+              "description": "Delimiter string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "List<string>",
+              "description": "The output string list, always ends with a half-width space element"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "FindAt",
+          "signature": "func FindAt(target string, indexs List<int>) string",
+          "parameters_text": "target string, indexs List<int>",
+          "return_type": "string",
+          "description": "Extract characters according to the string position list and combine them into a new string output",
+          "doc_title": "Find At",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            },
+            {
+              "name": "indexs",
+              "type": "List<int>",
+              "description": "String position list, string position starts from 0"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "ToUpper",
+          "signature": "func ToUpper(target string) string",
+          "parameters_text": "target string",
+          "return_type": "string",
+          "description": "Convert all characters in the target string to uppercase",
+          "doc_title": "To Upper",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Upper",
+          "signature": "[deprecated] func Upper(target string) string",
+          "parameters_text": "target string",
+          "return_type": "string",
+          "description": "Convert all characters in the target string to uppercase",
+          "doc_title": "To Upper",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `ToUpper` instead",
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "ToLower",
+          "signature": "func ToLower(target string) string",
+          "parameters_text": "target string",
+          "return_type": "string",
+          "description": "Convert all characters in the target string to lowercase",
+          "doc_title": "To Lower",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Lower",
+          "signature": "[deprecated] func Lower(target string) string",
+          "parameters_text": "target string",
+          "return_type": "string",
+          "description": "Convert all characters in the target string to lowercase",
+          "doc_title": "To Lower",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [
+            "deprecated"
+          ],
+          "platform": null,
+          "deprecated": true,
+          "deprecation_note": "Use `ToLower` instead",
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Strip",
+          "signature": "func Strip(target string) string",
+          "parameters_text": "target string",
+          "return_type": "string",
+          "description": "Remove all spaces before the first non-space character and after the last non-space character in the target string",
+          "doc_title": "Strip",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "string",
+              "description": "Target string"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        },
+        {
+          "name": "Join",
+          "signature": "func Join(target List<string>, sep string) string",
+          "parameters_text": "target List<string>, sep string",
+          "return_type": "string",
+          "description": "Output a new string after concatenating with the specified identifier",
+          "doc_title": "Join",
+          "parameters": [
+            {
+              "name": "target",
+              "type": "List<string>",
+              "description": "Target string list"
+            },
+            {
+              "name": "sep",
+              "type": "string",
+              "description": "The specified identifier used to concatenate strings"
+            }
+          ],
+          "returns": [
+            {
+              "type": "string",
+              "description": "Output string"
+            }
+          ],
+          "outputs": [],
+          "owner_type": null,
+          "attributes": [],
+          "platform": null,
+          "deprecated": false,
+          "deprecation_note": null,
+          "source": {
+            "file": "library/release/Strings.fcc",
+            "blob_sha": "b7e096d5cdd65b230da9804849aabef946cb28c7"
+          }
+        }
+      ],
+      "events": [],
       "components": []
     }
   ]
