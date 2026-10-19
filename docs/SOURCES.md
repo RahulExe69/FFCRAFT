@@ -19,10 +19,17 @@ This index prioritizes official Garena sources. They are grouped by what they ar
 - [Data and Logic Operations](https://ffcraftland.garena.com/en/tutorial/cl/4-106) — data operations and logic blocks.
 - [Server-side and client-side scripts](https://ffcraftland.garena.com/en/tutorial/cl/4-107/) — visual scripting side constraints.
 - [PC Scripts manual](https://ffcraftland-pre.garena.com/en/tutorial/fe/1-7/) — block vs code scripts, server/client, static scripts.
-- [PC Code Scripts](https://ffcraftland.garena.com/en/tutorial/fe/1-9) — `.fcg` scripts, `.fcc` libraries, imports, graph/function/event structure, custom libraries/events, platform labels.
+- [PC Code Scripts](https://ffcraftland.garena.com/en/tutorial/fe/1-9) — `.fcg` scripts, `.fcc` libraries, imports, graph/function/event structure, custom libraries/events, platform labels, and VS Code tooling.
 - [API index / standard library](https://ffcraftland.garena.com/en/docs/api-1-26) — API discovery and categories. The page indicates legacy/obsolete entries, so use it as an index and verify individual declarations.
 - [Event index](https://ffcraftland.garena.com/en/docs/type-11/) — event name/description table, including lifecycle and combat events and deprecated entries.
 - [On Player Join event](https://ffcraftland.garena.com/en/docs/event-11-14) — event meaning, owner, and platform/runtime labels.
+
+## Selected current PC Data Store API references
+
+- [Write To Data Store V2](https://ffcraftland.garena.com/en/docs/api-31-1017) — page labels it Server Side and Only PC.
+- [Steady Read From Data Store](https://ffcraftland.garena.com/en/docs/api-31-1006) — page labels it Server Side and Only PC.
+- [Read From Data Store By Column](https://ffcraftland.garena.com/en/docs/api-31-953) — page labels it Server Side and Only PC.
+- [Legacy Write To Data Store](https://ffcraftland.garena.com/en/docs/api-31-802) — marked obsolete.
 
 ## Storage and other systems
 
@@ -42,6 +49,13 @@ This index prioritizes official Garena sources. They are grouped by what they ar
 - [Custom features](https://ffcraftland.garena.com/en/community/creator-tutorials:-custom-features/) — custom menus, cinematic scenes, two-player puzzle map, HUD, object movement, banner scripts.
 - [Official Discord entry point](https://ffcraftland.garena.com/en/) — the official homepage recommends the Craftland Global Discord for connection with creators and the Craftland team. Use that for discoveries, then preserve the original post/date/version and verify claims.
 
+## Community-maintained GitHub resources (secondary evidence)
+
+- [FF-OGC/Craftland-Tutorial](https://github.com/FF-OGC/Craftland-Tutorial) — a browsable Markdown mirror/organization of Craftland manuals, including the code-script user manual. Handy for offline reading/search; verify content against the official current site/editor.
+- [nexosstudio/CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community resource repository describing a directory of assets, docs, scripts, templates, and tools. Its README declares CC0-1.0; still inspect each item's provenance and the repo's current license/files before reusing assets or code.
+
+These GitHub sources were discovered and inspected as leads. No arbitrary third-party code from them has been copied into FFCRAFT or treated as tested official behavior.
+
 ## How to cite/record a future discovery
 
 When adding a new technique, record:
@@ -56,4 +70,4 @@ When adding a new technique, record:
 
 ## Link and version notes
 
-Some links point to the official pre-release host because that host currently exposes a more detailed PC-manual page for a specific topic. It is still a Garena-hosted source, but any pre-release/live discrepancy must be resolved against the installed release. Official API pages may retain old entries and explicitly label obsolete elements. Do not conclude an API is current merely because its page still exists.
+Some links point to the official pre-release host because that host exposes a more detailed PC-manual page for a specific topic. It is still a Garena-hosted source, but any pre-release/live discrepancy must be resolved against the installed release. Official API pages may retain old entries and explicitly label obsolete elements. Do not conclude an API is current merely because its page still exists.
