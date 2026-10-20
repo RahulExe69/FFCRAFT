@@ -21,11 +21,36 @@
     "approxCandidates": 113,
     "noMatch": 21,
     "likelyNotes": 3,
-    "officialCurrentReferencesAdded": 34,
-    "updatedStatusOfficialCurrent": 23,
+    "officialCurrentReferencesAdded": 46,
+    "updatedStatusOfficialCurrent": 35,
     "unresolvedAfterOfficialCheck": 0,
     "likelyEditorNative": 1,
-    "unresolvedAfterOfficialCheckNote": "No entries remain in the previous ten-item unresolved-after-official-check group. The six Items/AI entries and four Property Formula entries now have official reference mappings; exact visual-editor label/sockets and runtime testing remain separate tasks."
+    "unresolvedAfterOfficialCheckNote": "No entries remain in the previous ten-item unresolved-after-official-check group. The six Items/AI entries and four Property Formula entries now have official reference mappings; exact visual-editor label/sockets and runtime testing remain separate tasks.",
+    "approximateAfterOfficialPass": 84,
+    "noMatchAfterOfficialPass": 14,
+    "reviewQueueEntriesPendingEditorVerification": 111,
+    "finalStatusCounts": {
+      "exact-label-or-document-title-match": 306,
+      "official-current-reference-found": 35,
+      "approximate-candidate-needs-review": 84,
+      "no-match-in-mirrored-library-snapshot": 14,
+      "likely-editor-native-not-runtime-api": 1,
+      "likely-explanatory-note-not-a-block": 3
+    },
+    "mathCrosscheckLineNumbers": [
+      469,
+      470,
+      471,
+      500,
+      541,
+      542,
+      543,
+      547,
+      548,
+      549,
+      550,
+      551
+    ]
   },
   "policy": {
     "exact_name_or_doc_title_match_is_a_candidate_not_a_current_support_claim": true,
@@ -10820,7 +10845,7 @@
       "observed_label": "Vector2",
       "observed_signature": ".Vector2: Scale 2D Vector ___ Scale .0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -10840,7 +10865,16 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Scale",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-692/",
+        "evidence": "The observed signature specifies scaling a 2D vector; the official page says this API multiplies a two-dimensional vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-map-observed-signature-platform-not-live-tested"
+      },
+      "current_label_notes": "The observation's visible label is generic `Vector2`, but its signature identifies the Scale operation. Preserve the original label."
     },
     {
       "source_line": 470,
@@ -10849,7 +10883,7 @@
       "observed_label": "Vector2",
       "observed_signature": ".Vector2: Add ValueA ___ ValueB ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -10869,7 +10903,16 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Add",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-690/",
+        "evidence": "The observed signature contains ValueA and ValueB; the official page says this API adds two 2D vectors.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-map-observed-signature-platform-not-live-tested"
+      },
+      "current_label_notes": "The observation's visible label is generic `Vector2`, but its signature identifies the Add operation. Preserve the original label."
     },
     {
       "source_line": 471,
@@ -10878,7 +10921,7 @@
       "observed_label": "Vector2 Sub",
       "observed_signature": ".Vector2 Sub: ValueA ___ ValueB ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -10940,7 +10983,15 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Sub",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-691/",
+        "evidence": "The official page lists Vector2 Sub and describes subtracting two 2D vectors.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 472,
@@ -11967,12 +12018,21 @@
       "observed_label": "Quaternion Rotate Toward",
       "observed_signature": ".Quaternion Rotate Toward: From ___ To ___ Max Degree Delta .0",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Quaternion Rotate Towards",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-931/",
+        "evidence": "The official page title is plural `Quaternion Rotate Towards`; its description calculates the rotation quaternion from `from` to `to` and describes Max Degrees Delta as the maximum rotation angle.",
+        "platform_status": "Both Server and Client; Both Mobile and PC",
+        "confidence": "official-current-docs-confirm-name-platform-and-concept-not-live-tested"
+      },
+      "current_label_notes": "Rough.txt says singular `Quaternion Rotate Toward`; preserve that observation and keep the official plural title as a search alias."
     },
     {
       "source_line": 508,
@@ -12821,12 +12881,21 @@
       "observed_label": "Get x vector vomponent",
       "observed_signature": ".Get x vector vomponent: Vector .XYZ",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Get x vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-80/",
+        "evidence": "Official page describes returning the X component of a 3D vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      },
+      "current_label_notes": "Rough.txt has the spelling `vomponent`; preserved unchanged. The linked official label spells it `component`."
     },
     {
       "source_line": 542,
@@ -12835,12 +12904,20 @@
       "observed_label": "Get y vector component",
       "observed_signature": ".Get y vector component: Vector .XYZ",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Get y vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-148/",
+        "evidence": "Official page describes returning the Y component of a 3D vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 543,
@@ -12849,12 +12926,20 @@
       "observed_label": "Obtain z vector component",
       "observed_signature": ".Obtain z vector component: Vector .XYZ",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Obtain z vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-149/",
+        "evidence": "Official page describes returning the Z component of a 3D vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 544,
@@ -13034,7 +13119,7 @@
       "observed_label": "New Vector2",
       "observed_signature": "New Vector2: X .0 Y .0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -13096,7 +13181,15 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "New Vector2",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-702/",
+        "evidence": "Official page lists New Vector2 and describes creating a 2D vector.",
+        "platform_status": "Both Server and Client; Both Mobile and PC",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 548,
@@ -13105,7 +13198,7 @@
       "observed_label": "Vector2 Get X",
       "observed_signature": ".Vector2 Get X: 2D Vector ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -13167,7 +13260,15 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Get X",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-686/",
+        "evidence": "Official page lists Vector2 Get X and describes getting the X component of a 2D vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 549,
@@ -13176,7 +13277,7 @@
       "observed_label": "Vector2 Get Y",
       "observed_signature": ".Vector2 Get Y: 2D Vector ___",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -13238,7 +13339,15 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Official Math API reference found. Verify the exact current editor node, input/output sockets and script context; documentation is not a screenshot or runtime test.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Get Y",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-687/",
+        "evidence": "Official page lists Vector2 Get Y and describes getting the Y component of a 2D vector.",
+        "platform_status": "Both Server and Client; Only Mobile",
+        "confidence": "official-current-docs-confirm-title-and-platform-not-live-tested"
+      }
     },
     {
       "source_line": 550,
@@ -13247,7 +13356,7 @@
       "observed_label": "Vector2 Set X",
       "observed_signature": "Vector2 Set X: 2D Vector ___ X .0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -13309,7 +13418,24 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Two official references share this title but differ by execution side. Capture the exact current editor node and script context before selecting one; sockets and runtime are not verified.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Set X",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-688/",
+        "evidence": "An official page titled Vector2 Set X is labelled Server Side and Only Mobile and describes setting the X component of a 2D vector.",
+        "platform_status": "Server Side; Only Mobile",
+        "confidence": "official-current-docs-found-duplicate-title-requires-editor-context-not-live-tested"
+      },
+      "official_current_alternates": [
+        {
+          "title": "Vector2 Set X",
+          "url": "https://ffcraftland.garena.com/en/docs/api-4-774/",
+          "platform_status": "Client Side; Only Mobile",
+          "evidence": "A second official page with the same title is labelled Client Side and Only Mobile and describes setting the first component of a 2D vector."
+        }
+      ],
+      "current_label_notes": "Two official pages share this title but have different side labels. The observed socket signature alone is not enough to choose one; preserve both until the current editor context is captured."
     },
     {
       "source_line": 551,
@@ -13318,7 +13444,7 @@
       "observed_label": "Vector2 Set Y",
       "observed_signature": "Vector2 Set Y: 2D Vector ___ Y .0",
       "confidence": "user-observed; not independently verified",
-      "status": "approximate-candidate-needs-review",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -13380,7 +13506,24 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Two official references share this title but differ by execution side. Capture the exact current editor node and script context before selecting one; sockets and runtime are not verified.",
+      "official_current_match": {
+        "kind": "API",
+        "title": "Vector2 Set Y",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-689/",
+        "evidence": "An official page titled Vector2 Set Y is labelled Server Side and Only Mobile and describes setting the Y component of a 2D vector.",
+        "platform_status": "Server Side; Only Mobile",
+        "confidence": "official-current-docs-found-duplicate-title-requires-editor-context-not-live-tested"
+      },
+      "official_current_alternates": [
+        {
+          "title": "Vector2 Set Y",
+          "url": "https://ffcraftland.garena.com/en/docs/api-4-775/",
+          "platform_status": "Client Side; Only Mobile",
+          "evidence": "A second official page with the same title is labelled Client Side and Only Mobile and describes setting the second component of a 2D vector."
+        }
+      ],
+      "current_label_notes": "Two official pages share this title but have different side labels. The observed socket signature alone is not enough to choose one; preserve both until the current editor context is captured."
     },
     {
       "source_line": 557,
@@ -18630,7 +18773,7 @@
     }
   ],
   "official_research_pass": {
-    "checked_on": "2026-10-20",
+    "checked_on": "2026-10-21",
     "sources": [
       "https://ffcraftland.garena.com/en/docs/api-1-26",
       "https://ffcraftland.garena.com/en/docs/api-1-871/",
@@ -18681,8 +18824,85 @@
       {
         "title": "Public Formula Property manual (secondary translated mirror)",
         "url": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Formula%20Property.md"
+      },
+      {
+        "title": "Vector2 Scale",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-692/"
+      },
+      {
+        "title": "Vector2 Add",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-690/"
+      },
+      {
+        "title": "Vector2 Sub",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-691/"
+      },
+      {
+        "title": "Quaternion Rotate Towards",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-931/"
+      },
+      {
+        "title": "Get x vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-80/"
+      },
+      {
+        "title": "Get y vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-148/"
+      },
+      {
+        "title": "Obtain z vector component",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-149/"
+      },
+      {
+        "title": "New Vector2",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-702/"
+      },
+      {
+        "title": "Vector2 Get X",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-686/"
+      },
+      {
+        "title": "Vector2 Get Y",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-687/"
+      },
+      {
+        "title": "Vector2 Set X (server-side documentation entry)",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-688/"
+      },
+      {
+        "title": "Vector2 Set X (client-side documentation entry)",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-774/"
+      },
+      {
+        "title": "Vector2 Set Y (server-side documentation entry)",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-689/"
+      },
+      {
+        "title": "Vector2 Set Y (client-side documentation entry)",
+        "url": "https://ffcraftland.garena.com/en/docs/api-4-775/"
       }
     ],
-    "notes": "All ten entries previously marked unresolved-after-official-check now have current official reference mappings. This does not mean the exact PC/Mobile visual block sockets were captured or that a recipe was compiled/playtested."
+    "notes": "All ten entries previously marked unresolved-after-official-check now have current official reference mappings. This does not mean the exact PC/Mobile visual block sockets were captured or that a recipe was compiled/playtested.",
+    "math_crosscheck_2026_10_21": {
+      "official_reference_entries_added": 12,
+      "source_pages_added": 14,
+      "source_urls": [
+        "https://ffcraftland.garena.com/en/docs/api-4-692/",
+        "https://ffcraftland.garena.com/en/docs/api-4-690/",
+        "https://ffcraftland.garena.com/en/docs/api-4-691/",
+        "https://ffcraftland.garena.com/en/docs/api-4-931/",
+        "https://ffcraftland.garena.com/en/docs/api-4-80/",
+        "https://ffcraftland.garena.com/en/docs/api-4-148/",
+        "https://ffcraftland.garena.com/en/docs/api-4-149/",
+        "https://ffcraftland.garena.com/en/docs/api-4-702/",
+        "https://ffcraftland.garena.com/en/docs/api-4-686/",
+        "https://ffcraftland.garena.com/en/docs/api-4-687/",
+        "https://ffcraftland.garena.com/en/docs/api-4-688/",
+        "https://ffcraftland.garena.com/en/docs/api-4-774/",
+        "https://ffcraftland.garena.com/en/docs/api-4-689/",
+        "https://ffcraftland.garena.com/en/docs/api-4-775/"
+      ],
+      "note": "Official Math reference pages were found for Rough.txt lines 469–471, 500, 541–543 and 547–551. These matches establish documented labels/concepts and the platform/side labels displayed on the pages; they do not establish the exact installed-editor sockets or live runtime behavior. Two Vector2 Set X pages and two Vector2 Set Y pages share titles but differ by execution side; both candidates are retained."
+    }
   }
 }
