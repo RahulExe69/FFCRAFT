@@ -6,7 +6,7 @@
 
 ## What this adds
 
-This is a current official-doc cross-check for **33 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **162 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
+This is a current official-doc cross-check for **39 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **214 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
 
 It is intentionally a *subset*, not a complete scrape of the official reference. It also does not prove every listed enum is exposed as the same dropdown in Craftland Mobile.
 
@@ -58,7 +58,7 @@ This is a strong likely match for the original `Loot Scorer Type` spelling, but 
 
 ## Additional current official rows captured
 
-The source data now also records visible current-official rows for eight more labels from the original notes. These rows are stored as the full visible row fields (value, display label, script name, description) in the JSON. Where the old v1.5.0 library has a substantially larger list, that discrepancy is deliberately left unresolved pending an installed-editor capture.
+The source data now also records visible current-official rows for fourteen more labels from the original notes (six labels added in the most recent pass). These rows are stored as the full visible row fields (value, display label, script name, description) in the JSON. Where the old v1.5.0 library has a substantially larger list, that discrepancy is deliberately left unresolved pending an installed-editor capture.
 
 | Rough label | Current official rows captured | Old-mirror member count | Interpretation |
 |---|---:|---:|---|
@@ -70,6 +70,12 @@ The source data now also records visible current-official rows for eight more la
 | Font Type | 6 | 7 | HindSiliguri appears in the old mirror but not the current official table. |
 | SkyboxType | 6 | 8 | CityBuilding and Snow are old-mirror aliases marked deprecated. |
 | Render Quality Type | 4 | 0 | Current official enum missing from the old mirror; Get Render Quality is documented as Client Side and Both Mobile and PC. |
+| Equipment Type | 12 | 24 | Visible official rows are fewer than old-mirror members; installed editor verification remains open. |
+| Switch Equip Slot | 11 | 17 | Visible official rows are fewer than old-mirror members; preserve non-contiguous IDs. |
+| Coordinate System Type | 2 | 2 | Official table and old mirror agree on two rows. |
+| Action Type | 3 | 3 | Official table and old mirror agree on three rows. |
+| Status Code | 5 | 24 | Official page shows five rows; old-only codes need current editor verification. |
+| Player UI Type | 19 | 63 | Non-contiguous current-page values; old mirror has many more members. |
 
 For VFX, Sound Effect, Monster, Object Texture and Font Type, the option-row count above is the number of rows visible in the official reference snapshot, not an assertion that the installed editor must expose exactly that many entries. The old-mirror count difference is a reason to capture the current library/editor—not permission to call entries removed or supported by guesswork. Skybox options also cross-reference the curated asset dataset; package import/playtest status is separate.
 
