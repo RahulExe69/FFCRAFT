@@ -11,13 +11,13 @@ The line-by-line crosswalk covers **443 extracted entries**. The latest mutually
 | Status | Count | Interpretation |
 |---|---:|---|
 | Exact normalized label or documentation-title match in old mirror | 306 | Candidate lookup hit only; not a current support guarantee. |
-| Current official reference found | 23 | Official page mapped; exact editor sockets and runtime remain separate. |
-| Approximate candidate needs review | 92 | Similarity lead only; do not generate code from this alone. |
-| No exact match in old library mirror | 18 | Could be newer, editor-native, a constructor/flow-control node, or different wording. |
+| Current official reference found | 35 | Official page mapped; exact editor sockets and runtime remain separate. |
+| Approximate candidate needs review | 84 | Similarity lead only; do not generate code from this alone. |
+| No exact match in old library mirror | 14 | Could be newer, editor-native, a constructor/flow-control node, or different wording. |
 | Likely editor-native rather than runtime API | 1 | Inspect the editor block itself. |
 | Likely explanatory notes | 3 | Preserve as author notes rather than runtime APIs. |
 
-The pre-official comparison counted 113 approximate candidates and 21 old-mirror misses. A later targeted pass mapped 23 entries to official current references, leaving **111 review entries**: 92 approximate, 18 no-match, and one likely editor-native. The machine-readable source retains provenance and candidates for each line.
+The pre-official comparison counted 113 approximate candidates and 21 old-mirror misses. A later targeted pass mapped 35 entries to official references, leaving **111 review entries** for exact editor verification: 84 approximate, 14 old-mirror misses, 12 documented Math matches whose exact editor sockets/context remain unverified, and one likely editor-native. The machine-readable source retains provenance and candidates for each line.
 
 ## Capture these first
 
@@ -27,9 +27,7 @@ These old-mirror misses are the clearest prompts to inspect the current editor U
 |---:|---|---|
 | 132 | Progressive Movement Property | Action-like node absent from old mirror; verify target/property/value slots and movement semantics. |
 | 451 | Multi-slot arithmetic/operator node | Capture operator choices (+, -, *, /, %) and add-slot behavior. |
-| 500 | Quaternion Rotate Toward | Verify current declaration, parameter types, units and output. |
 | 511 | Modify (List) | Establish which mutation operation the block performs and how index/value sockets are typed. |
-| 541–543 | Vector X/Y/Z component getters | Capture labels and output types; do not silently normalize the rough spelling. |
 | 145 | Add Comment | Likely editor-native rather than a runtime function; capture the visible node schema separately. |
 
 ## Likely block syntax rather than ordinary API symbols
@@ -40,7 +38,13 @@ These remain in the queue because they describe the *shape* of data/control bloc
 - Lines 660, 662 and 664–667: if/if-else, conditional loop, integer-range loop, for-each, and break/continue control-flow blocks.
 - Line 647: the old label “Phase And Round Enum”. Official Workflow documentation describes Phase/Round as configured entities with IDs/indices, scripts and separate lifecycle events; a fixed enum is **not confirmed**. See [Workflow documentation](https://ffcraftland.garena.com/en/tutorial/fe/1-14/).
 
-The full queue also retains the other 92 fuzzy candidate lines with up to three closest old-library names/signatures and a line-specific review action.
+The full queue retains 84 fuzzy candidate lines with up to three closest old-library names/signatures and a line-specific review action, plus the 12 newly mapped official Math entries pending exact editor context.
+
+## Official Math references found in this pass
+
+The latest crosswalk maps 12 queue rows to official Math pages: Vector2 Scale/Add/Sub, Quaternion Rotate Towards, the three 3D vector-component getters, New Vector2, Vector2 Get X/Y, and the server/client reference variants for Vector2 Set X/Y. Documented availability differs: the Vector2 math operations and component getters/setters are marked **Only Mobile**, while New Vector2 and Quaternion Rotate Towards are marked **Both Mobile and PC**. The setter labels each have distinct server-side and client-side pages. Read [the crosswalk](24-block-symbol-crosswalk.md) for exact page links and details.
+
+These rows remain in the queue because editor sockets, exact script context and runtime have not been captured. An official docs match is stronger evidence than a fuzzy mirror result, but it is not live-editor or runtime proof.
 
 ## Supplementary legacy symbol-index cross-check
 
