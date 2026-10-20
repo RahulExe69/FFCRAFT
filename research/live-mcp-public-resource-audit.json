@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-20",
+  "source": {
+    "repository": "NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+    "commit": "4d30fcd0970074fc8c19689f747b6c6b49f93cf3",
+    "commit_date": "2026-09-28T09:50:41Z",
+    "url": "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+    "license_metadata": null,
+    "source_class": "community_methodology_lead",
+    "declared_export_date": "2026-08-06",
+    "declared_session": "craftland-stealapet / user-craftland-stealapet",
+    "raw_exports_publicly_available": false,
+    "recursive_tree_file_count": 5,
+    "files_observed": [
+      "README.md",
+      "_enrich_from_gets.ps1",
+      "_generate_kb.ps1",
+      "_save_action_batch.ps1",
+      "variables.md"
+    ],
+    "generated_catalog_folders_expected_but_absent": [
+      "blocks/",
+      "events/",
+      "actions/",
+      "valuations/",
+      "types/",
+      "indexes/",
+      "raw/"
+    ]
+  },
+  "self_reported_counts_not_independently_verified": {
+    "block_types": 145,
+    "modules": 46,
+    "merged_unique_events": 283,
+    "actions": 450,
+    "valuations": 229,
+    "types": 657
+  },
+  "reported_mcp_operations": [
+    "eca-block-config-list",
+    "eca-block-config-get",
+    "eca-get-event",
+    "eca-get-action",
+    "eca-get-valuation",
+    "eca-get-type",
+    "eca-graph-list-variables"
+  ],
+  "reported_node_families": [
+    "a",
+    "v",
+    "e",
+    "ife1"
+  ],
+  "reported_schema_clues": [
+    "Generic API nodes need a configId in extraState.X, according to the source README",
+    "Server and client ECA targets filter compatible API records",
+    "Generator preserves unknown fields as UNKNOWN instead of inventing values",
+    "Deprecated API levels are distinguished by the community generator"
+  ],
+  "limits": [
+    "The advertised generated catalog pages and raw MCP responses are not present in the inspected public tree",
+    "Counts and field semantics are self-reported rather than reproduced",
+    "A named session may include project-specific generated assets and graph declarations",
+    "PC MCP data does not prove Craftland Mobile visual block or dropdown parity",
+    "No license was returned from repository metadata"
+  ],
+  "next_steps": [
+    "Export current Studio block-config list and per-config schemas as raw JSON",
+    "Export event/action/valuation/type details and retain IDs and context metadata",
+    "Record editor version, capture method, source hashes and deprecation/runtime annotations",
+    "Compare exported names against the 443-line Rough.txt crosswalk",
+    "Keep Mobile editor evidence in a separate dataset"
+  ],
+  "sources": [
+    "https://ffcraftland.garena.com/en/patch-notes/",
+    "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+    "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL/blob/4d30fcd0970074fc8c19689f747b6c6b49f93cf3/_generate_kb.ps1",
+    "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL/blob/4d30fcd0970074fc8c19689f747b6c6b49f93cf3/_enrich_from_gets.ps1"
+  ]
+}
