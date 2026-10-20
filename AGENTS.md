@@ -2,6 +2,10 @@
 
 These rules apply to **every project and map in this repository**, not only ColourBridge.
 
+## Source-of-truth rule
+
+The Git repository is the durable source of truth for this work. At the start of a task, read the relevant project docs, current decisions, source inventory, and previous audit. At the end of substantial work, commit the new findings and link the commit. Do not rely on chat history alone when project facts can be captured in the repo. Keep reusable knowledge under `docs/` and `research/`; keep pristine template exports under `projects/templates/`; keep authored maps and their working copies under `projects/maps/`. The original template folder is reference-only.
+
 ## 1. Learn before changing
 
 - Inspect the relevant project files, existing documentation, prior decisions, and repository structure before proposing or making changes.
