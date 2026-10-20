@@ -68,6 +68,8 @@ In current Studio 1.19.0, locate the built-in MCP server URL from the editor's s
 
 Do not post the endpoint publicly or share API tokens. An MCP URL that points to `localhost`/a private LAN is not automatically accessible outside the PC. The safe route is to export response data or screenshots here. If it exposes an authenticated/permissioned remote endpoint, use only the official intended integration and permissions.
 
+A public community repo now provides a useful methodology lead: [the MCP repository audit](28-live-mcp-repository-audit.md) records a PowerShell generator/enrichment workflow and reported operations such as `eca-block-config-list` and `eca-get-action`. However, its inspected public commit contains only five files; the generated `blocks/`, `events/`, `actions/`, `valuations/`, `types/`, `indexes/` and `raw/` data are absent. Use it to guide a fresh capture, **not** as a substitute for collecting current responses or as proof of its self-reported counts.
+
 ## Capture D — Craftland Mobile block inventory
 
 Mobile blocks are a separate inventory. PC `.fcc` APIs alone do not prove that Mobile exposes the same visual block or options.
@@ -94,15 +96,15 @@ Use one status per observation:
 
 Do not mark a declaration compiled or runtime-tested merely because it exists in a library.
 
-## Priority order
+## Priority order, by the question being answered
 
-1. Current installed `.fcc` libraries for all PC code symbols/enum definitions.
-2. Current editor MCP or graph metadata for exact current PC visual nodes and socket/dropdown definitions.
-3. Project-specific `EditorGenLib.fcc` for registered assets/graph scripts.
-4. Craftland Mobile screenshots/exports for Mobile visual blocks and dropdown values.
-5. Current official website docs and patch notes.
-6. Public tutorials, mirrors, and community repos for leads and examples.
+- **Exact PC code API signatures and enum declarations:** current installed `.fcc` libraries first; then current official online references.
+- **PC visual node IDs, sockets, block-config dropdowns and context metadata:** current Studio MCP responses first, with raw JSON retained. Community extraction scripts are only a methodology lead until their output is reproduced.
+- **Project-specific registered assets and graph scripts:** that project's generated `EditorGenLib.fcc`.
+- **Craftland Mobile visual blocks and dropdowns:** current Mobile editor screenshots/exports first; the [official Mobile source map](29-official-mobile-scripting-source-map.md) is the topic guide, not the full inventory.
+- **Semantics, platform and deprecation checks:** current official docs and patch notes, cross-checked against the matching installed build.
+- **Public tutorials, old mirrors and other community repos:** discovery leads and examples only; retain commit, license/provenance and version caveats.
 
 ## Limitations
 
-This is a collection workflow, not evidence that the capture has already happened. No current installed library zip, current MCP response, project-specific `EditorGenLib.fcc`, or full Mobile dropdown screenshot set has been inspected in this pass. The public/research-derived files remain candidate references until the matching current data is supplied and compared.
+The [official Mobile scripting source map](29-official-mobile-scripting-source-map.md) now indexes the seven main scripting topic pages and two mechanism templates; it is not a node-by-node export. The public MCP-methodology audit likewise found no current raw catalog to import. This is a collection workflow, not evidence that the capture has already happened. No current installed library zip, current MCP response, project-specific `EditorGenLib.fcc`, or full Mobile dropdown screenshot set has been inspected in this pass. The public/research-derived files remain candidate references until the matching current data is supplied and compared.
