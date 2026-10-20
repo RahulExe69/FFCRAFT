@@ -15,6 +15,18 @@ FFCRAFT is a creator-first knowledge base for building maps and gameplay in Free
 - [Research data guide](research/README.md)
 - [Original raw notes](notes/raw/Rough.txt)
 
+## Source of truth and project assets
+
+**This repository is the source of truth for our Craftland work.** It stores reusable research, verified platform knowledge, creator intent, decisions, map-specific documentation, templates, and the maps we create. Before continuing work, consult the relevant repository docs and project records; after substantial work, update them so future sessions can resume from evidence rather than memory.
+
+Keep the responsibilities separate:
+- `docs/` and `research/`: reusable, cross-project knowledge and evidence.
+- `projects/templates/`: pristine reference exports/templates we may add over time. Never experiment directly on the golden originals.
+- `projects/maps/`: our created maps, each in its own folder with its own assets and human-readable docs.
+- `notes/raw/`: preserved original notes; do not overwrite raw source when normalizing it.
+
+The repo records both what is known and what is still unknown. A note or extracted variable name is not proof that a serialized script has been decoded.
+
 ## Repository structure
 ```text
 FFCRAFT/
