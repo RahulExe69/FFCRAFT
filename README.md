@@ -21,15 +21,22 @@ FFCRAFT is a creator-first knowledge base for building maps and gameplay in Free
 
 Keep the responsibilities separate:
 - `docs/` and `research/`: reusable, cross-project knowledge and evidence.
-- `projects/templates/`: pristine reference exports/templates we may add over time. Never experiment directly on the golden originals.
-- `projects/maps/`: our created maps, each in its own folder with its own assets and human-readable docs.
+- `projects/templates/`: pristine reference exports/templates. Never experiment directly on the golden originals.
+- `projects/maps/`: authored working copies, each in its own folder with its own assets and human-readable docs.
 - `notes/raw/`: preserved original notes; do not overwrite raw source when normalizing it.
 
 The repo records both what is known and what is still unknown. A note or extracted variable name is not proof that a serialized script has been decoded.
 
+## Current map work
+
+- **Reference template:** [Map1](projects/templates/Map1/README.md) — pristine original ColourBridge export; do not edit.
+- **ColourBridge HUD/timer patch:** [working-copy notes and status](projects/maps/colourbridge-fixed/README.md) — separate editor-source graph patch, import/runtime verification still pending.
+- **Rebuild:** from the repository root, run `python projects/maps/colourbridge-fixed/build_fixed_export.py`. It reads the Map1 template and writes generated files under `build/colourbridge-fixed-export/` and `build/colourbridge-fixed-export.zip`. It must not modify the pristine template.
+
 ## Repository structure
 ```text
 FFCRAFT/
+├── AGENTS.md
 ├── README.md
 ├── docs/
 │   ├── 00-vision/
@@ -49,6 +56,9 @@ FFCRAFT/
 │   ├── mobile/
 │   ├── pc-studio/
 │   └── workflows/
+├── projects/
+│   ├── templates/Map1/             # pristine original export
+│   └── maps/colourbridge-fixed/    # reproducible HUD/timer source patch
 └── notes/raw/Rough.txt
 ```
 
