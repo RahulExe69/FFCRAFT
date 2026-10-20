@@ -21,11 +21,11 @@
     "approxCandidates": 113,
     "noMatch": 21,
     "likelyNotes": 3,
-    "officialCurrentReferencesAdded": 30,
-    "updatedStatusOfficialCurrent": 19,
-    "unresolvedAfterOfficialCheck": 4,
+    "officialCurrentReferencesAdded": 34,
+    "updatedStatusOfficialCurrent": 23,
+    "unresolvedAfterOfficialCheck": 0,
     "likelyEditorNative": 1,
-    "unresolvedAfterOfficialCheckNote": "Four property-operation labels (Restore All Properties, Modify properties, Set basic properties, Revert to original properties) remain unresolved; see their individual records."
+    "unresolvedAfterOfficialCheckNote": "No entries remain in the previous ten-item unresolved-after-official-check group. The six Items/AI entries and four Property Formula entries now have official reference mappings; exact visual-editor label/sockets and runtime testing remain separate tasks."
   },
   "policy": {
     "exact_name_or_doc_title_match_is_a_candidate_not_a_current_support_claim": true,
@@ -5043,17 +5043,17 @@
         "canonical_identifier": "GetEquipments",
         "kind": "function",
         "url": "https://ffcraftland.garena.com/en/docs/api-15-607",
-        "evidence": "Current official Items API is plural Get Equipments. Its target-player and slot inputs match the rough note; it returns the equipment entity and a list of its attachments in that slot. It is not a generic API to retrieve all item/equipment data.",
-        "signature": "func GetEquipments(target entity<Player>, slot SwitchEquipSlot) (entity<Entity>, list<ItemIDType>)",
+        "evidence": "The current official Items API is Get Equipments. The parameter names align with the observed Target and Slot, and the older v1.5.0 library signature identifies outputs as the equipment entity and a List<entity<Attachment>>. The current official page describes it as getting equipment in the backpack equipment column.",
+        "signature": "[platform_server] func GetEquipments(target entity<Player>, slot EquipmentSlotType, out var equipments entity<Entity>, out var attachments List<entity<Attachment>>)",
         "parameter_names_and_types": [
           "target entity<Player>",
-          "slot SwitchEquipSlot"
+          "slot EquipmentSlotType"
         ],
         "outputs": [
-          "equipment entity",
-          "list of attachment item IDs"
+          "equipments entity<Entity>",
+          "attachments List<entity<Attachment>>"
         ],
-        "platform_status": "Current API page lists Server Side and Both Mobile and PC.",
+        "platform_status": "Current official API page says Server Side and Both Mobile and PC. The typed declaration is from the older v1.5.0 mirror; verify the signature against the current installed build before compiling.",
         "confidence": "official-current-api-match"
       },
       "current_label_notes": "Observed Rough.txt label: Get Equipment. Canonical current official label: Get Equipments. Original Rough.txt remains unchanged."
@@ -6181,20 +6181,24 @@
       "subcategory": "OTHER",
       "observed_label": "Restore All Properties",
       "observed_signature": "Restore All Properties: Weapon Entity ___",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-API-title-and-description-match; visual-label/socket-alias-needs-installed-editor-confirmation",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Use the official API identity and platform restriction for research/code-generation; if reproducing the exact visual block, still verify the editor label and entity/property sockets on the target version.",
       "official_current_match": {
-        "title": "Unresolved property-operation labels",
-        "url": "https://ffcraftland.garena.com/en/docs/module-32",
-        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
-        "platform_status": "Unresolved; needs category and editor screenshot check.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Clear Formula Property Factor",
+        "canonical_identifier": "ClearFormulaPropertyFactor",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-182/",
+        "signature": "[platform_server] func ClearFormulaPropertyFactor(target entity<Formulable>)",
+        "evidence": "The current official Property Formula API is Clear Formula Property Factor (it also lists ClearAllPropertyFactor as a used name). It clears all computational factors for all calculable properties of the target entity. The older library declaration has one Formulable target input, which matches this rough block's single Weapon Entity input as a likely supported Formulable subtype.",
+        "platform_status": "Current official page says Server Side and Both Mobile and PC. The typed declaration is from the older v1.5.0 library; verify the exact current editor socket/entity subtype.",
+        "confidence": "official-current-doc-title-description-and-context-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Restore All Properties. Likely current official API: Clear Formula Property Factor. Keep the user's observed wording as a search alias; original Rough.txt is untouched."
     },
     {
       "source_line": 247,
@@ -6202,20 +6206,24 @@
       "subcategory": "OTHER",
       "observed_label": "Modify properties",
       "observed_signature": "Modify properties: Formulate-able entity ___ Type --- Properties --- Change Method .---+/× Value  . 0",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-API-title-and-description-match; visual-label/socket-alias-needs-installed-editor-confirmation",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Use the official API identity and platform restriction for research/code-generation; if reproducing the exact visual block, still verify the editor label and entity/property sockets on the target version.",
       "official_current_match": {
-        "title": "Unresolved property-operation labels",
-        "url": "https://ffcraftland.garena.com/en/docs/module-32",
-        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
-        "platform_status": "Unresolved; needs category and editor screenshot check.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Set Formula Property Relative",
+        "canonical_identifier": "SetFormulaPropertyRelative",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-186/",
+        "signature": "[platform_server] func SetFormulaPropertyRelative(target entity<Formulable>, property Property, modifyType PropertyModifyType, value float)",
+        "evidence": "The current official API description is exactly 'Modify properties'. Its target, property, modify method (+ / ×) and numeric value slots align with the Rough block. This applies formula factors to a calculable property; it is not the same as directly setting the property value. The older declaration lists SetPropertyRelative as a used/deprecated name.",
+        "platform_status": "Current official page says Server Side and Only Mobile. The typed declaration is from the older v1.5.0 library; current official page is authoritative for platform availability.",
+        "confidence": "official-current-doc-title-description-and-context-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Modify properties. Likely current official API: Set Formula Property Relative. Keep the user's observed wording as a search alias; original Rough.txt is untouched."
     },
     {
       "source_line": 248,
@@ -6223,8 +6231,8 @@
       "subcategory": "OTHER",
       "observed_label": "Set basic properties",
       "observed_signature": "Set basic properties: Formulate-able entity ___ Type --- Properties --- Value . 0",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-API-title-and-description-match; visual-label/socket-alias-needs-installed-editor-confirmation",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -6272,14 +6280,18 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Use the official API identity and platform restriction for research/code-generation; if reproducing the exact visual block, still verify the editor label and entity/property sockets on the target version.",
       "official_current_match": {
-        "title": "Unresolved property-operation labels",
-        "url": "https://ffcraftland.garena.com/en/docs/module-32",
-        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
-        "platform_status": "Unresolved; needs category and editor screenshot check.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Set Formula Property Absolute",
+        "canonical_identifier": "SetFormulaPropertyAbsolute",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-187/",
+        "signature": "[platform_server] func SetFormulaPropertyAbsolute(target entity<Formulable>, property Property, value float)",
+        "evidence": "The current official API description is 'Setting the value of a computable property'. Its target, property and numeric value slots align with the Rough block's Set basic properties wording. This affects a calculable property/formula base operation; do not conflate it with the generic STD Library Set Property API. The older declaration lists SetPropertyAbsolute as a used/deprecated name.",
+        "platform_status": "Current official page says Server Side and Only Mobile. The typed declaration is from the older v1.5.0 library; current official page is authoritative for platform availability.",
+        "confidence": "official-current-doc-title-description-and-context-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Set basic properties. Likely current official API: Set Formula Property Absolute. Keep the user's observed wording as a search alias; original Rough.txt is untouched."
     },
     {
       "source_line": 249,
@@ -6287,20 +6299,24 @@
       "subcategory": "OTHER",
       "observed_label": "Revert to original properties",
       "observed_signature": "Revert to original properties: Formulate-able entity ___ Type --- Properties ---",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-API-title-and-description-match; visual-label/socket-alias-needs-installed-editor-confirmation",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Use the official API identity and platform restriction for research/code-generation; if reproducing the exact visual block, still verify the editor label and entity/property sockets on the target version.",
       "official_current_match": {
-        "title": "Unresolved property-operation labels",
-        "url": "https://ffcraftland.garena.com/en/docs/module-32",
-        "evidence": "The current documentation and the old mirror expose a Property Formula module, but these four Rough labels have not been unambiguously tied to current API/function signatures. They may refer to property/formula editor nodes or specialized component properties.",
-        "platform_status": "Unresolved; needs category and editor screenshot check.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Remove Formula Property Factor",
+        "canonical_identifier": "RemoveFormulaPropertyFactor",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-188/",
+        "signature": "[platform_server] func RemoveFormulaPropertyFactor(target entity<Formulable>, property Property)",
+        "evidence": "The current official API description is 'Clearing individual computable property modifications'. Its target and single-property inputs align with the Rough block. This removes the formula modification for one property rather than clearing every formula factor on the entity. The older library lists ClearPropertyFactor as a used/deprecated name.",
+        "platform_status": "Current official page says Server Side and Only Mobile. The typed declaration is from the older v1.5.0 library; current official page is authoritative for platform availability.",
+        "confidence": "official-current-doc-title-description-and-context-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Revert to original properties. Likely current official API: Remove Formula Property Factor. Keep the user's observed wording as a search alias; original Rough.txt is untouched."
     },
     {
       "source_line": 250,
@@ -18645,8 +18661,28 @@
       {
         "title": "AI module",
         "url": "https://ffcraftland.garena.com/en/docs/module-9"
+      },
+      {
+        "title": "Clear Formula Property Factor API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-182/"
+      },
+      {
+        "title": "Set Formula Property Relative API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-186/"
+      },
+      {
+        "title": "Set Formula Property Absolute API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-187/"
+      },
+      {
+        "title": "Remove Formula Property Factor API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-24-188/"
+      },
+      {
+        "title": "Public Formula Property manual (secondary translated mirror)",
+        "url": "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20PC/English/4.%20Scripting%20and%20Logic/Formula%20Property.md"
       }
     ],
-    "notes": "Adds official current references to selected entries. This improves on mirror-only comparison but does not constitute a full live-site scrape of all events/APIs or current visual-block dropdowns."
+    "notes": "All ten entries previously marked unresolved-after-official-check now have current official reference mappings. This does not mean the exact PC/Mobile visual block sockets were captured or that a recipe was compiled/playtested."
   }
 }
