@@ -85,7 +85,17 @@
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture operator choices (+, -, *, /, %) and add-input-slot behavior, socket types and nesting.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "The official Data and Logic topic is a concept-level guide only; capture the exact current multi-slot arithmetic node, operator options (+, -, *, /, %) and add-slot behavior.",
+      "related_official_references": [
+        {
+          "classification": "official-concept-reference-only",
+          "title": "Primitives and Logic / Data and Logic Operations",
+          "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
+          "evidence": "Official Mobile scripting topic documents data/logic operations, but does not expose the full current arithmetic node definition or all dropdown choices for the multi-slot arithmetic block.",
+          "current_status": "exact node/socket schema unresolved",
+          "next_action": "Capture the operator dropdown (+, -, *, /, %) and the add-slot behavior in the current Mobile editor."
+        }
+      ]
     },
     {
       "source_line": 500,
@@ -5461,7 +5471,17 @@
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Do not model this as a fixed enum: official Workflow docs describe Phase/Round entities, indices and lifecycle events; inspect the exact observed selector.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official Workflow documentation says phases and rounds are configured entities with IDs; inspect the current dropdown to establish what the observed 'Phase And Round Enum' label actually refers to. Do not promote it to a fixed enum without editor evidence.",
+      "related_official_references": [
+        {
+          "classification": "official-concept-reference-not-enum-match",
+          "title": "Workflow phases and rounds",
+          "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
+          "evidence": "The official Workflow manual describes phases and rounds as configured entities with unique IDs/indices, scripts and lifecycle; it does not document a fixed PhaseAndRound enum. This conflicts with reading the user's label literally as proof of a fixed enum, but does not identify the precise dropdown/component they observed.",
+          "current_status": "concept-clarified; exact editor item unresolved",
+          "next_action": "Inspect current dropdown and record whether it selects phase/round entity IDs or a fixed enum."
+        }
+      ]
     }
   ],
   "supplemental_evidence": {
@@ -5506,6 +5526,18 @@
       "classification": "unconfirmed-related-lead",
       "status_change": false,
       "caveat": "Do not count as a resolved match until the current editor establishes the node identity and sockets."
+    },
+    "phase_round_label_context": {
+      "source_line": 647,
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
+      "classification": "official-concept-reference-not-enum-match",
+      "caveat": "Workflow docs clarify the general concept but do not identify the exact observed enum-like dropdown."
+    },
+    "multi_slot_operator_context": {
+      "source_line": 451,
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
+      "classification": "official-concept-reference-only",
+      "caveat": "Tutorial concepts do not confirm the full editor node schema or exact options."
     }
   }
 }
