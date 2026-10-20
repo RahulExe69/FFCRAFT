@@ -20,18 +20,18 @@
     "rough_extracted_lines": 443,
     "entries_in_review_queue": 111,
     "approximate_candidate_needs_review": 84,
-    "no_exact_match_in_old_mirror": 14,
+    "no_exact_match_in_old_mirror": 8,
     "likely_editor_native_not_runtime_api": 1,
-    "current_official_reference_mappings": 35,
+    "current_official_reference_mappings": 41,
     "previously_targeted_officially_unresolved": 0,
-    "official_reference_found_pending_editor_verification": 12
+    "official_reference_found_pending_editor_verification": 18
   },
   "priority_counts": {
     "P1-current-editor-check": 7,
     "P1-editor-native": 1,
-    "P2-editor-shape-and-syntax": 10,
+    "P2-editor-shape-and-syntax": 4,
+    "P2-official-reference-editor-check": 14,
     "P2-fuzzy-candidate": 84,
-    "P2-official-reference-editor-check": 8,
     "P3-officially-clarified-concept": 1
   },
   "priority_policy": [
@@ -291,13 +291,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "'if else statement'",
       "observed_signature": "'if else statement'",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "mobile-visual-block-tutorial",
+        "title": "Conditional statements...else (if...else statement)",
+        "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "evidence": "The official Craftland Mobile Primitives and Logic tutorial identifies conditional statements...else (if...else statement) and says the IF branch executes when its condition is met; the ELSE branch executes otherwise.",
+        "platform_status": "Craftland Mobile tutorial; exact target editor layout/version still needs capture.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 662,
@@ -305,13 +313,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "'if statement'",
       "observed_signature": "'if statement'",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "mobile-visual-block-tutorial",
+        "title": "Conditional statements (if statement)",
+        "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "evidence": "The official Craftland Mobile Primitives and Logic tutorial identifies the if statement and explains that the connected node below IF executes when its condition is true.",
+        "platform_status": "Craftland Mobile tutorial; exact target editor layout/version still needs capture.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 664,
@@ -319,13 +335,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "Then we have 'conditional loop'",
       "observed_signature": "Then we have 'conditional loop'",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "mobile-visual-block-tutorial",
+        "title": "Conditional loop (while statement)",
+        "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "evidence": "The official Craftland Mobile Primitives and Logic tutorial identifies a conditional loop (while statement) and explains that the body repeats while the condition remains true.",
+        "platform_status": "Craftland Mobile tutorial; exact target editor layout/version still needs capture.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 665,
@@ -333,13 +357,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "then we have 'loop of integer range' which returns",
       "observed_signature": "then we have 'loop of integer range' which returns ( index name ) and then together we have 'Start Value .0 End Value .10 Step .1'",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "mobile-visual-block-tutorial",
+        "title": "Loop of integer range (for index statement)",
+        "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "evidence": "The official Craftland Mobile Primitives and Logic tutorial documents an integer-range/index loop and describes start/minimum, end/maximum, and step increment behavior.",
+        "platform_status": "Craftland Mobile tutorial; exact socket defaults and boundary semantics must be recorded from the target editor.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 666,
@@ -347,13 +379,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "Then we have 'Loop every element'",
       "observed_signature": "Then we have 'Loop every element' (Index Name, Element) Data Container ___",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "mobile-visual-block-tutorial",
+        "title": "Loop every element (for each statement)",
+        "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "evidence": "The official Craftland Mobile Primitives and Logic tutorial identifies a for-each loop over list/dictionary data and says the body runs once for each key/element.",
+        "platform_status": "Craftland Mobile tutorial; exact socket names and index/value types still need capture.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 667,
@@ -361,13 +401,21 @@
       "observed_subcategory": "CONTROL FLOW",
       "observed_label": "Two more block in logic are Continue to next and Break Loop",
       "observed_signature": "Two more block in logic are Continue to next and Break Loop",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official tutorial/module reference found; exact installed-editor sockets/defaults remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture control-flow block type, statement sockets, loop outputs and exact labels from the live Mobile/PC editor.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the exact corresponding block in the current Mobile editor, including all sockets, default values and version/scope. Do not treat tutorial concept coverage as an exact live-editor schema.",
+      "current_official_reference_match": {
+        "kind": "current-official-module-index-and-mobile-tutorial",
+        "title": "Continue to next and Break loop",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "The current official STD Library module index lists Break loop and Continue to next; the official Primitives and Logic tutorial also explains both control-flow operations.",
+        "platform_status": "Official module index plus Mobile tutorial; exact target block category/socket layout still needs capture.",
+        "confidence": "official-current-tutorial-concept-confirmed; exact-editor-node-layout-not-captured"
+      }
     },
     {
       "source_line": 281,
@@ -5399,6 +5447,15 @@
       "source_pages_added": 14,
       "status": "Official reference found; exact editor node/socket mapping and runtime testing remain open.",
       "notes": "Two identically titled Vector2 Set X pages and two identically titled Vector2 Set Y pages have different server/client scope labels; alternate references are deliberately preserved."
+    },
+    "official_mobile_control_flow_crosscheck": {
+      "checked_on": "2026-10-21",
+      "entries_mapped": 6,
+      "source_urls": [
+        "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
+        "https://ffcraftland.garena.com/en/docs/module-1"
+      ],
+      "status": "Tutorial/module concepts confirmed; exact editor nodes, sockets and default values pending."
     }
   }
 }
