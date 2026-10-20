@@ -38,6 +38,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 30. [Current editor capture playbook](docs/27-current-editor-capture-playbook.md) — exact local .fcc path, EditorGenLib and MCP data sources, plus what Mobile screenshots are needed to close the remaining gaps.
 31. [Live MCP repository audit](docs/28-live-mcp-repository-audit.md) — audits a new community MCP-export workflow and separates its useful method clues from its unpublished raw catalog.
 32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
+33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 70 official option rows across 18 labels, with old-mirror deprecated-alias discrepancies and exact script names.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -55,6 +56,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Enum option-set analysis](research/pc-enum-option-set-analysis.json) — groups identical dropdown-like option sequences for efficient browsing without merging API types.
 - [Live MCP public-resource audit](research/live-mcp-public-resource-audit.json) — machine-readable audit of a community PC MCP exporter; catalog counts are self-reported and raw records are absent.
 - [Official Mobile scripting source map](research/mobile-official-scripting-source-map.json) — structured links to seven official scripting topics and two mechanism templates.
+- [Official dropdown option cross-checks](research/official-dropdown-option-crosschecks.json) — 70 current official option rows across 18 rough labels, with old-mirror alias notes.
 
 ## Current verified baseline
 
