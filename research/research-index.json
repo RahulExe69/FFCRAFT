@@ -263,7 +263,7 @@
     },
     {
       "id": "official-enum-option-snapshot",
-      "summary": "A targeted official-doc cross-check records 214 visible option rows across 39 Rough.txt enum labels and flags differences from the older v1.5.0 mirror, including major VFX/Sound/Texture/Monster/Equipment/Status/UI list-count mismatches; it remains partial, with no current-editor or Mobile parity/runtime testing inferred.",
+      "summary": "A targeted official-doc cross-check records 353 visible option rows across 51 Rough.txt enum labels and flags differences from the older v1.5.0 mirror, including major VFX/Sound/Texture/Equipment/Player Pose/UI list-count mismatches; it remains partial, with no current-editor or Mobile parity/runtime testing inferred.",
       "confidence": "official-documentation-with-secondary-mirror-comparison",
       "details": "docs/30-current-official-dropdown-option-crosschecks.md",
       "sources": [
@@ -344,7 +344,7 @@
     "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
     "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates",
     "docs/20-pc-library-catalog.md": "Recovered 42-file public extension-library mirror catalog, parser counts, source/version/license caveats and links",
-    "docs/21-enum-dropdown-reconstruction.md": "Dropdown crosswalk method/results; adds official Loot Soccer Type options and Phase/Round Workflow component clarification",
+    "docs/21-enum-dropdown-reconstruction.md": "Crosswalk of 65 observed dropdown/type labels to PC-mirror candidates and official references, with dynamic ID and legacy/deprecated caveats",
     "docs/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
     "research/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
     "research/enum-dropdown-crosswalk.json": "65-label mapping: 28 mirror-only candidates, 24 official+mirror matches, four dynamic ID types, three obsolete concepts, one generated UI enum, one likely spelling variation, one Phase/Round non-enum classification, and one match with differing historical type identifiers",
@@ -364,8 +364,8 @@
     "research/live-mcp-public-resource-audit.json": "Machine-readable provenance and limitation audit for the public MCP-derived KB lead",
     "docs/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
     "research/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
-    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official-reference option rows for 39 rough enum labels (214 rows), including VFX, sound, monster, texture, font, skybox, render-quality, equipment, UI and status sets, with old-mirror differences flagged",
-    "research/official-dropdown-option-crosschecks.json": "Structured visible option rows for 39 labels (214 rows), with old-mirror counts, alias notes, completeness caveats and no runtime/Mobile parity claims",
+    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official-reference visible option rows for 51 rough enum labels (353 rows), including VFX, sound, physics, pose/state, equipment, inventory, seating, outfit, UI and status sets, with old-mirror differences flagged",
+    "research/official-dropdown-option-crosschecks.json": "Structured visible option rows for 51 labels (353 rows), with old-mirror counts, alias notes, member-count mismatches and no runtime/Mobile parity claims",
     "docs/31-rough-block-review-queue.md": "Prioritized follow-up for 111 unresolved or approximate Rough.txt lines, preserving source line, candidate signatures and review instructions",
     "research/rough-block-review-queue.json": "Machine-readable queue of 111 fuzzy/missing/editor-native lines with up to three nearest candidate declarations and line-specific review focus"
   },
@@ -631,7 +631,7 @@
       "title": "Official Craftland Enum reference: targeted option table cross-check",
       "url": "https://ffcraftland.garena.com/en/docs/enum/",
       "checked_on": "2026-10-21",
-      "caveat": "39 Rough labels have 214 captured official-reference option rows; this is a partial cross-check, not a complete enum scrape. Several types differ sharply from the old mirror and need current installed-editor comparison; no Mobile parity/runtime testing is inferred."
+      "caveat": "51 Rough labels have 353 captured visible official-reference option rows; this is a partial cross-check, not a complete enum scrape. Several types differ sharply from the old mirror and need current installed-editor comparison; no Mobile parity/runtime testing is inferred."
     },
     {
       "tier": "A",
@@ -695,10 +695,11 @@
     "Capture an actual current Studio 1.19.x MCP response set: a community exporter advertises sizable counts but does not publish its generated block/API data pages or raw JSON.",
     "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog.",
     "Capture the editor context for the Rough.txt label `Phase And Round Enum`; official docs show Phase/Round entity types, indexes and events, but not the exact dropdown/editor label the author observed.",
-    "Expand current official enum option-row cross-checks beyond the current 25 Rough.txt labels/109 rows, especially larger ID catalogs and dynamic asset selectors.",
+    "Expand current official enum option-row cross-checks beyond the current 51 Rough.txt labels/353 visible rows, especially larger ID catalogs and dynamic asset selectors.",
     "Confirm whether the observed Dynamic Create Level Object Type selector corresponds to or differs from current autogenerated LevelObjectType; preserve both identifiers until the current editor settles the mapping.",
     "Capture current Studio MCP block-config schemas and per-item API/type details; public community counts are not a substitute for raw export data.",
-    "Capture version-stamped Craftland Mobile block-panel and expanded dropdown screenshots/exports for the fuzzy/unmatched Rough.txt entries."
+    "Capture version-stamped Craftland Mobile block-panel and expanded dropdown screenshots/exports for the fuzzy/unmatched Rough.txt entries.",
+    "Installed editor may expose options beyond visible official documentation tables, especially VFX, sound effects, item IDs and asset selectors; compare the installed current .fcc/MCP output instead of inferring missing values from old-mirror count differences."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -870,8 +871,8 @@
     "dropdown_labels_still_manual_review": 0,
     "dropdown_labels_classified_not_enum": 1,
     "dropdown_labels_needing_spelling_ui_confirmation": 1,
-    "official_dropdown_labels_crosschecked": 39,
-    "official_dropdown_option_rows": 214,
+    "official_dropdown_labels_crosschecked": 51,
+    "official_dropdown_option_rows": 353,
     "labels_with_mirror_alias_or_spelling_caveats": 22,
     "dropdown_labels_generated_enum": 1,
     "public_mcp_export_catalogs_verified": 0,
@@ -881,6 +882,7 @@
     "block_review_queue_entries": 111,
     "block_review_queue_fuzzy_candidates": 92,
     "block_review_queue_old_mirror_misses": 18,
-    "block_review_queue_likely_editor_native": 1
+    "block_review_queue_likely_editor_native": 1,
+    "labels_with_official_vs_mirror_count_difference": 29
   }
 }
