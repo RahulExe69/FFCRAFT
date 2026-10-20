@@ -1,0 +1,6 @@
+# Generated map exports are reproducible; never commit build output.
+/build/
+
+# Python tooling cache
+__pycache__/
+*.py[cod]
