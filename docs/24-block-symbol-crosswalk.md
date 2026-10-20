@@ -12,13 +12,13 @@ The initial old-library pass across 443 extracted lines found 306 exact normaliz
 
 **Latest entry status (21 October 2026):**
 - **306** exact normalized matches to an old-mirror symbol name or documentation title.
-- **35** entries mapped to a current official reference.
+- **41** entries mapped to a current official reference.
 - **84** approximate candidates still requiring review.
-- **14** lines with no exact match in the older mirrored libraries.
+- **8** lines with no exact match in the older mirrored libraries.
 - **1** likely editor-native block rather than a runtime API.
 - **3** entries likely explanatory notes rather than blocks.
 
-The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: 84 fuzzy candidates, 14 mirror misses, 12 documented Math matches whose exact editor node/context still needs verification, and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
+The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: 84 fuzzy candidates, 8 old-mirror misses, 18 official-reference matches whose exact editor node/context still needs verification, and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
 
 ## Current official review already filled some gaps
 
@@ -79,6 +79,12 @@ An additional official-documentation pass mapped 12 Rough.txt lines to Math API 
 | 551 | `Vector2 Set Y` | [Server-side page](https://ffcraftland.garena.com/en/docs/api-4-689/) and [client-side page](https://ffcraftland.garena.com/en/docs/api-4-775/) | Both pages say Only Mobile; one is Server Side and one Client Side |
 
 Two identically titled pages exist for each Vector2 setter, with different server/client labels. Both candidate pages are preserved in the machine-readable crosswalk; the editor context must decide which matches the user's observed node. The original spelling and signatures in `Rough.txt` remain untouched.
+
+## Mobile control-flow references added on 21 October 2026
+
+A pass against Garena's [Primitives and Logic tutorial](https://ffcraftland.garena.com/en/tutorial/undefined/4-60) documented the concepts behind six original observations: if, if/else, conditional/while loop, integer-range loop, for-each loop, and Continue to next / Break loop. The official [STD Library module](https://ffcraftland.garena.com/en/docs/module-1) also lists Break loop and Continue to next.
+
+These references confirm concepts and naming, not a full current UI dump. The exact socket layout/defaults and version-specific availability still need a screenshot/export from the installed Mobile editor. The research queue entries remain pending that editor-level verification.
 
 ## Stronger next sources
 
