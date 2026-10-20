@@ -8,17 +8,17 @@ Machine-readable result: [`research/block-symbol-crosswalk.json`](../research/bl
 
 ## Comparison result
 
-The initial old-library pass across 443 extracted lines found 306 exact normalized matches, 113 approximate candidates, 21 lines without an exact mirror match, and 3 likely explanatory notes. A later official-doc cross-check added 34 official reference links and upgraded 23 entry statuses.
+The initial old-library pass across 443 extracted lines found 306 exact normalized matches, 113 approximate candidates, 21 lines without an exact mirror match, and 3 likely explanatory notes. A later official-doc cross-check added 46 official reference mappings and upgraded 35 entry statuses (the 21 raw pre-pass misses/113 fuzzy candidates are pre-cross-check totals).
 
 **Latest entry status (21 October 2026):**
 - **306** exact normalized matches to an old-mirror symbol name or documentation title.
-- **23** entries mapped to a current official reference.
-- **92** approximate candidates still requiring review.
-- **18** lines with no exact match in the older mirrored libraries.
+- **35** entries mapped to a current official reference.
+- **84** approximate candidates still requiring review.
+- **14** lines with no exact match in the older mirrored libraries.
 - **1** likely editor-native block rather than a runtime API.
 - **3** entries likely explanatory notes rather than blocks.
 
-The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: the 92 fuzzy candidates, 18 mirror misses and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
+The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: 84 fuzzy candidates, 14 mirror misses, 12 documented Math matches whose exact editor node/context still needs verification, and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
 
 ## Current official review already filled some gaps
 
@@ -61,6 +61,24 @@ A subsequent pass over the current Garena module/API pages resolved the earlier 
 | `Revert to original properties` | [Remove Formula Property Factor / `RemoveFormulaPropertyFactor`](https://ffcraftland.garena.com/en/docs/api-24-188/) | Official API says **Server Side, Only Mobile**. Removes the formula modification for one property; it is distinct from clearing all formula factors. |
 
 The machine-readable [crosswalk](../research/block-symbol-crosswalk.json) now records these official references, canonical identifiers, and platform/context caveats. The previous ten-item unresolved-after-official-check group is no longer unresolved at the **official reference** level. Remaining work is to capture the current editor's actual block labels, sockets, dropdown values and runtime behavior where relevant.
+
+## Math reference cross-check added on 21 October 2026
+
+An additional official-documentation pass mapped 12 Rough.txt lines to Math API references. These are documentation mappings—not claims that the displayed block shape or live runtime has been tested.
+
+| Rough.txt line | Observed entry | Official reference | Documented scope |
+|---:|---|---|---|
+| 469 | `Vector2: Scale...` | [Vector2 Scale](https://ffcraftland.garena.com/en/docs/api-4-692/) | Both server/client; Only Mobile |
+| 470 | `Vector2: Add...` | [Vector2 Add](https://ffcraftland.garena.com/en/docs/api-4-690/) | Both server/client; Only Mobile |
+| 471 | `Vector2 Sub` | [Vector2 Sub](https://ffcraftland.garena.com/en/docs/api-4-691/) | Both server/client; Only Mobile |
+| 500 | `Quaternion Rotate Toward` | [Quaternion Rotate Towards](https://ffcraftland.garena.com/en/docs/api-4-931/) | Both server/client; Both Mobile and PC |
+| 541–543 | 3D vector X/Y/Z getters | [Get X](https://ffcraftland.garena.com/en/docs/api-4-80/), [Get Y](https://ffcraftland.garena.com/en/docs/api-4-148/), [Obtain Z](https://ffcraftland.garena.com/en/docs/api-4-149/) | All three: Both server/client; Only Mobile |
+| 547 | `New Vector2` | [New Vector2](https://ffcraftland.garena.com/en/docs/api-4-702/) | Both server/client; Both Mobile and PC |
+| 548–549 | `Vector2 Get X/Y` | [Get X](https://ffcraftland.garena.com/en/docs/api-4-686/), [Get Y](https://ffcraftland.garena.com/en/docs/api-4-687/) | Both server/client; Only Mobile |
+| 550 | `Vector2 Set X` | [Server-side page](https://ffcraftland.garena.com/en/docs/api-4-688/) and [client-side page](https://ffcraftland.garena.com/en/docs/api-4-774/) | Both pages say Only Mobile; one is Server Side and one Client Side |
+| 551 | `Vector2 Set Y` | [Server-side page](https://ffcraftland.garena.com/en/docs/api-4-689/) and [client-side page](https://ffcraftland.garena.com/en/docs/api-4-775/) | Both pages say Only Mobile; one is Server Side and one Client Side |
+
+Two identically titled pages exist for each Vector2 setter, with different server/client labels. Both candidate pages are preserved in the machine-readable crosswalk; the editor context must decide which matches the user's observed node. The original spelling and signatures in `Rough.txt` remain untouched.
 
 ## Stronger next sources
 
