@@ -31,9 +31,9 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 4,
+    "candidate_mapped_from_mirror": 3,
     "official_doc_match_not_in_mirror": 2,
-    "official_docs_and_mirror_confirm": 48,
+    "official_docs_and_mirror_confirm": 49,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
     "manual_or_official_cross_check": 0,
@@ -42,12 +42,12 @@
     "official_docs_clarify_not_enum": 1,
     "official_docs_likely_typo_match": 1,
     "official_docs_match_different_identifiers": 1,
-    "official_option_crosscheck_labels": 51,
-    "official_option_rows": 353,
+    "official_option_crosscheck_labels": 52,
+    "official_option_rows": 367,
     "labels_with_mirror_alias_or_spelling_caveats": 22,
     "official_docs_generated_enum": 1,
     "checked_on": "2026-10-21",
-    "note": "Official visible option rows now cover 51 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
+    "note": "Official visible option rows now cover 52 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
   },
   "entries": [
     {
@@ -307,7 +307,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 19,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -1170,7 +1170,7 @@
       "observed_label": "Icon Type",
       "rough_line": 592,
       "observed_signature": "4. Icon Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:IconType",
@@ -2157,7 +2157,14 @@
           "label": "StdLibrary.fcc:IconType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Capture the current Icon Type dropdown/library and decide whether the visible official table is partial compared with the old 96-member mirror.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 14,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page visibly exposes 14 icon rows in this indexed snapshot, while the old v1.5.0 mirror has 96 parsed members. This large discrepancy is unresolved; inspect the current installed editor before treating either count as the full live selector."
+      }
     },
     {
       "observed_label": "VFX Type",
@@ -7772,7 +7779,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 2,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -7937,7 +7944,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 2,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -8022,7 +8029,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -8072,7 +8079,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 1,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -8262,7 +8269,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 2,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -8617,7 +8624,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -8829,7 +8836,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 4,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -8979,7 +8986,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 9,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -9789,7 +9796,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 4,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -9914,7 +9921,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 7,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -10049,7 +10056,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 6,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -10174,7 +10181,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 5,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -10401,7 +10408,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 4,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -10548,7 +10555,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -10863,7 +10870,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -12795,7 +12802,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -12865,7 +12872,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 2,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -13367,7 +13374,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 5,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -13462,7 +13469,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 5,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -13852,7 +13859,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -14027,7 +14034,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 6,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -14112,7 +14119,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
@@ -14452,7 +14459,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 2,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -14917,7 +14924,7 @@
         "checked_on": "2026-10-21",
         "option_rows_captured": 3,
         "current_editor_parity": "not-tested",
-        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
+        "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       }
     },
     {
