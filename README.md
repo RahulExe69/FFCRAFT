@@ -41,6 +41,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 367 official-reference option rows across 52 labels, with old-mirror deprecated-alias discrepancies, large member-count mismatches, and exact script names.
 34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — tracks 111 rows requiring editor-level verification: 84 fuzzy candidates, 5 old-mirror misses, 21 official-reference matches pending exact editor context, and one likely editor-native block.
 35. [Legacy BuiltinSymbol index audit](docs/32-legacy-builtin-symbol-index-audit.md) — records internal symbol/property-ID evidence from an older 1.5.0 extension index, with raw record counts, provenance and explicit current-version caveats.
+36. [Public script repository audit](docs/33-public-script-repository-audit.md) — checks newly found script-sharing repos and confirms four copies of Nexos resource repository have the same tree SHA.
 
 ## Research snapshot details
 - [Expanded official dropdown option dataset](research/official-dropdown-option-crosschecks.json) — 367 visible option rows across 52 Rough.txt labels; large discrepancies with the older mirror are marked for current-editor verification.
