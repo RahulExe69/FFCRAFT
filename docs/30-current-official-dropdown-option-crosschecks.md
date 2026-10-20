@@ -1,12 +1,12 @@
 # Current official dropdown option cross-checks
 
-**Checked:** 20 October 2026  
+**Checked:** 21 October 2026  
 **Machine-readable option rows:** [`research/official-dropdown-option-crosschecks.json`](../research/official-dropdown-option-crosschecks.json)  
 **Official source:** [Garena Craftland Enum reference](https://ffcraftland.garena.com/en/docs/enum/)
 
 ## What this adds
 
-This is a current official-doc cross-check for **25 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **109 option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
+This is a current official-doc cross-check for **33 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **162 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
 
 It is intentionally a *subset*, not a complete scrape of the official reference. It also does not prove every listed enum is exposed as the same dropdown in Craftland Mobile.
 
@@ -55,6 +55,23 @@ The official Enum reference calls the value set **Loot Soccer Type**, identifier
 | 1039 | Loot Soccer Ice | `LootSoccerIce` |
 
 This is a strong likely match for the original `Loot Scorer Type` spelling, but the raw notes are preserved. Capture a screenshot if the exact visible wording of that dropdown matters.
+
+## Additional current official rows captured
+
+The source data now also records visible current-official rows for eight more labels from the original notes. These rows are stored as the full visible row fields (value, display label, script name, description) in the JSON. Where the old v1.5.0 library has a substantially larger list, that discrepancy is deliberately left unresolved pending an installed-editor capture.
+
+| Rough label | Current official rows captured | Old-mirror member count | Interpretation |
+|---|---:|---:|---|
+| VFX Type | 7 | 71 | Major mismatch; old-only names need current-editor verification. |
+| Sound Effect Type | 10 | 102 | Major mismatch; do not assume either list is the live dropdown. |
+| Special ID Type | 1 | 1 | Gloo Maker / IceWallMaker; source lists agree. |
+| Monster Type | 4 | 13 | Old mirror includes a deprecated alias and additional types not visible in the current official table. |
+| Object Texture | 15 | 35 | Old mirror includes multiple deprecated aliases and other older names. |
+| Font Type | 6 | 7 | HindSiliguri appears in the old mirror but not the current official table. |
+| SkyboxType | 6 | 8 | CityBuilding and Snow are old-mirror aliases marked deprecated. |
+| Render Quality Type | 4 | 0 | Current official enum missing from the old mirror; Get Render Quality is documented as Client Side and Both Mobile and PC. |
+
+For VFX, Sound Effect, Monster, Object Texture and Font Type, the option-row count above is the number of rows visible in the official reference snapshot, not an assertion that the installed editor must expose exactly that many entries. The old-mirror count difference is a reason to capture the current library/editor—not permission to call entries removed or supported by guesswork. Skybox options also cross-reference the curated asset dataset; package import/playtest status is separate.
 
 ## How to consume the JSON
 
