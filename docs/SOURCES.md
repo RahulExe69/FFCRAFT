@@ -126,3 +126,5 @@ The mirrored library is not treated as authoritative for current API support. A 
 - [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) — official topic pages for Mobile block scripting, script types, flow control, variable/property assignment, data/logic, and server/client separation, plus two official template leads.
 - [Machine-readable MCP lead audit](../research/live-mcp-public-resource-audit.json) and [Mobile source map](../research/mobile-official-scripting-source-map.json).
 - [Public MCP-derived KB source](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — methodology lead only; inspect the pinned commit and published tree before treating any claimed export as accessible evidence.
+
+- [Rough block review queue](31-rough-block-review-queue.md) and [machine-readable queue](../research/rough-block-review-queue.json) — prioritized follow-up for the 92 fuzzy old-mirror candidates, 18 mirror misses, and one likely editor-native block; misses are not claims of absence.
