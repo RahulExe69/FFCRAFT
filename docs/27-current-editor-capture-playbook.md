@@ -81,7 +81,11 @@ For each dropdown or block that isn't fully captured in `Rough.txt`, obtain:
 - the exact Mobile/editor version and language,
 - a screenshot/export of the connected inputs if relevant.
 
-Most valuable first: the 21 lines that have no exact match in the old PC mirror, the 113 fuzzy-match leads, every label with a dynamic skin/asset ID list, and the ambiguous labels identified in [doc 24](24-block-symbol-crosswalk.md). The old-mirror crosswalk status is a search hint, not proof of current support or lack of support.
+Most valuable first: the 5 remaining no-exact-match lines, the 84 fuzzy-match leads, and the 21 official-reference mappings that still need exact current-editor node/socket/context evidence. Also prioritize every label with a dynamic skin/asset ID list and the ambiguous labels identified in [doc 24](24-block-symbol-crosswalk.md). The old-mirror crosswalk status is a search hint, not proof of current support or lack of support.
+
+### One related lead to verify, not assume
+
+Rough.txt line 132 `Progressive Movement Property` may be related to the official [Set Property Smoothly API](https://ffcraftland.garena.com/en/docs/api-1-475/), which is documented as Server Side and Both Mobile and PC. The observed node has a different title, so it remains an unresolved mismatch until the current editor data confirms the internal identity and input/output types. See [the review queue](31-rough-block-review-queue.md).
 
 ## Safe source/evidence labels
 
