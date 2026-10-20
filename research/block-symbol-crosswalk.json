@@ -21,10 +21,11 @@
     "approxCandidates": 113,
     "noMatch": 21,
     "likelyNotes": 3,
-    "officialCurrentReferencesAdded": 24,
-    "updatedStatusOfficialCurrent": 13,
-    "unresolvedAfterOfficialCheck": 10,
-    "likelyEditorNative": 1
+    "officialCurrentReferencesAdded": 30,
+    "updatedStatusOfficialCurrent": 19,
+    "unresolvedAfterOfficialCheck": 4,
+    "likelyEditorNative": 1,
+    "unresolvedAfterOfficialCheckNote": "Four property-operation labels (Restore All Properties, Modify properties, Set basic properties, Revert to original properties) remain unresolved; see their individual records."
   },
   "policy": {
     "exact_name_or_doc_title_match_is_a_candidate_not_a_current_support_claim": true,
@@ -1001,8 +1002,8 @@
       "subcategory": "PRIVATE EVENT",
       "observed_label": "On User Consumable (ConsumableID, Item, Spawned Item)",
       "observed_signature": "On User Consumable (ConsumableID, Item, Spawned Item)",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -1050,14 +1051,23 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Unresolved user-consumable event label",
-        "url": "https://ffcraftland.garena.com/en/docs/event",
-        "evidence": "Not found as an exact current official event label in this research pass or the older extension-library snapshot. Do not infer a similarly named event. Possible editor-native/custom event, module-scoped event, or transcription needs to be checked.",
-        "platform_status": "Unresolved; needs event browser/current editor search.",
-        "confidence": "unresolved"
-      }
+        "title": "On Use Consumable",
+        "canonical_identifier": "OnUseConsumable",
+        "kind": "event",
+        "url": "https://ffcraftland.garena.com/en/docs/module-15",
+        "evidence": "Current official Items module lists the event as On Use Consumable and describes it as triggered after a consumable/item is used. Its three parameters match the Rough signature labels: ConsumableID, Item and Spawned Item. The rough label likely reflects a transcription or naming error; do not rewrite the original Rough.txt.",
+        "signature": "event OnUseConsumable(consumableID ItemIDType, item entity<Entity>, spawnedItem entity<Entity>)",
+        "parameter_names_and_types": [
+          "consumableID ItemIDType",
+          "item entity<Entity>",
+          "spawnedItem entity<Entity>"
+        ],
+        "platform_status": "Current module listing confirms the event name and purpose. The underlying old library mirror marks OnUseConsumable server-side; confirm runtime side against the current event detail/current editor before generating cross-platform code.",
+        "confidence": "official-current-event-match-parameter-names-align; label-variation-likely"
+      },
+      "current_label_notes": "Observed Rough.txt label: On User Consumable (ConsumableID, Item, Spawned Item). Canonical current official label: On Use Consumable. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 57,
@@ -1871,8 +1881,8 @@
       "subcategory": "PRIVATE EVENT",
       "observed_label": "On Throwable Explodes (Hit Position)",
       "observed_signature": "On Throwable Explodes (Hit Position)",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -1892,14 +1902,21 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Unresolved throwable-exploded event label",
-        "url": "https://ffcraftland.garena.com/en/docs/event",
-        "evidence": "Not found as an exact current official event label in this research pass or the older extension-library snapshot. The official Level Object docs do list On Explode for vehicles/dye barrels, which is related but not an equivalent for a throwable.",
-        "platform_status": "Unresolved; do not map to On Explode without evidence.",
-        "confidence": "unresolved"
-      }
+        "title": "On Throwable Explode",
+        "canonical_identifier": "OnThrowableExplode",
+        "kind": "event",
+        "url": "https://ffcraftland.garena.com/en/docs/module-15",
+        "evidence": "Current official Items module lists On Throwable Explode, triggered when a projectile explodes after being thrown. The documented single Hit Position / Vector3 parameter matches the Rough label. This is separate from the Level Object On Explode event for objects such as vehicles and explosive barrels.",
+        "signature": "event OnThrowableExplode(hitPosition Vector3)",
+        "parameter_names_and_types": [
+          "hitPosition Vector3"
+        ],
+        "platform_status": "The current module listing confirms the event and purpose; old mirror declares it server-side. Confirm runtime side against current event detail/editor before code generation.",
+        "confidence": "official-current-event-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: On Throwable Explodes (Hit Position). Canonical current official label: On Throwable Explode. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 79,
@@ -4438,8 +4455,8 @@
       "subcategory": "ITEMS",
       "observed_label": "Destroy Target",
       "observed_signature": "Destroy Target: Target ___ Item ___ Count  0",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4501,14 +4518,23 @@
           "similarity": 0.4
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Potential item removal / target-destroy operation",
-        "url": "https://ffcraftland.garena.com/en/docs/module-17",
-        "evidence": "The old mirror and current docs contain generic Destroy/DeleteEntity operations, but the exact Rough label is in the Items group. No exact current Items API match established; don't substitute generic entity Destroy unless target type and behavior are verified.",
-        "platform_status": "Unresolved exact operation; context is Items.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Destroy Item",
+        "canonical_identifier": "DestroyItem",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-147",
+        "evidence": "The current official Items API is Destroy Item, described as deleting a certain number of items from the player. Its parameter sequence Target, Item and Count matches the observed signature; this is an item-in-backpack operation, not generic entity destruction.",
+        "signature": "func DestroyItem(target entity<Player>, item ItemIDType, count int)",
+        "parameter_names_and_types": [
+          "target entity<Player>",
+          "item ItemIDType",
+          "count int"
+        ],
+        "platform_status": "Current API page lists Server Side and Both Mobile and PC.",
+        "confidence": "official-current-api-match-parameter-shape-aligns"
+      },
+      "current_label_notes": "Observed Rough.txt label: Destroy Target. Canonical current official label: Destroy Item. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 175,
@@ -4859,8 +4885,8 @@
       "subcategory": "ITEMS",
       "observed_label": "Add Attachment",
       "observed_signature": "Add Attachment: Target ___ Slot ___ Item ___ (Is Success, Attachment)",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -4922,14 +4948,25 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Unresolved attachment operation",
-        "url": "https://ffcraftland.garena.com/en/docs/module-17",
-        "evidence": "Exact current official Items API match not established in this pass. Keep as a lookup task rather than substituting a similarly named equipment or item API.",
-        "platform_status": "Unresolved.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Add Attachments",
+        "canonical_identifier": "AddAttachments",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-605",
+        "evidence": "Current official Items API is plural Add Attachments. The documented inputs (Target Player, Slot, Item) and two outputs (Is Success, Attachment) match the observed block signature. The API adds an accessory to the weapon in a specified slot; slot mismatch fails; a duplicate replaces the previous attachment and returns the original to the player's backpack.",
+        "signature": "func AddAttachments(target entity<Player>, slot SwitchEquipSlot, item ItemIDType, out var isSuccess bool, out var attachment entity<Entity>)",
+        "parameter_names_and_types": [
+          "target entity<Player>",
+          "slot SwitchEquipSlot",
+          "item ItemIDType",
+          "out var isSuccess bool",
+          "out var attachment entity<Entity>"
+        ],
+        "platform_status": "Current API page lists Server Side and Both Mobile and PC.",
+        "confidence": "official-current-api-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Add Attachment. Canonical current official label: Add Attachments. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 185,
@@ -4937,8 +4974,8 @@
       "subcategory": "ITEMS",
       "observed_label": "Get Equipment",
       "observed_signature": "Get Equipment: Target ___ Slot ___ (Equipments, Attachments)",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -5000,14 +5037,26 @@
           "similarity": 0.267
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Unresolved equipment operation",
-        "url": "https://ffcraftland.garena.com/en/docs/module-17",
-        "evidence": "Exact current official Items API match not established in this pass. It may be editor-specific or a different module's helper; do not assume equivalence from words alone.",
-        "platform_status": "Unresolved.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Get Equipments",
+        "canonical_identifier": "GetEquipments",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-607",
+        "evidence": "Current official Items API is plural Get Equipments. Its target-player and slot inputs match the rough note; it returns the equipment entity and a list of its attachments in that slot. It is not a generic API to retrieve all item/equipment data.",
+        "signature": "func GetEquipments(target entity<Player>, slot SwitchEquipSlot) (entity<Entity>, list<ItemIDType>)",
+        "parameter_names_and_types": [
+          "target entity<Player>",
+          "slot SwitchEquipSlot"
+        ],
+        "outputs": [
+          "equipment entity",
+          "list of attachment item IDs"
+        ],
+        "platform_status": "Current API page lists Server Side and Both Mobile and PC.",
+        "confidence": "official-current-api-match"
+      },
+      "current_label_notes": "Observed Rough.txt label: Get Equipment. Canonical current official label: Get Equipments. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 186,
@@ -5839,8 +5888,8 @@
       "subcategory": "AI",
       "observed_label": "Enable Default Behaviour Tree",
       "observed_signature": "Enable Default Behaviour Tree : Target ___ Enable ---tf",
-      "confidence": "user-observed; not independently verified",
-      "status": "unresolved-after-official-check",
+      "confidence": "official-current-reference-found; observed spelling/label retained separately",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
@@ -5874,14 +5923,22 @@
           "similarity": 0.48
         }
       ],
-      "next_action": "Keep flagged for manual/current-editor verification; do not infer equivalence.",
+      "next_action": "Current official match recorded; retain the original observed label as an alias/search term. Verify the corresponding installed editor node and its exact context/socket type before treating it as a compile/runtime-tested implementation.",
       "official_current_match": {
-        "title": "Enable Default Behaviour Tree",
-        "url": "https://ffcraftland.garena.com/en/docs/module-24",
-        "evidence": "This label needs exact current reference verification. The older library snapshot may contain similarly named behavior-tree helpers, but exact Mobile/PC parity has not been established yet.",
-        "platform_status": "Unresolved platform/context status.",
-        "confidence": "needs-current-editor-or-api-detail"
-      }
+        "title": "Enable Default Behavour Tree",
+        "canonical_identifier": "EnableDefaultBTree",
+        "kind": "function",
+        "url": "https://ffcraftland.garena.com/en/docs/module-9",
+        "evidence": "Current official AI module lists Enable Default Behavour Tree (official page spelling), described as controlling whether the AI entity executes the default behavior tree. The old PC library contains EnableDefaultBTree with the same entity<Monster> and bool parameters; EnableDefaultAI is marked deprecated in that snapshot.",
+        "signature": "func EnableDefaultBTree(target entity<Monster>, enable bool)",
+        "parameter_names_and_types": [
+          "target entity<Monster>",
+          "enable bool"
+        ],
+        "platform_status": "Official module establishes the current displayed label and meaning; exact platform flags should be checked on the current API detail and installed editor. Do not imply Mobile parity from the old PC mirror.",
+        "confidence": "official-current-api-name-and-meaning-match; displayed-spelling-differs-from-rough"
+      },
+      "current_label_notes": "Observed Rough.txt label: Enable Default Behaviour Tree. Canonical current official label: Enable Default Behavour Tree. Original Rough.txt remains unchanged."
     },
     {
       "source_line": 229,
@@ -18568,7 +18625,27 @@
       "https://ffcraftland.garena.com/en/docs/api-26-124",
       "https://ffcraftland.garena.com/en/docs/module-26",
       "https://ffcraftland.garena.com/en/docs/type-11",
-      "https://ffcraftland.garena.com/en/tutorial/cl/3-48/"
+      "https://ffcraftland.garena.com/en/tutorial/cl/3-48/",
+      {
+        "title": "Items module: event names and API list",
+        "url": "https://ffcraftland.garena.com/en/docs/module-15"
+      },
+      {
+        "title": "Destroy Item API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-147"
+      },
+      {
+        "title": "Add Attachments API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-605"
+      },
+      {
+        "title": "Get Equipments API",
+        "url": "https://ffcraftland.garena.com/en/docs/api-15-607"
+      },
+      {
+        "title": "AI module",
+        "url": "https://ffcraftland.garena.com/en/docs/module-9"
+      }
     ],
     "notes": "Adds official current references to selected entries. This improves on mirror-only comparison but does not constitute a full live-site scrape of all events/APIs or current visual-block dropdowns."
   }
