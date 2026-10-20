@@ -8,13 +8,17 @@ Machine-readable result: [`research/block-symbol-crosswalk.json`](../research/bl
 
 ## Comparison result
 
-The old-library comparison across 443 extracted lines found:
-- **306** exact normalized matches to a mirrored symbol name or API documentation title.
-- **113** approximate candidates, retained only as search leads.
-- **21** lines with no exact match in the older mirrored libraries.
-- **3** entries likely to be explanatory prose or section notes rather than blocks.
+The initial old-library pass across 443 extracted lines found 306 exact normalized matches, 113 approximate candidates, 21 lines without an exact mirror match, and 3 likely explanatory notes. A later official-doc cross-check added 34 official reference links and upgraded 23 entry statuses.
 
-These numbers describe the comparison with the **older 1.5.0 mirror**, not the live official docs. They do not tell us the number of current working visual blocks.
+**Latest entry status (21 October 2026):**
+- **306** exact normalized matches to an old-mirror symbol name or documentation title.
+- **23** entries mapped to a current official reference.
+- **92** approximate candidates still requiring review.
+- **18** lines with no exact match in the older mirrored libraries.
+- **1** likely editor-native block rather than a runtime API.
+- **3** entries likely explanatory notes rather than blocks.
+
+The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: the 92 fuzzy candidates, 18 mirror misses and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
 
 ## Current official review already filled some gaps
 
