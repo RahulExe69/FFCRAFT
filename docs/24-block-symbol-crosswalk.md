@@ -39,16 +39,24 @@ The current Mobile tutorial gives an unusually concrete example: On Player Join 
 
 The crosswalk JSON retains official URL/evidence/platform notes beside each reviewed entry. Some current-source hits were approximate wording/likely translation matches; those remain explicitly distinguished from exact-name matches.
 
-## Still unresolved after targeted current-doc checks
+## Formerly unresolved group: current official mappings found
 
-These labels do not yet have an unambiguous current API/event mapping in this pass:
-- `On User Consumable`
-- `On Throwable Explodes` — do not assume this equals the separately documented `On Explode` event for other object types.
-- `Enable Default Behaviour Tree`
-- `Destroy Target`, `Add Attachment`, and `Get Equipment`
-- `Restore All Properties`, `Modify properties`, `Set basic properties`, and `Revert to original properties`
+A subsequent pass over the current Garena module/API pages resolved the earlier ten-item **API/event identity** gap. The exact visual editor node and its socket layout are still not captured for every item, so this is a documentation mapping—not a claim that each block has been reproduced or runtime-tested.
 
-Some could be editor-native blocks or module-specific controls rather than ordinary function declarations. Their wording/category needs comparison with the current editor. We should not invent replacements based on similar names.
+| Rough.txt observation | Current official mapping | Important distinction |
+|---|---|---|
+| `On User Consumable (ConsumableID, Item, Spawned Item)` | [On Use Consumable / `OnUseConsumable`](https://ffcraftland.garena.com/en/docs/module-15) | The official Items module lists this event and the three parameters. The old mirror marks it server-side; confirm current runtime side before generating cross-platform code. |
+| `On Throwable Explodes (Hit Position)` | [On Throwable Explode / `OnThrowableExplode`](https://ffcraftland.garena.com/en/docs/module-15) | Keep separate from the Level Object `On Explode` event for vehicles/explosive barrels. |
+| `Enable Default Behaviour Tree` | [Enable Default Behavour Tree / `EnableDefaultBTree`](https://ffcraftland.garena.com/en/docs/module-9) | The official page itself uses “Behavour”; do not silently normalize the editor's displayed spelling. Confirm platform flags. |
+| `Destroy Target: Target, Item, Count` | [Destroy Item / `DestroyItem`](https://ffcraftland.garena.com/en/docs/api-15-147) | This is deletion of a specified item quantity from a player's inventory, not generic entity destruction. |
+| `Add Attachment` | [Add Attachments / `AddAttachments`](https://ffcraftland.garena.com/en/docs/api-15-605) | Official description includes slot matching and duplicate replacement behavior. |
+| `Get Equipment` | [Get Equipments / `GetEquipments`](https://ffcraftland.garena.com/en/docs/api-15-607) | Official API refers to equipment in the backpack equipment column. |
+| `Restore All Properties` | [Clear Formula Property Factor / `ClearFormulaPropertyFactor`](https://ffcraftland.garena.com/en/docs/api-24-182/) | Clears formula factors for all calculable properties; not a generic property reset. |
+| `Modify properties` | [Set Formula Property Relative / `SetFormulaPropertyRelative`](https://ffcraftland.garena.com/en/docs/api-24-186/) | Official API says **Server Side, Only Mobile**. This modifies a formula factor using a relative operation; it is not a direct property setter. |
+| `Set basic properties` | [Set Formula Property Absolute / `SetFormulaPropertyAbsolute`](https://ffcraftland.garena.com/en/docs/api-24-187/) | Official API says **Server Side, Only Mobile**. This sets the base value of a calculable property, not the generic STD Library `Set Property`. |
+| `Revert to original properties` | [Remove Formula Property Factor / `RemoveFormulaPropertyFactor`](https://ffcraftland.garena.com/en/docs/api-24-188/) | Official API says **Server Side, Only Mobile**. Removes the formula modification for one property; it is distinct from clearing all formula factors. |
+
+The machine-readable [crosswalk](../research/block-symbol-crosswalk.json) now records these official references, canonical identifiers, and platform/context caveats. The previous ten-item unresolved-after-official-check group is no longer unresolved at the **official reference** level. Remaining work is to capture the current editor's actual block labels, sockets, dropdown values and runtime behavior where relevant.
 
 ## Stronger next sources
 
