@@ -1,0 +1,887 @@
+{
+  "schema_version": "1.0",
+  "title": "Current official enum option cross-checks for labels in Rough.txt",
+  "checked_on": "2026-10-20",
+  "authority": "Live official Garena Craftland Enum reference page",
+  "sources": [
+    "https://ffcraftland.garena.com/en/docs/enum/"
+  ],
+  "purpose": "Capture the option rows currently visible in the official Enum reference for a useful subset of the labels from Rough.txt, and compare them with the older third-party PC library mirror's raw member counts/aliases.",
+  "policy": {
+    "preserve_rough_txt_unchanged": true,
+    "official_visible_rows_are_not_runtime_tests": true,
+    "current_official_reference_is_authoritative_for_published_labels": true,
+    "mirror_extra_aliases_not_automatically_current_choices": true,
+    "preserve_distinct_type_identity_even_if_option_sets_match": true,
+    "mobile_dropdown_parity_not_inferred": true,
+    "exact_installed_editor_version_not_available": true
+  },
+  "entries": [
+    {
+      "rough_label": "Loot Ammo Type",
+      "canonical_identifier": "LootAmmoType",
+      "display_label": "Loot Ammo Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1014,
+          "display_name": "Random",
+          "script_name": "Random",
+          "description": "Random Loot"
+        },
+        {
+          "value": 1008,
+          "display_name": "AR Ammo",
+          "script_name": "ARAmmo",
+          "description": "AR Ammo"
+        },
+        {
+          "value": 1009,
+          "display_name": "SMG Ammo",
+          "script_name": "SMGAmmo",
+          "description": "SMG Ammo"
+        },
+        {
+          "value": 1010,
+          "display_name": "SN Ammo",
+          "script_name": "SNAmmo",
+          "description": "SN Ammo"
+        },
+        {
+          "value": 1011,
+          "display_name": "HG Ammo",
+          "script_name": "HGAmmo",
+          "description": "HG Ammo"
+        },
+        {
+          "value": 1012,
+          "display_name": "SG Ammo",
+          "script_name": "SGAmmo",
+          "description": "SG Bullets"
+        },
+        {
+          "value": 1013,
+          "display_name": "Bow Ammo",
+          "script_name": "BOWAmmo",
+          "description": "Bow Ammo"
+        }
+      ],
+      "official_option_count": 7,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 8,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "LootAmmoRandom = 1014 (deprecated alias for Random)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The official table lists seven options; the older mirror contains one additional alias marked deprecated."
+      ]
+    },
+    {
+      "rough_label": "Loot Consumable Type",
+      "canonical_identifier": "LootConsumableType",
+      "display_label": "Loot Consumable Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1024,
+          "display_name": "Random",
+          "script_name": "Random",
+          "description": "Random Consumable Loot"
+        },
+        {
+          "value": 1019,
+          "display_name": "MedKit",
+          "script_name": "MedKit",
+          "description": "Med Kit"
+        },
+        {
+          "value": 1020,
+          "display_name": "Repair Kit",
+          "script_name": "RepairKit",
+          "description": "Repair Kit"
+        },
+        {
+          "value": 1021,
+          "display_name": "Horizaline",
+          "script_name": "Horizaline",
+          "description": "Horizaline"
+        },
+        {
+          "value": 1022,
+          "display_name": "Inhaler",
+          "script_name": "Inhaler",
+          "description": "Inhaler"
+        },
+        {
+          "value": 1023,
+          "display_name": "Gloo Wall",
+          "script_name": "GlooWall",
+          "description": "Gloo Wall"
+        }
+      ],
+      "official_option_count": 6,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 9,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "LootConsumableItemRandom = 1024 (deprecated alias for Random)",
+          "Cardiotonic = 1021 (deprecated alias at the Horizaline value)",
+          "Glooshield = 1023 (deprecated alias at the Gloo Wall value)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The older mirror has three extra same-value aliases marked deprecated; don't present them as extra distinct choices without installed-editor evidence."
+      ]
+    },
+    {
+      "rough_label": "Loot Armor Type",
+      "canonical_identifier": "LootArmorType",
+      "display_label": "Loot Armor Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1018,
+          "display_name": "Random",
+          "script_name": "Random",
+          "description": "Random Armor Loot"
+        },
+        {
+          "value": 1015,
+          "display_name": "Armor Lv1",
+          "script_name": "ArmorLv1",
+          "description": "Level 1 Armor"
+        },
+        {
+          "value": 1016,
+          "display_name": "Armor Lv2",
+          "script_name": "ArmorLv2",
+          "description": "Class II Armor"
+        },
+        {
+          "value": 1017,
+          "display_name": "Armor Lv3",
+          "script_name": "ArmorLv3",
+          "description": "Tier 3 Armor"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 5,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "LootArmorRandom = 1018 (deprecated alias for Random)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The official table lists four options; the older mirror contains one additional deprecated alias."
+      ]
+    },
+    {
+      "rough_label": "Loot Throwable Type",
+      "canonical_identifier": "LootThrowableType",
+      "display_label": "Loot Throwable Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1029,
+          "display_name": "Random",
+          "script_name": "Random",
+          "description": "Random Throwing Object Loot"
+        },
+        {
+          "value": 1025,
+          "display_name": "Grenade",
+          "script_name": "Grenade",
+          "description": "Grenade"
+        },
+        {
+          "value": 1026,
+          "display_name": "Flashbang",
+          "script_name": "FlashGrenade",
+          "description": "Flashbang"
+        },
+        {
+          "value": 1027,
+          "display_name": "Smoke Grenade",
+          "script_name": "SmokeGrenade",
+          "description": "Smoke Grenade"
+        },
+        {
+          "value": 1028,
+          "display_name": "Flash Freeze",
+          "script_name": "FlashFreeze",
+          "description": "Flash Freeze"
+        }
+      ],
+      "official_option_count": 5,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 8,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "LootThrowableRandom = 1029 (deprecated alias for Random)",
+          "Flash = 1026 (deprecated alias at the Flashbang value)",
+          "FrozenGrenade = 1028 (deprecated alias at the Flash Freeze value)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The official table lists five options; the older mirror contains three aliases marked deprecated."
+      ]
+    },
+    {
+      "rough_label": "Loot Scope Type",
+      "canonical_identifier": "LootScopeType",
+      "display_label": "Loot Scope Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1036,
+          "display_name": "Random",
+          "script_name": "Random",
+          "description": "Random Multiplier Loot"
+        },
+        {
+          "value": 1032,
+          "display_name": "2x Scope",
+          "script_name": "Scope2x",
+          "description": "2x Scope"
+        },
+        {
+          "value": 1033,
+          "display_name": "4x Scope",
+          "script_name": "Scope4x",
+          "description": "4x Scope"
+        },
+        {
+          "value": 1035,
+          "display_name": "Thermal Scope",
+          "script_name": "ThermalScope",
+          "description": "Thermal Scope"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 8,
+        "same_option_set_alias_type_names": [
+          "LootScopeType",
+          "LootSightType"
+        ],
+        "extra_or_conflicting_aliases": [
+          "LootSightRandom = 1036 (deprecated alias for Random)",
+          "Sight2 = 1032 (deprecated alias at the 2x Scope value)",
+          "Sight4 = 1033 (deprecated alias at the 4x Scope value)",
+          "HeatSight = 1035 (deprecated alias at the Thermal Scope value)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The old snapshot has two similarly populated enum identities plus four deprecated aliases; preserve the canonical `LootScopeType` identity and check each API's expected type."
+      ]
+    },
+    {
+      "rough_label": "Loot Weapon Type",
+      "canonical_identifier": "LootWeaponType",
+      "display_label": "Loot Weapon Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1000,
+          "display_name": "Random Weapon Loot",
+          "script_name": "LootWeaponRandom",
+          "description": "Random Weapon Loot"
+        },
+        {
+          "value": 1001,
+          "display_name": "Rifle",
+          "script_name": "AR",
+          "description": "Rifle"
+        },
+        {
+          "value": 1002,
+          "display_name": "SMG",
+          "script_name": "SMG",
+          "description": "SMG"
+        },
+        {
+          "value": 1003,
+          "display_name": "Sniper Rifle",
+          "script_name": "SR",
+          "description": "Sniper Rifle"
+        },
+        {
+          "value": 1004,
+          "display_name": "Pistol",
+          "script_name": "Pistol",
+          "description": "Pistol"
+        },
+        {
+          "value": 1005,
+          "display_name": "Shotgun",
+          "script_name": "SG",
+          "description": "Shotgun"
+        },
+        {
+          "value": 1006,
+          "display_name": "Melee",
+          "script_name": "Melee",
+          "description": "Melee"
+        },
+        {
+          "value": 1007,
+          "display_name": "Crossbow",
+          "script_name": "CrossBow",
+          "description": "Crossbow"
+        },
+        {
+          "value": 1041,
+          "display_name": "Football Shooter",
+          "script_name": "FootballShooter",
+          "description": "Football Gun"
+        }
+      ],
+      "official_option_count": 9,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 10,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "FootGun = 1041 (deprecated alias for FootballShooter)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The official table lists nine options; the old mirror contains one deprecated alias for Football Shooter."
+      ]
+    },
+    {
+      "rough_label": "Loot Scorer Type",
+      "canonical_identifier": "LootSoccerType",
+      "display_label": "Loot Soccer Type",
+      "module": "Football",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1040,
+          "display_name": "Loot Soccer Random",
+          "script_name": "LootSoccerRandom",
+          "description": "Loot Soccer Random"
+        },
+        {
+          "value": 1038,
+          "display_name": "Loot Soccer Shield",
+          "script_name": "LootSoccerShield",
+          "description": "Loot Soccer Shield"
+        },
+        {
+          "value": 1039,
+          "display_name": "Loot Soccer Ice",
+          "script_name": "LootSoccerIce",
+          "description": "Freezing Grenade"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "Likely Rough.txt spelling/transcription variation: official label is Loot Soccer Type, not Loot Scorer Type. Raw Rough.txt was preserved."
+      ]
+    },
+    {
+      "rough_label": "Property Modify Type",
+      "canonical_identifier": "PropertyModifyType",
+      "display_label": "Property Modify Type",
+      "module": "Property Formula",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Add",
+          "script_name": "Add",
+          "description": "Add"
+        },
+        {
+          "value": 2,
+          "display_name": "Multiply",
+          "script_name": "Multiply",
+          "description": "Multiply"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "Mul = 2 (deprecated alias for Multiply)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The current official table lists Add and Multiply; the older mirror includes the deprecated `Mul` alias."
+      ]
+    },
+    {
+      "rough_label": "Movable Platform Type",
+      "canonical_identifier": "MovePlatformType",
+      "display_label": "Movable Platform Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Move",
+          "script_name": "Move",
+          "description": "Panning along an axis can be combined with three axes."
+        },
+        {
+          "value": 1,
+          "display_name": "Rotation",
+          "script_name": "Rotate",
+          "description": "Rotate along an axis, three combinations possible"
+        },
+        {
+          "value": 2,
+          "display_name": "Scale",
+          "script_name": "Scale",
+          "description": "Zoom along an axis, three combinations possible"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "same_option_set_alias_type_names": [
+          "MovePlatformType",
+          "MoveObjectMotionType"
+        ],
+        "extra_or_conflicting_aliases": [
+          "Translate = 0 (deprecated alias for Move)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "Current official label is MovePlatformType. The old mirror also has MoveObjectMotionType and a deprecated Translate alias; don't merge the types just because their option sets match."
+      ]
+    },
+    {
+      "rough_label": "LoopType",
+      "canonical_identifier": "LoopType",
+      "display_label": "LoopType",
+      "module": "Animation",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Default",
+          "script_name": "Default",
+          "description": "Default"
+        },
+        {
+          "value": 1,
+          "display_name": "Loop",
+          "script_name": "Loop",
+          "description": "Loop"
+        },
+        {
+          "value": 2,
+          "display_name": "Once",
+          "script_name": "Once",
+          "description": "Once"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "NotChange = 0 (deprecated alias for Default)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "Current official table lists three choices; the old mirror's fourth row is a deprecated same-value alias. A related API may document a different loop-type type alias, so check the signature of the action using it."
+      ]
+    },
+    {
+      "rough_label": "Player Revival Source Type",
+      "canonical_identifier": "PlayerReviveSourceType",
+      "display_label": "Player Revival Source Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Dead",
+          "script_name": "Death",
+          "description": "Resurrection source type, player resurrects from death"
+        },
+        {
+          "value": 2,
+          "display_name": "Knocked Down",
+          "script_name": "KnockDown",
+          "description": "Resurrection source type, player resurrects from downed state"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 2,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "Two current official options are visible in the Enum reference."
+      ]
+    },
+    {
+      "rough_label": "Patrol Type",
+      "canonical_identifier": "PatrolType",
+      "display_label": "Patrol Type",
+      "module": "AI",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "One Way",
+          "script_name": "OneWay",
+          "description": "One Way"
+        },
+        {
+          "value": 2,
+          "display_name": "Back And Forth",
+          "script_name": "BackAndForth",
+          "description": "Back And Forth"
+        },
+        {
+          "value": 3,
+          "display_name": "Cylic",
+          "script_name": "Cyclic",
+          "description": "Loop"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "Older mirror's `Cylic = 3` alias is marked deprecated, while the current official table uses display name `Cylic` and script name `Cyclic`."
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "The visible official label is spelled `Cylic`; script name is `Cyclic`. The old mirror's canonical/deprecated annotations are in tension with the live table, so preserve both spellings and verify the installed editor before using a label literally."
+      ]
+    },
+    {
+      "rough_label": "Patrol Style Type",
+      "canonical_identifier": "PatrolStyleType",
+      "display_label": "Patrol Style Type",
+      "module": "AI",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "JustPatrol",
+          "script_name": "JustPatrol",
+          "description": "Patrols only, no attacks on targets along the way"
+        },
+        {
+          "value": 2,
+          "display_name": "Patrol While Attack",
+          "script_name": "PatrolWhileAttack",
+          "description": "Patrol While Attack"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 2,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "Two current official options are visible in the Enum reference."
+      ]
+    },
+    {
+      "rough_label": "Aim Assist Type",
+      "canonical_identifier": "AimAssistType",
+      "display_label": "Aim Assist Type",
+      "module": "Combat",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Default",
+          "script_name": "Default",
+          "description": "Default"
+        },
+        {
+          "value": 1,
+          "display_name": "Enable",
+          "script_name": "Enable",
+          "description": "Enable"
+        },
+        {
+          "value": 2,
+          "display_name": "Disable",
+          "script_name": "Disable",
+          "description": "Disable"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "Three current official options are visible in the Enum reference."
+      ]
+    },
+    {
+      "rough_label": "Gender Type",
+      "canonical_identifier": "GenderType",
+      "display_label": "Gender Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Female",
+          "script_name": "FeMale",
+          "description": "Female"
+        },
+        {
+          "value": 2,
+          "display_name": "Male",
+          "script_name": "Male",
+          "description": "Male"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 2,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "The official script name for the Female option is spelled `FeMale`; preserve the canonical string exactly when authoring PC code."
+      ]
+    },
+    {
+      "rough_label": "Knok-down Type",
+      "canonical_identifier": "KnockDownType",
+      "display_label": "Knock-down Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Default",
+          "script_name": "Default",
+          "description": "Default"
+        },
+        {
+          "value": 1,
+          "display_name": "Skip Knockdown",
+          "script_name": "SkipKnockDown",
+          "description": "Skip the knockdown state and just die"
+        },
+        {
+          "value": 2,
+          "display_name": "No Skip Knockdown",
+          "script_name": "NoSkipKnockdown",
+          "description": "No Skip Knockdown"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "MustKnockDown = 2 (deprecated alias at the No Skip Knockdown value)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "Rough.txt says `Knok-down Type`; official enum identifier is KnockDownType. The old mirror includes a deprecated alias at value 2."
+      ]
+    },
+    {
+      "rough_label": "Fire Type",
+      "canonical_identifier": "FireType",
+      "display_label": "Fire Type",
+      "module": "Items",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": -1,
+          "display_name": "None",
+          "script_name": "None",
+          "description": "Cannot fire."
+        },
+        {
+          "value": 0,
+          "display_name": "Auto",
+          "script_name": "Auto",
+          "description": "Can fire continuously"
+        },
+        {
+          "value": 1,
+          "display_name": "Single",
+          "script_name": "Single",
+          "description": "Fires once per attack command"
+        },
+        {
+          "value": 2,
+          "display_name": "3-Round Bursts",
+          "script_name": "Triple",
+          "description": "Three times per attack command."
+        },
+        {
+          "value": 3,
+          "display_name": "Double",
+          "script_name": "Double",
+          "description": "Twice per attack command"
+        },
+        {
+          "value": 4,
+          "display_name": "Dump",
+          "script_name": "Dump",
+          "description": "Parry"
+        }
+      ],
+      "official_option_count": 6,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 6,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+      },
+      "notes": [
+        "Six current official choices are visible, including -1 for None. Do not renumber or assume values start at zero."
+      ]
+    },
+    {
+      "rough_label": "Layout Sort Type",
+      "canonical_identifier": "LayoutSortType",
+      "display_label": "Layout Sort Type",
+      "module": "HUD",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "By Hierarchy",
+          "script_name": "ByHierarchy",
+          "description": "By Hierarchy"
+        },
+        {
+          "value": 1,
+          "display_name": "By Priority High To Low",
+          "script_name": "SortByPriorityHighToLow",
+          "description": "By Priority High To Low"
+        },
+        {
+          "value": 2,
+          "display_name": "By Priority Low To High",
+          "script_name": "SortByPriorityLowToHigh",
+          "description": "By Priority Low To High"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "same_option_set_alias_type_names": [],
+        "extra_or_conflicting_aliases": [
+          "SortByHierarchy = 0 (deprecated alias for ByHierarchy)"
+        ],
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+      },
+      "notes": [
+        "Official display labels and script identifiers differ; the old mirror contains a deprecated same-value alias."
+      ]
+    }
+  ],
+  "stats": {
+    "rough_labels_crosschecked": 18,
+    "official_option_rows": 70,
+    "labels_with_mirror_alias_or_spelling_caveat": 12,
+    "runtime_tested": 0,
+    "mobile_parity_tested": 0
+  },
+  "caveats": [
+    "This is a cross-check of visible official Enum-reference rows, not a full crawl of every enum/type or every project-specific dropdown.",
+    "The official page does not establish that each enum is exposed as a dropdown in Craftland Mobile.",
+    "The old extension library is a v1.5.0 secondary snapshot; its raw member counts include duplicate/deprecated aliases.",
+    "The two source sets can differ in casing, display label versus script name, and deprecation annotations. Preserve all fields and verify exact installed signatures before code generation."
+  ]
+}
