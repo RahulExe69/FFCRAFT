@@ -328,7 +328,23 @@
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture literal/value-constructor node shape, default values, editable fields and output type.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Official sources explain null-checking and PC `nil` semantics, but neither proves the Mobile `.NULL` literal's exact identity or output type. Capture the current Mobile literal block and its type.",
+      "related_official_references": [
+        {
+          "classification": "official-mobile-concept-reference-not-literal-confirmation",
+          "title": "Check null",
+          "url": "https://ffcraftland.garena.com/en/docs/module-1",
+          "evidence": "The current official STD Library index describes Check null as determining whether an object is empty. That is a null-check operation, not proof that Rough.txt's `.NULL` value block has the same identity or socket type.",
+          "next_action": "Capture the `.NULL` literal/value block itself and check whether it outputs a null reference or another editor-specific value."
+        },
+        {
+          "classification": "official-pc-language-semantics-only",
+          "title": "PC code-script language and data types",
+          "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-10/",
+          "evidence": "The PC language guide uses `nil` as a keyword and describes reference types (including lists/maps/entities) as capable of holding nil. This helps explain PC code semantics but does not establish parity with a Mobile visual literal block.",
+          "next_action": "Keep Mobile literal-block identity separate; confirm the actual Mobile block and type through editor capture."
+        }
+      ]
     },
     {
       "source_line": 660,
@@ -5538,6 +5554,23 @@
       "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
       "classification": "official-concept-reference-only",
       "caveat": "Tutorial concepts do not confirm the full editor node schema or exact options."
+    },
+    "null_literal_context": {
+      "source_line": 442,
+      "status": "related semantics documented; exact mobile literal identity unresolved",
+      "references": [
+        {
+          "title": "Check null",
+          "url": "https://ffcraftland.garena.com/en/docs/module-1",
+          "classification": "official-mobile-concept-reference-not-literal-confirmation"
+        },
+        {
+          "title": "PC code-script language and data types",
+          "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-10/",
+          "classification": "official-pc-language-semantics-only"
+        }
+      ],
+      "caveat": "A null-check operation and PC nil keyword do not prove the identity/output type of the user's Mobile `.NULL` block."
     }
   }
 }
