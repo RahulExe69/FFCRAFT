@@ -36,9 +36,10 @@
     "official_docs_and_mirror_confirm": 1,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
-    "manual_or_official_cross_check": 2,
+    "manual_or_official_cross_check": 1,
     "legacy_observed_check_obsolete": 3,
-    "needs_review_total": 5
+    "needs_review_total": 4,
+    "official_docs_clarify_not_enum": 1
   },
   "entries": [
     {
@@ -14261,15 +14262,36 @@
       "observed_label": "Phase And Round Enum",
       "rough_line": 647,
       "observed_signature": "59. Phase And Round Enum",
-      "mapping_status": "manual-or-official-cross-check",
+      "mapping_status": "official-docs-clarify-not-enum",
       "candidates": [
         {
-          "label": "Workflow.fcc:Phase component; Workflow.fcc:Round component (not an enum)",
-          "definitions": []
+          "label": "Official Workflow Phase and Round component/entity types (not enum values)",
+          "definitions": [],
+          "note": "The official Workflow manual and type pages describe Phase and Round as entity components. The global Game entity exposes CurrentPhaseIndex and CurrentRoundIndex. Do not invent an enum member list from this label."
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "If this label reflects a visible dropdown, capture the current editor label/context to determine whether it selects Phase/Round entities, workflow indices, or is simply a mislabeled heading. Do not add enum options.",
+      "official_documentation": {
+        "identifiers": [
+          "Phase",
+          "Round",
+          "CurrentPhaseIndex",
+          "CurrentRoundIndex",
+          "OnPhaseStart",
+          "OnPhaseEnd",
+          "OnRoundStart",
+          "OnRoundEnd"
+        ],
+        "sources": [
+          "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
+          "https://ffcraftland.garena.com/en/docs/type-25/",
+          "https://ffcraftland.garena.com/en/docs/type-26/",
+          "https://ffcraftland.garena.com/en/docs/type-11/",
+          "https://ffcraftland.garena.com/en/docs/event-18-5/"
+        ],
+        "note": "Official docs define Phase and Round as Workflow component/entity types, not an enum. The workflow manual describes distinct start/end events and notes the round event supplies a round index while phase start supplies the phase entity. Some related APIs are documented as Both Mobile and PC. This resolves the type classification only; it does not prove a particular Mobile dropdown's exact display behavior."
+      }
     },
     {
       "observed_label": "Force Type",
