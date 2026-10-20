@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-10-20",
+  "title": "Official Craftland Mobile scripting source map",
+  "scope": "Source navigation and topic coverage; not a complete current block/dropdown export.",
+  "sources": [
+    {
+      "id": "mobile-block-scripts",
+      "title": "Block Scripts",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+      "topics": [
+        "editor panel",
+        "block search",
+        "script list and context",
+        "script-type toggle",
+        "templates",
+        "typed connections"
+      ],
+      "confirmed_behavior": [
+        "Search can return blocks unavailable in the selected script context; category results are context-sensitive."
+      ],
+      "not_provided": [
+        "complete block catalog",
+        "complete dropdown values"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-block-debug",
+      "title": "The Purpose, Operation Rules, and Debugging Methods of Blocks",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-102/",
+      "topics": [
+        "block operation",
+        "debugging"
+      ],
+      "not_provided": [
+        "complete node/socket schema"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-event-script-types",
+      "title": "Event and Script Types",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-103/",
+      "topics": [
+        "event start logic",
+        "script types"
+      ],
+      "not_provided": [
+        "universal scope compatibility"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-classification-flow",
+      "title": "Block Classification and Flow Control",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-104/",
+      "topics": [
+        "block classification",
+        "flow-control constructs"
+      ],
+      "not_provided": [
+        "complete live category member list"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-variable-property-assignment",
+      "title": "Variables and Properties, Assignment",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-105/",
+      "topics": [
+        "variables",
+        "entity properties",
+        "assignment"
+      ],
+      "not_provided": [
+        "every property key",
+        "all dynamic asset options"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-data-logic",
+      "title": "Data and Logic Operations",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
+      "topics": [
+        "data/value operations",
+        "logical expressions"
+      ],
+      "not_provided": [
+        "complete operator block list"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-server-client",
+      "title": "Server-side and client-side scripts",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-107/",
+      "topics": [
+        "server/client separation",
+        "runtime constraints"
+      ],
+      "not_provided": [
+        "exhaustive API compatibility matrix"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-game-mechanics-template",
+      "title": "Game Mechanics",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-87",
+      "topics": [
+        "custom triggers",
+        "health adjustment",
+        "zombie spawning",
+        "object movement",
+        "teleportation",
+        "custom text",
+        "outfit change",
+        "HUD interactions"
+      ],
+      "source_type": "official_current_doc"
+    },
+    {
+      "id": "mobile-myconsole-template",
+      "title": "Myconsole",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-86",
+      "topics": [
+        "HUD interaction",
+        "player proportions",
+        "random terrain",
+        "join/leave player lists",
+        "helper functions"
+      ],
+      "source_type": "official_current_doc"
+    }
+  ],
+  "existing_related_artifacts": [
+    "research/user-observed-block-inventory.json",
+    "research/block-symbol-crosswalk.json",
+    "research/mobile-block-recipe-index.json",
+    "docs/25-public-tutorial-corpus-audit.md",
+    "docs/27-current-editor-capture-playbook.md"
+  ],
+  "inventory_policy": [
+    "Record script context for each block; search results can include unavailable items.",
+    "Keep block label, category, inputs, outputs, typed sockets, scope and runtime side as separate fields.",
+    "Keep Mobile and PC catalogs separate.",
+    "Capture all scrolled sections of long dropdowns and store display labels separately from internal values.",
+    "Mark uncaptured dropdown lists as not-captured rather than guessing."
+  ],
+  "status": {
+    "official_topic_pages_mapped": 7,
+    "official_mechanism_templates_mapped": 2,
+    "recipe_summaries_in_existing_index": 13,
+    "complete_current_mobile_block_catalog": false,
+    "complete_mobile_dropdown_export": false,
+    "runtime_tested": false
+  }
+}
