@@ -44,6 +44,10 @@ The full queue retains 84 fuzzy candidate lines with up to three closest old-lib
 
 The current official [STD Library type index](https://ffcraftland.garena.com/en/docs/module-1) defines String, Vector3 and Bool. This confirms the underlying type concepts for three Rough.txt entries. Since your notes describe literal/value blocks with editable fields, capture their current Mobile-editor representations before calling their sockets/default values verified.
 
+## NULL literal: related semantics are not an exact match
+
+Rough.txt line 442 records a value block named `.NULL`. Current official documentation includes a [Check null](https://ffcraftland.garena.com/en/docs/module-1) operation, while the PC language guide documents `nil` for reference types ([Script Additional Instructions](https://ffcraftland.garena.com/en/tutorial/fe/1-10/)). Those references clarify the concept but do not identify the observed Mobile literal or establish its output socket type. Keep this queue row unresolved until that literal block itself is captured.
+
 ## Related candidate for Progressive Movement Property
 
 Line 132 remains an **unresolved old-mirror miss**. Garena documents [Set Property Smoothly](https://ffcraftland.garena.com/en/docs/api-1-475/) as a server-side API for Mobile and PC that updates a target property immediately while presenting a smooth client transition. This may be related to the observed `Progressive Movement Property` entity/property/value block, but the visible name differs and identity has not been established. It is recorded as a candidate, not counted as a match. Compare the current editor node metadata and socket types before deciding.
