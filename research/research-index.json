@@ -899,7 +899,6 @@
     "block_review_queue_fuzzy_candidates": 92,
     "block_review_queue_old_mirror_misses": 18,
     "block_review_queue_likely_editor_native": 1,
-    "labels_with_official_vs_mirror_count_difference": 30,
-    "mobile_official_scripting_topic_pages_mapped": 7
+    "labels_with_official_vs_mirror_count_difference": 30
   }
 }
