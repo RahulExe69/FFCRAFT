@@ -263,7 +263,7 @@
     },
     {
       "id": "official-enum-option-snapshot",
-      "summary": "A targeted official-doc cross-check records 353 visible option rows across 51 Rough.txt enum labels and flags differences from the older v1.5.0 mirror, including major VFX/Sound/Texture/Equipment/Player Pose/UI list-count mismatches; it remains partial, with no current-editor or Mobile parity/runtime testing inferred.",
+      "summary": "A targeted official-doc cross-check records 367 visible option rows across 52 Rough.txt enum labels and flags differences from the older v1.5.0 mirror, including major VFX/Sound/Icon/Texture/Equipment/Player Pose/UI list-count mismatches; it remains partial, with no current-editor or Mobile parity/runtime testing inferred.",
       "confidence": "official-documentation-with-secondary-mirror-comparison",
       "details": "docs/30-current-official-dropdown-option-crosschecks.md",
       "sources": [
@@ -364,8 +364,8 @@
     "research/live-mcp-public-resource-audit.json": "Machine-readable provenance and limitation audit for the public MCP-derived KB lead",
     "docs/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
     "research/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
-    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official-reference visible option rows for 51 rough enum labels (353 rows), including VFX, sound, physics, pose/state, equipment, inventory, seating, outfit, UI and status sets, with old-mirror differences flagged",
-    "research/official-dropdown-option-crosschecks.json": "Structured visible option rows for 51 labels (353 rows), with old-mirror counts, alias notes, member-count mismatches and no runtime/Mobile parity claims",
+    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official-reference visible option rows for 52 rough enum labels (367 rows), including icon/VFX/sound, physics, pose/state, equipment, inventory, seating, outfit, UI and status sets, with old-mirror differences flagged",
+    "research/official-dropdown-option-crosschecks.json": "Structured visible option rows for 52 labels (367 rows), with old-mirror counts, alias notes, member-count mismatches and no runtime/Mobile parity claims",
     "docs/31-rough-block-review-queue.md": "Prioritized follow-up for 111 unresolved or approximate Rough.txt lines, preserving source line, candidate signatures and review instructions",
     "research/rough-block-review-queue.json": "Machine-readable queue of 111 fuzzy/missing/editor-native lines with up to three nearest candidate declarations and line-specific review focus"
   },
@@ -631,7 +631,7 @@
       "title": "Official Craftland Enum reference: targeted option table cross-check",
       "url": "https://ffcraftland.garena.com/en/docs/enum/",
       "checked_on": "2026-10-21",
-      "caveat": "51 Rough labels have 353 captured visible official-reference option rows; this is a partial cross-check, not a complete enum scrape. Several types differ sharply from the old mirror and need current installed-editor comparison; no Mobile parity/runtime testing is inferred."
+      "caveat": "52 Rough labels have 367 captured visible official-reference option rows; this is a partial cross-check, not a complete enum scrape. Several types differ sharply from the old mirror and need current installed-editor comparison; no Mobile parity/runtime testing is inferred."
     },
     {
       "tier": "A",
@@ -871,8 +871,8 @@
     "dropdown_labels_still_manual_review": 0,
     "dropdown_labels_classified_not_enum": 1,
     "dropdown_labels_needing_spelling_ui_confirmation": 1,
-    "official_dropdown_labels_crosschecked": 51,
-    "official_dropdown_option_rows": 353,
+    "official_dropdown_labels_crosschecked": 52,
+    "official_dropdown_option_rows": 367,
     "labels_with_mirror_alias_or_spelling_caveats": 22,
     "dropdown_labels_generated_enum": 1,
     "public_mcp_export_catalogs_verified": 0,
@@ -883,6 +883,6 @@
     "block_review_queue_fuzzy_candidates": 92,
     "block_review_queue_old_mirror_misses": 18,
     "block_review_queue_likely_editor_native": 1,
-    "labels_with_official_vs_mirror_count_difference": 29
+    "labels_with_official_vs_mirror_count_difference": 30
   }
 }
