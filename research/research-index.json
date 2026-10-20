@@ -238,6 +238,19 @@
         "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
         "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
       ]
+    },
+    {
+      "id": "phase-round-not-enum",
+      "summary": "Official Workflow documentation defines Phase and Round as entity/component types with indices and separate start/end events, not as an enum with a fixed member list.",
+      "confidence": "official-documentation",
+      "details": "docs/21-enum-dropdown-reconstruction.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
+        "https://ffcraftland.garena.com/en/docs/type-25/",
+        "https://ffcraftland.garena.com/en/docs/type-26/",
+        "https://ffcraftland.garena.com/en/docs/type-11/",
+        "https://ffcraftland.garena.com/en/docs/event-18-5/"
+      ]
     }
   ],
   "docs": {
@@ -264,10 +277,10 @@
     "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
     "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates",
     "docs/20-pc-library-catalog.md": "Recovered 42-file public extension-library mirror catalog, parser counts, source/version/license caveats and links",
-    "docs/21-enum-dropdown-reconstruction.md": "Crosswalk of 65 dropdown/type labels in Rough.txt to library and official candidates, with unresolved gap map",
+    "docs/21-enum-dropdown-reconstruction.md": "Dropdown crosswalk method/results, including official Workflow clarification that Phase/Round are not an enum",
     "docs/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
     "research/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
-    "research/enum-dropdown-crosswalk.json": "Crosswalk of Rough.txt enum/dropdown labels to mirror and current official definitions",
+    "research/enum-dropdown-crosswalk.json": "65-label crosswalk with older-mirror candidates, current official enum/type matches, dynamic asset-ID selectors, obsolete labels and Phase/Round clarified as Workflow entity/component types rather than an enum",
     "research/current-official-enum-supplement.json": "Selected current official enums and type-selector details not represented in the old mirrored catalog",
     "docs/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
     "research/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
@@ -532,6 +545,14 @@
       "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
       "checked_on": "2026-10-20",
       "caveat": "Official topic guidance confirms script context and concept areas, but does not provide a complete machine-readable current block/dropdown inventory."
+    },
+    {
+      "tier": "A",
+      "topic": "workflow-phase-round",
+      "title": "Official Craftland Studio Workflow manual and Phase/Round type definitions",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
+      "checked_on": "2026-10-20",
+      "caveat": "Clarifies Phase/Round semantics and events; it does not identify the exact control captured by the Rough.txt label or prove a matching Mobile dropdown."
     }
   ],
   "open_questions": [
@@ -543,7 +564,8 @@
     "Check current editor availability and exact import behavior for sound/audio workflows.",
     "Record reproducible examples with Craftland version, exact block/API names, logs and outcome.",
     "Capture an actual current Studio 1.19.x MCP response set: a community exporter advertises sizable counts but does not publish its generated block/API data pages or raw JSON.",
-    "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog."
+    "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog.",
+    "Capture the editor context for the Rough.txt label `Phase And Round Enum`; official docs show Phase/Round entity types, indexes and events, but not the exact dropdown/editor label the author observed."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -711,6 +733,8 @@
     "public_tutorial_tree_entries": 3796,
     "mobile_recipe_examples": 13,
     "community_mcp_methodology_repos_audited": 1,
-    "official_mobile_scripting_topic_pages_mapped": 7
+    "official_mobile_scripting_topic_pages_mapped": 7,
+    "dropdown_labels_still_manual_review": 1,
+    "dropdown_labels_classified_not_enum": 1
   }
 }
