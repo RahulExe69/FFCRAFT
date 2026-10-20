@@ -1,8 +1,8 @@
 # Unresolved Rough.txt block review queue
 
 **Prepared:** 21 October 2026  
-**Source:** [Machine-readable queue](../research/rough-block-review-queue.json)  
-**Original notes:** [Rough.txt](../Rough.txt) — unchanged.
+**Source:** [Machine-readable queue](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/rough-block-review-queue.json)  
+**Original notes:** [Rough.txt](https://github.com/RahulExe69/FFCRAFT/blob/main/notes/raw/Rough.txt) — unchanged.
 
 ## Current crosswalk status
 
@@ -58,15 +58,15 @@ The official Craftland Mobile [Primitives and Logic tutorial](https://ffcraftlan
 
 ## Official Math references found in this pass
 
-The latest crosswalk maps 12 queue rows to official Math pages: Vector2 Scale/Add/Sub, Quaternion Rotate Towards, the three 3D vector-component getters, New Vector2, Vector2 Get X/Y, and the server/client reference variants for Vector2 Set X/Y. Documented availability differs: the Vector2 math operations and component getters/setters are marked **Only Mobile**, while New Vector2 and Quaternion Rotate Towards are marked **Both Mobile and PC**. The setter labels each have distinct server-side and client-side pages. Read [the crosswalk](24-block-symbol-crosswalk.md) for exact page links and details.
+The latest crosswalk maps 12 queue rows to official Math pages: Vector2 Scale/Add/Sub, Quaternion Rotate Towards, the three 3D vector-component getters, New Vector2, Vector2 Get X/Y, and the server/client reference variants for Vector2 Set X/Y. Documented availability differs: the Vector2 math operations and component getters/setters are marked **Only Mobile**, while New Vector2 and Quaternion Rotate Towards are marked **Both Mobile and PC**. The setter labels each have distinct server-side and client-side pages. Read [the crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md) for exact page links and details.
 
 These rows remain in the queue because editor sockets, exact script context and runtime have not been captured. An official docs match is stronger evidence than a fuzzy mirror result, but it is not live-editor or runtime proof.
 
 ## Supplementary legacy symbol-index cross-check
 
-A separate scan of the legacy `BuiltinSymbol.json` index found exact normalized-name matches for **47 of the 111 queue rows** (48 symbol records, because a row can match more than one entry). The structured matches are attached to the corresponding entries in the [machine-readable queue](../research/rough-block-review-queue.json), including library path and legacy ID.
+A separate scan of the legacy `BuiltinSymbol.json` index found exact normalized-name matches for **47 of the 111 queue rows** (48 symbol records, because a row can match more than one entry). The structured matches are attached to the corresponding entries in the [machine-readable queue](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/rough-block-review-queue.json), including library path and legacy ID.
 
-Examples include `Vector2GetX` (Math.fcc, legacy ID 3240), `Vector2SetY` (Math.fcc, ID 3243), `DamageType` (Combat.fcc, ID 24), and `WeaponSkinType` (LevelObject.fcc, ID 419). This is **additional old-mirror evidence only**. It does not change the review statuses, prove that a user-observed label is the same runtime API, establish current ID stability, or verify Mobile visual sockets/dropdowns. See the [legacy symbol-index audit](32-legacy-builtin-symbol-index-audit.md).
+Examples include `Vector2GetX` (Math.fcc, legacy ID 3240), `Vector2SetY` (Math.fcc, ID 3243), `DamageType` (Combat.fcc, ID 24), and `WeaponSkinType` (LevelObject.fcc, ID 419). This is **additional old-mirror evidence only**. It does not change the review statuses, prove that a user-observed label is the same runtime API, establish current ID stability, or verify Mobile visual sockets/dropdowns. See the [legacy symbol-index audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/32-legacy-builtin-symbol-index-audit.md).
 
 ## Recommended review protocol
 
@@ -82,8 +82,8 @@ It is **not** a list of 111 broken or unsupported blocks. Approximate rows can b
 
 ## Related evidence
 
-- [Rough block-symbol crosswalk](24-block-symbol-crosswalk.md)
-- [Current official dropdown option cross-checks](30-current-official-dropdown-option-crosschecks.md)
-- [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md)
-- [Current editor capture playbook](27-current-editor-capture-playbook.md)
-- [Public PC library catalog](20-pc-library-catalog.md)
+- [Rough block-symbol crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md)
+- [Current official dropdown option cross-checks](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/30-current-official-dropdown-option-crosschecks.md)
+- [Official Mobile scripting source map](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md)
+- [Current editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md)
+- [Public PC library catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/20-pc-library-catalog.md)

@@ -4,7 +4,7 @@
 
 The original `Rough.txt` remains untouched. This crosswalk compares each extracted line in `research/user-observed-block-inventory.json` against both the recovered PC function/event/component/property declarations and targeted current official API/event pages.
 
-Machine-readable result: [`research/block-symbol-crosswalk.json`](../research/block-symbol-crosswalk.json).
+Machine-readable result: [`research/block-symbol-crosswalk.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/block-symbol-crosswalk.json).
 
 ## Comparison result
 
@@ -18,7 +18,7 @@ The initial old-library pass across 443 extracted lines found 306 exact normaliz
 - **1** likely editor-native block rather than a runtime API.
 - **3** entries likely explanatory notes rather than blocks.
 
-The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: 84 fuzzy candidates, 5 old-mirror misses, 21 official-reference matches whose exact editor node/context still needs verification, and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](31-rough-block-review-queue.md).
+The older 1.5.0 mirror remains a *discovery source*, not the live support matrix. There are 111 entries in the focused review queue: 84 fuzzy candidates, 5 old-mirror misses, 21 official-reference matches whose exact editor node/context still needs verification, and one likely editor-native block. Neither a match nor a miss proves current availability or Mobile/PC parity. See [the prioritised review queue](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/31-rough-block-review-queue.md).
 
 ## Current official review already filled some gaps
 
@@ -60,7 +60,7 @@ A subsequent pass over the current Garena module/API pages resolved the earlier 
 | `Set basic properties` | [Set Formula Property Absolute / `SetFormulaPropertyAbsolute`](https://ffcraftland.garena.com/en/docs/api-24-187/) | Official API says **Server Side, Only Mobile**. This sets the base value of a calculable property, not the generic STD Library `Set Property`. |
 | `Revert to original properties` | [Remove Formula Property Factor / `RemoveFormulaPropertyFactor`](https://ffcraftland.garena.com/en/docs/api-24-188/) | Official API says **Server Side, Only Mobile**. Removes the formula modification for one property; it is distinct from clearing all formula factors. |
 
-The machine-readable [crosswalk](../research/block-symbol-crosswalk.json) now records these official references, canonical identifiers, and platform/context caveats. The previous ten-item unresolved-after-official-check group is no longer unresolved at the **official reference** level. Remaining work is to capture the current editor's actual block labels, sockets, dropdown values and runtime behavior where relevant.
+The machine-readable [crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/block-symbol-crosswalk.json) now records these official references, canonical identifiers, and platform/context caveats. The previous ten-item unresolved-after-official-check group is no longer unresolved at the **official reference** level. Remaining work is to capture the current editor's actual block labels, sockets, dropdown values and runtime behavior where relevant.
 
 ## Math reference cross-check added on 21 October 2026
 
@@ -96,7 +96,7 @@ Rough.txt line 132 describes `Progressive Movement Property` with entity/propert
 
 ## Stronger next sources
 
-The [public multilingual tutorial corpus audit](25-public-tutorial-corpus-audit.md) adds PC Block/Element Script, Code Script, Script Additional Notes, formula property and many Mobile template examples. Its [Mobile recipe index](../research/mobile-block-recipe-index.json) records 13 example mechanisms. It is a translated snapshot and is not authoritative for current dropdowns.
+The [public multilingual tutorial corpus audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/25-public-tutorial-corpus-audit.md) adds PC Block/Element Script, Code Script, Script Additional Notes, formula property and many Mobile template examples. Its [Mobile recipe index](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/mobile-block-recipe-index.json) records 13 example mechanisms. It is a translated snapshot and is not authoritative for current dropdowns.
 
 For a complete *current* visual-block and dropdown inventory, the highest-value remaining source is a current Studio editor export/editor MCP response or screenshots from its block search/property dropdowns. Studio-generated `EditorGenLib.fcc` may also hold project-specific graph scripts and asset ID enums. We have not yet connected to a running user's editor, so exact current socket/dropdown inventory is still incomplete.
 

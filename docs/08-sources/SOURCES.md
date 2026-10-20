@@ -53,7 +53,7 @@ This index prioritizes official Garena sources. They are grouped by what they ar
 
 ## Community-maintained GitHub resources (secondary evidence)
 
-- [Public script-repository search audit](33-public-script-repository-audit.md) — three additional script-sharing/project repositories yielded no complete reusable script catalog; four copies of the canonical Nexos resource repository have the same recursive tree SHA.
+- [Public script-repository search audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/33-public-script-repository-audit.md) — three additional script-sharing/project repositories yielded no complete reusable script catalog; four copies of the canonical Nexos resource repository have the same recursive tree SHA.
 
 
 - [FF-OGC/Craftland-Tutorial](https://github.com/FF-OGC/Craftland-Tutorial) — a browsable Markdown mirror/organization of Craftland manuals, including the code-script user manual. Handy for offline reading/search; verify content against the official current site/editor.
@@ -80,13 +80,13 @@ Some links point to the official pre-release host because that host exposes a mo
 
 ## Community asset/resource repositories
 
-- [nexosstudio / CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community-curated asset IDs/names, sound lists, skybox names, UGC rigs, project-template folders, and tooling links. Last observed commit: 29 September 2025. Treat catalogues as discovery leads; some entries are explicitly sample data and the linked Studio installer is older than the current release snapshot. See [FFCRAFT audit](16-community-resource-audit.md).
+- [nexosstudio / CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community-curated asset IDs/names, sound lists, skybox names, UGC rigs, project-template folders, and tooling links. Last observed commit: 29 September 2025. Treat catalogues as discovery leads; some entries are explicitly sample data and the linked Studio installer is older than the current release snapshot. See [FFCRAFT audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/16-community-resource-audit.md).
 
 
 ## Community sample packages and curated assets
 
-- [nexosstudio / FE_RESOURCES_BETA](https://github.com/nexosstudio/FE_RESOURCES_BETA) — community package samples for named/numbered skyboxes, dynamic weather, and a voting system. Latest observed commit: 7 March 2026. Packages are untested until imported into the matching editor. See [audit](18-fe-resources-beta-audit.md).
-- [Curated skybox base types](17-curated-asset-reference.md) — six SkyboxType identifiers cross-checked against Garena's public enum reference, with untested community package links clearly separated from enum evidence.
+- [nexosstudio / FE_RESOURCES_BETA](https://github.com/nexosstudio/FE_RESOURCES_BETA) — community package samples for named/numbered skyboxes, dynamic weather, and a voting system. Latest observed commit: 7 March 2026. Packages are untested until imported into the matching editor. See [audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/18-fe-resources-beta-audit.md).
+- [Curated skybox base types](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/17-curated-asset-reference.md) — six SkyboxType identifiers cross-checked against Garena's public enum reference, with untested community package links clearly separated from enum evidence.
 
 
 ## Official Math API references used in the updated Rough crosswalk
@@ -110,43 +110,43 @@ These official pages document names/concepts and the availability annotations di
 - [Official Level Object module](https://ffcraftland.garena.com/en/docs/module-26) — exposes Level Object Type, Weapon Skin Type, Vehicle Skin Type, Outfit Skin Type, Backpack Skin Type, and Object Texture.
 - [Official Get Render Quality API](https://ffcraftland.garena.com/en/docs/api-40-940) — current enum/API cross-check; page labels it Client Side and Both Mobile and PC.
 - [Official Free Fire Craftland Code VS Code extension](https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage) — official listing for the language tooling, IntelliSense/signature help and compiler workflow.
-- [Public mirror of the extension's 1.5.0 library folder](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release) — 42 text `.fcc` files used only as a discovery snapshot. It is older than Studio 1.19.0, and its `LICENSE.md` is empty; FFCRAFT stores a derivative symbol index and provenance hashes, not the raw libraries or executable binaries. See [PC catalog recovery](20-pc-library-catalog.md).
-- [Legacy `BuiltinSymbol.json` index](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json) — 42 library-scoped symbol tables with component/property IDs. Its 590 component, 3,315 property, 150 enum, 739 API and 259 event records are legacy snapshot counts, not current support totals. The upstream license is not affirmatively declared; see [FFCRAFT audit](32-legacy-builtin-symbol-index-audit.md) before reuse.
-- [Machine-readable PC symbol catalog](../research/pc-library-symbol-catalog.json) — 144 parsed enum declarations, 2,274 member entries, and API/event/component candidates from the mirror; aliases and duplicate legacy definitions are included.
-- [Dropdown/enum crosswalk](../research/enum-dropdown-crosswalk.json) — maps the 65 dropdown/type labels in `Rough.txt` to source candidates and flags gaps.
-- [Current official enum/type supplement](../research/current-official-enum-supplement.json) — captures current official types/options spotted outside the old mirror.
+- [Public mirror of the extension's 1.5.0 library folder](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release) — 42 text `.fcc` files used only as a discovery snapshot. It is older than Studio 1.19.0, and its `LICENSE.md` is empty; FFCRAFT stores a derivative symbol index and provenance hashes, not the raw libraries or executable binaries. See [PC catalog recovery](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/20-pc-library-catalog.md).
+- [Legacy `BuiltinSymbol.json` index](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json) — 42 library-scoped symbol tables with component/property IDs. Its 590 component, 3,315 property, 150 enum, 739 API and 259 event records are legacy snapshot counts, not current support totals. The upstream license is not affirmatively declared; see [FFCRAFT audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/32-legacy-builtin-symbol-index-audit.md) before reuse.
+- [Machine-readable PC symbol catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-symbol-catalog.json) — 144 parsed enum declarations, 2,274 member entries, and API/event/component candidates from the mirror; aliases and duplicate legacy definitions are included.
+- [Dropdown/enum crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/enum-dropdown-crosswalk.json) — maps the 65 dropdown/type labels in `Rough.txt` to source candidates and flags gaps.
+- [Current official enum/type supplement](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/current-official-enum-supplement.json) — captures current official types/options spotted outside the old mirror.
 
 The mirrored library is not treated as authoritative for current API support. A definition's presence there does not prove current availability or Mobile block parity; absence there does not prove that an enum/API is absent from the current official docs/editor.
 
-- [Detailed PC API/event/component reference](../research/pc-library-api-reference.json) — extracted declarations and documentation fields from the full 42-file mirrored library set; includes parser caveats and 1.17+ compatibility warning in [doc 23](23-pc-api-reference-details.md).
+- [Detailed PC API/event/component reference](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-api-reference.json) — extracted declarations and documentation fields from the full 42-file mirrored library set; includes parser caveats and 1.17+ compatibility warning in [doc 23](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/23-pc-api-reference-details.md).
 
-- [Rough block-symbol crosswalk](../research/block-symbol-crosswalk.json) — line-level comparison of 443 extracted notes against functions, events, component names and candidate properties in the mirrored PC libraries.
-- [Crosswalk methodology and results](24-block-symbol-crosswalk.md) — explains exact matches, fuzzy candidate status, and why editor-native blocks need separate verification.
+- [Rough block-symbol crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/block-symbol-crosswalk.json) — line-level comparison of 443 extracted notes against functions, events, component names and candidate properties in the mirrored PC libraries.
+- [Crosswalk methodology and results](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md) — explains exact matches, fuzzy candidate status, and why editor-native blocks need separate verification.
 
-- [Enum option-set analysis](../research/pc-enum-option-set-analysis.json) — identifies 42 identical ordered option sets shared by differently named enum types in the old mirror; preserves original type names and source context.
-- [Enum option-set analysis notes](26-enum-option-set-analysis.md) — explains how to reduce duplicate browsing without declaring semantically different types interchangeable.
+- [Enum option-set analysis](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-enum-option-set-analysis.json) — identifies 42 identical ordered option sets shared by differently named enum types in the old mirror; preserves original type names and source context.
+- [Enum option-set analysis notes](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/26-enum-option-set-analysis.md) — explains how to reduce duplicate browsing without declaring semantically different types interchangeable.
 
 
-- [Current editor capture playbook](27-current-editor-capture-playbook.md) — current installed .fcc library path, project-generated EditorGenLib.fcc, Studio MCP server and Mobile screenshot evidence collection.
-- [Editor metadata capture checklist](../research/editor-metadata-capture-checklist.json) — structured list of authoritative PC and Mobile sources that have not yet been captured.
+- [Current editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md) — current installed .fcc library path, project-generated EditorGenLib.fcc, Studio MCP server and Mobile screenshot evidence collection.
+- [Editor metadata capture checklist](https://github.com/RahulExe69/FFCRAFT/blob/main/research/workflows/editor-metadata-capture-checklist.json) — structured list of authoritative PC and Mobile sources that have not yet been captured.
 
 
 ## Current Mobile scripting and MCP metadata leads
 
 - [Official Mobile Block Scripts guide](https://ffcraftland.garena.com/en/tutorial/cl/4-101) — documents the block editor, script context, search and typed connections; search can include blocks unavailable in the selected script.
-- [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) and [machine-readable map](../research/mobile-official-scripting-source-map.json) — topic links for event/script types, classification/flow control, variables/properties, data/logic and server/client scripting.
-- [Current official dropdown option cross-checks](30-current-official-dropdown-option-crosschecks.md) and [machine-readable option rows](../research/official-dropdown-option-crosschecks.json) — 367 visible official-reference option rows across 52 rough labels, comparing current official tables with old-mirror aliases and source-count mismatches.
+- [Official Mobile scripting source map](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md) and [machine-readable map](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/mobile-official-scripting-source-map.json) — topic links for event/script types, classification/flow control, variables/properties, data/logic and server/client scripting.
+- [Current official dropdown option cross-checks](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/30-current-official-dropdown-option-crosschecks.md) and [machine-readable option rows](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/official-dropdown-option-crosschecks.json) — 367 visible official-reference option rows across 52 rough labels, comparing current official tables with old-mirror aliases and source-count mismatches.
 - [Official Game Mechanics template](https://ffcraftland.garena.com/en/tutorial/cl/4-87) and [Myconsole template](https://ffcraftland.garena.com/en/tutorial/cl/4-86) — source examples for trigger, player, object, HUD and helper-function patterns.
-- [NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — recent community MCP-based KB-generation method. Its current public tree contains the README and generator/enrichment scripts but not the generated raw metadata or catalog pages; see [audit](28-live-mcp-repository-audit.md) and [machine-readable audit](../research/live-mcp-public-resource-audit.json). Advertised counts are not treated as verified data.
+- [NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — recent community MCP-based KB-generation method. Its current public tree contains the README and generator/enrichment scripts but not the generated raw metadata or catalog pages; see [audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/28-live-mcp-repository-audit.md) and [machine-readable audit](https://github.com/RahulExe69/FFCRAFT/blob/main/research/audits/live-mcp-public-resource-audit.json). Advertised counts are not treated as verified data.
 
 
 ## Current MCP and Mobile scripting source audit
 
-- [Live MCP repository audit](28-live-mcp-repository-audit.md) — audits the public NiteshCraftFF MCP-derived knowledge-base lead. Its README claims large block/API counts, but the inspected public commit contains only generator scripts and no raw export/catalog pages; counts remain unverified.
-- [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) — official topic pages for Mobile block scripting, script types, flow control, variable/property assignment, data/logic, and server/client separation, plus two official template leads.
-- [Machine-readable MCP lead audit](../research/live-mcp-public-resource-audit.json) and [Mobile source map](../research/mobile-official-scripting-source-map.json).
+- [Live MCP repository audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/28-live-mcp-repository-audit.md) — audits the public NiteshCraftFF MCP-derived knowledge-base lead. Its README claims large block/API counts, but the inspected public commit contains only generator scripts and no raw export/catalog pages; counts remain unverified.
+- [Official Mobile scripting source map](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md) — official topic pages for Mobile block scripting, script types, flow control, variable/property assignment, data/logic, and server/client separation, plus two official template leads.
+- [Machine-readable MCP lead audit](https://github.com/RahulExe69/FFCRAFT/blob/main/research/audits/live-mcp-public-resource-audit.json) and [Mobile source map](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/mobile-official-scripting-source-map.json).
 - [Public MCP-derived KB source](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — methodology lead only; inspect the pinned commit and published tree before treating any claimed export as accessible evidence.
 
-- [Rough block review queue](31-rough-block-review-queue.md) and [machine-readable queue](../research/rough-block-review-queue.json) — 111 rows still requiring editor-level verification: 84 fuzzy candidates, 5 exact old-mirror misses, 21 official-reference mappings whose exact current node/context remain unverified, and one likely editor-native block; misses are not claims of absence.
+- [Rough block review queue](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/31-rough-block-review-queue.md) and [machine-readable queue](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/rough-block-review-queue.json) — 111 rows still requiring editor-level verification: 84 fuzzy candidates, 5 exact old-mirror misses, 21 official-reference mappings whose exact current node/context remain unverified, and one likely editor-native block; misses are not claims of absence.
 
-- [Expanded official dropdown option cross-check](../research/official-dropdown-option-crosschecks.json) — 367 visible rows across 52 labels; large current-doc vs old-mirror count differences remain explicitly unverified against the installed editor.
+- [Expanded official dropdown option cross-check](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/official-dropdown-option-crosschecks.json) — 367 visible rows across 52 labels; large current-doc vs old-mirror count differences remain explicitly unverified against the installed editor.

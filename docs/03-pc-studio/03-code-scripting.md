@@ -94,7 +94,7 @@ Official references: [Marketplace feature list](https://marketplace.visualstudio
 
 ## Current-version warning
 
-Patch notes through Craftland Studio 1.19.0 (September 2026) mention scripting changes across multiple releases: function pointers, quick imports/custom FCC imports, ID-based TYPE APIs, tuple data type and Data Store read/write, improved API search/completion/references, and debugger improvements. That means older internet snippets can compile differently or reference obsolete APIs. See [version watch](08-debugging-performance-versions.md) and [official patch notes](https://ffcraftland.garena.com/en/patch-notes/).
+Patch notes through Craftland Studio 1.19.0 (September 2026) mention scripting changes across multiple releases: function pointers, quick imports/custom FCC imports, ID-based TYPE APIs, tuple data type and Data Store read/write, improved API search/completion/references, and debugger improvements. That means older internet snippets can compile differently or reference obsolete APIs. See [version watch](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/08-debugging-performance-versions.md) and [official patch notes](https://ffcraftland.garena.com/en/patch-notes/).
 
 ## What this guide intentionally does not do
 

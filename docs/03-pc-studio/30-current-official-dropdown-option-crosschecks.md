@@ -1,7 +1,7 @@
 # Current official dropdown option cross-checks
 
 **Checked:** 21 October 2026  
-**Machine-readable option rows:** [`research/official-dropdown-option-crosschecks.json`](../research/official-dropdown-option-crosschecks.json)  
+**Machine-readable option rows:** [`research/official-dropdown-option-crosschecks.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/official-dropdown-option-crosschecks.json)  
 **Official source:** [Garena Craftland Enum reference](https://ffcraftland.garena.com/en/docs/enum/)
 
 ## What this adds
@@ -108,6 +108,6 @@ Each entry records the rough label, canonical identifier, module, value type, of
 ## Sources
 
 - [Official Enum reference](https://ffcraftland.garena.com/en/docs/enum/)
-- [Older 1.5.0 library symbol catalog](20-pc-library-catalog.md)
-- [Dropdown / enum reconstruction crosswalk](21-enum-dropdown-reconstruction.md)
-- [Current editor capture playbook](27-current-editor-capture-playbook.md)
+- [Older 1.5.0 library symbol catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/20-pc-library-catalog.md)
+- [Dropdown / enum reconstruction crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/21-enum-dropdown-reconstruction.md)
+- [Current editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md)

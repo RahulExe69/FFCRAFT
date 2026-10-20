@@ -7,10 +7,10 @@ A public multilingual repository, [`FF-OGC/Craftland-Tutorial`](https://github.c
 The repository has no explicit license surfaced in GitHub metadata. The English manuals include images hosted on official Garena content-delivery hosts. We therefore record links, file hashes, headings and our own concise summaries rather than copying the full manuals or image library into FFCRAFT. Treat it as a secondary translated/manual corpus—not the current official API source.
 
 Machine-readable indexes:
-- [Full Markdown manifest](../research/public-tutorial-corpus-index.json) — 160 Markdown paths, hashes/sizes, script-related tags, important page outlines and source links.
-- [Mobile block recipe index](../research/mobile-block-recipe-index.json) — 13 summaries from the re-editable Game Mechanics template.
-- [Existing PC API/function catalog](../research/pc-library-api-reference.json) — separate from visual block documentation.
-- [Rough-to-PC symbol crosswalk](../research/block-symbol-crosswalk.json) — marks matches and gaps from your original notes.
+- [Full Markdown manifest](https://github.com/RahulExe69/FFCRAFT/blob/main/research/audits/public-tutorial-corpus-index.json) — 160 Markdown paths, hashes/sizes, script-related tags, important page outlines and source links.
+- [Mobile block recipe index](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/mobile-block-recipe-index.json) — 13 summaries from the re-editable Game Mechanics template.
+- [Existing PC API/function catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-api-reference.json) — separate from visual block documentation.
+- [Rough-to-PC symbol crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/block-symbol-crosswalk.json) — marks matches and gaps from your original notes.
 
 ## Most valuable manuals
 

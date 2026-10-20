@@ -2,7 +2,7 @@
 
 ## What has been extracted
 
-Machine-readable reference: [`research/pc-library-api-reference.json`](../research/pc-library-api-reference.json).
+Machine-readable reference: [`research/pc-library-api-reference.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-api-reference.json).
 
 The parser now covers all **42** `.fcc` libraries available in the public 1.5.0 mirror. Current extraction totals:
 
@@ -18,9 +18,9 @@ These are **extraction counts and candidate metadata**, not unique-current API c
 
 This is much closer to the underlying PC API reference than a tutorial-only search: a lookup can find the likely function/event/component name, input parameter types, output/return shape, docs text, server/client hints, component properties and whether the old source marks an item deprecated. It complements the smaller enum/member catalog rather than replacing it.
 
-- [Symbol/enum-only catalog](../research/pc-library-symbol-catalog.json)
-- [Dropdown crosswalk against your 65 observed labels](../research/enum-dropdown-crosswalk.json)
-- [Current official enum/type supplement](../research/current-official-enum-supplement.json)
+- [Symbol/enum-only catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-symbol-catalog.json)
+- [Dropdown crosswalk against your 65 observed labels](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/enum-dropdown-crosswalk.json)
+- [Current official enum/type supplement](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/current-official-enum-supplement.json)
 
 ## Critical compatibility warning
 

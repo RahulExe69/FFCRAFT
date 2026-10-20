@@ -52,7 +52,7 @@ The public scripts and README still tell us how to approach the current editor d
 1. From a current Studio 1.19.x installation, export the MCP block-config list and detailed definitions for every config, preserving raw JSON, editor version, context and source method.
 2. Export event/action/valuation/type details through the available `eca-get-*` operations, retaining exact names, IDs, parameter schemas, return/output data, runtime target and deprecation markers.
 3. Store raw responses separately from normalized/search indexes, and record a hash for each source payload.
-4. Compare the resulting inventory against the 443 source lines in [the Rough block-symbol crosswalk](24-block-symbol-crosswalk.md).
+4. Compare the resulting inventory against the 443 source lines in [the Rough block-symbol crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md).
 5. Keep a separate Mobile queue for actual Mobile editor screenshots or exports. Do not fill Mobile gaps by copying PC MCP results.
 
 ## Sources
@@ -61,4 +61,4 @@ The public scripts and README still tell us how to approach the current editor d
 - [Public MCP-derived KB repository](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL)
 - [Public KB generator](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL/blob/4d30fcd0970074fc8c19689f747b6c6b49f93cf3/_generate_kb.ps1)
 - [Public enrichment script](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL/blob/4d30fcd0970074fc8c19689f747b6c6b49f93cf3/_enrich_from_gets.ps1)
-- [Current-editor capture playbook](27-current-editor-capture-playbook.md)
+- [Current-editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md)

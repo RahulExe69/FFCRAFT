@@ -1,6 +1,6 @@
 # User-observed Craftland block inventory (draft)
 
-> **Provenance:** normalized from Rahul's original [`Rough.txt`](../Rough.txt). That file is intentionally preserved and must not be overwritten. This catalogue retains reported block signatures, not claims that every block is current or available in every context.
+> **Provenance:** normalized from Rahul's original [`Rough.txt`](https://github.com/RahulExe69/FFCRAFT/blob/main/notes/raw/Rough.txt). That file is intentionally preserved and must not be overwritten. This catalogue retains reported block signatures, not claims that every block is current or available in every context.
 
 ## How to use this catalogue
 
@@ -693,4 +693,4 @@ _No candidate lines extracted automatically. Consult the raw source._
 4. Request screenshots or exports only for cases where public docs do not expose the same block UI or option list.
 5. Build example recipes only from verified signatures, and label compilation/playtest status separately.
 
-Machine-readable counterpart: [`research/user-observed-block-inventory.json`](../research/user-observed-block-inventory.json).
+Machine-readable counterpart: [`research/user-observed-block-inventory.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/user-observed-block-inventory.json).

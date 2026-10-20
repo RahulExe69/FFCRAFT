@@ -35,7 +35,7 @@ An editor-local MCP server or installed libraries are **not reachable from this 
 4. Include the Studio version/build number and the date the files were collected.
 5. If any files are very large, start with `StdLibrary.fcc`, `Player.fcc`, `LevelObject.fcc`, `Items.fcc`, `Hud.fcc`, `Scene.fcc`, `Workflow.fcc`, `AI.fcc`, `BehaviourTree.fcc`, `Collection.fcc`, `Combat.fcc`, `Physics.fcc`, and any library identified in the unresolved-block crosswalk.
 
-For current PC API recovery we can compare the current `.fcc` set against [the old-mirror catalog](../research/pc-library-symbol-catalog.json) and flag:
+For current PC API recovery we can compare the current `.fcc` set against [the old-mirror catalog](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-symbol-catalog.json) and flag:
 - new APIs/types/events,
 - removed or renamed declarations,
 - parameter/signature changes,
@@ -68,7 +68,7 @@ In current Studio 1.19.0, locate the built-in MCP server URL from the editor's s
 
 Do not post the endpoint publicly or share API tokens. An MCP URL that points to `localhost`/a private LAN is not automatically accessible outside the PC. The safe route is to export response data or screenshots here. If it exposes an authenticated/permissioned remote endpoint, use only the official intended integration and permissions.
 
-A public community repo now provides a useful methodology lead: [the MCP repository audit](28-live-mcp-repository-audit.md) records a PowerShell generator/enrichment workflow and reported operations such as `eca-block-config-list` and `eca-get-action`. However, its inspected public commit contains only five files; the generated `blocks/`, `events/`, `actions/`, `valuations/`, `types/`, `indexes/` and `raw/` data are absent. Use it to guide a fresh capture, **not** as a substitute for collecting current responses or as proof of its self-reported counts.
+A public community repo now provides a useful methodology lead: [the MCP repository audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/28-live-mcp-repository-audit.md) records a PowerShell generator/enrichment workflow and reported operations such as `eca-block-config-list` and `eca-get-action`. However, its inspected public commit contains only five files; the generated `blocks/`, `events/`, `actions/`, `valuations/`, `types/`, `indexes/` and `raw/` data are absent. Use it to guide a fresh capture, **not** as a substitute for collecting current responses or as proof of its self-reported counts.
 
 ## Capture D — Craftland Mobile block inventory
 
@@ -81,11 +81,11 @@ For each dropdown or block that isn't fully captured in `Rough.txt`, obtain:
 - the exact Mobile/editor version and language,
 - a screenshot/export of the connected inputs if relevant.
 
-Most valuable first: the 5 remaining no-exact-match lines, the 84 fuzzy-match leads, and the 21 official-reference mappings that still need exact current-editor node/socket/context evidence. Also prioritize every label with a dynamic skin/asset ID list and the ambiguous labels identified in [doc 24](24-block-symbol-crosswalk.md). The old-mirror crosswalk status is a search hint, not proof of current support or lack of support.
+Most valuable first: the 5 remaining no-exact-match lines, the 84 fuzzy-match leads, and the 21 official-reference mappings that still need exact current-editor node/socket/context evidence. Also prioritize every label with a dynamic skin/asset ID list and the ambiguous labels identified in [doc 24](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md). The old-mirror crosswalk status is a search hint, not proof of current support or lack of support.
 
 ### One related lead to verify, not assume
 
-Rough.txt line 132 `Progressive Movement Property` may be related to the official [Set Property Smoothly API](https://ffcraftland.garena.com/en/docs/api-1-475/), which is documented as Server Side and Both Mobile and PC. The observed node has a different title, so it remains an unresolved mismatch until the current editor data confirms the internal identity and input/output types. See [the review queue](31-rough-block-review-queue.md).
+Rough.txt line 132 `Progressive Movement Property` may be related to the official [Set Property Smoothly API](https://ffcraftland.garena.com/en/docs/api-1-475/), which is documented as Server Side and Both Mobile and PC. The observed node has a different title, so it remains an unresolved mismatch until the current editor data confirms the internal identity and input/output types. See [the review queue](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/31-rough-block-review-queue.md).
 
 ## Safe source/evidence labels
 
@@ -105,10 +105,10 @@ Do not mark a declaration compiled or runtime-tested merely because it exists in
 - **Exact PC code API signatures and enum declarations:** current installed `.fcc` libraries first; then current official online references.
 - **PC visual node IDs, sockets, block-config dropdowns and context metadata:** current Studio MCP responses first, with raw JSON retained. Community extraction scripts are only a methodology lead until their output is reproduced.
 - **Project-specific registered assets and graph scripts:** that project's generated `EditorGenLib.fcc`.
-- **Craftland Mobile visual blocks and dropdowns:** current Mobile editor screenshots/exports first; the [official Mobile source map](29-official-mobile-scripting-source-map.md) is the topic guide, not the full inventory.
+- **Craftland Mobile visual blocks and dropdowns:** current Mobile editor screenshots/exports first; the [official Mobile source map](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md) is the topic guide, not the full inventory.
 - **Semantics, platform and deprecation checks:** current official docs and patch notes, cross-checked against the matching installed build.
 - **Public tutorials, old mirrors and other community repos:** discovery leads and examples only; retain commit, license/provenance and version caveats.
 
 ## Limitations
 
-The [official Mobile scripting source map](29-official-mobile-scripting-source-map.md) now indexes the seven main scripting topic pages and two mechanism templates; it is not a node-by-node export. The public MCP-methodology audit likewise found no current raw catalog to import. This is a collection workflow, not evidence that the capture has already happened. No current installed library zip, current MCP response, project-specific `EditorGenLib.fcc`, or full Mobile dropdown screenshot set has been inspected in this pass. The public/research-derived files remain candidate references until the matching current data is supplied and compared.
+The [official Mobile scripting source map](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md) now indexes the seven main scripting topic pages and two mechanism templates; it is not a node-by-node export. The public MCP-methodology audit likewise found no current raw catalog to import. This is a collection workflow, not evidence that the capture has already happened. No current installed library zip, current MCP response, project-specific `EditorGenLib.fcc`, or full Mobile dropdown screenshot set has been inspected in this pass. The public/research-derived files remain candidate references until the matching current data is supplied and compared.

@@ -1,6 +1,6 @@
 # Enum option-set duplication analysis
 
-Machine-readable result: [`research/pc-enum-option-set-analysis.json`](../research/pc-enum-option-set-analysis.json).
+Machine-readable result: [`research/pc-enum-option-set-analysis.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-enum-option-set-analysis.json).
 
 ## Result
 

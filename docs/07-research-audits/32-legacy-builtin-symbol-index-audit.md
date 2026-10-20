@@ -26,7 +26,7 @@ The component count includes repeated names in multiple libraries: `Player` occu
 1. **Component/property ID leads.** The symbol index gives numeric IDs for some component/property pairs. For example, it lists `Entity` with ID `10`, and properties including `ActiveSelf` (`-10002`), `Enable` (`-10005`) and `Name` (`-10006`). It lists `Transform` with ID `97` and properties including `Position` (`-97000`) and `Rotation` (`-97001`). These demonstrate the index's shape; they are **legacy values**, not a claim that these IDs are current in Studio 1.19.x.
 2. **Additional enum/type names.** This raw index contains 150 enum records, compared with 144 enum declarations in FFCRAFT's parsed symbol catalog. The difference signals a parser/schema reconciliation task, not six automatically verified new current enums.
 3. **A cross-check for old API extraction.** The index records 739 API symbol entries (729 names), while the current parsed FFCRAFT mirror catalog records 681 function candidates. The categories and extraction rules may differ, so this must be reconciled by library and signature instead of subtracting totals or silently merging lists.
-4. **A better audit trail.** IDs, symbol names and the originating `.fcc` library offer additional clues when reviewing approximate matches in [the 443-line Rough crosswalk](24-block-symbol-crosswalk.md), especially property-related labels. This is useful for search prioritization, not proof of Mobile visual-block structure.
+4. **A better audit trail.** IDs, symbol names and the originating `.fcc` library offer additional clues when reviewing approximate matches in [the 443-line Rough crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md), especially property-related labels. This is useful for search prioritization, not proof of Mobile visual-block structure.
 
 ## Cross-check against the unresolved Rough.txt queue
 
@@ -61,8 +61,8 @@ Source links:
 - [BuiltinSymbol.json in the public 1.5.0 mirror](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json)
 - [The mirror's library/release directory](https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release)
 - [Official PC code-script manual](https://ffcraftland.garena.com/en/tutorial/fe/1-9)
-- [Current-editor capture playbook](27-current-editor-capture-playbook.md)
-- [PC library catalog recovery](20-pc-library-catalog.md)
+- [Current-editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md)
+- [PC library catalog recovery](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/20-pc-library-catalog.md)
 
 ## Next actions
 

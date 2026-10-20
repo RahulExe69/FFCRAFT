@@ -20,9 +20,9 @@ These are parser counts from the mirrored snapshot, not guaranteed counts of dis
 
 ## Start here
 
-- Machine-readable symbol catalog: [`research/pc-library-symbol-catalog.json`](../research/pc-library-symbol-catalog.json)
-- User-observed enum/block inventory: [`research/user-observed-block-inventory.json`](../research/user-observed-block-inventory.json)
-- Untouched original notes: [`Rough.txt`](../Rough.txt)
+- Machine-readable symbol catalog: [`research/pc-library-symbol-catalog.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-symbol-catalog.json)
+- User-observed enum/block inventory: [`research/user-observed-block-inventory.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/user-observed-block-inventory.json)
+- Untouched original notes: [`Rough.txt`](https://github.com/RahulExe69/FFCRAFT/blob/main/notes/raw/Rough.txt)
 - Public mirror: https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release
 - Official extension listing: https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage
 - Official API docs: https://ffcraftland.garena.com/en/docs/api
@@ -50,7 +50,7 @@ The next research pass is to map each enum label mentioned in `Rough.txt` to the
 
 ## Supplementary legacy symbol index
 
-A companion `BuiltinSymbol.json` exists in the same public extension mirror. It indexes symbols by library path and records numeric IDs for components, APIs and component properties. A separate [audit](32-legacy-builtin-symbol-index-audit.md) counted 590 component records, 3,315 component-property records, 150 enum records, 739 API records and 259 event records across 42 file spaces.
+A companion `BuiltinSymbol.json` exists in the same public extension mirror. It indexes symbols by library path and records numeric IDs for components, APIs and component properties. A separate [audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/32-legacy-builtin-symbol-index-audit.md) counted 590 component records, 3,315 component-property records, 150 enum records, 739 API records and 259 event records across 42 file spaces.
 
 These counts are not directly interchangeable with the parser counts above: repeated library-scoped names, aliases and extraction rules differ. The index is version 1.5.0, its upstream license is not affirmatively declared, and the raw JSON has not been copied into FFCRAFT. Use it only as a version-labelled discovery/cross-check source until the current installed editor confirms the IDs and declarations.
 

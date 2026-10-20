@@ -1,8 +1,8 @@
 # Current official enum and type supplement
 
-This supplement records current official documentation findings that are missing from, or more specific than, the third-party Craftland Studio language-library mirror cataloged in [doc 20](20-pc-library-catalog.md).
+This supplement records current official documentation findings that are missing from, or more specific than, the third-party Craftland Studio language-library mirror cataloged in [doc 20](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/20-pc-library-catalog.md).
 
-Machine-readable form: [`research/current-official-enum-supplement.json`](../research/current-official-enum-supplement.json).
+Machine-readable form: [`research/current-official-enum-supplement.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/current-official-enum-supplement.json).
 
 ## Fixed enum options recovered from current official docs
 

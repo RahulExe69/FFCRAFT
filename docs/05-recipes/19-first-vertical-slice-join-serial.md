@@ -69,7 +69,7 @@ Do not mark this mechanic **editor-verified**, **compiled**, or **playtested** u
 
 ## Related docs
 
-- [Player roster and sequential join serials](05-player-roster-join-serials.md)
-- [AI Craftland coding workflow](14-ai-craftland-coding-workflow.md)
+- [Player roster and sequential join serials](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/04-gameplay-systems/05-player-roster-join-serials.md)
+- [AI Craftland coding workflow](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/05-recipes/14-ai-craftland-coding-workflow.md)
 - [Craftland Mobile block tutorial](https://ffcraftland.garena.com/en/tutorial/cl/4-101)
 - [Craftland PC Set property API](https://ffcraftland.garena.com/en/docs/api-1-871/)

@@ -57,7 +57,7 @@ These are **name-level cross-checks only**. For code generation, each block stil
 4. Fill gaps using screenshots or exported editor/library files when the official pages don't expose the visual-block shape.
 5. Mark each record `documented`, `editor-observed`, `compiled`, or `playtested` as those separate levels of evidence are achieved.
 
-Machine-readable cross-checks are stored in [`research/user-observed-block-inventory.json`](../research/user-observed-block-inventory.json).
+Machine-readable cross-checks are stored in [`research/user-observed-block-inventory.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/user-observed-block-inventory.json).
 
 ### 6. Teleport is marked obsolete in the official STD Library index
 

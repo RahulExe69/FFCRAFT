@@ -60,7 +60,7 @@ Link: https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES
 
 This repository is useful for discovery of candidate UGC asset IDs/names, sound labels, skyboxes, rig files and Studio project-template folders. Its latest observed commit during review was 29 September 2025. Some catalogues are explicitly sample data, the script folder has no documented recipe beyond “Updating Soon!”, and the Tools README links to an older Studio 1.14 installer. The repository declares CC0-1.0, but provenance of third-party assets still needs checking.
 
-**Use:** search it for leads, then verify IDs in official docs or the matching installed editor. Do not treat its lists as complete/current or its project folders as validated templates until opened and tested. See [the full audit](16-community-resource-audit.md).
+**Use:** search it for leads, then verify IDs in official docs or the matching installed editor. Do not treat its lists as complete/current or its project folders as validated templates until opened and tested. See [the full audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/16-community-resource-audit.md).
 
 
 ### nexosstudio / FE_RESOURCES_BETA
@@ -69,4 +69,4 @@ Link: https://github.com/nexosstudio/FE_RESOURCES_BETA
 
 This repository contains 22 named skybox packages, 44 numbered skybox packages, one Dynamic Weather package, and two Voting System packages (68 .package files in the observed directory listing). It is a stronger candidate for learning from packaged sample mechanics than for API documentation. None of its packages has been imported or runtime-tested by FFCRAFT. The repository declares CC0-1.0, but that does not independently establish provenance/redistribution rights for bundled game assets.
 
-Use package names as leads only. See [the full audit](18-fe-resources-beta-audit.md) and [the six official skybox enum values cross-checked from Garena docs](17-curated-asset-reference.md).
+Use package names as leads only. See [the full audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/18-fe-resources-beta-audit.md) and [the six official skybox enum values cross-checked from Garena docs](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/17-curated-asset-reference.md).

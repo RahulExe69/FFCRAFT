@@ -26,7 +26,7 @@ The four directories contain 68 package files in total: 22 named skybox packages
 
 1. **Dynamic Weather** — likely the best next sample to inspect because it can teach how a reusable map mechanic is packaged and configured. Read the notes/preview first and import the package before claiming its implementation.
 2. **Voting System** — useful for a complete gameplay mechanic, but inspect its package structure and server/client boundaries before reusing it. Votes should be validated and tallied authoritatively; never assume a client-side count is cheat-resistant.
-3. **Named skyboxes** — start with the six exact base types already listed in [the curated asset reference](17-curated-asset-reference.md). Other named skyboxes and the numbered collection need individual identification and current-version testing.
+3. **Named skyboxes** — start with the six exact base types already listed in [the curated asset reference](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/17-curated-asset-reference.md). Other named skyboxes and the numbered collection need individual identification and current-version testing.
 
 ## Caveats
 

@@ -4,10 +4,10 @@
 
 Rahul's original `Rough.txt` lists many dropdown/type labels but intentionally omits most dropdown entries to save time. This page and its JSON file map those labels to discoverable definitions without changing the original notes.
 
-- Original notes: [`Rough.txt`](../Rough.txt) — preserved unchanged.
-- Machine-readable crosswalk: [`research/enum-dropdown-crosswalk.json`](../research/enum-dropdown-crosswalk.json)
-- Recovered library symbols: [`research/pc-library-symbol-catalog.json`](../research/pc-library-symbol-catalog.json)
-- Official current additions: [`research/current-official-enum-supplement.json`](../research/current-official-enum-supplement.json)
+- Original notes: [`Rough.txt`](https://github.com/RahulExe69/FFCRAFT/blob/main/notes/raw/Rough.txt) — preserved unchanged.
+- Machine-readable crosswalk: [`research/enum-dropdown-crosswalk.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/enum-dropdown-crosswalk.json)
+- Recovered library symbols: [`research/pc-library-symbol-catalog.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/pc-library-symbol-catalog.json)
+- Official current additions: [`research/current-official-enum-supplement.json`](https://github.com/RahulExe69/FFCRAFT/blob/main/research/pc-studio/current-official-enum-supplement.json)
 
 ## Current crosswalk result
 
@@ -43,7 +43,7 @@ The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-1
 
 This is enough to correct the **classification** of the Rough.txt label: do not build a fictitious `PhaseAndRoundEnum` or invent values. It does not settle whether the label in the author's original editor panel was a selector or a rough heading; that requires a screenshot of the current UI. Related Workflow API pages can be platform-marked Both Mobile and PC, but that still does not mean the Mobile editor has an identically named dropdown.
 
-The [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) now records 367 current published option rows across 52 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
+The [current official dropdown option cross-check](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/03-pc-studio/30-current-official-dropdown-option-crosschecks.md) now records 367 current published option rows across 52 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
 
 ## Important distinctions
 

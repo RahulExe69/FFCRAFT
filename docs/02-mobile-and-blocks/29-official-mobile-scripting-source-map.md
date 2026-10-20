@@ -24,7 +24,7 @@ Two official re-editable templates contain worked examples rather than only abst
 - [Game Mechanics](https://ffcraftland.garena.com/en/tutorial/cl/4-87) — examples include custom triggers, health adjustment, zombie spawning, object movement, player teleportation, custom text, outfit changes and HUD UI interaction.
 - [Myconsole](https://ffcraftland.garena.com/en/tutorial/cl/4-86) — examples include HUD interaction, player body proportions, random terrain generation, player join/leave lists and custom helper functions.
 
-The public translated tutorial corpus already summarizes 13 Game Mechanics recipes in [research/mobile-block-recipe-index.json](../research/mobile-block-recipe-index.json). This new map links those recipe examples back to current official topic pages and clarifies what can and cannot be inferred from documentation alone.
+The public translated tutorial corpus already summarizes 13 Game Mechanics recipes in [research/mobile-block-recipe-index.json](https://github.com/RahulExe69/FFCRAFT/blob/main/research/mobile/mobile-block-recipe-index.json). This new map links those recipe examples back to current official topic pages and clarifies what can and cannot be inferred from documentation alone.
 
 ## Inventory rules that follow from these pages
 
@@ -37,7 +37,7 @@ The public translated tutorial corpus already summarizes 13 Game Mechanics recip
 
 ## Current coverage status
 
-This research pass has navigable, official documentation for the seven topic areas above and summary leads for 13 mechanisms. It still does **not** have a complete current screenshot/export set for the Mobile block panel or all of its expanded dropdowns. The highest-priority remaining Mobile evidence is the unknown/fuzzy subset from [the Rough crosswalk](24-block-symbol-crosswalk.md), plus dynamic skin/asset selectors and context-sensitive blocks.
+This research pass has navigable, official documentation for the seven topic areas above and summary leads for 13 mechanisms. It still does **not** have a complete current screenshot/export set for the Mobile block panel or all of its expanded dropdowns. The highest-priority remaining Mobile evidence is the unknown/fuzzy subset from [the Rough crosswalk](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md), plus dynamic skin/asset selectors and context-sensitive blocks.
 
 ## Sources
 
@@ -45,5 +45,5 @@ This research pass has navigable, official documentation for the seven topic are
 - [Official Craftland Mobile scripting topic pages 4-102 through 4-107](https://ffcraftland.garena.com/en/tutorial/cl/4-102/)
 - [Official Game Mechanics template](https://ffcraftland.garena.com/en/tutorial/cl/4-87)
 - [Official Myconsole template](https://ffcraftland.garena.com/en/tutorial/cl/4-86)
-- [Public tutorial corpus audit](25-public-tutorial-corpus-audit.md)
-- [Current editor capture playbook](27-current-editor-capture-playbook.md)
+- [Public tutorial corpus audit](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/07-research-audits/25-public-tutorial-corpus-audit.md)
+- [Current editor capture playbook](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/06-troubleshooting/27-current-editor-capture-playbook.md)

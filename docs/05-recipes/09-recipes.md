@@ -8,7 +8,7 @@ These recipes turn official concepts into reusable patterns. Unless a section ex
 
 **Flow:** initialize one authoritative global counter → On Player Join (server-side) → increment once → write the number to the arriving player's supported custom property → update that player's HUD/display if needed.
 
-**Must test:** initial counter lifetime, near-simultaneous joins, slot reuse, disconnect/reconnect semantics, match versus round reset, replication to clients. Full design: [Player roster and join serials](05-player-roster-join-serials.md).
+**Must test:** initial counter lifetime, near-simultaneous joins, slot reuse, disconnect/reconnect semantics, match versus round reset, replication to clients. Full design: [Player roster and join serials](https://github.com/RahulExe69/FFCRAFT/blob/main/docs/04-gameplay-systems/05-player-roster-join-serials.md).
 
 ## Recipe 2 — First-to-N elimination win condition
 
