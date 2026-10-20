@@ -845,6 +845,14 @@
       "url": "https://github.com/harshdahiya9162-coder/FF-CRAFTLAND-SCRIPT",
       "checked_on": "2026-10-21",
       "caveat": "Only a small upload/comment HTML page was present; its informal example is not verified and no complete script catalog was found. See docs/33-public-script-repository-audit.md."
+    },
+    {
+      "tier": "A",
+      "topic": "null-literal-context",
+      "title": "PC code-script language and data types",
+      "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-10/",
+      "checked_on": "2026-10-21",
+      "caveat": "The PC language guide uses `nil` as a keyword and describes reference types (including lists/maps/entities) as capable of holding nil. This helps explain PC code semantics but does not establish parity with a Mobile visual literal block."
     }
   ],
   "open_questions": [
@@ -868,7 +876,8 @@
     "Capture exact current Mobile literal/value blocks for String, Vector3 and Bool: official documentation confirms the types but does not establish their exact block appearance, defaults or sockets.",
     "Compare Rough.txt line 132 Progressive Movement Property with the official Set Property Smoothly API; keep the mapping unresolved until the current editor schema and socket types establish whether they are the same operation.",
     "Record current-editor evidence for Rough.txt line 647 'Phase And Round Enum': official Workflow describes phase/round entities and IDs, so establish the actual selector semantics before deciding whether it is an enum, entity ID or editor-specific construct.",
-    "Capture the current Mobile multi-slot arithmetic block on Rough.txt line 451, including all operator dropdown options and the plus/add-input behavior; public tutorial material does not enumerate the exact node schema."
+    "Capture the current Mobile multi-slot arithmetic block on Rough.txt line 451, including all operator dropdown options and the plus/add-input behavior; public tutorial material does not enumerate the exact node schema.",
+    "Inspect the current Mobile `.NULL` block (Rough.txt line 442) to determine its output value/type; distinguish it from the official Check null operation and PC language `nil` semantics."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
