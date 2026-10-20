@@ -36,10 +36,11 @@
     "official_docs_and_mirror_confirm": 1,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
-    "manual_or_official_cross_check": 1,
+    "manual_or_official_cross_check": 0,
     "legacy_observed_check_obsolete": 3,
     "needs_review_total": 4,
-    "official_docs_clarify_not_enum": 1
+    "official_docs_clarify_not_enum": 1,
+    "official_docs_likely_typo_match": 1
   },
   "entries": [
     {
@@ -10537,10 +10538,10 @@
       "observed_label": "Loot Scorer Type",
       "rough_line": 622,
       "observed_signature": "34. Loot Scorer Type",
-      "mapping_status": "manual-or-official-cross-check",
+      "mapping_status": "official-docs-likely-typo-match",
       "candidates": [
         {
-          "label": "Football.fcc:LootSoccerType (possible transcription collision; not accepted mapping)",
+          "label": "Football.fcc:LootSoccerType (official enum: Loot Soccer Type; likely Rough.txt spelling/transcription variation)",
           "definitions": [
             {
               "library_path": "library/release/Football.fcc",
@@ -10591,10 +10592,38 @@
               "notes": "Loot Soccer Ice: Freezing Grenade"
             }
           ],
-          "label": "Football.fcc:LootSoccerType (possible transcription collision; not accepted mapping)"
+          "label": "Football.fcc:LootSoccerType"
         }
       ],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror."
+      "next_check": "The canonical current official candidate and its three listed values are now cross-checked. If exact label fidelity matters, compare with a screenshot of the editor dropdown to verify whether the visible label reads Soccer or whether Rough.txt is a transcription variation.",
+      "official_documentation": {
+        "identifier": "LootSoccerType",
+        "display_label": "Loot Soccer Type",
+        "module": "Football",
+        "value_type": "Int",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "members": [
+          {
+            "value": 1040,
+            "name": "Loot Soccer Random",
+            "script_name": "LootSoccerRandom",
+            "description": "Loot Soccer Random"
+          },
+          {
+            "value": 1038,
+            "name": "Loot Soccer Shield",
+            "script_name": "LootSoccerShield",
+            "description": "Loot Soccer Shield"
+          },
+          {
+            "value": 1039,
+            "name": "Loot Soccer Ice",
+            "script_name": "LootSoccerIce",
+            "description": "Freezing Grenade"
+          }
+        ],
+        "note": "The live official enum page exposes this exact identifier/display label and these three options. The original Rough.txt wording is 'Loot Scorer Type'; treat that spelling as likely user transcription, while keeping the raw source untouched."
+      }
     },
     {
       "observed_label": "Character skill",
