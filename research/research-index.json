@@ -270,6 +270,29 @@
         "https://ffcraftland.garena.com/en/docs/enum/",
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
       ]
+    },
+    {
+      "id": "public-mcp-catalog-lead",
+      "summary": "A community repo advertises a large live Craftland Studio MCP export, but its inspected public commit exposes only generator scripts and variables notes, not the generated per-item catalog or raw MCP responses.",
+      "confidence": "community-claim-audited",
+      "details": "docs/28-live-mcp-repository-audit.md",
+      "sources": [
+        "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL"
+      ]
+    },
+    {
+      "id": "mobile-scripting-topic-map",
+      "summary": "Official Mobile docs cover block scripting, script/event types, flow control, variables/properties, data/logic and server/client scripts; they do not by themselves provide a complete machine-readable live block/dropdown catalog.",
+      "confidence": "official-docs-mapped",
+      "details": "docs/29-official-mobile-scripting-source-map.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-103/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-104/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-105/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
+      ]
     }
   ],
   "docs": {
@@ -312,10 +335,10 @@
     "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types",
     "docs/27-current-editor-capture-playbook.md": "Practical source capture playbook for current installed PC .fcc libraries, project EditorGenLib.fcc, Studio MCP metadata and Mobile block/dropdown screenshots",
     "research/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots",
-    "docs/28-live-mcp-repository-audit.md": "Audit of a community live-MCP knowledge-base generator; distinguishes reported counts and schema clues from unpublished raw catalog data",
-    "research/live-mcp-public-resource-audit.json": "Machine-readable audit of the publicly available community MCP exporter repository tree and unverified catalog claims",
-    "docs/29-official-mobile-scripting-source-map.md": "Maps current official Mobile scripting topics and two worked mechanism templates; explicitly not a complete block/dropdown export",
-    "research/mobile-official-scripting-source-map.json": "Structured index of seven official Mobile scripting topic pages and two mechanism-template references",
+    "docs/28-live-mcp-repository-audit.md": "Audit of a public community repo claiming live Craftland Studio MCP export; generated catalog pages were absent from the inspected public commit",
+    "research/live-mcp-public-resource-audit.json": "Machine-readable provenance and limitation audit for the public MCP-derived KB lead",
+    "docs/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
+    "research/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
     "docs/30-current-official-dropdown-option-crosschecks.md": "Current official enum option tables for 25 Rough.txt labels, with 109 option rows and old-mirror alias/spelling discrepancies",
     "research/official-dropdown-option-crosschecks.json": "Structured current official option rows and old-mirror comparisons for 25 Rough.txt labels (109 rows), including alias, spelling and identifier differences"
   },
@@ -582,6 +605,36 @@
       "url": "https://ffcraftland.garena.com/en/docs/enum/",
       "checked_on": "2026-10-20",
       "caveat": "18 rough labels have captured option rows; this is a subset, not a complete enumeration, and no Mobile dropdown parity/runtime testing is inferred."
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-scripting-source-map",
+      "title": "Official Mobile event/script types tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-103/"
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-scripting-source-map",
+      "title": "Official Mobile block classification and flow control tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-104/"
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-scripting-source-map",
+      "title": "Official Mobile variables, properties and assignment tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-105/"
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-scripting-source-map",
+      "title": "Official Mobile data and logic operations tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-106/"
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-scripting-source-map",
+      "title": "Official Mobile server-side and client-side scripts tutorial",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
     }
   ],
   "open_questions": [
@@ -596,7 +649,9 @@
     "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog.",
     "Capture the editor context for the Rough.txt label `Phase And Round Enum`; official docs show Phase/Round entity types, indexes and events, but not the exact dropdown/editor label the author observed.",
     "Expand current official enum option-row cross-checks beyond the current 25 Rough.txt labels/109 rows, especially larger ID catalogs and dynamic asset selectors.",
-    "Confirm whether the observed Dynamic Create Level Object Type selector corresponds to or differs from current autogenerated LevelObjectType; preserve both identifiers until the current editor settles the mapping."
+    "Confirm whether the observed Dynamic Create Level Object Type selector corresponds to or differs from current autogenerated LevelObjectType; preserve both identifiers until the current editor settles the mapping.",
+    "Capture current Studio MCP block-config schemas and per-item API/type details; public community counts are not a substitute for raw export data.",
+    "Capture version-stamped Craftland Mobile block-panel and expanded dropdown screenshots/exports for the fuzzy/unmatched Rough.txt entries."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -771,6 +826,9 @@
     "official_dropdown_labels_crosschecked": 25,
     "official_dropdown_option_rows": 109,
     "labels_with_mirror_alias_or_spelling_caveats": 19,
-    "dropdown_labels_generated_enum": 1
+    "dropdown_labels_generated_enum": 1,
+    "public_mcp_export_catalogs_verified": 0,
+    "mobile_official_scripting_topics_mapped": 7,
+    "mobile_mechanism_templates_mapped": 2
   }
 }
