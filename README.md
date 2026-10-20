@@ -2,7 +2,7 @@
 
 A source-backed knowledge base for **Free Fire Craftland**, with a focus on visual block logic, Craftland Studio PC code scripts, events, player systems, persistent storage, UI, gameplay mechanics, debugging, and version changes.
 
-> Research snapshot: **20 October 2026**. This repository is an independent creator reference, not an official Garena product. Official documentation and the installed editor take precedence over anything written here.
+> Research snapshot: **21 October 2026**. This repository is an independent creator reference, not an official Garena product. Official documentation and the installed editor take precedence over anything written here.
 
 ## Start here
 
@@ -38,7 +38,8 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 30. [Current editor capture playbook](docs/27-current-editor-capture-playbook.md) — exact local .fcc path, EditorGenLib and MCP data sources, plus what Mobile screenshots are needed to close the remaining gaps.
 31. [Live MCP repository audit](docs/28-live-mcp-repository-audit.md) — audits a new community MCP-export workflow and separates its useful method clues from its unpublished raw catalog.
 32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
-33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 108 official option rows across 24 labels, with old-mirror deprecated-alias discrepancies and exact script names.
+33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 109 official option rows across 25 labels, with old-mirror deprecated-alias discrepancies and exact script names.
+34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — prioritizes 111 approximate/no-match entries from the 443-line rough inventory, with exact source lines and review actions.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -51,6 +52,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Current official enum/type supplement](research/current-official-enum-supplement.json) — official additions and dynamic ID-type findings missing from the older mirror.
 - [Detailed PC API reference](research/pc-library-api-reference.json) — parsed function/event documentation and component properties from all 42 mirrored library files.
 - [Block-symbol crosswalk](research/block-symbol-crosswalk.json) — line-by-line comparison of Rough.txt against recovered PC symbols, with exact/fuzzy/unmatched statuses and targeted official matches.
+- [Rough block review queue](research/rough-block-review-queue.json) — 111 prioritised lines needing current-editor review or exact candidate verification.
 - [Public tutorial manifest](research/public-tutorial-corpus-index.json) — indexes 160 public manual files and key script references.
 - [Mobile block recipe index](research/mobile-block-recipe-index.json) — 13 summarized mechanism examples from a re-editable gameplay template.
 - [Enum option-set analysis](research/pc-enum-option-set-analysis.json) — groups identical dropdown-like option sequences for efficient browsing without merging API types.
