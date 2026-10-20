@@ -3346,15 +3346,122 @@
       "notes": [
         "Official description labels these as claim/attack range choices: Near, Middle and Far."
       ]
+    },
+    {
+      "rough_label": "Icon Type",
+      "canonical_identifier": "IconType",
+      "display_label": "Icon Type",
+      "module": "STD Library",
+      "value_type": "Sprite ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "T_34_M_WS_ICON_SQUARE",
+          "display_name": "Square",
+          "script_name": "Square",
+          "description": "Square"
+        },
+        {
+          "value": "T_34_M_WS_ICON_QUADRI",
+          "display_name": "Quadrilateral",
+          "script_name": "Quadrilateral",
+          "description": "Quadrilateral"
+        },
+        {
+          "value": "T_34_M_WS_ICON_RIGHTTRAPEZOID",
+          "display_name": "Right-Angled Trapezoid",
+          "script_name": "RightTrapezoid",
+          "description": "Right-Angled Trapezoid"
+        },
+        {
+          "value": "T_34_M_WS_ICON_TRAPEZOID",
+          "display_name": "Trapezoid",
+          "script_name": "Trapezoid",
+          "description": "Trapezoid"
+        },
+        {
+          "value": "T_34_M_WS_ICON_HEXAGON",
+          "display_name": "Hexagon",
+          "script_name": "Hexagon",
+          "description": "Hexagon"
+        },
+        {
+          "value": "T_34_M_WS_ICON_CIRCULAR",
+          "display_name": "Circle",
+          "script_name": "Circle",
+          "description": "Circles"
+        },
+        {
+          "value": "T_34_M_WS_ICON_TRIANGLE",
+          "display_name": "Triangle",
+          "script_name": "Triangle",
+          "description": "Triangle"
+        },
+        {
+          "value": "T_34_M_WS_ICON_EXCLAMATIONMARK",
+          "display_name": "Exclamation Mark",
+          "script_name": "ExclamationMark",
+          "description": "Exclamation Mark"
+        },
+        {
+          "value": "T_34_M_WS_ICON_QUESTIONMARK",
+          "display_name": "Question Mark",
+          "script_name": "QuestionMark",
+          "description": "Question Mark"
+        },
+        {
+          "value": "T_34_M_WS_ICON_SIGN",
+          "display_name": "Mark",
+          "script_name": "Mark",
+          "description": "Mark"
+        },
+        {
+          "value": "T_34_M_WS_ICON_ARROW",
+          "display_name": "Arrow",
+          "script_name": "Arrow",
+          "description": "Arrow"
+        },
+        {
+          "value": "T_34_M_WS_ICON_TAGGING",
+          "display_name": "Callout",
+          "script_name": "Pin",
+          "description": "Callout"
+        },
+        {
+          "value": "T_34_M_WS_ICON_STONE",
+          "display_name": "Rock",
+          "script_name": "Stone",
+          "description": "Rock"
+        },
+        {
+          "value": "T_34_M_WS_ICON_SCISSORS",
+          "display_name": "Scissors",
+          "script_name": "Scissors",
+          "description": "Scissors"
+        }
+      ],
+      "official_option_count": 14,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 96,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page visibly exposes 14 icon rows in this indexed snapshot, while the old v1.5.0 mirror has 96 parsed members. This large discrepancy is unresolved; inspect the current installed editor before treating either count as the full live selector.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page visibly exposes 14 icon rows in this indexed snapshot, while the old v1.5.0 mirror has 96 parsed members. This large discrepancy is unresolved; inspect the current installed editor before treating either count as the full live selector.",
+      "notes": [
+        "Rows transcribed from the current official Enum reference. The old mirror's 96 entries are a source/version comparison only; do not infer the other 82 are removed or available in the current dropdown."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 51,
-    "official_option_rows": 353,
+    "rough_labels_crosschecked": 52,
+    "official_option_rows": 367,
     "labels_with_mirror_alias_or_spelling_caveat": 22,
     "runtime_tested": 0,
     "mobile_parity_tested": 0,
-    "labels_with_official_vs_mirror_count_difference": 29
+    "labels_with_official_vs_mirror_count_difference": 30
   },
   "caveats": [
     "This is a cross-check of visible official Enum-reference rows, not a full crawl of every enum/type or every project-specific dropdown.",
