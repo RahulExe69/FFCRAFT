@@ -260,6 +260,16 @@
       "sources": [
         "https://ffcraftland.garena.com/en/docs/enum/"
       ]
+    },
+    {
+      "id": "official-enum-option-snapshot",
+      "summary": "A targeted cross-check records 70 published option rows across 18 Rough.txt enum labels and flags where the old v1.5.0 mirror includes additional deprecated aliases or conflicting spellings.",
+      "confidence": "official-documentation-with-secondary-mirror-comparison",
+      "details": "docs/30-current-official-dropdown-option-crosschecks.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/enum/",
+        "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
+      ]
     }
   ],
   "docs": {
@@ -289,7 +299,7 @@
     "docs/21-enum-dropdown-reconstruction.md": "Dropdown crosswalk method/results; adds official Loot Soccer Type options and Phase/Round Workflow component clarification",
     "docs/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
     "research/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
-    "research/enum-dropdown-crosswalk.json": "65-label dropdown/type crosswalk with candidates, official enum values, dynamic asset IDs, obsolete entries and corrected classification of Loot Soccer and Phase/Round",
+    "research/enum-dropdown-crosswalk.json": "65-label mapping crosswalk now links 18 labels to current official option-row cross-checks; includes likely Loot Soccer typo match and Phase/Round non-enum clarification",
     "research/current-official-enum-supplement.json": "Selected current official enums and type-selector details not represented in the old mirrored catalog",
     "docs/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
     "research/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
@@ -305,7 +315,9 @@
     "docs/28-live-mcp-repository-audit.md": "Audit of a community live-MCP knowledge-base generator; distinguishes reported counts and schema clues from unpublished raw catalog data",
     "research/live-mcp-public-resource-audit.json": "Machine-readable audit of the publicly available community MCP exporter repository tree and unverified catalog claims",
     "docs/29-official-mobile-scripting-source-map.md": "Maps current official Mobile scripting topics and two worked mechanism templates; explicitly not a complete block/dropdown export",
-    "research/mobile-official-scripting-source-map.json": "Structured index of seven official Mobile scripting topic pages and two mechanism-template references"
+    "research/mobile-official-scripting-source-map.json": "Structured index of seven official Mobile scripting topic pages and two mechanism-template references",
+    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official dropdown option tables for 18 Rough.txt labels, with 70 option rows and old-mirror alias/spelling discrepancies",
+    "research/official-dropdown-option-crosschecks.json": "Structured option rows and current official-versus-old-mirror comparisons for 18 Rough.txt labels"
   },
   "sources": [
     {
@@ -562,6 +574,14 @@
       "url": "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
       "checked_on": "2026-10-20",
       "caveat": "Clarifies Phase/Round semantics and events; it does not identify the exact control captured by the Rough.txt label or prove a matching Mobile dropdown."
+    },
+    {
+      "tier": "A",
+      "topic": "official-enum-options",
+      "title": "Official Craftland Enum reference: targeted option table cross-check",
+      "url": "https://ffcraftland.garena.com/en/docs/enum/",
+      "checked_on": "2026-10-20",
+      "caveat": "18 rough labels have captured option rows; this is a subset, not a complete enumeration, and no Mobile dropdown parity/runtime testing is inferred."
     }
   ],
   "open_questions": [
@@ -574,7 +594,8 @@
     "Record reproducible examples with Craftland version, exact block/API names, logs and outcome.",
     "Capture an actual current Studio 1.19.x MCP response set: a community exporter advertises sizable counts but does not publish its generated block/API data pages or raw JSON.",
     "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog.",
-    "Capture the editor context for the Rough.txt label `Phase And Round Enum`; official docs show Phase/Round entity types, indexes and events, but not the exact dropdown/editor label the author observed."
+    "Capture the editor context for the Rough.txt label `Phase And Round Enum`; official docs show Phase/Round entity types, indexes and events, but not the exact dropdown/editor label the author observed.",
+    "Expand current official enum option-row cross-checks beyond the current 18 Rough.txt labels/70 rows, especially larger ID catalogs and dynamic asset selectors."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -745,6 +766,9 @@
     "official_mobile_scripting_topic_pages_mapped": 7,
     "dropdown_labels_still_manual_review": 0,
     "dropdown_labels_classified_not_enum": 1,
-    "dropdown_labels_needing_spelling_ui_confirmation": 1
+    "dropdown_labels_needing_spelling_ui_confirmation": 1,
+    "official_dropdown_labels_crosschecked": 18,
+    "official_dropdown_option_rows": 70,
+    "labels_with_mirror_alias_or_spelling_caveats": 12
   }
 }
