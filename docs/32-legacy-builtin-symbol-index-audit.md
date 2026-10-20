@@ -28,6 +28,23 @@ The component count includes repeated names in multiple libraries: `Player` occu
 3. **A cross-check for old API extraction.** The index records 739 API symbol entries (729 names), while the current parsed FFCRAFT mirror catalog records 681 function candidates. The categories and extraction rules may differ, so this must be reconciled by library and signature instead of subtracting totals or silently merging lists.
 4. **A better audit trail.** IDs, symbol names and the originating `.fcc` library offer additional clues when reviewing approximate matches in [the 443-line Rough crosswalk](24-block-symbol-crosswalk.md), especially property-related labels. This is useful for search prioritization, not proof of Mobile visual-block structure.
 
+## Cross-check against the unresolved Rough.txt queue
+
+A direct, case-insensitive alphanumeric-normalized label comparison found **47 of 111 queued lines** with exact-name hits in this index, spanning 48 symbol records (including one name recorded with spelling/case variants). Example records include:
+
+| Rough.txt label | Legacy library | Symbol name | ID |
+|---|---|---|---:|
+| Vector2 | `StdLibrary.fcc` | `Vector2` component/type symbol | 159 |
+| Vector2 Sub | `Math.fcc` | `Vector2Sub` | 3245 |
+| New Vector2 | `Math.fcc` | `NewVector2` | 3256 |
+| Vector2 Get X | `Math.fcc` | `Vector2GetX` | 3240 |
+| Vector2 Set Y | `Math.fcc` | `Vector2SetY` | 3243 |
+| Damage Type | `Combat.fcc` | `DamageType` enum | 24 |
+| Weapon Skin Type | `LevelObject.fcc` | `WeaponSkinType` enum | 419 |
+| Vehicle Skin Type | `LevelObject.fcc` | `VehicleSkinType` enum | 420 |
+
+The complete per-row matches are embedded in `research/rough-block-review-queue.json`. These additions give review work an indexed starting point; **none of the 111 queue rows has been marked resolved from this comparison alone**. A label-to-name match cannot prove current editor behavior, socket types, option lists or cross-platform parity.
+
 ## Count and compatibility rules
 
 - These are records counted from the legacy JSON snapshot, not a list of distinct, currently supported game features.
