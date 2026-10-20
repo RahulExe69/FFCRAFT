@@ -44,6 +44,10 @@ The full queue retains 84 fuzzy candidate lines with up to three closest old-lib
 
 The current official [STD Library type index](https://ffcraftland.garena.com/en/docs/module-1) defines String, Vector3 and Bool. This confirms the underlying type concepts for three Rough.txt entries. Since your notes describe literal/value blocks with editable fields, capture their current Mobile-editor representations before calling their sockets/default values verified.
 
+## Related candidate for Progressive Movement Property
+
+Line 132 remains an **unresolved old-mirror miss**. Garena documents [Set Property Smoothly](https://ffcraftland.garena.com/en/docs/api-1-475/) as a server-side API for Mobile and PC that updates a target property immediately while presenting a smooth client transition. This may be related to the observed `Progressive Movement Property` entity/property/value block, but the visible name differs and identity has not been established. It is recorded as a candidate, not counted as a match. Compare the current editor node metadata and socket types before deciding.
+
 ## Official control-flow concept references
 
 The official Craftland Mobile [Primitives and Logic tutorial](https://ffcraftland.garena.com/en/tutorial/undefined/4-60) describes the observed if/else, if, while/conditional loop, integer-range loop and for-each blocks. Garena's [STD Library module](https://ffcraftland.garena.com/en/docs/module-1) lists Break loop and Continue to next. These findings change the evidence classification, but do **not** close the editor-capture requirement: exact sockets, loop boundary defaults, index/value types and current-version availability remain to be captured.
