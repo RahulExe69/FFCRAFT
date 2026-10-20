@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "title": "Current official enum option cross-checks for labels in Rough.txt",
-  "checked_on": "2026-10-20",
+  "checked_on": "2026-10-21",
   "authority": "Live official Garena Craftland Enum reference page",
   "sources": [
     "https://ffcraftland.garena.com/en/docs/enum/"
@@ -14,7 +14,9 @@
     "mirror_extra_aliases_not_automatically_current_choices": true,
     "preserve_distinct_type_identity_even_if_option_sets_match": true,
     "mobile_dropdown_parity_not_inferred": true,
-    "exact_installed_editor_version_not_available": true
+    "exact_installed_editor_version_not_available": true,
+    "source_table_may_not_match_installed_editor": true,
+    "note": "Rows are transcribed from current official Enum reference tables. Where old-mirror counts differ materially, completeness and installed-editor support remain unverified; never infer Mobile dropdown parity."
   },
   "entries": [
     {
@@ -1259,12 +1261,537 @@
       "notes": [
         "This enum has one documented option; don't invent other currencies merely because the label is generic."
       ]
+    },
+    {
+      "rough_label": "VFX Type",
+      "canonical_identifier": "VFXType",
+      "display_label": "VFX Type",
+      "module": "STD Library",
+      "value_type": "Effect ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "UGC_T_34_LY_WS_VFX1",
+          "display_name": "Sphere",
+          "script_name": "Sphere",
+          "description": "Sphere"
+        },
+        {
+          "value": "UGC_T_34_LY_WS_VFX2",
+          "display_name": "Light Beam",
+          "script_name": "LightBeamPreDiscarded",
+          "description": "Light Beam"
+        },
+        {
+          "value": "UGC_T_34_LY_WS_VFX3",
+          "display_name": "RingPreDiscarded",
+          "script_name": "RingPreDiscarded",
+          "description": "Boom"
+        },
+        {
+          "value": "UGC_T_34_LY_WS_VFX4",
+          "display_name": "Boom",
+          "script_name": "Boom",
+          "description": "Boom"
+        },
+        {
+          "value": "UGC_T_34_LY_WS_VFX5",
+          "display_name": "TelePort",
+          "script_name": "TelePort",
+          "description": "Boom"
+        },
+        {
+          "value": "UGC_T_34_LY_WS_VFX6",
+          "display_name": "Recover",
+          "script_name": "Recover",
+          "description": "Boom"
+        },
+        {
+          "value": "UGC_T_36_M_WS_VFX6",
+          "display_name": "Foot Beam",
+          "script_name": "CircleofHeat",
+          "description": "Foot Halo"
+        }
+      ],
+      "official_option_count": 7,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 71,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
+      "notes": [
+        "Official Enum reference presents seven visible VFXType rows; the old v1.5.0 mirror has 71 members. Current-editor availability of the many old-only names is unknown."
+      ]
+    },
+    {
+      "rough_label": "Sound Effect Type",
+      "canonical_identifier": "SoundEffectType",
+      "display_label": "Sound Effect Type",
+      "module": "STD Library",
+      "value_type": "Audio ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "SOUND_UAV_EXPLODE",
+          "display_name": "Explosion VFX",
+          "script_name": "Explosion",
+          "description": "Grenade Explosion"
+        },
+        {
+          "value": "SOUND_MP5_FIRE",
+          "display_name": "Gunfire",
+          "script_name": "Gunfire",
+          "description": "Gun Sound"
+        },
+        {
+          "value": "SOUND_INGAME_WAITINGCOUNTDOWN",
+          "display_name": "Countdown Beep",
+          "script_name": "CountDownDiDi",
+          "description": "Countdown Beep"
+        },
+        {
+          "value": "SOUND_UI_CLICK_COMMON_DEFAULT",
+          "display_name": "UI Tap",
+          "script_name": "UITap",
+          "description": "UI Tap"
+        },
+        {
+          "value": "SOUND_FEMALE_INJURED_SERIOUS01",
+          "display_name": "Female Screaming on Hit",
+          "script_name": "InjuredFemale",
+          "description": "Female Screaming on Hit"
+        },
+        {
+          "value": "SOUND_MALE_INJURED_SERIOUS01",
+          "display_name": "Male Screaming on Hit",
+          "script_name": "InjuredMale",
+          "description": "Male Screaming on Hit"
+        },
+        {
+          "value": "SOUND_UI_TOKENPICKUP",
+          "display_name": "Coin Generator",
+          "script_name": "CoinGenerator",
+          "description": "Gold Pickup Sound"
+        },
+        {
+          "value": "SOUND_SFX_Rushingpets_UI_Checkpoint",
+          "display_name": "Endpoint",
+          "script_name": "FinishingPoint",
+          "description": "Race past the finish line trigger sound effect"
+        },
+        {
+          "value": "SOUND_TELEPORTDOOR_STARTUSE",
+          "display_name": "Trigger",
+          "script_name": "Triggers",
+          "description": "Trigger Trigger Sound"
+        },
+        {
+          "value": "SOUND_PUMPKINSNATCH_RANKDOWN",
+          "display_name": "Rank Down",
+          "script_name": "RankDown",
+          "description": "Degradation Sound"
+        }
+      ],
+      "official_option_count": 10,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 102,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page visibly presents ten rows, while the older mirror has 102 members. Keep that mismatch open until current-editor data is compared.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page visibly presents ten rows, while the older mirror has 102 members. Keep that mismatch open until current-editor data is compared.",
+      "notes": [
+        "The official page shows ten SoundEffectType rows. The old v1.5.0 mirror has 102 members, including known deprecated aliases. Do not infer the current editor has 10 or 102 options without checking it."
+      ]
+    },
+    {
+      "rough_label": "Special ID Type",
+      "canonical_identifier": "SpecialItemIDType",
+      "display_label": "Special ID Type",
+      "module": "Items",
+      "value_type": "Item ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1299,
+          "display_name": "Gloo Maker",
+          "script_name": "IceWallMaker",
+          "description": "Gel Maker"
+        }
+      ],
+      "official_option_count": 1,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 1,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official page and old mirror both show one item; runtime/UI parity is untested.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official page and old mirror both show one item; runtime/UI parity is untested.",
+      "notes": [
+        "Current official page's single row is Gloo Maker (script name IceWallMaker)."
+      ]
+    },
+    {
+      "rough_label": "Monster Type",
+      "canonical_identifier": "MonsterType",
+      "display_label": "Monster Type",
+      "module": "AI",
+      "value_type": "Asset Config ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 18,
+          "display_name": "Normal",
+          "script_name": "Regular",
+          "description": "Normal Zombie"
+        },
+        {
+          "value": 4,
+          "display_name": "Axe Zombie",
+          "script_name": "WoodCutZombie",
+          "description": "Axe Zombie"
+        },
+        {
+          "value": 5,
+          "display_name": "Tossing Zombie",
+          "script_name": "ThrowZombie",
+          "description": "Tossing Zombie"
+        },
+        {
+          "value": 6,
+          "display_name": "Self-Explode Zombie",
+          "script_name": "ExplosiveZombie",
+          "description": "Self-Explode Zombie"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 13,
+        "extra_or_conflicting_aliases": [
+          "UGCAI (deprecated alias of Regular)"
+        ],
+        "interpretation": "The official page shows four rows, while the old mirror has 13 members. Verify the live option list in the installed editor.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official page shows four rows, while the old mirror has 13 members. Verify the live option list in the installed editor.",
+      "notes": [
+        "The older mirror includes the deprecated UGCAI alias for Regular and additional names not displayed in the current official table. Current-editor status of other old names is unknown."
+      ]
+    },
+    {
+      "rough_label": "Object Texture",
+      "canonical_identifier": "TextureType",
+      "display_label": "Object Texture",
+      "module": "Level Object",
+      "value_type": "Texture ID",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "SceneEdit_Cube_Texture_Bricks",
+          "display_name": "Brick A",
+          "script_name": "BrickA",
+          "description": "Brick A"
+        },
+        {
+          "value": "SceneEdit_Cube_frame_Texture_01",
+          "display_name": "Tile A",
+          "script_name": "TileA",
+          "description": "Tile A"
+        },
+        {
+          "value": "SceneEdit_Cube_frame_Texture_02",
+          "display_name": "Tile B",
+          "script_name": "TileB",
+          "description": "Tile B"
+        },
+        {
+          "value": "SceneEdit_Cube_frame_Texture_03",
+          "display_name": "Tile C",
+          "script_name": "TileC",
+          "description": "Tile C"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Bamboo_01",
+          "display_name": "Bamboo A",
+          "script_name": "BambooA",
+          "description": "Bamboo A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Cement_01",
+          "display_name": "Cement A",
+          "script_name": "CementA",
+          "description": "Cement A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Container_01",
+          "display_name": "Container A",
+          "script_name": "ContainerA",
+          "description": "Container A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Grassland_01",
+          "display_name": "Lawn A",
+          "script_name": "LawnA",
+          "description": "Lawn A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Ice_01",
+          "display_name": "Ice A",
+          "script_name": "IceA",
+          "description": "Ice A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Magma_01",
+          "display_name": "Magma A",
+          "script_name": "MagmaA",
+          "description": "Magma A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Sand_01",
+          "display_name": "Sand A",
+          "script_name": "SandA",
+          "description": "Sand A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Snow_01",
+          "display_name": "Snow A",
+          "script_name": "SnowA",
+          "description": "Snow A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Wood_01",
+          "display_name": "Wood A",
+          "script_name": "WoodA",
+          "description": "Wood A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Stone_01",
+          "display_name": "Stone A",
+          "script_name": "StoneA",
+          "description": "Stone A"
+        },
+        {
+          "value": "SceneEdit_Cube_Texture_Grassland_02",
+          "display_name": "Lawn B",
+          "script_name": "LawnB",
+          "description": "Lawn B"
+        }
+      ],
+      "official_option_count": 15,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 35,
+        "extra_or_conflicting_aliases": [
+          "Brick (deprecated alias noted in old mirror)",
+          "Block (deprecated alias noted in old mirror)",
+          "TableCloth (deprecated alias noted in old mirror)",
+          "TableCover (deprecated alias noted in old mirror)",
+          "Bamboo (deprecated alias noted in old mirror)",
+          "Cement (deprecated alias noted in old mirror)",
+          "Container (deprecated alias noted in old mirror)",
+          "Grassland (deprecated alias noted in old mirror)",
+          "Ice (deprecated alias noted in old mirror)",
+          "Magma (deprecated alias noted in old mirror)",
+          "Sand (deprecated alias noted in old mirror)",
+          "Snow (deprecated alias noted in old mirror)",
+          "Wood (deprecated alias noted in old mirror)",
+          "Stone (deprecated alias noted in old mirror)",
+          "PlayGround (deprecated alias noted in old mirror)",
+          "Wall (deprecated alias noted in old mirror)",
+          "BrickWall (deprecated alias noted in old mirror)"
+        ],
+        "interpretation": "The official reference visibly lists 15 rows; the old mirror has 35 entries including deprecated aliases and other older names. Do not equate an old-only value with current support or definite removal.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official reference visibly lists 15 rows; the old mirror has 35 entries including deprecated aliases and other older names. Do not equate an old-only value with current support or definite removal.",
+      "notes": [
+        "The older mirror marks aliases such as Brick→BrickA, Block→TileA and Grassland→LawnA as deprecated; its additional names still need the installed-editor check."
+      ]
+    },
+    {
+      "rough_label": "Font Type",
+      "canonical_identifier": "FontType",
+      "display_label": "Font Type",
+      "module": "STD Library",
+      "value_type": "String",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "FONT_FF_CN_T",
+          "display_name": "FZLanTingHei",
+          "script_name": "FZLanTingHei",
+          "description": "FZLanTingHei"
+        },
+        {
+          "value": "FONT_SIMPBDO",
+          "display_name": "SimplifiedArabic",
+          "script_name": "SimplifiedArabic",
+          "description": "SimplifiedArabic"
+        },
+        {
+          "value": "FONT_NOTOSANS",
+          "display_name": "NotoNastaliqUrdu",
+          "script_name": "NotoNastaliqUrdu",
+          "description": "NotoNastaliqUrdu"
+        },
+        {
+          "value": "UIFONT_LATIN_BOLD",
+          "display_name": "GFFLatin",
+          "script_name": "GFFLatin",
+          "description": "GFFLatin"
+        },
+        {
+          "value": "UIFONT_LATIN",
+          "display_name": "AgencyFB",
+          "script_name": "AgencyFB",
+          "description": "AgencyFB"
+        },
+        {
+          "value": "FONT_SUPERMARKET",
+          "display_name": "Supermarket",
+          "script_name": "Supermarket",
+          "description": "Supermarket"
+        }
+      ],
+      "official_option_count": 6,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 7,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
+      "notes": [
+        "The old mirror includes HindSiliguri (FONT_HINDSILIGURI), which is not displayed in the current official table. Support in the current installed version is unknown."
+      ]
+    },
+    {
+      "rough_label": "SkyboxType",
+      "canonical_identifier": "SkyboxType",
+      "display_label": "Skybox Type",
+      "module": "Scene",
+      "value_type": "String",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": "UGC_SKYENV_DAY",
+          "display_name": "Daytime",
+          "script_name": "Day",
+          "description": "Daytime"
+        },
+        {
+          "value": "UGC_SKYENV_NIGHT",
+          "display_name": "Night",
+          "script_name": "Night",
+          "description": "Night"
+        },
+        {
+          "value": "UGC_SKYENV_EVE",
+          "display_name": "Dusk",
+          "script_name": "Dusk",
+          "description": "Dusk"
+        },
+        {
+          "value": "UGC_SKYENV_CITY",
+          "display_name": "City View",
+          "script_name": "City",
+          "description": "City View"
+        },
+        {
+          "value": "UGC_SKYENV_COLORFULSKY",
+          "display_name": "Colorful Sky",
+          "script_name": "Colorful",
+          "description": "Colorful Sky"
+        },
+        {
+          "value": "UGC_SKYENV_SNOW",
+          "display_name": "Frost Galaxy",
+          "script_name": "FrostGalaxy",
+          "description": "Frost Moon"
+        }
+      ],
+      "official_option_count": 6,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 8,
+        "extra_or_conflicting_aliases": [
+          "CityBuilding (deprecated alias of City)",
+          "Snow (deprecated alias of FrostGalaxy)"
+        ],
+        "interpretation": "Six current official rows are cross-referenced with the curated asset reference. The old mirror adds two deprecated aliases.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "Six current official rows are cross-referenced with the curated asset reference. The old mirror adds two deprecated aliases.",
+      "notes": [
+        "The old mirror marks CityBuilding as an alias of City and Snow as an alias of FrostGalaxy; both are deprecated in that snapshot. Asset package compatibility is separate."
+      ]
+    },
+    {
+      "rough_label": "Render Quality Type",
+      "canonical_identifier": "RenderQualityType",
+      "display_label": "Render Quality Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "",
+          "script_name": "Low",
+          "description": ""
+        },
+        {
+          "value": 1,
+          "display_name": "",
+          "script_name": "Medium",
+          "description": ""
+        },
+        {
+          "value": 2,
+          "display_name": "",
+          "script_name": "High",
+          "description": ""
+        },
+        {
+          "value": 3,
+          "display_name": "",
+          "script_name": "Ultra",
+          "description": ""
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 0,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "Four official rows are listed. The Get Render Quality API is labelled Client Side and Both Mobile and PC; this enum is absent from the old mirror.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "Four official rows are listed. The Get Render Quality API is labelled Client Side and Both Mobile and PC; this enum is absent from the old mirror.",
+      "notes": [
+        "Current official Get Render Quality page says Client Side and Both Mobile and PC. Actual UI dropdown placement and runtime behavior remain separate verification tasks."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 25,
-    "official_option_rows": 109,
-    "labels_with_mirror_alias_or_spelling_caveat": 19,
+    "rough_labels_crosschecked": 33,
+    "official_option_rows": 162,
+    "labels_with_mirror_alias_or_spelling_caveat": 22,
     "runtime_tested": 0,
     "mobile_parity_tested": 0
   },
