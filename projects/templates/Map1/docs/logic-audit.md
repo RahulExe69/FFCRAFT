@@ -1,52 +1,45 @@
-# Map1 logic audit tracker
+# Map1 logic audit
 
-## Status
+**Status:** Serialized graph decoded and statically audited. Craftland import/runtime verification remains pending. The original export in this directory is reference-only and has not been modified.
 
-**Partial / static inspection only.** This is not yet a line-by-line reconstruction of the serialized block graph.
+## Confirmed graph structure
 
-## Known anchors
+The main graph is `GR_617ac097-7cff-44c2-894e-51668b4233d9` in `ProjectData_slot_1.bytes`.
 
-| Name | Initial interpretation | Confidence |
-|---|---|---|
-| `GameLoop` | Likely central gameplay controller/logic group | Inferred from name |
-| `TilesList` | Likely collection of tile objects | Inferred from name |
-| `ColourList` | Likely collection of colours or tile colour values | Inferred from name |
-| `TargetColour` | Likely current target colour state | Inferred from name and HUD |
-| `PickedColour` | Likely selected colour state | Inferred from name |
-| `ColorHUD` | Likely UI object or UI-related logic | Inferred from name |
-| `CurrentTile` | Likely currently selected/processed tile | Inferred from name |
-| `LuckyTile` | Likely safe/winning tile or related state | Inferred from name |
-| `Loser` | Likely failure/elimination handling | Inferred from name |
-| `CheckedObject` | Unknown without graph connections | Unknown |
+| Script group | Confirmed behaviour from decoded node graph |
+|---|---|
+| `GameLoop` | Selects a random `TargetColour`, waits 1 second, contains `NotifyShowTips("FIND THE COLOUR", ..., 5000 ms)`, prepares/colours tiles, updates the persistent `ColorHUD` background from `TargetColour`, creates a five-second decision countdown, and calls `Loser`. |
+| `OnMatchStart` | Calls `Variables`, gathers objects tagged `Tile`, creates `PhaseCountDownHud`, sets `DurationTimeS = 16`, waits 15 seconds, removes the start/spawn box and enters `GameLoop`. |
+| `Loser` | Resolves the tile phase, waits 5 seconds and calls `GameLoop` again. |
+| `OnPlayerAdd` | Performs camera/wait setup, triggers the authored welcome plot/dialogue, waits, and creates the custom HUD. Preserve the creator-authored dialogue. |
 
-## Flow to reconstruct
+## HUD duplicate
 
-1. Initialization: identify the actual event and all list/object setup.
-2. Target selection: trace colour choice, randomness/rules, and state assignment.
-3. HUD update: trace every writer of the target text and any duplicate UI references.
-4. Player selection: trace input/trigger and the assignment to `PickedColour` or `CurrentTile`.
-5. Resolution: trace comparison conditions, safe/losing outcome, tile visibility/destruction, and player consequence.
-6. Round lifecycle: trace wait/timer logic, next round, reset and end conditions.
-7. Intro: trace its start event and cadence, while preserving the creator's intended dialogue.
-8. Multiplayer/state: determine which logic is authoritative, shared, or player-local where applicable.
+The persistent custom HUD contains `FIND THE COLOUR`. Separately, `GameLoop` sends the same text through `NotifyShowTips` for 5,000 ms (`FC_eceaa884-6d9c-4126-8635-c8102e65b6f1`). This matches the screenshot's bright banner plus dim, slightly offset duplicate.
 
-## Required audit format
+**Root-cause confidence: high.** Proposed source-graph fix: disable the redundant tip node and keep the persistent `ColorHUD` label and its colour-setting logic.
 
-For each decoded script/block group, record:
-- Script/object name and owning scope
-- Entry event(s)
-- Ordered blocks/nodes and their connections
-- Inputs, output/state changes, and object references
-- Branch conditions and loops
-- Wait/timer behaviour
-- Cross-script/event dependencies
-- Evidence source and confidence
-- Edge cases and proposed tests
+## Timer stuck at 00:00
 
-## Not yet established
+The one-shot `PhaseCountDownHud` is started in `OnMatchStart` with a 16-second duration, while that handler waits 15 seconds before the first gameplay loop. The repeating colour loop is approximately 11 seconds: 1-second pre-round wait + 5-second choice period + 5-second resolution wait. The original phase HUD is not recreated/reset by that recurring path.
 
-No exact block sequence, event wiring, branch condition, or round-reset implementation has been proven from the current static inspection. Do not generate a replacement logic graph or edit the export based only on the names above.
+**Root-cause confidence: high for the one-shot/misaligned lifecycle.** Actual behaviour of a newly created phase HUD and its duration property still needs testing in the installed Mobile editor.
 
-## Next action
+## Working-copy patch
 
-Identify and decode the binary serialization and block graph. If no reliable decoder/schema is available, document experiments with copies and seek an editor-supported export/inspection method rather than guessing the format.
+A separate reproducible patch is documented in [ColourBridge HUD/timer fix](../../maps/colourbridge-fixed/README.md). It disables the duplicate tip and original startup timer nodes, creates an 11-second phase timer per loop, stores its entity, and removes it before the next loop. It preserves the original template and welcome dialogue.
+
+## Serialization/export caveat
+
+A typed decoder for the custom compressed graph container now exists in the working-copy folder, and its no-op round trip matched the original decompressed graph byte-for-byte. The patch modifies `ProjectData_slot_1.bytes` only. `UserLevelData_1.bytes` and `ProjectData_slot_1.meta` remain copied from the original; their regeneration process is not yet established. The patch is therefore a **source-graph patch**, not a fully editor-generated or runtime-verified export.
+
+Rebuild the working export from the repo root with `python projects/maps/colourbridge-fixed/build_fixed_export.py`. Then import/open and save/re-export through Craftland Mobile and test several cycles. Do not edit this pristine template or claim a successful in-game fix until that test is completed.
+
+## Test status
+
+- [x] Decode complete source graph.
+- [x] Verify no-op graph round-trip against the original decoded bytes.
+- [x] Build and statically validate a separate patched graph.
+- [ ] Import/save/re-export in Craftland Mobile.
+- [ ] Confirm one target label is visible.
+- [ ] Confirm the timer counts down and resets for at least three cycles.
