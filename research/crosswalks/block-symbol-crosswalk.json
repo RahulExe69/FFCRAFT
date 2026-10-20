@@ -11,7 +11,7 @@
     "repository": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0",
     "branch": "main",
     "version": "1.5.0",
-    "derived_catalog": "research/pc-library-api-reference.json",
+    "derived_catalog": "research/pc-studio/pc-library-api-reference.json",
     "source_type": "third-party extension mirror"
   },
   "counts": {

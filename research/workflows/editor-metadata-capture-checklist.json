@@ -32,9 +32,9 @@
       ],
       "evidence_status": "not-yet-captured; a community export workflow was discovered, but no current raw MCP responses are available here",
       "security": "Do not expose localhost endpoint or tokens publicly; export responses instead.",
-      "methodology_reference": "docs/28-live-mcp-repository-audit.md",
+      "methodology_reference": "docs/07-research-audits/28-live-mcp-repository-audit.md",
       "status": "not-yet-captured",
-      "audit_note": "A public community repo claims a live MCP export, but the inspected commit has no generated catalog pages or raw responses; see docs/28-live-mcp-repository-audit.md.",
+      "audit_note": "A public community repo claims a live MCP export, but the inspected commit has no generated catalog pages or raw responses; see docs/07-research-audits/28-live-mcp-repository-audit.md.",
       "reference": "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL"
     },
     {
@@ -64,8 +64,8 @@
         "Global/Player/Team/Object/HUD differences"
       ],
       "evidence_status": "not-yet-captured",
-      "methodology_reference": "docs/29-official-mobile-scripting-source-map.md",
-      "audit_note": "Official topic pages mapped in docs/29-official-mobile-scripting-source-map.md; this does not replace current editor screenshots or complete dropdown captures.",
+      "methodology_reference": "docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md",
+      "audit_note": "Official topic pages mapped in docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md; this does not replace current editor screenshots or complete dropdown captures.",
       "reference": "https://ffcraftland.garena.com/en/tutorial/cl/4-101"
     },
     {
@@ -96,7 +96,7 @@
     "Do not mark compiled/playtested without actual test output."
   ],
   "related_audits": [
-    "docs/28-live-mcp-repository-audit.md",
-    "docs/29-official-mobile-scripting-source-map.md"
+    "docs/07-research-audits/28-live-mcp-repository-audit.md",
+    "docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md"
   ]
 }

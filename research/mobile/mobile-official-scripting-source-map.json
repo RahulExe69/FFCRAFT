@@ -136,11 +136,11 @@
     }
   ],
   "existing_related_artifacts": [
-    "research/user-observed-block-inventory.json",
-    "research/block-symbol-crosswalk.json",
-    "research/mobile-block-recipe-index.json",
-    "docs/25-public-tutorial-corpus-audit.md",
-    "docs/27-current-editor-capture-playbook.md"
+    "research/mobile/user-observed-block-inventory.json",
+    "research/crosswalks/block-symbol-crosswalk.json",
+    "research/mobile/mobile-block-recipe-index.json",
+    "docs/07-research-audits/25-public-tutorial-corpus-audit.md",
+    "docs/06-troubleshooting/27-current-editor-capture-playbook.md"
   ],
   "inventory_policy": [
     "Record script context for each block; search results can include unavailable items.",

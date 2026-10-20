@@ -43,7 +43,7 @@
       "id": "blocks",
       "summary": "Visual block scripts respond to events and call available blocks/APIs; availability depends on script type/context.",
       "confidence": "documented",
-      "details": "docs/02-block-scripting.md",
+      "details": "docs/02-mobile-and-blocks/02-block-scripting.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/cl/4-101"
       ]
@@ -52,7 +52,7 @@
       "id": "code-files",
       "summary": "Official PC manual describes .fcg code scripts, .fcc libraries, graph/function/event structure, imports, and static scripts.",
       "confidence": "documented",
-      "details": "docs/03-code-scripting.md",
+      "details": "docs/03-pc-studio/03-code-scripting.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
       ]
@@ -61,7 +61,7 @@
       "id": "server-client",
       "summary": "Server and client scripts have distinct interfaces and communicate through events rather than direct calls.",
       "confidence": "documented",
-      "details": "docs/04-events-and-runtime.md",
+      "details": "docs/04-gameplay-systems/04-events-and-runtime.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9"
       ]
@@ -70,7 +70,7 @@
       "id": "join-serial",
       "summary": "Use one authoritative match-scoped counter in the server-side On Player Join handler and store the serial on the intended player; define reconnect semantics.",
       "confidence": "recommended-pattern-test-needed",
-      "details": "docs/05-player-roster-join-serials.md",
+      "details": "docs/04-gameplay-systems/05-player-roster-join-serials.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/event-11-14",
         "https://ffcraftland.garena.com/en/docs/type-11/"
@@ -80,7 +80,7 @@
       "id": "configured-storage",
       "summary": "Official Data Storage guide describes normal player storage, ranking storage, statistics storage, operation limits, row/table caps, and archival use.",
       "confidence": "documented-but-version-sensitive",
-      "details": "docs/06-data-storage.md",
+      "details": "docs/04-gameplay-systems/06-data-storage.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/fe/1-35"
       ]
@@ -89,7 +89,7 @@
       "id": "pc-data-store-apis",
       "summary": "Newer Data Store API reference pages for WriteToDataStoreV2, ReadFromDataStoreSteady, and ReadFromDataStoreByColumn are labeled Server Side and Only PC; legacy WriteToDataStore is obsolete.",
       "confidence": "documented-version-sensitive",
-      "details": "docs/06-data-storage.md",
+      "details": "docs/04-gameplay-systems/06-data-storage.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/api-31-1017",
         "https://ffcraftland.garena.com/en/docs/api-31-1006",
@@ -101,7 +101,7 @@
       "id": "audio",
       "summary": "Timeline audio tracks, sound entities, and runtime sound APIs are different workflows; the track guide currently says custom audio import is not supported there and warns about overlapping keyframes.",
       "confidence": "documented-but-version-sensitive",
-      "details": "docs/07-gameplay-ui-audio.md",
+      "details": "docs/04-gameplay-systems/07-gameplay-ui-audio.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/cl/4-89",
         "https://ffcraftland.garena.com/en/tutorial/cl/3-44",
@@ -112,7 +112,7 @@
       "id": "pc-library-catalog",
       "summary": "A public older mirror of the Craftland Studio VS Code extension contains 42 .fcc libraries; a derivative parser index exposes enum/member/API/event/component candidates for discovery.",
       "confidence": "secondary-source-discovery-only",
-      "details": "docs/20-pc-library-catalog.md",
+      "details": "docs/03-pc-studio/20-pc-library-catalog.md",
       "sources": [
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
         "https://marketplace.visualstudio.com/items?itemName=craftLandstudio.ffugclanguage"
@@ -122,7 +122,7 @@
       "id": "enum-dropdown-crosswalk",
       "summary": "The 65 dropdown/type labels in Rough.txt have a structured crosswalk to mirrored library candidates and current official type references; 5 remain unresolved or legacy-review items.",
       "confidence": "mixed-candidate-and-official-cross-check",
-      "details": "docs/21-enum-dropdown-reconstruction.md",
+      "details": "docs/03-pc-studio/21-enum-dropdown-reconstruction.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/enum/",
         "https://ffcraftland.garena.com/en/docs/type",
@@ -133,7 +133,7 @@
       "id": "current-official-enum-supplement",
       "summary": "Current official docs expose enum/type entries absent from the older library mirror, including RenderQualityType and dynamic skin/texture ID selector families.",
       "confidence": "documented-but-context-sensitive",
-      "details": "docs/22-current-official-enum-supplement.md",
+      "details": "docs/03-pc-studio/22-current-official-enum-supplement.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/enum/",
         "https://ffcraftland.garena.com/en/docs/module-26",
@@ -144,7 +144,7 @@
       "id": "pc-api-details",
       "summary": "All 42 public-mirror .fcc libraries were parsed for 681 function declarations, 259 events, and 470 component declarations with 3,219 candidate properties; metadata is secondary-source discovery only and must be checked against current Studio.",
       "confidence": "secondary-source-derived-candidate-catalog",
-      "details": "docs/23-pc-api-reference-details.md",
+      "details": "docs/03-pc-studio/23-pc-api-reference-details.md",
       "sources": [
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
@@ -155,7 +155,7 @@
       "id": "block-symbol-crosswalk",
       "summary": "A normalized comparison of 443 extracted Rough.txt entries found 306 exact label/title matches to the old PC mirror, 113 approximate candidates, 21 unmatched lines, and 3 likely prose notes.",
       "confidence": "derived-comparison; exact labels are not current compatibility proof",
-      "details": "docs/24-block-symbol-crosswalk.md",
+      "details": "docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md",
       "sources": [
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
         "https://ffcraftland.garena.com/en/patch-notes/"
@@ -165,7 +165,7 @@
       "id": "public-tutorial-corpus",
       "summary": "A public multilingual translated tutorial repo contains 160 Markdown manuals; its Mobile Block Script tutorial explicitly demonstrates Get Property (Player→Rig→Head), Set Property (Skeleton Scale), and Vector3 scale values, while its PC manuals explain .fcg/.fcc, EditorGenLib.fcc, server/client scripts, type/socket concepts and compile workflow.",
       "confidence": "secondary-manual; source is older and repo has no license metadata; useful for examples, not current API authority",
-      "details": "docs/25-public-tutorial-corpus-audit.md",
+      "details": "docs/07-research-audits/25-public-tutorial-corpus-audit.md",
       "sources": [
         "https://github.com/FF-OGC/Craftland-Tutorial",
         "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Features/Block%20Script.md",
@@ -176,7 +176,7 @@
       "id": "mobile-block-recipes",
       "summary": "The public re-editable Game Mechanics template tutorial includes 13 reusable mechanism recipes, covering healing/damage zones, zombie spawning, traps, transfer, text, outfit changes, elevators, doors, global/player state, HUD and respawn behavior.",
       "confidence": "secondary-manual recipe summaries; not runtime tested",
-      "details": "research/mobile-block-recipe-index.json",
+      "details": "research/mobile/mobile-block-recipe-index.json",
       "sources": [
         "https://github.com/FF-OGC/Craftland-Tutorial/blob/main/Craftland%20Mobile/English/Modes%20and%20Template/Game%20Mechanic.md"
       ]
@@ -185,7 +185,7 @@
       "id": "official-crosswalk-refinements",
       "summary": "Targeted current official pages resolve or normalize several Rough.txt names: Get Child By Index, Get Parent, Get Type Name, Filter Level Objects, Get global, This Entity, Wait for Millisecond and Global/portal events; other labels remain explicitly unresolved.",
       "confidence": "official reference candidates; UI/API scope differences retained in per-entry notes",
-      "details": "docs/24-block-symbol-crosswalk.md",
+      "details": "docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/api-1-26",
         "https://ffcraftland.garena.com/en/docs/api-1-540/",
@@ -199,7 +199,7 @@
       "id": "enum-option-set-analysis",
       "summary": "The 144 enum definitions in the public mirror include 42 groups of different type names sharing the exact same ordered member list; browsing can reuse one list while preserving each type's distinct identity.",
       "confidence": "exact-set-compare-on-third-party-mirror; not an API equivalence guarantee",
-      "details": "docs/26-enum-option-set-analysis.md",
+      "details": "docs/03-pc-studio/26-enum-option-set-analysis.md",
       "sources": [
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
       ]
@@ -208,7 +208,7 @@
       "id": "current-editor-capture",
       "summary": "Official PC script manual points to the installed library path Craftland Studio/resources/LocalData/Utilities/UGCLanguage/release and explains EditorGenLib.fcc; official Studio 1.19.0 notes report an in-editor MCP server for Blocks, Scripts, Scenes, UI, Animation Controllers and more. These editor-local sources are the best remaining route to authoritative current lists.",
       "confidence": "official documentation; local data has not yet been inspected in this chat",
-      "details": "docs/27-current-editor-capture-playbook.md",
+      "details": "docs/06-troubleshooting/27-current-editor-capture-playbook.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
         "https://ffcraftland.garena.com/en/patch-notes/"
@@ -218,7 +218,7 @@
       "id": "mcp-public-methodology-lead",
       "summary": "A community repository advertises a live Studio MCP catalog generator and self-reported inventory totals, but its inspected public commit does not publish the generated block/API records.",
       "confidence": "community-methodology-lead",
-      "details": "docs/28-live-mcp-repository-audit.md",
+      "details": "docs/07-research-audits/28-live-mcp-repository-audit.md",
       "sources": [
         "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
         "https://ffcraftland.garena.com/en/patch-notes/"
@@ -228,7 +228,7 @@
       "id": "mobile-official-topic-map",
       "summary": "Garena documents Mobile block-script context, script types, classification/flow control, properties, data/logic and server/client concepts in a sequence of official pages; this guides verification but is not a complete dropdown dump.",
       "confidence": "official-documentation",
-      "details": "docs/29-official-mobile-scripting-source-map.md",
+      "details": "docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
         "https://ffcraftland.garena.com/en/tutorial/cl/4-102/",
@@ -243,7 +243,7 @@
       "id": "phase-round-not-enum",
       "summary": "Official Workflow documentation defines Phase and Round as entity/component types with indices and separate start/end events, not as an enum with a fixed member list.",
       "confidence": "official-documentation",
-      "details": "docs/21-enum-dropdown-reconstruction.md",
+      "details": "docs/03-pc-studio/21-enum-dropdown-reconstruction.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/fe/1-14/",
         "https://ffcraftland.garena.com/en/docs/type-25/",
@@ -256,7 +256,7 @@
       "id": "loot-soccer-type-likely-typo",
       "summary": "The rough label `Loot Scorer Type` likely refers to official `LootSoccerType` / Loot Soccer Type, whose current official reference lists values 1040, 1038 and 1039.",
       "confidence": "official-doc-match-likely-transcription-variation",
-      "details": "docs/21-enum-dropdown-reconstruction.md",
+      "details": "docs/03-pc-studio/21-enum-dropdown-reconstruction.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/enum/"
       ]
@@ -265,7 +265,7 @@
       "id": "official-enum-option-snapshot",
       "summary": "A targeted official-doc cross-check records 367 visible option rows across 52 Rough.txt enum labels and flags differences from the older v1.5.0 mirror, including major VFX/Sound/Icon/Texture/Equipment/Player Pose/UI list-count mismatches; it remains partial, with no current-editor or Mobile parity/runtime testing inferred.",
       "confidence": "official-documentation-with-secondary-mirror-comparison",
-      "details": "docs/30-current-official-dropdown-option-crosschecks.md",
+      "details": "docs/03-pc-studio/30-current-official-dropdown-option-crosschecks.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/enum/",
         "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release"
@@ -275,7 +275,7 @@
       "id": "public-mcp-catalog-lead",
       "summary": "A community repo advertises a large live Craftland Studio MCP export, but its inspected public commit exposes only generator scripts and variables notes, not the generated per-item catalog or raw MCP responses.",
       "confidence": "community-claim-audited",
-      "details": "docs/28-live-mcp-repository-audit.md",
+      "details": "docs/07-research-audits/28-live-mcp-repository-audit.md",
       "sources": [
         "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL"
       ]
@@ -284,7 +284,7 @@
       "id": "mobile-scripting-topic-map",
       "summary": "Official Mobile docs cover block scripting, script/event types, flow control, variables/properties, data/logic and server/client scripts; they do not by themselves provide a complete machine-readable live block/dropdown catalog.",
       "confidence": "official-docs-mapped",
-      "details": "docs/29-official-mobile-scripting-source-map.md",
+      "details": "docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md",
       "sources": [
         "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
         "https://ffcraftland.garena.com/en/tutorial/cl/4-103/",
@@ -298,7 +298,7 @@
       "id": "crosswalk-former-unresolved-group",
       "summary": "A targeted follow-up mapped ten previously unresolved Rough.txt labels to current official Items, AI and Property Formula API/event references; exact editor sockets and runtime behavior remain unverified.",
       "confidence": "official-doc-mapped-not-runtime-tested",
-      "details": "docs/24-block-symbol-crosswalk.md",
+      "details": "docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md",
       "sources": [
         "https://ffcraftland.garena.com/en/docs/module-15",
         "https://ffcraftland.garena.com/en/docs/module-9",
@@ -312,62 +312,62 @@
       "id": "rough-block-review-queue",
       "summary": "After targeted official reference additions, 111 rough block lines remain as fuzzy candidates, old-mirror misses or a likely editor-native node; exact current editor sockets and runtime status remain separate verification tasks.",
       "confidence": "derived-review-prioritization-not-runtime-tested",
-      "details": "docs/31-rough-block-review-queue.md",
+      "details": "docs/02-mobile-and-blocks/31-rough-block-review-queue.md",
       "sources": [
-        "research/block-symbol-crosswalk.json",
-        "research/rough-block-review-queue.json",
-        "docs/27-current-editor-capture-playbook.md"
+        "research/crosswalks/block-symbol-crosswalk.json",
+        "research/crosswalks/rough-block-review-queue.json",
+        "docs/06-troubleshooting/27-current-editor-capture-playbook.md"
       ]
     }
   ],
   "docs": {
-    "docs/00-research-method.md": "Source hierarchy, confidence levels, scope, research caveats and follow-up plan",
-    "docs/01-platform-and-fundamentals.md": "Mobile vs PC, concepts, scopes and workflow",
-    "docs/02-block-scripting.md": "Block editor, event wiring, templates and common failures",
-    "docs/03-code-scripting.md": "FCG/FCC structure, server/client rules, official FFUGCLanguage VS Code extension, symbol inspection, compilation and verification workflow",
-    "docs/04-events-and-runtime.md": "Event families, runtime authority, lifecycle and event bridge patterns",
-    "docs/05-player-roster-join-serials.md": "Monotonic join serial design, identity distinctions and test matrix",
-    "docs/06-data-storage.md": "Configured storage, documented quotas and newer PC-only Data Store API caveats",
-    "docs/07-gameplay-ui-audio.md": "Official templates, trigger patterns, HUD, assets and audio",
-    "docs/08-debugging-performance-versions.md": "1.19.0 changelog snapshot, diagnostics and optimization checklist",
-    "docs/09-recipes.md": "Design-level reusable game logic and playtest matrix",
-    "docs/10-api-reference-map.md": "API taxonomy, side/platform constraints, obsolete handling and current API discovery",
-    "docs/11-community-resources.md": "GitHub/community leads and verification procedure",
-    "docs/SOURCES.md": "Source catalogue",
-    "docs/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified.",
-    "docs/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
-    "docs/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states.",
-    "docs/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria",
-    "docs/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats",
-    "docs/17-curated-asset-reference.md": "Six official SkyboxType identifiers cross-checked against Garena docs; community package links remain untested",
-    "docs/18-fe-resources-beta-audit.md": "Audit of FE_RESOURCES_BETA package collection: skyboxes, dynamic weather, voting system, provenance and testing caveats",
-    "research/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
-    "docs/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates",
-    "docs/20-pc-library-catalog.md": "Recovered 42-file public extension-library mirror catalog, parser counts, source/version/license caveats and links",
-    "docs/21-enum-dropdown-reconstruction.md": "Crosswalk of 65 observed dropdown/type labels to PC-mirror candidates and official references, with dynamic ID and legacy/deprecated caveats",
-    "docs/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
-    "research/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
-    "research/enum-dropdown-crosswalk.json": "65-label mapping: 28 mirror-only candidates, 24 official+mirror matches, four dynamic ID types, three obsolete concepts, one generated UI enum, one likely spelling variation, one Phase/Round non-enum classification, and one match with differing historical type identifiers",
-    "research/current-official-enum-supplement.json": "Current official enum option/type supplement including generated UI type and explicit caveats for old mirror entries",
-    "docs/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
-    "research/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
-    "docs/24-block-symbol-crosswalk.md": "Line-by-line crosswalk of 443 Rough.txt inventory entries against recovered PC symbols, with exact/fuzzy/unmatched statuses",
-    "research/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings",
-    "docs/25-public-tutorial-corpus-audit.md": "Audit of public multilingual Craftland manuals, mobile visual block examples, PC code/element-script manuals, EditorGenLib and 13 gameplay recipe areas",
-    "research/public-tutorial-corpus-index.json": "Manifest of 160 Markdown files in a public translated tutorial corpus with source SHAs, paths, selected headings and topic summaries",
-    "research/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual",
-    "docs/26-enum-option-set-analysis.md": "Documents 42 exact duplicated enum option sets in the old mirror, useful for reducing repeated dropdown research without merging types",
-    "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types",
-    "docs/27-current-editor-capture-playbook.md": "Practical source capture playbook for current installed PC .fcc libraries, project EditorGenLib.fcc, Studio MCP metadata and Mobile block/dropdown screenshots",
-    "research/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots",
-    "docs/28-live-mcp-repository-audit.md": "Audit of a public community repo claiming live Craftland Studio MCP export; generated catalog pages were absent from the inspected public commit",
-    "research/live-mcp-public-resource-audit.json": "Machine-readable provenance and limitation audit for the public MCP-derived KB lead",
-    "docs/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
-    "research/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
-    "docs/30-current-official-dropdown-option-crosschecks.md": "Current official-reference visible option rows for 52 rough enum labels (367 rows), including icon/VFX/sound, physics, pose/state, equipment, inventory, seating, outfit, UI and status sets, with old-mirror differences flagged",
-    "research/official-dropdown-option-crosschecks.json": "Structured visible option rows for 52 labels (367 rows), with old-mirror counts, alias notes, member-count mismatches and no runtime/Mobile parity claims",
-    "docs/31-rough-block-review-queue.md": "Prioritized follow-up for 111 unresolved or approximate Rough.txt lines, preserving source line, candidate signatures and review instructions",
-    "research/rough-block-review-queue.json": "Machine-readable queue of 111 fuzzy/missing/editor-native lines with up to three nearest candidate declarations and line-specific review focus"
+    "docs/01-foundations/00-research-method.md": "Source hierarchy, confidence levels, scope, research caveats and follow-up plan",
+    "docs/01-foundations/01-platform-and-fundamentals.md": "Mobile vs PC, concepts, scopes and workflow",
+    "docs/02-mobile-and-blocks/02-block-scripting.md": "Block editor, event wiring, templates and common failures",
+    "docs/03-pc-studio/03-code-scripting.md": "FCG/FCC structure, server/client rules, official FFUGCLanguage VS Code extension, symbol inspection, compilation and verification workflow",
+    "docs/04-gameplay-systems/04-events-and-runtime.md": "Event families, runtime authority, lifecycle and event bridge patterns",
+    "docs/04-gameplay-systems/05-player-roster-join-serials.md": "Monotonic join serial design, identity distinctions and test matrix",
+    "docs/04-gameplay-systems/06-data-storage.md": "Configured storage, documented quotas and newer PC-only Data Store API caveats",
+    "docs/04-gameplay-systems/07-gameplay-ui-audio.md": "Official templates, trigger patterns, HUD, assets and audio",
+    "docs/06-troubleshooting/08-debugging-performance-versions.md": "1.19.0 changelog snapshot, diagnostics and optimization checklist",
+    "docs/05-recipes/09-recipes.md": "Design-level reusable game logic and playtest matrix",
+    "docs/03-pc-studio/10-api-reference-map.md": "API taxonomy, side/platform constraints, obsolete handling and current API discovery",
+    "docs/07-research-audits/11-community-resources.md": "GitHub/community leads and verification procedure",
+    "docs/08-sources/SOURCES.md": "Source catalogue",
+    "docs/02-mobile-and-blocks/12-user-observed-block-inventory.md": "User-authored Rough.txt normalized into a searchable block/component candidate catalogue; explicitly unverified.",
+    "docs/02-mobile-and-blocks/13-official-cross-checks.md": "First official cross-check pass: script context and typed slots, reference taxonomy, obsolete enum warnings, and unresolved rough-list discrepancies.",
+    "docs/05-recipes/14-ai-craftland-coding-workflow.md": "Operating procedure for converting natural-language game ideas into verified Craftland block or code implementations, with explicit evidence states.",
+    "docs/01-foundations/15-viability-decision.md": "Go/no-go assessment, mobile vs PC capabilities, install/evidence requirements, and stop/go criteria",
+    "docs/07-research-audits/16-community-resource-audit.md": "Audit of nexosstudio Craftland resources: asset ID leads, project template folders, freshness, data quality and reuse caveats",
+    "docs/07-research-audits/17-curated-asset-reference.md": "Six official SkyboxType identifiers cross-checked against Garena docs; community package links remain untested",
+    "docs/07-research-audits/18-fe-resources-beta-audit.md": "Audit of FE_RESOURCES_BETA package collection: skyboxes, dynamic weather, voting system, provenance and testing caveats",
+    "research/assets/curated-asset-reference.json": "Machine-readable subset of official skybox enum values with community package leads and separate verification states",
+    "docs/05-recipes/19-first-vertical-slice-join-serial.md": "First vertical slice with acceptance criteria, Mobile visual-block plan, PC code plan, official evidence and compile/playtest gates",
+    "docs/03-pc-studio/20-pc-library-catalog.md": "Recovered 42-file public extension-library mirror catalog, parser counts, source/version/license caveats and links",
+    "docs/03-pc-studio/21-enum-dropdown-reconstruction.md": "Crosswalk of 65 observed dropdown/type labels to PC-mirror candidates and official references, with dynamic ID and legacy/deprecated caveats",
+    "docs/03-pc-studio/22-current-official-enum-supplement.md": "Current official enum/type entries absent from older mirror and dynamic ID selectors",
+    "research/pc-studio/pc-library-symbol-catalog.json": "Machine-readable PC symbol index extracted from 42 .fcc library files in a third-party version-1.5.0 mirror",
+    "research/crosswalks/enum-dropdown-crosswalk.json": "65-label mapping: 28 mirror-only candidates, 24 official+mirror matches, four dynamic ID types, three obsolete concepts, one generated UI enum, one likely spelling variation, one Phase/Round non-enum classification, and one match with differing historical type identifiers",
+    "research/pc-studio/current-official-enum-supplement.json": "Current official enum option/type supplement including generated UI type and explicit caveats for old mirror entries",
+    "docs/03-pc-studio/23-pc-api-reference-details.md": "Detailed extraction coverage, parser caveats, and Studio version compatibility warning for PC functions/events/components",
+    "research/pc-studio/pc-library-api-reference.json": "Detailed function, event, component and property declarations parsed from all 42 public-mirror .fcc libraries",
+    "docs/02-mobile-and-blocks/24-block-symbol-crosswalk.md": "Line-by-line crosswalk of 443 Rough.txt inventory entries against recovered PC symbols, with exact/fuzzy/unmatched statuses",
+    "research/crosswalks/block-symbol-crosswalk.json": "Machine-readable Rough.txt-to-PC symbol candidate mapping; fuzzy results are leads, not verified mappings",
+    "docs/07-research-audits/25-public-tutorial-corpus-audit.md": "Audit of public multilingual Craftland manuals, mobile visual block examples, PC code/element-script manuals, EditorGenLib and 13 gameplay recipe areas",
+    "research/audits/public-tutorial-corpus-index.json": "Manifest of 160 Markdown files in a public translated tutorial corpus with source SHAs, paths, selected headings and topic summaries",
+    "research/mobile/mobile-block-recipe-index.json": "13 summarized Craftland Mobile mechanism recipes sourced from the public Game Mechanics template manual",
+    "docs/03-pc-studio/26-enum-option-set-analysis.md": "Documents 42 exact duplicated enum option sets in the old mirror, useful for reducing repeated dropdown research without merging types",
+    "research/pc-studio/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types",
+    "docs/06-troubleshooting/27-current-editor-capture-playbook.md": "Practical source capture playbook for current installed PC .fcc libraries, project EditorGenLib.fcc, Studio MCP metadata and Mobile block/dropdown screenshots",
+    "research/workflows/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots",
+    "docs/07-research-audits/28-live-mcp-repository-audit.md": "Audit of a public community repo claiming live Craftland Studio MCP export; generated catalog pages were absent from the inspected public commit",
+    "research/audits/live-mcp-public-resource-audit.json": "Machine-readable provenance and limitation audit for the public MCP-derived KB lead",
+    "docs/02-mobile-and-blocks/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
+    "research/mobile/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
+    "docs/03-pc-studio/30-current-official-dropdown-option-crosschecks.md": "Current official-reference visible option rows for 52 rough enum labels (367 rows), including icon/VFX/sound, physics, pose/state, equipment, inventory, seating, outfit, UI and status sets, with old-mirror differences flagged",
+    "research/pc-studio/official-dropdown-option-crosschecks.json": "Structured visible option rows for 52 labels (367 rows), with old-mirror counts, alias notes, member-count mismatches and no runtime/Mobile parity claims",
+    "docs/02-mobile-and-blocks/31-rough-block-review-queue.md": "Prioritized follow-up for 111 unresolved or approximate Rough.txt lines, preserving source line, candidate signatures and review instructions",
+    "research/crosswalks/rough-block-review-queue.json": "Machine-readable queue of 111 fuzzy/missing/editor-native lines with up to three nearest candidate declarations and line-specific review focus"
   },
   "sources": [
     {
@@ -568,7 +568,7 @@
       "tier": "B",
       "topic": "pc-detailed-reference",
       "title": "Detailed derived PC API/event/component reference from public mirror",
-      "url": "research/pc-library-api-reference.json"
+      "url": "research/pc-studio/pc-library-api-reference.json"
     },
     {
       "tier": "B",
@@ -679,7 +679,7 @@
       "tier": "B",
       "topic": "rough-block-review-queue",
       "title": "Derived current review queue for Rough.txt symbols",
-      "url": "https://github.com/RahulExe69/FFCRAFT/blob/main/research/rough-block-review-queue.json",
+      "url": "https://github.com/RahulExe69/FFCRAFT/blob/main/research/crosswalks/rough-block-review-queue.json",
       "checked_on": "2026-10-21",
       "caveat": "Derived from the existing crosswalk; prioritization is a review aid, not a support or absence claim."
     },
@@ -844,7 +844,7 @@
       "title": "Additional public Craftland script-sharing repository scan",
       "url": "https://github.com/harshdahiya9162-coder/FF-CRAFTLAND-SCRIPT",
       "checked_on": "2026-10-21",
-      "caveat": "Only a small upload/comment HTML page was present; its informal example is not verified and no complete script catalog was found. See docs/33-public-script-repository-audit.md."
+      "caveat": "Only a small upload/comment HTML page was present; its informal example is not verified and no complete script catalog was found. See docs/07-research-audits/33-public-script-repository-audit.md."
     },
     {
       "tier": "A",
@@ -884,8 +884,8 @@
     "original_url": "https://github.com/RahulExe69/FFCRAFT/blob/main/Rough.txt",
     "original_blob_sha": "66da776d0b775073f1dc21916ab6b7786dd6f353",
     "preserved_unchanged": true,
-    "normalized_markdown": "docs/12-user-observed-block-inventory.md",
-    "normalized_json": "research/user-observed-block-inventory.json",
+    "normalized_markdown": "docs/02-mobile-and-blocks/12-user-observed-block-inventory.md",
+    "normalized_json": "research/mobile/user-observed-block-inventory.json",
     "status": "draft, user-observed, not independently verified",
     "counts": {
       "sections": 35,
@@ -947,7 +947,7 @@
       "for_mobile_visual_blocks": "Use Mobile documentation and, where unclear, version-stamped editor screenshots or exported block snippets."
     },
     "next_milestone": "Complete one small end-to-end mechanic pilot in separate Mobile-block and Studio-PC-code forms where supported; then expand catalogues only to close demonstrated gaps.",
-    "source_doc": "docs/15-viability-decision.md"
+    "source_doc": "docs/01-foundations/15-viability-decision.md"
   },
   "tooling": {
     "official_vscode_extension": {
@@ -991,7 +991,7 @@
         "Tools/test.sh contains PowerShell rather than Bash syntax",
         "verify third-party asset provenance and license scope"
       ],
-      "audit_doc": "docs/16-community-resource-audit.md"
+      "audit_doc": "docs/07-research-audits/16-community-resource-audit.md"
     },
     {
       "name": "nexosstudio/FE_RESOURCES_BETA",
@@ -1016,7 +1016,7 @@
         "folder name Official_SkyBox is not independent proof of provenance",
         "CC0 repository declaration does not clear third-party game assets"
       ],
-      "audit_doc": "docs/18-fe-resources-beta-audit.md"
+      "audit_doc": "docs/07-research-audits/18-fe-resources-beta-audit.md"
     },
     {
       "name": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 — BuiltinSymbol index",
@@ -1045,13 +1045,13 @@
         "No affirmative upstream license declared",
         "Does not establish Craftland Mobile block/dropdown parity"
       ],
-      "audit_doc": "docs/32-legacy-builtin-symbol-index-audit.md",
+      "audit_doc": "docs/07-research-audits/32-legacy-builtin-symbol-index-audit.md",
       "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1"
     },
     {
       "name": "Additional public Craftland script-repository audit",
       "checked_on": "2026-10-21",
-      "audit_doc": "docs/33-public-script-repository-audit.md",
+      "audit_doc": "docs/07-research-audits/33-public-script-repository-audit.md",
       "repositories_checked": 3,
       "usable_full_script_catalogs_found": 0,
       "resource_mirror_tree_sha": "aef058e70e4da56669b324ac5ba8fe8a6046e999",
@@ -1065,7 +1065,7 @@
     "official_enum": "SkyboxType",
     "verified_identifier_count": 6,
     "community_packages_tested": false,
-    "data_file": "research/curated-asset-reference.json",
+    "data_file": "research/assets/curated-asset-reference.json",
     "caution": "Official enum verification does not verify binary package compatibility or establish a runtime setter API."
   },
   "vertical_slices": [
@@ -1077,7 +1077,7 @@
       "event_source": "https://ffcraftland.garena.com/en/docs/event-11-14",
       "pc_property_source": "https://ffcraftland.garena.com/en/docs/api-1-871/",
       "mobile_block_source": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
-      "doc": "docs/19-first-vertical-slice-join-serial.md"
+      "doc": "docs/05-recipes/19-first-vertical-slice-join-serial.md"
     }
   ],
   "stats": {

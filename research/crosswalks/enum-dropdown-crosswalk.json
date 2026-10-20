@@ -8,7 +8,7 @@
     "preserve_unchanged": true
   },
   "source_catalog": {
-    "path": "research/pc-library-symbol-catalog.json",
+    "path": "research/pc-studio/pc-library-symbol-catalog.json",
     "blob_sha": "23fda7243890b1ba85f1e566bf309a9eea8f8e46",
     "repository": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0",
     "branch": "main",
@@ -310,7 +310,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "DamageType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -7770,7 +7770,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PropertyModifyType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -7935,7 +7935,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PatrolStyleType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -8020,7 +8020,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PatrolType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -8082,7 +8082,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "MoneyType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -8260,7 +8260,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PlayerReviveSourceType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -8615,7 +8615,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "AimAssistType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -8839,7 +8839,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "BuffType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -8977,7 +8977,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootWeaponType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -9787,7 +9787,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootArmorType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -9912,7 +9912,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootAmmoType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -10047,7 +10047,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootConsumableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -10172,7 +10172,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootThrowableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -10399,7 +10399,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootScopeType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -10546,7 +10546,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "MovePlatformType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -10873,7 +10873,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootSoccerType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -12805,7 +12805,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "ThreeStatusSwitch",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -12863,7 +12863,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "GenderType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -13377,7 +13377,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "FillDirectionType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -13472,7 +13472,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "FillType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -13850,7 +13850,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "KnockDownType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -14025,7 +14025,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "FireType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -14110,7 +14110,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LayoutSortType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
@@ -14462,7 +14462,7 @@
         "note": "Rows transcribed from current official page; current editor/runtime parity is untested."
       },
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "CameraViewingAngleRestrictionType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
@@ -14915,7 +14915,7 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_option_crosscheck": {
-        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "dataset": "research/pc-studio/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LoopType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },

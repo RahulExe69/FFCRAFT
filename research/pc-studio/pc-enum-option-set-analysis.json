@@ -3,7 +3,7 @@
   "title": "Craftland PC enum option-set duplication analysis",
   "generated_at": "2026-10-20",
   "source": {
-    "catalog": "research/pc-library-symbol-catalog.json",
+    "catalog": "research/pc-studio/pc-library-symbol-catalog.json",
     "mirror_repository": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/tree/main/library/release",
     "snapshot_version": "1.5.0",
     "source_class": "third-party mirrored extension library"

@@ -5,14 +5,14 @@
   "source": {
     "original_file": "Rough.txt",
     "original_blob_sha": "66da776d0b775073f1dc21916ab6b7786dd6f353",
-    "derived_inventory": "research/user-observed-block-inventory.json",
-    "crosswalk": "research/block-symbol-crosswalk.json",
+    "derived_inventory": "research/mobile/user-observed-block-inventory.json",
+    "crosswalk": "research/crosswalks/block-symbol-crosswalk.json",
     "crosswalk_generated_at": "2026-10-20",
     "mirror_source": {
       "repository": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0",
       "branch": "main",
       "version": "1.5.0",
-      "derived_catalog": "research/pc-library-api-reference.json",
+      "derived_catalog": "research/pc-studio/pc-library-api-reference.json",
       "source_type": "third-party extension mirror"
     }
   },
