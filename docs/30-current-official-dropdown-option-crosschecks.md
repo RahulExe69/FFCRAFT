@@ -6,7 +6,7 @@
 
 ## What this adds
 
-This is a current official-doc cross-check for **51 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **353 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
+This is a current official-doc cross-check for **52 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **367 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
 
 It is intentionally a *subset*, not a complete scrape of the official reference. It also does not prove every listed enum is exposed as the same dropdown in Craftland Mobile.
 
@@ -62,6 +62,7 @@ The source data now records visible current-official rows for 26 labels beyond t
 
 | Rough label | Current official rows captured | Old-mirror member count | Interpretation |
 |---|---:|---:|---|
+| Icon Type | 14 | 96 | Large count mismatch; the current visible table is not assumed to be exhaustive. |
 | VFX Type | 58 | 71 | The official page exposes 58 rows; the old mirror has 71. Verify the current editor before treating either set as complete. |
 | Sound Effect Type | 10 | 102 | Major mismatch; do not assume either list is the live dropdown. |
 | Special ID Type | 1 | 1 | Gloo Maker / IceWallMaker; source lists agree. |
