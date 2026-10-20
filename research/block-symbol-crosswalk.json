@@ -21,19 +21,19 @@
     "approxCandidates": 113,
     "noMatch": 21,
     "likelyNotes": 3,
-    "officialCurrentReferencesAdded": 52,
-    "updatedStatusOfficialCurrent": 41,
+    "officialCurrentReferencesAdded": 55,
+    "updatedStatusOfficialCurrent": 44,
     "unresolvedAfterOfficialCheck": 0,
     "likelyEditorNative": 1,
     "unresolvedAfterOfficialCheckNote": "No entries remain in the previous ten-item unresolved-after-official-check group. The six Items/AI entries and four Property Formula entries now have official reference mappings; exact visual-editor label/sockets and runtime testing remain separate tasks.",
     "approximateAfterOfficialPass": 84,
-    "noMatchAfterOfficialPass": 8,
+    "noMatchAfterOfficialPass": 5,
     "reviewQueueEntriesPendingEditorVerification": 111,
     "finalStatusCounts": {
       "exact-label-or-document-title-match": 306,
-      "official-current-reference-found": 41,
+      "official-current-reference-found": 44,
       "approximate-candidate-needs-review": 84,
-      "no-match-in-mirrored-library-snapshot": 8,
+      "no-match-in-mirrored-library-snapshot": 5,
       "likely-editor-native-not-runtime-api": 1,
       "likely-explanatory-note-not-a-block": 3
     },
@@ -9921,12 +9921,20 @@
       "observed_label": "String = . 'Please enter the content'",
       "observed_signature": "String = . 'Please enter the content'",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "official_current_match": {
+        "kind": "official-type-reference",
+        "title": "String (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents String as a text-content type. This verifies the type concept, not the precise editor literal block/input socket layout.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 437,
@@ -9935,12 +9943,20 @@
       "observed_label": "Vector3 = .X0 Y0 Z0",
       "observed_signature": "Vector3 = .X0 Y0 Z0",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "official_current_match": {
+        "kind": "official-type-reference",
+        "title": "Vector3 (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents Vector3 as a three-dimensional vector used for spatial coordinates or directions. This verifies the type concept, not the precise editor literal block layout/default fields.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 438,
@@ -10020,12 +10036,20 @@
       "observed_label": "Bool = .---tf",
       "observed_signature": "Bool = .---tf",
       "confidence": "user-observed; not independently verified",
-      "status": "no-match-in-mirrored-library-snapshot",
+      "status": "official-current-reference-found",
       "exact_match_count": 0,
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "official_current_match": {
+        "kind": "official-type-reference",
+        "title": "Bool (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents Bool as a true/false type. This verifies the type concept, not the precise editor literal block layout/default field.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 440,
@@ -18983,6 +19007,11 @@
         "https://ffcraftland.garena.com/en/docs/module-1"
       ],
       "note": "Six Rough.txt control-flow observations were mapped to current official Mobile tutorial concepts or the current official module index. This does not verify exact node sockets/defaults in installed editor."
+    },
+    "basic_data_type_pass_2026_10_21": {
+      "entries_mapped": 3,
+      "source": "https://ffcraftland.garena.com/en/docs/module-1",
+      "note": "String, Vector3 and Bool type concepts are officially documented. The corresponding Rough.txt entries describe value/literal blocks; their exact current editor representation is not confirmed."
     }
   }
 }
