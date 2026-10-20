@@ -1107,7 +1107,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Component",
+          "name": "Vector2",
+          "id": 159,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 470,
@@ -1134,7 +1143,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Component",
+          "name": "Vector2",
+          "id": 159,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 471,
@@ -1185,7 +1203,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "Vector2Sub",
+          "id": 3245,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 496,
@@ -1671,7 +1698,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "NewVector2",
+          "id": 3256,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 548,
@@ -1722,7 +1758,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "Vector2GetX",
+          "id": 3240,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 549,
@@ -1773,7 +1818,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "Vector2GetY",
+          "id": 3241,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 550,
@@ -1824,7 +1878,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "Vector2SetX",
+          "id": 3242,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 551,
@@ -1875,7 +1938,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "API",
+          "name": "Vector2SetY",
+          "id": 3243,
+          "library_path": "Math.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 568,
@@ -2067,7 +2139,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "DamageType",
+          "id": 24,
+          "library_path": "Combat.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 590,
@@ -2118,7 +2199,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "ScoreType",
+          "id": 27,
+          "library_path": "GameResult.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 592,
@@ -2169,7 +2259,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "IconType",
+          "id": 30,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 593,
@@ -2220,7 +2319,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "VFXType",
+          "id": 29,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 594,
@@ -2271,7 +2379,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "SoundEffectType",
+          "id": 31,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 595,
@@ -2322,7 +2439,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "ItemIDType",
+          "id": 34,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 596,
@@ -2373,7 +2499,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "DynamicCreateLevelObjectType",
+          "id": 92,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 597,
@@ -2424,7 +2559,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "PropertyModifyType",
+          "id": 94,
+          "library_path": "PropertyFormula.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 598,
@@ -2475,7 +2619,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "InventoryType",
+          "id": 74,
+          "library_path": "Items.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 599,
@@ -2526,7 +2679,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "TypeEnum",
+          "id": 98,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 600,
@@ -2577,7 +2739,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "PatrolStyleType",
+          "id": 76,
+          "library_path": "AI.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 601,
@@ -2628,7 +2799,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "PatrolType",
+          "id": 75,
+          "library_path": "AI.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 603,
@@ -2679,7 +2859,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "SkyboxType",
+          "id": 123,
+          "library_path": "Scene.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 604,
@@ -2781,7 +2970,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "EquipmentType",
+          "id": 103,
+          "library_path": "Items.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 607,
@@ -2883,7 +3081,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootWeaponType",
+          "id": 134,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 610,
@@ -3036,7 +3243,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootArmorType",
+          "id": 131,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 614,
@@ -3087,7 +3303,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootAmmoType",
+          "id": 129,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 615,
@@ -3138,7 +3363,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootConsumableType",
+          "id": 130,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 616,
@@ -3189,7 +3423,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootThrowableType",
+          "id": 132,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 617,
@@ -3240,7 +3483,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LootScopeType",
+          "id": 133,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 618,
@@ -3393,7 +3645,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "CoordinateSystemType",
+          "id": 211,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 621,
@@ -3444,7 +3705,22 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "MiniSentryAttackRangeType",
+          "id": 124,
+          "library_path": "LevelObject.fcc"
+        },
+        {
+          "kind": "Enum",
+          "name": "MinisentryAttackRangeType",
+          "id": 124,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 622,
@@ -3597,7 +3873,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "OutfitSlotType",
+          "id": 243,
+          "library_path": "Collection.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 625,
@@ -3699,7 +3984,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "SwitchEquipSlot",
+          "id": 249,
+          "library_path": "Items.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 627,
@@ -3801,7 +4095,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "GenderType",
+          "id": 272,
+          "library_path": "Player.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 629,
@@ -3903,7 +4206,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "EquipmentSlotType",
+          "id": 302,
+          "library_path": "Items.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 631,
@@ -4005,7 +4317,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "FillDirectionType",
+          "id": 320,
+          "library_path": "Hud.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 634,
@@ -4056,7 +4377,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "SeatType",
+          "id": 329,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 636,
@@ -4107,7 +4437,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "PlayerPoseType",
+          "id": 372,
+          "library_path": "Player.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 637,
@@ -4209,7 +4548,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LayoutSortType",
+          "id": 405,
+          "library_path": "Hud.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 641,
@@ -4260,7 +4608,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "StatusCode",
+          "id": 409,
+          "library_path": "StdLibrary.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 642,
@@ -4311,7 +4668,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "CameraViewingAngleRestrictionType",
+          "id": 414,
+          "library_path": "Camera.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 643,
@@ -4362,7 +4728,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "WeaponSkinType",
+          "id": 419,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 644,
@@ -4464,7 +4839,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "FogModeType",
+          "id": 424,
+          "library_path": "Scene.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 646,
@@ -4515,7 +4899,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "RigidbodyConstrainType",
+          "id": 317,
+          "library_path": "Physics.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 648,
@@ -4566,7 +4959,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "ForceType",
+          "id": 324,
+          "library_path": "Physics.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 649,
@@ -4617,7 +5019,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "LoopType",
+          "id": 298,
+          "library_path": "Animation.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 650,
@@ -4719,7 +5130,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "PlayerStateType",
+          "id": 32,
+          "library_path": "Player.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 652,
@@ -4770,7 +5190,16 @@
         }
       ],
       "review_focus": "Use nearest candidates only as search leads; verify exact label, signature, type, runtime side/platform and editor context independently.",
-      "next_action": "Use as a search lead only; do not treat similarity as an API match."
+      "next_action": "Use as a search lead only; do not treat similarity as an API match.",
+      "legacy_symbol_index_matches": [
+        {
+          "kind": "Enum",
+          "name": "VehicleSkinType",
+          "id": 420,
+          "library_path": "LevelObject.fcc"
+        }
+      ],
+      "legacy_symbol_index_match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name"
     },
     {
       "source_line": 653,
@@ -4837,5 +5266,18 @@
       "review_focus": "Do not model this as a fixed enum: official Workflow docs describe Phase/Round entities, indices and lifecycle events; inspect the exact observed selector.",
       "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
     }
-  ]
+  ],
+  "supplemental_evidence": {
+    "legacy_builtin_symbol_index": {
+      "source": "legacy BuiltinSymbol.json from Divyam999hp/craftlandstudio.ffugclanguage-1.5.0",
+      "source_version": "1.5.0",
+      "source_url": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json",
+      "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1",
+      "classification": "community-snapshot",
+      "match_method": "case-insensitive alphanumeric normalization of observed_label (trimmed before parenthetical explanatory text) against symbol Name",
+      "caveat": "Symbol IDs and names are from a legacy mirror; these matches do not confirm current support, exact visual block shape, dropdown values, or Mobile parity. Preserve library scope and duplicate names.",
+      "queue_entries_with_exact_normalized_label_match": 47,
+      "matched_symbol_records": 48
+    }
+  }
 }
