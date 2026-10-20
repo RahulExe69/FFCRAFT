@@ -13,9 +13,9 @@ Rahul's original `Rough.txt` lists many dropdown/type labels but intentionally o
 
 The 65 dropdown/type labels recorded in `Rough.txt` have been assigned the following research states:
 
-- 28 candidate mappings still based only on the public 1.5.0 extension-library mirror.
+- 16 candidate mappings still based only on the public 1.5.0 extension-library mirror.
 - 2 official enum/type labels discovered in the current Garena docs but absent from that mirror (`TypeEnum` and `RenderQualityType`).
-- 24 labels now cross-checked against current official tables and the old mirror (including texture, loot, money, animation, AI, combat and HUD-related enums).
+- 36 labels now cross-checked against current official tables and the old mirror (including texture, loot, money, animation, AI, combat and HUD-related enums).
 - 4 skin-type dropdowns confirmed by the official docs as dynamic ID types rather than fixed small enums.
 - 3 legacy labels requiring obsolete/deprecation caution.
 - 0 unresolved type-to-enum mappings remain in the manual-review bucket. `Loot Scorer Type` is now a likely spelling/transcription variation of the official `Loot Soccer Type` (`LootSoccerType`), with its three current documented options recorded below; only the exact visible label needs a current-editor screenshot if wording must be proven.
@@ -39,11 +39,11 @@ The older PC library mirror has the same identifier and three values. Since the 
 
 ### Phase / Round label: classification now clarified
 
-The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-14/) describes phases and rounds as configurable game-flow entities. The official [Phase type](https://ffcraftland.garena.com/en/docs/type-33/), [Round type](https://ffcraftland.garena.com/en/docs/type-26/) and [Global entity properties](https://ffcraftland.garena.com/en/docs/type-11/) identify these as component/entity concepts; the Global entity exposes `CurrentPhaseIndex` and `CurrentRoundIndex`. Separate `On Phase Start/End` and `On Round Start/End` events have different parameter shapes (phase entity versus round index). The official [On Phase Start declaration](https://ffcraftland.garena.com/en/docs/event-18-5/) gives an explicit example.
+The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-14/) describes phases and rounds as configurable game-flow entities. The official [Phase type](https://ffcraftland.garena.com/en/docs/type-25/), [Round type](https://ffcraftland.garena.com/en/docs/type-26/) and [Global entity properties](https://ffcraftland.garena.com/en/docs/type-11/) identify these as component/entity concepts; the Global entity exposes `CurrentPhaseIndex` and `CurrentRoundIndex`. Separate `On Phase Start/End` and `On Round Start/End` events have different parameter shapes (phase entity versus round index). The official [On Phase Start declaration](https://ffcraftland.garena.com/en/docs/event-18-5/) gives an explicit example.
 
 This is enough to correct the **classification** of the Rough.txt label: do not build a fictitious `PhaseAndRoundEnum` or invent values. It does not settle whether the label in the author's original editor panel was a selector or a rough heading; that requires a screenshot of the current UI. Related Workflow API pages can be platform-marked Both Mobile and PC, but that still does not mean the Mobile editor has an identically named dropdown.
 
-The [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) now records 162 current published option rows across 25 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
+The [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) now records 214 current published option rows across 39 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
 
 ## Important distinctions
 
