@@ -6,15 +6,15 @@
 
 ## What this adds
 
-This is a current official-doc cross-check for **18 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **70 option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
+This is a current official-doc cross-check for **24 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **108 option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
 
 It is intentionally a *subset*, not a complete scrape of the official reference. It also does not prove every listed enum is exposed as the same dropdown in Craftland Mobile.
 
 ## Labels covered
 
 - Loot tables: Loot Ammo, Loot Consumable, Loot Armor, Loot Throwable, Loot Scope, Loot Weapon, and Loot Soccer (the likely canonical match for the Rough.txt label `Loot Scorer Type`).
-- Workflow/animation and property behavior: Property Modify Type, Movable Platform Type, and `LoopType`.
-- Gameplay and AI: Player Revival Source Type, Patrol Type, Patrol Style Type, Aim Assist Type, Gender Type, Knock-down Type, Fire Type, and Layout Sort Type.
+- Workflow/animation and property behavior: Damage Type, Buff Type, Property Modify Type, Movable Platform Type, `LoopType`, Fill Type, Fill Direction Type, and 3-Status Switch.
+- Gameplay and AI: Player Revival Source Type, Patrol Type, Patrol Style Type, Aim Assist Type, Gender Type, Knock-down Type, Fire Type, Camera Viewing Angle Restriction Type, and Layout Sort Type.
 
 ## Why comparing the source versions matters
 
@@ -35,6 +35,8 @@ The 1.5.0 mirror includes several deprecated aliases that share the same numeric
 | Layout Sort Type | 3 | `SortByHierarchy` = 0 |
 
 These are **source-list differences**, not a claim that the editor compiler will reject every alias. Use the current installed editor/library to settle compilation support and the actual choices visible in a particular UI.
+
+Other comparison notes: current official Damage Type has a `Finishing Move` row (`ExecuteSkill = -40`) not present in the old mirror, while several aliases in the old mirror are marked deprecated and omitted from the current table. Buff Type similarly omits the mirror's deprecated `AmmoBuff` alias. The official Fill Type values skip numeric value 4, so the list must not be renumbered. The 3-Status Switch official identifier is `ThreeStatusSwitch` while the mirror uses `CommonUISwitchValue` and `CommonHudSwitchValue` for matching option sets; keep type identity separate. The official Camera Viewing Angle Restriction Type leaves script-name cells blank.
 
 One notable spelling discrepancy remains visible in the docs: Patrol Type displays `Cylic` while its script name is `Cyclic`; the older mirror labels `Cylic` as a deprecated alias. Preserve both exact fields and verify the installed editor rather than normalizing this silently.
 
