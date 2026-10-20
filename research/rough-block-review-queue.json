@@ -60,7 +60,18 @@
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture exact block/node definition, target/value inputs, interpolation/timing semantics and platform/context.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Compare the observed node with the related official Set Property Smoothly API, then capture the current editor socket schema. Do not infer identity from the similar purpose.",
+      "related_official_api_candidates": [
+        {
+          "kind": "related-but-unconfirmed-official-api-candidate",
+          "title": "Set Property Smoothly",
+          "url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
+          "platform_status": "Server Side; Both Mobile and PC",
+          "evidence": "The official API page says this smoothly sets properties of the target entity; the property changes immediately while the client plays a smooth transition performance.",
+          "why_related": "Rough.txt line 132 describes a 'Progressive Movement Property' node with target/entity, property and value slots. This is a possible conceptual lead only; the visible name differs, and the official page does not prove that the observed block is this API.",
+          "next_action": "Inspect current editor node metadata and exact socket types/context before mapping or substituting."
+        }
+      ]
     },
     {
       "source_line": 451,
@@ -5486,6 +5497,15 @@
       "entries_mapped": 3,
       "source": "https://ffcraftland.garena.com/en/docs/module-1",
       "status": "Type concepts documented; exact current value/literal block appearance remains pending."
+    },
+    "related_candidate_for_progressive_movement_property": {
+      "source_line": 132,
+      "title": "Set Property Smoothly",
+      "url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
+      "platform_status": "Server Side; Both Mobile and PC",
+      "classification": "unconfirmed-related-lead",
+      "status_change": false,
+      "caveat": "Do not count as a resolved match until the current editor establishes the node identity and sockets."
     }
   }
 }
