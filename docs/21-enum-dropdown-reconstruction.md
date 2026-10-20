@@ -18,11 +18,23 @@ The 65 dropdown/type labels recorded in `Rough.txt` have been assigned the follo
 - 1 texture label confirmed by both the official reference and mirror.
 - 4 skin-type dropdowns confirmed by the official docs as dynamic ID types rather than fixed small enums.
 - 3 legacy labels requiring obsolete/deprecation caution.
-- 1 still needing manual review (`Loot Scorer Type`).
+- 0 unresolved type-to-enum mappings remain in the manual-review bucket. `Loot Scorer Type` is now a likely spelling/transcription variation of the official `Loot Soccer Type` (`LootSoccerType`), with its three current documented options recorded below; only the exact visible label needs a current-editor screenshot if wording must be proven.
 - 1 label clarified by current official docs as **not an enum**: `Phase And Round Enum` points toward the Workflow `Phase` and `Round` entity/component types, current phase/round indices, and their start/end events; no enum member list should be invented.
 
 These categories describe the 65 labels, not the number of actual dropdown options. The JSON retains each candidate, member-count estimate, source file SHA, original Rough line and the next verification step.
 
+
+### Loot Scorer / Loot Soccer Type: likely transcription correction
+
+The current [official Enum reference](https://ffcraftland.garena.com/en/docs/enum/) lists **Loot Soccer Type**, identifier `LootSoccerType`, in the Football module. It provides these three entries:
+
+| Numeric value | Display name | Script name | Description |
+|---:|---|---|---|
+| 1040 | Loot Soccer Random | `LootSoccerRandom` | Loot Soccer Random |
+| 1038 | Loot Soccer Shield | `LootSoccerShield` | Loot Soccer Shield |
+| 1039 | Loot Soccer Ice | `LootSoccerIce` | Freezing Grenade |
+
+The older PC library mirror has the same identifier and three values. Since the raw note says `Loot Scorer Type` while official documentation says `Loot Soccer Type`, the crosswalk now records a **likely typo/transcription match**, not a silent edit to `Rough.txt`. A current editor screenshot is still the best evidence for the exact visible dropdown wording.
 
 ### Phase / Round label: classification now clarified
 
