@@ -6,7 +6,7 @@
 
 ## What this adds
 
-This is a current official-doc cross-check for **39 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **214 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
+This is a current official-doc cross-check for **51 labels found in or directly related to the ENUM section of `Rough.txt`**. The structured dataset contains **353 official-reference option rows** with each visible numeric value, display name, script name and description. It also records the older library mirror's member counts and known aliases.
 
 It is intentionally a *subset*, not a complete scrape of the official reference. It also does not prove every listed enum is exposed as the same dropdown in Craftland Mobile.
 
@@ -58,26 +58,39 @@ This is a strong likely match for the original `Loot Scorer Type` spelling, but 
 
 ## Additional current official rows captured
 
-The source data now also records visible current-official rows for fourteen more labels from the original notes (six labels added in the most recent pass). These rows are stored as the full visible row fields (value, display label, script name, description) in the JSON. Where the old v1.5.0 library has a substantially larger list, that discrepancy is deliberately left unresolved pending an installed-editor capture.
+The source data now records visible current-official rows for 26 labels beyond the first 25-label pass, added in successive source-checking passes. These rows are stored as the full visible row fields (value, display label, script name, description) in the JSON. Where the old v1.5.0 library has a substantially larger list, that discrepancy is deliberately left unresolved pending an installed-editor capture.
 
 | Rough label | Current official rows captured | Old-mirror member count | Interpretation |
 |---|---:|---:|---|
-| VFX Type | 7 | 71 | Major mismatch; old-only names need current-editor verification. |
+| VFX Type | 58 | 71 | The official page exposes 58 rows; the old mirror has 71. Verify the current editor before treating either set as complete. |
 | Sound Effect Type | 10 | 102 | Major mismatch; do not assume either list is the live dropdown. |
 | Special ID Type | 1 | 1 | Gloo Maker / IceWallMaker; source lists agree. |
 | Monster Type | 4 | 13 | Old mirror includes a deprecated alias and additional types not visible in the current official table. |
 | Object Texture | 15 | 35 | Old mirror includes multiple deprecated aliases and other older names. |
-| Font Type | 6 | 7 | HindSiliguri appears in the old mirror but not the current official table. |
+| Font Type | 7 | 7 | The official page includes HindSiliguri; captured row counts agree. |
 | SkyboxType | 6 | 8 | CityBuilding and Snow are old-mirror aliases marked deprecated. |
 | Render Quality Type | 4 | 0 | Current official enum missing from the old mirror; Get Render Quality is documented as Client Side and Both Mobile and PC. |
-| Equipment Type | 12 | 24 | Visible official rows are fewer than old-mirror members; installed editor verification remains open. |
+| Equipment Type | 18 | 24 | Visible official rows are fewer than old-mirror members; installed editor verification remains open. |
 | Switch Equip Slot | 11 | 17 | Visible official rows are fewer than old-mirror members; preserve non-contiguous IDs. |
 | Coordinate System Type | 2 | 2 | Official table and old mirror agree on two rows. |
 | Action Type | 3 | 3 | Official table and old mirror agree on three rows. |
 | Status Code | 5 | 24 | Official page shows five rows; old-only codes need current editor verification. |
 | Player UI Type | 19 | 63 | Non-contiguous current-page values; old mirror has many more members. |
+| Rigidbody Constrain Type | 10 | 11 | Bit-flag combinations; preserve values and verify old-only member in current editor. |
+| Force Type | 4 | 4 | Official and mirror counts agree; documentation limits it to Dynamic rigidbodies. |
+| Fog Mode Type | 3 | 3 | Official and mirror counts agree. |
+| Player State Type | 3 | 4 | Old mirror has one extra member; current-editor check remains open. |
+| Player Pose Type | 28 | 4 | Current official page exposes 28 states; old mirror parser has four. Preserve blank display cells and exact script identifiers. |
+| Player Behaviour Status Type | 3 | 3 | Official and mirror counts agree. |
+| Equipment Slot Type | 8 | 11 | Different type from Equipment Type and Switch Equip Slot; preserve separate identifiers. |
+| Seat Type | 4 | 7 | Official page exposes four rows; old-only options need current-editor verification. |
+| Damage Body Part Type | 4 | 4 | Official and mirror counts agree. |
+| Outfit Slot Type | 7 | 14 | Official page exposes seven slots; current support for old-only names is unknown. |
+| Inventory Type | 4 | 4 | Official and mirror counts agree on four categories. |
+| Mini Sentry Attack Range Type | 3 | 3 | Official and mirror counts agree on Near/Middle/Far. |
 
-For VFX, Sound Effect, Monster, Object Texture and Font Type, the option-row count above is the number of rows visible in the official reference snapshot, not an assertion that the installed editor must expose exactly that many entries. The old-mirror count difference is a reason to capture the current library/editor—not permission to call entries removed or supported by guesswork. Skybox options also cross-reference the curated asset dataset; package import/playtest status is separate.
+
+For VFX, Sound Effect, Monster, Object Texture, Equipment Type, Player Pose, Player UI and the other mismatched sets, counts above describe rows visible in the official reference snapshot, not an assertion that the installed editor must expose exactly that many entries. The old-mirror count difference is a reason to capture the current library/editor—not permission to call entries removed or supported by guesswork. Skybox options also cross-reference the curated asset dataset; package import/playtest status is separate.
 
 ## How to consume the JSON
 
