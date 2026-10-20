@@ -31,23 +31,27 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 53,
+    "candidate_mapped_from_mirror": 30,
     "official_doc_match_not_in_mirror": 2,
-    "official_docs_and_mirror_confirm": 1,
+    "official_docs_and_mirror_confirm": 23,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
     "manual_or_official_cross_check": 0,
     "legacy_observed_check_obsolete": 3,
     "needs_review_total": 4,
     "official_docs_clarify_not_enum": 1,
-    "official_docs_likely_typo_match": 1
+    "official_docs_likely_typo_match": 1,
+    "official_docs_match_different_identifiers": 1,
+    "official_option_crosscheck_labels": 24,
+    "official_option_rows": 108,
+    "labels_with_mirror_alias_or_spelling_caveats": 19
   },
   "entries": [
     {
       "observed_label": "Damage Type",
       "rough_line": 589,
       "observed_signature": "1. Damage Type .---",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Combat.fcc:DamageType",
@@ -294,7 +298,17 @@
           "label": "Combat.fcc:DamageType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "DamageType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "DamageType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Score Type",
@@ -7661,7 +7675,7 @@
       "observed_label": "Property Modify Type",
       "rough_line": 597,
       "observed_signature": "9. Property Modify Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "PropertyFormula.fcc:PropertyModifyType",
@@ -7723,6 +7737,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PropertyModifyType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "PropertyModifyType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -7822,7 +7841,7 @@
       "observed_label": "Patrol Style Type",
       "rough_line": 600,
       "observed_signature": "12. Patrol Style Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "AI.fcc:PatrolStyleType",
@@ -7874,13 +7893,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PatrolStyleType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "PatrolStyleType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Patrol Type",
       "rough_line": 601,
       "observed_signature": "13. Patrol Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "AI.fcc:PatrolType",
@@ -7952,6 +7976,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PatrolType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "PatrolType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -8114,7 +8143,7 @@
       "observed_label": "Player Revival Source Type",
       "rough_line": 604,
       "observed_signature": "16. Player Revival Source Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:PlayerReviveSourceType",
@@ -8166,6 +8195,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "PlayerReviveSourceType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "PlayerReviveSourceType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -8445,7 +8479,7 @@
       "observed_label": "Aim Assist Type",
       "rough_line": 606,
       "observed_signature": "18. Aim Assist Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Combat.fcc:AimAssistType",
@@ -8507,6 +8541,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "AimAssistType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "AimAssistType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -8628,7 +8667,7 @@
       "observed_label": "Buff Type",
       "rough_line": 608,
       "observed_signature": "20. Buff Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:BuffType",
@@ -8705,13 +8744,23 @@
           "label": "LevelObject.fcc:BuffType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "BuffType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "BuffType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Loot Weapon Type",
       "rough_line": 609,
       "observed_signature": "21. Loot Weapon Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootWeaponType",
@@ -8843,6 +8892,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootWeaponType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootWeaponType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -9555,7 +9609,7 @@
       "observed_label": "Loot Armor Type",
       "rough_line": 613,
       "observed_signature": "25. Loot Armor Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootArmorType",
@@ -9637,13 +9691,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootArmorType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootArmorType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Loot Ammo Type",
       "rough_line": 614,
       "observed_signature": "26. Loot Ammo Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootAmmoType",
@@ -9755,13 +9814,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootAmmoType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootAmmoType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Loot Consumable Type",
       "rough_line": 615,
       "observed_signature": "27. Loot Consumable Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootConsumableType",
@@ -9883,13 +9947,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootConsumableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootConsumableType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Loot Throwable Type",
       "rough_line": 616,
       "observed_signature": "28. Loot Throwable Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootThrowableType",
@@ -10001,13 +10070,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootThrowableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootThrowableType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Loot Scope Type",
       "rough_line": 617,
       "observed_signature": "29. Loot Scope Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:LootScopeType",
@@ -10221,13 +10295,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LootScopeType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LootScopeType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Movable Platform Type",
       "rough_line": 618,
       "observed_signature": "30. Movable Platform Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:MovePlatformType",
@@ -10361,6 +10440,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "MovePlatformType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "MovePlatformType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -12478,7 +12562,7 @@
       "observed_label": "3-Status Switch",
       "rough_line": 627,
       "observed_signature": "39. 3-Status Switch",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-match-different-identifiers",
       "candidates": [
         {
           "label": "StdLibrary.fcc:CommonUISwitchValue",
@@ -12587,13 +12671,25 @@
           "label": "StdLibrary.fcc:CommonHudSwitchValue"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "ThreeStatusSwitch",
+        "display_label": "3-Status Switch",
+        "module": "STD Library",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Official current label/type is ThreeStatusSwitch. The older mirror has CommonUISwitchValue and CommonHudSwitchValue with the same three option values; keep these identifiers distinct until current signatures establish interchangeability."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "ThreeStatusSwitch",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Gender Type",
       "rough_line": 628,
       "observed_signature": "40. Gender Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:GenderType",
@@ -12645,6 +12741,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "GenderType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "GenderType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -13042,7 +13143,7 @@
       "observed_label": "Fill Direction Type",
       "rough_line": 632,
       "observed_signature": "44. Fill Direction Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Hud.fcc:FillDirectionType",
@@ -13119,13 +13220,23 @@
           "label": "Hud.fcc:FillDirectionType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "FillDirectionType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "FillDirectionType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Fill Type",
       "rough_line": 633,
       "observed_signature": "45. Fill Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Hud.fcc:FillType",
@@ -13202,7 +13313,17 @@
           "label": "Hud.fcc:FillType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "FillType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "FillType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Seat Type",
@@ -13487,7 +13608,7 @@
       "observed_label": "Knok-down Type",
       "rough_line": 637,
       "observed_signature": "49. Knok-down Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:KnockDownType",
@@ -13559,6 +13680,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "KnockDownType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "KnockDownType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -13628,7 +13754,7 @@
       "observed_label": "Fire Type",
       "rough_line": 639,
       "observed_signature": "51. Fire Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:FireType",
@@ -13720,13 +13846,18 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "FireType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "FireType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
       "observed_label": "Layout Sort Type",
       "rough_line": 640,
       "observed_signature": "52. Layout Sort Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Hud.fcc:LayoutSortType",
@@ -13798,6 +13929,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LayoutSortType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LayoutSortType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
@@ -14077,7 +14213,7 @@
       "observed_label": "Camera Viewing Angle Restriction Type",
       "rough_line": 642,
       "observed_signature": "54. Camera Viewing Angle Restriction Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Camera.fcc:CameraViewingAngleRestrictionType",
@@ -14124,7 +14260,17 @@
           "label": "Camera.fcc:CameraViewingAngleRestrictionType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_documentation": {
+        "identifier": "CameraViewingAngleRestrictionType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "CameraViewingAngleRestrictionType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Weapon Skin Type",
@@ -14484,7 +14630,7 @@
       "observed_label": "LoopType",
       "rough_line": 649,
       "observed_signature": "61. LoopType",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Animation.fcc:LoopType",
@@ -14556,6 +14702,11 @@
         "dataset": "research/official-dropdown-option-crosschecks.json",
         "canonical_identifier": "LoopType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      },
+      "official_documentation": {
+        "identifier": "LoopType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
       }
     },
     {
