@@ -109,3 +109,11 @@ The mirrored library is not treated as authoritative for current API support. A 
 
 - [Current editor capture playbook](27-current-editor-capture-playbook.md) — current installed .fcc library path, project-generated EditorGenLib.fcc, Studio MCP server and Mobile screenshot evidence collection.
 - [Editor metadata capture checklist](../research/editor-metadata-capture-checklist.json) — structured list of authoritative PC and Mobile sources that have not yet been captured.
+
+
+## Current Mobile scripting and MCP metadata leads
+
+- [Official Mobile Block Scripts guide](https://ffcraftland.garena.com/en/tutorial/cl/4-101) — documents the block editor, script context, search and typed connections; search can include blocks unavailable in the selected script.
+- [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) and [machine-readable map](../research/mobile-official-scripting-source-map.json) — topic links for event/script types, classification/flow control, variables/properties, data/logic and server/client scripting.
+- [Official Game Mechanics template](https://ffcraftland.garena.com/en/tutorial/cl/4-87) and [Myconsole template](https://ffcraftland.garena.com/en/tutorial/cl/4-86) — source examples for trigger, player, object, HUD and helper-function patterns.
+- [NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — recent community MCP-based KB-generation method. Its current public tree contains the README and generator/enrichment scripts but not the generated raw metadata or catalog pages; see [audit](28-live-mcp-repository-audit.md) and [machine-readable audit](../research/live-mcp-public-resource-audit.json). Advertised counts are not treated as verified data.
