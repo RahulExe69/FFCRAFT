@@ -27,7 +27,7 @@ The one-shot `PhaseCountDownHud` is started in `OnMatchStart` with a 16-second d
 
 ## Working-copy patch
 
-A separate reproducible patch is documented in [ColourBridge HUD/timer fix](../../maps/colourbridge-fixed/README.md). It disables the duplicate tip and original startup timer nodes, creates an 11-second phase timer per loop, stores its entity, and removes it before the next loop. It preserves the original template and welcome dialogue.
+A separate reproducible patch is documented in [ColourBridge HUD/timer fix](../../../maps/colourbridge-fixed/README.md). It disables the duplicate tip and original startup timer nodes, creates an 11-second phase timer per loop, stores its entity, and removes it before the next loop. It preserves the original template and welcome dialogue.
 
 ## Serialization/export caveat
 
