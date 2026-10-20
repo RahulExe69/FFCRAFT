@@ -1233,11 +1233,37 @@
       "notes": [
         "The official table leaves the Script Name cells blank for both entries; the old mirror provides identifiers. Capture blank official fields as blank rather than inventing them."
       ]
+    },
+    {
+      "rough_label": "Money Type",
+      "canonical_identifier": "MoneyType",
+      "display_label": "Money Type",
+      "module": "Economy",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Basic",
+          "script_name": "Basic",
+          "description": "Base type, the most basic in-game currency, the type of pricing for general shop items in the current version"
+        }
+      ],
+      "official_option_count": 1,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 1,
+        "interpretation": "The old mirror and current official reference both identify the single Basic currency-type option."
+      },
+      "notes": [
+        "This enum has one documented option; don't invent other currencies merely because the label is generic."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 24,
-    "official_option_rows": 108,
+    "rough_labels_crosschecked": 25,
+    "official_option_rows": 109,
     "labels_with_mirror_alias_or_spelling_caveat": 19,
     "runtime_tested": 0,
     "mobile_parity_tested": 0
