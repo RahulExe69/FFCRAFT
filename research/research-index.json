@@ -837,6 +837,14 @@
       "url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
       "checked_on": "2026-10-21",
       "caveat": "Official server-side API documented for Mobile and PC, but not confirmed to be the user-observed Progressive Movement Property block."
+    },
+    {
+      "tier": "C",
+      "topic": "public-script-repository-audit",
+      "title": "Additional public Craftland script-sharing repository scan",
+      "url": "https://github.com/harshdahiya9162-coder/FF-CRAFTLAND-SCRIPT",
+      "checked_on": "2026-10-21",
+      "caveat": "Only a small upload/comment HTML page was present; its informal example is not verified and no complete script catalog was found. See docs/33-public-script-repository-audit.md."
     }
   ],
   "open_questions": [
@@ -1028,6 +1036,16 @@
       ],
       "audit_doc": "docs/32-legacy-builtin-symbol-index-audit.md",
       "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1"
+    },
+    {
+      "name": "Additional public Craftland script-repository audit",
+      "checked_on": "2026-10-21",
+      "audit_doc": "docs/33-public-script-repository-audit.md",
+      "repositories_checked": 3,
+      "usable_full_script_catalogs_found": 0,
+      "resource_mirror_tree_sha": "aef058e70e4da56669b324ac5ba8fe8a6046e999",
+      "resource_mirror_copies_including_canonical": 5,
+      "note": "The four additional resource repositories have the exact same recursive tree SHA as the canonical Nexos repository; do not count them as independent evidence."
     }
   ],
   "curated_assets": {
@@ -1084,6 +1102,9 @@
     "official_math_reference_entries_added_2026_10_21": 12,
     "official_mobile_control_flow_mappings_added_2026_10_21": 6,
     "official_current_reference_entries": 44,
-    "official_basic_data_type_entries_added_2026_10_21": 3
+    "official_basic_data_type_entries_added_2026_10_21": 3,
+    "additional_public_craftland_script_repositories_audited": 3,
+    "resource_repository_copies_same_tree_sha": 5,
+    "usable_new_public_script_catalogs_found": 0
   }
 }
