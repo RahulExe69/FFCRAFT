@@ -30,8 +30,9 @@
         "context availability",
         "dropdown content if exposed"
       ],
-      "evidence_status": "not-yet-captured",
-      "security": "Do not expose localhost endpoint or tokens publicly; export responses instead."
+      "evidence_status": "not-yet-captured; a community export workflow was discovered, but no current raw MCP responses are available here",
+      "security": "Do not expose localhost endpoint or tokens publicly; export responses instead.",
+      "methodology_reference": "docs/28-live-mcp-repository-audit.md"
     },
     {
       "id": "project-editorgenlib",
@@ -59,7 +60,27 @@
         "port/input/output structure",
         "Global/Player/Team/Object/HUD differences"
       ],
-      "evidence_status": "not-yet-captured"
+      "evidence_status": "not-yet-captured",
+      "methodology_reference": "docs/29-official-mobile-scripting-source-map.md"
+    },
+    {
+      "id": "public-mcp-generator-lead",
+      "platform": "PC",
+      "priority": 5,
+      "source": "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+      "artifact": "Public PowerShell generator/enrichment scripts and README describing a prior live MCP export workflow",
+      "answers": [
+        "candidate MCP operation names",
+        "reported node families/configId approach",
+        "suggested raw-export and enrichment workflow"
+      ],
+      "evidence_status": "methodology inspected; generated catalog pages and raw response files absent from public tree",
+      "not_a_data_source": true,
+      "caveats": [
+        "Inventory totals are self-reported and not independently verified",
+        "Do not import missing records or assume project-scoped data is globally complete",
+        "No repository license was returned by GitHub metadata"
+      ]
     }
   ],
   "rules": [
