@@ -16,7 +16,7 @@
     "mobile_dropdown_parity_not_inferred": true,
     "exact_installed_editor_version_not_available": true,
     "source_table_may_not_match_installed_editor": true,
-    "note": "Rows are transcribed from current official Enum reference tables. Where old-mirror counts differ materially, completeness and installed-editor support remain unverified; never infer Mobile dropdown parity."
+    "note": "Rows are transcribed from the current official Enum reference's visible tables. Where old-mirror counts differ materially, completeness and installed-editor support remain unverified; never infer Mobile dropdown parity."
   },
   "entries": [
     {
@@ -1269,7 +1269,7 @@
       "module": "STD Library",
       "value_type": "Effect ID",
       "source": "https://ffcraftland.garena.com/en/docs/enum/",
-      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
       "option_rows": [
         {
           "value": "UGC_T_34_LY_WS_VFX1",
@@ -1312,9 +1312,315 @@
           "display_name": "Foot Beam",
           "script_name": "CircleofHeat",
           "description": "Foot Halo"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX9",
+          "display_name": "Fireball",
+          "script_name": "FireCharge",
+          "description": "Fireball"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX10",
+          "display_name": "Burning in a Loop",
+          "script_name": "CyclicCombustion",
+          "description": "Burning in a Loop"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX11",
+          "display_name": "Poison Gas",
+          "script_name": "PoisonGasPreDiscarded",
+          "description": "Poison Gas"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX12",
+          "display_name": "Heart",
+          "script_name": "Heart",
+          "description": "Heart"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX13",
+          "display_name": "Soccer",
+          "script_name": "Soccer",
+          "description": "Football"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX14",
+          "display_name": "Motion Trail",
+          "script_name": "MotionTrail",
+          "description": "Football"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX15",
+          "display_name": "Door",
+          "script_name": "Door",
+          "description": "Door"
+        },
+        {
+          "value": "UGC_T_38_WZY_WS_VFX16",
+          "display_name": "Fireworks",
+          "script_name": "FireWork",
+          "description": "Fireworks"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_ROPSBUFF",
+          "display_name": "Running Shoes VFX",
+          "script_name": "Sneakers",
+          "description": "Running Shoes VFX"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_BOOM",
+          "display_name": "Explosion VFX",
+          "script_name": "Explosion",
+          "description": "Explosion VFX"
+        },
+        {
+          "value": "WS_FF_VFX_SPAWNAREA",
+          "display_name": "Spawn Point VFX",
+          "script_name": "Spawnpoint",
+          "description": "Spawn Point VFX"
+        },
+        {
+          "value": "WS_FF_VFX_LASER",
+          "display_name": "Laser VFX",
+          "script_name": "Laser",
+          "description": "Laser VFX"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_RECHARGEMAX",
+          "display_name": "Skill Cast VFX",
+          "script_name": "ReleasingSkill",
+          "description": "Skill Cast VFX"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_BULLET",
+          "display_name": "Bullet VFX",
+          "script_name": "Ammo",
+          "description": "Bullet VFX"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_HIT",
+          "display_name": "Bullet Hit VFX",
+          "script_name": "HitEffect",
+          "description": "Bullet Hit VFX"
+        },
+        {
+          "value": "VFX_INGAME_WS_WATER_SHOT",
+          "display_name": "Shooting VFX",
+          "script_name": "FiringEffect",
+          "description": "Shooting VFX"
+        },
+        {
+          "value": "WS_IPBAR_SPIDERWEB",
+          "display_name": "Skill VFX",
+          "script_name": "SpiderWeb",
+          "description": "Skill VFX"
+        },
+        {
+          "value": "UGC_T_36_M_WS_VFX6_01",
+          "display_name": "Halo",
+          "script_name": "Halo",
+          "description": "Halo"
+        },
+        {
+          "value": "UGC_T_36_M_WS_VFX6_02",
+          "display_name": "Bubble",
+          "script_name": "Bubble",
+          "description": "Bubbles"
+        },
+        {
+          "value": "VFX_UGC_BOOM_01",
+          "display_name": "Smoke and Dust",
+          "script_name": "Dust",
+          "description": "Smoke and Dust"
+        },
+        {
+          "value": "VFX_UGC_BOOM_02",
+          "display_name": "Flying Debris",
+          "script_name": "StoneSplash",
+          "description": "Flying Debris"
+        },
+        {
+          "value": "VFX_UGC_RECOVER_01",
+          "display_name": "Line",
+          "script_name": "Line",
+          "description": "Lines"
+        },
+        {
+          "value": "VFX_UGC_RECOVER_02",
+          "display_name": "Flicker",
+          "script_name": "Flicker",
+          "description": "Flicker"
+        },
+        {
+          "value": "VFX_UGC_TELEPORT_01",
+          "display_name": "Ring Mechanism",
+          "script_name": "Ring",
+          "description": "Boom"
+        },
+        {
+          "value": "VFX_UGC_TELEPORT_02",
+          "display_name": "Rising Particles",
+          "script_name": "RisingParticle",
+          "description": "Rising Particles"
+        },
+        {
+          "value": "WS_FF_VFX_Cobra_grenade_Explode_01",
+          "display_name": "Smoke",
+          "script_name": "Smoke",
+          "description": "Smoke"
+        },
+        {
+          "value": "WS_FF_VFX_Cobra_grenade_Explode_02",
+          "display_name": "Talisman",
+          "script_name": "Curse",
+          "description": "Talisman"
+        },
+        {
+          "value": "WS_FF_VFX_Default_Grenade_Attri_Debuff_01",
+          "display_name": "Frozen Area",
+          "script_name": "FreezeZone",
+          "description": "Frozen Area"
+        },
+        {
+          "value": "WS_FF_VFX_Default_Grenade_Attri_Debuff_02",
+          "display_name": "Fog",
+          "script_name": "ColdAir",
+          "description": "Fog"
+        },
+        {
+          "value": "WS_FF_VFX_Default_Grenade_Attri_Dot_01",
+          "display_name": "Snowflake",
+          "script_name": "Snowflake",
+          "description": "Snowflake"
+        },
+        {
+          "value": "WS_FF_VFX_Emote_Female_Cos_Booyahday21_Gun_01",
+          "display_name": "Fire",
+          "script_name": "Flame",
+          "description": "Fire"
+        },
+        {
+          "value": "WS_FF_VFX_Emote_Female_Cos_Cup_01",
+          "display_name": "Light Beam",
+          "script_name": "LightBeam",
+          "description": "Light Beam"
+        },
+        {
+          "value": "WS_FF_VFX_Emote_Female_Cos_Dragon_01",
+          "display_name": "Diffusing Poison Gas",
+          "script_name": "SpreadofPoisonGas",
+          "description": "Diffusing Poison Gas"
+        },
+        {
+          "value": "WS_FF_VFX_Griza_Grenade_Explode_01",
+          "display_name": "Poison Gas",
+          "script_name": "PoisonGas",
+          "description": "Poison Gas"
+        },
+        {
+          "value": "WS_FF_VFX_Griza_Grenade_Explode_02",
+          "display_name": "Explosion Flames",
+          "script_name": "ExplosiveBlaze",
+          "description": "Explosion Flames"
+        },
+        {
+          "value": "WS_FF_VFX_Griza_Grenade_Explode_03",
+          "display_name": "Light Effect",
+          "script_name": "LightEffect",
+          "description": "Light Effect"
+        },
+        {
+          "value": "WS_FF_VFX_Griza_Grenade_Explode_04",
+          "display_name": "Star",
+          "script_name": "Star",
+          "description": "Star"
+        },
+        {
+          "value": "WS_VFX_FIRE",
+          "display_name": "Blazing Bonfire",
+          "script_name": "Bonfire",
+          "description": "Blazing Bonfire"
+        },
+        {
+          "value": "WS_VFX_WATER",
+          "display_name": "Water Splash",
+          "script_name": "WaterRing",
+          "description": "Water Splash"
+        },
+        {
+          "value": "WS_VFX_THUNDER",
+          "display_name": "Electric Shock",
+          "script_name": "Thunder",
+          "description": "Electric Shock"
+        },
+        {
+          "value": "WS_VFX_INK",
+          "display_name": "Ink VFX",
+          "script_name": "Ink",
+          "description": "Ink VFX"
+        },
+        {
+          "value": "WS_VFX_BLOODBALL",
+          "display_name": "Blackhole VFX",
+          "script_name": "BloodBall",
+          "description": "Blackhole VFX"
+        },
+        {
+          "value": "WS_VFX_BLACKHOLE",
+          "display_name": "Blackhole Explosion VFX",
+          "script_name": "BlackHole",
+          "description": "Blackhole Explosion VFX"
+        },
+        {
+          "value": "WS_VFX_BLACKHOLE_BOOM",
+          "display_name": "Crystal Ball VFX",
+          "script_name": "BlackHoleBoom",
+          "description": "Crystal Ball VFX"
+        },
+        {
+          "value": "WS_VFX_LIGHTING",
+          "display_name": "Lighting VFX",
+          "script_name": "Tracerlight",
+          "description": "Laser bullet effect"
+        },
+        {
+          "value": "WS_VFX_TRAILING",
+          "display_name": "Trailing VFX",
+          "script_name": "Trailing",
+          "description": "Drag effects"
+        },
+        {
+          "value": "WS_VFX_QUESTION_MARK",
+          "display_name": "Question Mark",
+          "script_name": "Ques",
+          "description": "Question Mark"
+        },
+        {
+          "value": "WS_VFX_HALO",
+          "display_name": "Halo",
+          "script_name": "HaloEffect",
+          "description": "Halo"
+        },
+        {
+          "value": "WS_VFX_LASER",
+          "display_name": "Laser",
+          "script_name": "LaserEffect",
+          "description": "Laser"
+        },
+        {
+          "value": "WS_VFX_BONFIRE",
+          "display_name": "Bonfire Special Effects",
+          "script_name": "BonfireEffect",
+          "description": "Bonfire Special Effects"
+        },
+        {
+          "value": "WS_VFX_FLOG",
+          "display_name": "Fog VFX",
+          "script_name": "Fog",
+          "description": "Clouds"
         }
       ],
-      "official_option_count": 7,
+      "official_option_count": 58,
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 71,
@@ -1322,9 +1628,9 @@
         "interpretation": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
         "other_old_mirror_types_with_same_option_set": []
       },
-      "completeness_note": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
+      "completeness_note": "The current official enum page visibly presents 58 VFXType rows; the older 1.5.0 mirror has 71 members. The 13-count difference may reflect source-version changes, aliases or documentation coverage; verify the installed editor before treating either list as complete.",
       "notes": [
-        "Official Enum reference presents seven visible VFXType rows; the old v1.5.0 mirror has 71 members. Current-editor availability of the many old-only names is unknown."
+        "Expanded to all 58 rows visible in the current official Enum page. The old v1.5.0 mirror has 71 parsed members; old-only names are not declared removed or supported from this comparison alone."
       ]
     },
     {
@@ -1626,7 +1932,7 @@
       "module": "STD Library",
       "value_type": "String",
       "source": "https://ffcraftland.garena.com/en/docs/enum/",
-      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
       "option_rows": [
         {
           "value": "FONT_FF_CN_T",
@@ -1663,9 +1969,15 @@
           "display_name": "Supermarket",
           "script_name": "Supermarket",
           "description": "Supermarket"
+        },
+        {
+          "value": "FONT_HINDSILIGURI",
+          "display_name": "HindSiliguri",
+          "script_name": "HindSiliguri",
+          "description": "HindSiliguri"
         }
       ],
-      "official_option_count": 6,
+      "official_option_count": 7,
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 7,
@@ -1673,9 +1985,9 @@
         "interpretation": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
         "other_old_mirror_types_with_same_option_set": []
       },
-      "completeness_note": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
+      "completeness_note": "The current official page and old mirror both list seven font values in the captured tables.",
       "notes": [
-        "The old mirror includes HindSiliguri (FONT_HINDSILIGURI), which is not displayed in the current official table. Support in the current installed version is unknown."
+        "Includes HindSiliguri / FONT_HINDSILIGURI, which is also present in the older mirror; previous note about missing official row came from an incomplete earlier capture."
       ]
     },
     {
@@ -1794,7 +2106,7 @@
       "module": "Items",
       "value_type": "Int",
       "source": "https://ffcraftland.garena.com/en/docs/enum/",
-      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
       "option_rows": [
         {
           "value": 0,
@@ -1867,9 +2179,45 @@
           "display_name": "Gloo Wall",
           "script_name": "GlooWall",
           "description": "Ice Wall"
+        },
+        {
+          "value": 14,
+          "display_name": "Landmine",
+          "script_name": "Landmine",
+          "description": "Landmine"
+        },
+        {
+          "value": 17,
+          "display_name": "Mini Sentry",
+          "script_name": "MiniSentry",
+          "description": "Auto Turret"
+        },
+        {
+          "value": 21,
+          "display_name": "Dummy",
+          "script_name": "Dummy",
+          "description": "DummyGrenade"
+        },
+        {
+          "value": 28,
+          "display_name": "Personal UAV",
+          "script_name": "PersonalUAV",
+          "description": "Personal UAV"
+        },
+        {
+          "value": 12,
+          "display_name": "Functional Items",
+          "script_name": "FunctionalItems",
+          "description": "Skateboard, Camo …"
+        },
+        {
+          "value": 31,
+          "display_name": "Snowball",
+          "script_name": "SnowBall",
+          "description": "Snowball"
         }
       ],
-      "official_option_count": 12,
+      "official_option_count": 18,
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 24,
@@ -1877,9 +2225,9 @@
         "interpretation": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
         "other_old_mirror_types_with_same_option_set": []
       },
-      "completeness_note": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
+      "completeness_note": "The current official reference shows 18 EquipmentType rows; the old mirror has 24 parsed members. Preserve the table's non-contiguous numeric IDs. Current installed-editor parity remains untested.",
       "notes": [
-        "Rows transcribed from current official Enum reference. Old-mirror entries beyond this table are not inferred removed or supported."
+        "All 18 visible current official EquipmentType rows are included in page order. Six additional names/aliases in the old mirror are not inferred removed or supported."
       ]
     },
     {
@@ -2236,14 +2584,777 @@
       "notes": [
         "The numeric identifiers are non-contiguous. The old mirror also has a similarly sized PlayerHudSwitchType option set; do not collapse the types on that basis."
       ]
+    },
+    {
+      "rough_label": "Rigidbody Constrain Type",
+      "canonical_identifier": "RigidbodyConstrainType",
+      "display_label": "Rigidbody Constrain Type",
+      "module": "Physics",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "None",
+          "script_name": "None",
+          "description": "None"
+        },
+        {
+          "value": 2,
+          "display_name": "Freeze Position X",
+          "script_name": "FreezePositionX",
+          "description": "Freeze Position X"
+        },
+        {
+          "value": 4,
+          "display_name": "Freeze Position Y",
+          "script_name": "FreezePositionY",
+          "description": "Freeze Position Y"
+        },
+        {
+          "value": 8,
+          "display_name": "Freeze Position Z",
+          "script_name": "FreezePositionZ",
+          "description": "Freeze Position Z"
+        },
+        {
+          "value": 16,
+          "display_name": "Freeze Rotation X",
+          "script_name": "FreezeRotationX",
+          "description": "Restricted rotation around X-axis"
+        },
+        {
+          "value": 32,
+          "display_name": "Freeze Rotation Y",
+          "script_name": "FreezeRotationY",
+          "description": "Restriction of rotation around the Y-axis"
+        },
+        {
+          "value": 64,
+          "display_name": "Freeze Rotation Z",
+          "script_name": "FreezeRotationZ",
+          "description": "Limit rotation around the Z-axis"
+        },
+        {
+          "value": 14,
+          "display_name": "Freeze Position",
+          "script_name": "FreezePosition",
+          "description": "Freeze Position"
+        },
+        {
+          "value": 112,
+          "display_name": "Freeze Rotation",
+          "script_name": "FreezeRotation",
+          "description": "Freeze Rotation"
+        },
+        {
+          "value": 126,
+          "display_name": "Freeze All",
+          "script_name": "FreezeAll",
+          "description": "Freeze All"
+        }
+      ],
+      "official_option_count": 10,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 11,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "10 rows are visible in the current official page; the older mirror has 11 members. Numeric values are combinable bit flags, so preserve values exactly.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "10 rows are visible in the current official page; the older mirror has 11 members. Numeric values are combinable bit flags, so preserve values exactly.",
+      "notes": [
+        "The official description says individual constraints can be combined. Do not renumber the values or assume the old mirror's extra member is still available."
+      ]
+    },
+    {
+      "rough_label": "Force Type",
+      "canonical_identifier": "ForceType",
+      "display_label": "Force Type",
+      "module": "Physics",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Force",
+          "script_name": "Force",
+          "description": "Generate a specified amount of force"
+        },
+        {
+          "value": 2,
+          "display_name": "Acceleration",
+          "script_name": "Acceleration",
+          "description": "Generate an acceleration of a specified magnitude"
+        },
+        {
+          "value": 3,
+          "display_name": "Impulse",
+          "script_name": "Impulse",
+          "description": "Generate an impulse of a specified magnitude"
+        },
+        {
+          "value": 4,
+          "display_name": "Velocity",
+          "script_name": "Velocity",
+          "description": "Generate a specified amount of velocity"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official table and old mirror both show four members; documented as applicable to Dynamic rigidbody types.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official table and old mirror both show four members; documented as applicable to Dynamic rigidbody types.",
+      "notes": [
+        "Official description says these are different effects of rigidbody forces and only work for Dynamic types."
+      ]
+    },
+    {
+      "rough_label": "Fog Mode Type",
+      "canonical_identifier": "FogModeType",
+      "display_label": "Fog Mode Type",
+      "module": "Scene",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Linear",
+          "script_name": "Linear",
+          "description": "Linear Fog"
+        },
+        {
+          "value": 2,
+          "display_name": "Exponential",
+          "script_name": "Exponential",
+          "description": "Exponential Fog"
+        },
+        {
+          "value": 3,
+          "display_name": "Exponential Squared",
+          "script_name": "ExponentialSquared",
+          "description": "Exponential Square Fog"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table and old mirror both show three members.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table and old mirror both show three members.",
+      "notes": [
+        "Official description: fog effect base type."
+      ]
+    },
+    {
+      "rough_label": "Player State Type",
+      "canonical_identifier": "PlayerStateType",
+      "display_label": "Player State Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Alive",
+          "script_name": "Alive",
+          "description": "Player in normal active state"
+        },
+        {
+          "value": 2,
+          "display_name": "Knocked Down",
+          "script_name": "KnockedDown",
+          "description": "Player is knocked down"
+        },
+        {
+          "value": 3,
+          "display_name": "Dead",
+          "script_name": "Dead",
+          "description": "Player is dead"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "Three rows are visible in the current official table, versus four parsed members in the older mirror; verify the current installed editor if exact exhaustiveness matters.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "Three rows are visible in the current official table, versus four parsed members in the older mirror; verify the current installed editor if exact exhaustiveness matters.",
+      "notes": [
+        "Official descriptions identify Alive, Knocked Down and Dead states."
+      ]
+    },
+    {
+      "rough_label": "Player Pose Type",
+      "canonical_identifier": "PlayerPoseType",
+      "display_label": "Player Pose Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Standing",
+          "script_name": "Standing",
+          "description": "Standing"
+        },
+        {
+          "value": 1,
+          "display_name": "Crouching",
+          "script_name": "Crouching",
+          "description": "Show Crouch"
+        },
+        {
+          "value": 2,
+          "display_name": "Dashing",
+          "script_name": "Sprint",
+          "description": "Running"
+        },
+        {
+          "value": 3,
+          "display_name": "Prone",
+          "script_name": "Prone",
+          "description": "Down and Crawl"
+        },
+        {
+          "value": 4,
+          "display_name": "",
+          "script_name": "Swimdash",
+          "description": "Swimming"
+        },
+        {
+          "value": 5,
+          "display_name": "",
+          "script_name": "Skydiving",
+          "description": "Falling vertically"
+        },
+        {
+          "value": 6,
+          "display_name": "",
+          "script_name": "Crossover",
+          "description": "Over the wall"
+        },
+        {
+          "value": 7,
+          "display_name": "",
+          "script_name": "Climbover",
+          "description": "Unused"
+        },
+        {
+          "value": 8,
+          "display_name": "",
+          "script_name": "Knockdown",
+          "description": "Knocked down but not dead"
+        },
+        {
+          "value": 9,
+          "display_name": "",
+          "script_name": "Swimsurfing",
+          "description": "Water Skateboarding"
+        },
+        {
+          "value": 10,
+          "display_name": "",
+          "script_name": "Highfalling",
+          "description": "High fall"
+        },
+        {
+          "value": 11,
+          "display_name": "Lowfalling",
+          "script_name": "LowFalling",
+          "description": "Low fall, e.g. jumping"
+        },
+        {
+          "value": 12,
+          "display_name": "",
+          "script_name": "Jetflyrush",
+          "description": "Flying shoes"
+        },
+        {
+          "value": 13,
+          "display_name": "",
+          "script_name": "Secondfalling",
+          "description": "Two jump jumps"
+        },
+        {
+          "value": 14,
+          "display_name": "",
+          "script_name": "Sitting",
+          "description": "Sitting on a chair"
+        },
+        {
+          "value": 15,
+          "display_name": "",
+          "script_name": "Catapultfalling",
+          "description": "Ejected by catapult"
+        },
+        {
+          "value": 16,
+          "display_name": "",
+          "script_name": "Catapultstanding",
+          "description": "Catapult preparation phase"
+        },
+        {
+          "value": 17,
+          "display_name": "",
+          "script_name": "Gliding",
+          "description": "Gliding on the consumable"
+        },
+        {
+          "value": 18,
+          "display_name": "",
+          "script_name": "Glidefalling",
+          "description": "Gliding prop drop"
+        },
+        {
+          "value": 19,
+          "display_name": "",
+          "script_name": "Fountainfalling",
+          "description": "Bounced by tires"
+        },
+        {
+          "value": 20,
+          "display_name": "",
+          "script_name": "Humantirefalling",
+          "description": "Bounced by human tires"
+        },
+        {
+          "value": 21,
+          "display_name": "",
+          "script_name": "Partydance",
+          "description": "An Animation in the Party Zone"
+        },
+        {
+          "value": 22,
+          "display_name": "",
+          "script_name": "Flightroamrush",
+          "description": "Ride a Flying Machine"
+        },
+        {
+          "value": 23,
+          "display_name": "",
+          "script_name": "Cannonstanding",
+          "description": "Entering a Cannon"
+        },
+        {
+          "value": 24,
+          "display_name": "",
+          "script_name": "Platform_Falling",
+          "description": "This is the state when coming out of a Cannon, Carrier, etc. if the ride object is flying"
+        },
+        {
+          "value": 25,
+          "display_name": "",
+          "script_name": "Jumppadfalling",
+          "description": "After jumping from a springboard"
+        },
+        {
+          "value": 26,
+          "display_name": "",
+          "script_name": "Stropfalling",
+          "description": "After getting off the zipline"
+        },
+        {
+          "value": 27,
+          "display_name": "",
+          "script_name": "Count",
+          "description": "Not used"
+        }
+      ],
+      "official_option_count": 28,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page displays 28 PlayerPoseType rows (values 0–27), while the older mirror parser had only four. Preserve blank display-name cells where the official table supplies only a script name.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page displays 28 PlayerPoseType rows (values 0–27), while the older mirror parser had only four. Preserve blank display-name cells where the official table supplies only a script name.",
+      "notes": [
+        "Official table includes many movement/animation states and one Count value marked Not used; this is reference metadata, not proof every value is usable in a new runtime selector."
+      ]
+    },
+    {
+      "rough_label": "Player Behaviour Status Type",
+      "canonical_identifier": "PlayerBehaviorStatusType",
+      "display_label": "Player Behaviour Status Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Enable",
+          "script_name": "Enable",
+          "description": "Enable"
+        },
+        {
+          "value": 1,
+          "display_name": "Disable",
+          "script_name": "Disable",
+          "description": "Disable"
+        },
+        {
+          "value": 2,
+          "display_name": "Invisible",
+          "script_name": "Invisible",
+          "description": "Invisible"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official table and older mirror both show three members.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official table and older mirror both show three members.",
+      "notes": [
+        "Official spelling of the enum identifier is PlayerBehaviorStatusType; preserve observed label spelling separately."
+      ]
+    },
+    {
+      "rough_label": "Equipment Slot Type",
+      "canonical_identifier": "EquipmentSlotType",
+      "display_label": "Equipment Slot Type",
+      "module": "Items",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Primary Weapon A",
+          "script_name": "PrimaryWeaponA",
+          "description": "Primary Weapon A"
+        },
+        {
+          "value": 1,
+          "display_name": "Primary WeaponB",
+          "script_name": "PrimaryWeaponB",
+          "description": "Primary WeaponB"
+        },
+        {
+          "value": 2,
+          "display_name": "Secondary Weapon",
+          "script_name": "SecondaryWeapon",
+          "description": "Secondary Weapon"
+        },
+        {
+          "value": 4,
+          "display_name": "Melee",
+          "script_name": "Melee",
+          "description": "Melee"
+        },
+        {
+          "value": 6,
+          "display_name": "Helmet",
+          "script_name": "Helmet",
+          "description": "Helmet"
+        },
+        {
+          "value": 7,
+          "display_name": "Backpack",
+          "script_name": "Bag",
+          "description": "Backpack"
+        },
+        {
+          "value": 8,
+          "display_name": "Vest",
+          "script_name": "Vest",
+          "description": "Vest"
+        },
+        {
+          "value": 12,
+          "display_name": "Functional Items",
+          "script_name": "FunctionalItems",
+          "description": "Skateboard, Camo …"
+        }
+      ],
+      "official_option_count": 8,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 11,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table shows eight rows versus 11 parsed members in the older mirror. Numeric slots are non-contiguous.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table shows eight rows versus 11 parsed members in the older mirror. Numeric slots are non-contiguous.",
+      "notes": [
+        "Do not merge this type with EquipmentType or SwitchEquipSlot simply because option values overlap."
+      ]
+    },
+    {
+      "rough_label": "Seat Type",
+      "canonical_identifier": "SeatType",
+      "display_label": "Seat Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Driver",
+          "script_name": "Driver",
+          "description": "Driver"
+        },
+        {
+          "value": 1,
+          "display_name": "Passenger A",
+          "script_name": "PassengerA",
+          "description": "Passenger A"
+        },
+        {
+          "value": 2,
+          "display_name": "Passenger B",
+          "script_name": "PassengerB",
+          "description": "Passenger B"
+        },
+        {
+          "value": 3,
+          "display_name": "Passenger C",
+          "script_name": "PassengerC",
+          "description": "Passenger C"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 7,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table shows four seat entries versus seven parsed members in the old mirror.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table shows four seat entries versus seven parsed members in the old mirror.",
+      "notes": [
+        "Official visible table identifies one driver and three passenger seats."
+      ]
+    },
+    {
+      "rough_label": "Damage Body Part Type",
+      "canonical_identifier": "DamagedBodyPartType",
+      "display_label": "Damage Body Part Type",
+      "module": "Combat",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "None",
+          "script_name": "None",
+          "description": "No"
+        },
+        {
+          "value": 1,
+          "display_name": "Headwear",
+          "script_name": "Head",
+          "description": "Head"
+        },
+        {
+          "value": 2,
+          "display_name": "Body",
+          "script_name": "Body",
+          "description": "Body"
+        },
+        {
+          "value": 3,
+          "display_name": "Limb",
+          "script_name": "Limb",
+          "description": "Limb"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table and older mirror both show four entries.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table and older mirror both show four entries.",
+      "notes": [
+        "Canonical enum identifier is DamagedBodyPartType although the rough display label says Damage Body Part Type."
+      ]
+    },
+    {
+      "rough_label": "Outfit Slot Type",
+      "canonical_identifier": "OutfitSlotType",
+      "display_label": "Outfit Slot Type",
+      "module": "Collection",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 3,
+          "display_name": "Top",
+          "script_name": "Top",
+          "description": "Top Wear"
+        },
+        {
+          "value": 4,
+          "display_name": "Bottom",
+          "script_name": "Bottom",
+          "description": "Bottom Wear"
+        },
+        {
+          "value": 5,
+          "display_name": "Shoes",
+          "script_name": "Shoes",
+          "description": "Shoes"
+        },
+        {
+          "value": 8,
+          "display_name": "Mask",
+          "script_name": "Mask",
+          "description": "Mask"
+        },
+        {
+          "value": 11,
+          "display_name": "Head",
+          "script_name": "Head",
+          "description": "Headwear"
+        },
+        {
+          "value": 12,
+          "display_name": "Onesie",
+          "script_name": "Onesie",
+          "description": "Bodysuit"
+        },
+        {
+          "value": 14,
+          "display_name": "Facepaint",
+          "script_name": "Facepaint",
+          "description": "Facepaint"
+        }
+      ],
+      "official_option_count": 7,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 14,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table shows seven outfit slots while the older mirror has 14 members. Current editor availability for old-only entries remains unknown.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table shows seven outfit slots while the older mirror has 14 members. Current editor availability for old-only entries remains unknown.",
+      "notes": [
+        "Values are non-contiguous; retain official number, display label and script name as separate fields."
+      ]
+    },
+    {
+      "rough_label": "Inventory Type",
+      "canonical_identifier": "InventoryType",
+      "display_label": "Inventory Type",
+      "module": "Items",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Weapons",
+          "script_name": "Weapon",
+          "description": "Weapon"
+        },
+        {
+          "value": 2,
+          "display_name": "Helmet",
+          "script_name": "Helmet",
+          "description": "Helmet"
+        },
+        {
+          "value": 4,
+          "display_name": "Vest",
+          "script_name": "Vest",
+          "description": "Vest"
+        },
+        {
+          "value": 8,
+          "display_name": "Grenade",
+          "script_name": "Grenade",
+          "description": "Grenade"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 4,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official table and old mirror both show four entries.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official table and old mirror both show four entries.",
+      "notes": [
+        "Official description associates this list with inventory item categories; preserve non-contiguous values."
+      ]
+    },
+    {
+      "rough_label": "Mini Sentry Attack Range Type",
+      "canonical_identifier": "MiniSentryAttackRangeType",
+      "display_label": "Mini Sentry Attack Range Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-visible-rows; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Near",
+          "script_name": "Near",
+          "description": "Close Range"
+        },
+        {
+          "value": 1,
+          "display_name": "Middle",
+          "script_name": "Middle",
+          "description": "Medium Range"
+        },
+        {
+          "value": 2,
+          "display_name": "Far",
+          "script_name": "Far",
+          "description": "Long range"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official table and old mirror both show three entries.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official table and old mirror both show three entries.",
+      "notes": [
+        "Official description labels these as claim/attack range choices: Near, Middle and Far."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 39,
-    "official_option_rows": 214,
+    "rough_labels_crosschecked": 51,
+    "official_option_rows": 353,
     "labels_with_mirror_alias_or_spelling_caveat": 22,
     "runtime_tested": 0,
-    "mobile_parity_tested": 0
+    "mobile_parity_tested": 0,
+    "labels_with_official_vs_mirror_count_difference": 29
   },
   "caveats": [
     "This is a cross-check of visible official Enum-reference rows, not a full crawl of every enum/type or every project-specific dropdown.",
