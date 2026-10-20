@@ -31,9 +31,9 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 28,
+    "candidate_mapped_from_mirror": 22,
     "official_doc_match_not_in_mirror": 2,
-    "official_docs_and_mirror_confirm": 24,
+    "official_docs_and_mirror_confirm": 30,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
     "manual_or_official_cross_check": 0,
@@ -42,10 +42,12 @@
     "official_docs_clarify_not_enum": 1,
     "official_docs_likely_typo_match": 1,
     "official_docs_match_different_identifiers": 1,
-    "official_option_crosscheck_labels": 25,
-    "official_option_rows": 109,
-    "labels_with_mirror_alias_or_spelling_caveats": 19,
-    "official_docs_generated_enum": 1
+    "official_option_crosscheck_labels": 33,
+    "official_option_rows": 162,
+    "labels_with_mirror_alias_or_spelling_caveats": 22,
+    "official_docs_generated_enum": 1,
+    "checked_on": "2026-10-21",
+    "note": "Official visible option rows now cover 33 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
   },
   "entries": [
     {
@@ -2159,7 +2161,7 @@
       "observed_label": "VFX Type",
       "rough_line": 593,
       "observed_signature": "5. VFX Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:VFXType",
@@ -2896,13 +2898,20 @@
           "label": "StdLibrary.fcc:VFXType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 7,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete."
+      }
     },
     {
       "observed_label": "Sound Effect Type",
       "rough_line": 594,
       "observed_signature": "6. Sound Effect Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:SoundEffectType",
@@ -3949,7 +3958,14 @@
           "label": "StdLibrary.fcc:SoundEffectType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official page visibly presents ten rows, while the older mirror has 102 members. Keep that mismatch open until current-editor data is compared.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 10,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page visibly presents ten rows, while the older mirror has 102 members. Keep that mismatch open until current-editor data is compared."
+      }
     },
     {
       "observed_label": "Item ID Type",
@@ -8051,7 +8067,7 @@
       "observed_label": "SkyboxType",
       "rough_line": 603,
       "observed_signature": "15. SkyboxType",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Scene.fcc:SkyboxType",
@@ -8158,7 +8174,14 @@
           "label": "Scene.fcc:SkyboxType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Six current official rows are cross-referenced with the curated asset reference. The old mirror adds two deprecated aliases.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 6,
+        "current_editor_parity": "not-tested",
+        "note": "Six current official rows are cross-referenced with the curated asset reference. The old mirror adds two deprecated aliases."
+      }
     },
     {
       "observed_label": "Player Revival Source Type",
@@ -9303,18 +9326,20 @@
           "label": "LevelObject.fcc:TextureType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "next_check": "The official reference visibly lists 15 rows; the old mirror has 35 entries including deprecated aliases and other older names. Do not equate an old-only value with current support or definite removal.",
       "official_documentation": {
-        "identifier": "TextureType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Official enum docs identify Texture ID as the value type and list texture options; mirror contains a 35-member TextureType enum."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 15,
+        "current_editor_parity": "not-tested",
+        "note": "The official reference visibly lists 15 rows; the old mirror has 35 entries including deprecated aliases and other older names. Do not equate an old-only value with current support or definite removal."
       }
     },
     {
       "observed_label": "Monster Type",
       "rough_line": 611,
       "observed_signature": "23. Monster Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "AI.fcc:MonsterType",
@@ -9471,7 +9496,14 @@
           "label": "AI.fcc:MonsterType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official page shows four rows, while the old mirror has 13 members. Verify the live option list in the installed editor.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "The official page shows four rows, while the old mirror has 13 members. Verify the live option list in the installed editor."
+      }
     },
     {
       "observed_label": "Effect Texture Type",
@@ -12773,7 +12805,7 @@
       "observed_label": "Special ID Type",
       "rough_line": 629,
       "observed_signature": "41. Special ID Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:SpecialItemIDType",
@@ -12810,7 +12842,14 @@
           "label": "Items.fcc:SpecialItemIDType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official page and old mirror both show one item; runtime/UI parity is untested.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 1,
+        "current_editor_parity": "not-tested",
+        "note": "The official page and old mirror both show one item; runtime/UI parity is untested."
+      }
     },
     {
       "observed_label": "Equipment Slot Type",
@@ -13453,7 +13492,7 @@
       "observed_label": "Font Type",
       "rough_line": 635,
       "observed_signature": "47. Font Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:FontType",
@@ -13550,7 +13589,14 @@
           "label": "StdLibrary.fcc:FontType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 6,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check."
+      }
     },
     {
       "observed_label": "Player Pose Type",
@@ -14743,11 +14789,13 @@
         }
       ],
       "catalog_enums": [],
-      "next_check": "Resolve against current official docs and/or current installed editor; do not infer availability from the older mirror.",
+      "next_check": "Four official rows are listed. The Get Render Quality API is labelled Client Side and Both Mobile and PC; this enum is absent from the old mirror.",
       "official_documentation": {
-        "identifier": "RenderQualityType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Official enum docs list Low=0, Medium=1, High=2, Ultra=3."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "Four official rows are listed. The Get Render Quality API is labelled Client Side and Both Mobile and PC; this enum is absent from the old mirror."
       }
     },
     {
