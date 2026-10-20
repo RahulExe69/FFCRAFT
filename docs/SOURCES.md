@@ -15,12 +15,14 @@ This index prioritizes official Garena sources. They are grouped by what they ar
 - [Block Scripts](https://ffcraftland.garena.com/en/tutorial/cl/4-101) — editor UI, scopes, script-type toggle, block search, templates, event-to-action logic.
 - [Publishing Blocks and HUD UIs](https://ffcraftland.garena.com/en/tutorial/cl/4-100) — packaging/sharing block and HUD templates.
 - [Block Classification and Flow Control](https://ffcraftland.garena.com/en/tutorial/cl/4-104) — block types and flow control concepts.
+- [Primitives and Logic](https://ffcraftland.garena.com/en/tutorial/undefined/4-60) — official descriptions of if/else, conditional loops, integer-range loops, for-each, null checks, Continue to next and Break loop. This is a legacy-shaped URL on the current Garena host; use for concepts, not as a version-stamped editor export.
 - [Variables and Properties, Assignment](https://ffcraftland.garena.com/en/tutorial/cl/4-105) — variable/property/assignment concepts.
 - [Data and Logic Operations](https://ffcraftland.garena.com/en/tutorial/cl/4-106) — data operations and logic blocks.
 - [Server-side and client-side scripts](https://ffcraftland.garena.com/en/tutorial/cl/4-107/) — visual scripting side constraints.
 - [PC Scripts manual](https://ffcraftland-pre.garena.com/en/tutorial/fe/1-7/) — block vs code scripts, server/client, static scripts.
 - [PC Code Scripts](https://ffcraftland.garena.com/en/tutorial/fe/1-9) — `.fcg` scripts, `.fcc` libraries, imports, graph/function/event structure, custom libraries/events, platform labels, and VS Code tooling.
 - [API index / standard library](https://ffcraftland.garena.com/en/docs/api-1-26) — API discovery and categories. The page indicates legacy/obsolete entries, so use it as an index and verify individual declarations.
+- [Current STD Library type/API index](https://ffcraftland.garena.com/en/docs/module-1) — definitions for Bool, String, Vector3 and List plus current index entries such as Set Property Smoothly, Break loop, Continue to next and Check null.
 - [Event index](https://ffcraftland.garena.com/en/docs/type-11/) — event name/description table, including lifecycle and combat events and deprecated entries.
 - [On Player Join event](https://ffcraftland.garena.com/en/docs/event-11-14) — event meaning, owner, and platform/runtime labels.
 
@@ -84,6 +86,20 @@ Some links point to the official pre-release host because that host exposes a mo
 - [Curated skybox base types](17-curated-asset-reference.md) — six SkyboxType identifiers cross-checked against Garena's public enum reference, with untested community package links clearly separated from enum evidence.
 
 
+## Official Math API references used in the updated Rough crosswalk
+
+- [Vector2 Scale](https://ffcraftland.garena.com/en/docs/api-4-692/) — Both Server and Client; Only Mobile.
+- [Vector2 Add](https://ffcraftland.garena.com/en/docs/api-4-690/) and [Vector2 Sub](https://ffcraftland.garena.com/en/docs/api-4-691/) — Both Server and Client; Only Mobile.
+- [New Vector2](https://ffcraftland.garena.com/en/docs/api-4-702/) — Both Server and Client; Both Mobile and PC.
+- [Vector2 Get X](https://ffcraftland.garena.com/en/docs/api-4-686/) and [Vector2 Get Y](https://ffcraftland.garena.com/en/docs/api-4-687/) — Both Server and Client; Only Mobile.
+- [Vector2 Set X (server-side page)](https://ffcraftland.garena.com/en/docs/api-4-688/) and [Vector2 Set Y (server-side page)](https://ffcraftland.garena.com/en/docs/api-4-689/) — Server Side; Only Mobile.
+- [Vector2 Set X (client-side page)](https://ffcraftland.garena.com/en/docs/api-4-774/) and [Vector2 Set Y (client-side page)](https://ffcraftland.garena.com/en/docs/api-4-775/) — Client Side; Only Mobile. These same-title pages are both retained until the target editor context is captured.
+- [Get x vector component](https://ffcraftland.garena.com/en/docs/api-4-80/), [Get y vector component](https://ffcraftland.garena.com/en/docs/api-4-148/) and [Obtain z vector component](https://ffcraftland.garena.com/en/docs/api-4-149/) — Both Server and Client; Only Mobile.
+- [Quaternion Rotate Towards](https://ffcraftland.garena.com/en/docs/api-4-931/) — Both Server and Client; Both Mobile and PC. Official title uses “Towards”; preserve the user's original singular label as an alias.
+- [Set Property Smoothly](https://ffcraftland.garena.com/en/docs/api-1-475/) — a related but **unconfirmed** candidate for Rough.txt line 132; Server Side and Both Mobile/PC. Do not treat it as the same visual block without current editor evidence.
+
+These official pages document names/concepts and the availability annotations displayed on the docs. They do not replace exact installed-editor node/socket capture or runtime tests.
+
 ## Recovered language-library and dropdown research
 
 - [Official enum reference](https://ffcraftland.garena.com/en/docs/enum/) — current enum definitions, values, names, and deprecation labels; some selectors represent dynamic type/asset IDs rather than short fixed enums.
@@ -128,6 +144,6 @@ The mirrored library is not treated as authoritative for current API support. A 
 - [Machine-readable MCP lead audit](../research/live-mcp-public-resource-audit.json) and [Mobile source map](../research/mobile-official-scripting-source-map.json).
 - [Public MCP-derived KB source](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — methodology lead only; inspect the pinned commit and published tree before treating any claimed export as accessible evidence.
 
-- [Rough block review queue](31-rough-block-review-queue.md) and [machine-readable queue](../research/rough-block-review-queue.json) — prioritized follow-up for the 92 fuzzy old-mirror candidates, 18 mirror misses, and one likely editor-native block; misses are not claims of absence.
+- [Rough block review queue](31-rough-block-review-queue.md) and [machine-readable queue](../research/rough-block-review-queue.json) — 111 rows still requiring editor-level verification: 84 fuzzy candidates, 5 exact old-mirror misses, 21 official-reference mappings whose exact current node/context remain unverified, and one likely editor-native block; misses are not claims of absence.
 
 - [Expanded official dropdown option cross-check](../research/official-dropdown-option-crosschecks.json) — 367 visible rows across 52 labels; large current-doc vs old-mirror count differences remain explicitly unverified against the installed editor.
