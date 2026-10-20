@@ -7718,7 +7718,12 @@
           "label": "PropertyFormula.fcc:PropertyModifyType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "PropertyModifyType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Inventory Type",
@@ -7864,7 +7869,12 @@
           "label": "AI.fcc:PatrolStyleType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "PatrolStyleType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Patrol Type",
@@ -7937,7 +7947,12 @@
           "label": "AI.fcc:PatrolType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "PatrolType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Money Type",
@@ -8146,7 +8161,12 @@
           "label": "Player.fcc:PlayerReviveSourceType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "PlayerReviveSourceType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Equipment Type",
@@ -8482,7 +8502,12 @@
           "label": "Combat.fcc:AimAssistType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "AimAssistType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Player Behaviour Status Type",
@@ -8813,7 +8838,12 @@
           "label": "LevelObject.fcc:LootWeaponType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootWeaponType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Object Texture",
@@ -9602,7 +9632,12 @@
           "label": "LevelObject.fcc:LootArmorType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootArmorType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Loot Ammo Type",
@@ -9715,7 +9750,12 @@
           "label": "LevelObject.fcc:LootAmmoType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootAmmoType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Loot Consumable Type",
@@ -9838,7 +9878,12 @@
           "label": "LevelObject.fcc:LootConsumableType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootConsumableType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Loot Throwable Type",
@@ -9951,7 +9996,12 @@
           "label": "LevelObject.fcc:LootThrowableType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootThrowableType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Loot Scope Type",
@@ -10166,7 +10216,12 @@
           "label": "LevelObject.fcc:LootSightType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootScopeType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Movable Platform Type",
@@ -10301,7 +10356,12 @@
           "label": "LevelObject.fcc:MoveObjectMotionType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "MovePlatformType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Tween Style Type",
@@ -10623,6 +10683,11 @@
           }
         ],
         "note": "The live official enum page exposes this exact identifier/display label and these three options. The original Rough.txt wording is 'Loot Scorer Type'; treat that spelling as likely user transcription, while keeping the raw source untouched."
+      },
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LootSoccerType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
       }
     },
     {
@@ -12575,7 +12640,12 @@
           "label": "Player.fcc:GenderType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "GenderType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Special ID Type",
@@ -13484,7 +13554,12 @@
           "label": "Player.fcc:KnockDownType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "KnockDownType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Action Type",
@@ -13640,7 +13715,12 @@
           "label": "Items.fcc:FireType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "FireType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Layout Sort Type",
@@ -13713,7 +13793,12 @@
           "label": "Hud.fcc:LayoutSortType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LayoutSortType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Status Code",
@@ -14466,7 +14551,12 @@
           "label": "Animation.fcc:LoopType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
+      "official_option_crosscheck": {
+        "dataset": "research/official-dropdown-option-crosschecks.json",
+        "canonical_identifier": "LoopType",
+        "source": "https://ffcraftland.garena.com/en/docs/enum/"
+      }
     },
     {
       "observed_label": "Render Quality Type",
