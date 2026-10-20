@@ -48,6 +48,12 @@ The largest extracted enums include 211 item-ID entries, 155 dynamic-create leve
 
 The next research pass is to map each enum label mentioned in `Rough.txt` to the best source definition, flag mismatches/missing entries, and then build a separate current-version crosswalk for visual-block dropdowns. For missing dropdowns, likely routes include current official enum/API pages, the latest official extension package, generated project-level `EditorGenLib.fcc` files, and screenshots/exported blocks from the target editor.
 
+## Supplementary legacy symbol index
+
+A companion `BuiltinSymbol.json` exists in the same public extension mirror. It indexes symbols by library path and records numeric IDs for components, APIs and component properties. A separate [audit](32-legacy-builtin-symbol-index-audit.md) counted 590 component records, 3,315 component-property records, 150 enum records, 739 API records and 259 event records across 42 file spaces.
+
+These counts are not directly interchangeable with the parser counts above: repeated library-scoped names, aliases and extraction rules differ. The index is version 1.5.0, its upstream license is not affirmatively declared, and the raw JSON has not been copied into FFCRAFT. Use it only as a version-labelled discovery/cross-check source until the current installed editor confirms the IDs and declarations.
+
 ## Reproducibility and limits
 
 The JSON includes source file paths and blob SHAs to identify precisely which snapshot was inspected. The catalog records identifiers/signatures and does not claim a successful import, compile, or in-game test. A downloaded mirror may be incomplete or stale, and the local editor's generated asset library may contain project-specific symbols not found in the public standard libraries.
