@@ -36,6 +36,8 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 28. [Public tutorial corpus audit](docs/25-public-tutorial-corpus-audit.md) — indexes translated Mobile Block Script and PC code/element-script manuals, official-linked screenshots, and 13 reusable mechanism recipes.
 29. [Enum option-set analysis](docs/26-enum-option-set-analysis.md) — identifies 42 repeated option lists across differently named PC enums, while preserving each original type identity.
 30. [Current editor capture playbook](docs/27-current-editor-capture-playbook.md) — exact local .fcc path, EditorGenLib and MCP data sources, plus what Mobile screenshots are needed to close the remaining gaps.
+31. [Live MCP repository audit](docs/28-live-mcp-repository-audit.md) — audits a new community MCP-export workflow and separates its useful method clues from its unpublished raw catalog.
+32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
@@ -51,6 +53,8 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Public tutorial manifest](research/public-tutorial-corpus-index.json) — indexes 160 public manual files and key script references.
 - [Mobile block recipe index](research/mobile-block-recipe-index.json) — 13 summarized mechanism examples from a re-editable gameplay template.
 - [Enum option-set analysis](research/pc-enum-option-set-analysis.json) — groups identical dropdown-like option sequences for efficient browsing without merging API types.
+- [Live MCP public-resource audit](research/live-mcp-public-resource-audit.json) — machine-readable audit of a community PC MCP exporter; catalog counts are self-reported and raw records are absent.
+- [Official Mobile scripting source map](research/mobile-official-scripting-source-map.json) — structured links to seven official scripting topics and two mechanism templates.
 
 ## Current verified baseline
 
