@@ -42,6 +42,12 @@ These remain in the queue because they describe the *shape* of data/control bloc
 
 The full queue also retains the other 92 fuzzy candidate lines with up to three closest old-library names/signatures and a line-specific review action.
 
+## Supplementary legacy symbol-index cross-check
+
+A separate scan of the legacy `BuiltinSymbol.json` index found exact normalized-name matches for **47 of the 111 queue rows** (48 symbol records, because a row can match more than one entry). The structured matches are attached to the corresponding entries in the [machine-readable queue](../research/rough-block-review-queue.json), including library path and legacy ID.
+
+Examples include `Vector2GetX` (Math.fcc, legacy ID 3240), `Vector2SetY` (Math.fcc, ID 3243), `DamageType` (Combat.fcc, ID 24), and `WeaponSkinType` (LevelObject.fcc, ID 419). This is **additional old-mirror evidence only**. It does not change the review statuses, prove that a user-observed label is the same runtime API, establish current ID stability, or verify Mobile visual sockets/dropdowns. See the [legacy symbol-index audit](32-legacy-builtin-symbol-index-audit.md).
+
 ## Recommended review protocol
 
 1. Find the block in the current target editor. Record editor version, Mobile/PC, script type, scope and category.
