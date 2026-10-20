@@ -53,6 +53,9 @@ This index prioritizes official Garena sources. They are grouped by what they ar
 
 ## Community-maintained GitHub resources (secondary evidence)
 
+- [Public script-repository search audit](33-public-script-repository-audit.md) — three additional script-sharing/project repositories yielded no complete reusable script catalog; four copies of the canonical Nexos resource repository have the same recursive tree SHA.
+
+
 - [FF-OGC/Craftland-Tutorial](https://github.com/FF-OGC/Craftland-Tutorial) — a browsable Markdown mirror/organization of Craftland manuals, including the code-script user manual. Handy for offline reading/search; verify content against the official current site/editor.
 - [nexosstudio/CRAFTLAND_STUDIO_RESOURCES](https://github.com/nexosstudio/CRAFTLAND_STUDIO_RESOURCES) — community resource repository describing a directory of assets, docs, scripts, templates, and tools. Its README declares CC0-1.0; still inspect each item's provenance and the repo's current license/files before reusing assets or code.
 
