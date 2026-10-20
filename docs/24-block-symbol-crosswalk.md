@@ -90,6 +90,10 @@ These references confirm concepts and naming, not a full current UI dump. The ex
 
 The official [STD Library type index](https://ffcraftland.garena.com/en/docs/module-1) documents String (text content), Vector3 (3D coordinates/directions), and Bool (true/false). Those references clarify the type concepts behind Rough.txt lines 436, 437 and 439. The notes describe literal/value blocks, so the exact Mobile editor block shape, default fields and output sockets remain pending a current-editor capture; these are documented type concepts, not fully verified visual blocks.
 
+## Related candidate for Progressive Movement Property (not resolved)
+
+Rough.txt line 132 describes `Progressive Movement Property` with entity/property/value-style sockets. Garena's [Set Property Smoothly API](https://ffcraftland.garena.com/en/docs/api-1-475/) is a useful adjacent lead: the official page says it smoothly sets a target entity property and lists Server Side and Both Mobile and PC. The label is different and the current page does not establish that it is the same visual node. The queue intentionally keeps line 132 as **no exact match** until the installed editor confirms the identity and sockets.
+
 ## Stronger next sources
 
 The [public multilingual tutorial corpus audit](25-public-tutorial-corpus-audit.md) adds PC Block/Element Script, Code Script, Script Additional Notes, formula property and many Mobile template examples. Its [Mobile recipe index](../research/mobile-block-recipe-index.json) records 13 example mechanisms. It is a translated snapshot and is not authoritative for current dropdowns.
