@@ -8,7 +8,7 @@ Machine-readable result: [`research/block-symbol-crosswalk.json`](../research/bl
 
 ## Comparison result
 
-The initial old-library pass across 443 extracted lines found 306 exact normalized matches, 113 approximate candidates, 21 lines without an exact mirror match, and 3 likely explanatory notes. A later official-doc cross-check added 46 official reference mappings and upgraded 35 entry statuses (the 21 raw pre-pass misses/113 fuzzy candidates are pre-cross-check totals).
+The initial old-library pass across 443 extracted lines found 306 exact normalized matches, 113 approximate candidates, 21 lines without an exact mirror match, and 3 likely explanatory notes. A series of official-documentation passes has now recorded 55 reference mappings and upgraded 44 source-line statuses to official-current-reference-found. This includes API pages, Mobile flow-control tutorial entries, and documented basic data types. The 21 mirror misses and 113 fuzzy candidates below are the raw pre-cross-check totals.
 
 **Latest entry status (21 October 2026):**
 - **306** exact normalized matches to an old-mirror symbol name or documentation title.
