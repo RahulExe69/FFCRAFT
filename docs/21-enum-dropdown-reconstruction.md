@@ -13,9 +13,9 @@ Rahul's original `Rough.txt` lists many dropdown/type labels but intentionally o
 
 The 65 dropdown/type labels recorded in `Rough.txt` have been assigned the following research states:
 
-- 53 candidate mappings to enum definitions in the public 1.5.0 extension-library mirror.
+- 30 candidate mappings still based only on the public 1.5.0 extension-library mirror.
 - 2 official enum/type labels discovered in the current Garena docs but absent from that mirror (`TypeEnum` and `RenderQualityType`).
-- 1 texture label confirmed by both the official reference and mirror.
+- 23 labels now cross-checked against current official tables and the old mirror (including texture, loot, animation, AI, combat and HUD-related enums).
 - 4 skin-type dropdowns confirmed by the official docs as dynamic ID types rather than fixed small enums.
 - 3 legacy labels requiring obsolete/deprecation caution.
 - 0 unresolved type-to-enum mappings remain in the manual-review bucket. `Loot Scorer Type` is now a likely spelling/transcription variation of the official `Loot Soccer Type` (`LootSoccerType`), with its three current documented options recorded below; only the exact visible label needs a current-editor screenshot if wording must be proven.
@@ -42,7 +42,7 @@ The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-1
 
 This is enough to correct the **classification** of the Rough.txt label: do not build a fictitious `PhaseAndRoundEnum` or invent values. It does not settle whether the label in the author's original editor panel was a selector or a rough heading; that requires a screenshot of the current UI. Related Workflow API pages can be platform-marked Both Mobile and PC, but that still does not mean the Mobile editor has an identically named dropdown.
 
-The new [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) records 70 current published option rows across 18 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
+The [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) now records 108 current published option rows across 24 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
 
 ## Important distinctions
 
