@@ -31,9 +31,9 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 22,
+    "candidate_mapped_from_mirror": 16,
     "official_doc_match_not_in_mirror": 2,
-    "official_docs_and_mirror_confirm": 30,
+    "official_docs_and_mirror_confirm": 36,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
     "manual_or_official_cross_check": 0,
@@ -42,12 +42,12 @@
     "official_docs_clarify_not_enum": 1,
     "official_docs_likely_typo_match": 1,
     "official_docs_match_different_identifiers": 1,
-    "official_option_crosscheck_labels": 33,
-    "official_option_rows": 162,
+    "official_option_crosscheck_labels": 39,
+    "official_option_rows": 214,
     "labels_with_mirror_alias_or_spelling_caveats": 22,
     "official_docs_generated_enum": 1,
     "checked_on": "2026-10-21",
-    "note": "Official visible option rows now cover 33 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
+    "note": "Official visible option rows now cover 39 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
   },
   "entries": [
     {
@@ -8250,7 +8250,7 @@
       "observed_label": "Equipment Type",
       "rough_line": 605,
       "observed_signature": "17. Equipment Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:EquipmentType",
@@ -8517,7 +8517,14 @@
           "label": "Items.fcc:EquipmentType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 12,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive."
+      }
     },
     {
       "observed_label": "Aim Assist Type",
@@ -10567,7 +10574,7 @@
       "observed_label": "Coordinate System Type",
       "rough_line": 620,
       "observed_signature": "32. Coordinate System Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:CoordinateSystemType",
@@ -10614,7 +10621,14 @@
           "label": "StdLibrary.fcc:CoordinateSystemType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Official table and old mirror both list two members; no runtime/platform parity test is claimed.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Official table and old mirror both list two members; no runtime/platform parity test is claimed."
+      }
     },
     {
       "observed_label": "Mini Sentry Attack Range Type",
@@ -11097,7 +11111,7 @@
       "observed_label": "Player UI Type",
       "rough_line": 625,
       "observed_signature": "37. Player UI Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:PlayerUISwitchType",
@@ -12406,13 +12420,20 @@
           "label": "Player.fcc:PlayerHudSwitchType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official page shows 19 rows while the old mirror has 63 members. Treat these as the currently visible documented rows; compare the installed editor before assuming list completeness.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 19,
+        "current_editor_parity": "not-tested",
+        "note": "The official page shows 19 rows while the old mirror has 63 members. Treat these as the currently visible documented rows; compare the installed editor before assuming list completeness."
+      }
     },
     {
       "observed_label": "Switch Equip Slot",
       "rough_line": 626,
       "observed_signature": "38. Switch Equip Slot",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:SwitchEquipSlot",
@@ -12609,7 +12630,14 @@
           "label": "Items.fcc:SwitchEquipSlot"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table shows 11 rows while the old mirror has 17 members; verify the active installed-editor list for any additional slot values.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 11,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table shows 11 rows while the old mirror has 17 members; verify the active installed-editor list for any additional slot values."
+      }
     },
     {
       "observed_label": "3-Status Switch",
@@ -13758,7 +13786,7 @@
       "observed_label": "Action Type",
       "rough_line": 638,
       "observed_signature": "50. Action Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "AI.fcc:ActionType",
@@ -13815,7 +13843,14 @@
           "label": "AI.fcc:ActionType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official table and old mirror both list three members; actual block-level dropdown/context remains untested.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "The official table and old mirror both list three members; actual block-level dropdown/context remains untested."
+      }
     },
     {
       "observed_label": "Fire Type",
@@ -14007,7 +14042,7 @@
       "observed_label": "Status Code",
       "rough_line": 641,
       "observed_signature": "53. Status Code",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "StdLibrary.fcc:StatusCode",
@@ -14274,7 +14309,14 @@
           "label": "StdLibrary.fcc:StatusCode"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official page visibly lists five rows while the old mirror has 24 members. These are the official visible rows; installed-editor completeness remains open.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 5,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page visibly lists five rows while the old mirror has 24 members. These are the official visible rows; installed-editor completeness remains open."
+      }
     },
     {
       "observed_label": "Camera Viewing Angle Restriction Type",
