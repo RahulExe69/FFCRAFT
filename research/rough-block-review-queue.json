@@ -20,17 +20,17 @@
     "rough_extracted_lines": 443,
     "entries_in_review_queue": 111,
     "approximate_candidate_needs_review": 84,
-    "no_exact_match_in_old_mirror": 8,
+    "no_exact_match_in_old_mirror": 5,
     "likely_editor_native_not_runtime_api": 1,
-    "current_official_reference_mappings": 41,
+    "current_official_reference_mappings": 44,
     "previously_targeted_officially_unresolved": 0,
-    "official_reference_found_pending_editor_verification": 18
+    "official_reference_found_pending_editor_verification": 21
   },
   "priority_counts": {
     "P1-current-editor-check": 7,
     "P1-editor-native": 1,
-    "P2-editor-shape-and-syntax": 4,
-    "P2-official-reference-editor-check": 14,
+    "P2-official-reference-editor-check": 17,
+    "P2-editor-shape-and-syntax": 1,
     "P2-fuzzy-candidate": 84,
     "P3-officially-clarified-concept": 1
   },
@@ -235,13 +235,21 @@
       "observed_subcategory": "BASIC",
       "observed_label": "String = . 'Please enter the content'",
       "observed_signature": "String = . 'Please enter the content'",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official type reference found; literal-block UI/default fields remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture literal/value-constructor node shape, default values, editable fields and output type.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "current_official_reference_match": {
+        "kind": "official-type-reference",
+        "title": "String (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents String as a text-content type. This verifies the type concept, not the precise editor literal block/input socket layout.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 437,
@@ -249,13 +257,21 @@
       "observed_subcategory": "BASIC",
       "observed_label": "Vector3 = .X0 Y0 Z0",
       "observed_signature": "Vector3 = .X0 Y0 Z0",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official type reference found; literal-block UI/default fields remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture literal/value-constructor node shape, default values, editable fields and output type.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "current_official_reference_match": {
+        "kind": "official-type-reference",
+        "title": "Vector3 (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents Vector3 as a three-dimensional vector used for spatial coordinates or directions. This verifies the type concept, not the precise editor literal block layout/default fields.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 439,
@@ -263,13 +279,21 @@
       "observed_subcategory": "BASIC",
       "observed_label": "Bool = .---tf",
       "observed_signature": "Bool = .---tf",
-      "crosswalk_status": "no-match-in-mirrored-library-snapshot",
-      "priority": "P2-editor-shape-and-syntax",
-      "evidence_status": "needs-current-editor-verification",
+      "crosswalk_status": "official-current-reference-found",
+      "priority": "P2-official-reference-editor-check",
+      "evidence_status": "official type reference found; literal-block UI/default fields remain unverified",
       "exact_match_count": 0,
       "best_candidates": [],
       "review_focus": "Capture literal/value-constructor node shape, default values, editable fields and output type.",
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Capture the corresponding literal/value block in the current target editor, including visible default fields, output type and any dropdowns; official type documentation is not an exact UI schema.",
+      "current_official_reference_match": {
+        "kind": "official-type-reference",
+        "title": "Bool (STD Library type)",
+        "url": "https://ffcraftland.garena.com/en/docs/module-1",
+        "evidence": "Current official STD Library type index documents Bool as a true/false type. This verifies the type concept, not the precise editor literal block layout/default field.",
+        "platform_status": "Current official type reference; exact visual literal block still needs editor capture.",
+        "confidence": "official-current-type-documented; exact-editor-literal-block-not-captured"
+      }
     },
     {
       "source_line": 442,
@@ -5456,6 +5480,12 @@
         "https://ffcraftland.garena.com/en/docs/module-1"
       ],
       "status": "Tutorial/module concepts confirmed; exact editor nodes, sockets and default values pending."
+    },
+    "official_basic_data_type_crosscheck": {
+      "checked_on": "2026-10-21",
+      "entries_mapped": 3,
+      "source": "https://ffcraftland.garena.com/en/docs/module-1",
+      "status": "Type concepts documented; exact current value/literal block appearance remains pending."
     }
   }
 }
