@@ -1786,11 +1786,461 @@
       "notes": [
         "Current official Get Render Quality page says Client Side and Both Mobile and PC. Actual UI dropdown placement and runtime behavior remain separate verification tasks."
       ]
+    },
+    {
+      "rough_label": "Equipment Type",
+      "canonical_identifier": "EquipmentType",
+      "display_label": "Equipment Type",
+      "module": "Items",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Primary Weapon A",
+          "script_name": "PrimaryWeaponA",
+          "description": "Primary Weapon A"
+        },
+        {
+          "value": 1,
+          "display_name": "Primary WeaponB",
+          "script_name": "PrimaryWeaponB",
+          "description": "Primary WeaponB"
+        },
+        {
+          "value": 2,
+          "display_name": "Secondary Weapon",
+          "script_name": "SecondaryWeapon",
+          "description": "Secondary Weapon"
+        },
+        {
+          "value": 3,
+          "display_name": "Grenade",
+          "script_name": "Grenade",
+          "description": "Blast Weapon"
+        },
+        {
+          "value": 4,
+          "display_name": "Melee",
+          "script_name": "Melee",
+          "description": "Melee"
+        },
+        {
+          "value": 5,
+          "display_name": "HeavyWeapon",
+          "script_name": "HeavyWeapon",
+          "description": "HeavyWeapon"
+        },
+        {
+          "value": 6,
+          "display_name": "Helmet",
+          "script_name": "Helmet",
+          "description": "Helmet"
+        },
+        {
+          "value": 8,
+          "display_name": "Vest",
+          "script_name": "Vest",
+          "description": "Vest"
+        },
+        {
+          "value": 16,
+          "display_name": "Flashbang",
+          "script_name": "Flash",
+          "description": "Flashbang"
+        },
+        {
+          "value": 23,
+          "display_name": "Smoke Grenade",
+          "script_name": "SmokeGrenade",
+          "description": "Smoke Grenade"
+        },
+        {
+          "value": 30,
+          "display_name": "Flash Freeze",
+          "script_name": "FlashFreeze",
+          "description": "Freeze Bomb"
+        },
+        {
+          "value": 13,
+          "display_name": "Gloo Wall",
+          "script_name": "GlooWall",
+          "description": "Ice Wall"
+        }
+      ],
+      "official_option_count": 12,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 24,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
+      "notes": [
+        "Rows transcribed from current official Enum reference. Old-mirror entries beyond this table are not inferred removed or supported."
+      ]
+    },
+    {
+      "rough_label": "Switch Equip Slot",
+      "canonical_identifier": "SwitchEquipSlot",
+      "display_label": "Switch Equip Slot",
+      "module": "Items",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Primary Weapon A",
+          "script_name": "PrimaryWeaponA",
+          "description": "Primary Weapon A"
+        },
+        {
+          "value": 1,
+          "display_name": "Primary WeaponB",
+          "script_name": "PrimaryWeaponB",
+          "description": "Primary WeaponB"
+        },
+        {
+          "value": 2,
+          "display_name": "Secondary Weapon",
+          "script_name": "SecondaryWeapon",
+          "description": "Secondary Weapon"
+        },
+        {
+          "value": 3,
+          "display_name": "Grenade",
+          "script_name": "Grenade",
+          "description": "Demolition weapons"
+        },
+        {
+          "value": 4,
+          "display_name": "Melee",
+          "script_name": "Melee",
+          "description": "Melee"
+        },
+        {
+          "value": 5,
+          "display_name": "HeavyWeapon",
+          "script_name": "HeavyWeapon",
+          "description": "HeavyWeapon"
+        },
+        {
+          "value": 16,
+          "display_name": "Flashbang",
+          "script_name": "Flashbang",
+          "description": "Flashbang"
+        },
+        {
+          "value": 23,
+          "display_name": "Smoke Grenade",
+          "script_name": "SmokeGrenade",
+          "description": "Smoke Grenade"
+        },
+        {
+          "value": 30,
+          "display_name": "Flash Freeze",
+          "script_name": "FlashFreeze",
+          "description": "Freeze Bomb"
+        },
+        {
+          "value": 21,
+          "display_name": "DummyGrenade",
+          "script_name": "DummyGrenade",
+          "description": "DummyGrenade"
+        },
+        {
+          "value": 28,
+          "display_name": "Personal UAV",
+          "script_name": "PersonalUAV",
+          "description": "Personal UAV"
+        }
+      ],
+      "official_option_count": 11,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 17,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official table shows 11 rows while the old mirror has 17 members; verify the active installed-editor list for any additional slot values.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official table shows 11 rows while the old mirror has 17 members; verify the active installed-editor list for any additional slot values.",
+      "notes": [
+        "Official visible table has gaps in numeric values; do not renumber values sequentially."
+      ]
+    },
+    {
+      "rough_label": "Coordinate System Type",
+      "canonical_identifier": "CoordinateSystemType",
+      "display_label": "Coordinate System Type",
+      "module": "STD Library",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Local Position",
+          "script_name": "LocalPosition",
+          "description": "Local Position"
+        },
+        {
+          "value": 2,
+          "display_name": "World Coordinates",
+          "script_name": "WorldPosition",
+          "description": "World Position"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 2,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "Official table and old mirror both list two members; no runtime/platform parity test is claimed.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "Official table and old mirror both list two members; no runtime/platform parity test is claimed.",
+      "notes": [
+        "Preserve the numeric values 1 and 2; do not assume a 0-based sequence."
+      ]
+    },
+    {
+      "rough_label": "Action Type",
+      "canonical_identifier": "ActionType",
+      "display_label": "Action Type",
+      "module": "AI",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Active",
+          "script_name": "Active",
+          "description": "Active"
+        },
+        {
+          "value": 1,
+          "display_name": "Passive",
+          "script_name": "Passive",
+          "description": "Passive"
+        },
+        {
+          "value": 2,
+          "display_name": "No Attack",
+          "script_name": "NoAttack",
+          "description": "No Attack"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official table and old mirror both list three members; actual block-level dropdown/context remains untested.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official table and old mirror both list three members; actual block-level dropdown/context remains untested.",
+      "notes": [
+        "This enum describes how the AI performs attack behavior."
+      ]
+    },
+    {
+      "rough_label": "Status Code",
+      "canonical_identifier": "StatusCode",
+      "display_label": "Status Code",
+      "module": "STD Library",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "No Error",
+          "script_name": "NoError",
+          "description": "No errors"
+        },
+        {
+          "value": 1,
+          "display_name": "Data Storage Timeout",
+          "script_name": "DataStorageTimeout",
+          "description": "Data storage timeout, mainly for read operations"
+        },
+        {
+          "value": 2,
+          "display_name": "Data Storage Limit Exceeded",
+          "script_name": "DataStorageLimitExceeded",
+          "description": "Data storage read/write frequency exceeds the limit"
+        },
+        {
+          "value": 3,
+          "display_name": "Data Storage Parameter Error",
+          "script_name": "DataStorageParameterError",
+          "description": "Parameter exceptions"
+        },
+        {
+          "value": 4,
+          "display_name": "Failed to create room: no valid Persona IDs",
+          "script_name": "Failed_InvalidAllIDsOnCreate",
+          "description": "Room creation failed: no valid PersonaIDs available"
+        }
+      ],
+      "official_option_count": 5,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 24,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The current official page visibly lists five rows while the old mirror has 24 members. These are the official visible rows; installed-editor completeness remains open.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The current official page visibly lists five rows while the old mirror has 24 members. These are the official visible rows; installed-editor completeness remains open.",
+      "notes": [
+        "Do not infer old-only status-code values are removed solely from a table-count difference."
+      ]
+    },
+    {
+      "rough_label": "Player UI Type",
+      "canonical_identifier": "PlayerUISwitchType",
+      "display_label": "Player UI Type",
+      "module": "Player",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table; current editor parity not tested",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Moving Joystick",
+          "script_name": "MovingJoystick",
+          "description": "Move"
+        },
+        {
+          "value": 2,
+          "display_name": "Dashing",
+          "script_name": "Sprint",
+          "description": "Sprint"
+        },
+        {
+          "value": 3,
+          "display_name": "Attack",
+          "script_name": "Attack",
+          "description": "Attack"
+        },
+        {
+          "value": 4,
+          "display_name": "Jump",
+          "script_name": "Jump",
+          "description": "Jump"
+        },
+        {
+          "value": 5,
+          "display_name": "Killing Tips",
+          "script_name": "KillingTips",
+          "description": "Killing Tips"
+        },
+        {
+          "value": 6,
+          "display_name": "Weapon Slot",
+          "script_name": "WeaponSlot",
+          "description": "Weapon Slot"
+        },
+        {
+          "value": 7,
+          "display_name": "Mini Map",
+          "script_name": "MiniMap",
+          "description": "Mini Map"
+        },
+        {
+          "value": 8,
+          "display_name": "Backpack",
+          "script_name": "Bag",
+          "description": "Backpack UI"
+        },
+        {
+          "value": 9,
+          "display_name": "Medical Items",
+          "script_name": "MedicalProps",
+          "description": "Medical Items"
+        },
+        {
+          "value": 10,
+          "display_name": "Crouch",
+          "script_name": "Crouch",
+          "description": "Displayed when True, otherwise turned off"
+        },
+        {
+          "value": 11,
+          "display_name": "Prone",
+          "script_name": "Prone",
+          "description": "Displayed when True, otherwise turned off"
+        },
+        {
+          "value": 12,
+          "display_name": "Teammates Info",
+          "script_name": "TeammatesInfo",
+          "description": "Displayed when True, otherwise turned off"
+        },
+        {
+          "value": 13,
+          "display_name": "Attack Grenade",
+          "script_name": "AttackGrenade",
+          "description": "Displayed when True, otherwise turned off"
+        },
+        {
+          "value": 14,
+          "display_name": "Defence Grenade",
+          "script_name": "DefenceGrenade",
+          "description": "Displayed when True, otherwise turned off"
+        },
+        {
+          "value": 15,
+          "display_name": "Emote",
+          "script_name": "Emote",
+          "description": "Emote"
+        },
+        {
+          "value": 16,
+          "display_name": "Quick Chat",
+          "script_name": "QuickChat",
+          "description": "Quick Chat"
+        },
+        {
+          "value": 38,
+          "display_name": "Action HUD",
+          "script_name": "ActionHud",
+          "description": "The player interaction HUD"
+        },
+        {
+          "value": 39,
+          "display_name": "Take Photo HUD",
+          "script_name": "TakePhotoHud",
+          "description": "The HUD for the in-match photo system"
+        },
+        {
+          "value": 40,
+          "display_name": "Pull Pin UI",
+          "script_name": "PullThePin",
+          "description": "The HUD for pulling the pin of grenades"
+        }
+      ],
+      "official_option_count": 19,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 63,
+        "extra_or_conflicting_aliases": [],
+        "interpretation": "The official page shows 19 rows while the old mirror has 63 members. Treat these as the currently visible documented rows; compare the installed editor before assuming list completeness.",
+        "other_old_mirror_types_with_same_option_set": []
+      },
+      "completeness_note": "The official page shows 19 rows while the old mirror has 63 members. Treat these as the currently visible documented rows; compare the installed editor before assuming list completeness.",
+      "notes": [
+        "The numeric identifiers are non-contiguous. The old mirror also has a similarly sized PlayerHudSwitchType option set; do not collapse the types on that basis."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 33,
-    "official_option_rows": 162,
+    "rough_labels_crosschecked": 39,
+    "official_option_rows": 214,
     "labels_with_mirror_alias_or_spelling_caveat": 22,
     "runtime_tested": 0,
     "mobile_parity_tested": 0
