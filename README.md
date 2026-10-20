@@ -36,6 +36,7 @@ The repo records both what is known and what is still unknown. A note or extract
 ## Repository structure
 ```text
 FFCRAFT/
+├── .gitignore
 ├── AGENTS.md
 ├── README.md
 ├── docs/
