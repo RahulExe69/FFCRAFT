@@ -38,8 +38,11 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 30. [Current editor capture playbook](docs/27-current-editor-capture-playbook.md) — exact local .fcc path, EditorGenLib and MCP data sources, plus what Mobile screenshots are needed to close the remaining gaps.
 31. [Live MCP repository audit](docs/28-live-mcp-repository-audit.md) — audits a new community MCP-export workflow and separates its useful method clues from its unpublished raw catalog.
 32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
-33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 109 official option rows across 25 labels, with old-mirror deprecated-alias discrepancies and exact script names.
+33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 162 official-reference option rows across 33 labels, with old-mirror deprecated-alias discrepancies, large member-count mismatches, and exact script names.
 34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — prioritizes 111 approximate/no-match entries from the 443-line rough inventory, with exact source lines and review actions.
+
+## Research snapshot details
+- [Expanded official dropdown option dataset](research/official-dropdown-option-crosschecks.json) — 162 visible option rows across 33 Rough.txt labels; large discrepancies with the older mirror are marked for current-editor verification.
 
 ## Author-contributed inventory
 - [First official cross-check pass](docs/13-official-cross-checks.md) — early verified findings and known conflicts from comparing the rough list with Garena's references.
