@@ -213,6 +213,31 @@
         "https://ffcraftland.garena.com/en/tutorial/fe/1-9",
         "https://ffcraftland.garena.com/en/patch-notes/"
       ]
+    },
+    {
+      "id": "mcp-public-methodology-lead",
+      "summary": "A community repository advertises a live Studio MCP catalog generator and self-reported inventory totals, but its inspected public commit does not publish the generated block/API records.",
+      "confidence": "community-methodology-lead",
+      "details": "docs/28-live-mcp-repository-audit.md",
+      "sources": [
+        "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+        "https://ffcraftland.garena.com/en/patch-notes/"
+      ]
+    },
+    {
+      "id": "mobile-official-topic-map",
+      "summary": "Garena documents Mobile block-script context, script types, classification/flow control, properties, data/logic and server/client concepts in a sequence of official pages; this guides verification but is not a complete dropdown dump.",
+      "confidence": "official-documentation",
+      "details": "docs/29-official-mobile-scripting-source-map.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-102/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-103/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-104/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-105/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
+        "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
+      ]
     }
   ],
   "docs": {
@@ -254,7 +279,11 @@
     "docs/26-enum-option-set-analysis.md": "Documents 42 exact duplicated enum option sets in the old mirror, useful for reducing repeated dropdown research without merging types",
     "research/pc-enum-option-set-analysis.json": "Groups of identical enum option sequences across differently named enum types",
     "docs/27-current-editor-capture-playbook.md": "Practical source capture playbook for current installed PC .fcc libraries, project EditorGenLib.fcc, Studio MCP metadata and Mobile block/dropdown screenshots",
-    "research/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots"
+    "research/editor-metadata-capture-checklist.json": "Capture checklist for current installed .fcc libraries, project-generated EditorGenLib.fcc, current editor MCP metadata and Mobile dropdown screenshots",
+    "docs/28-live-mcp-repository-audit.md": "Audit of a community live-MCP knowledge-base generator; distinguishes reported counts and schema clues from unpublished raw catalog data",
+    "research/live-mcp-public-resource-audit.json": "Machine-readable audit of the publicly available community MCP exporter repository tree and unverified catalog claims",
+    "docs/29-official-mobile-scripting-source-map.md": "Maps current official Mobile scripting topics and two worked mechanism templates; explicitly not a complete block/dropdown export",
+    "research/mobile-official-scripting-source-map.json": "Structured index of seven official Mobile scripting topic pages and two mechanism-template references"
   },
   "sources": [
     {
@@ -486,6 +515,23 @@
       "topic": "current-editor-capture",
       "title": "Official Studio 1.19.0 MCP server patch notes",
       "url": "https://ffcraftland.garena.com/en/patch-notes/"
+    },
+    {
+      "tier": "B",
+      "topic": "mcp-methodology",
+      "title": "Community Craftland Studio live-MCP knowledge-base generator (published scripts, export files absent)",
+      "url": "https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL",
+      "checked_on": "2026-10-20",
+      "commit": "4d30fcd0970074fc8c19689f747b6c6b49f93cf3",
+      "caveat": "README advertises 145 block types and other counts, but inspected public tree contains only five methodology/README files, not the generated raw records or catalog pages."
+    },
+    {
+      "tier": "A",
+      "topic": "mobile-block-documentation",
+      "title": "Official Craftland Mobile block-scripting topic sequence",
+      "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-101",
+      "checked_on": "2026-10-20",
+      "caveat": "Official topic guidance confirms script context and concept areas, but does not provide a complete machine-readable current block/dropdown inventory."
     }
   ],
   "open_questions": [
@@ -495,7 +541,9 @@
     "Verify the exact current Data Storage quota and whether it applies to each new PC Data Store API.",
     "Build a mobile-vs-PC support matrix for the APIs the user wants to use.",
     "Check current editor availability and exact import behavior for sound/audio workflows.",
-    "Record reproducible examples with Craftland version, exact block/API names, logs and outcome."
+    "Record reproducible examples with Craftland version, exact block/API names, logs and outcome.",
+    "Capture an actual current Studio 1.19.x MCP response set: a community exporter advertises sizable counts but does not publish its generated block/API data pages or raw JSON.",
+    "Collect a current Craftland Mobile screenshot/export set for exact visual block sockets and dropdown values; official topic pages are guidance rather than a complete catalog."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -661,6 +709,8 @@
   "stats": {
     "public_tutorial_markdown_files": 160,
     "public_tutorial_tree_entries": 3796,
-    "mobile_recipe_examples": 13
+    "mobile_recipe_examples": 13,
+    "community_mcp_methodology_repos_audited": 1,
+    "official_mobile_scripting_topic_pages_mapped": 7
   }
 }
