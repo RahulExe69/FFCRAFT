@@ -40,6 +40,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
 33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 367 official-reference option rows across 52 labels, with old-mirror deprecated-alias discrepancies, large member-count mismatches, and exact script names.
 34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — prioritizes 111 approximate/no-match entries from the 443-line rough inventory, with exact source lines and review actions.
+35. [Legacy BuiltinSymbol index audit](docs/32-legacy-builtin-symbol-index-audit.md) — records internal symbol/property-ID evidence from an older 1.5.0 extension index, with raw record counts, provenance and explicit current-version caveats.
 
 ## Research snapshot details
 - [Expanded official dropdown option dataset](research/official-dropdown-option-crosschecks.json) — 367 visible option rows across 52 Rough.txt labels; large discrepancies with the older mirror are marked for current-editor verification.
@@ -60,6 +61,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 - [Mobile block recipe index](research/mobile-block-recipe-index.json) — 13 summarized mechanism examples from a re-editable gameplay template.
 - [Enum option-set analysis](research/pc-enum-option-set-analysis.json) — groups identical dropdown-like option sequences for efficient browsing without merging API types.
 - [Live MCP public-resource audit](research/live-mcp-public-resource-audit.json) — machine-readable audit of a community PC MCP exporter; catalog counts are self-reported and raw records are absent.
+- [Legacy BuiltinSymbol index audit](docs/32-legacy-builtin-symbol-index-audit.md) — separately audits the older mirror's 42-library symbol index and internal IDs without copying the unlicensed raw file.
 - [Official Mobile scripting source map](research/mobile-official-scripting-source-map.json) — structured links to seven official scripting topics and two mechanism templates.
 
 ## Current verified baseline
