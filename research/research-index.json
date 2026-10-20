@@ -709,6 +709,118 @@
       "checked_on": "2026-10-21",
       "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1",
       "caveat": "Counts are raw library-scoped records from an older community mirror, not current supported-feature counts. Upstream license not affirmatively declared; do not redistribute raw JSON."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Scale",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-692/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Add",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-690/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Sub",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-691/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Quaternion Rotate Towards",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-931/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Get x vector component",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-80/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Get y vector component",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-148/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Obtain z vector component",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-149/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "New Vector2",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-702/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Get X",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-686/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Get Y",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-687/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Set X (server-side documentation entry)",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-688/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Set X (client-side documentation entry)",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-774/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Set Y (server-side documentation entry)",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-689/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
+    },
+    {
+      "tier": "A",
+      "topic": "math-crosswalk",
+      "title": "Vector2 Set Y (client-side documentation entry)",
+      "url": "https://ffcraftland.garena.com/en/docs/api-4-775/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official reference label/platform annotation; exact installed-editor socket/context and runtime still need verification."
     }
   ],
   "open_questions": [
@@ -726,7 +838,8 @@
     "Capture an actual current Studio 1.19.x MCP response set, including block-config schemas and per-item API/type details; community counts are not a substitute for raw export data.",
     "Collect version-stamped Craftland Mobile block-panel and expanded dropdown screenshots/exports for the fuzzy/unmatched Rough.txt entries.",
     "Compare current installed-editor results against official-reference option counts, especially VFX, sound effects, item IDs, equipment, textures and dynamic asset selectors.",
-    "Reconcile the legacy 1.5.0 BuiltinSymbol.json record counts, library-scoped IDs and component-property IDs against the existing parsed mirror catalog and, where relevant, the current installed Studio library/MCP export."
+    "Reconcile the legacy 1.5.0 BuiltinSymbol.json record counts, library-scoped IDs and component-property IDs against the existing parsed mirror catalog and, where relevant, the current installed Studio library/MCP export.",
+    "For the 12 Math entries newly mapped to official references, capture exact current editor sockets/context; in particular, resolve which server-side or client-side Vector2 Set X/Y page corresponds to each observed node."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -936,8 +1049,8 @@
     "mobile_mechanism_templates_mapped": 2,
     "crosswalk_former_unresolved_items_mapped_officially": 10,
     "block_review_queue_entries": 111,
-    "block_review_queue_fuzzy_candidates": 92,
-    "block_review_queue_old_mirror_misses": 18,
+    "block_review_queue_fuzzy_candidates": 84,
+    "block_review_queue_old_mirror_misses": 14,
     "block_review_queue_likely_editor_native": 1,
     "labels_with_official_vs_mirror_count_difference": 30,
     "legacy_builtin_symbol_index_library_spaces": 42,
@@ -947,6 +1060,8 @@
     "legacy_builtin_symbol_index_api_records": 739,
     "legacy_builtin_symbol_index_event_records": 259,
     "legacy_symbol_index_queue_entries_with_exact_label_match": 47,
-    "legacy_symbol_index_matched_symbol_records": 48
+    "legacy_symbol_index_matched_symbol_records": 48,
+    "block_review_queue_official_reference_mapped_pending_editor": 12,
+    "official_math_reference_entries_added_2026_10_21": 12
   }
 }
