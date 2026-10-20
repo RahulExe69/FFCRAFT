@@ -700,6 +700,15 @@
         "https://ffcraftland.garena.com/en/tutorial/cl/4-86"
       ],
       "caveat": "Official topic documentation guides inventory interpretation but is not a complete current block/socket/dropdown export."
+    },
+    {
+      "tier": "B",
+      "topic": "legacy-builtin-symbol-index",
+      "title": "Legacy BuiltinSymbol symbol/property ID index from the public 1.5.0 Craftland code extension mirror",
+      "url": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json",
+      "checked_on": "2026-10-21",
+      "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1",
+      "caveat": "Counts are raw library-scoped records from an older community mirror, not current supported-feature counts. Upstream license not affirmatively declared; do not redistribute raw JSON."
     }
   ],
   "open_questions": [
@@ -716,7 +725,8 @@
     "Expand official enum option cross-checks beyond the current 52 Rough.txt labels and 367 visible official-reference rows, especially larger ID catalogs and dynamic asset selectors.",
     "Capture an actual current Studio 1.19.x MCP response set, including block-config schemas and per-item API/type details; community counts are not a substitute for raw export data.",
     "Collect version-stamped Craftland Mobile block-panel and expanded dropdown screenshots/exports for the fuzzy/unmatched Rough.txt entries.",
-    "Compare current installed-editor results against official-reference option counts, especially VFX, sound effects, item IDs, equipment, textures and dynamic asset selectors."
+    "Compare current installed-editor results against official-reference option counts, especially VFX, sound effects, item IDs, equipment, textures and dynamic asset selectors.",
+    "Reconcile the legacy 1.5.0 BuiltinSymbol.json record counts, library-scoped IDs and component-property IDs against the existing parsed mirror catalog and, where relevant, the current installed Studio library/MCP export."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -856,6 +866,36 @@
         "CC0 repository declaration does not clear third-party game assets"
       ],
       "audit_doc": "docs/18-fe-resources-beta-audit.md"
+    },
+    {
+      "name": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 — BuiltinSymbol index",
+      "url": "https://github.com/Divyam999hp/craftlandstudio.ffugclanguage-1.5.0/blob/main/library/release/BuiltinSymbol.json",
+      "snapshot_version": "1.5.0",
+      "confidence": "community-snapshot",
+      "useful_areas": [
+        "library-scoped symbol IDs",
+        "component/property IDs",
+        "additional legacy enum/API name cross-checks"
+      ],
+      "observed_record_counts": {
+        "library_file_spaces": 42,
+        "component_records": 590,
+        "component_property_records": 3315,
+        "enum_records": 150,
+        "api_records": 739,
+        "event_records": 259,
+        "distinct_component_names": 555,
+        "distinct_api_names": 729
+      },
+      "caveats": [
+        "Older than Craftland Studio 1.19.0",
+        "Counts are records, not distinct current supported features",
+        "Repeated names across library files require preserving source context",
+        "No affirmative upstream license declared",
+        "Does not establish Craftland Mobile block/dropdown parity"
+      ],
+      "audit_doc": "docs/32-legacy-builtin-symbol-index-audit.md",
+      "source_file_blob_sha": "977fe8d88bd83dd47061e5e4ac5349dbd16b87b1"
     }
   ],
   "curated_assets": {
@@ -899,6 +939,12 @@
     "block_review_queue_fuzzy_candidates": 92,
     "block_review_queue_old_mirror_misses": 18,
     "block_review_queue_likely_editor_native": 1,
-    "labels_with_official_vs_mirror_count_difference": 30
+    "labels_with_official_vs_mirror_count_difference": 30,
+    "legacy_builtin_symbol_index_library_spaces": 42,
+    "legacy_builtin_symbol_index_component_records": 590,
+    "legacy_builtin_symbol_index_component_property_records": 3315,
+    "legacy_builtin_symbol_index_enum_records": 150,
+    "legacy_builtin_symbol_index_api_records": 739,
+    "legacy_builtin_symbol_index_event_records": 259
   }
 }
