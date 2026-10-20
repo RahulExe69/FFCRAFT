@@ -18,9 +18,17 @@ The 65 dropdown/type labels recorded in `Rough.txt` have been assigned the follo
 - 1 texture label confirmed by both the official reference and mirror.
 - 4 skin-type dropdowns confirmed by the official docs as dynamic ID types rather than fixed small enums.
 - 3 legacy labels requiring obsolete/deprecation caution.
-- 2 still needing manual review (`Loot Scorer Type` and `Phase And Round Enum`).
+- 1 still needing manual review (`Loot Scorer Type`).
+- 1 label clarified by current official docs as **not an enum**: `Phase And Round Enum` points toward the Workflow `Phase` and `Round` entity/component types, current phase/round indices, and their start/end events; no enum member list should be invented.
 
 These categories describe the 65 labels, not the number of actual dropdown options. The JSON retains each candidate, member-count estimate, source file SHA, original Rough line and the next verification step.
+
+
+### Phase / Round label: classification now clarified
+
+The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-14/) describes phases and rounds as configurable game-flow entities. The official [Phase type](https://ffcraftland.garena.com/en/docs/type-25/), [Round type](https://ffcraftland.garena.com/en/docs/type-26/) and [Global entity properties](https://ffcraftland.garena.com/en/docs/type-11/) identify these as component/entity concepts; the Global entity exposes `CurrentPhaseIndex` and `CurrentRoundIndex`. Separate `On Phase Start/End` and `On Round Start/End` events have different parameter shapes (phase entity versus round index). The official [On Phase Start declaration](https://ffcraftland.garena.com/en/docs/event-18-5/) gives an explicit example.
+
+This is enough to correct the **classification** of the Rough.txt label: do not build a fictitious `PhaseAndRoundEnum` or invent values. It does not settle whether the label in the author's original editor panel was a selector or a rough heading; that requires a screenshot of the current UI. Related Workflow API pages can be platform-marked Both Mobile and PC, but that still does not mean the Mobile editor has an identically named dropdown.
 
 ## Important distinctions
 
