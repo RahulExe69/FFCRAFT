@@ -945,6 +945,8 @@
     "legacy_builtin_symbol_index_component_property_records": 3315,
     "legacy_builtin_symbol_index_enum_records": 150,
     "legacy_builtin_symbol_index_api_records": 739,
-    "legacy_builtin_symbol_index_event_records": 259
+    "legacy_builtin_symbol_index_event_records": 259,
+    "legacy_symbol_index_queue_entries_with_exact_label_match": 47,
+    "legacy_symbol_index_matched_symbol_records": 48
   }
 }
