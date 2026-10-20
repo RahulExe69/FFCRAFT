@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "repository": "RahulExe69/FFCRAFT",
-  "researched_at": "2026-10-20",
+  "researched_at": "2026-10-21",
   "editorial_policy": {
     "official_docs_first": true,
     "never_invent_api_names": true,
@@ -263,7 +263,7 @@
     },
     {
       "id": "official-enum-option-snapshot",
-      "summary": "A targeted cross-check records 70 published option rows across 18 Rough.txt enum labels and flags where the old v1.5.0 mirror includes additional deprecated aliases or conflicting spellings.",
+      "summary": "A targeted official-doc cross-check records 109 option rows across 25 Rough.txt enum labels and flags where the old v1.5.0 mirror includes additional deprecated aliases or conflicting spellings; it remains a subset, with no Mobile parity/runtime testing inferred.",
       "confidence": "official-documentation-with-secondary-mirror-comparison",
       "details": "docs/30-current-official-dropdown-option-crosschecks.md",
       "sources": [
@@ -306,6 +306,17 @@
         "https://ffcraftland.garena.com/en/docs/api-24-186/",
         "https://ffcraftland.garena.com/en/docs/api-24-187/",
         "https://ffcraftland.garena.com/en/docs/api-24-188/"
+      ]
+    },
+    {
+      "id": "rough-block-review-queue",
+      "summary": "After targeted official reference additions, 111 rough block lines remain as fuzzy candidates, old-mirror misses or a likely editor-native node; exact current editor sockets and runtime status remain separate verification tasks.",
+      "confidence": "derived-review-prioritization-not-runtime-tested",
+      "details": "docs/31-rough-block-review-queue.md",
+      "sources": [
+        "research/block-symbol-crosswalk.json",
+        "research/rough-block-review-queue.json",
+        "docs/27-current-editor-capture-playbook.md"
       ]
     }
   ],
@@ -354,7 +365,9 @@
     "docs/29-official-mobile-scripting-source-map.md": "Official Mobile block scripting topic map and remaining evidence gaps for block/dropdown completeness",
     "research/mobile-official-scripting-source-map.json": "Machine-readable index of official Mobile scripting documentation and scope caveats",
     "docs/30-current-official-dropdown-option-crosschecks.md": "Current official enum option tables for 25 Rough.txt labels, with 109 option rows and old-mirror alias/spelling discrepancies",
-    "research/official-dropdown-option-crosschecks.json": "Structured current official option rows and old-mirror comparisons for 25 Rough.txt labels (109 rows), including alias, spelling and identifier differences"
+    "research/official-dropdown-option-crosschecks.json": "Structured current official option rows and old-mirror comparisons for 25 Rough.txt labels (109 rows), including alias, spelling and identifier differences",
+    "docs/31-rough-block-review-queue.md": "Prioritized follow-up for 111 unresolved or approximate Rough.txt lines, preserving source line, candidate signatures and review instructions",
+    "research/rough-block-review-queue.json": "Machine-readable queue of 111 fuzzy/missing/editor-native lines with up to three nearest candidate declarations and line-specific review focus"
   },
   "sources": [
     {
@@ -618,7 +631,7 @@
       "title": "Official Craftland Enum reference: targeted option table cross-check",
       "url": "https://ffcraftland.garena.com/en/docs/enum/",
       "checked_on": "2026-10-20",
-      "caveat": "18 rough labels have captured option rows; this is a subset, not a complete enumeration, and no Mobile dropdown parity/runtime testing is inferred."
+      "caveat": "25 Rough labels have captured official option rows (109 rows); this is a subset, not a complete enumeration, and no Mobile dropdown parity/runtime testing is inferred."
     },
     {
       "tier": "A",
@@ -661,6 +674,14 @@
       "topic": "official-crosswalk-refinements",
       "title": "Current official AI module: default behavior tree API",
       "url": "https://ffcraftland.garena.com/en/docs/module-9"
+    },
+    {
+      "tier": "B",
+      "topic": "rough-block-review-queue",
+      "title": "Derived current review queue for Rough.txt symbols",
+      "url": "https://github.com/RahulExe69/FFCRAFT/blob/main/research/rough-block-review-queue.json",
+      "checked_on": "2026-10-21",
+      "caveat": "Derived from the existing crosswalk; prioritization is a review aid, not a support or absence claim."
     }
   ],
   "open_questions": [
@@ -856,6 +877,10 @@
     "public_mcp_export_catalogs_verified": 0,
     "mobile_official_scripting_topics_mapped": 7,
     "mobile_mechanism_templates_mapped": 2,
-    "crosswalk_former_unresolved_items_mapped_officially": 10
+    "crosswalk_former_unresolved_items_mapped_officially": 10,
+    "block_review_queue_entries": 111,
+    "block_review_queue_fuzzy_candidates": 92,
+    "block_review_queue_old_mirror_misses": 18,
+    "block_review_queue_likely_editor_native": 1
   }
 }
