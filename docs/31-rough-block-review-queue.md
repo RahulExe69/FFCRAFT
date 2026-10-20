@@ -11,13 +11,13 @@ The line-by-line crosswalk covers **443 extracted entries**. The latest mutually
 | Status | Count | Interpretation |
 |---|---:|---|
 | Exact normalized label or documentation-title match in old mirror | 306 | Candidate lookup hit only; not a current support guarantee. |
-| Current official reference found | 41 | Official page/tutorial mapped; exact editor sockets and runtime remain separate. |
+| Current official reference found | 44 | Official page/tutorial/type mapped; exact editor sockets and runtime remain separate. |
 | Approximate candidate needs review | 84 | Similarity lead only; do not generate code from this alone. |
-| No exact match in old library mirror | 8 | Could be newer, editor-native, a constructor/flow-control node, or different wording. |
+| No exact match in old library mirror | 5 | Could be newer, editor-native, a constructor/flow-control node, or different wording. |
 | Likely editor-native rather than runtime API | 1 | Inspect the editor block itself. |
 | Likely explanatory notes | 3 | Preserve as author notes rather than runtime APIs. |
 
-The pre-official comparison counted 113 approximate candidates and 21 old-mirror misses. A later targeted pass mapped 41 entries to official references, leaving **111 review entries** for exact editor verification: 84 approximate, 8 old-mirror misses, 18 official-reference matches whose exact editor node/sockets/context remain unverified, and one likely editor-native. The machine-readable source retains provenance and candidates for each line.
+The pre-official comparison counted 113 approximate candidates and 21 old-mirror misses. A later targeted pass mapped 44 entries to official references, leaving **111 review entries** for exact editor verification: 84 approximate, 5 old-mirror misses, 21 official-reference matches whose exact editor node/sockets/context remain unverified, and one likely editor-native. The machine-readable source retains provenance and candidates for each line.
 
 ## Capture these first
 
@@ -38,7 +38,11 @@ These remain in the queue because they describe the *shape* of data/control bloc
 - Lines 660, 662 and 664–667: if/if-else, conditional loop, integer-range loop, for-each, and break/continue control-flow blocks.
 - Line 647: the old label “Phase And Round Enum”. Official Workflow documentation describes Phase/Round as configured entities with IDs/indices, scripts and separate lifecycle events; a fixed enum is **not confirmed**. See [Workflow documentation](https://ffcraftland.garena.com/en/tutorial/fe/1-14/).
 
-The full queue retains 84 fuzzy candidate lines with up to three closest old-library names/signatures and a line-specific review action, plus 18 official-reference matches pending exact editor context (12 Math entries and six control-flow entries).
+The full queue retains 84 fuzzy candidate lines with up to three closest old-library names/signatures and a line-specific review action, plus 21 official-reference matches pending exact editor context (12 Math, six control-flow and three basic data-type entries).
+
+## Basic data-type references
+
+The current official [STD Library type index](https://ffcraftland.garena.com/en/docs/module-1) defines String, Vector3 and Bool. This confirms the underlying type concepts for three Rough.txt entries. Since your notes describe literal/value blocks with editable fields, capture their current Mobile-editor representations before calling their sockets/default values verified.
 
 ## Official control-flow concept references
 
