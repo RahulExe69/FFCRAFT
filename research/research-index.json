@@ -848,7 +848,8 @@
     "Compare current installed-editor results against official-reference option counts, especially VFX, sound effects, item IDs, equipment, textures and dynamic asset selectors.",
     "Reconcile the legacy 1.5.0 BuiltinSymbol.json record counts, library-scoped IDs and component-property IDs against the existing parsed mirror catalog and, where relevant, the current installed Studio library/MCP export.",
     "For the 12 Math entries newly mapped to official references, capture exact current editor sockets/context; in particular, resolve which server-side or client-side Vector2 Set X/Y page corresponds to each observed node.",
-    "Capture exact Mobile editor node/socket/default-value evidence for six officially documented control-flow blocks mapped from Rough.txt lines 660, 662, 664–667; official tutorial prose does not establish the exact current UI schema."
+    "Capture exact Mobile editor node/socket/default-value evidence for six officially documented control-flow blocks mapped from Rough.txt lines 660, 662, 664–667; official tutorial prose does not establish the exact current UI schema.",
+    "Capture exact current Mobile literal/value blocks for String, Vector3 and Bool: official documentation confirms the types but does not establish their exact block appearance, defaults or sockets."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
@@ -1059,7 +1060,7 @@
     "crosswalk_former_unresolved_items_mapped_officially": 10,
     "block_review_queue_entries": 111,
     "block_review_queue_fuzzy_candidates": 84,
-    "block_review_queue_old_mirror_misses": 8,
+    "block_review_queue_old_mirror_misses": 5,
     "block_review_queue_likely_editor_native": 1,
     "labels_with_official_vs_mirror_count_difference": 30,
     "legacy_builtin_symbol_index_library_spaces": 42,
@@ -1070,9 +1071,10 @@
     "legacy_builtin_symbol_index_event_records": 259,
     "legacy_symbol_index_queue_entries_with_exact_label_match": 47,
     "legacy_symbol_index_matched_symbol_records": 48,
-    "block_review_queue_official_reference_mapped_pending_editor": 18,
+    "block_review_queue_official_reference_mapped_pending_editor": 21,
     "official_math_reference_entries_added_2026_10_21": 12,
     "official_mobile_control_flow_mappings_added_2026_10_21": 6,
-    "official_current_reference_entries": 41
+    "official_current_reference_entries": 44,
+    "official_basic_data_type_entries_added_2026_10_21": 3
   }
 }
