@@ -118,3 +118,11 @@ The mirrored library is not treated as authoritative for current API support. A 
 - [Current official dropdown option cross-checks](30-current-official-dropdown-option-crosschecks.md) and [machine-readable option rows](../research/official-dropdown-option-crosschecks.json) — 109 published choices across 25 rough labels, comparing current official tables with old-mirror aliases.
 - [Official Game Mechanics template](https://ffcraftland.garena.com/en/tutorial/cl/4-87) and [Myconsole template](https://ffcraftland.garena.com/en/tutorial/cl/4-86) — source examples for trigger, player, object, HUD and helper-function patterns.
 - [NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — recent community MCP-based KB-generation method. Its current public tree contains the README and generator/enrichment scripts but not the generated raw metadata or catalog pages; see [audit](28-live-mcp-repository-audit.md) and [machine-readable audit](../research/live-mcp-public-resource-audit.json). Advertised counts are not treated as verified data.
+
+
+## Current MCP and Mobile scripting source audit
+
+- [Live MCP repository audit](28-live-mcp-repository-audit.md) — audits the public NiteshCraftFF MCP-derived knowledge-base lead. Its README claims large block/API counts, but the inspected public commit contains only generator scripts and no raw export/catalog pages; counts remain unverified.
+- [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) — official topic pages for Mobile block scripting, script types, flow control, variable/property assignment, data/logic, and server/client separation, plus two official template leads.
+- [Machine-readable MCP lead audit](../research/live-mcp-public-resource-audit.json) and [Mobile source map](../research/mobile-official-scripting-source-map.json).
+- [Public MCP-derived KB source](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — methodology lead only; inspect the pinned commit and published tree before treating any claimed export as accessible evidence.
