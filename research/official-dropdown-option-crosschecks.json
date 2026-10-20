@@ -73,11 +73,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 8,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "LootAmmoRandom = 1014 (deprecated alias for Random)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The official table lists seven options; the older mirror contains one additional alias marked deprecated."
@@ -133,13 +133,13 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 9,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "LootConsumableItemRandom = 1024 (deprecated alias for Random)",
           "Cardiotonic = 1021 (deprecated alias at the Horizaline value)",
           "Glooshield = 1023 (deprecated alias at the Gloo Wall value)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The older mirror has three extra same-value aliases marked deprecated; don't present them as extra distinct choices without installed-editor evidence."
@@ -183,11 +183,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 5,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "LootArmorRandom = 1018 (deprecated alias for Random)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The official table lists four options; the older mirror contains one additional deprecated alias."
@@ -237,13 +237,13 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 8,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "LootThrowableRandom = 1029 (deprecated alias for Random)",
           "Flash = 1026 (deprecated alias at the Flashbang value)",
           "FrozenGrenade = 1028 (deprecated alias at the Flash Freeze value)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The official table lists five options; the older mirror contains three aliases marked deprecated."
@@ -287,17 +287,17 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 8,
-        "same_option_set_alias_type_names": [
-          "LootScopeType",
-          "LootSightType"
-        ],
         "extra_or_conflicting_aliases": [
           "LootSightRandom = 1036 (deprecated alias for Random)",
           "Sight2 = 1032 (deprecated alias at the 2x Scope value)",
           "Sight4 = 1033 (deprecated alias at the 4x Scope value)",
           "HeatSight = 1035 (deprecated alias at the Thermal Scope value)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": [
+          "LootScopeType",
+          "LootSightType"
+        ]
       },
       "notes": [
         "The old snapshot has two similarly populated enum identities plus four deprecated aliases; preserve the canonical `LootScopeType` identity and check each API's expected type."
@@ -371,11 +371,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 10,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "FootGun = 1041 (deprecated alias for FootballShooter)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The official table lists nine options; the old mirror contains one deprecated alias for Football Shooter."
@@ -413,9 +413,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 3,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Likely Rough.txt spelling/transcription variation: official label is Loot Soccer Type, not Loot Scorer Type. Raw Rough.txt was preserved."
@@ -447,11 +447,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 3,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "Mul = 2 (deprecated alias for Multiply)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The current official table lists Add and Multiply; the older mirror includes the deprecated `Mul` alias."
@@ -489,14 +489,14 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 4,
-        "same_option_set_alias_type_names": [
-          "MovePlatformType",
-          "MoveObjectMotionType"
-        ],
         "extra_or_conflicting_aliases": [
           "Translate = 0 (deprecated alias for Move)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": [
+          "MovePlatformType",
+          "MoveObjectMotionType"
+        ]
       },
       "notes": [
         "Current official label is MovePlatformType. The old mirror also has MoveObjectMotionType and a deprecated Translate alias; don't merge the types just because their option sets match."
@@ -534,11 +534,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 4,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "NotChange = 0 (deprecated alias for Default)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Current official table lists three choices; the old mirror's fourth row is a deprecated same-value alias. A related API may document a different loop-type type alias, so check the signature of the action using it."
@@ -570,9 +570,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 2,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Two current official options are visible in the Enum reference."
@@ -610,11 +610,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 4,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "Older mirror's `Cylic = 3` alias is marked deprecated, while the current official table uses display name `Cylic` and script name `Cyclic`."
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The visible official label is spelled `Cylic`; script name is `Cyclic`. The old mirror's canonical/deprecated annotations are in tension with the live table, so preserve both spellings and verify the installed editor before using a label literally."
@@ -646,9 +646,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 2,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Two current official options are visible in the Enum reference."
@@ -686,9 +686,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 3,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Three current official options are visible in the Enum reference."
@@ -720,9 +720,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 2,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "The official script name for the Female option is spelled `FeMale`; preserve the canonical string exactly when authoring PC code."
@@ -760,11 +760,11 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 4,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "MustKnockDown = 2 (deprecated alias at the No Skip Knockdown value)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Rough.txt says `Knok-down Type`; official enum identifier is KnockDownType. The old mirror includes a deprecated alias at value 2."
@@ -820,9 +820,9 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 6,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [],
-        "interpretation": "No member-count discrepancy noted from the captured catalog summary."
+        "interpretation": "No member-count discrepancy noted from the captured catalog summary.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Six current official choices are visible, including -1 for None. Do not renumber or assume values start at zero."
@@ -860,21 +860,385 @@
       "old_mirror": {
         "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
         "reported_member_count": 4,
-        "same_option_set_alias_type_names": [],
         "extra_or_conflicting_aliases": [
           "SortByHierarchy = 0 (deprecated alias for ByHierarchy)"
         ],
-        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes."
+        "interpretation": "Mirror includes additional alias or spelling rows not presented as distinct options in the current official table; see notes.",
+        "other_old_mirror_types_with_same_option_set": []
       },
       "notes": [
         "Official display labels and script identifiers differ; the old mirror contains a deprecated same-value alias."
       ]
+    },
+    {
+      "rough_label": "Damage Type",
+      "canonical_identifier": "DamageType",
+      "display_label": "Damage Type",
+      "module": "Combat",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 1,
+          "display_name": "Melee",
+          "script_name": "Melee",
+          "description": "Melee"
+        },
+        {
+          "value": 2,
+          "display_name": "Gun",
+          "script_name": "Gun",
+          "description": "Gun"
+        },
+        {
+          "value": 3,
+          "display_name": "Grenade",
+          "script_name": "Grenade",
+          "description": "Throw Attack"
+        },
+        {
+          "value": -1,
+          "display_name": "ElectricZone",
+          "script_name": "ElectricZone",
+          "description": "Safe Zone"
+        },
+        {
+          "value": -2,
+          "display_name": "Vehicle",
+          "script_name": "Vehicle",
+          "description": "Vehicle"
+        },
+        {
+          "value": -4,
+          "display_name": "Falling",
+          "script_name": "Falling",
+          "description": "Falling"
+        },
+        {
+          "value": -14,
+          "display_name": "KillZone",
+          "script_name": "KillZone",
+          "description": "KillZone"
+        },
+        {
+          "value": -50,
+          "display_name": "Exit",
+          "script_name": "Exit",
+          "description": "Exit"
+        },
+        {
+          "value": -51,
+          "display_name": "Disconnect",
+          "script_name": "Disconnect",
+          "description": "Disconnect"
+        },
+        {
+          "value": -6,
+          "display_name": "Vehicle Explosion",
+          "script_name": "VehicleExplode",
+          "description": "Vehicle Explosion"
+        },
+        {
+          "value": -8,
+          "display_name": "Airdrop, Zombie Suicide",
+          "script_name": "Airdrop",
+          "description": "Airdrop hit damage, monster suicide damage"
+        },
+        {
+          "value": -10,
+          "display_name": "Burning Damage on Vehicle Explosion",
+          "script_name": "Burning",
+          "description": "Burning Damage on Vehicle Explosion"
+        },
+        {
+          "value": -16,
+          "display_name": "Oil Drum Explosion",
+          "script_name": "OilDrumExplode",
+          "description": "Oil Drum Explosion"
+        },
+        {
+          "value": -17,
+          "display_name": "Missile-Type Weapon",
+          "script_name": "MissileExplode",
+          "description": "Missile-Type Weapon"
+        },
+        {
+          "value": -19,
+          "display_name": "Zombie",
+          "script_name": "Monster",
+          "description": "Monster"
+        },
+        {
+          "value": -20,
+          "display_name": "Damage Zone",
+          "script_name": "DamageZone",
+          "description": "Damage Zone"
+        },
+        {
+          "value": -23,
+          "display_name": "Mini Sentry",
+          "script_name": "MiniSentry",
+          "description": "Turret"
+        },
+        {
+          "value": -31,
+          "display_name": "Character Skill",
+          "script_name": "CharacterSkill",
+          "description": "Character Skill"
+        },
+        {
+          "value": -40,
+          "display_name": "Finishing Move",
+          "script_name": "ExecuteSkill",
+          "description": "Finishing move."
+        }
+      ],
+      "official_option_count": 19,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 22,
+        "extra_or_conflicting_aliases": [
+          "PositiveLeave = -50 (deprecated; use Exit)",
+          "OildrumExplode = -16 (deprecated; use OilDrumExplode)",
+          "Zombie = -19 (deprecated; use Monster)",
+          "ActivitySkill = -31 (deprecated; use CharacterSkill)"
+        ],
+        "not_present_in_old_mirror": [
+          "ExecuteSkill = -40 (Finishing Move) appears in the current official table but not in the old 1.5.0 mirror."
+        ],
+        "interpretation": "The older mirror has extra deprecated/legacy alias rows not presented as distinct options in the current official table."
+      },
+      "notes": [
+        "The official table shows 19 rows. It omits four deprecated aliases present in the older mirror and includes the additional `ExecuteSkill` / Finishing Move row. Check the installed library before assuming the old snapshot's declarations are current."
+      ]
+    },
+    {
+      "rough_label": "Buff Type",
+      "canonical_identifier": "BuffType",
+      "display_label": "Buff Type",
+      "module": "Level Object",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Random Buff",
+          "script_name": "RandomBuff",
+          "description": "Random Buff"
+        },
+        {
+          "value": 1,
+          "display_name": "HP Buff",
+          "script_name": "HPBuff",
+          "description": "HP Buff"
+        },
+        {
+          "value": 2,
+          "display_name": "Bullet Buff",
+          "script_name": "BulletBuff",
+          "description": "Bullet Buff"
+        },
+        {
+          "value": 3,
+          "display_name": "Armor Buff",
+          "script_name": "ArmorBuff",
+          "description": "Armor Buff"
+        }
+      ],
+      "official_option_count": 4,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 5,
+        "extra_or_conflicting_aliases": [
+          "AmmoBuff = 2 (deprecated; use BulletBuff)"
+        ],
+        "interpretation": "The older mirror has extra deprecated/legacy alias rows not presented as distinct options in the current official table."
+      },
+      "notes": [
+        "The official table lists four choices; the older mirror has a deprecated `AmmoBuff` alias at the same value as `BulletBuff`."
+      ]
+    },
+    {
+      "rough_label": "Fill Type",
+      "canonical_identifier": "FillType",
+      "display_label": "Fill Type",
+      "module": "HUD",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Simple",
+          "script_name": "Simple",
+          "description": "Simple"
+        },
+        {
+          "value": 1,
+          "display_name": "Sliced",
+          "script_name": "Sliced",
+          "description": "Sliced"
+        },
+        {
+          "value": 2,
+          "display_name": "Tiled",
+          "script_name": "Tiled",
+          "description": "Tiled"
+        },
+        {
+          "value": 3,
+          "display_name": "Filled",
+          "script_name": "Filled",
+          "description": "Filled"
+        },
+        {
+          "value": 5,
+          "display_name": "Fit",
+          "script_name": "Fit",
+          "description": "Fit"
+        }
+      ],
+      "official_option_count": 5,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 5,
+        "interpretation": "No member-count discrepancy noted; type identity remains source-specific."
+      },
+      "notes": [
+        "The documented numeric values skip 4; preserve the source values rather than normalizing them to a zero-based sequence."
+      ]
+    },
+    {
+      "rough_label": "Fill Direction Type",
+      "canonical_identifier": "FillDirectionType",
+      "display_label": "Fill Direction Type",
+      "module": "HUD",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Horizontal",
+          "script_name": "Horizontal",
+          "description": "Horizontal"
+        },
+        {
+          "value": 1,
+          "display_name": "Vertical",
+          "script_name": "Vertical",
+          "description": "Vertical"
+        },
+        {
+          "value": 2,
+          "display_name": "Radial 90°",
+          "script_name": "Radial90",
+          "description": "Radial 90°"
+        },
+        {
+          "value": 3,
+          "display_name": "Radial 180°",
+          "script_name": "Radial180",
+          "description": "Radial 180°"
+        },
+        {
+          "value": 4,
+          "display_name": "Radial 360°",
+          "script_name": "Radial360",
+          "description": "Radial 360°"
+        }
+      ],
+      "official_option_count": 5,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 5,
+        "interpretation": "No member-count discrepancy noted; type identity remains source-specific."
+      },
+      "notes": [
+        "The official display labels include radial sweep angles; script names remove spaces and degree symbols."
+      ]
+    },
+    {
+      "rough_label": "3-Status Switch",
+      "canonical_identifier": "ThreeStatusSwitch",
+      "display_label": "3-Status Switch",
+      "module": "STD Library",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": -1,
+          "display_name": "Keep original logic",
+          "script_name": "OriginalLogic",
+          "description": "Default"
+        },
+        {
+          "value": 0,
+          "display_name": "Close",
+          "script_name": "Close",
+          "description": "Close"
+        },
+        {
+          "value": 1,
+          "display_name": "Show",
+          "script_name": "Show",
+          "description": "Show"
+        }
+      ],
+      "official_option_count": 3,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 3,
+        "other_old_mirror_types_with_same_option_set": [
+          "CommonUISwitchValue",
+          "CommonHudSwitchValue"
+        ],
+        "interpretation": "No member-count discrepancy noted; type identity remains source-specific."
+      },
+      "notes": [
+        "The official enum identifier is `ThreeStatusSwitch`, while the old mirror candidates are `CommonUISwitchValue` and `CommonHudSwitchValue`. Their option sets match, but keep type identities separate until the installed API signature confirms the expected type."
+      ]
+    },
+    {
+      "rough_label": "Camera Viewing Angle Restriction Type",
+      "canonical_identifier": "CameraViewingAngleRestrictionType",
+      "display_label": "Camera Viewing Angle Restriction Type",
+      "module": "Camera",
+      "value_type": "Int",
+      "source": "https://ffcraftland.garena.com/en/docs/enum/",
+      "capture_status": "official-current-reference-table",
+      "option_rows": [
+        {
+          "value": 0,
+          "display_name": "Default",
+          "script_name": "",
+          "description": "Default"
+        },
+        {
+          "value": 1,
+          "display_name": "Wide Range",
+          "script_name": "",
+          "description": "Wide Range"
+        }
+      ],
+      "official_option_count": 2,
+      "old_mirror": {
+        "snapshot": "Divyam999hp/craftlandstudio.ffugclanguage-1.5.0 (secondary, older than current Studio)",
+        "reported_member_count": 2,
+        "interpretation": "No member-count discrepancy noted; type identity remains source-specific."
+      },
+      "notes": [
+        "The official table leaves the Script Name cells blank for both entries; the old mirror provides identifiers. Capture blank official fields as blank rather than inventing them."
+      ]
     }
   ],
   "stats": {
-    "rough_labels_crosschecked": 18,
-    "official_option_rows": 70,
-    "labels_with_mirror_alias_or_spelling_caveat": 12,
+    "rough_labels_crosschecked": 24,
+    "official_option_rows": 108,
+    "labels_with_mirror_alias_or_spelling_caveat": 19,
     "runtime_tested": 0,
     "mobile_parity_tested": 0
   },
