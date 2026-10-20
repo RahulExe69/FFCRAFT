@@ -42,6 +42,8 @@ The [official Workflow manual](https://ffcraftland.garena.com/en/tutorial/fe/1-1
 
 This is enough to correct the **classification** of the Rough.txt label: do not build a fictitious `PhaseAndRoundEnum` or invent values. It does not settle whether the label in the author's original editor panel was a selector or a rough heading; that requires a screenshot of the current UI. Related Workflow API pages can be platform-marked Both Mobile and PC, but that still does not mean the Mobile editor has an identically named dropdown.
 
+The new [current official dropdown option cross-check](30-current-official-dropdown-option-crosschecks.md) records 70 current published option rows across 18 rough labels, with official display names, script names, values and old-mirror alias notes. It is a cross-check subset, not a complete scrape; it deliberately keeps Mobile UI parity and runtime support unclaimed. The corresponding entries in the machine-readable crosswalk link to that dataset.
+
 ## Important distinctions
 
 **A type name is not necessarily an enum with a fixed member list.** The current official enum reference documents `TypeEnum` as the list of available types. It also identifies `WeaponSkinType`, `VehicleSkinType`, `ClothType`, and `BagSkinType` as values typed by Weapon Skin ID, Vehicle Skin ID, Outfit ID, and Backpack Skin ID. Those asset IDs are potentially much larger/dynamic lists; they are not accurately reconstructed by copying a 1.5-era enum.
