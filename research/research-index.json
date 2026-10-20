@@ -293,6 +293,20 @@
         "https://ffcraftland.garena.com/en/tutorial/cl/4-106/",
         "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
       ]
+    },
+    {
+      "id": "crosswalk-former-unresolved-group",
+      "summary": "A targeted follow-up mapped ten previously unresolved Rough.txt labels to current official Items, AI and Property Formula API/event references; exact editor sockets and runtime behavior remain unverified.",
+      "confidence": "official-doc-mapped-not-runtime-tested",
+      "details": "docs/24-block-symbol-crosswalk.md",
+      "sources": [
+        "https://ffcraftland.garena.com/en/docs/module-15",
+        "https://ffcraftland.garena.com/en/docs/module-9",
+        "https://ffcraftland.garena.com/en/docs/api-24-182/",
+        "https://ffcraftland.garena.com/en/docs/api-24-186/",
+        "https://ffcraftland.garena.com/en/docs/api-24-187/",
+        "https://ffcraftland.garena.com/en/docs/api-24-188/"
+      ]
     }
   ],
   "docs": {
@@ -635,6 +649,18 @@
       "topic": "mobile-scripting-source-map",
       "title": "Official Mobile server-side and client-side scripts tutorial",
       "url": "https://ffcraftland.garena.com/en/tutorial/cl/4-107/"
+    },
+    {
+      "tier": "A",
+      "topic": "official-crosswalk-refinements",
+      "title": "Current official Items module: consumable/throwable events, equipment and attachment APIs",
+      "url": "https://ffcraftland.garena.com/en/docs/module-15"
+    },
+    {
+      "tier": "A",
+      "topic": "official-crosswalk-refinements",
+      "title": "Current official AI module: default behavior tree API",
+      "url": "https://ffcraftland.garena.com/en/docs/module-9"
     }
   ],
   "open_questions": [
@@ -829,6 +855,7 @@
     "dropdown_labels_generated_enum": 1,
     "public_mcp_export_catalogs_verified": 0,
     "mobile_official_scripting_topics_mapped": 7,
-    "mobile_mechanism_templates_mapped": 2
+    "mobile_mechanism_templates_mapped": 2,
+    "crosswalk_former_unresolved_items_mapped_officially": 10
   }
 }
