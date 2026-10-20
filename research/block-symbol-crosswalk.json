@@ -3407,7 +3407,18 @@
       "exact_matches": [],
       "other_kind_exact_matches": [],
       "nearest_candidates": [],
-      "next_action": "Check official block guide, current editor search/MCP surface, and project-generated libraries for editor-native or version-newer symbols."
+      "next_action": "Compare the current editor node/schema with the related official Set Property Smoothly API candidate; preserve the no-exact-match status until the node identity and sockets are confirmed.",
+      "related_candidates": [
+        {
+          "kind": "related-but-unconfirmed-official-api-candidate",
+          "title": "Set Property Smoothly",
+          "url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
+          "platform_status": "Server Side; Both Mobile and PC",
+          "evidence": "The official API page says this smoothly sets properties of the target entity; the property changes immediately while the client plays a smooth transition performance.",
+          "why_related": "Rough.txt line 132 describes a 'Progressive Movement Property' node with target/entity, property and value slots. This is a possible conceptual lead only; the visible name differs, and the official page does not prove that the observed block is this API.",
+          "next_action": "Inspect current editor node metadata and exact socket types/context before mapping or substituting."
+        }
+      ]
     },
     {
       "source_line": 133,
@@ -19012,6 +19023,12 @@
       "entries_mapped": 3,
       "source": "https://ffcraftland.garena.com/en/docs/module-1",
       "note": "String, Vector3 and Bool type concepts are officially documented. The corresponding Rough.txt entries describe value/literal blocks; their exact current editor representation is not confirmed."
+    },
+    "related_candidate_checked_2026_10_21": {
+      "rough_line": 132,
+      "official_candidate_url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
+      "decision": "related lead only; not an official match",
+      "reason": "Rough.txt line 132 describes a 'Progressive Movement Property' node with target/entity, property and value slots. This is a possible conceptual lead only; the visible name differs, and the official page does not prove that the observed block is this API."
     }
   }
 }
