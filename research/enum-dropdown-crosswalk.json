@@ -31,9 +31,9 @@
   },
   "stats": {
     "observed_enum_labels": 65,
-    "candidate_mapped_from_mirror": 16,
+    "candidate_mapped_from_mirror": 4,
     "official_doc_match_not_in_mirror": 2,
-    "official_docs_and_mirror_confirm": 36,
+    "official_docs_and_mirror_confirm": 48,
     "official_dynamic_id_type_confirmed": 4,
     "type_id_not_enum_in_mirror": 0,
     "manual_or_official_cross_check": 0,
@@ -42,12 +42,12 @@
     "official_docs_clarify_not_enum": 1,
     "official_docs_likely_typo_match": 1,
     "official_docs_match_different_identifiers": 1,
-    "official_option_crosscheck_labels": 39,
-    "official_option_rows": 214,
+    "official_option_crosscheck_labels": 51,
+    "official_option_rows": 353,
     "labels_with_mirror_alias_or_spelling_caveats": 22,
     "official_docs_generated_enum": 1,
     "checked_on": "2026-10-21",
-    "note": "Official visible option rows now cover 39 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
+    "note": "Official visible option rows now cover 51 of 65 observed enum-like labels. Large discrepancies with the older mirror are flagged, not resolved by assumption."
   },
   "entries": [
     {
@@ -303,9 +303,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "DamageType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 19,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -2898,13 +2900,13 @@
           "label": "StdLibrary.fcc:VFXType"
         }
       ],
-      "next_check": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete.",
+      "next_check": "The current official enum page visibly presents 58 VFXType rows; the older 1.5.0 mirror has 71 members. The 13-count difference may reflect source-version changes, aliases or documentation coverage; verify the installed editor before treating either list as complete.",
       "official_documentation": {
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
         "checked_on": "2026-10-21",
-        "option_rows_captured": 7,
+        "option_rows_captured": 58,
         "current_editor_parity": "not-tested",
-        "note": "The current official page visibly presents these seven rows, while the older mirror has 71 members. Resolve this large discrepancy against the installed editor before treating the dropdown as complete."
+        "note": "The current official enum page visibly presents 58 VFXType rows; the older 1.5.0 mirror has 71 members. The 13-count difference may reflect source-version changes, aliases or documentation coverage; verify the installed editor before treating either list as complete."
       }
     },
     {
@@ -7766,16 +7768,18 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "PropertyModifyType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
       "observed_label": "Inventory Type",
       "rough_line": 598,
       "observed_signature": "10. Inventory Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:InventoryType",
@@ -7842,7 +7846,14 @@
           "label": "Items.fcc:InventoryType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official table and old mirror both show four entries.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "The official table and old mirror both show four entries."
+      }
     },
     {
       "observed_label": "Type Enum",
@@ -7922,9 +7933,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "PatrolStyleType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -8005,9 +8018,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "PatrolType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -8053,9 +8068,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "MoneyType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Official Enum reference lists the single `Basic` option (value 1), matching the older mirror."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 1,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -8241,9 +8258,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "PlayerReviveSourceType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -8517,13 +8536,13 @@
           "label": "Items.fcc:EquipmentType"
         }
       ],
-      "next_check": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive.",
+      "next_check": "The current official reference shows 18 EquipmentType rows; the old mirror has 24 parsed members. Preserve the table's non-contiguous numeric IDs. Current installed-editor parity remains untested.",
       "official_documentation": {
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
         "checked_on": "2026-10-21",
-        "option_rows_captured": 12,
+        "option_rows_captured": 18,
         "current_editor_parity": "not-tested",
-        "note": "The current official table shows 12 rows while the old mirror has 24 members; current installed-editor options should be checked before calling the smaller table exhaustive."
+        "note": "The current official reference shows 18 EquipmentType rows; the old mirror has 24 parsed members. Preserve the table's non-contiguous numeric IDs. Current installed-editor parity remains untested."
       }
     },
     {
@@ -8594,16 +8613,18 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "AimAssistType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
       "observed_label": "Player Behaviour Status Type",
       "rough_line": 607,
       "observed_signature": "19. Player Behaviour Status Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:PlayerBehaviorStatusType",
@@ -8712,7 +8733,14 @@
           "label": "Player.fcc:PlayerBehaviorStatus"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official table and older mirror both show three members.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "The official table and older mirror both show three members."
+      }
     },
     {
       "observed_label": "Buff Type",
@@ -8797,9 +8825,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "BuffType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -8945,9 +8975,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootWeaponType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 9,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -9753,9 +9785,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootArmorType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -9876,9 +9910,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootAmmoType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 7,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -10009,9 +10045,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootConsumableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 6,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -10132,9 +10170,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootThrowableType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 5,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -10357,9 +10397,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LootScopeType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -10502,9 +10544,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "MovePlatformType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -10634,7 +10678,7 @@
       "observed_label": "Mini Sentry Attack Range Type",
       "rough_line": 621,
       "observed_signature": "33. Mini Sentry Attack Range Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:MiniSentryAttackRangeType",
@@ -10743,7 +10787,14 @@
           "label": "LevelObject.fcc:MinisentryAttackRangeType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official table and old mirror both show three entries.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "The official table and old mirror both show three entries."
+      }
     },
     {
       "observed_label": "Loot Scorer Type",
@@ -10808,32 +10859,11 @@
       ],
       "next_check": "The canonical current official candidate and its three listed values are now cross-checked. If exact label fidelity matters, compare with a screenshot of the editor dropdown to verify whether the visible label reads Soccer or whether Rough.txt is a transcription variation.",
       "official_documentation": {
-        "identifier": "LootSoccerType",
-        "display_label": "Loot Soccer Type",
-        "module": "Football",
-        "value_type": "Int",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "members": [
-          {
-            "value": 1040,
-            "name": "Loot Soccer Random",
-            "script_name": "LootSoccerRandom",
-            "description": "Loot Soccer Random"
-          },
-          {
-            "value": 1038,
-            "name": "Loot Soccer Shield",
-            "script_name": "LootSoccerShield",
-            "description": "Loot Soccer Shield"
-          },
-          {
-            "value": 1039,
-            "name": "Loot Soccer Ice",
-            "script_name": "LootSoccerIce",
-            "description": "Freezing Grenade"
-          }
-        ],
-        "note": "The live official enum page exposes this exact identifier/display label and these three options. The original Rough.txt wording is 'Loot Scorer Type'; treat that spelling as likely user transcription, while keeping the raw source untouched."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -10938,7 +10968,7 @@
       "observed_label": "Outfit Slot Type",
       "rough_line": 624,
       "observed_signature": "36. Outfit Slot Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Collection.fcc:OutfitSlotType",
@@ -11105,7 +11135,14 @@
           "label": "Collection.fcc:OutfitSlotType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table shows seven outfit slots while the older mirror has 14 members. Current editor availability for old-only entries remains unknown.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 7,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table shows seven outfit slots while the older mirror has 14 members. Current editor availability for old-only entries remains unknown."
+      }
     },
     {
       "observed_label": "Player UI Type",
@@ -12754,11 +12791,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "ThreeStatusSwitch",
-        "display_label": "3-Status Switch",
-        "module": "STD Library",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Official current label/type is ThreeStatusSwitch. The older mirror has CommonUISwitchValue and CommonHudSwitchValue with the same three option values; keep these identifiers distinct until current signatures establish interchangeability."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -12824,9 +12861,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "GenderType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -12883,7 +12922,7 @@
       "observed_label": "Equipment Slot Type",
       "rough_line": 630,
       "observed_signature": "42. Equipment Slot Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Items.fcc:EquipmentSlotType",
@@ -13152,13 +13191,20 @@
           "label": "Items.fcc:EquipmentSlot"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table shows eight rows versus 11 parsed members in the older mirror. Numeric slots are non-contiguous.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 8,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table shows eight rows versus 11 parsed members in the older mirror. Numeric slots are non-contiguous."
+      }
     },
     {
       "observed_label": "Damage Body Part Type",
       "rough_line": 631,
       "observed_signature": "43. Damage Body Part Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Combat.fcc:DamagedBodyPartType",
@@ -13225,7 +13271,14 @@
           "label": "Combat.fcc:DamagedBodyPartType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table and older mirror both show four entries.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table and older mirror both show four entries."
+      }
     },
     {
       "observed_label": "Fill Direction Type",
@@ -13310,9 +13363,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "FillDirectionType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 5,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -13403,9 +13458,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "FillType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 5,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -13417,7 +13474,7 @@
       "observed_label": "Seat Type",
       "rough_line": 634,
       "observed_signature": "46. Seat Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "LevelObject.fcc:SeatType",
@@ -13514,7 +13571,14 @@
           "label": "LevelObject.fcc:SeatType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table shows four seat entries versus seven parsed members in the old mirror.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table shows four seat entries versus seven parsed members in the old mirror."
+      }
     },
     {
       "observed_label": "Font Type",
@@ -13617,20 +13681,20 @@
           "label": "StdLibrary.fcc:FontType"
         }
       ],
-      "next_check": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check.",
+      "next_check": "The current official page and old mirror both list seven font values in the captured tables.",
       "official_documentation": {
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
         "checked_on": "2026-10-21",
-        "option_rows_captured": 6,
+        "option_rows_captured": 7,
         "current_editor_parity": "not-tested",
-        "note": "The current official page shows six font rows while the old mirror contains seven; the old-only entry needs a current-editor check."
+        "note": "The current official page and old mirror both list seven font values in the captured tables."
       }
     },
     {
       "observed_label": "Player Pose Type",
       "rough_line": 636,
       "observed_signature": "48. Player Pose Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:PlayerPoseType",
@@ -13697,7 +13761,14 @@
           "label": "Player.fcc:PlayerPoseType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official page displays 28 PlayerPoseType rows (values 0–27), while the older mirror parser had only four. Preserve blank display-name cells where the official table supplies only a script name.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 28,
+        "current_editor_parity": "not-tested",
+        "note": "The current official page displays 28 PlayerPoseType rows (values 0–27), while the older mirror parser had only four. Preserve blank display-name cells where the official table supplies only a script name."
+      }
     },
     {
       "observed_label": "Knok-down Type",
@@ -13777,9 +13848,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "KnockDownType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -13950,9 +14023,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "FireType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 6,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -14033,9 +14108,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LayoutSortType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -14371,9 +14448,11 @@
       ],
       "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity.",
       "official_documentation": {
-        "identifier": "CameraViewingAngleRestrictionType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 2,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       },
       "official_option_crosscheck": {
         "dataset": "research/official-dropdown-option-crosschecks.json",
@@ -14425,7 +14504,7 @@
       "observed_label": "Fog Mode Type",
       "rough_line": 645,
       "observed_signature": "57. Fog Mode Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Scene.fcc:FogModeType",
@@ -14482,13 +14561,20 @@
           "label": "Scene.fcc:FogModeType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The current official table and old mirror both show three members.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "The current official table and old mirror both show three members."
+      }
     },
     {
       "observed_label": "Rigidbody Constrain Type",
       "rough_line": 646,
       "observed_signature": "58. Rigidbody Constrain Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Physics.fcc:RigidbodyConstrainType",
@@ -14625,7 +14711,14 @@
           "label": "Physics.fcc:RigidbodyConstrainType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "10 rows are visible in the current official page; the older mirror has 11 members. Numeric values are combinable bit flags, so preserve values exactly.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 10,
+        "current_editor_parity": "not-tested",
+        "note": "10 rows are visible in the current official page; the older mirror has 11 members. Numeric values are combinable bit flags, so preserve values exactly."
+      }
     },
     {
       "observed_label": "Phase And Round Enum",
@@ -14666,7 +14759,7 @@
       "observed_label": "Force Type",
       "rough_line": 648,
       "observed_signature": "60. Force Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Physics.fcc:ForceType",
@@ -14733,7 +14826,14 @@
           "label": "Physics.fcc:ForceType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "The official table and old mirror both show four members; documented as applicable to Dynamic rigidbody types.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 4,
+        "current_editor_parity": "not-tested",
+        "note": "The official table and old mirror both show four members; documented as applicable to Dynamic rigidbody types."
+      }
     },
     {
       "observed_label": "LoopType",
@@ -14813,9 +14913,11 @@
         "source": "https://ffcraftland.garena.com/en/docs/enum/"
       },
       "official_documentation": {
-        "identifier": "LoopType",
         "source": "https://ffcraftland.garena.com/en/docs/enum/",
-        "note": "Current official Enum reference exposes this label and option table; detailed option rows and legacy-alias comparison are linked in the official-dropdown cross-check dataset."
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Rows transcribed from current official page; no editor/runtime parity inferred."
       }
     },
     {
@@ -14844,7 +14946,7 @@
       "observed_label": "Player State Type",
       "rough_line": 651,
       "observed_signature": "63. Player State Type",
-      "mapping_status": "candidate-mapped-from-mirror",
+      "mapping_status": "official-docs-and-mirror-confirm",
       "candidates": [
         {
           "label": "Player.fcc:PlayerStateType",
@@ -14911,7 +15013,14 @@
           "label": "Player.fcc:PlayerStateType"
         }
       ],
-      "next_check": "Verify member names and deprecation labels against current official docs/current installed library; then separately check Mobile dropdown parity."
+      "next_check": "Three rows are visible in the current official table, versus four parsed members in the older mirror; verify the current installed editor if exact exhaustiveness matters.",
+      "official_documentation": {
+        "source": "https://ffcraftland.garena.com/en/docs/enum/",
+        "checked_on": "2026-10-21",
+        "option_rows_captured": 3,
+        "current_editor_parity": "not-tested",
+        "note": "Three rows are visible in the current official table, versus four parsed members in the older mirror; verify the current installed editor if exact exhaustiveness matters."
+      }
     },
     {
       "observed_label": "Vehicle Skin Type",
