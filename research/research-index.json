@@ -866,7 +866,9 @@
     "For the 12 Math entries newly mapped to official references, capture exact current editor sockets/context; in particular, resolve which server-side or client-side Vector2 Set X/Y page corresponds to each observed node.",
     "Capture exact Mobile editor node/socket/default-value evidence for six officially documented control-flow blocks mapped from Rough.txt lines 660, 662, 664–667; official tutorial prose does not establish the exact current UI schema.",
     "Capture exact current Mobile literal/value blocks for String, Vector3 and Bool: official documentation confirms the types but does not establish their exact block appearance, defaults or sockets.",
-    "Compare Rough.txt line 132 Progressive Movement Property with the official Set Property Smoothly API; keep the mapping unresolved until the current editor schema and socket types establish whether they are the same operation."
+    "Compare Rough.txt line 132 Progressive Movement Property with the official Set Property Smoothly API; keep the mapping unresolved until the current editor schema and socket types establish whether they are the same operation.",
+    "Record current-editor evidence for Rough.txt line 647 'Phase And Round Enum': official Workflow describes phase/round entities and IDs, so establish the actual selector semantics before deciding whether it is an enum, entity ID or editor-specific construct.",
+    "Capture the current Mobile multi-slot arithmetic block on Rough.txt line 451, including all operator dropdown options and the plus/add-input behavior; public tutorial material does not enumerate the exact node schema."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
