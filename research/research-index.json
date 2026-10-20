@@ -829,6 +829,14 @@
       "url": "https://ffcraftland.garena.com/en/tutorial/undefined/4-60",
       "checked_on": "2026-10-21",
       "caveat": "Official concept reference; not a complete version-stamped block socket export."
+    },
+    {
+      "tier": "A",
+      "topic": "progressive-movement-related-candidate",
+      "title": "Set Property Smoothly — related, unconfirmed candidate for Rough.txt line 132",
+      "url": "https://ffcraftland.garena.com/en/docs/api-1-475/",
+      "checked_on": "2026-10-21",
+      "caveat": "Official server-side API documented for Mobile and PC, but not confirmed to be the user-observed Progressive Movement Property block."
     }
   ],
   "open_questions": [
@@ -849,7 +857,8 @@
     "Reconcile the legacy 1.5.0 BuiltinSymbol.json record counts, library-scoped IDs and component-property IDs against the existing parsed mirror catalog and, where relevant, the current installed Studio library/MCP export.",
     "For the 12 Math entries newly mapped to official references, capture exact current editor sockets/context; in particular, resolve which server-side or client-side Vector2 Set X/Y page corresponds to each observed node.",
     "Capture exact Mobile editor node/socket/default-value evidence for six officially documented control-flow blocks mapped from Rough.txt lines 660, 662, 664–667; official tutorial prose does not establish the exact current UI schema.",
-    "Capture exact current Mobile literal/value blocks for String, Vector3 and Bool: official documentation confirms the types but does not establish their exact block appearance, defaults or sockets."
+    "Capture exact current Mobile literal/value blocks for String, Vector3 and Bool: official documentation confirms the types but does not establish their exact block appearance, defaults or sockets.",
+    "Compare Rough.txt line 132 Progressive Movement Property with the official Set Property Smoothly API; keep the mapping unresolved until the current editor schema and socket types establish whether they are the same operation."
   ],
   "user_contributed_inventory": {
     "original_file": "Rough.txt",
