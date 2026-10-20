@@ -39,7 +39,7 @@ A source-backed knowledge base for **Free Fire Craftland**, with a focus on visu
 31. [Live MCP repository audit](docs/28-live-mcp-repository-audit.md) — audits a new community MCP-export workflow and separates its useful method clues from its unpublished raw catalog.
 32. [Official Mobile scripting source map](docs/29-official-mobile-scripting-source-map.md) — maps Garena's current block-scripting topics and worked templates without claiming they form a complete block dump.
 33. [Current official dropdown option cross-checks](docs/30-current-official-dropdown-option-crosschecks.md) — 367 official-reference option rows across 52 labels, with old-mirror deprecated-alias discrepancies, large member-count mismatches, and exact script names.
-34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — tracks 111 rows requiring editor-level verification: 84 fuzzy candidates, 8 old-mirror misses, 18 official-reference matches pending exact editor context, and one likely editor-native block.
+34. [Unresolved block review queue](docs/31-rough-block-review-queue.md) — tracks 111 rows requiring editor-level verification: 84 fuzzy candidates, 5 old-mirror misses, 21 official-reference matches pending exact editor context, and one likely editor-native block.
 35. [Legacy BuiltinSymbol index audit](docs/32-legacy-builtin-symbol-index-audit.md) — records internal symbol/property-ID evidence from an older 1.5.0 extension index, with raw record counts, provenance and explicit current-version caveats.
 
 ## Research snapshot details
