@@ -115,7 +115,7 @@ The mirrored library is not treated as authoritative for current API support. A 
 
 - [Official Mobile Block Scripts guide](https://ffcraftland.garena.com/en/tutorial/cl/4-101) — documents the block editor, script context, search and typed connections; search can include blocks unavailable in the selected script.
 - [Official Mobile scripting source map](29-official-mobile-scripting-source-map.md) and [machine-readable map](../research/mobile-official-scripting-source-map.json) — topic links for event/script types, classification/flow control, variables/properties, data/logic and server/client scripting.
-- [Current official dropdown option cross-checks](30-current-official-dropdown-option-crosschecks.md) and [machine-readable option rows](../research/official-dropdown-option-crosschecks.json) — 109 published choices across 25 rough labels, comparing current official tables with old-mirror aliases.
+- [Current official dropdown option cross-checks](30-current-official-dropdown-option-crosschecks.md) and [machine-readable option rows](../research/official-dropdown-option-crosschecks.json) — 109 published choices across 33 rough labels and 162 official option rows, comparing current official tables with old-mirror aliases and source-count mismatches.
 - [Official Game Mechanics template](https://ffcraftland.garena.com/en/tutorial/cl/4-87) and [Myconsole template](https://ffcraftland.garena.com/en/tutorial/cl/4-86) — source examples for trigger, player, object, HUD and helper-function patterns.
 - [NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — recent community MCP-based KB-generation method. Its current public tree contains the README and generator/enrichment scripts but not the generated raw metadata or catalog pages; see [audit](28-live-mcp-repository-audit.md) and [machine-readable audit](../research/live-mcp-public-resource-audit.json). Advertised counts are not treated as verified data.
 
@@ -128,3 +128,5 @@ The mirrored library is not treated as authoritative for current API support. A 
 - [Public MCP-derived KB source](https://github.com/NiteshCraftFF/CRAFTLAND-STUDIO-TUTORIAL) — methodology lead only; inspect the pinned commit and published tree before treating any claimed export as accessible evidence.
 
 - [Rough block review queue](31-rough-block-review-queue.md) and [machine-readable queue](../research/rough-block-review-queue.json) — prioritized follow-up for the 92 fuzzy old-mirror candidates, 18 mirror misses, and one likely editor-native block; misses are not claims of absence.
+
+- [Expanded official dropdown option cross-check](../research/official-dropdown-option-crosschecks.json) — 162 visible rows across 33 labels; large current-doc vs old-mirror count differences remain explicitly unverified against the installed editor.
